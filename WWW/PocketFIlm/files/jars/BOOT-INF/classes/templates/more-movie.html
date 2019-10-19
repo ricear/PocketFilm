@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<th:block th:insert="../templates/head"></th:block>
+<body>
+
+<th:block th:insert="../templates/navigation"></th:block>
+
+<div class="main kongbai">
+    <div class="sy-all mb clearfix">
+        <div class="sy-title clearfix">
+            <p class="type">
+                <span class="type"><a href='/'>首页</a>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a
+                        href='/?m=vod-type-id-1.html' th:text="${typeName}"></a></span>
+            </p>
+            <p class="chg sbtn" _s_nav="sj-gjsy">收起<i class="sjbgs"></i><i class="sjbgx"></i></p>
+        </div>
+        <div class="clearfix">
+            <div id="sj-gjsy" class="sy clearfix" _s_nav="sj-gjsy">
+                <dl class="clearfix" th:each="movieType : ${movieTypes}">
+                    <dt><span th:text="${movieType.type} + ':&nbsp;'"></span></dt>
+                    <dd th:each="name, typeStat : ${movieType.names}">
+                        <a th:if="${movieType.type eq '分类' && name eq type2}" th:href="'/more?type='+${type}+'&type2=' +${name}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${page_index}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" class="on" th:text="${name}"></a>
+                        <a th:if="${movieType.type eq '分类' && name ne type2}" th:href="'/more?type='+${type}+'&type2=' +${name}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${page_index}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" th:text="${name}"></a>
+                        <a th:if="${movieType.type eq '地区' && name eq region}" th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${name}+ '&release_date='+${release_date}+'&page_index='+${page_index}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" class="on" th:text="${name}"></a>
+                        <a th:if="${movieType.type eq '地区' && name ne region}" th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${name}+ '&release_date='+${release_date}+'&page_index='+${page_index}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" th:text="${name}"></a>
+                        <a th:if="${movieType.type eq '年代' && name eq release_date}" th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${name}+'&page_index='+${page_index}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" class="on" th:text="${name}"></a>
+                        <a th:if="${movieType.type eq '年代' && name ne release_date}" th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${name}+'&page_index='+${page_index}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" th:text="${name}"></a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="sy-jg mb">
+        <p class="jg">共<span class="count" th:text="${count}"></span>个筛选结果</p>
+        <p class="px">
+            <a class="on time"
+               th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${page_index}+'&sort_type=0&key_word='+${key_word}" th:if="${sort_type eq 0 || sort_type eq 1}"><em></em>最新</a>
+            <a class="time"
+               th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${page_index}+'&sort_type=0&key_word='+${key_word}" th:if="${sort_type ne 0 && sort_type ne 1}"><em></em>最新</a>
+            <a class="on rq" th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${page_index}+'&sort_type=2&key_word='+${key_word}" th:if="${sort_type eq 2}"><em></em>人气</a>
+            <a class="rq" th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${page_index}+'&sort_type=2&key_word='+${key_word}" th:if="${sort_type ne 2}"><em></em>人气</a>
+        </p>
+    </div>
+    <div class="index-area clearfix">
+        <ul>
+
+            <div class="qcontainer " th:each="movie : ${movies}">
+                <div class="film">
+                    <div class="face front">
+                        <li class="p1 MPli"><a class="link-hover" target="_blank"
+                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0&type_index=0'" th:title="${movie.name}"><img
+                                class="lazy" th:data-original="${movie.src}"
+                                src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                            <span class="index5njcom title5nj">
+						<i th:text="${movie.name}"></i>
+					</span>
+                            <p class="other">
+                                <i th:text="${movie.score} + '分 '"></i>
+                            </p>
+                        </a>
+                        </li>
+                    </div>
+                    <div class="face back">
+                        <li class="p1 MPli"><a class="link-hover" target="_blank"
+                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0&type_index=0'" th:title="${movie.name}"><img
+                                class="lazy" th:data-original="${movie.src}"
+                                src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                            <span class="video-bg"></span><span class="lzbz">
+								<p class="name" th:text="${movie.name}">
+								</p>
+								<p class="actor" >
+                                    <span th:text="${actor} + ' '" th:each="actor : ${movie.actors}"></span>
+								</p>
+								<p class="actor" th:text="${movie.type2}">
+								</p>
+								<p class="actor" th:text="${movie.release_date} + '/' + ${movie.region}">
+								</p>
+								</span>
+                            <p class="other">
+                                <i></i>
+                            </p>
+                        </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+        </ul>
+    </div>
+    <div class="page mb clearfix">
+        <em th:if="${page_index le 1}">首页</em>
+        <a th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${1}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" class="pagelink_a" th:if="${page_index gt 1}">首页</a>
+        <em th:if="${page_index le 1}">上一页</em>
+        <a th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${page_index - 1}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" class="pagelink_a" th:if="${page_index gt 1}">上一页</a>
+        <span th:each="page : ${pages}">
+        <span class="pagenow ee" th:if="${page eq page_index}" th:text="${page}"></span>
+        <a target="_self" class="pagelink_b ee" th:href="'/more?type='+${type}+'&type'+${sort_type}+'=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${page}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" th:if="${page ne page_index}" th:text="${page}"></a>
+        </span>
+        <span class="pagelink_b" th:text="${page_index} + '/' + ${total_page}"></span>
+        <em th:if="${page_index ge total_page}">下一页</em>
+        <a th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${page_index + 1}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" class="pagelink_a" th:if="${page_index lt total_page}">下一页</a>
+        <em th:if="${page_index eq total_page}">尾页</em>
+        <a th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${total_page}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" class="pagelink_a" th:if="${page_index ne total_page}">尾页</a>
+    </div>
+</div>
+</div>
+</div>
+<script src="/js/cnzz4.js"></script>
+<script type='text/javascript' charset='utf-8' src='https://p.zxhrq.cn/vtdd/swh960sav773huj.js'></script>
+<div class="navigation_top"></div>
+<th:block th:insert="../templates/foot"></th:block>
+</body>
+</html>

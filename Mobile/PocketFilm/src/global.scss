@@ -1,0 +1,97 @@
+// http://ionicframework.com/docs/theming/
+@import "~@ionic/angular/css/core.css";
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+body {
+  font: normal normal 12px/2em "宋体", Verdana, Geneva, sans-serif;
+  color: #444;
+}
+
+ion-toolbar {
+  color: "danger";
+}
+
+ion-title {
+  text-align: center;
+}
+
+.movie-detail {
+  font-size: 9px;
+}
+
+video {
+  background-color: #000; //因为有两个白边，所以更改此背景
+  width: 100%;
+  height: 100%;
+}
+
+.movie_img {
+  width: 152px;
+  height: 102px;
+}
+
+.sc-ion-segment-md-h {
+  --color-checked: red;
+}
+
+.c01 {
+  color: #23a7e9;
+  width: 400px;
+}
+
+.c02 {
+  color: #444;
+}
+
+.source_name {
+  font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+  font-weight: normal;
+  font-size: 15px;
+  color: #23a7e9;
+  padding: 0px 0px 4px 0px;
+}
+
+.source_type {
+  float: left;
+  display: inline;
+  border: 1px solid #e0e0e0;
+  border-radius: 1px 1px 1px 1px;
+  margin: 0 4px 4px 0;
+  overflow: hidden;
+  text-align: center;
+  background: #f1f1f1;
+  text-decoration: none;
+  padding: 0px 4px;
+}
+
+.source_type_active {
+  color: #fff;
+  background-color: red;
+}
+
+.more_movie_type_name {
+  display: inline-block;
+  color: #444;
+  text-decoration: none;
+  line-height: 22px;
+  height: 22px;
+  text-align: center;
+  padding: 0 6px;
+}
+
+.more_movie_type_name_selected {
+  background-color: red;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}

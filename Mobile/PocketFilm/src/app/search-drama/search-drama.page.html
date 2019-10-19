@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-toolbar color="danger">
+      <ion-back-button defaultHref="/" slot="start"></ion-back-button>
+      <ion-title style="text-align: center;">戏曲搜索</ion-title>
+    </ion-toolbar>
+  
+  </ion-header>
+  
+  <ion-content>
+  
+    <!-- 搜索 -->
+    <div>
+      <table style="width: 100%;">
+        <tr>
+          <td>
+            <ion-searchbar (ionInput)="searchTvs($event)" placeholder="请输入戏曲名称"></ion-searchbar>
+          </td>
+          <td>
+            <ion-button color="danger" (click)="doSearch()">搜索</ion-button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  
+    <!-- 搜索时显示的结果 -->
+    <ion-list *ngIf="!search">
+      <ion-item *ngFor="let tv of tvList" (click)="goTvDetail(tv._id)">
+          <ion-thumbnail slot="start">
+              <ion-img [src]="tv.src" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"></ion-img>
+            </ion-thumbnail>
+        <p>{{tv.name}}</p>
+      </ion-item>
+    </ion-list>
+    <!-- 搜索后显示的结果 -->
+      <ion-grid *ngIf="search">
+        <ion-row *ngFor="let tv of tvList">
+          <ion-col *ngFor="let tv2 of tv" (click)="goTvDetail((tv2._id))">
+                <div>
+                    <img src="{{tv2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"class="movie_img">
+                  </div>
+                  <p class="movie-detail" style="margin: 0px;">{{tv2.name}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  
+      <!-- 上拉加载更多 -->
+    <ion-infinite-scroll (ionInfinite)="doLoadMore($event)">
+        <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="正在加载">
+        </ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+      <!-- 上拉加载更多 -->
+  
+  </ion-content>

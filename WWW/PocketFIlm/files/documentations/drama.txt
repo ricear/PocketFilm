@@ -1,0 +1,466 @@
+../jars/drama-0.0.1-SNAPSHOT.jar中没有主清单属性
+../jars/drama-0.0.1-SNAPSHOT.jar中没有主清单属性
+../jars/drama-0.0.1-SNAPSHOT.jar中没有主清单属性
+../jars/drama-0.0.1-SNAPSHOT.jar中没有主清单属性
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 11:58:06.627  INFO 8452 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 8452 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 11:58:06.634  INFO 8452 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 11:58:11.257  INFO 8452 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 11:58:11.772  INFO 8452 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 11:58:11.772  INFO 8452 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 11:58:12.314  INFO 8452 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 11:58:12.314  INFO 8452 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5498 ms
+2019-09-28 11:58:13.552  INFO 8452 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 11:58:14.960  INFO 8452 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-09-28 11:58:14.985  INFO 8452 --- [           main] com.grayson.drama.DramaApplication       : Started DramaApplication in 21.945 seconds (JVM running for 23.978)
+2019-09-28 11:58:54.785  INFO 8452 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-28 11:58:54.786  INFO 8452 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-28 11:58:54.800  INFO 8452 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 12:11:59.433  INFO 8892 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 8892 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 12:11:59.439  INFO 8892 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 12:12:06.572  INFO 8892 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 12:12:06.804  INFO 8892 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 12:12:06.805  INFO 8892 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 12:12:07.695  INFO 8892 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 12:12:07.697  INFO 8892 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8074 ms
+2019-09-28 12:12:09.123  INFO 8892 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 12:12:11.414  INFO 8892 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-09-28 12:12:11.466  INFO 8892 --- [           main] com.grayson.drama.DramaApplication       : Started DramaApplication in 19.602 seconds (JVM running for 21.893)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:07:49.635  INFO 10262 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 10262 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:07:49.648  INFO 10262 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 13:07:55.160  INFO 10262 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 13:07:55.340  INFO 10262 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:07:55.380  INFO 10262 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:07:55.926  INFO 10262 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:07:55.927  INFO 10262 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6071 ms
+2019-09-28 13:07:57.341  INFO 10262 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:07:59.265  INFO 10262 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-09-28 13:07:59.273  INFO 10262 --- [           main] com.grayson.drama.DramaApplication       : Started DramaApplication in 23.443 seconds (JVM running for 25.376)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:10:47.638  INFO 10405 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 10405 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:10:47.643  INFO 10405 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 13:10:52.728  INFO 10405 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 13:10:52.844  INFO 10405 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:10:52.846  INFO 10405 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:10:53.402  INFO 10405 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:10:53.403  INFO 10405 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5536 ms
+2019-09-28 13:10:54.850  INFO 10405 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:10:56.705  INFO 10405 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-09-28 13:10:56.727  INFO 10405 --- [           main] com.grayson.drama.DramaApplication       : Started DramaApplication in 21.878 seconds (JVM running for 24.016)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:13:36.688  INFO 10490 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 10490 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:13:36.702  INFO 10490 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 13:13:42.783  INFO 10490 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 13:13:43.022  INFO 10490 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:13:43.024  INFO 10490 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:13:43.705  INFO 10490 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:13:43.705  INFO 10490 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6650 ms
+2019-09-28 13:13:45.130  INFO 10490 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:13:46.742 ERROR 10490 --- [           main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8082]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at com.grayson.drama.DramaApplication.main(DramaApplication.java:10) [classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) [drama-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) [drama-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51) [drama-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:52) [drama-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_181]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_181]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_181]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_181]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	... 22 common frames omitted
+
+2019-09-28 13:13:46.812  INFO 10490 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-09-28 13:13:46.833  INFO 10490 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-28 13:13:46.838 ERROR 10490 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8082 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8082, or configure this application to listen on another port.
+
+2019-09-28 13:13:46.892  INFO 10490 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:14:24.449  INFO 10546 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 10546 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:14:24.481  INFO 10546 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 13:14:32.843  INFO 10546 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 13:14:33.071  INFO 10546 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:14:33.072  INFO 10546 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:14:33.737  INFO 10546 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:14:33.737  INFO 10546 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8885 ms
+2019-09-28 13:14:35.283  INFO 10546 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:14:37.116  INFO 10546 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-09-28 13:14:37.123  INFO 10546 --- [           main] com.grayson.drama.DramaApplication       : Started DramaApplication in 16.083 seconds (JVM running for 18.177)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:26:28.652  INFO 10871 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 10871 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:26:28.659  INFO 10871 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 13:26:32.868  INFO 10871 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 13:26:33.115  INFO 10871 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:26:33.115  INFO 10871 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:26:33.557  INFO 10871 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:26:33.557  INFO 10871 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4743 ms
+2019-09-28 13:26:34.564  INFO 10871 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:26:35.982  INFO 10871 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-09-28 13:26:35.997  INFO 10871 --- [           main] com.grayson.drama.DramaApplication       : Started DramaApplication in 20.011 seconds (JVM running for 21.962)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:27:57.647  INFO 10935 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 10935 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:27:57.653  INFO 10935 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 13:28:03.555  INFO 10935 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 13:28:03.778  INFO 10935 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:28:03.778  INFO 10935 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:28:04.264  INFO 10935 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:28:04.265  INFO 10935 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6470 ms
+2019-09-28 13:28:05.531  INFO 10935 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:28:07.546  INFO 10935 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-09-28 13:28:07.559  INFO 10935 --- [           main] com.grayson.drama.DramaApplication       : Started DramaApplication in 22.441 seconds (JVM running for 24.186)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:29:22.649  INFO 10999 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 10999 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:29:22.653  INFO 10999 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 13:29:28.045  INFO 10999 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 13:29:28.243  INFO 10999 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:29:28.244  INFO 10999 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:29:28.820  INFO 10999 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:29:28.820  INFO 10999 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6077 ms
+2019-09-28 13:29:30.175  INFO 10999 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:29:32.320  INFO 10999 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-09-28 13:29:32.348  INFO 10999 --- [           main] com.grayson.drama.DramaApplication       : Started DramaApplication in 17.949 seconds (JVM running for 20.872)
+2019-09-28 13:29:56.760  INFO 10999 --- [nio-8082-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1569644963; CNZZDATA1273187859=247407177-1569641376-http%253A%252F%252Ftv.grayson.top%252F%7C1569646776; Hm_lpvt_b2743ab7419fe53851004c1f7dd74de6=1569647092] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-09-28 13:29:56.773  INFO 10999 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-28 13:29:56.773  INFO 10999 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-28 13:29:56.785  INFO 10999 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-09-28 13:29:56.842 ERROR 10999 --- [nio-8082-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: com/grayson/common/config/Configs] with root cause
+
+java.lang.ClassNotFoundException: com.grayson.common.config.Configs
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_181]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_181]
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[drama-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_181]
+	at com.grayson.drama.controller.DramaController.getMovie(DramaController.java:29) ~[classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:34:04.206  INFO 11160 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 11160 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:34:04.209  INFO 11160 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 13:34:05.964  INFO 11160 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 13:34:06.032  INFO 11160 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:34:06.033  INFO 11160 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:34:06.229  INFO 11160 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:34:06.229  INFO 11160 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1958 ms
+2019-09-28 13:34:06.572  INFO 11160 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:34:07.176  INFO 11160 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-09-28 13:34:07.181  INFO 11160 --- [           main] com.grayson.drama.DramaApplication       : Started DramaApplication in 12.961 seconds (JVM running for 15.049)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:36:45.653  INFO 11257 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 11257 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:36:45.664  INFO 11257 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 13:36:50.720  INFO 11257 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 13:36:50.889  INFO 11257 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:36:50.890  INFO 11257 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:36:51.443  INFO 11257 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:36:51.443  INFO 11257 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5566 ms
+2019-09-28 13:36:52.981  INFO 11257 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:36:55.079 ERROR 11257 --- [           main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8082]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at com.grayson.drama.DramaApplication.main(DramaApplication.java:10) [classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) [drama-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) [drama-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51) [drama-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:52) [drama-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_181]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_181]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_181]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_181]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	... 22 common frames omitted
+
+2019-09-28 13:36:55.130  INFO 11257 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-09-28 13:36:55.147  INFO 11257 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-28 13:36:55.150 ERROR 11257 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8082 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8082, or configure this application to listen on another port.
+
+2019-09-28 13:36:55.156  INFO 11257 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:37:31.913  INFO 11317 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 11317 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:37:31.922  INFO 11317 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 13:37:39.157  INFO 11317 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 13:37:39.257  INFO 11317 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:37:39.258  INFO 11317 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:37:39.838  INFO 11317 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:37:39.838  INFO 11317 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7597 ms
+2019-09-28 13:37:41.267  INFO 11317 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:37:43.134  INFO 11317 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-09-28 13:37:43.142  INFO 11317 --- [           main] com.grayson.drama.DramaApplication       : Started DramaApplication in 14.449 seconds (JVM running for 16.616)
+2019-09-28 13:58:28.310  INFO 11317 --- [       Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 16:49:19.773  INFO 3423 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 3423 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 16:49:19.782  INFO 3423 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 16:49:24.394  INFO 3423 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 16:49:24.541  INFO 3423 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 16:49:24.542  INFO 3423 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 16:49:25.047  INFO 3423 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 16:49:25.047  INFO 3423 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5106 ms
+2019-09-28 16:49:26.238  INFO 3423 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 16:49:27.880  INFO 3423 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-09-28 16:49:27.886  INFO 3423 --- [           main] com.grayson.drama.DramaApplication       : Started DramaApplication in 20.448 seconds (JVM running for 22.24)
+2019-09-28 17:12:28.834  INFO 3423 --- [nio-8082-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1569644963; CNZZDATA1273187859=247407177-1569641376-http%253A%252F%252Ftv.grayson.top%252F%7C1569646776] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-09-28 17:12:28.857  INFO 3423 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-28 17:12:28.857  INFO 3423 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-28 17:12:28.875  INFO 3423 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 17:21:06.935  INFO 4556 --- [           main] com.grayson.drama.DramaApplication       : Starting DramaApplication v0.0.1-SNAPSHOT on weipeng with PID 4556 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 17:21:06.955  INFO 4556 --- [           main] com.grayson.drama.DramaApplication       : No active profile set, falling back to default profiles: default
+2019-09-28 17:21:17.542  INFO 4556 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-09-28 17:21:17.793  INFO 4556 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 17:21:17.793  INFO 4556 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 17:21:18.483  INFO 4556 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 17:21:18.483  INFO 4556 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11265 ms
+2019-09-28 17:21:20.279  INFO 4556 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 17:21:28.286  INFO 4556 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-09-28 17:21:28.296  INFO 4556 --- [           main] com.grayson.drama.DramaApplication       : Started DramaApplication in 38.254 seconds (JVM running for 43.32)
+2019-09-28 17:21:41.151  INFO 4556 --- [nio-8082-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1569644963,1569661962; Hm_lpvt_b2743ab7419fe53851004c1f7dd74de6=1569662074] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-09-28 17:21:41.164  INFO 4556 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-28 17:21:41.164  INFO 4556 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-28 17:21:41.183  INFO 4556 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms

@@ -1,0 +1,23 @@
+{
+  "name": "PocketFilm",
+  "version": "0.0.1",
+  "dependencies": {
+    "atob": "^2.1.2",
+    "body-parser": "^1.18.3",
+    "btoa": "^1.2.1",
+    "cookies": "^0.7.3",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "jquery": "^3.4.1",
+    "js-video-url-parser": "^0.3.3",
+    "jsdom": "^14.0.0",
+    "md5": "^2.2.1",
+    "mongoose": "^5.4.18",
+    "node-tesseract": "^0.2.7",
+    "pm2": "^3.5.1",
+    "querystring": "^0.2.0",
+    "request": "^2.88.0",
+    "require": "^2.4.20",
+    "swig": "^1.4.2"
+  }
+}

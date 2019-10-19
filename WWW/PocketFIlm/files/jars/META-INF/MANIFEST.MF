@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Movie
+Implementation-Version: 0.0.1-SNAPSHOT
+Start-Class: com.grayson.movie.MovieApplication
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
+Build-Jdk-Spec: 1.8
+Spring-Boot-Version: 2.1.8.RELEASE
+Created-By: Maven Archiver 3.4.0
+Main-Class: org.springframework.boot.loader.JarLauncher
+

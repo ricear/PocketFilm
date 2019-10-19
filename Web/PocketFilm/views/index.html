@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>视频解析网，微博、秒拍、汤不热视频解析下载网站</title>
+    <meta name="keywords"
+          content="微博秒拍视频下载，微博视频解析下载,秒拍视频解析下载,汤不热视频解析下载,youtube视频解析下载,酷我MV在线下载,facebook视频解析下载,音悦台VIP在线解析下载,在线网页视频地址解析">
+    <meta name="description"
+          content="视频解析网是专业的视频下载地址解析网站，提供微博视频、秒拍视频、汤不热视频(tumblr)、哔哩哔哩(B站)、facebook视频、快手等视频网站的下载地址解析服务，用户可以直接输入视频网址，得到视频文件的真实下载地址。">
+    <meta name="author" content="kalvin">
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta name="referrer" content="never"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="applicable-device" content="pc,mobile"/>
+    <meta property="og:title" content="视频解析网，微博、秒拍、汤不热视频解析下载网站"/>
+    <meta property="og:image" content="//www.parsevideo.comhttps://www.parsevideo.com/static/img/capture_index.png"/>
+    <link href="https://lib.baomitu.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://lib.baomitu.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://lib.baomitu.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://lib.baomitu.com/fancybox/2.1.6/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="https://lib.baomitu.com/ekko-lightbox/5.1.1/ekko-lightbox.min.css" rel="stylesheet">
+    <link href="https://www.parsevideo.com/static/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.parsevideo.com/static/img/logo.ico">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-8932852745399256",
+            enable_page_level_ads: true
+        });
+    </script>
+    <script>(function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-98994757-2', 'auto');
+    ga('send', 'pageview');</script>
+</head>
+<body>
+<!--头部-->
+<header class="site-header">
+    <div class="header-main container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>parse&nbsp;<a href="//www.parsevideo.com/"><img src="https://www.parsevideo.com/static/img/logo.png"
+                                                                    alt="视频解析网" class=""></a>&nbsp;video</h2>
+                <form action="https://www.parsevideo.com/api.php" method="post" onsubmit="return false;">
+                    <div class="form-group form-group-lg input-group input-group-lg">
+                        <input type="text" id="url_input" name="url" class="form-control" autocomplete="off"
+                               placeholder="请输入视频地址，如：http://weibo.com/tv/v/Ez325gw4G">
+                        <span class="input-group-btn" id="url_submit">
+                <button class="btn btn-default btn-warning" type="button" id="url_submit_button" title="视频解析">
+                  <span class="glyphicon glyphicon-arrow-right" id="url_submit_icon" aria-hidden="true"></span>
+                </button>
+              </span>
+                    </div>
+                </form>
+            </div>
+            <div class="lead col-xs-12" id="adtop">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-8932852745399256"
+                     data-ad-slot="9649402120"
+                     data-ad-format="auto"
+                     data-full-width-responsive="false"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+    <!--分享插件 -->
+    <div class="addthis_inline_share_toolbox"></div>
+    <!--分享插件 -->
+</header>
+<!--头部-->
+<hr/>
+<div id="captcha" class="container" style="margin-bottom: 15px;display: none">
+    <h4 class="modal-title" id="myModalLabel">请输入验证码</h4>
+    <form class="form-inline" id="captcha_form">
+        <div class="form-group">
+            <img src="" alt="点击刷新" id="captcha_img">
+        </div>
+        <div class="form-group">
+            <input type="text" name="captcha_code" class="form-control input-lg" id="captcha_code" placeholder="请输入验证码">
+        </div>
+        <button type="button" class="btn btn-primary btn-lg" id="captcha_sbumit">提交验证</button>
+    </form>
+</div>
+<!--内容部分-->
+<div class="site-middle container">
+    <!--窗口提示-->
+    <div id="message">
+        <div class="alert alert-warning alert-dismissible fade in hidden-xs" role="alert">
+            为了可以更方便的使用我站，可以下载本站专用浏览器：<a href="//www.parsevideo.com/parsevideo.rar">https://www.parsevideo.com/parsevideo.rar</a>，或者将此链接拉到收藏夹<a
+                onclick="alert('请将此链接拖拽到书签栏'); return false;"
+                href="javascript:(function(){var url=window.location.href;window.location.href='https://www.parsevideo.com/#'+url})();">视频解析</a>
+        </div>
+    </div>
+    <!--
+    <div id="note">
+    	<div class="alert alert-info" role="alert">
+    		使用说明：在上面的文本框中输入支持网站的视频播放页网址，然后点击后面的箭头按钮解析视频真实地址，如果服务器成功解析视频真实下载地址，会在下面展示出所解析的音视频文件列表，您可以根据自己的需要选择复制、播放或下载视频解析的文件，如果点击下载按钮是打开视频窗口，请在下载图标上使用鼠标右键点击，然后选择“另存为…”，如果使用中遇到问题或者解析失效，欢迎加入网站底部的QQ群交流。
+    	</div>
+    </div>
+    -->
+    <!--窗口提示-->
+    <!--视频信息部分-->
+    <div id="video" style="display:none;"></div>
+    <div class="panel" id="admid"><!--<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8932852745399256"
+     data-ad-slot="6556334924"
+     data-ad-format="auto"
+     data-full-width-responsive="false"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>--></div>
+    <!--视频信息部分-->
+    <!--列表部分-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="javascript:void(0);">支持列表:</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#video_tab_ec5321a9b3aedf1e7010608999263a68" data-toggle="tab">综合视频</a>
+                    </li>
+                    <li class="">
+                        <a href="#video_tab_6bda36f32fc6289ae9071a914f7ab4a4" data-toggle="tab">短视频</a>
+                    </li>
+                    <li class="">
+                        <a href="#video_tab_023936b6244d32e1a34bb70142a3ef8c" data-toggle="tab">音乐舞蹈</a>
+                    </li>
+                    <li class="">
+                        <a href="#video_tab_a585eaa59dbafb4a93ba331b2293cb2b" data-toggle="tab">国外视频</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="  tab-content">
+        <div class=" tab-pane fade in active" id="video_tab_ec5321a9b3aedf1e7010608999263a68">
+            <table class="table table-hover table-condensed table-striped table-bordered">
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/youku/">优酷视频</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#https://v.youku.com/v_show/id_XMzc5OTM0OTAyMA==.html">https://v.youku.com/v_show/id_XMzc5OTM0OTAyMA==.html</a>
+                            <a class="list-group-item get-link"
+                               href="#http://m.youku.com/video/id_XMzc5OTM0OTAyMA==.html">http://m.youku.com/video/id_XMzc5OTM0OTAyMA==.html</a>
+                            <a class="list-group-item get-link" href="#http://video.tudou.com/v/XMjc0NDQ2NzAwNA==.html">http://video.tudou.com/v/XMjc0NDQ2NzAwNA==.html</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/sohu/">搜狐视频</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#https://tv.sohu.com/v/MjAxNTExMDYvbjQyNTUxMDUzOS5zaHRtbA==.html">https://tv.sohu.com/v/MjAxNTExMDYvbjQyNTUxMDUzOS5zaHRtbA==.html</a>
+                            <a class="list-group-item get-link"
+                               href="#https://m.tv.sohu.com/v/MjAxNTExMDYvbjQyNTUxMDUzOS5zaHRtbA==.html">https://m.tv.sohu.com/v/MjAxNTExMDYvbjQyNTUxMDUzOS5zaHRtbA==.html</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/vqq/">腾讯视频</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#https://v.qq.com/x/cover/nrf5uaq4wywqlst/k0027d0o7zx.html">https://v.qq.com/x/cover/nrf5uaq4wywqlst/k0027d0o7zx.html</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/mgtv/">芒果TV</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://www.mgtv.com/b/309452/3882556.html">http://www.mgtv.com/b/309452/3882556.html</a>
+                            <a class="list-group-item get-link" href="#http://m.mgtv.com/#/b/309452/3882556?ref=">http://m.mgtv.com/#/b/309452/3882556?ref=</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/bilibili/">哔哩哔哩</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://www.bilibili.com/video/av9069110/">http://www.bilibili.com/video/av9069110/</a>
+                            <a class="list-group-item get-link"
+                               href="#http://www.bilibili.com/mobile/video/av9069110.html">http://www.bilibili.com/mobile/video/av9069110.html</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/pearvideo/">梨视频</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://www.pearvideo.com/video_1050733">http://www.pearvideo.com/video_1050733</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/krcom/">酷燃视频</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#https://krcom.cn/6733257358/episodes/2358773:4300853885269954">https://krcom.cn/6733257358/episodes/2358773:4300853885269954</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/toutiao/">头条视频</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#http://www.toutiao.com/group/6400624752721740033/">http://www.toutiao.com/group/6400624752721740033/</a>
+                            <a class="list-group-item get-link" href="#http://www.toutiao.com/a6400624752721740033/">http://www.toutiao.com/a6400624752721740033/</a>
+                            <a class="list-group-item get-link" href="#http://m.365yg.com/i6400628081714790913/">http://m.365yg.com/i6400628081714790913/</a>
+                            <a class="list-group-item get-link" href="#http://www.365yg.com/group/6400624752721740033/">http://www.365yg.com/group/6400624752721740033/</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class=" tab-pane fade " id="video_tab_6bda36f32fc6289ae9071a914f7ab4a4">
+            <table class="table table-hover table-condensed table-striped table-bordered">
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/douyin/">抖音</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://v.douyin.com/dCg8Ct/">http://v.douyin.com/dCg8Ct/</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/weishi/">微视</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#https://h5.weishi.qq.com/weishi/feed/6Yb4LO4Df1G4pduoG/wsfeed">https://h5.weishi.qq.com/weishi/feed/6Yb4LO4Df1G4pduoG/wsfeed</a>
+                            <a class="list-group-item get-link"
+                               href="#https://h5.qzone.qq.com/weishi/feed/6Yb4LO4Df1G4pduoG/wsfeed">https://h5.qzone.qq.com/weishi/feed/6Yb4LO4Df1G4pduoG/wsfeed</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/kuaishou/">快手视频</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#https://www.kuaishou.com/photo/83855155/1570965204">https://www.kuaishou.com/photo/83855155/1570965204</a>
+                            <a class="list-group-item get-link"
+                               href="#https://www.kuaishou.com/i/photo/lwx?userId=83855155&photoId=1570965204">https://www.kuaishou.com/i/photo/lwx?userId=83855155&photoId=1570965204</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/weibo/">新浪微博</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://weibo.com/tv/v/EzT2dfJ8h">http://weibo.com/tv/v/EzT2dfJ8h</a>
+                            <a class="list-group-item get-link" href="#http://weibo.com/1949142521/EzT2dfJ8h">http://weibo.com/1949142521/EzT2dfJ8h</a>
+                            <a class="list-group-item get-link"
+                               href="#http://weibo.com/tv/v/b45f5a5d33b49ccb667eb3afbc4fa16c?fid=1034:b45f5a5d33b49ccb667eb3afbc4fa16c">http://weibo.com/tv/v/b45f5a5d33b49ccb667eb3afbc4fa16c?fid=1034:b45f5a5d33b49ccb667eb3afbc4fa16c</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/miaopai/">秒拍视频</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#http://www.miaopai.com/show/26DzLcDT0bM-orvSuNLxiw__.htm">http://www.miaopai.com/show/26DzLcDT0bM-orvSuNLxiw__.htm</a>
+                            <a class="list-group-item get-link"
+                               href="#http://m.miaopai.com/show/channel/26DzLcDT0bM-orvSuNLxiw__">http://m.miaopai.com/show/channel/26DzLcDT0bM-orvSuNLxiw__</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/meipai/">美拍</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://www.meipai.com/media/688342435">http://www.meipai.com/media/688342435</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/xiaokaxiu/">小咖秀</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#https://v.xiaokaxiu.com/v/fhX23JOcSbVEJOQ9LFKtOP2WBkeP1AA-.html">https://v.xiaokaxiu.com/v/fhX23JOcSbVEJOQ9LFKtOP2WBkeP1AA-.html</a>
+                            <a class="list-group-item get-link"
+                               href="#https://m.xiaokaxiu.com/m/fhX23JOcSbVEJOQ9LFKtOP2WBkeP1AA-.html">https://m.xiaokaxiu.com/m/fhX23JOcSbVEJOQ9LFKtOP2WBkeP1AA-.html</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/vlook/">微录客</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://www.vlook.cn/show/qs/YklkPTI3OTQxNzM">http://www.vlook.cn/show/qs/YklkPTI3OTQxNzM</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/aipai/">爱拍</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#http://www.aipai.com/c37/OjolJyQlJCxqJWQuKw.html">http://www.aipai.com/c37/OjolJyQlJCxqJWQuKw.html</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/v1/">第一视频</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://www.v1.cn/video/15544431.shtml">http://www.v1.cn/video/15544431.shtml</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/aipai/">微拍</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#http://www.weipai.cn/video/597d3ade49d5b0e4f472c14e?type=Wechat">http://www.weipai.cn/video/597d3ade49d5b0e4f472c14e?type=Wechat</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/v2mm/">恋恋影视</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#http://www.2ya.tv/m286">http://www.2ya.tv/m286</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class=" tab-pane fade " id="video_tab_023936b6244d32e1a34bb70142a3ef8c">
+            <table class="table table-hover table-condensed table-striped table-bordered">
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/yinyuetai/">音悦Tai</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://v.yinyuetai.com/video/2769045">http://v.yinyuetai.com/video/2769045</a>
+                            <a class="list-group-item get-link" href="#http://v.yinyuetai.com/video/h5/2769045">http://v.yinyuetai.com/video/h5/2769045</a>
+                            <a class="list-group-item get-link" href="#http://m2.yinyuetai.com/video.html?id=2769045">http://m2.yinyuetai.com/video.html?id=2769045</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/kugou/">酷狗MV</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://www.kugou.com/mvweb/html/mv_605623.html">http://www.kugou.com/mvweb/html/mv_605623.html</a>
+                            <a class="list-group-item get-link"
+                               href="#http://m.kugou.com/mv/?hash=386cd39c500d0452ebf5357dc6ccad79">http://m.kugou.com/mv/?hash=386cd39c500d0452ebf5357dc6ccad79</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/kuwo/">酷我MV</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://www.kuwo.cn/mv/3430797/">http://www.kuwo.cn/mv/3430797/</a>
+                            <a class="list-group-item get-link" href="#http://m.kuwo.cn/mv/3430797/">http://m.kuwo.cn/mv/3430797/</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/tangdou/">糖豆广场舞</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://www.tangdou.com/v90/dAOkNEMjwD1z3A2.html">http://www.tangdou.com/v90/dAOkNEMjwD1z3A2.html</a>
+                            <a class="list-group-item get-link" href="#http://m.tangdou.com/v90/dAOkNEMjwD1z3A2.html">http://m.tangdou.com/v90/dAOkNEMjwD1z3A2.html</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/boosj/">播视网</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://www.boosj.com/6995113.html">http://www.boosj.com/6995113.html</a>
+                            <a class="list-group-item get-link" href="#http://m.boosj.com/6995113.html">http://m.boosj.com/6995113.html</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/appecho/">Echo回声</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://www.app-echo.com/#/sound/51799">http://www.app-echo.com/#/sound/51799</a>
+                            <a class="list-group-item get-link" href="#http://www.app-echo.com/sound/51799">http://www.app-echo.com/sound/51799</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/djkk/">DJKK嗨嗨网</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://www.djkk.com/dance/play/347527.html">http://www.djkk.com/dance/play/347527.html</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/beva/">贝瓦儿歌</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#http://g.beva.com/kan-erge/xiao-tu-zi-guai-guai.html#371">http://g.beva.com/kan-erge/xiao-tu-zi-guai-guai.html#371</a>
+                            <a class="list-group-item get-link"
+                               href="#http://m.beva.com/erge/c10106/xiao-tu-zi-guai-guai.html">http://m.beva.com/erge/c10106/xiao-tu-zi-guai-guai.html</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class=" tab-pane fade " id="video_tab_a585eaa59dbafb4a93ba331b2293cb2b">
+            <table class="table table-hover table-condensed table-striped table-bordered">
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/tumblr/">Tumblr</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://yakul-fox.tumblr.com/">http://yakul-fox.tumblr.com/</a>
+                            <a class="list-group-item get-link" href="#http://yakul-fox.tumblr.com/page/1">http://yakul-fox.tumblr.com/page/1</a>
+                            <a class="list-group-item get-link" href="#http://yakul-fox.tumblr.com/post/158468244987/">http://yakul-fox.tumblr.com/post/158468244987/</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/twitter/">Twitter</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#https://twitter.com/CRepp7News/status/865648287214219264">https://twitter.com/CRepp7News/status/865648287214219264</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/fc2/">FC2</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#http://video.fc2.com/content/20170426yQBCHzGX/">http://video.fc2.com/content/20170426yQBCHzGX/</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/facebook/">Facebook</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link"
+                               href="#https://www.facebook.com/similer.chan/posts/10211501748279946">https://www.facebook.com/similer.chan/posts/10211501748279946</a>
+                            <a class="list-group-item get-link"
+                               href="#https://m.facebook.com/similer.chan/posts/10211501748279946">https://m.facebook.com/similer.chan/posts/10211501748279946</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="text-center">
+                        <a class="left-title" href="/instagram/">Instagram</a>
+                    </th>
+                    <td class="bs-callout bs-callout-info">
+                        <div class="list-unstyled list-group up-list">
+                            <a class="list-group-item get-link" href="#https://www.instagram.com/p/BRg6eqMg7rb/">https://www.instagram.com/p/BRg6eqMg7rb/</a>
+                            <a class="list-group-item get-link" href="#https://www.instagr.am/p/BRg6eqMg7rb/">https://www.instagr.am/p/BRg6eqMg7rb/</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--列表部分-->
+    <div class="panel" id="adbot"></div>
+    <!--列表部分-->
+</div>
+<!--内容部分-->
+<!--底部-->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="footer-about col-md-5 col-sm-12">
+                <h4>版权声明</h4>
+                <p>
+                    Parsevideo.com（下简称：视频解析网）为广大用户提供视频地址在线解析服务，用于用户备份及收藏个人喜爱的视频等。视频解析网不储存、发布相关视频，视频版权归属其合法持有人所有，本站不对使用者的行为负担任何法律责任。如果有因为本站而导致您的权益受到损害，请与我们联系，我们将理性对待，协助你解决相关问题。联系邮箱：dowell_tech#qq.com。</p>
+            </div>
+            <div class="footer-qqun col-md-3 col-sm-12">
+                <h4>加入QQ群</h4>
+                <ul class="list-unstyled">
+                    <li class="list-qqun">
+                        <img border="0" src="https://www.parsevideo.com/static/img/qqgroup.png">
+                        群号: <a target="_blank"
+                               href="//shang.qq.com/wpa/qunwpa?idkey=dde377a9f5f712e9d628f760b87273056f9df7adca29be5e8410ae51bdba06d6"
+                               style="color:#fff">
+                        203972005
+                    </a>
+
+                    </li>
+                </ul>
+                <h4>加入Telegram</h4>
+                <ul class="list-unstyled">
+                    <li class="list-qqun">
+                        <img border="0" src="https://www.parsevideo.com/static/img/telegram.png">
+                        群号: <a target="_blank" href="https://t.me/joinchat/Lywz4hP7SYY8Yg2k_5jApQ" style="color:#fff">@ParseVideo</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-link col-md-4 col-sm-12">
+                <h4>捐助本站</h4>
+                <p>
+                    <img src="https://www.parsevideo.com/static/img/pay.jpg" class="img-responsive center-block">
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <ul class="list-inline text-center footer-copyright">
+            <li>©2016-2017</li>
+            <li><a href="http://www.miitbeian.gov.cn/" target="_blank" class="record">渝ICP备3234464号</a></li>
+            <li class="hidden-xs hidden-sm"><a
+                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50010102000375" target="_blank"
+                    class="record">渝公网安备 50010102000375号</a></li>
+        </ul>
+    </div>
+</footer>
+<a href="#" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+<!--底部-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://lib.baomitu.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://lib.baomitu.com/clipboard.js/1.6.1/clipboard.min.js"></script>
+<script src="https://lib.baomitu.com/fancybox/2.1.6/js/jquery.fancybox.min.js"></script>
+<script src="https://lib.baomitu.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+<script src="https://lib.baomitu.com/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
+<script src="https://lib.baomitu.com/jquery-url-parser/2.3.1/purl.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xsales"></script>
+<script src="https://lib.baomitu.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox({alwaysShowClose: true,});
+    });
+    $(function () {
+
+        //导航文本框获取链接
+        var url = $(location).attr('hash').replace('#', '');
+        if (url) {
+            $("#url_input").attr("value", url);
+        }
+        /* 双击清空网址输入框 */
+        $("#url_input").dblclick(
+            function () {
+                $("#url_input").val('');
+            }
+        );
+        /* 单击选择网址输入框 */
+        $("#url_input").click(
+            function () {
+                $(this).select();
+            }
+        );
+        //点击链接到输入框
+        $(".get-link").click(function () {
+            var get_url = $(this).text();
+            //$("#url_input").attr("value",get_url);
+            $("#url_input").val(get_url);
+            $('html, body').animate({
+                scrollTop: $(".site-header").offset().top
+            }, 100).end();
+        });
+        //$("#get-video").attr('src',vod_url);
+        //回车事件
+        $(document).keydown(function (event) {
+            if (event.keyCode == "13") {
+                $("#url_submit").trigger("click");
+            }
+        });
+        //返回顶部事件
+        $(window).scroll(function () {
+            $(this).scrollTop() > 100 ? $("#back-to-top").fadeIn() : $("#back-to-top").fadeOut();
+        });
+        $("#back-to-top").on("click", function () {
+            $("html, body").animate({scrollTop: 0}, 1000);
+        });
+        //ajax提交数据
+        $("#url_submit_button").click(function () {
+            $("#message").html("");
+            $("#video").fadeOut("slow");
+            window.location.href = "#" + $("#url_input").val();
+            var url = $("#url_input").val();
+            var host = $.url(url).attr('host');
+            ga('send', 'event', '175.167.138.201', 'prase', url);
+            var hash = "881f94ad61e717f8f2050155f5d34164";
+            $("#url_submit_icon").attr("class", "fa fa-spinner fa-pulse fa-lg");
+            $("#url_submit_button").attr("disabled", "disabled");
+            /* 如果为空弹出提示 */
+            if (!url) {
+                $("#message").html("<div class=\"alert alert-warning alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>请输入正确的视频解析网址！</div>");
+                $("#url_submit_icon").attr("class", "glyphicon glyphicon-arrow-right");
+            } else {
+                $.ajax({
+                    type: "POST",
+                    url: "https://www.parsevideo.com/api.php",
+                    data: {url: url, hash: hash},
+                    dataType: "jsonp",
+                    jsonp: "callback",
+                    success: function (result) {
+                        if (result.captcha != undefined && result.captcha == 'ok') {
+                            var code = Math.random();
+                            $("#captcha_img").attr("src", 'https://www.parsevideo.com/captcha.php?' + code);
+                            $("#message").html("<div class=\"alert alert-warning alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>为了防止自动化程序非授权使用本站接口，请输入验证码！</div>");
+                            $("#captcha").show();
+                            $.post("https://www.parsevideo.com/api.php", $("#captcha_form").serialize(), function (result) {
+                                $("#captcha_code").val("");
+                                if (result.captcha == "pass") {
+                                    $("#url_submit_button").click();
+                                }
+                            }, "json");
+                        }
+                        if (result.status == 'ok' && result.total != 0) {
+                            var video_html = "<div class=\"panel panel-success\"><div class=\"panel-heading\"><h3 class=\"panel-title\">视频列表：</h3></div><ul class=\"list-group\">";
+                            $.each(result.video, function (i) {
+                                video_html += "<li class=\"list-group-item\"><p class=\"input-group\"><input type=\"text\" name=\"search\" id=\"video" + i + "\" class=\"form-control get-text\" value=\"" + result.video[i].url + "\"><span class=\"input-group-btn\"><a href=\"javascript:void(0);\" class=\"btn btn-info btnCopy\" data-clipboard-action=\"copy\" data-clipboard-target=\"#video" + i + "\" onclick=\"ga('send', 'event', '175.167.138.201', 'copy', '" + url + "');\"><span class=\"glyphicon glyphicon-duplicate\"></span></a><a href=\"" + result.video[i].url + "\" class=\"btn btn-primary get-dowmload\" download=\"title-time.mp4\" role=\"button\" title=\"下载\" onclick=\"ga('send', 'event', '175.167.138.201', 'download', '" + url + "');\"><span class=\"glyphicon glyphicon-save\"></span></a><a href=\"" + result.video[i].url + "\" class=\"btn btn-success\" role=\"button\" title=\"播放\" onclick=\"ga('send', 'event', '175.167.138.201', 'play', '" + url + "');\" data-toggle=\"lightbox\" data-title=\"\" data-type=\"video\" data-width=\"1024\"><span class=\"glyphicon glyphicon-play\"></span></a><a class=\"btn btn-default btn-warning hidden-xs\" title=\"扫码看视频\" onclick=\"ga('send', 'event', 'video', 'qrcode', '" + url + "');$.fancybox.open('<div id=\\\'qrcode\\\'></div>');$('#qrcode').qrcode({text:'" + result.video[i].url + "'});\"><span class=\"fa fa-qrcode\"></span></a></span></p><p class=\"get-desc\">简介：" + result.video[i].desc + "</p></li>";
+                            });
+                            video_html += "</ul></div>";
+                            $("#video").html(video_html);
+                            //淡出搜索内容
+                            $("#video").fadeIn("slow");
+                            //选中文本
+                            $(".get-text").click(function () {
+                                $(this).select();
+                            });
+                            //复制内容
+                            var clipboard = new Clipboard('.btnCopy');
+                            clipboard.on('success', function (e) {
+                                $('.btnCopy').tooltip({
+                                    delay: {
+                                        show: 100,
+                                        hide: 500,
+                                    },
+                                    trigger: 'hover|click',
+                                    title: '复制成功！'
+                                });
+
+                            });
+                            clipboard.on('error', function (e) {
+                                $('.btnCopy').tooltip('destroy');
+                            });
+                        } else {
+                            $("#video").fadeOut("slow");
+                            $("#message").html("<div class=\"alert alert-warning alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>" + result.message + "</div>");
+                        }
+
+                        $("#url_submit_icon").attr("class", "glyphicon glyphicon-arrow-right");
+                        $("#url_submit_button").removeAttr("disabled");
+                    }
+                });
+
+            }
+        });
+        $("#captcha_img").click(function () {
+            var code = Math.random();
+            $("#captcha_img").attr("src", 'https://www.parsevideo.com/captcha.php?' + code);
+            $.post("https://www.parsevideo.com/api.php", $("#captcha_form").serialize(), function (result) {
+                $("#captcha_code").val("");
+                if (result.captcha == "pass") {
+                    $("#url_submit_button").click();
+                } else {
+                    var code = Math.random();
+                    $("#captcha_img").attr("src", 'https://www.parsevideo.com/captcha.php?' + code);
+                }
+            }, "json");
+        });
+        $("#captcha_code").click(function () {
+            $(this).val("");
+        });
+        $("#captcha_sbumit").click(function () {
+            $.post("https://www.parsevideo.com/api.php", $("#captcha_form").serialize(), function (result) {
+                $("#captcha_code").val("");
+                if (result.captcha == "pass") {
+                    $("#captcha").hide()
+                    $("#url_submit_button").click();
+                } else {
+                    var code = Math.random();
+                    $("#captcha_img").attr("src", 'https://www.parsevideo.com/captcha.php?' + code);
+                    $.post("https://www.parsevideo.com/api.php", $("#captcha_form").serialize(), function (result) {
+                        $("#captcha_code").val("");
+                        if (result.captcha == "pass") {
+                            $("#captcha").hide()
+                            $("#url_submit_button").click();
+                            window.location.reload()
+                        } else {
+                            var code = Math.random();
+                            $("#captcha_img").attr("src", 'https://www.parsevideo.com/captcha.php?' + code);
+                        }
+                    }, "json");
+                }
+            }, "json");
+        });
+    });
+</script>
+
+</div>
+</body>
+</html>

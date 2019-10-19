@@ -1,0 +1,7 @@
+{
+  "name": "PocketFilm",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

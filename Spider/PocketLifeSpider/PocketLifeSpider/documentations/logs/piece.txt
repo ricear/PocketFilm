@@ -1,0 +1,2186 @@
+2019-09-28 16:53:55 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: PocketLifeSpider)
+2019-09-28 16:53:55 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.1 (v3.7.1:260ec2c36a, Oct 20 2018, 00:48:40) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.7.0-x86_64-i386-64bit
+2019-09-28 16:53:55 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'PocketLifeSpider', 'DOWNLOAD_TIMEOUT': 15, 'NEWSPIDER_MODULE': 'PocketLifeSpider.spiders', 'SPIDER_MODULES': ['PocketLifeSpider.spiders']}
+2019-09-28 16:53:55 [scrapy.extensions.telnet] INFO: Telnet Password: fd8ecc37491e4464
+2019-09-28 16:53:55 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-09-28 16:53:55 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:53:55 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET / HTTP/1.1" 301 148
+2019-09-28 16:53:55 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:53:56 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET / HTTP/1.1" 200 42198
+Exception ignored in: <generator object parse_one_page at 0x1163f9570>
+RuntimeError: generator ignored GeneratorExit
+2019-09-28 16:53:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-28 16:53:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-28 16:53:56 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-09-28 16:53:56 [scrapy.core.engine] INFO: Spider opened
+2019-09-28 16:53:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-09-28 16:53:56 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6026
+2019-09-28 16:53:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/erz/> (referer: None)
+2019-09-28 16:53:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/wangxiaoli/> (referer: None)
+2019-09-28 16:53:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/liuxiaoguang/> (referer: None)
+2019-09-28 16:53:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:53:57 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /erz/ HTTP/1.1" 200 8962
+2019-09-28 16:54:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/zhaojiaban/sxf/> (referer: None)
+2019-09-28 16:54:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/tianwa/> (referer: None)
+2019-09-28 16:54:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/chengye/> (referer: None)
+2019-09-28 16:54:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/zhaojiaban/xiaoshenlong/> (referer: None)
+2019-09-28 16:54:01 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:54:11 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/ HTTP/1.1" 200 12719
+2019-09-28 16:54:17 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:54:18 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/ HTTP/1.1" 200 8170
+2019-09-28 16:54:19 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:54:19 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/18003.html HTTP/1.1" 301 169
+2019-09-28 16:54:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:54:28 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/18003.html HTTP/1.1" 200 6234
+2019-09-28 16:54:35 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:54:36 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/16928.html HTTP/1.1" 301 169
+2019-09-28 16:54:36 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:54:37 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/16928.html HTTP/1.1" 200 6214
+2019-09-28 16:54:45 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:54:45 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/11937.html HTTP/1.1" 301 169
+2019-09-28 16:54:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:54:46 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/11937.html HTTP/1.1" 200 6223
+2019-09-28 16:54:55 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:54:58 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/11816.html HTTP/1.1" 301 169
+2019-09-28 16:54:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:54:59 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/11816.html HTTP/1.1" 200 6206
+2019-09-28 16:55:07 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:55:07 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/11800.html HTTP/1.1" 301 169
+2019-09-28 16:55:07 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:55:08 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/11800.html HTTP/1.1" 200 6234
+2019-09-28 16:55:16 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:55:16 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8608.html HTTP/1.1" 301 169
+2019-09-28 16:55:16 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:55:18 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8608.html HTTP/1.1" 200 6300
+2019-09-28 16:55:23 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:55:23 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/8773.html HTTP/1.1" 301 168
+2019-09-28 16:55:23 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:55:23 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/8773.html HTTP/1.1" 200 6236
+2019-09-28 16:55:30 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:55:30 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/8534.html HTTP/1.1" 301 168
+2019-09-28 16:55:30 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:55:36 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/8534.html HTTP/1.1" 200 6260
+2019-09-28 16:55:43 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:55:46 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7292.html HTTP/1.1" 301 169
+2019-09-28 16:55:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:55:48 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7292.html HTTP/1.1" 200 6277
+2019-09-28 16:55:54 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:55:54 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7293.html HTTP/1.1" 301 169
+2019-09-28 16:55:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:55:54 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7293.html HTTP/1.1" 200 6302
+2019-09-28 16:56:04 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:56:04 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/5594.html HTTP/1.1" 301 168
+2019-09-28 16:56:04 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:56:06 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/5594.html HTTP/1.1" 200 6277
+2019-09-28 16:56:13 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:56:13 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/5593.html HTTP/1.1" 301 168
+2019-09-28 16:56:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:56:16 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/5593.html HTTP/1.1" 200 6211
+2019-09-28 16:56:21 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:56:21 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/1781.html HTTP/1.1" 301 168
+2019-09-28 16:56:21 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:56:22 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/1781.html HTTP/1.1" 200 6298
+2019-09-28 16:56:33 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:56:34 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/1777.html HTTP/1.1" 301 168
+2019-09-28 16:56:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:56:36 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/1777.html HTTP/1.1" 200 6266
+2019-09-28 16:56:45 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:56:45 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/1773.html HTTP/1.1" 301 168
+2019-09-28 16:56:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:56:46 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/1773.html HTTP/1.1" 200 6306
+2019-09-28 16:56:56 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:56:56 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/1769.html HTTP/1.1" 301 168
+2019-09-28 16:56:56 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:56:57 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/1769.html HTTP/1.1" 200 6280
+2019-09-28 16:57:07 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:57:07 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/1727.html HTTP/1.1" 301 168
+2019-09-28 16:57:07 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:57:07 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/1727.html HTTP/1.1" 200 6246
+2019-09-28 16:57:19 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:57:20 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/1718.html HTTP/1.1" 301 168
+2019-09-28 16:57:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:57:21 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/1718.html HTTP/1.1" 200 6261
+2019-09-28 16:57:31 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:57:31 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/1702.html HTTP/1.1" 301 168
+2019-09-28 16:57:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:57:31 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/1702.html HTTP/1.1" 200 6254
+2019-09-28 16:57:38 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:57:39 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/1703.html HTTP/1.1" 301 168
+2019-09-28 16:57:39 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:57:53 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/1703.html HTTP/1.1" 200 8311
+2019-09-28 16:58:01 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:58:01 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/1346.html HTTP/1.1" 301 169
+2019-09-28 16:58:01 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:58:02 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/1346.html HTTP/1.1" 200 6263
+2019-09-28 16:58:11 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:58:12 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/134.html HTTP/1.1" 301 167
+2019-09-28 16:58:12 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:58:13 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/134.html HTTP/1.1" 200 6261
+2019-09-28 16:58:23 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:58:23 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/136.html HTTP/1.1" 301 167
+2019-09-28 16:58:23 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:58:23 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/136.html HTTP/1.1" 200 6220
+2019-09-28 16:58:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:58:30 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/list_14_2.html HTTP/1.1" 200 10352
+2019-09-28 16:58:30 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:58:31 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/143.html HTTP/1.1" 301 167
+2019-09-28 16:58:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:58:31 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/143.html HTTP/1.1" 200 6280
+2019-09-28 16:58:40 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:58:41 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/144.html HTTP/1.1" 301 167
+2019-09-28 16:58:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:58:43 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/144.html HTTP/1.1" 200 6230
+2019-09-28 16:58:52 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:58:53 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/146.html HTTP/1.1" 301 167
+2019-09-28 16:58:53 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:58:53 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/146.html HTTP/1.1" 200 6232
+2019-09-28 16:59:05 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:59:05 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/74.html HTTP/1.1" 301 167
+2019-09-28 16:59:05 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:59:10 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/74.html HTTP/1.1" 200 6296
+2019-09-28 16:59:20 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 16:59:21 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /wangxiaoli/77.html HTTP/1.1" 301 166
+2019-09-28 16:59:21 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:59:21 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/77.html HTTP/1.1" 200 6262
+2019-09-28 16:59:36 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:59:42 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /liuxiaoguang/ HTTP/1.1" 200 12794
+2019-09-28 16:59:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 16:59:59 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaojiaban/sxf/ HTTP/1.1" 200 12921
+2019-09-28 17:00:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:00:23 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaojiaban/sxf/ HTTP/1.1" 200 12921
+2019-09-28 17:00:24 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:00:25 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/17846.html HTTP/1.1" 200 8318
+2019-09-28 17:00:38 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:00:40 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/17829.html HTTP/1.1" 200 8243
+2019-09-28 17:00:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:00:50 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/17730.html HTTP/1.1" 200 8213
+2019-09-28 17:00:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:01:01 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/17729.html HTTP/1.1" 200 8201
+2019-09-28 17:01:10 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:01:13 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/17645.html HTTP/1.1" 200 8324
+2019-09-28 17:01:24 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:01:28 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/17469.html HTTP/1.1" 200 8243
+已添加 -> https://www.xiaopin5.com/zhaobenshan/
+已添加 -> https://www.xiaopin5.com/chengye/
+已添加 -> https://www.xiaopin5.com/tianwa/
+已添加 -> https://www.xiaopin5.com/zhaojiaban/wensong/
+已添加 -> https://www.xiaopin5.com/xiaoshenyang/
+已添加 -> https://www.xiaopin5.com/songxiaobao/
+已添加 -> https://www.xiaopin5.com/wangxiaoli/
+已添加 -> https://www.xiaopin5.com/liuxiaoguang/
+已添加 -> https://www.xiaopin5.com/zhaojiaban/xiaoshenlong/
+已添加 -> https://www.xiaopin5.com/zhaojiaban/sxf/
+已添加 -> https://www.xiaopin5.com/zhaojiaban/zyp/
+已添加 -> https://www.xiaopin5.com/zhangxiaofei/
+已添加 -> https://www.xiaopin5.com/yadan/
+已添加 -> https://www.xiaopin5.com/yangbing/
+已添加 -> https://www.xiaopin5.com/guodegang/
+已添加 -> https://www.xiaopin5.com/gaofeng/
+已添加 -> https://www.xiaopin5.com/sunyue/
+已添加 -> https://www.xiaopin5.com/houzhen/
+已添加 -> https://www.xiaopin5.com/yueyunpeng/
+已添加 -> https://www.xiaopin5.com/guoqilin/
+已添加 -> https://www.xiaopin5.com/zhuyunfeng/
+已添加 -> https://www.xiaopin5.com/zhanghelun/
+已添加 -> https://www.xiaopin5.com/zhangwenshun/
+已添加 -> https://www.xiaopin5.com/zhangyunlei/
+已添加 -> https://www.xiaopin5.com/kongyunlong/
+已添加 -> https://www.xiaopin5.com/luanyunping/
+已添加 -> https://www.xiaopin5.com/yanyunda/
+已添加 -> https://www.xiaopin5.com/ligen/
+已添加 -> https://www.xiaopin5.com/chenpeisi/
+已添加 -> https://www.xiaopin5.com/huanghong/
+已添加 -> https://www.xiaopin5.com/caiming/
+已添加 -> https://www.xiaopin5.com/jialing/
+已添加 -> https://www.xiaopin5.com/guodonglin/
+已添加 -> https://www.xiaopin5.com/panchangjiang/
+已添加 -> https://www.xiaopin5.com/songdandan/
+已添加 -> https://www.xiaopin5.com/zhaolirong/
+已添加 -> https://www.xiaopin5.com/gaoxiumin/
+已添加 -> https://www.xiaopin5.com/shenchunyang/
+已添加 -> https://www.xiaopin5.com/houyaohua/
+已添加 -> https://www.xiaopin5.com/panbinlong/
+已添加 -> https://www.xiaopin5.com/kaixinmahua/
+已添加 -> https://www.xiaopin5.com/masanli/
+已添加 -> https://www.xiaopin5.com/fenggong/
+已添加 -> https://www.xiaopin5.com/miaofu/
+已添加 -> https://www.xiaopin5.com/jiangkun/
+已添加 -> https://www.xiaopin5.com/liubaorui/
+已添加 -> https://www.xiaopin5.com/caoyunjin/
+已添加 -> https://www.xiaopin5.com/heyunwei/
+已添加 -> https://www.xiaopin5.com/wangzijian/
+已添加 -> https://www.xiaopin5.com/gaoxiaopan/
+已添加 -> https://www.xiaopin5.com/liweijian/
+已添加 -> https://www.xiaopin5.com/gonghanlin/
+已添加 -> https://www.xiaopin5.com/fangqingping/
+已添加 -> https://www.xiaopin5.com/lijindou/
+已添加 -> https://www.xiaopin5.com/bolin/
+已添加 -> https://www.xiaopin5.com/zxf/
+已添加 -> https://www.xiaopin5.com/haojian/
+已添加 -> https://www.xiaopin5.com/guoda/
+已添加 -> https://www.xiaopin5.com/dabing/
+已添加 -> https://www.xiaopin5.com/zhanghaiyu/
+已添加 -> https://www.xiaopin5.com/xiangsheng/sfk/
+已添加 -> https://www.xiaopin5.com/xiangsheng/shishengjie/
+已添加 -> https://www.xiaopin5.com/hejingjing/
+已添加 -> https://www.xiaopin5.com/xiangsheng/xdl/
+已添加 -> https://www.xiaopin5.com/baikainan/
+已添加 -> https://www.xiaopin5.com/guoquanbao/
+已添加 -> https://www.xiaopin5.com/liwenhua/
+已添加 -> https://www.xiaopin5.com/zhaosi/
+已添加 -> https://www.xiaopin5.com/wnal/
+已添加 -> https://www.xiaopin5.com/movie/gongqijun/
+已添加 -> https://www.xiaopin5.com/zhouwei/
+已添加 -> https://www.xiaopin5.com/mali/
+已添加 -> https://www.xiaopin5.com/maji/
+已添加 -> https://www.xiaopin5.com/erz/
+已添加 -> https://www.xiaopin5.com/xiangsheng/lxyh/
+已添加 -> https://www.xiaopin5.com/chunwan/ln/
+已添加 -> https://www.xiaopin5.com/mjxd/
+已添加 -> https://www.xiaopin5.com/bskly/
+已添加 -> https://www.xiaopin5.com/zongyi/hlxjr/
+已添加 -> https://www.xiaopin5.com/qita/cx/
+已添加 -> https://www.xiaopin5.com/qita/wx/
+已添加 -> https://www.xiaopin5.com/new/
+已添加 -> https://www.xiaopin5.com/chunwan/
+已添加 -> https://www.xiaopin5.com/zhaobenshan/
+已添加 -> https://www.xiaopin5.com/songxiaobao/
+已添加 -> https://www.xiaopin5.com/xiaoshenyang/
+已添加 -> https://www.xiaopin5.com/chenpeisi/
+已添加 -> https://www.xiaopin5.com/chenpeisi/
+已添加 -> https://www.xiaopin5.com/xiangsheng/
+已添加 -> https://www.xiaopin5.com/weidianying/
+piece -> https://www.xiaopin5.com/erz/ 已爬取
+piece -> https://www.xiaopin5.com/erz/list_126_2.html 已爬取
+piece -> https://www.xiaopin5.com/wangxiaoli/ 未爬取
+find success 0
+正在抓取 -> 赵家班 王小利 《送拐》
+insert success 1
+find success 1
+《小气鬼》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 王小利 《催孕》
+insert success 1
+find success 1
+《同桌的你》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 王小利 《我是星二代》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《催婚》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《邻里关系》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《甄嬛歪传》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《排练》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《好兄好弟》
+insert success 1
+find success 1
+《老王卖瓜》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 宋小宝 《婚托》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《明星转起来》
+insert success 1
+find success 1
+《招聘演员》 -> 已爬取
+find success 1
+《捐助》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 王小利 《家和万事兴》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《手机充值》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《小品:宝贝计划》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《小品:租墙》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《小品:节日快乐》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《小品:心病》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《泼出来的姻缘》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《小品:欺人之道》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《乡村爱情翻演2》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《椅子上的一块钱》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《十五的月饼》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《招标》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《如果爱》
+insert success 1
+piece -> https://www.xiaopin5.com/wangxiaoli/ 写入成功
+piece -> https://www.xiaopin5.com/wangxiaoli/list_14_2.html 未爬取
+find success 0
+正在抓取 -> 赵家班 王小利 《我不能走》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《地下党版绕口令》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《捐助后传》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《还珠格格Y传》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 王小利 《山里娘们山里汉》
+insert success 1
+piece -> https://www.xiaopin5.com/wangxiaoli/list_14_2.html 写入成功
+piece -> https://www.xiaopin5.com/liuxiaoguang/ 已爬取
+piece -> https://www.xiaopin5.com/liuxiaoguang/list_17_2.html 已爬取
+piece -> https://www.xiaopin5.com/zhaojiaban/sxf/ 未爬取
+find success 0
+正在抓取 -> 赵家班 宋晓峰 《办公室风波》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋晓峰 《焦大的烦恼》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋晓峰 《相亲》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋晓峰 《吃面》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋晓峰 《保安队队长》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋晓峰 《蹬三轮儿》2019-09-28 17:01:37 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:01:39 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/17421.html HTTP/1.1" 200 8233
+2019-09-28 17:01:49 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:01:53 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/17276.html HTTP/1.1" 200 8265
+2019-09-28 17:02:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:02:08 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/17212.html HTTP/1.1" 200 8266
+2019-09-28 17:02:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:02:23 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/17066.html HTTP/1.1" 200 8233
+2019-09-28 17:02:35 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:02:36 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/17008.html HTTP/1.1" 200 8266
+2019-09-28 17:02:48 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:02:49 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/16983.html HTTP/1.1" 200 8224
+2019-09-28 17:03:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:03:01 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/16908.html HTTP/1.1" 200 8261
+2019-09-28 17:03:12 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:03:13 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/14674.html HTTP/1.1" 200 8332
+2019-09-28 17:03:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:03:29 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/14235.html HTTP/1.1" 200 8316
+2019-09-28 17:03:42 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:03:47 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13948.html HTTP/1.1" 200 8406
+2019-09-28 17:04:06 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:04:08 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13952.html HTTP/1.1" 200 8292
+2019-09-28 17:04:21 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:04:22 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13951.html HTTP/1.1" 200 8293
+2019-09-28 17:04:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:04:30 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13950.html HTTP/1.1" 200 8342
+2019-09-28 17:04:40 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:04:46 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13949.html HTTP/1.1" 200 8380
+2019-09-28 17:05:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:05:06 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13947.html HTTP/1.1" 200 8200
+2019-09-28 17:05:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:05:26 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13946.html HTTP/1.1" 200 8277
+2019-09-28 17:05:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:05:45 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13945.html HTTP/1.1" 200 8333
+2019-09-28 17:05:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:06:00 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13944.html HTTP/1.1" 200 8250
+2019-09-28 17:06:10 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:06:11 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13943.html HTTP/1.1" 200 8338
+2019-09-28 17:06:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:06:22 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13911.html HTTP/1.1" 200 8337
+2019-09-28 17:06:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:06:35 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13913.html HTTP/1.1" 200 8287
+2019-09-28 17:06:47 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:06:47 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13914.html HTTP/1.1" 200 8288
+2019-09-28 17:06:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:06:59 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaojiaban/sxf/list_196_2.html HTTP/1.1" 200 13370
+2019-09-28 17:07:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:07:00 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13916.html HTTP/1.1" 200 8296
+2019-09-28 17:07:11 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:07:12 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13918.html HTTP/1.1" 200 8295
+2019-09-28 17:07:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:07:32 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13934.html HTTP/1.1" 200 8350
+2019-09-28 17:07:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:07:50 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13936.html HTTP/1.1" 200 8297
+2019-09-28 17:07:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:08:01 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13938.html HTTP/1.1" 200 8301
+2019-09-28 17:08:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:08:20 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13902.html HTTP/1.1" 200 8419
+2019-09-28 17:08:35 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:08:38 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13940.html HTTP/1.1" 200 8289
+2019-09-28 17:08:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:09:00 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13894.html HTTP/1.1" 200 8350
+2019-09-28 17:09:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:09:22 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13942.html HTTP/1.1" 200 8290
+2019-09-28 17:09:37 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:09:38 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13910.html HTTP/1.1" 200 8360
+2019-09-28 17:09:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:09:53 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13896.html HTTP/1.1" 200 8364
+2019-09-28 17:10:04 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:10:05 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13909.html HTTP/1.1" 200 8310
+2019-09-28 17:10:23 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:10:25 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13893.html HTTP/1.1" 200 8390
+2019-09-28 17:10:36 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:10:42 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13892.html HTTP/1.1" 200 8399
+2019-09-28 17:10:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:10:54 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13903.html HTTP/1.1" 200 8371
+2019-09-28 17:11:12 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:11:15 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13889.html HTTP/1.1" 200 8255
+2019-09-28 17:11:30 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:11:35 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13888.html HTTP/1.1" 200 8284
+2019-09-28 17:11:42 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:11:45 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13899.html HTTP/1.1" 200 8301
+2019-09-28 17:12:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:12:06 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13887.html HTTP/1.1" 200 8291
+2019-09-28 17:12:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:12:42 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13886.html HTTP/1.1" 200 8255
+2019-09-28 17:13:07 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:13:08 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13885.html HTTP/1.1" 200 8427
+2019-09-28 17:13:27 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:13:28 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13884.html HTTP/1.1" 200 8266
+2019-09-28 17:14:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:14:03 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13883.html HTTP/1.1" 200 8347
+2019-09-28 17:15:04 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:15:05 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13882.html HTTP/1.1" 200 8360
+2019-09-28 17:15:53 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:15:53 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13880.html HTTP/1.1" 200 8356
+2019-09-28 17:16:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:16:28 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13876.html HTTP/1.1" 200 8330
+2019-09-28 17:16:39 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:16:50 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13874.html HTTP/1.1" 200 8260
+2019-09-28 17:16:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:17:00 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13906.html HTTP/1.1" 200 8163
+2019-09-28 17:17:23 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:17:32 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaojiaban/sxf/list_196_3.html HTTP/1.1" 200 11363
+2019-09-28 17:17:33 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:17:33 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13862.html HTTP/1.1" 200 8252
+2019-09-28 17:17:53 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:17:55 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13861.html HTTP/1.1" 200 8281
+2019-09-28 17:18:39 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:18:40 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13858.html HTTP/1.1" 200 8315
+2019-09-28 17:19:05 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:19:08 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13871.html HTTP/1.1" 200 8265
+2019-09-28 17:19:32 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:19:34 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13866.html HTTP/1.1" 200 8267
+2019-09-28 17:19:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:19:51 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13864.html HTTP/1.1" 200 8313
+2019-09-28 17:20:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:20:03 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13854.html HTTP/1.1" 200 8245
+2019-09-28 17:20:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:20:13 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13932.html HTTP/1.1" 200 8288
+2019-09-28 17:20:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:20:35 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13863.html HTTP/1.1" 200 8349
+2019-09-28 17:35:38 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: PocketLifeSpider)
+2019-09-28 17:35:38 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.1 (v3.7.1:260ec2c36a, Oct 20 2018, 00:48:40) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.7.0-x86_64-i386-64bit
+2019-09-28 17:35:38 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'PocketLifeSpider', 'DOWNLOAD_TIMEOUT': 15, 'NEWSPIDER_MODULE': 'PocketLifeSpider.spiders', 'SPIDER_MODULES': ['PocketLifeSpider.spiders']}
+2019-09-28 17:35:38 [scrapy.extensions.telnet] INFO: Telnet Password: fa61bf3e7b8582ca
+2019-09-28 17:35:38 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-09-28 17:35:38 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:35:41 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET / HTTP/1.1" 301 148
+2019-09-28 17:35:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:35:41 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET / HTTP/1.1" 200 28770
+Exception ignored in: <generator object parse_one_page at 0x1162ee570>
+RuntimeError: generator ignored GeneratorExit
+2019-09-28 17:35:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-09-28 17:35:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-09-28 17:35:42 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-09-28 17:35:42 [scrapy.core.engine] INFO: Spider opened
+2019-09-28 17:35:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-09-28 17:35:42 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6026
+2019-09-28 17:35:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/zhaojiaban/wensong/> (referer: None)
+2019-09-28 17:35:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/xiaoshenyang/> (referer: None)
+2019-09-28 17:35:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/wangxiaoli/> (referer: None)
+2019-09-28 17:35:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/songxiaobao/> (referer: None)
+2019-09-28 17:35:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/zhaobenshan/> (referer: None)
+2019-09-28 17:35:43 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:36:03 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaojiaban/wensong/ HTTP/1.1" 200 12853
+2019-09-28 17:36:11 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:36:12 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaojiaban/wensong/ HTTP/1.1" 200 8557
+2019-09-28 17:36:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:36:21 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/11807.html HTTP/1.1" 200 8535
+2019-09-28 17:36:30 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:36:31 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/11743.html HTTP/1.1" 200 8431
+2019-09-28 17:36:42 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:36:44 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/11713.html HTTP/1.1" 200 8491
+2019-09-28 17:36:55 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:36:57 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8608.html HTTP/1.1" 200 8377
+2019-09-28 17:37:08 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:37:09 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9698.html HTTP/1.1" 200 8412
+2019-09-28 17:37:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:37:21 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9697.html HTTP/1.1" 200 8522
+2019-09-28 17:37:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:37:31 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9694.html HTTP/1.1" 200 8438
+2019-09-28 17:37:42 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:37:43 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9685.html HTTP/1.1" 200 8439
+2019-09-28 17:37:53 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:37:53 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9682.html HTTP/1.1" 200 8426
+2019-09-28 17:38:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:38:04 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9680.html HTTP/1.1" 200 8481
+2019-09-28 17:38:14 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:38:15 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9623.html HTTP/1.1" 200 8544
+2019-09-28 17:38:25 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:38:26 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9622.html HTTP/1.1" 200 8429
+2019-09-28 17:38:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:38:35 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaojiaban/wensong/list_168_2.html HTTP/1.1" 200 11859
+2019-09-28 17:38:35 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:38:39 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9621.html HTTP/1.1" 200 8433
+2019-09-28 17:38:47 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:38:49 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9620.html HTTP/1.1" 200 8427
+2019-09-28 17:38:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:38:58 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9619.html HTTP/1.1" 200 8384
+2019-09-28 17:39:08 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:39:12 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9618.html HTTP/1.1" 200 8481
+2019-09-28 17:39:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:39:24 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9617.html HTTP/1.1" 200 8442
+2019-09-28 17:39:32 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:39:34 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9616.html HTTP/1.1" 200 8428
+2019-09-28 17:39:42 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:39:44 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9615.html HTTP/1.1" 200 8463
+2019-09-28 17:39:53 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:39:56 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9614.html HTTP/1.1" 200 8456
+2019-09-28 17:40:04 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:40:09 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9613.html HTTP/1.1" 200 8346
+2019-09-28 17:40:17 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:41:53 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9612.html HTTP/1.1" 200 8386
+2019-09-28 17:42:04 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:42:04 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9611.html HTTP/1.1" 200 8421
+2019-09-28 17:42:15 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:42:19 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9610.html HTTP/1.1" 200 8377
+2019-09-28 17:42:28 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:42:33 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9192.html HTTP/1.1" 200 8373
+2019-09-28 17:42:40 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:42:41 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9113.html HTTP/1.1" 200 8553
+2019-09-28 17:42:50 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:42:52 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9085.html HTTP/1.1" 200 8517
+2019-09-28 17:43:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:43:04 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9014.html HTTP/1.1" 200 8423
+2019-09-28 17:43:12 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:43:14 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/7376.html HTTP/1.1" 200 8499
+2019-09-28 17:43:27 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:43:28 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/7375.html HTTP/1.1" 200 8435
+2019-09-28 17:43:39 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:43:43 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/7374.html HTTP/1.1" 200 8478
+2019-09-28 17:43:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:43:53 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/7373.html HTTP/1.1" 200 8388
+2019-09-28 17:44:06 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:44:07 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/7372.html HTTP/1.1" 200 8474
+已添加 -> https://www.xiaopin5.com/zhaobenshan/
+已添加 -> https://www.xiaopin5.com/chengye/
+已添加 -> https://www.xiaopin5.com/tianwa/
+已添加 -> https://www.xiaopin5.com/zhaojiaban/wensong/
+已添加 -> https://www.xiaopin5.com/xiaoshenyang/
+已添加 -> https://www.xiaopin5.com/songxiaobao/
+已添加 -> https://www.xiaopin5.com/wangxiaoli/
+已添加 -> https://www.xiaopin5.com/liuxiaoguang/
+已添加 -> https://www.xiaopin5.com/zhaojiaban/xiaoshenlong/
+已添加 -> https://www.xiaopin5.com/zhaojiaban/sxf/
+已添加 -> https://www.xiaopin5.com/zhaojiaban/zyp/
+已添加 -> https://www.xiaopin5.com/zhangxiaofei/
+已添加 -> https://www.xiaopin5.com/yadan/
+已添加 -> https://www.xiaopin5.com/yangbing/
+已添加 -> https://www.xiaopin5.com/guodegang/
+已添加 -> https://www.xiaopin5.com/gaofeng/
+已添加 -> https://www.xiaopin5.com/sunyue/
+已添加 -> https://www.xiaopin5.com/houzhen/
+已添加 -> https://www.xiaopin5.com/yueyunpeng/
+已添加 -> https://www.xiaopin5.com/guoqilin/
+已添加 -> https://www.xiaopin5.com/zhuyunfeng/
+已添加 -> https://www.xiaopin5.com/zhanghelun/
+已添加 -> https://www.xiaopin5.com/zhangwenshun/
+已添加 -> https://www.xiaopin5.com/zhangyunlei/
+已添加 -> https://www.xiaopin5.com/kongyunlong/
+已添加 -> https://www.xiaopin5.com/luanyunping/
+已添加 -> https://www.xiaopin5.com/yanyunda/
+已添加 -> https://www.xiaopin5.com/ligen/
+已添加 -> https://www.xiaopin5.com/chenpeisi/
+已添加 -> https://www.xiaopin5.com/huanghong/
+已添加 -> https://www.xiaopin5.com/caiming/
+已添加 -> https://www.xiaopin5.com/jialing/
+已添加 -> https://www.xiaopin5.com/guodonglin/
+已添加 -> https://www.xiaopin5.com/panchangjiang/
+已添加 -> https://www.xiaopin5.com/songdandan/
+已添加 -> https://www.xiaopin5.com/zhaolirong/
+已添加 -> https://www.xiaopin5.com/gaoxiumin/
+已添加 -> https://www.xiaopin5.com/shenchunyang/
+已添加 -> https://www.xiaopin5.com/houyaohua/
+已添加 -> https://www.xiaopin5.com/panbinlong/
+已添加 -> https://www.xiaopin5.com/kaixinmahua/
+已添加 -> https://www.xiaopin5.com/masanli/
+已添加 -> https://www.xiaopin5.com/fenggong/
+已添加 -> https://www.xiaopin5.com/miaofu/
+已添加 -> https://www.xiaopin5.com/jiangkun/
+已添加 -> https://www.xiaopin5.com/liubaorui/
+已添加 -> https://www.xiaopin5.com/caoyunjin/
+已添加 -> https://www.xiaopin5.com/heyunwei/
+已添加 -> https://www.xiaopin5.com/wangzijian/
+已添加 -> https://www.xiaopin5.com/gaoxiaopan/
+已添加 -> https://www.xiaopin5.com/liweijian/
+已添加 -> https://www.xiaopin5.com/gonghanlin/
+已添加 -> https://www.xiaopin5.com/fangqingping/
+已添加 -> https://www.xiaopin5.com/lijindou/
+已添加 -> https://www.xiaopin5.com/bolin/
+已添加 -> https://www.xiaopin5.com/zxf/
+已添加 -> https://www.xiaopin5.com/haojian/
+已添加 -> https://www.xiaopin5.com/guoda/
+已添加 -> https://www.xiaopin5.com/dabing/
+已添加 -> https://www.xiaopin5.com/zhanghaiyu/
+已添加 -> https://www.xiaopin5.com/xiangsheng/sfk/
+已添加 -> https://www.xiaopin5.com/xiangsheng/shishengjie/
+已添加 -> https://www.xiaopin5.com/hejingjing/
+已添加 -> https://www.xiaopin5.com/xiangsheng/xdl/
+已添加 -> https://www.xiaopin5.com/baikainan/
+已添加 -> https://www.xiaopin5.com/guoquanbao/
+已添加 -> https://www.xiaopin5.com/liwenhua/
+已添加 -> https://www.xiaopin5.com/zhaosi/
+已添加 -> https://www.xiaopin5.com/wnal/
+已添加 -> https://www.xiaopin5.com/movie/gongqijun/
+已添加 -> https://www.xiaopin5.com/zhouwei/
+已添加 -> https://www.xiaopin5.com/mali/
+已添加 -> https://www.xiaopin5.com/maji/
+已添加 -> https://www.xiaopin5.com/erz/
+已添加 -> https://www.xiaopin5.com/xiangsheng/lxyh/
+已添加 -> https://www.xiaopin5.com/chunwan/ln/
+已添加 -> https://www.xiaopin5.com/mjxd/
+已添加 -> https://www.xiaopin5.com/bskly/
+已添加 -> https://www.xiaopin5.com/zongyi/hlxjr/
+已添加 -> https://www.xiaopin5.com/qita/cx/
+已添加 -> https://www.xiaopin5.com/qita/wx/
+已添加 -> https://www.xiaopin5.com/new/
+已添加 -> https://www.xiaopin5.com/chunwan/
+已添加 -> https://www.xiaopin5.com/zhaobenshan/
+已添加 -> https://www.xiaopin5.com/songxiaobao/
+已添加 -> https://www.xiaopin5.com/xiaoshenyang/
+已添加 -> https://www.xiaopin5.com/chenpeisi/
+已添加 -> https://www.xiaopin5.com/chenpeisi/
+已添加 -> https://www.xiaopin5.com/xiangsheng/
+已添加 -> https://www.xiaopin5.com/weidianying/
+piece -> https://www.xiaopin5.com/zhaojiaban/wensong/ 未爬取
+find success 1
+《这个岳父不太冷》 -> 已爬取
+find success 1
+《溜须吧,马屁精》 -> 已爬取
+find success 1
+《男人不难》 -> 已爬取
+find success 1
+《梁山伯与祝英台》 -> 已爬取
+find success 1
+《花好月圆》 -> 已爬取
+find success 1
+《窗户惹的祸》 -> 已爬取
+find success 1
+《一代宗师》 -> 已爬取
+find success 1
+《我是男一号》 -> 已爬取
+find success 1
+《谁是男一号》 -> 已爬取
+find success 1
+《新琅琊榜》 -> 已爬取
+find success 1
+《乌龙派对》 -> 已爬取
+find success 1
+《最美》 -> 已爬取
+find success 1
+《阴阳双捕》 -> 已爬取
+find success 1
+《常回家看看》 -> 已爬取
+find success 1
+《非城不找》 -> 已爬取
+find success 1
+《邮轮风云》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 文松 《欢乐健身房》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《翡翠西瓜》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《你好！打劫》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《甄嬛歪传》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《张无忌与赵敏》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《倚天屠龙记》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《灵蛇岛》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《超级奶爸》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《小薇》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《选角》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《抢劫》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《招聘》
+insert success 1
+piece -> https://www.xiaopin5.com/zhaojiaban/wensong/ 写入成功
+piece -> https://www.xiaopin5.com/zhaojiaban/wensong/list_168_2.html 未爬取
+find success 0
+正在抓取 -> 赵家班 文松 《喜王之争》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《甄嬛后传》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《星际旅行》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《偶像团》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《武侠剧》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《看病》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《我们的二人转》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《碰瓷》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《打劫》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《铡美案》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《学唱歌》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《搞笑二人转》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《少女萌萌拳》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《美人鱼》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《那一夜》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《道上的事》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《个人脱口秀》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《青花瓷》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《我是文松》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《许仙与白娘子》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 文松 《我是表哥》
+insert success 1
+piece -> https://www.xiaopin5.com/zhaojiaban/wensong/list_168_2.html 写入成功2019-09-28 17:44:17 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:44:21 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /xiaoshenyang/ HTTP/1.1" 200 12454
+2019-09-28 17:44:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/chengye/> (failed 1 times): An error occurred while connecting: 54: Connection reset by peer.
+2019-09-28 17:44:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/liuxiaoguang/> (referer: None)
+2019-09-28 17:44:28 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:44:28 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /wangxiaoli/ HTTP/1.1" 200 12719
+2019-09-28 17:44:37 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:44:38 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/ HTTP/1.1" 200 12926
+2019-09-28 17:44:42 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:44:46 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/ HTTP/1.1" 200 9116
+2019-09-28 17:44:46 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:44:50 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8724.html HTTP/1.1" 301 169
+2019-09-28 17:44:50 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:44:51 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8724.html HTTP/1.1" 200 6293
+2019-09-28 17:45:04 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:45:04 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/16956.html HTTP/1.1" 301 170
+2019-09-28 17:45:04 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:45:05 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/16956.html HTTP/1.1" 200 6291
+2019-09-28 17:45:10 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:45:10 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/16941.html HTTP/1.1" 301 170
+2019-09-28 17:45:10 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:45:12 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/16941.html HTTP/1.1" 200 6280
+2019-09-28 17:45:21 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:45:22 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/16971.html HTTP/1.1" 301 170
+2019-09-28 17:45:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:45:24 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/16971.html HTTP/1.1" 200 6279
+2019-09-28 17:45:34 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:45:35 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/16965.html HTTP/1.1" 301 170
+2019-09-28 17:45:35 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:45:35 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/16965.html HTTP/1.1" 200 6295
+2019-09-28 17:45:46 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:45:46 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/16730.html HTTP/1.1" 301 170
+2019-09-28 17:45:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:45:46 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/16730.html HTTP/1.1" 200 6194
+2019-09-28 17:45:57 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:45:57 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/16690.html HTTP/1.1" 301 170
+2019-09-28 17:45:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:45:58 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/16690.html HTTP/1.1" 200 6247
+2019-09-28 17:46:08 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:46:08 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/16667.html HTTP/1.1" 301 170
+2019-09-28 17:46:08 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:46:08 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/16667.html HTTP/1.1" 200 6282
+2019-09-28 17:46:13 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:46:14 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/16445.html HTTP/1.1" 301 170
+2019-09-28 17:46:14 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:46:15 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/16445.html HTTP/1.1" 200 6313
+2019-09-28 17:46:23 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:46:23 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/14498.html HTTP/1.1" 301 170
+2019-09-28 17:46:23 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:46:23 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/14498.html HTTP/1.1" 200 6255
+2019-09-28 17:46:34 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:46:34 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/14504.html HTTP/1.1" 301 170
+2019-09-28 17:46:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:46:37 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/14504.html HTTP/1.1" 200 6260
+2019-09-28 17:46:47 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:46:47 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/14494.html HTTP/1.1" 301 170
+2019-09-28 17:46:47 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:46:47 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/14494.html HTTP/1.1" 200 6308
+2019-09-28 17:46:58 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:46:58 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/14500.html HTTP/1.1" 301 170
+2019-09-28 17:46:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:46:59 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/14500.html HTTP/1.1" 200 6271
+2019-09-28 17:47:09 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:47:09 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/14501.html HTTP/1.1" 301 170
+2019-09-28 17:47:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:47:10 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/14501.html HTTP/1.1" 200 6291
+2019-09-28 17:47:23 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:47:23 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/14499.html HTTP/1.1" 301 170
+2019-09-28 17:47:23 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:47:24 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/14499.html HTTP/1.1" 200 6264
+2019-09-28 17:47:35 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:47:35 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/13242.html HTTP/1.1" 301 170
+2019-09-28 17:47:35 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:47:35 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/13242.html HTTP/1.1" 200 6272
+2019-09-28 17:47:41 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:47:41 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/13227.html HTTP/1.1" 301 170
+2019-09-28 17:47:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:47:44 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/13227.html HTTP/1.1" 200 8343
+2019-09-28 17:47:51 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:47:51 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11866.html HTTP/1.1" 301 170
+2019-09-28 17:47:51 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:47:52 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11866.html HTTP/1.1" 200 6241
+2019-09-28 17:48:03 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:48:03 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/12575.html HTTP/1.1" 301 170
+2019-09-28 17:48:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:48:03 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/12575.html HTTP/1.1" 200 6271
+2019-09-28 17:48:14 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:48:15 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/12573.html HTTP/1.1" 301 170
+2019-09-28 17:48:15 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:48:15 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/12573.html HTTP/1.1" 200 6294
+2019-09-28 17:48:20 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:48:21 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/12563.html HTTP/1.1" 301 170
+2019-09-28 17:48:21 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:48:22 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/12563.html HTTP/1.1" 200 6272
+2019-09-28 17:48:30 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:48:31 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/12320.html HTTP/1.1" 301 170
+2019-09-28 17:48:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:48:31 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/12320.html HTTP/1.1" 200 6308
+2019-09-28 17:48:41 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:48:41 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/12139.html HTTP/1.1" 301 170
+2019-09-28 17:48:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:48:44 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/12139.html HTTP/1.1" 200 6213
+2019-09-28 17:48:54 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:48:54 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/12040.html HTTP/1.1" 301 170
+2019-09-28 17:48:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:48:54 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/12040.html HTTP/1.1" 200 6284
+2019-09-28 17:49:00 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:49:00 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/12018.html HTTP/1.1" 301 170
+2019-09-28 17:49:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:49:01 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/12018.html HTTP/1.1" 200 6266
+2019-09-28 17:49:09 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:49:12 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/12015.html HTTP/1.1" 301 170
+2019-09-28 17:49:12 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:49:13 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/12015.html HTTP/1.1" 200 6283
+2019-09-28 17:49:22 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:49:22 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/12021.html HTTP/1.1" 301 170
+2019-09-28 17:49:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:49:22 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/12021.html HTTP/1.1" 200 6288
+2019-09-28 17:49:32 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:49:32 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11974.html HTTP/1.1" 301 170
+2019-09-28 17:49:32 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:49:33 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11974.html HTTP/1.1" 200 6342
+2019-09-28 17:49:37 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:49:38 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/list_9_2.html HTTP/1.1" 200 13070
+2019-09-28 17:49:38 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:49:38 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11917.html HTTP/1.1" 301 170
+2019-09-28 17:49:38 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:49:40 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11917.html HTTP/1.1" 200 6234
+2019-09-28 17:49:48 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:49:49 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11907.html HTTP/1.1" 301 170
+2019-09-28 17:49:49 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:49:50 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11907.html HTTP/1.1" 200 6273
+2019-09-28 17:50:00 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:50:00 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11794.html HTTP/1.1" 301 170
+2019-09-28 17:50:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:50:01 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11794.html HTTP/1.1" 200 6288
+2019-09-28 17:50:11 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:50:11 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11758.html HTTP/1.1" 301 170
+2019-09-28 17:50:11 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:50:12 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11758.html HTTP/1.1" 200 6309
+2019-09-28 17:50:17 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:50:18 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11717.html HTTP/1.1" 301 170
+2019-09-28 17:50:18 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:50:18 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11717.html HTTP/1.1" 200 6293
+2019-09-28 17:50:27 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:50:31 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11687.html HTTP/1.1" 301 170
+2019-09-28 17:50:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:50:31 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11687.html HTTP/1.1" 200 6257
+2019-09-28 17:50:40 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:50:40 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11783.html HTTP/1.1" 301 170
+2019-09-28 17:50:40 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:50:41 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11783.html HTTP/1.1" 200 6265
+2019-09-28 17:50:54 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:50:55 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11620.html HTTP/1.1" 301 170
+2019-09-28 17:50:55 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:50:55 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11620.html HTTP/1.1" 200 6318
+2019-09-28 17:51:05 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:51:08 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11615.html HTTP/1.1" 301 170
+2019-09-28 17:51:08 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:51:10 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11615.html HTTP/1.1" 200 6288
+2019-09-28 17:51:18 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:51:18 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11614.html HTTP/1.1" 301 170
+2019-09-28 17:51:18 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:51:20 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11614.html HTTP/1.1" 200 6323
+2019-09-28 17:51:29 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:51:33 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11609.html HTTP/1.1" 301 170
+2019-09-28 17:51:33 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:51:33 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11609.html HTTP/1.1" 200 6293
+2019-09-28 17:51:41 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:51:41 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11418.html HTTP/1.1" 301 170
+2019-09-28 17:51:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:51:46 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11418.html HTTP/1.1" 200 6270
+2019-09-28 17:51:54 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:51:54 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11065.html HTTP/1.1" 301 170
+2019-09-28 17:51:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:51:55 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11065.html HTTP/1.1" 200 6292
+2019-09-28 17:52:06 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:52:07 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11300.html HTTP/1.1" 301 170
+2019-09-28 17:52:07 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:52:08 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11300.html HTTP/1.1" 200 6285
+2019-09-28 17:52:17 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:52:18 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11445.html HTTP/1.1" 301 170
+2019-09-28 17:52:18 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:52:20 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11445.html HTTP/1.1" 200 6267
+2019-09-28 17:52:30 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:52:30 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11329.html HTTP/1.1" 301 170
+2019-09-28 17:52:30 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:52:31 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11329.html HTTP/1.1" 200 6280
+2019-09-28 17:52:41 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:52:41 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11260.html HTTP/1.1" 301 170
+2019-09-28 17:52:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:52:42 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11260.html HTTP/1.1" 200 6304
+2019-09-28 17:52:52 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:52:52 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11224.html HTTP/1.1" 301 170
+2019-09-28 17:52:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:52:52 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11224.html HTTP/1.1" 200 6326
+2019-09-28 17:52:58 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:53:01 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11061.html HTTP/1.1" 301 170
+2019-09-28 17:53:01 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:53:04 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11061.html HTTP/1.1" 200 6305
+2019-09-28 17:53:10 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:53:13 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11066.html HTTP/1.1" 301 170
+2019-09-28 17:53:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:53:14 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11066.html HTTP/1.1" 200 8374
+2019-09-28 17:53:19 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:53:26 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/11063.html HTTP/1.1" 301 170
+2019-09-28 17:53:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:53:26 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/11063.html HTTP/1.1" 200 6261
+2019-09-28 17:53:31 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:53:32 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/10738.html HTTP/1.1" 301 170
+2019-09-28 17:53:32 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:53:32 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/10738.html HTTP/1.1" 200 6319
+2019-09-28 17:53:43 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:53:44 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/10614.html HTTP/1.1" 301 170
+2019-09-28 17:53:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:53:44 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/10614.html HTTP/1.1" 200 6423
+2019-09-28 17:53:57 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:53:58 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/10615.html HTTP/1.1" 301 170
+2019-09-28 17:53:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:54:03 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/10615.html HTTP/1.1" 200 6277
+2019-09-28 17:54:10 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:54:11 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/10607.html HTTP/1.1" 301 170
+2019-09-28 17:54:11 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:54:11 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/10607.html HTTP/1.1" 200 6265
+2019-09-28 17:54:22 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:54:22 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/10266.html HTTP/1.1" 301 170
+2019-09-28 17:54:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:54:23 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/10266.html HTTP/1.1" 200 6279
+2019-09-28 17:54:34 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:54:34 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/10055.html HTTP/1.1" 301 170
+2019-09-28 17:54:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:54:35 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/10055.html HTTP/1.1" 200 6272
+2019-09-28 17:54:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:54:47 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/list_9_3.html HTTP/1.1" 200 12950
+2019-09-28 17:54:47 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:54:47 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/9987.html HTTP/1.1" 301 169
+2019-09-28 17:54:47 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:54:48 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/9987.html HTTP/1.1" 200 6295
+2019-09-28 17:55:02 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:55:03 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/9946.html HTTP/1.1" 301 169
+2019-09-28 17:55:03 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:55:05 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/9946.html HTTP/1.1" 200 6299
+2019-09-28 17:55:22 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:55:22 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/9815.html HTTP/1.1" 301 169
+2019-09-28 17:55:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:55:22 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/9815.html HTTP/1.1" 200 6238
+2019-09-28 17:55:36 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:55:37 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/9699.html HTTP/1.1" 301 169
+2019-09-28 17:55:37 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:55:39 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/9699.html HTTP/1.1" 200 6258
+2019-09-28 17:55:51 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:55:51 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/9757.html HTTP/1.1" 301 169
+2019-09-28 17:55:51 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:55:51 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/9757.html HTTP/1.1" 200 6306
+2019-09-28 17:56:04 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:56:04 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/9112.html HTTP/1.1" 301 169
+2019-09-28 17:56:04 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:56:09 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/9112.html HTTP/1.1" 200 8332
+2019-09-28 17:56:19 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:56:19 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/9104.html HTTP/1.1" 301 169
+2019-09-28 17:56:19 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:56:22 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/9104.html HTTP/1.1" 200 6287
+2019-09-28 17:56:33 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:56:33 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8984.html HTTP/1.1" 301 169
+2019-09-28 17:56:33 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:56:35 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8984.html HTTP/1.1" 200 6261
+2019-09-28 17:56:47 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:56:47 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8983.html HTTP/1.1" 301 169
+2019-09-28 17:56:47 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:56:48 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8983.html HTTP/1.1" 200 6231
+2019-09-28 17:56:56 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:56:57 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8652.html HTTP/1.1" 301 169
+2019-09-28 17:56:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:56:58 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8652.html HTTP/1.1" 200 6264
+2019-09-28 17:57:10 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:57:10 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8609.html HTTP/1.1" 301 169
+2019-09-28 17:57:10 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:57:11 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8609.html HTTP/1.1" 200 6281
+2019-09-28 17:57:23 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:57:26 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8520.html HTTP/1.1" 301 169
+2019-09-28 17:57:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:57:27 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8520.html HTTP/1.1" 200 6232
+2019-09-28 17:57:35 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:57:38 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8470.html HTTP/1.1" 301 169
+2019-09-28 17:57:38 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:57:39 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8470.html HTTP/1.1" 200 6276
+2019-09-28 17:57:54 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:57:54 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8539.html HTTP/1.1" 301 169
+2019-09-28 17:57:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:57:56 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8539.html HTTP/1.1" 200 6280
+2019-09-28 17:58:10 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:58:10 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8538.html HTTP/1.1" 301 169
+2019-09-28 17:58:10 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:58:13 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8538.html HTTP/1.1" 200 6306
+2019-09-28 17:58:25 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:58:26 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8537.html HTTP/1.1" 301 169
+2019-09-28 17:58:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:58:26 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8537.html HTTP/1.1" 200 6290
+2019-09-28 17:58:44 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:58:45 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8536.html HTTP/1.1" 301 169
+2019-09-28 17:58:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:58:45 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8536.html HTTP/1.1" 200 6294
+2019-09-28 17:58:57 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:58:57 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8460.html HTTP/1.1" 301 169
+2019-09-28 17:58:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:58:58 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8460.html HTTP/1.1" 200 6280
+2019-09-28 17:59:09 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:59:10 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/6722.html HTTP/1.1" 301 169
+2019-09-28 17:59:10 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:59:11 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/6722.html HTTP/1.1" 200 6299
+2019-09-28 17:59:24 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:59:24 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8275.html HTTP/1.1" 301 169
+2019-09-28 17:59:24 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:59:25 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8275.html HTTP/1.1" 200 6243
+2019-09-28 17:59:44 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 17:59:45 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8190.html HTTP/1.1" 301 169
+2019-09-28 17:59:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 17:59:55 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8190.html HTTP/1.1" 200 6328
+2019-09-28 18:00:09 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:00:09 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8212.html HTTP/1.1" 301 169
+2019-09-28 18:00:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:00:11 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8212.html HTTP/1.1" 200 6230
+2019-09-28 18:00:22 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:00:23 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8071.html HTTP/1.1" 301 169
+2019-09-28 18:00:23 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:00:25 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8071.html HTTP/1.1" 200 6262
+2019-09-28 18:00:36 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:00:36 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8078.html HTTP/1.1" 301 169
+2019-09-28 18:00:36 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:00:44 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8078.html HTTP/1.1" 200 6271
+2019-09-28 18:00:51 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:00:54 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8077.html HTTP/1.1" 301 169
+2019-09-28 18:00:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:00:54 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8077.html HTTP/1.1" 200 6267
+2019-09-28 18:01:02 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:01:02 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/8076.html HTTP/1.1" 301 169
+2019-09-28 18:01:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:01:03 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/8076.html HTTP/1.1" 200 6308
+2019-09-28 18:01:12 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:01:15 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/2797.html HTTP/1.1" 301 169
+2019-09-28 18:01:15 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:01:16 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/2797.html HTTP/1.1" 200 6268
+2019-09-28 18:01:33 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:01:34 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7280.html HTTP/1.1" 301 169
+2019-09-28 18:01:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:01:44 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7280.html HTTP/1.1" 200 6227
+2019-09-28 18:01:49 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:01:52 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/list_9_4.html HTTP/1.1" 200 12816
+2019-09-28 18:01:53 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:01:54 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7282.html HTTP/1.1" 301 169
+2019-09-28 18:01:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:01:58 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7282.html HTTP/1.1" 200 6300
+2019-09-28 18:02:04 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:02:04 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7281.html HTTP/1.1" 301 169
+2019-09-28 18:02:04 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:02:04 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7281.html HTTP/1.1" 200 6261
+2019-09-28 18:02:13 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:02:14 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7279.html HTTP/1.1" 301 169
+2019-09-28 18:02:14 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:02:14 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7279.html HTTP/1.1" 200 6290
+2019-09-28 18:02:26 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:02:26 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7278.html HTTP/1.1" 301 169
+2019-09-28 18:02:27 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:02:29 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7278.html HTTP/1.1" 200 6283
+
+piece -> https://www.xiaopin5.com/xiaoshenyang/ 已爬取
+piece -> https://www.xiaopin5.com/xiaoshenyang/list_2_2.html 已爬取
+piece -> https://www.xiaopin5.com/wangxiaoli/ 已爬取
+piece -> https://www.xiaopin5.com/wangxiaoli/list_14_2.html 已爬取
+piece -> https://www.xiaopin5.com/songxiaobao/ 未爬取
+find success 0
+find success 0
+正在抓取 -> 赵家班 宋小宝 《非诚来扰》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《自作自受》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《惊喜年夜饭》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《特别惊喜》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《冰山上的来客》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《超级英雄》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《喜剧之王》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《甜蜜蜜》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《你是我的儿》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《追求者》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《宿醉》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《算命》
+insert success 1
+find success 0
+find success 0
+正在抓取 -> 赵家班 宋小宝 《周半仙算卦》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《公园奇遇》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《我是男一号》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《烤串》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《吐槽大会》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《老板争夺战》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《老板争夺战》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《我的健康》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《最佳酒友》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《我为串狂》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《衣冠禽兽》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《黑云白土》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《三胞胎》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《新年法庭》
+insert success 1
+piece -> https://www.xiaopin5.com/songxiaobao/ 写入成功
+piece -> https://www.xiaopin5.com/songxiaobao/list_9_2.html 未爬取
+find success 0
+正在抓取 -> 赵家班 宋小宝 《回家》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《爱情不外卖》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《狼密欧羊丽叶》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《铁囧之回婆家》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《苏宁易嫁》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《乡村教师》
+insert success 1
+find success 0
+find success 0
+正在抓取 -> 赵家班 宋小宝 《回家吃饭》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《拯救你的旅途》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《爱的青椒》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《雨露均沾》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《听风》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《金牌替身》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《日夜男女》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《新白素贞传奇》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《宋媒婆》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《新鹊桥会》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《遥远的距离》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《养老院相亲记》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《永失我爱》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《白雪公主外传》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《巧舌如簧》
+insert success 1
+find success 1
+《甄嬛歪传》 -> 已爬取
+find success 0
+find success 0
+正在抓取 -> 赵家班 宋小宝 《武大郎》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《路口》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《我的老婆是演员》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《狮子篇》
+insert success 1
+piece -> https://www.xiaopin5.com/songxiaobao/list_9_2.html 写入成功
+piece -> https://www.xiaopin5.com/songxiaobao/list_9_3.html 未爬取
+find success 0
+正在抓取 -> 赵家班 宋小宝 《巨蟹座》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《双子篇》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《魔蝎篇》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《射手座篇》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《处女座篇》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《美人鱼》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《选妃》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《回家路上》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《与狗撞名》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《喜王之争》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《东北F4》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《吃面》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《有喜了》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《后宫甄嬛传》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《招式接龙》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《武林外传》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《我是你的蓉儿》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《送礼容易退礼难》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《甄嬛后传》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《转角遇到你》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《我是咖啡》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《我们这一年》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《灰姑娘》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《印度男仆》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《干儿子选拔赛》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《假如我是王大拿》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《二人转:飞到南方》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《相亲3.0版》
+insert success 1
+piece -> https://www.xiaopin5.com/songxiaobao/list_9_3.html 写入成功
+piece -> https://www.xiaopin5.com/songxiaobao/list_9_4.html 未爬取
+find success 1
+《婚托》 -> 已爬取
+find success 1
+《明星转起来》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 宋小宝 《孙策之死》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《打的车气儿》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《说学逗唱》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《相亲外传》
+insert success 1
+find success 02019-09-28 18:02:47 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:02:48 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7277.html HTTP/1.1" 301 169
+2019-09-28 18:02:48 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:02:48 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7277.html HTTP/1.1" 200 6251
+2019-09-28 18:02:58 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:02:59 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7252.html HTTP/1.1" 301 169
+2019-09-28 18:02:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:03:09 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7252.html HTTP/1.1" 200 6274
+2019-09-28 18:03:14 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:03:14 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7251.html HTTP/1.1" 301 169
+2019-09-28 18:03:14 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:03:16 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7251.html HTTP/1.1" 200 6247
+2019-09-28 18:03:33 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:03:33 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7250.html HTTP/1.1" 301 169
+2019-09-28 18:03:33 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:03:34 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7250.html HTTP/1.1" 200 6273
+2019-09-28 18:03:45 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:03:45 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7249.html HTTP/1.1" 301 169
+2019-09-28 18:03:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:03:46 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7249.html HTTP/1.1" 200 6235
+2019-09-28 18:03:57 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:03:59 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7248.html HTTP/1.1" 301 169
+2019-09-28 18:03:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:04:02 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7248.html HTTP/1.1" 200 6218
+2019-09-28 18:04:12 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:04:12 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/7247.html HTTP/1.1" 301 169
+2019-09-28 18:04:12 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:04:13 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/7247.html HTTP/1.1" 200 6312
+2019-09-28 18:04:27 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:04:27 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/6944.html HTTP/1.1" 301 169
+2019-09-28 18:04:27 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:04:27 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/6944.html HTTP/1.1" 200 6302
+2019-09-28 18:04:35 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:04:36 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/6895.html HTTP/1.1" 301 169
+2019-09-28 18:04:36 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:04:37 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/6895.html HTTP/1.1" 200 6309
+2019-09-28 18:04:46 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:04:46 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/6849.html HTTP/1.1" 301 169
+2019-09-28 18:04:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:04:47 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/6849.html HTTP/1.1" 200 6279
+2019-09-28 18:04:58 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:04:59 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/6268.html HTTP/1.1" 301 169
+2019-09-28 18:04:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:05:00 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/6268.html HTTP/1.1" 200 6309
+2019-09-28 18:05:18 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:05:18 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/6807.html HTTP/1.1" 301 169
+2019-09-28 18:05:18 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:05:19 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/6807.html HTTP/1.1" 200 6253
+2019-09-28 18:05:30 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:05:31 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/6667.html HTTP/1.1" 301 169
+2019-09-28 18:05:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:05:31 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/6667.html HTTP/1.1" 200 6289
+2019-09-28 18:05:45 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:05:45 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/5121.html HTTP/1.1" 301 169
+2019-09-28 18:05:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:05:50 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/5121.html HTTP/1.1" 200 6248
+2019-09-28 18:05:58 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:05:59 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/5120.html HTTP/1.1" 301 169
+2019-09-28 18:05:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:06:03 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/5120.html HTTP/1.1" 200 6308
+2019-09-28 18:06:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:06:13 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/list_9_5.html HTTP/1.1" 200 13025
+2019-09-28 18:06:14 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:06:14 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/5119.html HTTP/1.1" 301 169
+2019-09-28 18:06:14 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:06:15 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/5119.html HTTP/1.1" 200 6297
+2019-09-28 18:06:22 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:06:22 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/5117.html HTTP/1.1" 301 169
+2019-09-28 18:06:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:06:24 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/5117.html HTTP/1.1" 200 6277
+2019-09-28 18:06:32 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:06:33 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/5116.html HTTP/1.1" 301 169
+2019-09-28 18:06:33 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:06:38 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/5116.html HTTP/1.1" 200 6237
+2019-09-28 18:06:46 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:06:46 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/5115.html HTTP/1.1" 301 169
+2019-09-28 18:06:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:06:50 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/5115.html HTTP/1.1" 200 6268
+2019-09-28 18:06:58 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:06:58 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/5114.html HTTP/1.1" 301 169
+2019-09-28 18:06:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:06:59 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/5114.html HTTP/1.1" 200 6260
+2019-09-28 18:07:09 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:07:09 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /zhaobenshan/9.html HTTP/1.1" 301 166
+2019-09-28 18:07:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:07:14 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaobenshan/9.html HTTP/1.1" 200 6137
+2019-09-28 18:07:21 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:07:22 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /zhaobenshan/3.html HTTP/1.1" 301 166
+2019-09-28 18:07:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:07:25 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaobenshan/3.html HTTP/1.1" 200 6100
+2019-09-28 18:07:35 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:07:35 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/4552.html HTTP/1.1" 301 169
+2019-09-28 18:07:35 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:07:38 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/4552.html HTTP/1.1" 200 6278
+2019-09-28 18:07:49 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:07:50 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/3465.html HTTP/1.1" 301 169
+2019-09-28 18:07:50 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:07:52 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/3465.html HTTP/1.1" 200 6261
+2019-09-28 18:08:02 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:08:05 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/2580.html HTTP/1.1" 301 169
+2019-09-28 18:08:05 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:08:10 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/2580.html HTTP/1.1" 200 6262
+2019-09-28 18:08:20 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:08:20 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/2574.html HTTP/1.1" 301 169
+2019-09-28 18:08:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:08:22 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/2574.html HTTP/1.1" 200 6250
+2019-09-28 18:08:32 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:08:32 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/2431.html HTTP/1.1" 301 169
+2019-09-28 18:08:32 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:08:33 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/2431.html HTTP/1.1" 200 6305
+2019-09-28 18:08:38 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:08:38 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/2411.html HTTP/1.1" 301 169
+2019-09-28 18:08:38 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:08:39 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/2411.html HTTP/1.1" 200 6320
+2019-09-28 18:08:47 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:08:47 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/1729.html HTTP/1.1" 301 169
+2019-09-28 18:08:47 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:08:49 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/1729.html HTTP/1.1" 200 6254
+2019-09-28 18:08:58 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:08:59 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/1704.html HTTP/1.1" 301 169
+2019-09-28 18:08:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:08:59 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/1704.html HTTP/1.1" 200 6324
+2019-09-28 18:09:09 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:09:09 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/1711.html HTTP/1.1" 301 169
+2019-09-28 18:09:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:09:10 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/1711.html HTTP/1.1" 200 6273
+2019-09-28 18:09:20 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:09:20 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /new/668.html HTTP/1.1" 301 160
+2019-09-28 18:09:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:09:22 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /new/668.html HTTP/1.1" 200 6345
+2019-09-28 18:09:34 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:09:34 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/1183.html HTTP/1.1" 301 169
+2019-09-28 18:09:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:09:34 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/1183.html HTTP/1.1" 200 6240
+2019-09-28 18:09:45 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:09:46 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/129.html HTTP/1.1" 301 168
+2019-09-28 18:09:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:09:48 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/129.html HTTP/1.1" 200 6232
+2019-09-28 18:10:00 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:10:01 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/139.html HTTP/1.1" 301 168
+2019-09-28 18:10:01 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:10:01 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/139.html HTTP/1.1" 200 6302
+2019-09-28 18:10:12 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:10:12 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/140.html HTTP/1.1" 301 168
+2019-09-28 18:10:12 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:10:13 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/140.html HTTP/1.1" 200 6274
+2019-09-28 18:10:23 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:10:27 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/145.html HTTP/1.1" 301 168
+2019-09-28 18:10:27 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:10:27 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/145.html HTTP/1.1" 200 6270
+2019-09-28 18:10:37 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:10:37 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/71.html HTTP/1.1" 301 167
+2019-09-28 18:10:37 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:10:41 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/71.html HTTP/1.1" 200 6279
+2019-09-28 18:10:54 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:10:54 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/72.html HTTP/1.1" 301 167
+2019-09-28 18:10:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:10:54 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/72.html HTTP/1.1" 200 6263
+2019-09-28 18:11:04 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:11:04 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/73.html HTTP/1.1" 301 167
+2019-09-28 18:11:04 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:11:05 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/73.html HTTP/1.1" 200 6262
+2019-09-28 18:11:16 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:11:19 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/list_9_6.html HTTP/1.1" 200 10308
+2019-09-28 18:11:20 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:11:20 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/45.html HTTP/1.1" 301 167
+2019-09-28 18:11:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:11:20 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/45.html HTTP/1.1" 200 8318
+2019-09-28 18:11:30 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:11:31 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /songxiaobao/28.html HTTP/1.1" 301 167
+2019-09-28 18:11:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:11:33 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /songxiaobao/28.html HTTP/1.1" 200 6268
+2019-09-28 18:11:43 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:11:44 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaobenshan/ HTTP/1.1" 200 8437
+2019-09-28 18:11:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/erz/> (failed 1 times): User timeout caused connection failure: Getting https://www.xiaopin5.com/erz/ took longer than 15.0 seconds..
+2019-09-28 18:11:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/tianwa/> (failed 1 times): User timeout caused connection failure: Getting https://www.xiaopin5.com/tianwa/ took longer than 15.0 seconds..
+2019-09-28 18:11:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/zhaojiaban/xiaoshenlong/> (failed 1 times): User timeout caused connection failure: Getting https://www.xiaopin5.com/zhaojiaban/xiaoshenlong/ took longer than 15.0 seconds..
+2019-09-28 18:11:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/zhaojiaban/sxf/> (failed 1 times): User timeout caused connection failure: Getting https://www.xiaopin5.com/zhaojiaban/sxf/ took longer than 15.0 seconds..
+2019-09-28 18:11:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/zhaojiaban/zyp/> (failed 1 times): User timeout caused connection failure: Getting https://www.xiaopin5.com/zhaojiaban/zyp/ took longer than 15.0 seconds..
+2019-09-28 18:11:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/zhangxiaofei/> (failed 1 times): User timeout caused connection failure: Getting https://www.xiaopin5.com/zhangxiaofei/ took longer than 15.0 seconds..
+2019-09-28 18:11:55 [scrapy.extensions.logstats] INFO: Crawled 6 pages (at 6 pages/min), scraped 0 items (at 0 items/min)
+2019-09-28 18:11:55 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:11:57 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /liuxiaoguang/ HTTP/1.1" 200 12794
+2019-09-28 18:12:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/yadan/> (failed 1 times): User timeout caused connection failure.
+2019-09-28 18:12:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/yangbing/> (failed 1 times): User timeout caused connection failure: Getting https://www.xiaopin5.com/yangbing/ took longer than 15.0 seconds..
+2019-09-28 18:12:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/guodegang/> (failed 1 times): User timeout caused connection failure.
+2019-09-28 18:12:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/gaofeng/> (failed 1 times): User timeout caused connection failure.
+2019-09-28 18:12:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/sunyue/> (failed 1 times): User timeout caused connection failure.
+2019-09-28 18:12:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/chengye/> (failed 2 times): User timeout caused connection failure.
+2019-09-28 18:12:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/houzhen/> (failed 1 times): User timeout caused connection failure.
+2019-09-28 18:12:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xiaopin5.com/zhangxiaofei/> (failed 2 times): User timeout caused connection failure.
+2019-09-28 18:12:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/zhaojiaban/sxf/> (referer: None)
+2019-09-28 18:12:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/erz/> (referer: None)
+2019-09-28 18:12:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/yadan/> (referer: None)
+2019-09-28 18:12:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/zhaojiaban/zyp/> (referer: None)
+2019-09-28 18:12:15 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:12:16 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaojiaban/sxf/ HTTP/1.1" 200 8164
+2019-09-28 18:12:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:12:26 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaojiaban/sxf/list_196_3.html HTTP/1.1" 200 11363
+2019-09-28 18:12:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:12:32 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13863.html HTTP/1.1" 200 8349
+2019-09-28 18:12:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/tianwa/> (referer: None)
+2019-09-28 18:12:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/houzhen/> (referer: None)
+2019-09-28 18:12:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/yueyunpeng/> (referer: None)
+2019-09-28 18:12:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/guoqilin/> (referer: None)
+2019-09-28 18:12:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xiaopin5.com/sunyue/> (referer: None)
+2019-09-28 18:12:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:12:51 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /erz/ HTTP/1.1" 200 13761
+2019-09-28 18:12:56 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:12:58 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/ HTTP/1.1" 200 11707
+2019-09-28 18:13:08 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:13:10 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/ HTTP/1.1" 200 11707
+2019-09-28 18:13:11 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:13:11 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /v/17421.html HTTP/1.1" 301 160
+2019-09-28 18:13:11 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:13:12 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/17421.html HTTP/1.1" 200 6208
+2019-09-28 18:13:23 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:13:23 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /yadan/92.html HTTP/1.1" 301 161
+2019-09-28 18:13:23 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:13:27 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/92.html HTTP/1.1" 200 6327
+2019-09-28 18:13:35 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:13:35 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /v/17008.html HTTP/1.1" 301 160
+2019-09-28 18:13:35 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:13:35 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/17008.html HTTP/1.1" 200 6241
+2019-09-28 18:13:46 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:13:46 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /v/16908.html HTTP/1.1" 301 160
+2019-09-28 18:13:46 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:13:47 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/16908.html HTTP/1.1" 200 6214
+2019-09-28 18:14:01 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:14:02 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /v/9683.html HTTP/1.1" 301 159
+2019-09-28 18:14:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:14:03 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/9683.html HTTP/1.1" 200 6339
+2019-09-28 18:14:14 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:14:15 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /yadan/14132.html HTTP/1.1" 301 164
+2019-09-28 18:14:15 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:14:18 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/14132.html HTTP/1.1" 200 6262
+2019-09-28 18:14:26 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:14:26 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /yadan/11906.html HTTP/1.1" 301 164
+2019-09-28 18:14:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:14:37 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/11906.html HTTP/1.1" 200 8419
+2019-09-28 18:14:48 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:14:48 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /yadan/9748.html HTTP/1.1" 301 163
+2019-09-28 18:14:48 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:14:48 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/9748.html HTTP/1.1" 200 6287
+2019-09-28 18:14:59 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:14:59 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /tianwa/9642.html HTTP/1.1" 301 164
+2019-09-28 18:14:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:15:00 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /tianwa/9642.html HTTP/1.1" 200 6159
+2019-09-28 18:15:09 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:15:09 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /tianwa/9639.html HTTP/1.1" 301 164
+2019-09-28 18:15:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:15:14 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /tianwa/9639.html HTTP/1.1" 200 6189
+2019-09-28 18:15:22 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:15:22 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /yadan/9625.html HTTP/1.1" 301 163
+2019-09-28 18:15:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:15:22 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/9625.html HTTP/1.1" 200 6246
+2019-09-28 18:15:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:15:33 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/list_21_2.html HTTP/1.1" 200 10995
+2019-09-28 18:15:34 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:15:34 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /yadan/9572.html HTTP/1.1" 301 163
+2019-09-28 18:15:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:15:41 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/9572.html HTTP/1.1" 200 6301
+2019-09-28 18:15:57 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:15:57 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /chengye/5098.html HTTP/1.1" 301 165
+2019-09-28 18:15:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:15:59 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /chengye/5098.html HTTP/1.1" 200 6218
+2019-09-28 18:16:12 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:16:12 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /chengye/79.html HTTP/1.1" 301 163
+2019-09-28 18:16:12 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:16:13 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /chengye/79.html HTTP/1.1" 200 6247
+
+正在抓取 -> 赵家班 宋小宝 《霸王别姬》
+insert success 1
+find success 1
+《搞笑牛郎织女》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 宋小宝 《媒婆》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《社区运动会》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《偷吃人参果》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《玉米情》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《到底谁有病》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《乞丐也难当》
+insert success 1
+find success 1
+《招聘演员》 -> 已爬取
+find success 1
+《人生》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 宋小宝 《我们的二人转》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《碰瓷》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《打劫》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《表白》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《铡美案》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《星际旅行》
+insert success 1
+find success 1
+《看病》 -> 已爬取
+find success 1
+《武侠剧》 -> 已爬取
+find success 1
+《偶像团》 -> 已爬取
+find success 1
+《以貌取人》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 宋小宝 《飞到南方3.0版》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《九阴小黑爪》
+insert success 1
+piece -> https://www.xiaopin5.com/songxiaobao/list_9_4.html 写入成功
+piece -> https://www.xiaopin5.com/songxiaobao/list_9_5.html 未爬取
+find success 0
+正在抓取 -> 赵家班 宋小宝 《美女诱供记》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《家常菜》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《原来是你》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《换家电》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《面子》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 赵本山小品 《相亲2》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 赵本山小品 《相亲1》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《飞到南方2.0版》
+insert success 1
+find success 0
+find success 1
+《小品:买单》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 宋小宝 《小品:疯狂相亲》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《小品:大碗》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《小品:表白在今夜》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《小品:碰瓷》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《昨天今天明天》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《小品:镶牙》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《小品:自作自受》
+insert success 1
+find success 1
+《十五的月饼》 -> 已爬取
+find success 0
+find success 0
+正在抓取 -> 赵家班 宋小宝 《新版水浒传》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《纯爷们儿》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《经纪人》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《干哈呢》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《恐怖版绕口令》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《大考当前》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《卖火柴小女孩》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《到底谁有病》
+insert success 1
+find success 1
+《还珠格格Y传》 -> 已爬取
+piece -> https://www.xiaopin5.com/songxiaobao/list_9_5.html 写入成功
+piece -> https://www.xiaopin5.com/songxiaobao/list_9_6.html 未爬取
+find success 0
+正在抓取 -> 赵家班 宋小宝 《第一场雪》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋小宝 《相亲进行曲》
+insert success 1
+piece -> https://www.xiaopin5.com/songxiaobao/list_9_6.html 写入成功
+piece -> https://www.xiaopin5.com/zhaobenshan/ 已爬取
+piece -> https://www.xiaopin5.com/zhaobenshan/list_1_2.html 已爬取
+piece -> https://www.xiaopin5.com/zhaobenshan/list_1_3.html 已爬取
+piece -> https://www.xiaopin5.com/liuxiaoguang/ 已爬取
+piece -> https://www.xiaopin5.com/liuxiaoguang/list_17_2.html 已爬取
+piece -> https://www.xiaopin5.com/zhaojiaban/sxf/ 已爬取
+piece -> https://www.xiaopin5.com/zhaojiaban/sxf/list_196_2.html 已爬取
+piece -> https://www.xiaopin5.com/zhaojiaban/sxf/list_196_3.html 未爬取
+find success 1
+《走天涯》 -> 已爬取
+find success 1
+《心雨》 -> 已爬取
+find success 1
+《我们很年轻》 -> 已爬取
+find success 1
+《上海滩》 -> 已爬取
+find success 1
+《决心忘记你》 -> 已爬取
+find success 1
+《渡情》 -> 已爬取
+find success 1
+《保安队长》 -> 已爬取
+find success 1
+《》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 宋晓峰 《》
+insert success 1
+piece -> https://www.xiaopin5.com/zhaojiaban/sxf/list_196_3.html 写入成功
+piece -> https://www.xiaopin5.com/erz/ 已爬取
+piece -> https://www.xiaopin5.com/erz/list_126_2.html 已爬取
+piece -> https://www.xiaopin5.com/yadan/ 未爬取
+find success 0
+正在抓取 -> 赵家班 宋晓峰 《华府招亲》
+insert success 1
+find success 1
+《原来如此》 -> 已爬取
+find success 1
+《春天里》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 丫蛋 《我也是歌手》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋晓峰 《谈判专家》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 宋晓峰 《兄妹下山》
+insert success 1
+find success 1
+《明星梦》 -> 已爬取
+find success 1
+《温柔灭火器》 -> 已爬取
+find success 1
+《替天行道》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 文松 《梁山伯与祝英台》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 丫蛋 《大程子进城》
+insert success 1
+find success 1
+《山匪拜寿》 -> 已爬取
+find success 1
+《新盘丝洞》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 丫蛋 《幸福快递》
+insert success 1
+find success 1
+《乱炖上海滩》 -> 已爬取
+find success 1
+《黄师父》 -> 已爬取
+find success 1
+《老爸》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 丫蛋 《甜蜜爱情戏》
+insert success 1
+find success 1
+《影帝》 -> 已爬取
+find success 1
+《小芳》 -> 已爬取
+find success 1
+《女神与女汉子》 -> 已爬取
+find success 1
+《超级奶爸》 -> 已爬取
+find success 1
+《电影选角》 -> 已爬取
+find success 1
+《一张照片》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 田娃 《五鼠闹东京》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 田娃 《泡妞的技巧》
+insert success 1
+find success 1
+《唱情歌》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 丫蛋 《介绍对象》
+insert success 1
+piece -> https://www.xiaopin5.com/yadan/ 写入成功
+piece -> https://www.xiaopin5.com/yadan/list_21_2.html 未爬取
+find success 1
+《象牙山的后裔》 -> 已爬取
+find success 1
+《相亲》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 丫蛋 《新白娘子传奇》
+insert success 1
+find success 1
+《法海不懂爱》 -> 已爬取
+find success 1
+《新上海滩决斗》 -> 已爬取
+find success 1
+《上海滩决斗》 -> 已爬取
+find success 1
+《大闹婚礼现场》 -> 已爬取
+find success 1
+《笑傲江湖》 -> 已爬取
+find success 1
+《和平饭店》 -> 已爬取
+find success 1
+《好兄好弟》 -> 已爬取
+find success 1
+《不差钱2》 -> 已爬取
+find success 1
+《疯狂粉丝团》 -> 已爬取
+find success 0
+正在抓取 -> 赵家班 程野 《疯狂旅游团》
+insert success 1
+find success 0
+正在抓取 -> 赵家班 程野 《疯狂鉴宝团》2019-09-28 18:16:19 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:16:20 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /zhaobenshan/269.html HTTP/1.1" 301 168
+2019-09-28 18:16:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:16:21 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaobenshan/269.html HTTP/1.1" 200 7289
+2019-09-28 18:17:06 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:17:06 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /yadan/1873.html HTTP/1.1" 301 163
+2019-09-28 18:17:06 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:17:07 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/1873.html HTTP/1.1" 200 6327
+2019-09-28 18:17:29 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:17:29 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /yadan/1778.html HTTP/1.1" 301 163
+2019-09-28 18:17:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:17:29 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/1778.html HTTP/1.1" 200 6282
+2019-09-28 18:17:56 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:17:56 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /yadan/1774.html HTTP/1.1" 301 163
+2019-09-28 18:17:56 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:17:57 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/1774.html HTTP/1.1" 200 6321
+2019-09-28 18:18:09 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:18:09 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /yadan/1770.html HTTP/1.1" 301 163
+2019-09-28 18:18:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:18:10 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/1770.html HTTP/1.1" 200 6355
+2019-09-28 18:18:22 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:18:22 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /yadan/1719.html HTTP/1.1" 301 163
+2019-09-28 18:18:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:18:23 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/1719.html HTTP/1.1" 200 6305
+2019-09-28 18:18:42 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:18:51 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /new/668.html HTTP/1.1" 301 160
+2019-09-28 18:18:51 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:18:52 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /new/668.html HTTP/1.1" 200 6345
+2019-09-28 18:19:09 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:19:10 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /yadan/185.html HTTP/1.1" 301 162
+2019-09-28 18:19:10 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:19:11 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/185.html HTTP/1.1" 200 6268
+2019-09-28 18:19:22 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.xiaopin5.com:80
+2019-09-28 18:19:22 [urllib3.connectionpool] DEBUG: http://www.xiaopin5.com:80 "GET /yadan/180.html HTTP/1.1" 301 162
+2019-09-28 18:19:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:19:23 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /yadan/180.html HTTP/1.1" 200 6302
+2019-09-28 18:19:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:19:35 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaojiaban/zyp/ HTTP/1.1" 200 12944
+2019-09-28 18:19:38 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:19:48 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaojiaban/zyp/ HTTP/1.1" 200 12944
+2019-09-28 18:19:48 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:19:48 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/14337.html HTTP/1.1" 200 8285
+2019-09-28 18:19:56 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:20:01 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/16041.html HTTP/1.1" 200 8315
+2019-09-28 18:20:14 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:20:15 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/15974.html HTTP/1.1" 200 8285
+2019-09-28 18:20:27 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:20:28 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/14127.html HTTP/1.1" 200 8364
+2019-09-28 18:20:41 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:20:42 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/13243.html HTTP/1.1" 200 8376
+2019-09-28 18:20:55 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:20:57 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12547.html HTTP/1.1" 200 8316
+2019-09-28 18:21:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:21:21 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12577.html HTTP/1.1" 200 8368
+2019-09-28 18:21:33 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:21:34 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12574.html HTTP/1.1" 200 8418
+2019-09-28 18:21:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:21:46 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12539.html HTTP/1.1" 200 8333
+2019-09-28 18:21:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:21:59 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12545.html HTTP/1.1" 200 8435
+2019-09-28 18:22:11 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:22:11 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12544.html HTTP/1.1" 200 8357
+2019-09-28 18:22:16 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:22:17 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12543.html HTTP/1.1" 200 8461
+2019-09-28 18:22:28 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:22:29 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12542.html HTTP/1.1" 200 8412
+2019-09-28 18:22:40 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:22:40 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12541.html HTTP/1.1" 200 8500
+2019-09-28 18:22:50 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:22:51 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12540.html HTTP/1.1" 200 8439
+2019-09-28 18:22:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:22:59 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12510.html HTTP/1.1" 200 8295
+2019-09-28 18:23:05 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:23:08 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12500.html HTTP/1.1" 200 8467
+2019-09-28 18:23:17 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:23:18 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12505.html HTTP/1.1" 200 8388
+2019-09-28 18:23:27 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:23:29 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12506.html HTTP/1.1" 200 8439
+2019-09-28 18:23:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:23:35 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12503.html HTTP/1.1" 200 8424
+2019-09-28 18:23:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:23:45 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12509.html HTTP/1.1" 200 8341
+2019-09-28 18:23:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:23:58 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12499.html HTTP/1.1" 200 8427
+2019-09-28 18:24:08 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:24:12 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12498.html HTTP/1.1" 200 8389
+2019-09-28 18:24:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:24:24 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12487.html HTTP/1.1" 200 8430
+2019-09-28 18:24:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:24:34 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12486.html HTTP/1.1" 200 8379
+2019-09-28 18:24:44 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:24:48 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12485.html HTTP/1.1" 200 8413
+2019-09-28 18:24:58 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:24:59 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12483.html HTTP/1.1" 200 8371
+2019-09-28 18:25:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:25:09 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12480.html HTTP/1.1" 200 8399
+2019-09-28 18:25:13 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:25:16 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /zhaojiaban/zyp/list_191_2.html HTTP/1.1" 200 12961
+2019-09-28 18:25:17 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:25:18 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12479.html HTTP/1.1" 200 8324
+2019-09-28 18:25:24 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:25:26 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12478.html HTTP/1.1" 200 8382
+2019-09-28 18:25:36 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:25:39 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12477.html HTTP/1.1" 200 8418
+2019-09-28 18:25:48 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:25:49 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12476.html HTTP/1.1" 200 8385
+2019-09-28 18:25:59 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:25:59 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12475.html HTTP/1.1" 200 8328
+2019-09-28 18:26:09 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:26:14 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12474.html HTTP/1.1" 200 8457
+2019-09-28 18:26:24 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:26:24 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12473.html HTTP/1.1" 200 8416
+2019-09-28 18:26:35 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:26:36 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12472.html HTTP/1.1" 200 8275
+2019-09-28 18:26:49 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:26:50 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12466.html HTTP/1.1" 200 8434
+2019-09-28 18:27:02 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:27:04 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12470.html HTTP/1.1" 200 8375
+2019-09-28 18:27:14 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:27:15 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12469.html HTTP/1.1" 200 8469
+2019-09-28 18:27:27 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:27:31 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12464.html HTTP/1.1" 200 8391
+2019-09-28 18:27:39 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:27:40 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12463.html HTTP/1.1" 200 8369
+2019-09-28 18:27:52 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:27:55 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12462.html HTTP/1.1" 200 8314
+2019-09-28 18:28:17 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:28:19 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12460.html HTTP/1.1" 200 8278
+2019-09-28 18:28:39 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:28:40 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12459.html HTTP/1.1" 200 8349
+2019-09-28 18:28:50 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:28:51 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12458.html HTTP/1.1" 200 8483
+2019-09-28 18:28:57 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:28:57 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12456.html HTTP/1.1" 200 8319
+2019-09-28 18:29:06 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:29:10 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12454.html HTTP/1.1" 200 8369
+2019-09-28 18:29:17 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:29:19 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12453.html HTTP/1.1" 200 8314
+2019-09-28 18:29:30 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:29:35 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12452.html HTTP/1.1" 200 8380
+2019-09-28 18:29:43 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:29:44 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12451.html HTTP/1.1" 200 8410
+2019-09-28 18:29:54 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:29:55 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12450.html HTTP/1.1" 200 8341
+2019-09-28 18:30:00 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:30:11 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12449.html HTTP/1.1" 200 8337
+2019-09-28 18:30:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:30:24 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12448.html HTTP/1.1" 200 8490
+2019-09-28 18:30:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:30:36 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12447.html HTTP/1.1" 200 8438
+2019-09-28 18:30:45 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xiaopin5.com:443
+2019-09-28 18:30:48 [urllib3.connectionpool] DEBUG: https://www.xiaopin5.com:443 "GET /v/12446.html HTTP/1.1" 200 8321

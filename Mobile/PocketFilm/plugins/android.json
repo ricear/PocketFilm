@@ -1,0 +1,58 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "cordova-plugin-file-opener2": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "cordova-plugin-ionic-webview": {
+      "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "integrator-cordova-plugin-downloader": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "cordova-plugin-streaming-media": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    }
+  }
+}

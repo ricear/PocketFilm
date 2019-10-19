@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="integrator-cordova-plugin-downloader" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Downloader</name>
+    <js-module name="Downloader" src="www/Downloader.js">
+        <clobbers target="cordova.plugins.Downloader" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="Downloader">
+                <param name="android-package" value="hr.integrator.cordova.plugins.downloader.Downloader" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+			<uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		</config-file>
+        <source-file src="src/android/Downloader.java" target-dir="src/integrator-cordova-plugin-downloader/Downloader" />
+    </platform>
+</plugin>

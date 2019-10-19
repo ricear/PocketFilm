@@ -1,0 +1,23 @@
+events.js:173
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (net.js:1256:14)
+    at listenInCluster (net.js:1304:12)
+    at Server.listen (net.js:1392:7)
+    at Function.listen (/Users/weipeng/Personal/Projects/PocketFilm/Web/PocketFilm/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/Users/weipeng/Personal/Projects/PocketFilm/Web/PocketFilm/app.js:57:5)
+    at Module._compile (internal/modules/cjs/loader.js:799:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:810:10)
+    at Module.load (internal/modules/cjs/loader.js:666:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:606:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:598:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:862:12)
+    at internal/main/run_main_module.js:21:11
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1283:8)
+    at processTicksAndRejections (internal/process/next_tick.js:76:17)
+    at process.runNextTicks [as _tickCallback] (internal/process/next_tick.js:51:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:865:11)
+    at internal/main/run_main_module.js:21:11

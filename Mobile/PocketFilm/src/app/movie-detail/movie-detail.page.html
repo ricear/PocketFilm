@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="danger">
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title style="text-align: center;">{{movie.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <iframe id="iplayer" name="iplayer" allowtransparency="true" allowfullscreen webkitallowfullscreen
+    mozallowfullscreen oallowfullscreen msallowfullscreen border="0" marginwidth="0" marginheight="0" hspace="0"
+      vspace="0" frameborder="0" scrolling="no" [src]="safeUrl" width="100%" height="48%" rel="nofollow"></iframe>
+  <ion-label>
+    <p>
+      <span class="c01">主演：</span>
+      <span class="c02" *ngFor="let actor of movie.actors">{{actor}}&nbsp;&nbsp;</span>
+    </p>
+    <p>
+      <span class="c01">类型：<span class="c02">{{movie.type2}}</span></span>&nbsp;&nbsp;<span class="c01">地区：<span
+          class="c02">{{movie.region}}</span></span>&nbsp;&nbsp;<span class="c01">上映日期：<span
+          class="c02">{{movie.release_date}}</span></span>
+    </p>
+    <ion-list style="padding-top: 0px;" *ngFor="let source of movie.sources">
+      <h3 class="source_name">{{source.name}}</h3>
+      <span *ngFor="let type of source.types">
+        <!-- 当前选中项的影视源 -->
+        <a class="c02 source_type source_type_active" (click)="changeMovieType(type.url)" *ngIf="url==type.url">{{type.name}}</a>
+        <!-- 不是当前选中项的影视源 -->
+        <a class="c02 source_type" (click)="changeMovieType(type.url)" *ngIf="url!=type.url">{{type.name}}</a>
+      </span>
+    </ion-list>
+    <p style="color: #999;">
+        <span class="c01">剧情介绍：</span>
+        <span class="c02">{{movie.description}}</span>
+      </p>
+  </ion-label>
+</ion-content>

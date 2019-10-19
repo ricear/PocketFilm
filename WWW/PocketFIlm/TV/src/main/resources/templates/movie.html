@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<th:block th:insert="../templates/head"></th:block>
+<body>
+
+<th:block th:insert="../templates/navigation"></th:block>
+
+<div class="main">
+    <div class="index-area clearfix">
+        <div class="index-area-l">
+            <h3 class="title index-color clearfix"><span class="daygenxin">今日更新<a href="/?m=label-new200.html" target="_blank" title="最近更新200部影片">284</a>部</span>&nbsp;热门推荐</h3>
+            <ul>
+
+                <div class="qcontainer" th:each="movie : ${recommendations}">
+                    <div class="film">
+                        <div class="face front">
+                            <li class="p2 MPli1"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                                <span class="index5njcom titletj5nj">
+						<i th:text="${movie.name}"></i>
+					</span>
+                            </a>
+                            </li>
+                        </div>
+                        <div class="face back">
+                            <li class="p2 MPli"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                                <span class="video-bg"></span>
+                                <span class="lzbz">
+						<p class="name" th:text="${movie.name}"></p>
+						<p class="actor" th:text="${movie.type}">
+						</p>
+						</span>
+                                <p class="other">
+                                    <i></i>
+                                </p>
+                            </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="index-area clearfix">
+        <h3 class="title index-color">
+	<span class="hitkey kp">
+	<a href="/more?type=央视台">更多»</a>
+	</span>
+            <a href="/more?type=0">&nbsp;央视台</a>
+        </h3>
+        <ul>
+            <div class="qcontainer" th:each="movie : ${movies0}">
+                <div class="film">
+                    <div class="face front">
+                        <li class="p2 MPli"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                            <span class="index5njcom titletj5nj">
+						<i th:text="${movie.name}"></i>
+					</span>
+                        </a>
+                        </li>
+                    </div>
+                    <div class="face back">
+                        <li class="p2 MPli"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                            <span class="video-bg"></span>
+                            <span class="lzbz">
+						<p class="name" th:text="${movie.name}"></p>
+						<p class="actor" th:text="${movie.type}">
+						</p>
+						</span>
+                            <p class="other">
+                                <i></i>
+                            </p>
+                        </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <div class="index-area clearfix">
+        <h3 class="title index-color">
+	<span class="hitkey kp">
+	<a href="/more?type=卫视台">更多»</a>
+	</span>
+            <a href="/more?type=0">&nbsp;卫视台</a>
+        </h3>
+        <ul>
+            <div class="qcontainer" th:each="movie : ${movies1}">
+                <div class="film">
+                    <div class="face front">
+                        <li class="p2 MPli"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                            <span class="index5njcom titletj5nj">
+						<i th:text="${movie.name}"></i>
+					</span>
+                        </a>
+                        </li>
+                    </div>
+                    <div class="face back">
+                        <li class="p2 MPli"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                            <span class="video-bg"></span>
+                            <span class="lzbz">
+						<p class="name" th:text="${movie.name}"></p>
+						<p class="actor" th:text="${movie.type}">
+						</p>
+						</span>
+                            <p class="other">
+                                <i></i>
+                            </p>
+                        </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <div class="index-area clearfix">
+        <h3 class="title index-color">
+	<span class="hitkey kp">
+	<a href="/more?type=地方台">更多»</a>
+	</span>
+            <a href="/more?type=0">&nbsp;地方台</a>
+        </h3>
+        <ul>
+            <div class="qcontainer" th:each="movie : ${movies2}">
+                <div class="film">
+                    <div class="face front">
+                        <li class="p2 MPli"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                            <span class="index5njcom titletj5nj">
+						<i th:text="${movie.name}"></i>
+					</span>
+                        </a>
+                        </li>
+                    </div>
+                    <div class="face back">
+                        <li class="p2 MPli"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                            <span class="video-bg"></span>
+                            <span class="lzbz">
+						<p class="name" th:text="${movie.name}"></p>
+						<p class="actor" th:text="${movie.type}">
+						</p>
+						</span>
+                            <p class="other">
+                                <i></i>
+                            </p>
+                        </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <div class="index-area clearfix">
+        <h3 class="title index-color">
+	<span class="hitkey kp">
+	<a href="/more?type=港澳台">更多»</a>
+	</span>
+            <a href="/more?type=0">&nbsp;港澳台</a>
+        </h3>
+        <ul>
+            <div class="qcontainer" th:each="movie : ${movies3}">
+                <div class="film">
+                    <div class="face front">
+                        <li class="p2 MPli"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                            <span class="index5njcom titletj5nj">
+						<i th:text="${movie.name}"></i>
+					</span>
+                        </a>
+                        </li>
+                    </div>
+                    <div class="face back">
+                        <li class="p2 MPli"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                            <span class="video-bg"></span>
+                            <span class="lzbz">
+						<p class="name" th:text="${movie.name}"></p>
+						<p class="actor" th:text="${movie.type}">
+						</p>
+						</span>
+                            <p class="other">
+                                <i></i>
+                            </p>
+                        </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <div class="ylink mb clearfix">
+        友情连接：
+
+        <a href="https://www.0lq.com" target="_blank">乐趣影院</a>
+
+        <a href="https://www.manfh.com" target="_blank">漫符号</a>
+
+        <a href="http://www.gkshu.com" target="_blank">公开书小说</a>
+
+        <a href="https://www.tingsb.com" target="_blank">听书吧</a>
+
+    </div>
+</div>
+</div>
+</div>
+<script src="/js/cnzz4.js"></script>
+<script type='text/javascript' charset='utf-8' src='https://p.zxhrq.cn/vtdd/swh960sav773huj.js'></script>
+<div class="navigation_top"></div>
+<th:block th:insert="../templates/foot"></th:block>
+</body>
+</html>

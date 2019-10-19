@@ -1,0 +1,7 @@
+<ion-slides class="slide-title" [slidesPerView]="pageNumber" [pager]="false">  
+    <ion-slide *ngFor="let slide of slides; let i = index;">  
+      <div (click)="onClick(i)">  
+        <span class="slide-title-unit" [ngClass]="{'slide-title-active': selectedIndex == i}">{{slide}}</span>  
+      </div>  
+    </ion-slide>  
+  </ion-slides> 

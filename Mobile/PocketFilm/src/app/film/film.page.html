@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title style="text-align: center;">{{typeNameList[type]}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- 下拉刷新 -->
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="松开刷新" refreshingSpinner="circles"
+      refreshingText="正在刷新">
+    </ion-refresher-content>
+  </ion-refresher>
+  <!-- 下拉刷新 -->
+
+  <!-- 搜索 -->
+  <ion-searchbar (click)="goSearchMovie()" placeholder="请输入影视或演员名称"></ion-searchbar>
+
+  <ion-segment [(ngModel)]="type">
+    <ion-segment-button value="0" (click)="changeMovieType(0)">
+      电影
+    </ion-segment-button>
+    <ion-segment-button value="1" (click)="changeMovieType(1)">
+      电视剧
+    </ion-segment-button>
+    <ion-segment-button value="2" (click)="changeMovieType(2)">
+      综艺
+    </ion-segment-button>
+    <ion-segment-button value="3" (click)="changeMovieType(3)">
+      动漫
+    </ion-segment-button>
+  </ion-segment>
+
+  <!-- 推荐数据 -->
+  <ion-item lines="none">
+    <ion-label slot="start"><span>猜你喜欢</span></ion-label>
+    <ion-label slot="end" (click)="goMoreRecommendations()"><span>更多</span></ion-label>
+  </ion-item>
+  <ion-grid>
+    <ion-row *ngFor="let latestTop10Movie of recommendations">
+      <ion-col *ngFor="let latestTop10Movie2 of latestTop10Movie" (click)="goMovieDetail((latestTop10Movie2._id))">
+        <div>
+          <img src="{{latestTop10Movie2.src}}"
+            onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
+        </div>
+        <p class="movie-detail" style="margin: 0px;">{{latestTop10Movie2.name}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 最新影视 -->
+  <ion-item lines="none">
+    <ion-label slot="start"><span>最新{{typeNameList[type]}}</span></ion-label>
+    <ion-label slot="end" (click)="goMoreMovie(1)"><span>更多</span></ion-label>
+  </ion-item>
+  <ion-grid>
+    <ion-row *ngFor="let latestTop10Movie of latestTop10Movies">
+      <ion-col *ngFor="let latestTop10Movie2 of latestTop10Movie" (click)="goMovieDetail((latestTop10Movie2._id))">
+        <div>
+          <img src="{{latestTop10Movie2.src}}"
+            onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
+        </div>
+        <p class="movie-detail" style="margin: 0px;">{{latestTop10Movie2.name}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 最热影视 -->
+  <ion-item lines="none">
+    <ion-label slot="start"><span>最热{{typeNameList[type]}}</span></ion-label>
+    <ion-label slot="end" (click)="goMoreMovie(2)"><span>更多</span></ion-label>
+  </ion-item>
+  <ion-grid>
+    <ion-row *ngFor="let hottestTop10Movie of hottestTop10Movies">
+      <ion-col *ngFor="let hottestTop10Movie2 of hottestTop10Movie" (click)="goMovieDetail((hottestTop10Movie2._id))">
+        <div>
+          <img src="{{hottestTop10Movie2.src}}"
+            onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
+        </div>
+        <p class="movie-detail" style="margin: 0px;">{{hottestTop10Movie2.name}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

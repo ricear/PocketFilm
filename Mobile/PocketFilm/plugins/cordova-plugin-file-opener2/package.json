@@ -1,0 +1,62 @@
+{
+  "_from": "cordova-plugin-file-opener2",
+  "_id": "cordova-plugin-file-opener2@2.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-9WLxsCoqZsbE2/2eO12GG9me/kE=",
+  "_location": "/cordova-plugin-file-opener2",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-file-opener2",
+    "name": "cordova-plugin-file-opener2",
+    "escapedName": "cordova-plugin-file-opener2",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/cordova-plugin-file-opener2/download/cordova-plugin-file-opener2-2.2.0.tgz",
+  "_shasum": "f562f1b02a2a66c6c4dbfd9e3b5d861bd99efe41",
+  "_spec": "cordova-plugin-file-opener2",
+  "_where": "/Users/weipeng/Personal/Projects/PocketFilm/Mobile/PocketFilm",
+  "author": {
+    "name": "pwlin05@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/pwlin/cordova-plugin-file-opener2/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-file-opener2",
+    "platforms": [
+      "android",
+      "ios",
+      "wp8",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "A File Opener Plugin for Cordova. (The Original Version)",
+  "engines": {
+    "cordova": ">=6.0.0"
+  },
+  "homepage": "https://github.com/pwlin/cordova-plugin-file-opener2#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-wp8",
+    "cordova-windows"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-file-opener2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwlin/cordova-plugin-file-opener2.git"
+  },
+  "version": "2.2.0"
+}

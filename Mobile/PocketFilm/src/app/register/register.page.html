@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+        <ion-title style="text-align: center;">注册</ion-title>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div>
+        <ion-list>
+            <ion-item>
+              <ion-input type="text" placeholder="请输入用户名" [(ngModel)]="userInfo.username" (ionBlur)="validateUsername()"></ion-input>
+            </ion-item>
+            <ion-item>
+                  <ion-input type="text" placeholder="请输入手机号" [(ngModel)]="userInfo.mobile" (ionBlur)="validateMobile()"></ion-input>
+                  <ion-button ion-button color="success" item-right *ngIf="send" (click)="sendMessageCode()">{{sendCodeButton}}</ion-button>
+                  <ion-button ion-button color="success" disabled item-right *ngIf="!send" (click)="sendMessageCode()">{{sendCodeButton}}</ion-button>
+              </ion-item>
+              <ion-item>
+                  <ion-input type="text" placeholder="请输入短信验证码" [(ngModel)]="code"></ion-input>
+                </ion-item>
+          </ion-list>
+          <div padding>
+            <ion-button ion-button color="danger" style="border-radius: .5rem;width: 100%;" (click)="register()">立即注册</ion-button>
+          </div>
+    </div>
+
+</ion-content>

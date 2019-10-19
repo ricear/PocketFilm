@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+      <ion-title style="text-align: center;">{{user_name}}的浏览记录</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+  <!-- 下拉刷新 -->
+<ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="松开刷新" refreshingSpinner="circles"
+      refreshingText="正在刷新">
+    </ion-refresher-content>
+  </ion-refresher>
+  <!-- 下拉刷新 -->
+
+  <!-- 历史记录 -->
+<ion-list class="ios list-ios hydrated">
+    <ion-item class="item-label item ios in-list ion-focusable hydrated" *ngFor="let record of recordList" (click)="goRecordDetail(record)">
+      <ion-thumbnail slot="start" class="ios hydrated">
+        <img src="{{record.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'">
+      </ion-thumbnail>
+      <ion-label class="sc-ion-label-ios-h sc-ion-label-ios-s ios hydrated">
+        <h2>{{record.name}}</h2>
+        <h3>{{record.type}}&nbsp;&nbsp;{{record.type2}}</h3>
+        <p>{{record.record_time}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <!-- 历史记录 -->
+
+  <!-- 上拉加载更多 -->
+ <ion-infinite-scroll (ionInfinite)="doLoadMore($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="正在加载">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+  <!-- 上拉加载更多 -->
+
+</ion-content>

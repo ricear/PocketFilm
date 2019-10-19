@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="section tc">
+  <video id="myVideo" src="http://cctvcnch5c.v.wscdns.com/live/cctv1_2/index.m3u8" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
+    <input bindblur="bindInputBlur"/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view>
+  </view>
+</view>

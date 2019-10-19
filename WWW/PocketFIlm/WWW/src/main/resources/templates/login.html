@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<th:block th:insert="../templates/head"></th:block>
+
+<body class="body_0B8Dz72" data-c_tl_id="M_2374a4201a029685f2a5dd7c93a36384">
+
+<th:block th:insert="../templates/navigation"></th:block>
+
+<div class="container-fluid cst_sectionBlock cst_BGtransparent c-section cbsect_804759c9" data-c_tl_id="tl_b21c2499"
+     id="home">
+    <div class="cst_sectionBGwrap c-div cbdiv_bcf86ea7">
+        <div class="cst_sectionBG jarallax cst_BGfixed c-div cbdiv_6fcc610a" data-Jarallax='{"type":"scroll"}'
+             src="//o3bnyc.creatby.com/coolsite-front-v2/files/4e61062970f80be468386d0b9c288b34.jpg"
+             style="background-image: none; background-attachment: scroll; background-size: auto;background-image: url('http://qty83k.creatby.com/materials/origin/e7d50b6e293405c613c9c5ab072e1423_origin.jpg'); ">
+            <div class="cst_overlay c-div cbdiv_5ff215e2">
+            </div>
+        </div>
+    </div>
+    <div class="container cst_container_base c-container-1 cbcont_2eb4f555" style="height: 600px;">
+        <div class="cst_textbox_flex cst_border_shadow_setting c-div cbdiv_3854ab7b">
+            <div class="cst_flexitem cst_flexsetting cst_flex_vetically c-div cbdiv_6ac51677">
+                <div class="cst_textSetting cst_textWrap c-div cbdiv_6603ce0f">
+                    <div class="c-div cbdiv_b68b0436">
+                        <div class="login-box">
+                            <div class="wrap">
+                                <div class="login-box-cen">
+                                    <div class="login-box-cen-form clearfix mar-bottom20">
+                                        <input type="text" class="login-box-cen-form-input w218" placeholder="请输入用户名"
+                                               id="login_phone"/>
+                                        <label class="err err-top40" id="login_phone_text">用户名错误</label>
+                                    </div>
+                                    <div class="login-box-cen-form clearfix mar-bottom20">
+                                        <input type="password" class="login-box-cen-form-input w218" placeholder="请输入密码"
+                                               id="login_password"/>
+                                        <label class="err err-top40" id="login_password_text">请输入密码</label>
+                                    </div>
+                                    <div class="login-box-cen-form clearfix">
+                                        <input type="submit" value="登录" class="login-box-cen-form-button w238"
+                                               id="login_submit"/>
+                                    </div>
+                                    <br>
+                                    <div class="login-box-cen-form clearfix">
+                                        <input type="input" value="没有账户，点击注册" class="login-box-cen-form-button w238"
+                                               href="/register" onclick="location.href=('/register')"
+                                               style="background: #33454e;border: none;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-xs c-div div_EU9lwE">
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="css/main.css"/>
+
+<!--中心-->
+<div class="content">
+</div>
+<br/><br/>
+<!--中心-->
+<h4 style="font-size:16px; text-align:center; font-weight:bold;">demo3 必填+特殊处理</h4>
+<br/><br/>
+
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.cookie.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/tbdValidate.js"></script>
+<script type="text/javascript" src="js/upload.js"></script>
+<script type="text/javascript">
+$(function () {
+
+    //  如果 cookie 中已存在用户信息，则返回首页
+    if ($.cookie('userInfo') != null && $.cookie('userInfo') != 'null') window.location.href = '/';
+
+    var regconfig = [
+        {
+            eleinput: "login_phone",
+            eletext: "login_phone_text",
+            rule: [{reg: /^.+$/, text: "用户名不能为空"}]
+        },
+        {eleinput: "login_password", eletext: "login_password_text", rule: [{reg: /^.+$/, text: "密码不能为空"}]}
+    ];
+    tbdValidate(
+        regconfig,
+        {
+            elesubmit: "login_submit",//提交按钮
+            funsubmit: function () {//验证通过可提交回调
+                //信息提交接口
+                var username = $('#login_phone').val();
+                var password = $('#login_password').val();
+                var HOST = 'http://api.grayson.top'
+                var API = HOST + '/api';
+                $.ajax({
+                    type: 'POST',
+                    url: API + '/user/login',
+                    data: {
+                        username: username,
+                        password: password
+                    },
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data.code == 0) {
+                            var userInfoTemp = data.userInfo
+                            var userInfo = {'_id': userInfoTemp._id, 'username': userInfoTemp.username};
+                            $.cookie("userInfo", JSON.stringify(userInfo), {
+                                expires: 7, //设置时间，单位为天，如果此处留空，则浏览器关闭此cookie就失效。
+                                domain: '.grayson.top'
+                            });
+                            history.back(-1);
+                        } else {
+                            message = data.message;
+                            alert(message);
+                        }
+                    }
+                });
+            },
+            funerr: function () {//不可提交回调
+
+            },
+            funerrlist: function (errlist) {
+                $('#' + errlist[0]).focus();
+            }
+        }
+    );
+});
+</script>
+</body>
+</html>

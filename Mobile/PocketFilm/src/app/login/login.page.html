@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+        <ion-title style="text-align: center;">登录</ion-title>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div>
+        <ion-list>
+          <ion-item>
+            <ion-label floating>用户名</ion-label>
+            <ion-input type="text" [(ngModel)]="userInfo.username" (blur)="validateUsername()"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating>密码</ion-label>
+            <ion-input type="password" [(ngModel)]="userInfo.password"></ion-input>
+          </ion-item>
+          <a href="#" style="color:red;float: right;">找回密码</a>
+        </ion-list>
+        <div style="text-align: center;">
+          <ion-button ion-button color="danger" block style="width: 9rem;border-radius: .5rem;" (click)="login()">登录</ion-button>
+        </div>
+        <div style="text-align: center;">
+          <ion-button ion-button color="danger" block style="width: 9rem;border-radius: .5rem;" (click)=goRegisterPage()>注册</ion-button>
+        </div>
+    </div>
+
+</ion-content>

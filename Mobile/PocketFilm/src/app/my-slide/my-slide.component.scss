@@ -1,0 +1,21 @@
+my-slide {
+    $slide-height-small: 40px;
+    $slide-height-large: 50px;
+    .slide-title {
+      width: 100%;
+      height: $slide-height-small;
+      color: #666666;
+      padding: 0;
+    }
+    .slide-title-unit {
+      padding-bottom: 8px;
+      font-size: 14px;
+      height: $slide-height-small;
+      line-height: $slide-height-small;
+    }
+    .slide-title-active {
+      color: red;
+      border-bottom: 3px solid red;
+    }
+  }
+  

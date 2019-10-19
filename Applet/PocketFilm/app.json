@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/movie/movie",
+    "pages/tv/tv",
+    "pages/drama/drama",
+    "pages/movie-detail/movie-detail",
+    "pages/tv-detail/tv-detail",
+    "pages/drama-detail/drama-detail",
+    "pages/search-movie/search-movie",
+    "pages/search-tv/search-tv",
+    "pages/search-drama/search-drama",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ef3338",
+    "navigationBarTitleText": "影视",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8c8c8c",
+    "selectedColor": "#f4645f",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "影视",
+        "iconPath": "images/movie.png",
+        "selectedIconPath": "images/movie_active.png"
+      },
+      {
+        "pagePath": "pages/tv/tv",
+        "text": "电视",
+        "iconPath": "images/tv.png",
+        "selectedIconPath": "images/tv_active.png"
+      },
+      {
+        "pagePath": "pages/drama/drama",
+        "text": "戏曲",
+        "iconPath": "images/drama.png",
+        "selectedIconPath": "images/drama_active.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

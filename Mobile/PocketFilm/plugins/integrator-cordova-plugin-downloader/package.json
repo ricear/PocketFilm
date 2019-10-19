@@ -1,0 +1,53 @@
+{
+  "_from": "integrator-cordova-plugin-downloader",
+  "_id": "integrator-cordova-plugin-downloader@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-bzuJO9S6dCtfhtwrhkXFE5v4oa4=",
+  "_location": "/integrator-cordova-plugin-downloader",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "integrator-cordova-plugin-downloader",
+    "name": "integrator-cordova-plugin-downloader",
+    "escapedName": "integrator-cordova-plugin-downloader",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/integrator-cordova-plugin-downloader/download/integrator-cordova-plugin-downloader-1.1.0.tgz",
+  "_shasum": "6f3b893bd4ba742b5f86dc2b8645c5139bf8a1ae",
+  "_spec": "integrator-cordova-plugin-downloader",
+  "_where": "/Users/weipeng/Personal/Projects/PocketFilm/Mobile/PocketFilm",
+  "author": {
+    "name": "Integrator Dubrovnik"
+  },
+  "bugs": {
+    "url": "https://github.com/Luka313/integrator-cordova-plugin-downloader/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "integrator-cordova-plugin-downloader",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Downloader",
+  "homepage": "https://github.com/Luka313/integrator-cordova-plugin-downloader#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "ISC",
+  "name": "integrator-cordova-plugin-downloader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luka313/integrator-cordova-plugin-downloader.git"
+  },
+  "version": "1.1.0"
+}

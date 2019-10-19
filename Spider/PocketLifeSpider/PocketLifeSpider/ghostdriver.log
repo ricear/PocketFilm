@@ -1,0 +1,183 @@
+[INFO  - 2019-10-19T00:36:16.390Z] GhostDriver - Main - running on port 52684
+[INFO  - 2019-10-19T00:36:16.939Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2019-10-19T00:36:16.939Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - page.customHeaders:  - {}
+[INFO  - 2019-10-19T00:36:16.940Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2019-10-19T00:36:16.940Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 76442b70-f208-11e9-848c-a5cd39799ed5
+[ERROR - 2019-10-19T00:36:21.454Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - page.onError - msg: TypeError: undefined is not an object (evaluating 'YKLoginLoader.getInstance().updateThemeBg')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:36:21.455Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - page.onError - stack:
+  success (https://js.ykimg.com/youku/dist/js/g_84.js:7)
+  u (https://js.ykimg.com/youku/dist/js/lib_15.js:5)
+  fireWith (https://js.ykimg.com/youku/dist/js/lib_15.js:5)
+  x (https://js.ykimg.com/youku/dist/js/lib_15.js:7)
+  onreadystatechange (https://js.ykimg.com/youku/dist/js/lib_15.js:7)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:36:21.573Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.repository[a.q||""]=a')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:36:21.573Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - page.onError - stack:
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571445381076:44)
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=15714[INFO  - 2019-10-19T00:36:49.893Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+9ed5] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.dom_adDiv.innerHTML=this._skinManager.htmlAd.call(this,this.settings.skin,a)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:36:21.601Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - page.onError - stack:
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571445381076:44)
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571445381076:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:37:54.505Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.repository[a.q||""]=a')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:37:54.505Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - page.onError - stack:
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571445474310:44)
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571445474310:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:37:54.506Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - page.onError - msg: TypeError: undefined is not an obj[INFO  - 2019-10-19T00:41:12.953Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-10-19T00:41:45.398Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.repository[a.q||""]=a')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:41:45.398Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571445705201:44)
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571445705201:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:41:45.413Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.dom_adDiv.innerHTML=this._skinManager.htmlAd.call(this,this.settings.skin,a)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:41:45.413Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571445705201:44)
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571445705201:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:43:04.275Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.dom_adDiv.innerHTML=this._skinManager.htmlAd.call(this,this.settings.skin,a)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:43:04.275Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571445784051:44)
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571445784051:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:43:20.907Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.dom_adDiv.innerHTML=this._skinManager.htmlAd.call(this,this.settings.skin,a)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:43:20.907Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571445800592:44)
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571445800592:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:44:03.652Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.dom_adDiv.innerHTML=this._skinManager.htmlAd.call(this,this.settings.skin,a)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:44:03.652Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  gUpdate (https://static.youku.com/v2.0.5/soku/[ERROR - 2019-10-19T00:45:59.965Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.dom_adDiv.innerHTML=this._skinMan[INFO  - 2019-10-19T00:46:12.960Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-10-19T00:48:01.917Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.dom_adDiv.innerHTML=this._skinManager.htmlAd.call(this,this.settings.skin,a)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:48:01.918Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446081682:44)
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446081682:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:48:01.928Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.repository[a.q||""]=a')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:48:01.928Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446081682:44)
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446081682:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:49:35.384Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.repository[a.q||""]=a')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:49:35.384Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446175108:44)
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446175108:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:49:35.404Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.dom_adDiv.innerHTML=this._skinManager.htmlAd.call(this,this.settings.skin,a)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:49:35.405Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446175108:44)
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446175108:2)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-10-19T00:51:12.968Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-10-19T00:51:20.345Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.repository[a.q||""]=a')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:51:20.345Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446280144:44)
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446280144:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:51:20.347Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.dom_adDiv.innerHTML=this._skinManager.htmlAd.call(this,this.settings.skin,a)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:51:20.347Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446280144:44)
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446280144:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:53:49.307Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'YKLoginLoader.getInstance().updateThemeBg')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:53:49.307Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  success (https://js.ykimg.com/youku/dist/js/g_84.js:7)
+  u (https://js.ykimg.com/youku/dist/js/lib_15.js:5)
+  fireWith (https://js.ykimg.com/youku/dist/js/lib_15.js:5)
+  x (https://js.ykimg.com/youku/dist/js/lib_15.js:7)
+  onreadystatechange (https://js.ykimg.com/youku/dist/js/lib_15.js:7)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:55:31.203Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.repository[a.q||""]=a')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:55:31.203Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446530970:44)
+  dUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446530970:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:55:31.206Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - msg: TypeError: undefined is not an object (evaluating 'this.dom_adDiv.innerHTML=this._skinManager.htmlAd.call(this,this.settings.skin,a)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T00:55:31.206Z] Session [c156b9d0-f207-11e9-bac6-27750e7725e7] - page.onError - stack:
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446530970:44)
+  gUpdate (https://static.youku.com/v2.0.5/soku/giantstar/js/sk-box-open.js?_=1571446530970:2)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-10-19T00:56:12.968Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-10-19T01:01:12.974Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-10-19T01:06:12.981Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-10-19T01:11:12.990Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-10-19T01:06:16.456Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-10-19T01:11:16.465Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2019-10-19T01:12:55.872Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - page.onError - msg: TypeError: undefined is not an object (evaluating 'YKLoginLoader.getInstance().updateThemeBg')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T01:12:55.872Z] Session [76442b70-f208-11e9-848c-a5cd39799ed5] - page.onError - stack:
+  success (https://js.ykimg.com/youku/dist/js/g_84.js:7)
+  u (https://js.ykimg.com/youku/dist/js/lib_15.js:5)
+  fireWith (https://js.ykimg.com/youku/dist/js/lib_15.js:5)
+  x (https://js.ykimg.com/youku/dist/js/lib_15.js:7)
+  onreadystatechange (https://js.ykimg.com/youku/dist/js/lib_15.js:7)
+
+  phantomjs://platform/console++.js:263 in error
+1:03:08.966Z] Session [ad4390d0-f207-11e9-974f-1f13687dc620] - page.onError - msg: TypeError: undefined is not an object (evaluating 'YKLoginLoader.getInstance().updateThemeBg')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2019-10-19T01:03:08.967Z] Session [ad4390d0-f207-11e9-974f-1f13687dc620] - page.onError - stack:
+  success (https://js.ykimg.com/youku/dist/js/g_84.js:7)
+  u (https://js.ykimg.com/youku/dist/js/lib_15.js:5)
+  fireWith (https://js.ykimg.com/youku/dist/js/lib_15.js:5)
+  x (https://js.ykimg.com/youku/dist/js/lib_15.js:7)
+  onreadystatechange (https://js.ykimg.com/youku/dist/js/lib_15.js:7)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2019-10-19T01:05:39.514Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2019-10-19T01:10:39.532Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW

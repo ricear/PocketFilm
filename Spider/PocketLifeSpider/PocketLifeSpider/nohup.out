@@ -1,0 +1,274 @@
+2019-07-01 11:54:21 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: PocketLifeSpider)
+2019-07-01 11:54:21 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.1 (v3.7.1:260ec2c36a, Oct 20 2018, 00:48:40) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.6.0-x86_64-i386-64bit
+2019-07-01 11:54:21 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'PocketLifeSpider', 'NEWSPIDER_MODULE': 'PocketLifeSpider.spiders', 'SPIDER_MODULES': ['PocketLifeSpider.spiders']}
+2019-07-01 11:54:21 [scrapy.extensions.telnet] INFO: Telnet Password: bb9a310d429053d9
+2019-07-01 11:54:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-07-01 11:54:21 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xunleiyy.com:443
+2019-07-01 11:54:22 [urllib3.connectionpool] DEBUG: https://www.xunleiyy.com:443 "GET /type/id1.html HTTP/1.1" 200 None
+2019-07-01 11:54:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-07-01 11:54:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-07-01 11:54:22 [scrapy.middleware] INFO: Enabled item pipelines:
+['PocketLifeSpider.pipelines.MovieSpiderPipeline']
+2019-07-01 11:54:22 [scrapy.core.engine] INFO: Spider opened
+2019-07-01 11:54:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-07-01 11:54:22 [py.warnings] WARNING: /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py:61: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://www.xunleiyy.com/type in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+2019-07-01 11:54:22 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-07-01 11:54:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-5.html> (referer: None)
+2019-07-01 11:54:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1.html> (referer: None)
+2019-07-01 11:54:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-4.html> (referer: None)
+2019-07-01 11:54:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-3.html> (referer: None)
+2019-07-01 11:54:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-7.html> (referer: None)
+2019-07-01 11:54:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-2.html> (referer: None)
+2019-07-01 11:54:23 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-6.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:54:23 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-8.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:54:23 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-10.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:54:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-9.html> (referer: None)
+2019-07-01 11:54:23 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-11.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:54:23 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-12.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:54:23 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-14.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:54:23 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-15.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:54:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-13.html> (referer: None)
+2019-07-01 11:54:24 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-16.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:54:24 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-18.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:54:24 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-17.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:54:24 [py.warnings] WARNING: /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver/phantomjs/webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2019-07-01 11:54:26 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:62698/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+2019-07-01 11:54:26 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:62698
+2019-07-01 11:54:26 [urllib3.connectionpool] DEBUG: http://127.0.0.1:62698 "POST /wd/hub/session HTTP/1.1" 200 534
+2019-07-01 11:54:26 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:54:27 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xunleiyy.com:443
+2019-07-01 11:54:28 [urllib3.connectionpool] DEBUG: https://www.xunleiyy.com:443 "GET /movie/id130047.html HTTP/1.1" 200 None
+2019-07-01 11:54:28 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:62698/wd/hub/session/eb54df50-9bb3-11e9-95e6-75cb8f074067/url {"url": "https://www.xunleiyy.com/play/130047-0-0.html", "sessionId": "eb54df50-9bb3-11e9-95e6-75cb8f074067"}
+2019-07-01 11:54:28 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:62698
+2019-07-01 11:55:38 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: PocketLifeSpider)
+2019-07-01 11:55:38 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.1 (v3.7.1:260ec2c36a, Oct 20 2018, 00:48:40) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.6.0-x86_64-i386-64bit
+2019-07-01 11:55:38 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'PocketLifeSpider', 'NEWSPIDER_MODULE': 'PocketLifeSpider.spiders', 'SPIDER_MODULES': ['PocketLifeSpider.spiders']}
+2019-07-01 11:55:38 [scrapy.extensions.telnet] INFO: Telnet Password: 711948c29cbbe9e0
+2019-07-01 11:55:38 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-07-01 11:55:38 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xunleiyy.com:443
+2019-07-01 11:55:39 [urllib3.connectionpool] DEBUG: https://www.xunleiyy.com:443 "GET /type/id1.html HTTP/1.1" 200 None
+2019-07-01 11:55:39 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-07-01 11:55:39 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-07-01 11:55:39 [scrapy.middleware] INFO: Enabled item pipelines:
+['PocketLifeSpider.pipelines.MovieSpiderPipeline']
+2019-07-01 11:55:39 [scrapy.core.engine] INFO: Spider opened
+2019-07-01 11:55:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-07-01 11:55:39 [py.warnings] WARNING: /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py:61: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://www.xunleiyy.com/type in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+2019-07-01 11:55:39 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-07-01 11:55:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1.html> (referer: None)
+2019-07-01 11:55:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-6.html> (referer: None)
+2019-07-01 11:55:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-5.html> (referer: None)
+2019-07-01 11:55:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-7.html> (referer: None)
+2019-07-01 11:55:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-3.html> (referer: None)
+2019-07-01 11:55:39 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-2.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:55:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-4.html> (referer: None)
+2019-07-01 11:55:39 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-8.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:55:40 [py.warnings] WARNING: /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver/phantomjs/webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2019-07-01 11:55:42 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63530/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+2019-07-01 11:55:42 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63530
+2019-07-01 11:55:42 [urllib3.connectionpool] DEBUG: http://127.0.0.1:63530 "POST /wd/hub/session HTTP/1.1" 200 534
+2019-07-01 11:55:42 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:55:43 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xunleiyy.com:443
+2019-07-01 11:55:44 [urllib3.connectionpool] DEBUG: https://www.xunleiyy.com:443 "GET /movie/id98998.html HTTP/1.1" 200 None
+2019-07-01 11:55:44 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63530/wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/url {"url": "https://www.xunleiyy.com/play/98998-1-0.html", "sessionId": "18949500-9bb4-11e9-9f3a-75bebb2d0673"}
+2019-07-01 11:55:44 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63530
+2019-07-01 11:55:52 [urllib3.connectionpool] DEBUG: http://127.0.0.1:63530 "POST /wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/url HTTP/1.1" 200 74
+2019-07-01 11:55:52 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:55:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63530/wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/execute {"script": "return parent.now", "args": [], "sessionId": "18949500-9bb4-11e9-9f3a-75bebb2d0673"}
+2019-07-01 11:55:54 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63530
+2019-07-01 11:55:54 [urllib3.connectionpool] DEBUG: http://127.0.0.1:63530 "POST /wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/execute HTTP/1.1" 200 115
+2019-07-01 11:55:54 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:55:54 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63530/wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/url {"url": "https://www.xunleiyy.com/play/98998-2-0.html", "sessionId": "18949500-9bb4-11e9-9f3a-75bebb2d0673"}
+2019-07-01 11:55:54 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63530
+2019-07-01 11:55:55 [urllib3.connectionpool] DEBUG: http://127.0.0.1:63530 "POST /wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/url HTTP/1.1" 200 74
+2019-07-01 11:55:55 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:55:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63530/wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/execute {"script": "return parent.now", "args": [], "sessionId": "18949500-9bb4-11e9-9f3a-75bebb2d0673"}
+2019-07-01 11:55:57 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63530
+2019-07-01 11:55:57 [urllib3.connectionpool] DEBUG: http://127.0.0.1:63530 "POST /wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/execute HTTP/1.1" 200 115
+2019-07-01 11:55:57 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:55:57 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63530/wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/url {"url": "https://www.xunleiyy.com/play/98998-4-0.html", "sessionId": "18949500-9bb4-11e9-9f3a-75bebb2d0673"}
+2019-07-01 11:55:57 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63530
+2019-07-01 11:55:58 [urllib3.connectionpool] DEBUG: http://127.0.0.1:63530 "POST /wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/url HTTP/1.1" 200 74
+2019-07-01 11:55:58 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:56:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63530/wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/execute {"script": "return parent.now", "args": [], "sessionId": "18949500-9bb4-11e9-9f3a-75bebb2d0673"}
+2019-07-01 11:56:00 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63530
+2019-07-01 11:56:00 [urllib3.connectionpool] DEBUG: http://127.0.0.1:63530 "POST /wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/execute HTTP/1.1" 200 122
+2019-07-01 11:56:00 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:56:00 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63530/wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/url {"url": "https://www.xunleiyy.com/play/98998-3-0.html", "sessionId": "18949500-9bb4-11e9-9f3a-75bebb2d0673"}
+2019-07-01 11:56:00 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63530
+2019-07-01 11:56:02 [urllib3.connectionpool] DEBUG: http://127.0.0.1:63530 "POST /wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/url HTTP/1.1" 200 74
+2019-07-01 11:56:02 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:56:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63530/wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/execute {"script": "return parent.now", "args": [], "sessionId": "18949500-9bb4-11e9-9f3a-75bebb2d0673"}
+2019-07-01 11:56:04 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63530
+2019-07-01 11:56:04 [urllib3.connectionpool] DEBUG: http://127.0.0.1:63530 "POST /wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/execute HTTP/1.1" 200 112
+2019-07-01 11:56:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:56:04 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63530/wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/url {"url": "https://www.xunleiyy.com/play/98998-0-0.html", "sessionId": "18949500-9bb4-11e9-9f3a-75bebb2d0673"}
+2019-07-01 11:56:04 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63530
+2019-07-01 11:56:05 [urllib3.connectionpool] DEBUG: http://127.0.0.1:63530 "POST /wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/url HTTP/1.1" 200 74
+2019-07-01 11:56:05 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:56:07 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63530/wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/execute {"script": "return parent.now", "args": [], "sessionId": "18949500-9bb4-11e9-9f3a-75bebb2d0673"}
+2019-07-01 11:56:07 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63530
+2019-07-01 11:56:07 [urllib3.connectionpool] DEBUG: http://127.0.0.1:63530 "POST /wd/hub/session/18949500-9bb4-11e9-9f3a-75bebb2d0673/execute HTTP/1.1" 200 118
+2019-07-01 11:56:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:56:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.xunleiyy.com/type/id1-6.html> (referer: None)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/weipeng/Personal/Projects/PocketFilm/Spider/PocketLifeSpider/PocketLifeSpider/spiders/movie.py", line 157, in parse
+    name2 = each3.xpath("./a/text()")[0]
+IndexError: list index out of range
+2019-07-01 11:56:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-11.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-13.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-14.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-15.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-12.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-9.html> (referer: None)
+2019-07-01 11:56:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-10.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-22.html> (referer: None)
+2019-07-01 11:56:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-18.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-21.html> (referer: None)
+2019-07-01 11:56:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-2.html> (referer: None)
+2019-07-01 11:56:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-17.html> (referer: None)
+2019-07-01 11:56:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-16.html> (referer: None)
+2019-07-01 11:56:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-19.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-20.html> (referer: None)
+2019-07-01 11:56:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-8.html> (referer: None)
+2019-07-01 11:56:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-15.html> (failed 2 times): 503 Service Unavailable
+2019-07-01 11:56:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-14.html> (failed 2 times): 503 Service Unavailable
+2019-07-01 11:56:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-12.html> (failed 2 times): 503 Service Unavailable
+2019-07-01 11:56:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-13.html> (failed 2 times): 503 Service Unavailable
+2019-07-01 11:56:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-10.html> (failed 2 times): 503 Service Unavailable
+2019-07-01 11:56:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-11.html> (failed 2 times): 503 Service Unavailable
+2019-07-01 11:56:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-23.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-24.html> (referer: None)
+2019-07-01 11:56:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-18.html> (failed 2 times): 503 Service Unavailable
+2019-07-01 11:56:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-25.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-26.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:10 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63724/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+2019-07-01 11:56:10 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63724
+2019-07-01 11:56:10 [urllib3.connectionpool] DEBUG: http://127.0.0.1:63724 "POST /wd/hub/session HTTP/1.1" 200 534
+2019-07-01 11:56:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:56:11 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xunleiyy.com:443
+2019-07-01 11:56:13 [urllib3.connectionpool] DEBUG: https://www.xunleiyy.com:443 "GET /movie/id60250.html HTTP/1.1" 200 None
+2019-07-01 11:56:14 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63724/wd/hub/session/29c4c250-9bb4-11e9-a113-c34957731410/url {"url": "https://www.xunleiyy.com/play/60250-5-0.html", "sessionId": "29c4c250-9bb4-11e9-a113-c34957731410"}
+2019-07-01 11:56:14 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63724
+2019-07-01 11:56:27 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: PocketLifeSpider)
+2019-07-01 11:56:27 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.1 (v3.7.1:260ec2c36a, Oct 20 2018, 00:48:40) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.6.0-x86_64-i386-64bit
+2019-07-01 11:56:27 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'PocketLifeSpider', 'NEWSPIDER_MODULE': 'PocketLifeSpider.spiders', 'SPIDER_MODULES': ['PocketLifeSpider.spiders']}
+2019-07-01 11:56:27 [scrapy.extensions.telnet] INFO: Telnet Password: 50d1f5cf6a1db004
+2019-07-01 11:56:27 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-07-01 11:56:27 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xunleiyy.com:443
+2019-07-01 11:56:28 [urllib3.connectionpool] DEBUG: https://www.xunleiyy.com:443 "GET /type/id1.html HTTP/1.1" 200 None
+2019-07-01 11:56:28 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-07-01 11:56:28 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-07-01 11:56:28 [scrapy.middleware] INFO: Enabled item pipelines:
+['PocketLifeSpider.pipelines.MovieSpiderPipeline']
+2019-07-01 11:56:28 [scrapy.core.engine] INFO: Spider opened
+2019-07-01 11:56:28 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-07-01 11:56:28 [py.warnings] WARNING: /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py:61: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry https://www.xunleiyy.com/type in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+2019-07-01 11:56:28 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-07-01 11:56:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-8.html> (referer: None)
+2019-07-01 11:56:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-3.html> (referer: None)
+2019-07-01 11:56:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-2.html> (referer: None)
+2019-07-01 11:56:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-4.html> (referer: None)
+2019-07-01 11:56:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1.html> (referer: None)
+2019-07-01 11:56:29 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-6.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-7.html> (referer: None)
+2019-07-01 11:56:29 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-5.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:29 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-10.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:30 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-11.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:30 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-12.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-13.html> (referer: None)
+2019-07-01 11:56:30 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-14.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:30 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-15.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:30 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.xunleiyy.com/type/id1-16.html> (failed 1 times): 503 Service Unavailable
+2019-07-01 11:56:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.xunleiyy.com/type/id1-9.html> (referer: None)
+2019-07-01 11:56:30 [py.warnings] WARNING: /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver/phantomjs/webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2019-07-01 11:56:33 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63862/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}, "desiredCapabilities": {"browserName": "phantomjs", "version": "", "platform": "ANY", "javascriptEnabled": true}}
+2019-07-01 11:56:33 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63862
+2019-07-01 11:56:33 [urllib3.connectionpool] DEBUG: http://127.0.0.1:63862 "POST /wd/hub/session HTTP/1.1" 200 534
+2019-07-01 11:56:33 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-07-01 11:56:34 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): www.xunleiyy.com:443
+2019-07-01 11:56:34 [urllib3.connectionpool] DEBUG: https://www.xunleiyy.com:443 "GET /movie/id130047.html HTTP/1.1" 200 None
+2019-07-01 11:56:35 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:63862/wd/hub/session/3710d7a0-9bb4-11e9-9a92-dd8fae875b0c/url {"url": "https://www.xunleiyy.com/play/130047-0-0.html", "sessionId": "3710d7a0-9bb4-11e9-9a92-dd8fae875b0c"}
+2019-07-01 11:56:35 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:63862

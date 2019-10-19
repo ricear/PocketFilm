@@ -1,0 +1,4 @@
+掌上影视小程序信息
+
+AppID(小程序ID) : wx533bcfc89edd33e2
+AppSecret(小程序密钥) : 447470ebe30ff11600521d93304ce11a

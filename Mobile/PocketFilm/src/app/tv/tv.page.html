@@ -1,0 +1,132 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title style="text-align: center;">电视</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- 搜索 -->
+  <ion-searchbar (click)="goSearchTv()" placeholder="请输入电视名称"></ion-searchbar>
+
+  <!-- 下拉刷新 -->
+<ion-refresher (ionRefresh)="doRefresh($event)">
+   <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="松开刷新" refreshingSpinner="circles"
+     refreshingText="正在刷新">
+   </ion-refresher-content>
+ </ion-refresher>
+ <!-- 下拉刷新 -->
+
+ <!-- 推荐数据 -->
+ <ion-item lines="none">
+  <ion-label slot="start"><span>猜你喜欢</span></ion-label>
+  <ion-label slot="end" (click)="goMoreRecommendations()"><span>更多</span></ion-label>
+</ion-item>
+<ion-grid>
+  <ion-row *ngFor="let top10CCTV of recommendations">
+    <ion-col *ngFor="let top10CCTV2 of top10CCTV" (click)="goTvDetail(top10CCTV2._id)">
+          <div>
+              <img src="{{top10CCTV2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
+            </div>
+            <p class="movie-detail" style="margin: 0px;">{{top10CCTV2.name}}</p>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+ <!-- 央视台 -->
+ <ion-item lines="none">
+   <ion-label slot="start"><span>央视台</span></ion-label>
+   <ion-label slot="end" (click)="goMoreTv(cctvName)"><span>更多</span></ion-label>
+ </ion-item>
+ <ion-grid>
+   <ion-row *ngFor="let top10CCTV of top10CCTVList">
+     <ion-col *ngFor="let top10CCTV2 of top10CCTV" (click)="goTvDetail(top10CCTV2._id)">
+           <div>
+               <img src="{{top10CCTV2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
+             </div>
+             <p class="movie-detail" style="margin: 0px;">{{top10CCTV2.name}}</p>
+     </ion-col>
+   </ion-row>
+ </ion-grid>
+
+ <!-- 卫视台 -->
+ <ion-item lines="none">
+    <ion-label slot="start"><span>卫视台</span></ion-label>
+    <ion-label slot="end" (click)="goMoreTv(satelliteTVName)"><span>更多</span></ion-label>
+  </ion-item>
+  <ion-grid>
+    <ion-row *ngFor="let top10Satellite of top10SatelliteList">
+      <ion-col *ngFor="let top10Satellite2 of top10Satellite" (click)="goTvDetail((top10Satellite2._id))">
+            <div>
+                <img src="{{top10Satellite2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
+              </div>
+              <p class="movie-detail" style="margin: 0px;">{{top10Satellite2.name}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 地方台 -->
+ <ion-item lines="none">
+    <ion-label slot="start"><span>地方台</span></ion-label>
+    <ion-label slot="end" (click)="goMoreTv(localStationName)"><span>更多</span></ion-label>
+  </ion-item>
+  <ion-grid>
+    <ion-row *ngFor="let top10LocalStation of top10LocalStationList">
+      <ion-col *ngFor="let top10LocalStation2 of top10LocalStation" (click)="goTvDetail((top10LocalStation2._id))">
+            <div>
+                <img src="{{top10LocalStation2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
+              </div>
+              <p class="movie-detail" style="margin: 0px;">{{top10LocalStation2.name}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 港澳台 -->
+ <ion-item lines="none">
+    <ion-label slot="start"><span>港澳台</span></ion-label>
+    <ion-label slot="end" (click)="goMoreTv(hongkongMacaoTaiwanName)"><span>更多</span></ion-label>
+  </ion-item>
+  <ion-grid>
+    <ion-row *ngFor="let top10hongkongMacaoTaiwan of top10hongkongMacaoTaiwanList">
+      <ion-col *ngFor="let top10hongkongMacaoTaiwan2 of top10hongkongMacaoTaiwan" (click)="goTvDetail((top10hongkongMacaoTaiwan2._id))">
+            <div>
+                <img src="{{top10hongkongMacaoTaiwan2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
+              </div>
+              <p class="movie-detail" style="margin: 0px;">{{top10hongkongMacaoTaiwan2.name}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 海外台 -->
+ <ion-item lines="none">
+    <ion-label slot="start"><span>海外台</span></ion-label>
+    <ion-label slot="end" (click)="goMoreTv(overseasStationName)"><span>更多</span></ion-label>
+  </ion-item>
+  <ion-grid>
+    <ion-row *ngFor="let top10overseasStation of top10overseasStationList">
+      <ion-col *ngFor="let top10overseasStation2 of top10overseasStation" (click)="goTvDetail((top10overseasStation2._id))">
+            <div>
+                <img src="{{top10overseasStation2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
+              </div>
+              <p class="movie-detail" style="margin: 0px;">{{top10overseasStation2.name}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 轮播台 -->
+ <ion-item lines="none">
+    <ion-label slot="start"><span>轮播台</span></ion-label>
+    <ion-label slot="end" (click)="goMoreTv(carouselName)"><span>更多</span></ion-label>
+  </ion-item>
+  <ion-grid>
+    <ion-row *ngFor="let top10Carousel of top10CarouselList">
+      <ion-col *ngFor="let top10Carousel2 of top10Carousel" (click)="goTvDetail((top10Carousel2._id))">
+            <div>
+                <img src="{{top10Carousel2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
+              </div>
+              <p class="movie-detail" style="margin: 0px;">{{top10Carousel2.name}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

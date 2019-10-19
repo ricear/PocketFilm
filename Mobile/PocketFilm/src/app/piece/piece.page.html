@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title style="text-align: center;">小品</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- 搜索 -->
+  <ion-searchbar (click)="goSearchPiece()" placeholder="请输入小品名称"></ion-searchbar>
+
+  <!-- 下拉刷新 -->
+<ion-refresher (ionRefresh)="doRefresh($event)">
+   <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="松开刷新" refreshingSpinner="circles"
+     refreshingText="正在刷新">
+   </ion-refresher-content>
+ </ion-refresher>
+ <!-- 下拉刷新 -->
+
+ <!-- 第一种戏曲分类 -->
+ <ion-segment [(ngModel)]="type" scrollable>
+    <ion-segment-button  *ngFor="let type of typeList;let i = index" value="{{type}}" (click)="changeType(type)">
+      {{type}}
+    </ion-segment-button>
+  </ion-segment>
+
+  <!-- 第二种戏曲分类 -->
+ <ion-segment [(ngModel)]="type2" scrollable>
+  <ion-segment-button  *ngFor="let type of type2List;let i = index" value="{{type}}" (click)="changeType2(type)">
+    {{type}}
+  </ion-segment-button>
+</ion-segment>
+
+ <ion-list>
+   <!-- 戏曲类型 -->
+  <ion-grid>
+    <ion-row *ngFor="let piece of pieceList">
+      <ion-col *ngFor="let piece2 of piece" (click)="goPieceDetail((piece2._id))">
+            <div>
+                <img src="{{piece2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
+              </div>
+              <p class="movie-detail" style="margin: 0px;">{{piece2.name}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+ </ion-list>
+
+ <!-- 上拉加载更多 -->
+ <ion-infinite-scroll (ionInfinite)="doLoadMore($event)">
+  <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="正在加载">
+  </ion-infinite-scroll-content>
+</ion-infinite-scroll>
+<!-- 上拉加载更多 -->
+
+</ion-content>

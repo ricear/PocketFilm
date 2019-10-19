@@ -1,0 +1,55 @@
+<view class="main">
+	<!-- 搜索框 -->
+	<view class="search">
+		<input class="search_input" placeholder="搜索影视" bindinput="inputChange" auto-focus />
+		<button class="search_button" type="primary" bindtap="search">
+			搜索
+		</button>
+	</view>
+
+  <!-- 未搜索到记录时显示 -->
+  <view class="search_no_result" wx:if="{{noResult}}">
+  <text>未搜索到和 </text><text class="search_no_result_notice">{{keyWord}}</text><text> 相关的记录</text>
+  </view>
+
+	<!-- 输入时搜索结果显示 -->
+	<view class="input_search_result" wx:if="{{!confirmSearch}}">
+		<view class="input_search_result_item" wx:for="{{movieList}}" wx:key="{{index}}" bindtap="goMovieDetail" data-_id="{{item._id}}">
+			<view class="left">
+				<image mode="scaleToFill" src="{{item.src==null || item.src=='' ? 'https://gxtstatic.com/xl/statics/img/nopic.gif' : item.src}}" data-index="{{index}}" binderror="errorFunction">
+				</image>
+			</view>
+			<view class="right">
+				<view class="name">
+					名称:{{item.name}}
+				</view>
+				<view class="actor">
+        <span>演员:</span>
+					<span wx:for="{{item.actors}}" wx:for-item="actor">
+						{{actor}}
+					</span>
+				</view>
+				<view class="region">
+					地区:{{item.region}}
+				</view>
+				<view class="release_date">
+					发布日期:{{item.release_date}}
+				</view>
+			</view>
+		</view>
+	</view>
+
+  <!-- 确定搜索时显示 -->
+  <!-- 视频列表 -->
+  <view class="video_wrap" wx:if="{{confirmSearch}}">
+    <navigator url="../movie-detail/movie-detail?_id={{item._id}}&type_index=0" class="video_item" wx:for="{{movieList}}" wx:key="{{index}}" >
+      <!-- 图片容器 -->
+      <view class="video_img">
+        <!-- 图片 -->
+        <image mode="scaleToFill" src="{{item.src==null || item.src=='' ? 'https://gxtstatic.com/xl/statics/img/nopic.gif' : item.src}}" data-index="{{index}}" binderror='errorFunction'></image>
+      </view>
+      <!-- 标题 -->
+      <view class="video_title">{{item.name}}</view>
+    </navigator>
+  </view>
+</view>

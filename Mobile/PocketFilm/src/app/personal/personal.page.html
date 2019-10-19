@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title style="text-align: center;">个人中心</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div style="border-bottom: 1px solid #dedede;padding: 12px 16px;">
+    <table style="width: 100%;">
+      <tbody>
+        <tr *ngIf="!userId">
+          <td style="padding-right: .9rem;width: 6.2rem;">
+            <img src="https://img5.duitang.com/uploads/item/201409/23/20140923094045_BNYji.thumb.700_0.png" alt=""
+              style="border-radius: 3rem;">
+          </td>
+          <td>
+            <h3>
+              <a (click)="goLoginPage()" style="color: lightgreen;">登录</a><span
+                style="color: blue;">&nbsp;/&nbsp;</span><a (click)="goRegisterPage()" style="color: red;">注册</a>
+            </h3>
+          </td>
+        </tr>
+        <tr *ngIf="userId">
+          <td style="padding-right: .9rem;width: 6.2rem;">
+            <img src="{{userInfo.avatar}}" alt="" style="border-radius: 3rem;">
+          </td>
+          <td>
+            <h4>{{userInfo.username}}</h4>
+            <p style="color: #bfb9b9;" *ngIf="userInfo.activate">已激活</p>
+            <p style="color: #bfb9b9;" *ngIf="!userInfo.activate">未激活</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <ion-list>
+      <!-- 浏览记录 -->
+      <ion-item (click)=goBrowseRecordPage()>
+        <i class="iconfont icon-liulanjilu" style="color:red;font-size: 21px;"></i>
+        <ion-label style="padding-left: 10px;">浏览记录</ion-label>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </ion-item>
+      <!-- 激活状态 -->
+      <ion-item>
+        <i class="iconfont icon-jihuo" style="color:pink;font-size: 21px;"></i>
+        <ion-label style="padding-left: 10px;">激活状态</ion-label>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </ion-item>
+      <!-- 收藏 -->
+      <ion-item>
+        <i class="iconfont icon-unie601" style="color:aqua;font-size: 21px;"></i>
+        <ion-label style="padding-left: 10px;">收藏</ion-label>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </ion-item>
+      <!-- 设置 -->
+      <ion-item (click)=goSettingPage()>
+        <i class="iconfont icon-shezhi" style="color:blue;font-size: 21px;"></i>
+        <ion-label style="padding-left: 10px;">设置</ion-label>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

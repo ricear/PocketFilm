@@ -1,0 +1,97 @@
+<th:block th:fragment="navigation">
+<div class="container-fluid cst_navcontainer cst_Headroom cst_navfixed c-section cbsect_8a42d89b" data-c_spy="scroll"
+     data-c_tl_id="tl_f83f28f0" id="section73ef9f42" style="background-color: transparent; ">
+    <nav class="navbar nav_style_01 c-navbar cbnavb_7ddf60e1">
+        <div class="container cst_navcontainer cbnavc_63d94568" style="background-color: transparent; ">
+            <div class="navbar-header c-navheader cbnavh_ca51405e">
+                <button class="navbar-toggle c-navmenubutton cbnavm_0ea91b57" data-target="#navmenu_1c29acd3b3e5392f"
+                        data-toggle="collapse" switch-class="c-state1" switch-selector=".navbar-collapse" type="button">
+      <span class="sr-only c-span cbspan_dbb7afc8">
+       Toggle navigation
+      </span>
+                    <span class="icon-bar c-nav-btn-span cbspan_658a66f9">
+      </span>
+                    <span class="icon-bar c-nav-btn-span cbspan_aaa7284b">
+      </span>
+                    <span class="icon-bar c-nav-btn-span cbspan_6dcb01d2">
+      </span>
+                </button>
+                <a class="navbar-toggle-desktop hidden-xs c-linkblock cblink_3267ecd0" data-c_act_id="act_eb360d5c"
+                   href="#">
+                    <i class="fa fa-bars c-icon cbicon_b3635ce3" data-c_e_id="icon1fac4612" switch-class="c-state1"
+                       switch-selector=".navbar-collapse">
+                    </i>
+                    <i class="fa fa-remove c-icon cbicon_eaa3cf3a" data-c_e_id="iconaf5904a3">
+                    </i>
+                </a>
+                <a class="navbar-brand c-navbrand cbnavb_157db1e0" href="/" style="background-image: url('images/logo.png')">掌上
+                </a>
+            </div>
+            <div class="collapse navbar-collapse c-navcollapse cbnavc_635df6b9" data-c_e_id="navcollapseb9aaba37"
+                 id="navmenu_1c29acd3b3e5392f">
+                <ul class="nav navbar-nav navbar-right c-navlist cbnavl_65812087">
+                    <li class="c-navlistitem cbnavl_6a49b802">
+                        <a class="c-navlink cbnavl_20fdf642" data-c_spy="scroll" href="#home">
+                            首页
+                        </a>
+                    </li>
+                    <li class="c-navlistitem cbnavl_01c74886">
+                        <a class="c-navlink cbnavl_20fdf642" data-c_spy="scroll" href="#film">
+                            掌上影视
+                        </a>
+                    </li>
+                    <li class="c-navlistitem cbnavl_01c74886">
+                        <a class="c-navlink cbnavl_20fdf642" data-c_spy="scroll" href="#tv">
+                            掌上电视
+                        </a>
+                    </li>
+                    <li class="c-navlistitem cbnavl_02d69a5a">
+                        <a class="c-navlink cbnavl_20fdf642" data-c_spy="scroll" href="#drama">
+                            掌上戏曲
+                        </a>
+                    </li>
+                    <li class="c-navlistitem cbnavl_01c74886">
+                        <a class="c-navlink cbnavl_20fdf642" data-c_spy="scroll" href="#piece">
+                            掌上小品
+                        </a>
+                    </li>
+                    <li class="c-navlistitem cbnavl_01c74886">
+                        <a class="c-navlink cbnavl_20fdf642" data-c_spy="scroll" href="#about">
+                            关于我们
+                        </a>
+                    </li>
+                    <li class="dropdown c-dropdown c-dropdown-hover" th:if="${userInfo != null}">
+                        <a class="dropdown-toggle cbnavl_20fdf642" data-toggle="dropdown" type="button">
+        <span class="droptextspan_imDWyT" th:text="${userInfo.username}">
+        </span>
+                            <span class="caret c-span span_TtmskL">
+        </span>
+                        </a>
+                        <ul class="dropdown-menu c-dropdown-menu c-dropdown-menu-hover dropdownmenu_zgjxLd" role="menu">
+                            <li class="c-dropdown-listitem dropdownlistitem_V7Q7OR" role="presentation">
+                                <a class="c-dropdown-textlink dropdowntextlink_u8QFE4" href="javascript:void(0)" role="menuitem" tabindex="-1" onclick="logout()">
+                                    自助退出
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="c-navlistitem cbnavl_6a49b802" th:if="${userInfo == null}">
+                        <a class="c-navlink cbnavl_20fdf642" data-c_spy="scroll" href="/login" rel="nofollow">
+                            登陆/注册
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    <script>
+    function logout() {
+        $.cookie('userInfo', null, {domain: '.grayson.top'});
+        window.location.reload();
+    }
+    </script>
+
+</th:block>

@@ -1,0 +1,181 @@
+<th:block th:fragment="navigation">
+    <script>
+
+    (function () {
+
+        var canonicalURL, curProtocol;
+
+        //Get the <link> tag
+
+        var x = document.getElementsByTagName("link");
+
+        //Find the last canonical URL
+
+        if (x.length > 0) {
+
+            for (i = 0; i < x.length; i++) {
+
+                if (x[i].rel.toLowerCase() == 'canonical' && x[i].href) {
+
+                    canonicalURL = x[i].href;
+
+                }
+
+            }
+
+        }
+
+        //Get protocol
+
+        if (!canonicalURL) {
+
+            curProtocol = window.location.protocol.split(':')[0];
+
+        }
+
+        else {
+
+            curProtocol = canonicalURL.split(':')[0];
+
+        }
+
+        //Get current URL if the canonical URL does not exist
+
+        if (!canonicalURL) canonicalURL = window.location.href;
+
+        //Assign script content. Replace current URL with the canonical URL
+
+        !function () {
+            var e = /([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi, r = canonicalURL, t = document.referrer;
+            if (!e.test(r)) {
+                var n = (String(curProtocol).toLowerCase() === 'https') ? "https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif" : "//api.share.baidu.com/s.gif";
+                t ? (n += "?r=" + encodeURIComponent(document.referrer), r && (n += "&l=" + r)) : r && (n += "?l=" + r);
+                var i = new Image;
+                i.src = n
+            }
+        }(window);
+    })();
+
+    </script>
+    <script src="//msite.baidu.com/sdk/c.js?appid=1597963146374259"></script>
+    <div class="header-all">
+        <div class="headtop clearfix">
+            <ul class="logo">
+                <a href="/"><img src="images/logo.png"
+                                           title="掌上戏曲-在线观看戏曲网-最新戏曲在线观看" style="margin-top: 7px;"></a>
+            </ul>
+            <ul class="top-nav">
+                <li><a class="now" href="/">首页</a></li>
+                <li class="" _t_nav="topnav-1"><a href="/more?type=京剧">京剧</a></li>
+                <li class="" _t_nav="topnav-2"><a href="/more?type=豫剧">豫剧</a></li>
+                <li class="" _t_nav="topnav-3"><a href="/more?type=秦腔">秦腔</a></li>
+                <li class="" _t_nav="topnav-4"><a href="/more?type=民间小调">民间小调</a></li>
+                <li class="" _t_nav="topnav-6"><a href="/more?type=全部">更多</a></li>
+                <li class="" _t_nav="topnav-7"><a href="javascript:void(0)">友情链接</a></li>
+            </ul>
+            </ul>
+
+            <ul class="nav-qt aa">
+                <li class="bb"><strong class="ma">
+                    <dd class="bar_history" id="history" href="javascript:void(0);" th:if="${username ne null}">
+                        <i class="ht"></i><span class="nj-hide">观看历史</span>
+                    </dd>
+                </strong>
+                </li>
+                <li class="bb nj-hide"><strong class="ma"><i class="mabg"></i>安卓app</strong>
+                    <div class="cc maw">
+                        <i class="ewmbg"></i>
+                        <dd>扫描二维码app无广告</dd>
+                    </div>
+                </li>
+                <li class="bb nj-hide">
+                    <a href="javascript:void(0)" th:if="${username ne null}"><i class="jl"></i><span th:text="${username}" id="userInfo"></span></a>
+                    <a href="http://www.grayson.top/login" th:if="${username eq null}"><i class="jl"></i>登陆/注册</a>
+                </li>
+            </ul>
+            <ul class="search so">
+                <a href="javascript:void(0)">
+                    <input type="submit" name="submit" class="imgbt" value="" onclick="goSearch()"/>
+                    <input type="text" id="wd" name="wd" placeholder="请输入影片或演员名" class="input"
+                           onblur="if(this.value==''){ this.value='';this.style.color='#cfcdcd';}"
+                           onfocus="if(this.value=='请输入影片或演员名'){this.value='';this.style.color='';}" value=""
+                           th:if="${key_word eq null}"/>
+                    <input type="text" id="wd" name="wd" placeholder="请输入影片或演员名" class="input"
+                           onblur="if(this.value==''){ this.value='';this.style.color='#cfcdcd';}"
+                           onfocus="if(this.value=='请输入影片或演员名'){this.value='';this.style.color='';}"
+                           th:value="${key_word}" th:if="${key_word ne null}"/>
+                </a>
+            </ul>
+            <dl class="drop-box history_box" id="history_box" style="top: 60px; display: none;">
+                <dt><span>观看记录</span>
+                </dt>
+                <dd class="even" th:each="record : ${records}"><span th:text="${record.type}"></span><a th:href="'/play?_id=' + ${record.id} + '&source_index=0&type_index=0'" class="hx_title" th:text="${record.name}"></a></dd>
+            </dl>
+            <div style="position: absolute;padding: 10px;background: #f6f6f9;overflow: hidden;animation-name: history_box;animation-duration: .3s;margin-left: 92%;width: 135px;border: 1px solid #afafaf;border-top: 0;box-shadow: 0 2px 4px rgba(0, 0, 0, .2);display: none" id="userInfoBox">
+                <a href="javascript:void(0)" onclick="logout()" style="text-align: right;padding-right: 5px;height: 28px;line-height: 28px;border-bottom: 1px solid #ccc;">退出</a>
+            </div>
+        </div>
+        <!--分类子目录-->
+        <div class="nav-down clearfix">
+            <div id="topnav-7" class="nav-down-1" style="display:none;" _t_nav="topnav-7">
+                <div class="navigation_top">
+                </div>
+                <div class="nav-down-2 clearfix">
+                    <ul>
+                        <li><a href="http://www.grayson.top">掌上</a></li>
+
+                        <li><a href="http://film.grayson.top">掌上影视</a></li>
+
+                        <li><a href="http://tv.grayson.top">掌上电视</a></li>
+
+                        <li><a href="http://piece.grayson.top">掌上小品</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="leaveNavInfo">
+    </div>
+    <div class="navigation_top">
+    </div>
+    <span style="display: none;"><script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1273187859'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1273187859' type='text/javascript'%3E%3C/script%3E"));</script></span>
+    <script type="text/javascript">
+    function goSearch() {
+        var txt = document.getElementById("wd");
+        var key_word = txt.value;
+        if (key_word.value == "") {
+            alert("请输入影片或演员名");
+            key_word.focus();
+        } else {
+            window.location.href = "/search?key_word=" + key_word;
+        }
+        return true;
+    }
+    </script>
+    <script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?b2743ab7419fe53851004c1f7dd74de6";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <script>
+    $(function () {
+        $('#userInfo').click(function () {
+            $('#userInfoBox').show();
+            setTimeout(function(){
+                $('#userInfoBox').hide();
+            },4000);
+        })
+    })
+    function logout() {
+        $.cookie('userInfo', null, {domain: '.grayson.top'});
+        window.location.reload();
+    }
+    </script>
+</th:block>

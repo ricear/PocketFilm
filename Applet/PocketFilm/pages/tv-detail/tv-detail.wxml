@@ -1,0 +1,83 @@
+<view class="main">
+	<!-- 视频详情 -->
+	<view class="video_info">
+		<!-- 视频标签 -->
+		<video src="{{play_url}}" title="{{movie.name}}" controls autoplay>
+		</video>
+		<!-- 视频标题 -->
+		<view class="video_title">
+			<text>
+				{{movie.name}}
+			</text>
+			<text class="fa fa-angle-down">
+			</text>
+		</view>
+		<!-- 影视详情 -->
+		<view class="video_detail">
+			<!-- 类型 -->
+			<span>
+				类型:
+			</span>
+			<span class="play_count">
+				{{movie.type}}
+			</span>
+			<!-- 资源列表 -->
+			<view class="list-msg">
+				<view class="list-msg2" bindtap="showMovieSources">
+					<text>
+						{{sourceName}}
+					</text>
+					<image style="height:20rpx;width:20rpx;" src="/images/down.png">
+					</image>
+				</view>
+				<view class="list-msg1">
+					<!-- 已选中的资源类型 -->
+					<view bindtap="changeSourceType" class="video_item active" data-index="{{sourceTypes.url}}">
+						<!-- 资源类型名称 -->
+						<view>
+							{{sourceTypes.name}}
+						</view>
+					</view>
+				</view>
+				<!-- 下拉需要显示的列表 -->
+				<view class="select_box" wx:if="{{select}}">
+					<view class="select_one" wx:for="{{movie.sources}}" wx:key="{{index}}" bindtap="changeSource" data-index="{{index}}">
+						{{item.name}}
+					</view>
+				</view>
+			</view>
+			<view class="video_detail">
+				<!-- 演员 -->
+				<view>
+					<span>
+						简介:{{movie.introduction}}
+					</span>
+				</view>
+			</view>
+		</view>
+		<view>
+		</view>
+		<!-- 推荐视频 -->
+		<view class="other_list">
+			<view class="video_detail_title">
+				<text>
+					推荐视频:
+				</text>
+			</view>
+			<view class="video_wrap">
+				<navigator url="../tv-detail/tv-detail?_id={{item._id}}&type_index=0" class="video_item" wx:for="{{recommendMovieList}}" wx:key="{{index}}">
+					<!-- 图片容器 -->
+					<view class="video_img">
+						<!-- 图片 -->
+						<image mode="scaleToFill" src="{{item.src==null || item.src=='' ? 'https://gxtstatic.com/xl/statics/img/nopic.gif' : item.src}}" data-index="{{index}}" binderror="errorFunction">
+						</image>
+					</view>
+					<!-- 标题 -->
+					<view class="video_title">
+						{{item.name}}
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</view>
+</view>

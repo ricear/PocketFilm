@@ -1,0 +1,7 @@
+server:
+  port: 8081
+
+spring:
+  devtools:
+       restart:
+         enabled: false

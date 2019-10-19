@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;">设置</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div>
+    <ion-list>
+      <ion-item>
+        <ion-label>修改密码</ion-label>
+      </ion-item>
+      <ion-item (click)="shareApp()">
+        <ion-label>分享应用</ion-label>
+      </ion-item>
+      <ion-item (click)="goAboutAppPage()">
+        <ion-label>关于应用</ion-label>
+      </ion-item>
+      <ion-item (click)="checkForUpdates()">
+        <ion-label>检查更新</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div *ngIf="userId">
+    <div padding (click)="logout()">
+      <ion-button ion-button block color="danger" style="width: 100%;">退出登录</ion-button>
+    </div>
+  </div>
+
+</ion-content>

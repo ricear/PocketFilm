@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="danger">
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title style="text-align: center;">{{tv.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <iframe id="iplayer" name="iplayer" allowtransparency="true" allowfullscreen webkitallowfullscreen
+    mozallowfullscreen oallowfullscreen msallowfullscreen border="0" marginwidth="0" marginheight="0" hspace="0"
+      vspace="0" frameborder="0" scrolling="no" [src]="safeUrl" width="100%" height="48%" rel="nofollow"></iframe>
+    <ion-label>
+      <!-- <p>
+        <span class="c01">收视率：<span class="c02">{{tv.ratings}}</span></span>&nbsp;&nbsp;<span class="c01">今日：<span
+            class="c02">{{tv.today}}</span></span>&nbsp;&nbsp;<span class="c01">爱看度：<span
+            class="c02">{{tv.good_looking_rate}}</span></span>
+      </p> -->
+      <ion-list style="padding-top: 0px;" *ngFor="let source of tv.sources">
+        <h3 class="source_name">{{source.name}}</h3>
+        <span>
+          <!-- 当前选中项的电视源 -->
+          <a class="c02 source_type source_type_active" (click)="changeTvType(tv._id, source.url)"
+            *ngIf="url==source.url">{{source.name}}</a>
+          <!-- 不是当前选中项的电视源 -->
+          <a class="c02 source_type" (click)="changeTvType(tv._id, source.url)"
+            *ngIf="url!=source.url">{{source.name}}</a>
+        </span>
+      </ion-list>
+      <p style="color: #999;">
+        <span class="c01">{{tv.name}}介绍：</span>
+        <span class="c02">{{tv.introduction}}</span>
+      </p>
+    </ion-label>
+</ion-content>

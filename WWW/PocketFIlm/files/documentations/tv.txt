@@ -1,0 +1,464 @@
+../jars/tv-0.0.1-SNAPSHOT.jar中没有主清单属性
+../jars/tv-0.0.1-SNAPSHOT.jar中没有主清单属性
+../jars/tv-0.0.1-SNAPSHOT.jar中没有主清单属性
+../jars/tv-0.0.1-SNAPSHOT.jar中没有主清单属性
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 11:58:06.628  INFO 8451 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 8451 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 11:58:06.635  INFO 8451 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 11:58:11.173  INFO 8451 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 11:58:11.521  INFO 8451 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 11:58:11.522  INFO 8451 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 11:58:12.190  INFO 8451 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 11:58:12.191  INFO 8451 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5325 ms
+2019-09-28 11:58:13.370  INFO 8451 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 11:58:14.823  INFO 8451 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-28 11:58:14.831  INFO 8451 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 21.823 seconds (JVM running for 23.832)
+2019-09-28 11:58:47.484  INFO 8451 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-28 11:58:47.484  INFO 8451 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-28 11:58:47.503  INFO 8451 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 12:11:59.347  INFO 8891 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 8891 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 12:11:59.355  INFO 8891 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 12:12:06.308  INFO 8891 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 12:12:06.607  INFO 8891 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 12:12:06.608  INFO 8891 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 12:12:07.243  INFO 8891 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 12:12:07.244  INFO 8891 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7583 ms
+2019-09-28 12:12:08.967  INFO 8891 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 12:12:11.087  INFO 8891 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-28 12:12:11.125  INFO 8891 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 19.248 seconds (JVM running for 21.553)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:07:49.637  INFO 10261 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 10261 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:07:49.651  INFO 10261 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 13:07:55.155  INFO 10261 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 13:07:55.390  INFO 10261 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:07:55.390  INFO 10261 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:07:55.901  INFO 10261 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:07:55.901  INFO 10261 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6008 ms
+2019-09-28 13:07:57.261  INFO 10261 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:07:59.168  INFO 10261 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-28 13:07:59.184  INFO 10261 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 23.135 seconds (JVM running for 25.287)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:10:47.639  INFO 10404 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 10404 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:10:47.645  INFO 10404 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 13:10:52.815  INFO 10404 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 13:10:52.896  INFO 10404 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:10:52.896  INFO 10404 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:10:53.486  INFO 10404 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:10:53.487  INFO 10404 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5600 ms
+2019-09-28 13:10:54.778  INFO 10404 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:10:56.518  INFO 10404 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-28 13:10:56.533  INFO 10404 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 21.742 seconds (JVM running for 23.824)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:13:37.244  INFO 10489 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 10489 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:13:37.287  INFO 10489 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 13:13:43.511  INFO 10489 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 13:13:43.756  INFO 10489 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:13:43.758  INFO 10489 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:13:44.292  INFO 10489 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:13:44.293  INFO 10489 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6695 ms
+2019-09-28 13:13:45.739  INFO 10489 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:13:47.391 ERROR 10489 --- [           main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8081]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at com.grayson.tv.TVApplication.main(TVApplication.java:10) [classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) [tv-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) [tv-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51) [tv-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:52) [tv-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_181]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_181]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_181]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_181]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	... 22 common frames omitted
+
+2019-09-28 13:13:47.451  INFO 10489 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-09-28 13:13:47.484  INFO 10489 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-28 13:13:47.487 ERROR 10489 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+2019-09-28 13:13:47.542  INFO 10489 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:14:24.343  INFO 10545 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 10545 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:14:24.349  INFO 10545 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 13:14:32.830  INFO 10545 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 13:14:33.045  INFO 10545 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:14:33.045  INFO 10545 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:14:33.695  INFO 10545 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:14:33.696  INFO 10545 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8819 ms
+2019-09-28 13:14:35.292  INFO 10545 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:14:37.106  INFO 10545 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-28 13:14:37.113  INFO 10545 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 16.029 seconds (JVM running for 18.167)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:26:28.651  INFO 10870 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 10870 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:26:28.658  INFO 10870 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 13:26:32.942  INFO 10870 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 13:26:33.079  INFO 10870 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:26:33.079  INFO 10870 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:26:33.511  INFO 10870 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:26:33.511  INFO 10870 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4707 ms
+2019-09-28 13:26:34.491  INFO 10870 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:26:35.874  INFO 10870 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-28 13:26:35.909  INFO 10870 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 19.899 seconds (JVM running for 21.873)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:27:57.647  INFO 10934 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 10934 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:27:57.653  INFO 10934 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 13:28:03.554  INFO 10934 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 13:28:03.798  INFO 10934 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:28:03.799  INFO 10934 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:28:04.282  INFO 10934 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:28:04.283  INFO 10934 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6471 ms
+2019-09-28 13:28:05.523  INFO 10934 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:28:07.474  INFO 10934 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-28 13:28:07.480  INFO 10934 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 22.4 seconds (JVM running for 24.106)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:29:22.648  INFO 10998 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 10998 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:29:22.653  INFO 10998 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 13:29:28.368  INFO 10998 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 13:29:28.559  INFO 10998 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:29:28.559  INFO 10998 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:29:29.108  INFO 10998 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:29:29.108  INFO 10998 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6374 ms
+2019-09-28 13:29:30.595  INFO 10998 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:29:32.528  INFO 10998 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-28 13:29:32.535  INFO 10998 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 18.132 seconds (JVM running for 21.058)
+2019-09-28 13:29:52.510  INFO 10998 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-28 13:29:52.511  INFO 10998 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-28 13:29:52.525  INFO 10998 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-09-28 13:29:52.651 ERROR 10998 --- [nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: com/grayson/common/config/Configs] with root cause
+
+java.lang.ClassNotFoundException: com.grayson.common.config.Configs
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_181]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_181]
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:93) ~[tv-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_181]
+	at com.grayson.tv.controller.TVController.getMovie(TVController.java:30) ~[classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:34:07.653  INFO 11159 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 11159 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:34:07.657  INFO 11159 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 13:34:11.449  INFO 11159 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 13:34:11.595  INFO 11159 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:34:11.596  INFO 11159 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:34:11.997  INFO 11159 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:34:11.998  INFO 11159 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4213 ms
+2019-09-28 13:34:13.047  INFO 11159 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:34:14.455  INFO 11159 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-28 13:34:14.463  INFO 11159 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 20.189 seconds (JVM running for 22.331)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:36:45.654  INFO 11256 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 11256 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:36:45.663  INFO 11256 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 13:36:50.835  INFO 11256 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 13:36:51.029  INFO 11256 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:36:51.030  INFO 11256 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:36:51.601  INFO 11256 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:36:51.601  INFO 11256 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5732 ms
+2019-09-28 13:36:53.220  INFO 11256 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:36:55.113 ERROR 11256 --- [           main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8081]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.9.RELEASE.jar!/:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.8.RELEASE.jar!/:2.1.8.RELEASE]
+	at com.grayson.tv.TVApplication.main(TVApplication.java:10) [classes!/:0.0.1-SNAPSHOT]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) [tv-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) [tv-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51) [tv-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:52) [tv-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_181]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_181]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_181]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_181]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_181]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.24.jar!/:9.0.24]
+	... 22 common frames omitted
+
+2019-09-28 13:36:55.159  INFO 11256 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-09-28 13:36:55.180  INFO 11256 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-28 13:36:55.183 ERROR 11256 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+2019-09-28 13:36:55.195  INFO 11256 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 13:37:31.594  INFO 11316 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 11316 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 13:37:31.599  INFO 11316 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 13:37:38.823  INFO 11316 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 13:37:39.010  INFO 11316 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 13:37:39.010  INFO 11316 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 13:37:39.571  INFO 11316 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 13:37:39.571  INFO 11316 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7557 ms
+2019-09-28 13:37:40.969  INFO 11316 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 13:37:42.630  INFO 11316 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-28 13:37:42.636  INFO 11316 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 14.005 seconds (JVM running for 16.11)
+2019-09-28 13:58:28.310  INFO 11316 --- [       Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 16:49:19.772  INFO 3422 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 3422 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 16:49:19.779  INFO 3422 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 16:49:24.452  INFO 3422 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 16:49:24.611  INFO 3422 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 16:49:24.611  INFO 3422 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 16:49:25.119  INFO 3422 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 16:49:25.119  INFO 3422 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5191 ms
+2019-09-28 16:49:26.273  INFO 3422 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 16:49:27.878  INFO 3422 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-28 16:49:27.884  INFO 3422 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 20.486 seconds (JVM running for 22.238)
+2019-09-28 17:11:25.793  INFO 3422 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-28 17:11:25.794  INFO 3422 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-28 17:11:25.814  INFO 3422 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2019-09-28 17:11:51.944  INFO 3422 --- [nio-8081-exec-7] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1569661891; Hm_lpvt_b2743ab7419fe53851004c1f7dd74de6=1569661891] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-09-28 17:21:06.937  INFO 4555 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 4555 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-09-28 17:21:06.942  INFO 4555 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-09-28 17:21:17.646  INFO 4555 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-28 17:21:17.882  INFO 4555 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-28 17:21:17.883  INFO 4555 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-28 17:21:18.608  INFO 4555 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-28 17:21:18.608  INFO 4555 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11396 ms
+2019-09-28 17:21:20.299  INFO 4555 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-28 17:21:28.205  INFO 4555 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-28 17:21:28.212  INFO 4555 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 38.37 seconds (JVM running for 43.366)
+2019-09-28 17:21:29.394  INFO 4555 --- [nio-8081-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1569661891,1569662153; Hm_lpvt_b2743ab7419fe53851004c1f7dd74de6=1569662303] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-09-28 17:21:29.405  INFO 4555 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-28 17:21:29.405  INFO 4555 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-28 17:21:29.416  INFO 4555 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
