@@ -18,7 +18,15 @@ if __name__ == '__main__':
     # youku
     # execute(["scrapy", "crawl", "youku"])
     # iqiyi
-    execute(["scrapy", "crawl", "iqiyi"])
+    # execute(["scrapy", "crawl", "iqiyi"])
+    # yongjiu
+    # execute(["scrapy", "crawl", "yongjiu"])
+    # ziyuan135
+    # execute(["scrapy", "crawl", "ziyuan135"])
+    # ok
+    # execute(["scrapy", "crawl", "ok"])
+    # ziyuan33uu
+    execute(["scrapy", "crawl", "ziyuan33uu"])
     # movie_type
     # execute(["scrapy", "crawl", "movie_type"])
     # movie_source
@@ -33,5 +41,7 @@ if __name__ == '__main__':
     # execute(["scrapy", "crawl", "drama_type"])
     # piece
     # execute(["scrapy", "crawl", "piece"])
+    # piece2
+    # execute(["scrapy", "crawl", "piece2"])
     # piece_type
     # execute(["scrapy", "crawl", "piece_type"])
