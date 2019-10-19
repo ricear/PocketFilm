@@ -47,9 +47,7 @@ class ZuidaSpiderPipeline(object):
         # 执行 sql
         item['acquisition_time'] = get_current_time()
         if (item['acquisition_time'] == '未知'): item['acquisition_time'] = '0'
-        movie_id = item['id']
-        movie_name = item['name']
-        dic = {'name': movie_name}
+        dic = {'id': item['id']}
         movies1 = db_utils.find(dic)
         # 服务器中资源中的最大集数
         max1 = 0
@@ -58,15 +56,17 @@ class ZuidaSpiderPipeline(object):
         if (movies1.count() > 0):
             # 当前视频已爬取且更新，将新爬去的数据更新到数据库
             movies1_temp = movies1.__getitem__(0)
-            index1 = 0
-            index2 = 0
+            movies1_source_names_temp = []
+            sources_tmp = []
             for source in movies1_temp['sources']:
-                if (item['sources'][index1]['name'] == movies1_temp['sources'][index2]['name']):
-                    movies1_temp['sources'][index2] = item['sources'][index1]
-                    index1 += 1
-                    index2 += 1
-                else: index2 += 1
-            newdic = {'$set': {'update_status': item['update_status'], 'sources': movies1_temp['sources'], 'update_time': item['update_time'], 'acquisition_time': item['acquisition_time']}}
+                movies1_source_names_temp.append(source['name'])
+            item_source = item['sources'][0]
+            sources_tmp.append(item_source)
+            for source in movies1_temp['sources']:
+                if (source['name'] == item_source['name']):
+                    continue
+                sources_tmp.append(source)
+            newdic = {'$set': {'update_status': item['update_status'], 'sources': sources_tmp, 'update_time': item['update_time'], 'acquisition_time': item['acquisition_time']}}
             db_utils.update(dic, newdic)
         else: db_utils.insert(item)
         return item

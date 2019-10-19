@@ -1841,7 +1841,7 @@ router.get('/piece/get/all', function (req, res, next) {
                 movie.find(
                     {},
                     {
-                        sort: {name: 1},
+                        sort: {acquisition_time: -1},
                         collation: {locale: "en"},
                         skip: page_size * (page_index - 1),
                         limit: page_size
@@ -1870,7 +1870,7 @@ router.get('/piece/get/all', function (req, res, next) {
                             type: type
                         },
                         {
-                            sort: {name: 1},
+                            sort: {acquisition_time: -1},
                             collation: {locale: "en"},
                             skip: page_size * (page_index - 1),
                             limit: page_size
@@ -1899,7 +1899,7 @@ router.get('/piece/get/all', function (req, res, next) {
                             type2: type2
                         },
                         {
-                            sort: {name: 1},
+                            sort: {acquisition_time: -1},
                             collation: {locale: "en"},
                             skip: page_size * (page_index - 1),
                             limit: page_size
@@ -1949,7 +1949,7 @@ router.get('/piece/get/all', function (req, res, next) {
                         ]
                     },
                     {
-                        sort: {name: 1},
+                        sort: {acquisition_time: -1},
                         collation: {locale: "en"},
                         skip: page_size * (page_index - 1),
                         limit: page_size
@@ -1997,7 +1997,7 @@ router.get('/piece/get/all', function (req, res, next) {
                             ]
                         },
                         {
-                            sort: {name: 1},
+                            sort: {acquisition_time: -1},
                             collation: {locale: "en"},
                             skip: page_size * (page_index - 1),
                             limit: page_size
@@ -2044,7 +2044,7 @@ router.get('/piece/get/all', function (req, res, next) {
                             ]
                         },
                         {
-                            sort: {name: 1},
+                            sort: {acquisition_time: -1},
                             collation: {locale: "en"},
                             skip: page_size * (page_index - 1),
                             limit: page_size
@@ -2136,7 +2136,7 @@ router.get('/drama/get/all', function (req, res, next) {
                 movie.find(
                     {},
                     {
-                        sort: {name: 1},
+                        sort: {acquisition_time: -1},
                         collation: {locale: "en"},
                         skip: page_size * (page_index - 1),
                         limit: page_size
@@ -2164,7 +2164,7 @@ router.get('/drama/get/all', function (req, res, next) {
                         type: type
                     },
                     {
-                        sort: {name: 1},
+                        sort: {acquisition_time: -1},
                         collation: {locale: "en"},
                         skip: page_size * (page_index - 1),
                         limit: page_size
@@ -2201,7 +2201,7 @@ router.get('/drama/get/all', function (req, res, next) {
                         ]
                     },
                     {
-                        sort: {name: 1},
+                        sort: {acquisition_time: -1},
                         collation: {locale: "en"},
                         skip: page_size * (page_index - 1),
                         limit: page_size
@@ -2237,7 +2237,7 @@ router.get('/drama/get/all', function (req, res, next) {
                         ]
                     },
                     {
-                        sort: {name: 1},
+                        sort: {acquisition_time: -1},
                         collation: {locale: "en"},
                         skip: page_size * (page_index - 1),
                         limit: page_size
@@ -2373,55 +2373,69 @@ router.get('/movie/hottest/top', function (req, res, next) {
 /**
  * 获取今日更新影视信息
  */
-router.get('/movie/get/today', function (req, res, next) {
+router.get('/get/today', function (req, res, next) {
+    var type = req.query.type == null || req.query.type == 'null' ? '全部' : req.query.type
     var top_num = 15
     var today = getFormatDate3();
-    mongoClient.connect(dbURL, function (err, db) {
-        var movie = db.db(dbName).collection('movie');
-        // 1 为升序，-1 为降序
-        movie.find(
-            {acquisition_time: {$regex: eval("/"+today+"/i")}},
-            {sort: {'release_date': -1, 'acquisition_time': -1, 'score': -1}, limit: top_num}).toArray(function (err, data) {
-            if (data) {
-                responseData.code = 0;
-                responseData.message = '影视信息获取成功';
-                responseData.data = data;
-                res.json(responseData);
-            } else {
-                responseData.code = 1;
-                responseData.message = '影视信息获取失败';
-                res.json(responseData);
-            }
-            // 释放资源
-            db.close();
+    if (type != '全部'){
+        mongoClient.connect(dbURL, function (err, db) {
+            var movie = db.db(dbName).collection(type);
+            // 1 为升序，-1 为降序
+            movie.find(
+                {acquisition_time: {$regex: eval("/"+today+"/i")}},
+                {sort: {'acquisition_time': -1, 'release_date': -1, 'score': -1}, limit: top_num}).toArray(function (err, data) {
+                if (data) {
+                    responseData.code = 0;
+                    responseData.message = '影视信息获取成功';
+                    responseData.data = data;
+                    res.json(responseData);
+                } else {
+                    responseData.code = 1;
+                    responseData.message = '影视信息获取失败';
+                    res.json(responseData);
+                }
+                // 释放资源
+                db.close();
+            })
         })
-    })
+    } else {
+        responseData.code = 3;
+        responseData.message = '参数错误';
+        res.json(responseData);
+    }
 })
 
 /**
  * 获取今日更新影视数
  */
 router.get('/count/get/today', function (req, res, next) {
+    var type = req.query.type == null || req.query.type == 'null' ? '全部' : req.query.type
     var today = getFormatDate3();
-    mongoClient.connect(dbURL, function (err, db) {
-        var movie = db.db(dbName).collection('movie');
-        // 1 为升序，-1 为降序
-        movie.find(
-            {acquisition_time: {$regex: eval("/"+today+"/i")}}).toArray(function (err, data) {
-            if (data) {
-                responseData.code = 0;
-                responseData.message = '影视信息获取成功';
-                responseData.data = data.length;
-                res.json(responseData);
-            } else {
-                responseData.code = 1;
-                responseData.message = '影视信息获取失败';
-                res.json(responseData);
-            }
-            // 释放资源
-            db.close();
+    if (type != '全部') {
+        mongoClient.connect(dbURL, function (err, db) {
+            var movie = db.db(dbName).collection(type);
+            // 1 为升序，-1 为降序
+            movie.find(
+                {acquisition_time: {$regex: eval("/"+today+"/i")}}).toArray(function (err, data) {
+                if (data) {
+                    responseData.code = 0;
+                    responseData.message = '影视信息获取成功';
+                    responseData.data = data.length;
+                    res.json(responseData);
+                } else {
+                    responseData.code = 1;
+                    responseData.message = '影视信息获取失败';
+                    res.json(responseData);
+                }
+                // 释放资源
+                db.close();
+            })
         })
-    })
+    } else {
+        responseData.code = 3;
+        responseData.message = '参数错误';
+        res.json(responseData);
+    }
 })
 
 /**
@@ -2483,7 +2497,7 @@ router.get('/movie/get/all', function (req, res, next) {
                         movie.find(
                             {},
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2510,7 +2524,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2537,7 +2551,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2565,7 +2579,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2593,7 +2607,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 type2: type2
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2621,7 +2635,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2649,7 +2663,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2678,7 +2692,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2706,7 +2720,7 @@ router.get('/movie/get/all', function (req, res, next) {
                         movie.find(
                             {},
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2733,7 +2747,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2760,7 +2774,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2788,7 +2802,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2816,7 +2830,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 type2: type2
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2844,7 +2858,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2872,7 +2886,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2901,7 +2915,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2935,7 +2949,7 @@ router.get('/movie/get/all', function (req, res, next) {
                         }, {actors: {$elemMatch: {$regex: key_word, $options: "six"}}}]
                     },
                     {
-                        sort: {release_date:-1, acquisition_time: -1, score: -1},
+                        sort: {acquisition_time:-1, release_date: -1, score: -1},
                         skip: page_size * (page_index - 1),
                         limit: page_size
                     }).toArray(function (err, data) {
@@ -2965,7 +2979,7 @@ router.get('/movie/get/all', function (req, res, next) {
                         movie.find(
                             {type: typeList[type]},
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2993,7 +3007,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3021,7 +3035,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3050,7 +3064,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3079,7 +3093,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 type2: type2
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3108,7 +3122,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3137,7 +3151,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3167,7 +3181,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {acquisition_time:-1, release_date: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3195,7 +3209,7 @@ router.get('/movie/get/all', function (req, res, next) {
                         movie.find(
                             {type: typeList[type]},
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3223,7 +3237,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3251,7 +3265,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3280,7 +3294,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3309,7 +3323,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 type2: type2
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3338,7 +3352,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3367,7 +3381,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3397,7 +3411,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {score: -1, release_date:-1, acquisition_time: -1},
+                                sort: {score: -1, acquisition_time:-1, release_date: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {

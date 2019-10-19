@@ -92,18 +92,9 @@ class TencentSpider(scrapy.Spider):
                     if (score == '' or ':' in score):
                         score = get_random_str()
                     movie_item['score'] = score
-                    # 视频已爬取且未更新
-                    dic = {'name': movie_item['name']}
-                    movie_server = db_utils.find(dic)
-                    if (movie_server.count() > 0 and movie_server.__getitem__(0)['update_status'] == movie_item[
-                        'update_status']):
-                        print(movie_id + ' 已爬取')
-                        continue
                     movie_item['nickname'] = movie_item['name']
                     directors = []
                     actors = []
-                    star_type = ''
-                    star_name = ''
                     for item in each.xpath('./div[7]/div/div'):
                         star_type = get_str_from_xpath(item.xpath('./a/span/text()'))
                         star_name = get_str_from_xpath(item.xpath('./span/text()'))
@@ -160,6 +151,10 @@ class TencentSpider(scrapy.Spider):
                     source['types'] = types
                     sources.append(source)
                     movie_item['sources'] = sources
+                    # 视频已爬取且未更新
+                    if (is_need_source(movie_item, 'movie') == False):
+                        print(movie_id + ' 已爬取')
+                        continue
                     yield movie_item
                     self.total += 1
         #   电视剧
@@ -273,6 +268,10 @@ class TencentSpider(scrapy.Spider):
                         sources.append(source)
                         movie_item['sources'] = sources
                         if (movie_item['update_status'] == ''): movie_item['update_status'] = '连载' + type_name.split(':')[0]
+                        # 视频已爬取且未更新
+                        if (is_need_source(movie_item, 'movie') == False):
+                            print(movie_id + ' 已爬取')
+                            continue
                         yield movie_item
                         self.total += 1
         #   综艺
@@ -339,8 +338,8 @@ class TencentSpider(scrapy.Spider):
                     movie_item['sources'] = sources
                     movie_item['release_date'] = type_name[0:4]
                     movie_item['update_status'] = update_status
-                    if (movie_server.count() > 0 and movie_server.__getitem__(0)['update_status'] == movie_item[
-                        'update_status']):
+                    # 视频已爬取且未更新
+                    if (is_need_source(movie_item, 'movie') == False):
                         print(movie_id + ' 已爬取')
                         continue
                     yield movie_item
@@ -362,13 +361,6 @@ class TencentSpider(scrapy.Spider):
                     movie_item['src'] = get_str_from_xpath(each.xpath("./a/img[1]/@src"))
                     movie_item['name'] = get_str_from_xpath(each.xpath("./a/@title"))
                     movie_item['update_status'] = get_str_from_xpath(each.xpath("./a/div/text()"))
-                    # 视频已爬取且未更新
-                    dic = {'name': movie_item['name']}
-                    movie_server = db_utils.find(dic)
-                    if (movie_server.count() > 0 and movie_server.__getitem__(0)['update_status'] == movie_item[
-                        'update_status']):
-                        print(movie_id + ' 已爬取')
-                        continue
 
                     # id, src, name, update_time, actors, type, score, release_date, description
                     # 解析视频详情
@@ -424,6 +416,10 @@ class TencentSpider(scrapy.Spider):
                     sources.append(source)
                     movie_item['sources'] = sources
                     if (movie_item['update_status'] == ''): movie_item['update_status'] = '连载' + type_name.split(' ')[0]
+                    # 视频已爬取且未更新
+                    if (is_need_source(movie_item, 'movie') == False):
+                        print(movie_id + ' 已爬取')
+                        continue
                     yield movie_item
                     self.total += 1
         #   少儿
@@ -443,13 +439,6 @@ class TencentSpider(scrapy.Spider):
                     movie_item['src'] = get_str_from_xpath(each.xpath("./a/img[1]/@src"))
                     movie_item['name'] = get_str_from_xpath(each.xpath("./a/@title"))
                     movie_item['update_status'] = get_str_from_xpath(each.xpath("./a/div/text()"))
-                    # 视频已爬取且未更新
-                    dic = {'name': movie_item['name']}
-                    movie_server = db_utils.find(dic)
-                    if (movie_server.count() > 0 and movie_server.__getitem__(0)['update_status'] == movie_item[
-                        'update_status']):
-                        print(movie_id + ' 已爬取')
-                        continue
 
                     # id, src, name, update_time, actors, type, score, release_date, description
                     #   爬取播放列表
@@ -489,6 +478,10 @@ class TencentSpider(scrapy.Spider):
                     movie_item['sources'] = sources
                     if (movie_item['update_status'] == ''): movie_item['update_status'] = '连载' + type_name.split(' ')[0]
                     if (movie_item == None):
+                        continue
+                    # 视频已爬取且未更新
+                    if (is_need_source(movie_item, 'movie') == False):
+                        print(movie_id + ' 已爬取')
                         continue
                     yield movie_item
                     self.total += 1

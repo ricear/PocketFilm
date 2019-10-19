@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import pymysql
 import random
 
+from PocketLifeSpider.util.CommonUtils import *
+
 conn = pymysql.connect(
     host='127.0.0.1',
     user='root',
@@ -13,8 +15,4 @@ conn = pymysql.connect(
 cursor = conn.cursor()
 
 if __name__ == "__main__":
-    A = 5
-    B = 10  # 小数的范围A ~ B
-    a = random.uniform(A, B)
-    C = 1  # 随机数的精度round(数值，精度)
-    print((str)(round(a, C)))
+    update_src_batch('hq.18kf.net', 'hq.ioioz.com')

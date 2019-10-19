@@ -93,9 +93,6 @@ class YoukuSpider(scrapy.Spider):
                         write_spider_history(history_type, history_url, history_text)
                     continue
                 movie_item['id'] = movie_id
-                if (movie_server.count() > 0 and movie_server.__getitem__(0)['update_status'] == movie_item['update_status']):
-                    print(movie_id + ' 已爬取')
-                    continue
                 html = get_one_page(detail_url)
                 html = etree.HTML(html)
                 movie_detail_xpath = html.xpath('/html/body/div[2]/div/div[1]/div[2]/div[2]/ul')[0]
@@ -192,6 +189,10 @@ class YoukuSpider(scrapy.Spider):
                 source['types'] = types
                 sources.append(source)
                 movie_item['sources'] = sources
+                # 视频已爬取且未更新
+                if (is_need_source(movie_item, 'movie') == False):
+                    print(movie_id + ' 已爬取')
+                    continue
                 yield movie_item
                 self.total += 1
         # 结束时间

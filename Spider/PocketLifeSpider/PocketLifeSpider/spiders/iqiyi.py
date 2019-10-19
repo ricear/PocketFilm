@@ -352,13 +352,7 @@ class IqiyiSpider(scrapy.Spider):
                     movie_item['update_status'] = update_status
 
                 # 视频已爬取且未更新
-                dic = {'name': movie_item['name']}
-                movie_server = db_utils.find(dic)
-                if (
-                        movie_server.count() > 0 and
-                        movie_server.__getitem__(0)['update_status'] == movie_item['update_status'] and
-                        movie_item['sources'][0] in movie_server.__getitem__(0)['sources']
-                ):
+                if (is_need_source(movie_item, 'movie') == False):
                     print(movie_id + ' 已爬取')
                     continue
 

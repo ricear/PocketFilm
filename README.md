@@ -55,6 +55,22 @@
 
 ------
 
+#### v4.2.0 `2019/10/19`
+
+- 爬虫部分：
+  - 新增相声小品网爬虫(```piece2```)，网址为：https://www.verity-china.com，主要爬取一些最新的相声小品
+  - 新增永久资源网爬虫(```yongjiu```)，网址为：http://www.yongjiuzy.cc，主要爬取最新的影视数据
+  - 新增135资源网爬虫(```zuiyuan135```)，网址为：[http://135zy0.com](http://135zy0.com)，主要爬取最新的影视数据
+  - 新增ok资源网爬虫(```ok```)，网址为：http://www.okzy.co，主要爬取最新的影视数据
+  - 新增33uu资源网爬虫(```ziyuan33uu```)，网址为：http://www.156zy.co，主要爬取最新的影视数据
+- ```CommonUtils.py```中新增方法：
+  - ```is_exclude_type2(type2)```：判断影视第二类型是否需要排除
+  - ```is_need_source(item, collection)```：判断当前资源是否需要爬取
+  - ```get_type_from_type2(type2)```：根据影视第二类型type2获取第一类型type
+  - ```update_src_batch(old_suffix, new_suffix)```：批量修改电视中的图片地址
+- 修复爬虫和网页中部分已知问题
+- 备份数据库
+
 #### v4.1.0 `2019/10/18`
 
 - 爬虫部分：腾讯爬虫中新增少儿部分，新增优酷爬虫(```youku```)、爱奇艺(```iqiyi```)爬虫

@@ -90,28 +90,13 @@ class ZuidaSpider(scrapy.Spider):
             movie_item['name'] = (str)(each.xpath('./div[1]/div/div/div[2]/div[1]/h2/text()')[0])
             movie_item['update_status'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[1]/span/text()'))
             movie_item['score'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[1]/label/text()'))
-            # 视频已爬取且未更新
-            if (movie_server.count() >0 and movie_server.__getitem__(0)['update_status'] == movie_item['update_status']):
-                print(movie_id + ' 已爬取')
-                continue
             movie_item['nickname'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[1]/span/text()'))
             movie_item['directors'] = get_arr_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[2]/span/text()'))
             movie_item['actors'] = get_arr_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[3]/span/text()'))
             movie_item['type2'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[4]/span/text()'))
-            if movie_item['type2'].find('综艺') != -1:
-                movie_item['type'] = '综艺'
-            elif movie_item['type2'].find('动漫') != -1:
-                movie_item['type'] = '动漫'
-            elif movie_item['type2'].find('福利片') != -1:
+            type = get_type_from_type2(movie_item['type2'])
+            if (is_exclude_type2(type2) == True):
                 continue
-            elif movie_item['type2'].find('伦理片') != -1:
-                continue
-            elif movie_item['type2'].find('音乐片') != -1:
-                continue
-            elif movie_item['type2'].find('片') != -1:
-                movie_item['type'] = '电影'
-            elif movie_item['type2'].find('剧') != -1:
-                movie_item['type'] = '电视剧'
             movie_item['region'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[5]/span/text()'))
             movie_item['language'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[6]/span/text()'))
             movie_item['release_date'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[7]/span/text()'))
@@ -133,6 +118,11 @@ class ZuidaSpider(scrapy.Spider):
                 source['types'] = types
                 sources.append(source)
             movie_item['sources'] = sources
+            # 视频已爬取且未更新
+            # 视频已爬取且未更新
+            if (is_need_source(movie_item, 'movie') == False):
+                print(movie_id + ' 已爬取')
+                continue
             yield movie_item
             self.total += 1
         # 结束时间

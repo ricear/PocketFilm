@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="6320dbc0-5ee0-41f7-bfdc-6e81729f886f" name="Default" comment="" />
+    <list default="true" readonly="true" id="6320dbc0-5ee0-41f7-bfdc-6e81729f886f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/routers/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routers/api.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,8 +19,11 @@
       <file leaf-file-name="api.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routers/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1779" column="10" selection-start-line="1779" selection-start-column="10" selection-end-line="1779" selection-end-column="10" />
+            <state relative-caret-position="-1223">
+              <caret line="3353" column="29" lean-forward="true" selection-start-line="3353" selection-start-column="29" selection-end-line="3353" selection-end-column="29" />
+              <folding>
+                <element signature="e#51886#58914#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="735">
-              <caret line="49" column="3" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
+              <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -130,11 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>responseData.data = data.length</find>
-      <find>drama</find>
-      <find>cou</find>
-      <find>source_type =</find>
-      <find>source_type</find>
       <find>responseData.data = data</find>
       <find>piece</find>
       <find>sort_ty</find>
@@ -160,6 +160,11 @@
       <find>浏览记录</find>
       <find>records</find>
       <find>movie/</find>
+      <find>movie/get</find>
+      <find>sort: {name: 1},</find>
+      <find>tv/get/all</find>
+      <find>sort: {release_date:-1, acquisition_time: -1, score: -1},</find>
+      <find>, release_date:-1, acquisition_time: -1</find>
     </findStrings>
     <replaceStrings>
       <replace>Express</replace>
@@ -187,6 +192,9 @@
       <replace>sort: {release_date:-1, update_time: -1},</replace>
       <replace>sort: {release_date:-1, update_time: -1, score: -1},</replace>
       <replace>acquisition_time</replace>
+      <replace>sort: {acquisition_time: -1},</replace>
+      <replace>sort: {acquisition_time:-1, release_date: -1, score: -1},</replace>
+      <replace>, acquisition_time:-1, release_date: -1</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -223,10 +231,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="730" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -314,6 +322,24 @@
     <configuration>$USER_HOME$/.subversion</configuration>
     <supportedVersion>125</supportedVersion>
   </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6320dbc0-5ee0-41f7-bfdc-6e81729f886f" name="Default" comment="" />
@@ -357,14 +383,16 @@
       <workItem from="1569718960376" duration="1213000" />
       <workItem from="1569730158273" duration="10388000" />
       <workItem from="1569809889693" duration="1613000" />
+      <workItem from="1571454749968" duration="1409000" />
+      <workItem from="1571468375474" duration="1297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192845000" />
+    <option name="totallyTimeSpent" value="195551000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="739" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="741" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2613185" />
@@ -375,7 +403,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32852563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.328" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38977635" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38853502" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -401,7 +429,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="83" />
+      <option name="time" value="84" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -734,7 +762,7 @@
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
-          <caret line="49" column="3" lean-forward="true" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
+          <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -783,8 +811,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routers/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1779" column="10" selection-start-line="1779" selection-start-column="10" selection-end-line="1779" selection-end-column="10" />
+        <state relative-caret-position="-1223">
+          <caret line="3353" column="29" lean-forward="true" selection-start-line="3353" selection-start-column="29" selection-end-line="3353" selection-end-column="29" />
+          <folding>
+            <element signature="e#51886#58914#0" />
+          </folding>
         </state>
       </provider>
     </entry>

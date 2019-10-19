@@ -529,3 +529,65 @@ java.net.URISyntaxException: Illegal character in query at index 74: http://loca
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.24.jar!/:9.0.24]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
 
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-10-19 13:35:44.336  INFO 97083 --- [           main] com.grayson.piece.PieceApplication       : Starting PieceApplication v0.0.1-SNAPSHOT on weipeng with PID 97083 (/Users/weipeng/Personal/Projects/PocketFIlm/WWW/PocketFIlm/files/jars/piece-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFIlm/WWW/PocketFIlm/files/shell)
+2019-10-19 13:35:44.341  INFO 97083 --- [           main] com.grayson.piece.PieceApplication       : No active profile set, falling back to default profiles: default
+2019-10-19 13:35:48.835  INFO 97083 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2019-10-19 13:35:49.085  INFO 97083 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 13:35:49.086  INFO 97083 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-19 13:35:49.430  INFO 97083 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 13:35:49.431  INFO 97083 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4947 ms
+2019-10-19 13:35:50.361  INFO 97083 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 13:35:51.856  INFO 97083 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2019-10-19 13:35:51.869  INFO 97083 --- [           main] com.grayson.piece.PieceApplication       : Started PieceApplication in 25.267 seconds (JVM running for 26.809)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-10-19 13:36:58.041  INFO 97115 --- [           main] com.grayson.piece.PieceApplication       : Starting PieceApplication v0.0.1-SNAPSHOT on weipeng with PID 97115 (/Users/weipeng/Personal/Projects/PocketFIlm/WWW/PocketFIlm/files/jars/piece-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFIlm/WWW/PocketFIlm/files/shell)
+2019-10-19 13:36:58.045  INFO 97115 --- [           main] com.grayson.piece.PieceApplication       : No active profile set, falling back to default profiles: default
+2019-10-19 13:37:02.159  INFO 97115 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2019-10-19 13:37:02.252  INFO 97115 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 13:37:02.253  INFO 97115 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-19 13:37:02.587  INFO 97115 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 13:37:02.587  INFO 97115 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4186 ms
+2019-10-19 13:37:03.505  INFO 97115 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 13:37:04.837  INFO 97115 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2019-10-19 13:37:04.856  INFO 97115 --- [           main] com.grayson.piece.PieceApplication       : Started PieceApplication in 23.406 seconds (JVM running for 24.45)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-10-19 13:39:44.228  INFO 97196 --- [           main] com.grayson.piece.PieceApplication       : Starting PieceApplication v0.0.1-SNAPSHOT on weipeng with PID 97196 (/Users/weipeng/Personal/Projects/PocketFIlm/WWW/PocketFIlm/files/jars/piece-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFIlm/WWW/PocketFIlm/files/shell)
+2019-10-19 13:39:44.234  INFO 97196 --- [           main] com.grayson.piece.PieceApplication       : No active profile set, falling back to default profiles: default
+2019-10-19 13:39:48.486  INFO 97196 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2019-10-19 13:39:48.695  INFO 97196 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 13:39:48.695  INFO 97196 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-19 13:39:48.934  INFO 97196 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 13:39:48.935  INFO 97196 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4399 ms
+2019-10-19 13:39:49.682  INFO 97196 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 13:39:50.953  INFO 97196 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+2019-10-19 13:39:50.967  INFO 97196 --- [           main] com.grayson.piece.PieceApplication       : Started PieceApplication in 23.673 seconds (JVM running for 24.77)
+2019-10-19 13:40:32.308  INFO 97196 --- [nio-8084-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1569664516,1569720144,1571454035; CNZZDATA1273187859=1705968352-1569635976-%7C1571456468; Hm_lpvt_b2743ab7419fe53851004c1f7dd74de6=1571460462] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-19 13:40:32.319  INFO 97196 --- [nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-19 13:40:32.319  INFO 97196 --- [nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-19 13:40:32.396  INFO 97196 --- [nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 57 ms

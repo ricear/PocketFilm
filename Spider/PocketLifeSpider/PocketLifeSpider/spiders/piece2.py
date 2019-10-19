@@ -1,0 +1,122 @@
+# -*- coding: utf-8 -*-
+import scrapy
+
+from PocketLifeSpider.util.CommonUtils import *
+from PocketLifeSpider.util.MongoDbUtils import MongoDbUtils
+
+
+class Piece2Spider(scrapy.Spider):
+    name = 'piece2'
+    allowed_domains = ['www.verity-china.com']
+    start_urls = []
+    actors_url = 'https://www.verity-china.com/actors'
+    origin_url = 'https://www.verity-china.com'
+    type = 'piece'
+    a_name_lists = {}
+
+    def __init__(self, name=None, **kwargs):
+        super(Piece2Spider, self).__init__(name, **kwargs)
+        # 获取每类小品的根地址
+        html = get_one_page(self.actors_url)
+        html = etree.HTML(html)
+        count = 1
+        for li in html.xpath('//ul[@class="list-unstyled list-inline"]/li'):
+            # 判断当前数据是否爬取
+            a = self.origin_url + get_str_from_xpath(li.xpath('./a/@href'))
+            name = get_str_from_xpath(li.xpath('./a/text()'))
+            self.a_name_lists[a] = name
+            self.start_urls.append(a)
+            print('已添加' + ' -> ' + name + ' ' + a)
+            count += 1
+
+    def parse(self, response):
+
+        start_page = 1
+        url = response.url
+
+        # 判断小品类型
+        type = '其他'
+        type2 = self.a_name_lists.get(url)
+        collection = 'piece_type'
+        db_util = MongoDbUtils(collection)
+        dic = {}
+        flag = 0
+        for tmp_type in db_util.find(dic):
+            if (flag == 1):
+                break
+            tmp_type_name = tmp_type['name']
+            for tmp_type2 in tmp_type['types']:
+                if (tmp_type2 == tmp_type_name):
+                    type = tmp_type_name
+                    flag = 1
+                    break
+        if (flag == 0):
+            # 当前小品类型不存在，将其更新到其他类型中
+            dic = {'name': '其他'}
+            tmp_types = []
+            for tmp_type in db_util.find(dic).__getitem__(0)['types']:
+                tmp_types.append(tmp_type)
+            tmp_types.append(type2)
+            dic = {'name': '其他'}
+            new_dic = {'$set': {'types': tmp_types}}
+            db_util.update(dic, new_dic)
+
+        collection = 'piece'
+        db_util = MongoDbUtils(collection)
+
+        print(url)
+        html = get_one_page(url)
+        html = etree.HTML(html)
+        try:
+            total_page = (int)(get_str_from_xpath(html.xpath('//ul[@class="pagination"]/li[last()-1]/a/text()')))
+        except:
+            # 记录跳过的视频信息
+            history_type = 'piece2'
+            history_url = url
+            history_text = '跳过'
+            if (check_spider_history(history_type, history_url, history_text) == False):
+                write_spider_history(history_type, history_url, history_text)
+            pass
+        for page_index in reverse_arr(range(start_page, total_page + 1)):
+            if (page_index == 1):
+                a2 = url
+            else:
+                a2 = url + '?page=' + (str)(page_index)
+            html = get_one_page(a2)
+            html = etree.HTML(html)
+            count = 1
+            for li in html.xpath('//li[@class="col-sm-1-5 col-xs-6"]'):
+                # 解析小品数据
+                # ('http://www.xiaopin5.com/zhaobenshan/272.html', '闫光明、赵本山小品全集高清《狭路相逢》 2012公安部春晚', 'http://www.xiaopin5.com/uploads/allimg/130524/1_05240023404137.jpg', '《狭路相逢》')
+                play_url = self.origin_url + get_str_from_xpath(li.xpath('./a/@href'))
+                try:
+                    name = '《' + get_str_from_xpath(li.xpath('./a/@title')).split('《')[1].split('》')[0] + '》'
+                except:
+                    # 记录跳过的视频信息
+                    history_type = 'piece2'
+                    history_url = play_url
+                    history_text = '跳过'
+                    if (check_spider_history(history_type, history_url, history_text) == False):
+                        write_spider_history(history_type, history_url, history_text)
+                    continue
+                dic = {'drama_url': play_url}
+                find_piece = db_util.find(dic)
+                if find_piece.count() >= 1:
+                    print(name + ' -> 已爬取')
+                    continue
+                html = get_one_page(play_url)
+                html = etree.HTML(html)
+                url2 = 'https://v.youku.com/v_show/id_' +  get_str_from_xpath(html.xpath('//*[@id="video-player"]/iframe/@src')).split('embed/')[1] + '.html'
+                piece = {
+                    'name': name,
+                    'description': get_str_from_xpath(li.xpath('./a/@title')),
+                    'src': get_str_from_xpath(li.xpath('./a/img/@src')),
+                    'type': type,
+                    'type2': type2,
+                    'drama_url': play_url,
+                    'url': url2,
+                    'acquisition_time': get_current_time()
+                }
+                print('正在抓取 -> ' + type + ' ' + type2 + ' ' + piece['name'])
+                db_util.insert(piece)
+            count += 1

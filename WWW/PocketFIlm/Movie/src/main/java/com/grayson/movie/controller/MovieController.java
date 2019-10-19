@@ -55,9 +55,9 @@ public class MovieController {
         //  动漫
         String movies3Url = Configs.API + "/movie/get/all?type=3&page_size=" + pageSize;
         //  今日更新
-        String todayMoviesUrl = Configs.API + "/movie/get/today";
+        String todayMoviesUrl = Configs.API + "/get/today?type=movie";
         //  今日更新数据量
-        String todayCountUrl = Configs.API + "/count/get/today";
+        String todayCountUrl = Configs.API + "/count/get/today?type=movie";
         JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
         JSONObject movies0Object = CommonUtils.doGet(movies0Url);
         JSONObject movies1Object = CommonUtils.doGet(movies1Url);

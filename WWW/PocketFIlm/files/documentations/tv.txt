@@ -462,3 +462,27 @@ Verify the connector's configuration, identify and stop any process that's liste
 2019-09-28 17:21:29.405  INFO 4555 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-09-28 17:21:29.405  INFO 4555 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-09-28 17:21:29.416  INFO 4555 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-10-19 14:45:41.297  INFO 99009 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 99009 (/Users/weipeng/Personal/Projects/PocketFIlm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFIlm/WWW/PocketFIlm/files/shell)
+2019-10-19 14:45:41.305  INFO 99009 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-10-19 14:45:44.048  INFO 99009 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-10-19 14:45:44.104  INFO 99009 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 14:45:44.105  INFO 99009 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-19 14:45:44.388  INFO 99009 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 14:45:44.389  INFO 99009 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2916 ms
+2019-10-19 14:45:44.950  INFO 99009 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 14:45:45.732  INFO 99009 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-10-19 14:45:45.739  INFO 99009 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 7.636 seconds (JVM running for 8.403)
+2019-10-19 14:46:09.784  INFO 99009 --- [nio-8082-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1569756797,1569833670,1571448279; CNZZDATA1273187859=143998858-1569641376-http%253A%252F%252Ffilm.grayson.top%252F%7C1571451068; Hm_lpvt_b2743ab7419fe53851004c1f7dd74de6=1571454020] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-19 14:46:09.937  INFO 99009 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-19 14:46:09.938  INFO 99009 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-19 14:46:09.960  INFO 99009 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms

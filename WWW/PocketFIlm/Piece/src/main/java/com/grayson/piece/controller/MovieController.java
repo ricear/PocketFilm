@@ -52,18 +52,26 @@ public class MovieController {
         String movies3Url = Configs.API + "/piece/get/all?type=小品&page_size=" + pageSize;
         //  电影
         String movies4Url = Configs.API + "/piece/get/all?type=电影&page_size=" + pageSize;
+        //  今日更新
+        String todayMoviesUrl = Configs.API + "/get/today?type=piece";
+        //  今日更新数据量
+        String todayCountUrl = Configs.API + "/count/get/today?type=piece";
         JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
         JSONObject movies0Object = CommonUtils.doGet(movies0Url);
         JSONObject movies1Object = CommonUtils.doGet(movies1Url);
         JSONObject movies2Object = CommonUtils.doGet(movies2Url);
         JSONObject movies3Object = CommonUtils.doGet(movies3Url);
         JSONObject movies4Object = CommonUtils.doGet(movies4Url);
+        JSONObject todayMoviesObject = CommonUtils.doGet(todayMoviesUrl);
+        JSONObject todayCountObject = CommonUtils.doGet(todayCountUrl);
         map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
         map.addAttribute("movies0", movies0Object.getJSONArray("data"));
         map.addAttribute("movies1", movies1Object.getJSONArray("data"));
         map.addAttribute("movies2", movies2Object.getJSONArray("data"));
         map.addAttribute("movies3", movies3Object.getJSONArray("data"));
         map.addAttribute("movies4", movies4Object.getJSONArray("data"));
+        map.addAttribute("todayMovies", todayMoviesObject.getJSONArray("data"));
+        map.addAttribute("todayCount", todayCountObject.getInteger("data"));
         map.addAttribute("title", "掌上小品_免费在线观看赵家班郭德纲德云社小品电影");
         return "movie.html";
     }
@@ -95,7 +103,7 @@ public class MovieController {
         JSONObject jsonObject = CommonUtils.doGet(url);
         JSONObject movie = jsonObject.getJSONObject("data");
         map.addAttribute("movie", movie);
-        map.put("title", "《" + movie.get("name") + "》免费在线观看-掌上小品免费在线观看最新搞笑小品" + movie.get("name"));
+        map.put("title", movie.get("name") + "免费在线观看-掌上小品免费在线观看最新搞笑小品" + movie.get("name"));
 
         //  记录浏览历史
         JSONObject recordsToRecordObject = new JSONObject();
