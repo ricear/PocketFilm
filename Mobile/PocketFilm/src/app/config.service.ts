@@ -47,16 +47,17 @@ export class ConfigService {
   public dy360 = 'http://yun.360dy.wang/jx.php?url='
   // ckmov
   public ckmov = 'https://www.ckmov.vip/api.php?url='
+  // haohuala
+  public haohuala = 'http://api.lhh.la/vip/?url='
 
   // 电视
   public tv = this.m3u8
 
   // 戏曲解析地址
-  // public drama = this.jx66
-  public drama = this.bljiex
+  public drama = this.jx66
 
   // 小品
-  public piece = this.bljiex
+  public piece = this.jx66
 
   constructor() { }
 }

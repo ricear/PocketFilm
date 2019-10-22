@@ -98,8 +98,6 @@ var TvPage = /** @class */ (function () {
         this.storage = storage;
         this.tools = tools;
         this.router = router;
-        // 视频解析地址
-        this.parseUrl = this.tools.getParseUrl();
         // 电视类型
         this.type = '全部';
         // 推荐数据
@@ -138,6 +136,8 @@ var TvPage = /** @class */ (function () {
         this.pageSize = 8;
         // 关键词
         this.keyWord = 'null';
+        this.source_index = 0;
+        this.type_index = 0;
         // 浏览类型
         this.browse_type = 'tv';
         // 当前选中的电视类型
@@ -252,14 +252,12 @@ var TvPage = /** @class */ (function () {
      * @param _id 电视_id
      */
     TvPage.prototype.goTvDetail = function (_id) {
-        var result = this.tools.checkUser();
-        if (result) {
-            this.router.navigate(['/tv-detail'], {
-                queryParams: {
-                    _id: _id
-                }
-            });
-        }
+        //  跳转到影视详情页
+        this.router.navigate(['/tv-detail'], {
+            queryParams: {
+                _id: _id
+            }
+        });
     };
     /**
      * 跳转到更多推荐页

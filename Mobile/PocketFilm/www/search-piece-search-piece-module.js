@@ -58,7 +58,7 @@ var SearchPiecePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-back-button defaultHref=\"/\" slot=\"start\"></ion-back-button>\n    <ion-title style=\"text-align: center;\">小品搜索</ion-title>\n  </ion-toolbar>\n\n</ion-header>\n\n<ion-content>\n\n  <!-- 搜索 -->\n  <div>\n    <table style=\"width: 100%;\">\n      <tr>\n        <td>\n          <ion-searchbar (ionInput)=\"searchTvs($event)\" placeholder=\"请输入小品名称\"></ion-searchbar>\n        </td>\n        <td>\n          <ion-button color=\"danger\" (click)=\"doSearch()\">搜索</ion-button>\n        </td>\n      </tr>\n    </table>\n  </div>\n\n  <!-- 搜索时显示的结果 -->\n  <ion-list *ngIf=\"!search\">\n    <ion-item *ngFor=\"let tv of tvList\" (click)=\"goTvDetail(tv._id)\">\n        <ion-thumbnail slot=\"start\">\n            <ion-img [src]=\"tv.src\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"></ion-img>\n          </ion-thumbnail>\n      <p>{{tv.name}}</p>\n    </ion-item>\n  </ion-list>\n  <!-- 搜索后显示的结果 -->\n    <ion-grid *ngIf=\"search\">\n      <ion-row *ngFor=\"let tv of tvList\">\n        <ion-col *ngFor=\"let tv2 of tv\" (click)=\"goTvDetail((tv2._id))\">\n              <div>\n                  <img src=\"{{tv2.src}}\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"class=\"movie_img\">\n                </div>\n                <p class=\"movie-detail\" style=\"margin: 0px;\">{{tv2.name}}</p>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n\n    <!-- 上拉加载更多 -->\n  <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n      <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n      </ion-infinite-scroll-content>\n    </ion-infinite-scroll>\n    <!-- 上拉加载更多 -->\n\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-back-button defaultHref=\"/\" slot=\"start\"></ion-back-button>\n    <ion-title style=\"text-align: center;\">小品搜索</ion-title>\n  </ion-toolbar>\n\n</ion-header>\n\n<ion-content>\n\n  <!-- 搜索 -->\n  <div>\n      <table style=\"width: 100%;\">\n        <tr>\n          <td>\n            <ion-searchbar (ionInput)=\"searchTvs($event)\" placeholder=\"请输入小品名称\" [value]=\"keyWord\"></ion-searchbar>\n          </td>\n          <td>\n            <ion-button color=\"danger\" (click)=\"doSearch()\">搜索</ion-button>\n          </td>\n        </tr>\n      </table>\n    </div>\n  \n    <!-- 搜索记录 -->\n    <ion-list class=\"search-history\" *ngIf=\"history\">\n      <ion-label class=\"title\">历史记录</ion-label>\n      <div>\n        <span *ngFor=\"let search of searchList\" (click)=\"searchMoviesWithSearchHistory(search.key_word)\">{{search.key_word}}</span>&nbsp;&nbsp;\n      </div>\n    </ion-list>\n\n  <!-- 搜索时显示的结果 -->\n  <ion-list *ngIf=\"!search\">\n    <ion-item *ngFor=\"let tv of tvList\" (click)=\"goTvDetail(tv._id)\">\n        <ion-thumbnail slot=\"start\">\n            <ion-img [src]=\"tv.src\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"></ion-img>\n          </ion-thumbnail>\n      <p>{{tv.name}}</p>\n    </ion-item>\n  </ion-list>\n  <!-- 搜索后显示的结果 -->\n    <ion-grid *ngIf=\"search\">\n      <ion-row *ngFor=\"let tv of tvList\">\n        <ion-col *ngFor=\"let tv2 of tv\" (click)=\"goTvDetail((tv2._id))\">\n              <div>\n                  <img src=\"{{tv2.src}}\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"class=\"movie_img\">\n                </div>\n                <p class=\"movie-detail\" style=\"margin: 0px;\">{{tv2.name}}</p>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n\n    <!-- 上拉加载更多 -->\n  <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n      <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n      </ion-infinite-scroll-content>\n    </ion-infinite-scroll>\n    <!-- 上拉加载更多 -->\n\n</ion-content>"
 
 /***/ }),
 
@@ -95,6 +95,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var SearchPiecePage = /** @class */ (function () {
     function SearchPiecePage(storage, tools, activeRoute, router) {
+        var _this = this;
         this.storage = storage;
         this.tools = tools;
         this.activeRoute = activeRoute;
@@ -113,12 +114,20 @@ var SearchPiecePage = /** @class */ (function () {
         // 当前页码
         this.pageIndex = 1;
         // 每页大小
-        this.pageSize = 10;
+        this.pageSize = 30;
+        // 每页大小(搜索历史)
+        this.searchHistoryPageSize = 18;
         // 排序方式 0：发布日期 1:评分
         this.sortType = 1;
         // 判断是否搜索
         this.search = false;
+        // 判断是否显示搜索记录
+        this.history = true;
+        // 搜索类型
+        this.searchType = 'piece';
         this.activeRoute.queryParams.subscribe(function (params) {
+            // 获取搜索记录
+            _this.getSearchHistory();
         });
     }
     SearchPiecePage.prototype.ngOnInit = function () {
@@ -132,8 +141,30 @@ var SearchPiecePage = /** @class */ (function () {
         if (this.keyWord != '') {
             this.tools.getPieceListApi(this.type, this.type2, this.pageIndex, this.pageSize, this.keyWord).then(function (data) {
                 _this.tvList = _this.tvList.concat(data.data);
+                // 修改为不显示搜索历史记录
+                _this.history = false;
             });
         }
+        else {
+            // 修改为显示搜索历史记录
+            this.history = true;
+        }
+    };
+    /**
+     * 根据搜索记录获取影视列表
+     * @param key_word 搜索记录
+     */
+    SearchPiecePage.prototype.searchMoviesWithSearchHistory = function (keyWord) {
+        // 修改为未搜索
+        this.search = false;
+        // 修改为不显示搜索历史记录
+        this.history = false;
+        // 清空影视列表数据
+        this.tvList = [];
+        // 关键词
+        this.keyWord = keyWord;
+        // 获取影视列表
+        this.getTvList();
     };
     /**
      * 搜索电视
@@ -142,6 +173,8 @@ var SearchPiecePage = /** @class */ (function () {
     SearchPiecePage.prototype.searchTvs = function (event) {
         // 修改为未搜索
         this.search = false;
+        // 修改为不显示搜索历史记录
+        this.history = false;
         // 清空电视列表数据
         this.tvList = [];
         // 关键词
@@ -188,6 +221,7 @@ var SearchPiecePage = /** @class */ (function () {
         for (var i = 0; i < this.tvListTemp2.length;) {
             this.tvList.push(this.tvListTemp2.splice(i, this.col_size));
         }
+        this.saveSearchHistory();
     };
     /**
      * 上拉加载更多
@@ -202,6 +236,24 @@ var SearchPiecePage = /** @class */ (function () {
             //告诉ionic 刷新数据完成
             event.target.complete();
         }
+    };
+    /**
+     * 保存搜索记录
+     */
+    SearchPiecePage.prototype.saveSearchHistory = function () {
+        this.tools.addSearchApi(this.searchType, this.keyWord);
+    };
+    /**
+     * 获取搜索记录
+     */
+    SearchPiecePage.prototype.getSearchHistory = function () {
+        var _this = this;
+        this.tools.getSearchApi(this.searchType, this.pageIndex, this.searchHistoryPageSize).then(function (data) {
+            _this.searchList = data.data;
+            if (_this.searchList.length == 0) {
+                _this.history = false;
+            }
+        });
     };
     SearchPiecePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 
 import { StorageService } from '../storage.service';
@@ -20,12 +20,18 @@ export class TvDetailPage implements OnInit {
   // 解析地址
   public url;
   public safeUrl;
+  public source_count;
+  public source_index = 0;
+  public type_index = 0;
+  // 浏览类型
+  public browseType = 'tv';
 
   constructor(
     public storage: StorageService,
     public tools: ToolsService,
     public config: ConfigService,
     public activeRoute: ActivatedRoute,
+    public router: Router,
     public sanitizer: DomSanitizer
   ) {
     this.activeRoute.queryParams.subscribe((params: Params) => {
@@ -41,6 +47,21 @@ export class TvDetailPage implements OnInit {
   }
 
   /**
+   * 根据视频资源创造视频资源(适用于电视)
+   * @param sources 视频资源
+   */
+  createSourcesBySources(sources) {
+    var newSources = []
+    for (var i = 0; i < sources.length;i++) {
+      var type = {'name': sources[i].name, 'url': sources[i].url}
+      var types = [type]
+      var source = {'name': sources[i].name, 'types': types}
+      newSources[i] = source
+    }
+    this.tv.sources = newSources
+   }
+
+  /**
    * 获取电视信息
    */
 
@@ -49,24 +70,33 @@ export class TvDetailPage implements OnInit {
       this.tv = data.data
       if (this.url == null) {
         this.url = this.tv.sources[0].url
+        this.createSourcesBySources(this.tv.sources)
+        this.source_count = this.tv.sources.length
+        this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.config.tv + this.url)
       }
-      this.changeTvType(this._id, this.url)
-      this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.config.tv + this.url)
     })
   }
 
   /**
-   * 改变影视类型
-   * @param _id 影视id
-   * @param url 影视地址
+   * 修改影视类型
+   * @param url   影视地址
    */
 
-  changeTvType(_id, url) {
-    this._id = _id
-    this.url = url
-    this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.config.m3u8 + this.url)
+  changeMovieType(_id, source_index, type_index) {
+    var result = this.tools.checkUser()
+    if (result) {
     // 保存浏览记录
-this.saveBrowseRecords()
+    this.saveBrowseRecords()
+    //  播放视频
+    this.router.navigate(['/play'], {
+      queryParams: {
+        _id: _id,
+        source_index: source_index,
+        type_index: type_index,
+        browseType: this.browseType,
+      }
+    })
+  }
   }
 
   /**

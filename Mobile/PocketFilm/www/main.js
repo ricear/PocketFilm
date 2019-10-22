@@ -924,6 +924,10 @@ var map = {
 		"./src/app/piece/piece.module.ts",
 		"piece-piece-module"
 	],
+	"./play/play.module": [
+		"./src/app/play/play.module.ts",
+		"play-play-module"
+	],
 	"./register/register.module": [
 		"./src/app/register/register.module.ts",
 		"register-register-module"
@@ -1016,6 +1020,7 @@ var routes = [
     { path: 'about-app', loadChildren: './about-app/about-app.module#AboutAppPageModule' },
     { path: 'more-recommend-movie', loadChildren: './more-recommend-movie/more-recommend-movie.module#MoreRecommendMoviePageModule' },
     { path: 'more-recommend-tv', loadChildren: './more-recommend-tv/more-recommend-tv.module#MoreRecommendTvPageModule' },
+    { path: 'play', loadChildren: './play/play.module#PlayPageModule' },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -1375,13 +1380,14 @@ var ConfigService = /** @class */ (function () {
         this.dy360 = 'http://yun.360dy.wang/jx.php?url=';
         // ckmov
         this.ckmov = 'https://www.ckmov.vip/api.php?url=';
+        // haohuala
+        this.haohuala = 'http://api.lhh.la/vip/?url=';
         // 电视
         this.tv = this.m3u8;
         // 戏曲解析地址
-        // public drama = this.jx66
-        this.drama = this.bljiex;
+        this.drama = this.jx66;
         // 小品
-        this.piece = this.bljiex;
+        this.piece = this.jx66;
     }
     ConfigService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
@@ -1529,9 +1535,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_device_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/device/ngx */ "./node_modules/@ionic-native/device/ngx/index.js");
 /* harmony import */ var _ionic_native_downloader_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/downloader/ngx */ "./node_modules/@ionic-native/downloader/ngx/index.js");
 /* harmony import */ var _ionic_native_app_version_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/app-version/ngx */ "./node_modules/@ionic-native/app-version/ngx/index.js");
-/* harmony import */ var _http_service_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./http-service.service */ "./src/app/http-service.service.ts");
-/* harmony import */ var _storage_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./storage.service */ "./src/app/storage.service.ts");
-/* harmony import */ var _config_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./config.service */ "./src/app/config.service.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _http_service_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./http-service.service */ "./src/app/http-service.service.ts");
+/* harmony import */ var _storage_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./storage.service */ "./src/app/storage.service.ts");
+/* harmony import */ var _config_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./config.service */ "./src/app/config.service.ts");
+
 
 
 
@@ -1543,7 +1551,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ToolsService = /** @class */ (function () {
-    function ToolsService(storage, httpService, config, alertController, toastController, router, device, downloader, appVersion) {
+    function ToolsService(storage, httpService, config, alertController, toastController, router, device, downloader, appVersion, sanitizer) {
         this.storage = storage;
         this.httpService = httpService;
         this.config = config;
@@ -1553,6 +1561,7 @@ var ToolsService = /** @class */ (function () {
         this.device = device;
         this.downloader = downloader;
         this.appVersion = appVersion;
+        this.sanitizer = sanitizer;
         console.log('Hello ToolsProvider Provider');
     }
     ToolsService.prototype.alertWithOkButton = function (message) {
@@ -1647,8 +1656,43 @@ var ToolsService = /** @class */ (function () {
     /**
      * 获取视频解析地址
      */
-    ToolsService.prototype.getParseUrl = function () {
-        return this.config.parseUrl;
+    ToolsService.prototype.getParseUrl = function (movie_type, url) {
+        var parseUrl;
+        var safeUrl;
+        if (movie_type == 'movie') {
+            // qq播客(v.qq.com)
+            if (url.indexOf('v.qq.com') != -1)
+                parseUrl = this.config.qqBoke;
+            // PPTV视频(v.pptv.com)
+            else if (url.indexOf('v.pptv.com') != -1)
+                parseUrl = this.config.pptv;
+            // 奇艺视频(www.iqiyi.com)
+            else if (url.indexOf('www.iqiyi.com') != -1)
+                parseUrl = this.config.qiyi;
+            // 芒果视频(www.mgtv.com)
+            else if (url.indexOf('www.mgtv.com') != -1)
+                parseUrl = this.config.mangGuo;
+            // 搜狐视频(tv.sohu.com)
+            else if (url.indexOf('tv.sohu.com') != -1)
+                parseUrl = this.config.souHuo;
+            // 优酷视频(v.youku.com)
+            else if (url.indexOf('v.youku.com') != -1)
+                parseUrl = this.config.youKu;
+            // jsm3u8、yjm3u8、zuidam3u8、91m3u8(m3u8)、其它
+            else
+                parseUrl = this.config.bljiex;
+        }
+        else if (movie_type == 'tv') {
+            parseUrl = this.config.tv;
+        }
+        else if (movie_type == 'drama') {
+            parseUrl = this.config.drama;
+        }
+        else if (movie_type == 'piece') {
+            parseUrl = this.config.piece;
+        }
+        safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(parseUrl + url);
+        return safeUrl;
     };
     /**
      * 获取推荐数据
@@ -1811,6 +1855,21 @@ var ToolsService = /** @class */ (function () {
         return promise;
     };
     /**
+     * 获取搜索记录
+     * @param pageIndex     当前页码
+     * @param pageSize      每页大小
+     */
+    ToolsService.prototype.getSearchApi = function (searchType, pageIndex, pageSize) {
+        var _this = this;
+        var promise = new Promise(function (resolve, reject) {
+            var api = '/search/get/all?search_type=' + searchType + '&page_index=' + pageIndex + '&page_size=' + pageSize;
+            _this.httpService.doGet(api, function (data) {
+                resolve(data);
+            });
+        });
+        return promise;
+    };
+    /**
      * 获取浏览记录
      * @param pageIndex     当前页码
      * @param pageSize      每页大小
@@ -1820,6 +1879,41 @@ var ToolsService = /** @class */ (function () {
         var promise = new Promise(function (resolve, reject) {
             var api = '/records/get/all?page_index=' + pageIndex + '&page_size=' + pageSize;
             _this.httpService.doGet(api, function (data) {
+                resolve(data);
+            });
+        });
+        return promise;
+    };
+    /**
+     * 添加搜索记录
+     * @param browseType 浏览的影视类型
+     * @param id 影视id
+     * @param name 影视名称
+     * @param type 影视第一种类型
+     * @param type2 影视第二种类型
+     * @param src 影视播放地址
+     * @param url 播放地址
+     */
+    ToolsService.prototype.addSearchApi = function (search_type, key_word) {
+        var _this = this;
+        var promise = new Promise(function (resolve, reject) {
+            var api = '/search/add';
+            var user_name = _this.storage.get('user_name');
+            // 手机 uuid 
+            var device_uuid = _this.device.uuid;
+            // 系统版本  
+            var device_version = _this.device.version;
+            // 返回手机的平台信息  (android/ios 等等)
+            var device_platform = _this.device.platform;
+            var records = {
+                'user_name': user_name,
+                'search_type': search_type,
+                'key_word': key_word,
+                'device_uuid': device_uuid,
+                'device_version': device_version,
+                'device_platform': device_platform,
+            };
+            _this.httpService.doPost(api, records, function (data) {
                 resolve(data);
             });
         });
@@ -2173,15 +2267,16 @@ var ToolsService = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
             providedIn: 'root'
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_storage_service__WEBPACK_IMPORTED_MODULE_8__["StorageService"],
-            _http_service_service__WEBPACK_IMPORTED_MODULE_7__["HttpServiceService"],
-            _config_service__WEBPACK_IMPORTED_MODULE_9__["ConfigService"],
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_storage_service__WEBPACK_IMPORTED_MODULE_9__["StorageService"],
+            _http_service_service__WEBPACK_IMPORTED_MODULE_8__["HttpServiceService"],
+            _config_service__WEBPACK_IMPORTED_MODULE_10__["ConfigService"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
             _ionic_native_device_ngx__WEBPACK_IMPORTED_MODULE_4__["Device"],
             _ionic_native_downloader_ngx__WEBPACK_IMPORTED_MODULE_5__["Downloader"],
-            _ionic_native_app_version_ngx__WEBPACK_IMPORTED_MODULE_6__["AppVersion"]])
+            _ionic_native_app_version_ngx__WEBPACK_IMPORTED_MODULE_6__["AppVersion"],
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_7__["DomSanitizer"]])
     ], ToolsService);
     return ToolsService;
 }());

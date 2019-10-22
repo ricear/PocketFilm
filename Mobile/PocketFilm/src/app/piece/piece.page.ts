@@ -11,9 +11,6 @@ import { ToolsService } from '../tools.service';
 })
 export class PiecePage implements OnInit {
 
-  // 视频解析地址
-  public parseUrl = this.tools.getParseUrl()
-
   // 小品类型
   public type = '推荐'
   public type2 = '全部'
@@ -190,14 +187,12 @@ export class PiecePage implements OnInit {
    */
 
   goPieceDetail(_id) {
-    var result = this.tools.checkUser()
-    if (result) {
-      this.router.navigate(['/piece-detail'], {
-        queryParams: {
-          _id: _id
-        }
-      })
-    }
+      //  跳转到影视详情页
+    this.router.navigate(['/piece-detail'], {
+      queryParams: {
+        _id: _id
+      }
+    })
   }
 
   /**

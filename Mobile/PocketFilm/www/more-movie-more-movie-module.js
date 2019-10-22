@@ -121,6 +121,10 @@ var MoreMoviePage = /** @class */ (function () {
         this.sortType = 1;
         // 关键词
         this.keyWord = 'null';
+        this.source_index = 0;
+        this.type_index = 0;
+        // 浏览类型
+        this.browse_type = 'movie';
         this.activeRoute.queryParams.subscribe(function (params) {
             _this.type = params['type'];
             _this.sortType = params['sortType'];
@@ -289,9 +293,13 @@ var MoreMoviePage = /** @class */ (function () {
     MoreMoviePage.prototype.goMovieDetail = function (_id) {
         var result = this.tools.checkUser();
         if (result) {
-            this.router.navigate(['/movie-detail'], {
+            //  播放视频
+            this.router.navigate(['/play'], {
                 queryParams: {
-                    _id: _id
+                    _id: _id,
+                    source_index: this.source_index,
+                    type_index: this.type_index,
+                    browseType: this.browse_type,
                 }
             });
         }

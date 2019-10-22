@@ -1,0 +1,71 @@
+<div class="wrapper">
+  <script src="https://m.88ys.cc/template/wap88ysw/ads/toubu.js"></script>
+  <script src="https://cdn.k1815.com/maizhan/js/606.js?v=20191020"></script>
+  <section class="main">
+    <div class="detailPosterIntro1 globalPadding clearfix" style="height: 100%;">
+      <script>var mac_flag = 'play', mac_link = '/vod-play-id-66598-src-{src}-num-{num}.html', mac_name = '中国机长', mac_from = 'kuyun$$$zuidam3u8$$$dbm3u8$$$bjm3u8$$$33uu', mac_server = 'no$$$no$$$no$$$no$$$no', mac_note = '$$$$$$$$$$$$', mac_url = unescape('HC%u9ad8%u6e05%24https%3A%2F%2Fyouku.com-ok-youku.com%2Fshare%2F081ac6926348a7c6962c58ed0dd93b0b%24%24%24HDTC%u56fd%u8bed%u4e2d%u5b57%u7248%24https%3A%2F%2Fhaoa.haozuida.com%2F20190930%2FDE5kkggW%2Findex.m3u8%24%24%24TC%24https%3A%2F%2Fdbx5.tyswmp.com%2F20190930%2FI7ZqJ45j%2Findex.m3u8%24%24%24HC%24https%3A%2F%2Fv3.bjssmd.net%2F20191001%2FaqCUYjqn%2Findex.m3u8%24%24%24HDTC%u56fd%u8bed%24https%3A%2F%2Ftv.youkutv.cc%2Fshare%2Fp430qhXIyb1kOI6u'); </script>
+      <script src="https://m.88ys.cc/js/playerconfig.js"></script>
+      <script src="https://m.88ys.cc/js/player.js"></script>
+      <div class="MacPlayer">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td colspan="2">
+                <table border="0" cellpadding="0" cellspacing="0" id="playtop">
+                  <tbody>
+                    <tr>
+                      <td id="topleft"><a target="_self" href="javascript:void(0)"
+                          onclick="MacPlayer.GoPreUrl()">上一集</a> <a target="_self" href="javascript:void(0)"
+                          onclick="MacPlayer.GoNextUrl()">下一集</a></td>
+                      <td id="topcc">
+                        <div id="topdes" style="height:26px;line-height:26px;overflow:hidden">正在播放：{{movie.name}}
+                          {{type.name}}</div>
+                      </td>
+                      <td id="topright"><a target="_self" href="javascript:void(0)"
+                          onclick="MacPlayer.ShowList();return false;">开/关列表</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr style="display:none">
+              <td colspan="2" id="install" style="display:none"></td>
+            </tr>
+            <tr>
+              <td id="playleft" valign="top"><iframe id="buffer" sandbox="allow-forms allow-scripts" src=""
+                  frameborder="0" scrolling="no" width="100%" height="96%"
+                  style="position: absolute; z-index: 99998; display: none;"></iframe><iframe width="100%"
+                  height="95.6%" [src]="safeUrl"
+                  frameborder="0" allowfullscreen=""></iframe></td>
+              <td id="playright" valign="top" style="display: none;">
+                <div class="rightlist" id="rightlist" style="height:95.6%;">
+                  <div *ngFor="let source of movie.sources,let i = index">
+                    <div id="main{{i}}" class="h2_on" *ngIf="i == source_index">
+                        <h2 (click)="Tabs(i,source_count)">{{source.name}}</h2>
+                        <ul id="sub{{i}}" style="display:block">
+                          <li *ngFor="let type of source.types,let j = index">
+                            <a class="list_on" href="javascript:void(0)" (click)="changeMovieType(i, j)" *ngIf="i == source_index && j ==type_index">{{type.name}}</a>
+                            <a href="javascript:void(0)" (click)="changeMovieType(i, j)" *ngIf="i == source_index && j !=type_index">{{type.name}}</a>
+                          </li>
+                        </ul>
+                    </div>
+                    <div id="main{{i}}" class="h2" *ngIf="i != source_index">
+                        <h2 (click)="Tabs(i,source_count)">{{source.name}}</h2>
+                        <ul id="sub{{i}}" style="display: none;">
+                          <li *ngFor="let type of source.types,let j = index">
+                            <a class="list_on" href="javascript:void(0)" (click)="changeMovieType(i, j)" *ngIf="j ==type_index">{{type.name}}</a>
+                            <a href="javascript:void(0)" (click)="changeMovieType(i, j)" *ngIf="j !=type_index">{{type.name}}</a>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <script src="https://m.88ys.cc/player/kuyun.js"></script>
+      <script src="/"></script>
+    </div>
+  </section>

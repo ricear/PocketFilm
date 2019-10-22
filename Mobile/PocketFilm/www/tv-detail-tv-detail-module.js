@@ -58,7 +58,7 @@ var TvDetailPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n      <ion-buttons slot=\"start\">\n          <ion-back-button></ion-back-button>\n        </ion-buttons>\n    <ion-title style=\"text-align: center;\">{{tv.name}}</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n    <iframe id=\"iplayer\" name=\"iplayer\" allowtransparency=\"true\" allowfullscreen webkitallowfullscreen\n    mozallowfullscreen oallowfullscreen msallowfullscreen border=\"0\" marginwidth=\"0\" marginheight=\"0\" hspace=\"0\"\n      vspace=\"0\" frameborder=\"0\" scrolling=\"no\" [src]=\"safeUrl\" width=\"100%\" height=\"48%\" rel=\"nofollow\"></iframe>\n    <ion-label>\n      <!-- <p>\n        <span class=\"c01\">收视率：<span class=\"c02\">{{tv.ratings}}</span></span>&nbsp;&nbsp;<span class=\"c01\">今日：<span\n            class=\"c02\">{{tv.today}}</span></span>&nbsp;&nbsp;<span class=\"c01\">爱看度：<span\n            class=\"c02\">{{tv.good_looking_rate}}</span></span>\n      </p> -->\n      <ion-list style=\"padding-top: 0px;\" *ngFor=\"let source of tv.sources\">\n        <h3 class=\"source_name\">{{source.name}}</h3>\n        <span>\n          <!-- 当前选中项的电视源 -->\n          <a class=\"c02 source_type source_type_active\" (click)=\"changeTvType(tv._id, source.url)\"\n            *ngIf=\"url==source.url\">{{source.name}}</a>\n          <!-- 不是当前选中项的电视源 -->\n          <a class=\"c02 source_type\" (click)=\"changeTvType(tv._id, source.url)\"\n            *ngIf=\"url!=source.url\">{{source.name}}</a>\n        </span>\n      </ion-list>\n      <p style=\"color: #999;\">\n        <span class=\"c01\">{{tv.name}}介绍：</span>\n        <span class=\"c02\">{{tv.introduction}}</span>\n      </p>\n    </ion-label>\n</ion-content>"
+module.exports = "<ion-header>\n    <ion-toolbar color=\"danger\">\n      <ion-buttons slot=\"start\">\n        <ion-back-button></ion-back-button>\n      </ion-buttons>\n      <ion-title style=\"text-align: center;\">{{tv.name}}</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  \n  <ion-content padding>\n    <div style=\"display: block;\">\n        <div style=\"float: left;margin-right: 10px;\">\n            <img [src]=\"tv.src\" [alt]=\"tv.name\" class=\"movie-detail-src\">\n          </div>\n          <div>\n              <p>\n                  <span class=\"c01\">名称：<span class=\"c02\">{{tv.name}}</span></span>\n                </p>\n                <p>\n                  <span class=\"c01\">类型：<span class=\"c02\">{{tv.type}}</span></span>\n                </p>\n          </div>\n    </div>\n    <div style=\"display: inline-block;margin-top: 15px;\">\n      <ion-list style=\"padding-top: 0rpx;\" *ngFor=\"let source of tv.sources,let i = index\">\n        <h3 class=\"source_name\">{{source.name}}</h3>\n        <span *ngFor=\"let type of source.types,let j = index\">\n          <!-- 当前选中项的影视源 -->\n          <a class=\"c02 source_type source_type_active\" (click)=\"changeMovieType(tv._id, i, j)\"\n            *ngIf=\"i == source_index && j==type_index\">{{type.name}}</a>\n          <!-- 不是当前选中项的影视源 -->\n          <a class=\"c02 source_type\" (click)=\"changeMovieType(tv._id, i, j)\" *ngIf=\"i != source_index || j != type_index\">{{type.name}}</a>\n        </span>\n      </ion-list>\n      <p style=\"color: #999;\">\n        <span class=\"c01\">剧情介绍：</span>\n        <span class=\"c02\">{{tv.introduction}}</span>\n      </p>\n    </div>\n  </ion-content>"
 
 /***/ }),
 
@@ -98,13 +98,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var TvDetailPage = /** @class */ (function () {
-    function TvDetailPage(storage, tools, config, activeRoute, sanitizer) {
+    function TvDetailPage(storage, tools, config, activeRoute, router, sanitizer) {
         var _this = this;
         this.storage = storage;
         this.tools = tools;
         this.config = config;
         this.activeRoute = activeRoute;
+        this.router = router;
         this.sanitizer = sanitizer;
+        this.source_index = 0;
+        this.type_index = 0;
+        // 浏览类型
+        this.browseType = 'tv';
         this.activeRoute.queryParams.subscribe(function (params) {
             // 获取电视_id
             _this._id = params['_id'];
@@ -116,6 +121,20 @@ var TvDetailPage = /** @class */ (function () {
     TvDetailPage.prototype.ngOnInit = function () {
     };
     /**
+     * 根据视频资源创造视频资源(适用于电视)
+     * @param sources 视频资源
+     */
+    TvDetailPage.prototype.createSourcesBySources = function (sources) {
+        var newSources = [];
+        for (var i = 0; i < sources.length; i++) {
+            var type = { 'name': sources[i].name, 'url': sources[i].url };
+            var types = [type];
+            var source = { 'name': sources[i].name, 'types': types };
+            newSources[i] = source;
+        }
+        this.tv.sources = newSources;
+    };
+    /**
      * 获取电视信息
      */
     TvDetailPage.prototype.getTv = function () {
@@ -124,22 +143,31 @@ var TvDetailPage = /** @class */ (function () {
             _this.tv = data.data;
             if (_this.url == null) {
                 _this.url = _this.tv.sources[0].url;
+                _this.createSourcesBySources(_this.tv.sources);
+                _this.source_count = _this.tv.sources.length;
+                _this.safeUrl = _this.sanitizer.bypassSecurityTrustResourceUrl(_this.config.tv + _this.url);
             }
-            _this.changeTvType(_this._id, _this.url);
-            _this.safeUrl = _this.sanitizer.bypassSecurityTrustResourceUrl(_this.config.tv + _this.url);
         });
     };
     /**
-     * 改变影视类型
-     * @param _id 影视id
-     * @param url 影视地址
+     * 修改影视类型
+     * @param url   影视地址
      */
-    TvDetailPage.prototype.changeTvType = function (_id, url) {
-        this._id = _id;
-        this.url = url;
-        this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.config.m3u8 + this.url);
-        // 保存浏览记录
-        this.saveBrowseRecords();
+    TvDetailPage.prototype.changeMovieType = function (_id, source_index, type_index) {
+        var result = this.tools.checkUser();
+        if (result) {
+            // 保存浏览记录
+            this.saveBrowseRecords();
+            //  播放视频
+            this.router.navigate(['/play'], {
+                queryParams: {
+                    _id: _id,
+                    source_index: source_index,
+                    type_index: type_index,
+                    browseType: this.browseType,
+                }
+            });
+        }
     };
     /**
      * 保存浏览记录
@@ -174,6 +202,7 @@ var TvDetailPage = /** @class */ (function () {
             _tools_service__WEBPACK_IMPORTED_MODULE_5__["ToolsService"],
             _config_service__WEBPACK_IMPORTED_MODULE_6__["ConfigService"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"]])
     ], TvDetailPage);
     return TvDetailPage;

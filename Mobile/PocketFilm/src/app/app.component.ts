@@ -13,9 +13,9 @@ import { ToolsService } from './tools.service';
 })
 export class AppComponent {
   constructor(
-    private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar,
+    public platform: Platform,
+    public splashScreen: SplashScreen,
+    public statusBar: StatusBar,
     public router: Router,
     public tools: ToolsService
   ) {

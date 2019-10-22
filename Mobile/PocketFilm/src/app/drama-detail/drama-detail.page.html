@@ -1,36 +1,49 @@
 <ion-header>
     <ion-toolbar color="danger">
-        <ion-buttons slot="start">
-            <ion-back-button></ion-back-button>
-          </ion-buttons>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
       <ion-title style="text-align: center;">{{tv.name}}</ion-title>
     </ion-toolbar>
   </ion-header>
   
   <ion-content padding>
-      <iframe id="iplayer" name="iplayer" allowtransparency="true" allowfullscreen webkitallowfullscreen
-      mozallowfullscreen oallowfullscreen msallowfullscreen border="0" marginwidth="0" marginheight="0" hspace="0"
-        vspace="0" frameborder="0" scrolling="no" [src]="safeUrl" width="100%" height="48%" rel="nofollow"></iframe>
-      <ion-label>
-        <!-- <p>
-          <span class="c01">收视率：<span class="c02">{{tv.ratings}}</span></span>&nbsp;&nbsp;<span class="c01">今日：<span
-              class="c02">{{tv.today}}</span></span>&nbsp;&nbsp;<span class="c01">爱看度：<span
-              class="c02">{{tv.good_looking_rate}}</span></span>
-        </p> -->
-        <ion-list style="padding-top: 0px;" *ngFor="let source of tv.sources">
-          <h3 class="source_name">{{tv.name}}</h3>
-          <span *ngFor="let type of source.types">
-            <!-- 当前选中项的电视源 -->
-            <a class="c02 source_type source_type_active" (click)="changeDramaType(tv._id, type.url)"
-              *ngIf="url==type.url">{{type.name}}</a>
-            <!-- 不是当前选中项的电视源 -->
-            <a class="c02 source_type" (click)="changeDramaType(tv._id, type.url)"
-              *ngIf="url!=type.url">{{type.name}}</a>
-          </span>
-        </ion-list>
-        <p style="color: #999;">
-          <span class="c01">{{tv.name}}介绍：</span>
-          <span class="c02">{{tv.introduction}}</span>
-        </p>
-      </ion-label>
+    <div style="display: block;">
+        <div style="float: left;margin-right: 10px;">
+            <img [src]="tv.src" [alt]="tv.name" class="movie-detail-src">
+          </div>
+          <div>
+              <p>
+                  <span class="c01">名称：<span class="c02">{{tv.name}}</span></span>
+                </p>
+                <p>
+                  <span class="c01">类型：<span class="c02">{{tv.type}}</span></span>
+                </p>
+                <p>
+                    <span class="c01">时长：<span class="c02">{{tv.play_time}}</span></span>
+                  </p>
+                <p>
+                    <span class="c01">说明：<span class="c02">{{tv.drama_description}}</span></span>
+                  </p>
+                  <p>
+                      <span class="c01">更新时间：<span class="c02">{{tv.update_time}}</span></span>
+                    </p>
+          </div>
+    </div>
+    <div style="display: inline-block;margin-top: 15px;">
+      <ion-list style="padding-top: 0rpx;" *ngFor="let source of tv.sources,let i = index">
+        <h3 class="source_name">{{source.name}}</h3>
+        <span *ngFor="let type of source.types,let j = index">
+          <!-- 当前选中项的影视源 -->
+          <a class="c02 source_type source_type_active" (click)="changeMovieType(tv._id, i, j)"
+            *ngIf="i == source_index && j==type_index">{{type.name}}</a>
+          <!-- 不是当前选中项的影视源 -->
+          <a class="c02 source_type" (click)="changeMovieType(tv._id, i, j)" *ngIf="i != source_index || j != type_index">{{type.name}}</a>
+        </span>
+      </ion-list>
+      <p style="color: #999;">
+        <span class="c01">剧情介绍：</span>
+        <span class="c02">{{tv.introduction}}</span>
+      </p>
+    </div>
   </ion-content>

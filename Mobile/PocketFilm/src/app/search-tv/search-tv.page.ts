@@ -24,14 +24,22 @@ export class SearchTvPage implements OnInit {
   public selectTypeList = null
   // 当前页码
   public pageIndex = 1
-  // 每页大小
-  public pageSize = 8
+  // 每页大小(搜索到的影视)
+  public pageSize = 30
+  // 每页大小(搜索历史)
+  public searchHistoryPageSize = 18
   // 排序方式 0：发布日期 1:评分
   public sortType = 1
   // 关键词
   public keyWord
   // 判断是否搜索
   public search = false
+  // 判断是否显示搜索记录
+  public history = true
+  // 搜索类型
+  public searchType = 'tv'
+  // 搜索记录
+  public searchList
 
   constructor(
     public storage: StorageService,
@@ -41,6 +49,8 @@ export class SearchTvPage implements OnInit {
   ) {
     this.activeRoute.queryParams.subscribe((params: Params) => {
       this.type = params['type']
+      // 获取搜索记录
+      this.getSearchHistory()
     })
   }
 
@@ -56,8 +66,30 @@ export class SearchTvPage implements OnInit {
     if (this.keyWord != '') {
       this.tools.getTvListApi(this.type, this.selectTypeList, this.pageIndex, this.pageSize, this.keyWord).then((data: any) => {
         this.tvList = this.tvList.concat(data.data)
+        // 修改为不显示搜索历史记录
+        this.history = false
       })
+    } else {
+      // 修改为显示搜索历史记录
+      this.history = true
     }
+  }
+
+  /**
+   * 根据搜索记录获取影视列表
+   * @param key_word 搜索记录
+   */
+  searchMoviesWithSearchHistory(keyWord) {
+    // 修改为未搜索
+    this.search = false
+    // 修改为不显示搜索历史记录
+    this.history = false
+    // 清空影视列表数据
+    this.tvList = []
+    // 关键词
+    this.keyWord = keyWord
+    // 获取影视列表
+    this.getTvList()
   }
 
   /**
@@ -68,6 +100,8 @@ export class SearchTvPage implements OnInit {
   searchTvs(event) {
     // 修改为未搜索
     this.search = false
+    // 修改为不显示搜索历史记录
+    this.history = false
     // 清空电视列表数据
     this.tvList = []
     // 关键词
@@ -84,12 +118,12 @@ export class SearchTvPage implements OnInit {
   goTvDetail(_id) {
     var result = this.tools.checkUser()
     if (result) {
-    this.router.navigate(['/tv-detail'], {
-      queryParams: {
-        _id: _id
-      }
-    })
-  }
+      this.router.navigate(['/tv-detail'], {
+        queryParams: {
+          _id: _id
+        }
+      })
+    }
   }
 
   /**
@@ -117,6 +151,7 @@ export class SearchTvPage implements OnInit {
     for (var i = 0; i < this.tvListTemp2.length;) {
       this.tvList.push(this.tvListTemp2.splice(i, this.col_size))
     }
+    this.saveSearchHistory()
   }
 
   /**
@@ -133,6 +168,27 @@ export class SearchTvPage implements OnInit {
       //告诉ionic 刷新数据完成
       event.target.complete();
     }
+  }
+
+  /**
+   * 保存搜索记录
+   */
+
+  saveSearchHistory() {
+    this.tools.addSearchApi(this.searchType, this.keyWord)
+  }
+
+  /**
+   * 获取搜索记录
+   */
+
+  getSearchHistory() {
+    this.tools.getSearchApi(this.searchType, this.pageIndex, this.searchHistoryPageSize).then((data: any) => {
+      this.searchList = data.data
+      if (this.searchList.length == 0) {
+        this.history = false
+      }
+    })
   }
 
 }

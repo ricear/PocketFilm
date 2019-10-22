@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 
 import { StorageService } from '../storage.service';
@@ -20,12 +20,18 @@ export class DramaDetailPage implements OnInit {
   // 解析地址
   public url;
   public safeUrl;
+  public source_count;
+  public source_index = 0;
+  public type_index = 0;
+  // 浏览类型
+  public browseType = 'drama';
 
   constructor(
     public storage: StorageService,
     public tools: ToolsService,
     public config: ConfigService,
     public activeRoute: ActivatedRoute,
+    public router: Router,
     public sanitizer: DomSanitizer
   ) {
     this.activeRoute.queryParams.subscribe((params: Params) => {
@@ -50,24 +56,33 @@ export class DramaDetailPage implements OnInit {
       this.tv = data.data
       if (this.url == null) {
         this.url = this.tv.sources[0].types[0].url
+        this.tv.sources[0].name = this.tv.name
+        this.source_count = this.tv.sources.length
+        this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.config.drama + this.url)
       }
-      this.changeDramaType(this._id, this.url)
-      this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.config.drama + this.url)
     })
   }
 
   /**
-   * 改变戏曲类型
-   * @param _id 戏曲id
-   * @param url 戏曲地址
+   * 修改影视类型
+   * @param url   影视地址
    */
 
-  changeDramaType(_id, url) {
-    this._id = _id
-    this.url = url
-    this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.config.drama + this.url)
+  changeMovieType(_id, source_index, type_index) {
+    var result = this.tools.checkUser()
+    if (result) {
     // 保存浏览记录
-this.saveBrowseRecords()
+    this.saveBrowseRecords()
+    //  播放视频
+    this.router.navigate(['/play'], {
+      queryParams: {
+        _id: _id,
+        source_index: source_index,
+        type_index: type_index,
+        browseType: this.browseType,
+      }
+    })
+  }
   }
 
   /**

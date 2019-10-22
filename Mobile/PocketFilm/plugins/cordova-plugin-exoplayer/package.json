@@ -1,0 +1,70 @@
+{
+  "_from": "cordova-plugin-exoplayer",
+  "_id": "cordova-plugin-exoplayer@2.5.4",
+  "_inBundle": false,
+  "_integrity": "sha1-t9Ry203UlBS3H8pOFlF0+fNqWiM=",
+  "_location": "/cordova-plugin-exoplayer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-exoplayer",
+    "name": "cordova-plugin-exoplayer",
+    "escapedName": "cordova-plugin-exoplayer",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/cordova-plugin-exoplayer/download/cordova-plugin-exoplayer-2.5.4.tgz",
+  "_shasum": "b7d472db4dd49414b71fca4e165174f9f36a5a23",
+  "_spec": "cordova-plugin-exoplayer",
+  "_where": "/Users/weipeng/Personal/Projects/PocketFilm/Mobile/PocketFilm",
+  "author": {
+    "name": "Nedim Cholich"
+  },
+  "bugs": {
+    "url": "https://github.com/frontyard/cordova-plugin-exoplayer/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-exoplayer",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Media player for Cordova using Google's ExoPlayer framework",
+  "devDependencies": {
+    "jshint": "^2.9.0"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=4.0.0"
+    }
+  ],
+  "homepage": "https://github.com/frontyard/cordova-plugin-exoplayer#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "phonegap",
+    "cordova",
+    "ionic",
+    "android",
+    "exoplayer",
+    "exo",
+    "video",
+    "player"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-exoplayer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontyard/cordova-plugin-exoplayer.git"
+  },
+  "version": "2.5.4"
+}

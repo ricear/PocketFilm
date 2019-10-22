@@ -12,9 +12,6 @@ import { reject } from 'q';
 })
 export class FilmPage implements OnInit {
 
-  // 视频解析地址
-  public parseUrl = this.tools.getParseUrl()
-
   // 推荐数据
   public recommendations = []
   // 最新排名前10的电影
@@ -28,6 +25,8 @@ export class FilmPage implements OnInit {
   public typeNameList = ['电影', '电视剧', '综艺', '动漫'];
   // 每行电影的数量
   public col_size = 4
+  public source_index = 0;
+  public type_index = 0;
   // 浏览类型
   public browse_type = 'movie'
 
@@ -151,14 +150,12 @@ export class FilmPage implements OnInit {
    */
 
   goMovieDetail(_id) {
-    var result = this.tools.checkUser()
-    if (result) {
-      this.router.navigate(['/movie-detail'], {
-        queryParams: {
-          _id: _id
-        }
-      })
-    }
+      //  跳转到影视详情页
+    this.router.navigate(['/movie-detail'], {
+      queryParams: {
+        _id: _id
+      }
+    })
   }
 
   /**

@@ -98,8 +98,6 @@ var DramaPage = /** @class */ (function () {
         this.storage = storage;
         this.tools = tools;
         this.router = router;
-        // 视频解析地址
-        this.parseUrl = this.tools.getParseUrl();
         // 戏曲类型
         this.type = '推荐';
         this.typeList = ['推荐'];
@@ -258,14 +256,12 @@ var DramaPage = /** @class */ (function () {
      * @param _id 电视_id
      */
     DramaPage.prototype.goDramaDetail = function (_id) {
-        var result = this.tools.checkUser();
-        if (result) {
-            this.router.navigate(['/drama-detail'], {
-                queryParams: {
-                    _id: _id
-                }
-            });
-        }
+        //  跳转到影视详情页
+        this.router.navigate(['/drama-detail'], {
+            queryParams: {
+                _id: _id
+            }
+        });
     };
     /**
      * 跳转到搜索戏曲页

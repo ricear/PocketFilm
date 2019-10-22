@@ -37,6 +37,10 @@ export class MoreMoviePage implements OnInit {
   public sortType = 1
   // 关键词
   public keyWord = 'null'
+  public source_index = 0;
+  public type_index = 0;
+  // 浏览类型
+  public browse_type = 'movie'
 
   constructor(
     public storage: StorageService,
@@ -212,11 +216,15 @@ export class MoreMoviePage implements OnInit {
   goMovieDetail(_id) {
     var result = this.tools.checkUser()
     if (result) {
-      this.router.navigate(['/movie-detail'], {
-        queryParams: {
-          _id: _id
-        }
-      })
+      //  播放视频
+    this.router.navigate(['/play'], {
+      queryParams: {
+        _id: _id,
+        source_index: this.source_index,
+        type_index: this.type_index,
+        browseType: this.browse_type,
+      }
+    })
     }
   }
 

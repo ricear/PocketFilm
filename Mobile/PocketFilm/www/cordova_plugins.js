@@ -102,6 +102,14 @@ module.exports = [
     "clobbers": [
       "streamingMedia"
     ]
+  },
+  {
+    "id": "cordova-plugin-exoplayer.ExoPlayer",
+    "file": "plugins/cordova-plugin-exoplayer/www/exoplayer.js",
+    "pluginId": "cordova-plugin-exoplayer",
+    "clobbers": [
+      "ExoPlayer"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -120,7 +128,8 @@ module.exports.metadata =
   "cordova-plugin-whitelist": "1.3.3",
   "cordova-plugin-x-socialsharing": "5.4.7",
   "integrator-cordova-plugin-downloader": "0.0.1",
-  "cordova-plugin-streaming-media": "2.2.0"
+  "cordova-plugin-streaming-media": "2.2.0",
+  "cordova-plugin-exoplayer": "2.5.4"
 };
 // BOTTOM OF METADATA
 });

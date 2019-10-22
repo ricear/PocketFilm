@@ -98,8 +98,6 @@ var PiecePage = /** @class */ (function () {
         this.storage = storage;
         this.tools = tools;
         this.router = router;
-        // 视频解析地址
-        this.parseUrl = this.tools.getParseUrl();
         // 小品类型
         this.type = '推荐';
         this.type2 = '全部';
@@ -262,14 +260,12 @@ var PiecePage = /** @class */ (function () {
      * @param _id 小品_id
      */
     PiecePage.prototype.goPieceDetail = function (_id) {
-        var result = this.tools.checkUser();
-        if (result) {
-            this.router.navigate(['/piece-detail'], {
-                queryParams: {
-                    _id: _id
-                }
-            });
-        }
+        //  跳转到影视详情页
+        this.router.navigate(['/piece-detail'], {
+            queryParams: {
+                _id: _id
+            }
+        });
     };
     /**
      * 跳转到搜索小品页

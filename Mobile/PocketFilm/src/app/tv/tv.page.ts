@@ -11,9 +11,6 @@ import { ToolsService } from '../tools.service';
 })
 export class TvPage implements OnInit {
 
-  // 视频解析地址
-  public parseUrl = this.tools.getParseUrl()
-
   // 电视类型
   public type = '全部'
 
@@ -56,6 +53,8 @@ export class TvPage implements OnInit {
   public pageSize = 8
   // 关键词
   public keyWord = 'null'
+  public source_index = 0;
+  public type_index = 0;
   // 浏览类型
   public browse_type = 'tv'
 
@@ -181,14 +180,12 @@ export class TvPage implements OnInit {
    */
 
   goTvDetail(_id) {
-    var result = this.tools.checkUser()
-    if (result) {
+    //  跳转到影视详情页
     this.router.navigate(['/tv-detail'], {
       queryParams: {
         _id: _id
       }
     })
-  }
   }
 
   /**

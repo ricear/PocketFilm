@@ -23,25 +23,7 @@ fi
 array=(${string//,/ })
 for var in ${array[@]}
 do
-	if [ $var == www ]; then
-		echo 正在终止 www
-		ps -ef | grep 'www-' | grep -v grep |awk '{print $2}' | xargs kill -9
-		echo www 已终止
-	elif [ $var == movie ]; then
-		echo 正在终止 movie
-		ps -ef | grep 'movie-' | grep -v grep |awk '{print $2}' | xargs kill -9
-		echo movie 已终止
-	elif [ $var == tv ]; then
-		echo 正在终止 tv
-		ps -ef | grep 'tv-' | grep -v grep |awk '{print $2}' | xargs kill -9
-		echo tv 已终止
-	elif [ $var == drama ]; then
-		echo 正在终止 drama
-		ps -ef | grep 'drama-' | grep -v grep |awk '{print $2}' | xargs kill -9
-		echo drama 已终止
-	elif [ $var == piece ]; then
-		echo 正在终止 piece
-		ps -ef | grep 'piece-' | grep -v grep |awk '{print $2}' | xargs kill -9
-		echo piece 已终止
-	fi
+	echo 正在终止 ${var}
+	ps -ef | grep ${var}'-' | grep -v grep |awk '{print $2}' | xargs kill -9
+	echo ${var} 已终止
 done

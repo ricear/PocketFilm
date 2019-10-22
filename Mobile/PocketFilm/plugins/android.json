@@ -48,6 +48,9 @@
     },
     "cordova-plugin-streaming-media": {
       "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "cordova-plugin-exoplayer": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
     }
   },
   "dependent_plugins": {

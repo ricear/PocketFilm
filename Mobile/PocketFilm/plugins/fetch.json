@@ -114,7 +114,15 @@
   "cordova-plugin-streaming-media": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-streaming-media"
+      "id": "cordova-plugin-streaming-media@2.2.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-exoplayer": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-exoplayer@2.5.4"
     },
     "is_top_level": true,
     "variables": {}

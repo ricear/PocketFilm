@@ -58,7 +58,7 @@ var SearchMoviePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-back-button defaultHref=\"/\" slot=\"start\"></ion-back-button>\n    <ion-title style=\"text-align: center;\">搜索</ion-title>\n  </ion-toolbar>\n\n</ion-header>\n\n<ion-content>\n\n  <!-- 搜索 -->\n  <div>\n    <table style=\"width: 100%;\">\n      <tr>\n        <td>\n          <ion-searchbar (ionInput)=\"searchMovies($event)\" placeholder=\"请输入影视或演员名称\"></ion-searchbar>\n        </td>\n        <td>\n          <ion-button color=\"danger\" (click)=\"doSearch()\">搜索</ion-button>\n        </td>\n      </tr>\n    </table>\n  </div>\n\n  <!-- 搜索时显示的结果 -->\n  <ion-list *ngIf=\"!search\">\n    <ion-item *ngFor=\"let movie of movieList\" (click)=\"goMovieDetail(movie._id)\">\n        <ion-thumbnail slot=\"start\">\n            <ion-img [src]=\"movie.src\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"></ion-img>\n          </ion-thumbnail>\n      <p>{{movie.name}}</p>\n    </ion-item>\n  </ion-list>\n  <!-- 搜索后显示的结果 -->\n    <ion-grid *ngIf=\"search\">\n      <ion-row *ngFor=\"let movie of movieList\">\n        <ion-col *ngFor=\"let movie2 of movie\" (click)=\"goMovieDetail((movie2._id))\">\n              <div>\n                  <img src=\"{{movie2.src}}\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"class=\"movie_img\">\n                </div>\n                <p class=\"movie-detail\" style=\"margin: 0px;\">{{movie2.name}}</p>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n\n    <!-- 上拉加载更多 -->\n  <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n      <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n      </ion-infinite-scroll-content>\n    </ion-infinite-scroll>\n    <!-- 上拉加载更多 -->\n\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-back-button defaultHref=\"/\" slot=\"start\"></ion-back-button>\n    <ion-title style=\"text-align: center;\">影视搜索</ion-title>\n  </ion-toolbar>\n\n</ion-header>\n\n<ion-content>\n\n  <!-- 搜索 -->\n  <div>\n    <table style=\"width: 100%;\">\n      <tr>\n        <td>\n          <ion-searchbar (ionInput)=\"searchMovies($event)\" placeholder=\"请输入影视或演员名称\" [value]=\"keyWord\"></ion-searchbar>\n        </td>\n        <td>\n          <ion-button color=\"danger\" (click)=\"doSearch()\">搜索</ion-button>\n        </td>\n      </tr>\n    </table>\n  </div>\n\n  <!-- 搜索记录 -->\n  <ion-list class=\"search-history\" *ngIf=\"history\">\n    <ion-label class=\"title\">历史记录</ion-label>\n    <div>\n      <span *ngFor=\"let search of searchList\" (click)=\"searchMoviesWithSearchHistory(search.key_word)\">{{search.key_word}}</span>&nbsp;&nbsp;\n    </div>\n  </ion-list>\n\n  <!-- 搜索时显示的结果 -->\n  <ion-list *ngIf=\"!search\">\n    <ion-item *ngFor=\"let movie of movieList\" (click)=\"goMovieDetail(movie._id)\">\n      <ion-thumbnail slot=\"start\">\n        <ion-img [src]=\"movie.src\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\">\n        </ion-img>\n      </ion-thumbnail>\n      <p>{{movie.name}}</p>\n    </ion-item>\n  </ion-list>\n  <!-- 搜索后显示的结果 -->\n  <ion-grid *ngIf=\"search\">\n    <ion-row *ngFor=\"let movie of movieList\">\n      <ion-col *ngFor=\"let movie2 of movie\" (click)=\"goMovieDetail((movie2._id))\">\n        <div>\n          <img src=\"{{movie2.src}}\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"\n            class=\"movie_img\">\n        </div>\n        <p class=\"movie-detail\" style=\"margin: 0px;\">{{movie2.name}}</p>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <!-- 上拉加载更多 -->\n  <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n    <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n  <!-- 上拉加载更多 -->\n\n</ion-content>"
 
 /***/ }),
 
@@ -109,12 +109,20 @@ var SearchMoviePage = /** @class */ (function () {
         this.selectTypeList = null;
         // 当前页码
         this.pageIndex = 1;
-        // 每页大小
-        this.pageSize = 8;
+        // 每页大小(搜索到的影视)
+        this.pageSize = 30;
+        // 每页大小(搜索历史)
+        this.searchHistoryPageSize = 18;
         // 排序方式 0：发布日期 1:评分
         this.sortType = 1;
         // 判断是否搜索
         this.search = false;
+        // 判断是否显示搜索记录
+        this.history = true;
+        // 搜索类型
+        this.searchType = 'movie';
+        // 获取搜索记录
+        this.getSearchHistory();
     }
     SearchMoviePage.prototype.ngOnInit = function () {
     };
@@ -125,11 +133,33 @@ var SearchMoviePage = /** @class */ (function () {
         var _this = this;
         // 搜索关键词不为空时进行查询
         if (this.keyWord != '') {
+            // 修改为不显示搜索历史记录
+            this.history = false;
             var type = '全部';
             this.tools.getMovieListApi(type, this.selectTypeList, this.pageIndex, this.pageSize, this.sortType, this.keyWord).then(function (data) {
                 _this.movieList = _this.movieList.concat(data.data);
             });
         }
+        else {
+            // 修改为显示搜索历史记录
+            this.history = true;
+        }
+    };
+    /**
+     * 根据搜索记录获取影视列表
+     * @param key_word 搜索记录
+     */
+    SearchMoviePage.prototype.searchMoviesWithSearchHistory = function (keyWord) {
+        // 修改为未搜索
+        this.search = false;
+        // 修改为不显示搜索历史记录
+        this.history = false;
+        // 清空影视列表数据
+        this.movieList = [];
+        // 关键词
+        this.keyWord = keyWord;
+        // 获取影视列表
+        this.getMovieList();
     };
     /**
      * 搜索影视
@@ -138,6 +168,8 @@ var SearchMoviePage = /** @class */ (function () {
     SearchMoviePage.prototype.searchMovies = function (event) {
         // 修改为未搜索
         this.search = false;
+        // 修改为不显示搜索历史记录
+        this.history = false;
         // 清空影视列表数据
         this.movieList = [];
         // 关键词
@@ -166,6 +198,8 @@ var SearchMoviePage = /** @class */ (function () {
         var _this = this;
         // 修改为已搜索
         this.search = true;
+        // 修改为不显示搜索历史记录
+        this.history = false;
         // 截取电影名称的长度
         var name_length = 4;
         this.movieListTemp = this.movieList;
@@ -184,6 +218,7 @@ var SearchMoviePage = /** @class */ (function () {
         for (var i = 0; i < this.movieListTemp2.length;) {
             this.movieList.push(this.movieListTemp2.splice(i, this.col_size));
         }
+        this.saveSearchHistory();
     };
     /**
      * 上拉加载更多
@@ -198,6 +233,24 @@ var SearchMoviePage = /** @class */ (function () {
             //告诉ionic 刷新数据完成
             event.target.complete();
         }
+    };
+    /**
+     * 保存搜索记录
+     */
+    SearchMoviePage.prototype.saveSearchHistory = function () {
+        this.tools.addSearchApi(this.searchType, this.keyWord);
+    };
+    /**
+     * 获取搜索记录
+     */
+    SearchMoviePage.prototype.getSearchHistory = function () {
+        var _this = this;
+        this.tools.getSearchApi(this.searchType, this.pageIndex, this.searchHistoryPageSize).then(function (data) {
+            _this.searchList = data.data;
+            if (_this.searchList.length == 0) {
+                _this.history = false;
+            }
+        });
     };
     SearchMoviePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

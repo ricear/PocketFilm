@@ -181,8 +181,17 @@ class DramaSpider(scrapy.Spider):
                         dramaItem['sources'] = sources
                         dramaItem['acquisition_time'] = get_current_time()
                         dic = {'id': id}
-                        print('正在插入 -> 类型:' + type_name + ' 当前页:' + (str)((int)(index)) + ' 总页数:' + (str)(
-                            (int)(total_page)) + ' 戏曲id:' + id + ' 戏曲名称:' + dramaItem['name'])
+                        try:
+                            print('正在插入 -> 类型:' + type_name + ' 当前页:' + (str)((int)(index)) + ' 总页数:' + (str)(
+                                (int)(total_page)) + ' 戏曲id:' + id + ' 戏曲名称:' + dramaItem['name'])
+                        except:
+                            # 记录跳过的视频信息
+                            history_type = 'drama'
+                            history_url = drama_url
+                            history_text = '跳过'
+                            if (check_spider_history(history_type, history_url, history_text) == False):
+                                write_spider_history(history_type, history_url, history_text)
+                            continue
                         self.dbutils.insert(dict(dramaItem))
                         print(id + ' -> 信息插入完成')
                 # 写入爬取数据

@@ -21,14 +21,22 @@ export class SearchMoviePage implements OnInit {
   public selectTypeList = null
   // 当前页码
   public pageIndex = 1
-  // 每页大小
-  public pageSize = 8
+  // 每页大小(搜索到的影视)
+  public pageSize = 30
+  // 每页大小(搜索历史)
+  public searchHistoryPageSize = 18
   // 排序方式 0：发布日期 1:评分
   public sortType = 1
   // 关键词
   public keyWord
   // 判断是否搜索
   public search = false
+  // 判断是否显示搜索记录
+  public history = true
+  // 搜索类型
+  public searchType = 'movie'
+  // 搜索记录
+  public searchList
 
   constructor(
     public storage: StorageService,
@@ -36,6 +44,8 @@ export class SearchMoviePage implements OnInit {
     public activeRoute: ActivatedRoute,
     public router: Router
   ) {
+    // 获取搜索记录
+    this.getSearchHistory()
   }
 
   ngOnInit() {
@@ -48,11 +58,33 @@ export class SearchMoviePage implements OnInit {
   getMovieList() {
     // 搜索关键词不为空时进行查询
     if (this.keyWord != '') {
+      // 修改为不显示搜索历史记录
+    this.history = false
       var type = '全部'
       this.tools.getMovieListApi(type, this.selectTypeList, this.pageIndex, this.pageSize, this.sortType, this.keyWord).then((data: any) => {
         this.movieList = this.movieList.concat(data.data)
       })
+    } else {
+      // 修改为显示搜索历史记录
+    this.history = true
     }
+  }
+
+  /**
+   * 根据搜索记录获取影视列表
+   * @param key_word 搜索记录
+   */
+  searchMoviesWithSearchHistory(keyWord) {
+      // 修改为未搜索
+      this.search = false
+      // 修改为不显示搜索历史记录
+      this.history = false
+      // 清空影视列表数据
+      this.movieList = []
+      // 关键词
+      this.keyWord = keyWord
+      // 获取影视列表
+      this.getMovieList()
   }
 
   /**
@@ -63,6 +95,8 @@ export class SearchMoviePage implements OnInit {
   searchMovies(event) {
     // 修改为未搜索
     this.search = false
+    // 修改为不显示搜索历史记录
+    this.history = false
     // 清空影视列表数据
     this.movieList = []
     // 关键词
@@ -94,6 +128,8 @@ export class SearchMoviePage implements OnInit {
   doSearch() {
     // 修改为已搜索
     this.search = true
+    // 修改为不显示搜索历史记录
+    this.history = false
     // 截取电影名称的长度
     var name_length = 4
     this.movieListTemp = this.movieList
@@ -112,6 +148,7 @@ export class SearchMoviePage implements OnInit {
     for (var i = 0; i < this.movieListTemp2.length;) {
       this.movieList.push(this.movieListTemp2.splice(i, this.col_size))
     }
+    this.saveSearchHistory()
   }
 
   /**
@@ -128,6 +165,27 @@ export class SearchMoviePage implements OnInit {
       //告诉ionic 刷新数据完成
       event.target.complete();
     }
+  }
+
+  /**
+   * 保存搜索记录
+   */
+
+  saveSearchHistory() {
+    this.tools.addSearchApi(this.searchType, this.keyWord)
+  }
+
+  /**
+   * 获取搜索记录
+   */
+
+  getSearchHistory() {
+    this.tools.getSearchApi(this.searchType, this.pageIndex, this.searchHistoryPageSize).then((data: any) => {
+      this.searchList = data.data
+      if (this.searchList.length == 0) {
+        this.history = false
+      }
+    })
   }
 
 }

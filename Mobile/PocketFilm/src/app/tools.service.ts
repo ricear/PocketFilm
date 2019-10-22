@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Device } from '@ionic-native/device/ngx';
 import { Downloader } from '@ionic-native/downloader/ngx';
 import { AppVersion } from '@ionic-native/app-version/ngx';
+import { DomSanitizer } from '@angular/platform-browser';
 
 import { HttpServiceService } from './http-service.service';
 import { StorageService } from './storage.service';
@@ -23,7 +24,9 @@ export class ToolsService {
     public router: Router,
     public device: Device,
     public downloader: Downloader,
-    public appVersion: AppVersion) {
+    public appVersion: AppVersion,
+    public sanitizer: DomSanitizer
+    ) {
     console.log('Hello ToolsProvider Provider');
   }
 
@@ -72,8 +75,33 @@ export class ToolsService {
    * 获取视频解析地址
    */
 
-  getParseUrl() {
-    return this.config.parseUrl
+  getParseUrl(movie_type, url) {
+    var parseUrl;
+    var safeUrl;
+    if (movie_type == 'movie') {
+      // qq播客(v.qq.com)
+    if (url.indexOf('v.qq.com') != -1) parseUrl = this.config.qqBoke
+    // PPTV视频(v.pptv.com)
+    else if (url.indexOf('v.pptv.com') != -1) parseUrl = this.config.pptv
+    // 奇艺视频(www.iqiyi.com)
+    else if (url.indexOf('www.iqiyi.com') != -1) parseUrl = this.config.qiyi
+    // 芒果视频(www.mgtv.com)
+    else if (url.indexOf('www.mgtv.com') != -1) parseUrl = this.config.mangGuo
+    // 搜狐视频(tv.sohu.com)
+    else if (url.indexOf('tv.sohu.com') != -1) parseUrl = this.config.souHuo
+    // 优酷视频(v.youku.com)
+    else if (url.indexOf('v.youku.com') != -1) parseUrl = this.config.youKu
+    // jsm3u8、yjm3u8、zuidam3u8、91m3u8(m3u8)、其它
+    else parseUrl = this.config.bljiex
+    } else if (movie_type == 'tv') {
+      parseUrl = this.config.tv
+    } else if (movie_type == 'drama') {
+      parseUrl = this.config.drama
+    } else if (movie_type == 'piece') {
+      parseUrl = this.config.piece
+    }
+    safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(parseUrl + url)
+    return safeUrl
   }
 
   /**
@@ -85,7 +113,7 @@ export class ToolsService {
    * @param page_size     每页大小
    */
 
-  getRecommendationsApi(browse_type, type='全部', limit=8, page_index=1, page_size=20) {
+  getRecommendationsApi(browse_type, type = '全部', limit = 8, page_index = 1, page_size = 20) {
     var user_name = this.storage.get('user_name')
     var promise = new Promise((resolve, reject) => {
       var api = '/recommendations/get?user_name=' + user_name + '&browse_type=' + browse_type + '&type=' + type + '&limit=' + limit + '&page_index=' + page_index + '&page_size=' + page_size
@@ -105,7 +133,7 @@ export class ToolsService {
       this.getAppVersionNumber().then((data: any) => {
         var versionNumber = data
         this.getVersionByNumberApi(versionNumber).then((data2: any) => {
-        resolve(data2.data)  
+          resolve(data2.data)
         })
       })
     })
@@ -228,6 +256,22 @@ export class ToolsService {
   }
 
   /**
+   * 获取搜索记录
+   * @param pageIndex     当前页码
+   * @param pageSize      每页大小
+   */
+
+  getSearchApi(searchType, pageIndex, pageSize) {
+    var promise = new Promise((resolve, reject) => {
+      var api = '/search/get/all?search_type='+searchType+'&page_index=' + pageIndex + '&page_size=' + pageSize
+      this.httpService.doGet(api, (data) => {
+        resolve(data)
+      })
+    })
+    return promise
+  }
+
+  /**
    * 获取浏览记录
    * @param pageIndex     当前页码
    * @param pageSize      每页大小
@@ -237,6 +281,41 @@ export class ToolsService {
     var promise = new Promise((resolve, reject) => {
       var api = '/records/get/all?page_index=' + pageIndex + '&page_size=' + pageSize
       this.httpService.doGet(api, (data) => {
+        resolve(data)
+      })
+    })
+    return promise
+  }
+
+  /**
+   * 添加搜索记录
+   * @param browseType 浏览的影视类型
+   * @param id 影视id
+   * @param name 影视名称
+   * @param type 影视第一种类型
+   * @param type2 影视第二种类型
+   * @param src 影视播放地址
+   * @param url 播放地址
+   */
+  addSearchApi(search_type, key_word) {
+    var promise = new Promise((resolve, reject) => {
+      var api = '/search/add'
+      var user_name = this.storage.get('user_name')
+      // 手机 uuid 
+      var device_uuid = this.device.uuid
+      // 系统版本  
+      var device_version = this.device.version
+      // 返回手机的平台信息  (android/ios 等等)
+      var device_platform = this.device.platform
+      var records = {
+        'user_name': user_name,
+        'search_type': search_type,
+        'key_word': key_word,
+        'device_uuid': device_uuid,
+        'device_version': device_version,
+        'device_platform': device_platform,
+      }
+      this.httpService.doPost(api, records, (data) => {
         resolve(data)
       })
     })

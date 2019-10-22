@@ -11,9 +11,6 @@ import { ToolsService } from '../tools.service';
 })
 export class DramaPage implements OnInit {
 
-  // 视频解析地址
-  public parseUrl = this.tools.getParseUrl()
-
   // 戏曲类型
   public type = '推荐'
   public typeList = ['推荐']
@@ -188,14 +185,12 @@ export class DramaPage implements OnInit {
    */
 
   goDramaDetail(_id) {
-    var result = this.tools.checkUser()
-    if (result) {
-      this.router.navigate(['/drama-detail'], {
-        queryParams: {
-          _id: _id
-        }
-      })
-    }
+      //  跳转到影视详情页
+    this.router.navigate(['/drama-detail'], {
+      queryParams: {
+        _id: _id
+      }
+    })
   }
 
   /**

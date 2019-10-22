@@ -70,7 +70,16 @@ class Ziyuan33uuSpider(scrapy.Spider):
             count += 1
             if count == 0 or count == 51:
                 continue
-            url2 = each.xpath("./li/span[2]/a/@href").extract()[0]
+            try:
+                url2 = each.xpath("./li/span[2]/a/@href").extract()[0]
+            except:
+                # 记录跳过的视频信息
+                history_type = 'ziyuan33uu'
+                history_url = url
+                history_text = '跳过'
+                if (check_spider_history(history_type, history_url, history_text) == False):
+                    write_spider_history(history_type, history_url, history_text)
+                continue
             movie_id = url2.split('id-')[1].split('.html')[0]
             # id, src, name, update_time, actors, type, score, release_date, description
             # 解析视频源

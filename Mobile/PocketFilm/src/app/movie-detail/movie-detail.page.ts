@@ -23,6 +23,11 @@ export class MovieDetailPage implements OnInit {
   public url;
   public parseUrl;
   public safeUrl;
+  public source_count;
+  public source_index = 0;
+  public type_index = 0;
+  // 浏览类型
+  public browseType = 'movie';
 
   constructor(
     public activeRoute: ActivatedRoute,
@@ -34,7 +39,6 @@ export class MovieDetailPage implements OnInit {
   ) {
     this.activeRoute.queryParams.subscribe((params: Params) => {
       this._id = params['_id']
-      this.url = params['url']
       this.getMovie()
     })
   }
@@ -47,25 +51,21 @@ export class MovieDetailPage implements OnInit {
    * @param url   影视地址
    */
 
-  changeMovieType(url) {
-    this.url = url
-// qq播客(v.qq.com)
-if (this.url.indexOf('v.qq.com') != -1) this.parseUrl = this.config.qqBoke
-// PPTV视频(v.pptv.com)
-else if (this.url.indexOf('v.pptv.com') != -1) this.parseUrl = this.config.pptv
-// 奇艺视频(www.iqiyi.com)
-else if (this.url.indexOf('www.iqiyi.com') != -1) this.parseUrl = this.config.qiyi
-// 芒果视频(www.mgtv.com)
-else if (this.url.indexOf('www.mgtv.com') != -1) this.parseUrl = this.config.mangGuo
-// 搜狐视频(tv.sohu.com)
-else if (this.url.indexOf('tv.sohu.com') != -1) this.parseUrl = this.config.souHuo
-// 优酷视频(v.youku.com)
-else if (this.url.indexOf('v.youku.com') != -1) this.parseUrl = this.config.youKu
-// jsm3u8、yjm3u8、zuidam3u8、91m3u8(m3u8)、其它
-else this.parseUrl = this.config.bljiex
-this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.parseUrl + this.url)
-// 保存浏览记录
-this.saveBrowseRecords()
+  changeMovieType(_id, source_index, type_index) {
+    var result = this.tools.checkUser()
+    if (result) {
+    // 保存浏览记录
+    this.saveBrowseRecords()
+    //  播放视频
+    this.router.navigate(['/play'], {
+      queryParams: {
+        _id: _id,
+        source_index: source_index,
+        type_index: type_index,
+        browseType: this.browseType,
+      }
+    })
+  }
   }
 
   /**
@@ -76,9 +76,9 @@ this.saveBrowseRecords()
     this.tools.getMovieByIdApi(this._id).then((data: any) => {
       this.movie = data.data
       if (this.url == null) {
+        this.source_count = this.movie.sources.length
         this.url = this.movie.sources[0].types[0].url
       }
-      this.changeMovieType(this.url)
     })
   }
 

@@ -51,12 +51,19 @@ video {
   color: #444;
 }
 
+.movie-detail-src {
+  width: 150px;
+  height: 180px;
+}
+
 .source_name {
   font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   font-weight: normal;
   font-size: 15px;
   color: #23a7e9;
   padding: 0px 0px 4px 0px;
+  margin-top: 9px;
+  margin-bottom: 0px;
 }
 
 .source_type {
@@ -64,7 +71,7 @@ video {
   display: inline;
   border: 1px solid #e0e0e0;
   border-radius: 1px 1px 1px 1px;
-  margin: 0 4px 4px 0;
+  margin: 4px 4px 0px 0;
   overflow: hidden;
   text-align: center;
   background: #f1f1f1;
@@ -94,4 +101,169 @@ video {
 
 a {
   text-decoration: none;
+}
+
+.MacPlayer {
+  background: #000000;
+  font-size: 14px;
+  color: #f6f6f6;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+  width: 100%px;
+  height: 280px;
+}
+
+.MacPlayer a {
+  color: #f6f6f6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.MacPlayer a:active {
+  text-decoration: none;
+}
+
+.MacPlayer table {
+  width: 100%;
+  height: 100%;
+}
+
+.MacPlayer ul,
+li,
+h2 {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.MacPlayer #playtop {
+  text-align: center;
+  height: 20px;
+  line-height: 21px;
+  font-size: 12px;
+}
+
+.MacPlayer #topleft {
+  width: 80px;
+}
+
+.MacPlayer #topright {
+  width: 80px;
+}
+
+.MacPlayer #topleft {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.MacPlayer #topright {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.MacPlayer #playleft {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.MacPlayer #playright {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.MacPlayer #rightlist {
+  width: 120px;
+  overflow: auto;
+  scrollbar-face-color: #2c2c2c;
+  scrollbar-arrow-color: #ffffff;
+  scrollbar-track-color: #a3a3a3;
+  scrollbar-highlight-color: #2c2c2c;
+  scrollbar-shadow-color: #adadad;
+  scrollbar-3dlight-color: #adadad;
+  scrollbar-darkshadow-color: #48486c;
+  scrollbar-base-color: #fcfcfc;
+}
+
+.MacPlayer #rightlist ul {
+  clear: both;
+  margin: 5px 0px;
+}
+
+.MacPlayer #rightlist li {
+  height: 21px;
+  line-height: 21px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.MacPlayer #rightlist li a {
+  padding-left: 15px;
+  display: block;
+  font-size: 12px;
+}
+
+.MacPlayer #rightlist h2 {
+  cursor: pointer;
+  font-size: 13px;
+  font-family: "宋体";
+  font-weight: normal;
+  height: 25px;
+  line-height: 25px;
+  background: #333333;
+  padding-left: 5px;
+  margin-bottom: 1px;
+}
+
+.MacPlayer #rightlist .h2 {
+  color: #666666;
+}
+
+.MacPlayer #rightlist .h2_on {
+  color: #ffffff;
+}
+
+.MacPlayer #rightlist .ul_on {
+  display: block;
+}
+
+.MacPlayer #rightlist .list_on {
+  color: #ff0000;
+}
+
+.list-md {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+video {
+  width: 100%;
+}
+
+.search-history {
+  margin: 0px 0px 0px 15px;
+}
+
+.search-history .title {
+  color: #999;
+  font-size: 16px;
+}
+
+.search-history span {
+  margin: 0px 4px 4px 0px;
+  padding: 8px 15px;
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: #f8f8f8;
+  color: #111;
+  line-height: 32px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 9px;
 }

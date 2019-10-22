@@ -1619,6 +1619,131 @@ router.post('/version/add', function (req, res, next) {
 })
 
 /**
+ * 获取所有搜索记录
+ */
+
+router.get('/search/get/all', function (req, res, next) {
+    //  用户名
+    var user_name = req.query.user_name == null || req.query.user_name == 'null' ? null : req.query.user_name
+    //  浏览类型
+    var search_type = req.query.search_type == null || req.query.search_type == 'null' ? null : req.query.search_type
+    // 每页大小
+    var page_size = req.query.page_size == null || req.query.page_size == 'null' ? 20 : +req.query.page_size
+    // 当前页数
+    var page_index = req.query.page_index == null || req.query.page_index == 'null' ? 1 : +req.query.page_index
+    //    全部
+    if (user_name != null) {
+        if (search_type != null) {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('search');
+                movie.find(
+                    {
+                        user_name: user_name,
+                        search_type: search_type,
+                    },
+                    {
+                        sort: {search_time: -1},
+                        collation: {locale: "en"},
+                        skip: page_size * (page_index - 1),
+                        limit: page_size
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '记录获取成功';
+                        responseData.data = data;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '记录获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        } else {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('search');
+                movie.find(
+                    {user_name: user_name},
+                    {
+                        sort: {search_time: -1},
+                        collation: {locale: "en"},
+                        skip: page_size * (page_index - 1),
+                        limit: page_size
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '记录获取成功';
+                        responseData.data = data;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '记录获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        }
+
+    } else {
+        if (search_type != null) {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('search');
+                movie.find(
+                    {search_type: search_type},
+                    {
+                        sort: {search_time: -1},
+                        collation: {locale: "en"},
+                        skip: page_size * (page_index - 1),
+                        limit: page_size
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '记录获取成功';
+                        responseData.data = data;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '记录获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        } else {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('search');
+                movie.find(
+                    {},
+                    {
+                        sort: {search_time: -1},
+                        collation: {locale: "en"},
+                        skip: page_size * (page_index - 1),
+                        limit: page_size
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '记录获取成功';
+                        responseData.data = data;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '记录获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        }
+    }
+})
+
+/**
  * 获取所有浏览记录
  */
 
@@ -1742,6 +1867,49 @@ router.get('/records/get/all', function (req, res, next) {
         }
     }
 })
+
+/**
+ * 添加搜索记录
+ */
+
+router.post('/search/add', function (req, res, next) {
+    var user_name = req.body.user_name;
+    var search_type = req.body.search_type;
+    var key_word = req.body.key_word;
+    var search_time = getFormatDate2();
+    var device_uuid = req.body.device_uuid;
+    var device_version = req.body.device_version;
+    var device_platform = req.body.device_platform;
+
+    mongoClient.connect(dbURL, function (err, db) {
+        var records = db.db(dbName).collection('search');
+        //将记录信息写入到数据库中
+        var recordsInfo = {
+            user_name: user_name,
+            search_type: search_type,
+            key_word: key_word,
+            search_time: search_time,
+            device_uuid: device_uuid,
+            device_version: device_version,
+            device_platform: device_platform,
+        };
+        records.save(recordsInfo).then(function (data) {
+            if (data) {
+                //保存成功
+                responseData.code = 0;
+                responseData.message = '保存成功';
+                responseData.data = recordsInfo;
+                res.json(responseData);
+            } else {
+                //注册失败
+                responseData.code = 1;
+                responseData.message = '保存失败';
+                res.json(responseData);
+            }
+        })
+    })
+
+});
 
 /**
  * 添加浏览记录

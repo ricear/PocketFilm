@@ -74,7 +74,7 @@ var MovieDetailPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n      <ion-buttons slot=\"start\">\n          <ion-back-button></ion-back-button>\n        </ion-buttons>\n    <ion-title style=\"text-align: center;\">{{movie.name}}</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n    <iframe id=\"iplayer\" name=\"iplayer\" allowtransparency=\"true\" allowfullscreen webkitallowfullscreen\n    mozallowfullscreen oallowfullscreen msallowfullscreen border=\"0\" marginwidth=\"0\" marginheight=\"0\" hspace=\"0\"\n      vspace=\"0\" frameborder=\"0\" scrolling=\"no\" [src]=\"safeUrl\" width=\"100%\" height=\"48%\" rel=\"nofollow\"></iframe>\n  <ion-label>\n    <p>\n      <span class=\"c01\">主演：</span>\n      <span class=\"c02\" *ngFor=\"let actor of movie.actors\">{{actor}}&nbsp;&nbsp;</span>\n    </p>\n    <p>\n      <span class=\"c01\">类型：<span class=\"c02\">{{movie.type2}}</span></span>&nbsp;&nbsp;<span class=\"c01\">地区：<span\n          class=\"c02\">{{movie.region}}</span></span>&nbsp;&nbsp;<span class=\"c01\">上映日期：<span\n          class=\"c02\">{{movie.release_date}}</span></span>\n    </p>\n    <ion-list style=\"padding-top: 0px;\" *ngFor=\"let source of movie.sources\">\n      <h3 class=\"source_name\">{{source.name}}</h3>\n      <span *ngFor=\"let type of source.types\">\n        <!-- 当前选中项的影视源 -->\n        <a class=\"c02 source_type source_type_active\" (click)=\"changeMovieType(type.url)\" *ngIf=\"url==type.url\">{{type.name}}</a>\n        <!-- 不是当前选中项的影视源 -->\n        <a class=\"c02 source_type\" (click)=\"changeMovieType(type.url)\" *ngIf=\"url!=type.url\">{{type.name}}</a>\n      </span>\n    </ion-list>\n    <p style=\"color: #999;\">\n        <span class=\"c01\">剧情介绍：</span>\n        <span class=\"c02\">{{movie.description}}</span>\n      </p>\n  </ion-label>\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button></ion-back-button>\n    </ion-buttons>\n    <ion-title style=\"text-align: center;\">{{movie.name}}</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n  <div style=\"display: block;\">\n      <div style=\"float: left;margin-right: 10px;\">\n          <img [src]=\"movie.src\" [alt]=\"movie.name\" class=\"movie-detail-src\">\n        </div>\n        <div>\n            <p>\n                <span class=\"c01\">名称：<span class=\"c02\">{{movie.name}}</span></span>\n              </p>\n            <p>\n                <span class=\"c01\">导演：</span>\n                <span class=\"c02\" *ngFor=\"let director of movie.directors\">{{director}}&nbsp;&nbsp;</span>\n              </p>\n            <p>\n                <span class=\"c01\">主演：</span>\n                <span class=\"c02\" *ngFor=\"let actor of movie.actors\">{{actor}}&nbsp;&nbsp;</span>\n              </p>\n              <p>\n                <span class=\"c01\">类型：<span class=\"c02\">{{movie.type2}}</span></span>\n              </p>\n              <p>\n                  <span class=\"c01\">地区：<span\n                      class=\"c02\">{{movie.region}}</span></span>\n                </p>\n                <p>\n                    <span class=\"c01\">上映日期：<span\n                        class=\"c02\">{{movie.release_date}}</span></span>\n                  </p>\n                  <p>\n                      <span class=\"c01\">更新状态：</span>\n                      <span class=\"c02\">{{movie.update_status}}</span>\n                    </p>\n        </div>\n  </div>\n  <div style=\"display: inline-block;margin-top: 15px;\">\n    <ion-list style=\"padding-top: 0rpx;\" *ngFor=\"let source of movie.sources,let i = index\">\n      <h3 class=\"source_name\">{{source.name}}</h3>\n      <span *ngFor=\"let type of source.types,let j = index\">\n        <!-- 当前选中项的影视源 -->\n        <a class=\"c02 source_type source_type_active\" (click)=\"changeMovieType(movie._id, i, j)\"\n          *ngIf=\"i == source_index && j==type_index\">{{type.name}}</a>\n        <!-- 不是当前选中项的影视源 -->\n        <a class=\"c02 source_type\" (click)=\"changeMovieType(movie._id, i, j)\" *ngIf=\"i != source_index || j != type_index\">{{type.name}}</a>\n      </span>\n    </ion-list>\n    <p style=\"color: #999;\">\n      <span class=\"c01\">剧情介绍：</span>\n      <span class=\"c02\">{{movie.description}}</span>\n    </p>\n  </div>\n</ion-content>"
 
 /***/ }),
 
@@ -122,9 +122,12 @@ var MovieDetailPage = /** @class */ (function () {
         this.config = config;
         this.router = router;
         this.sanitizer = sanitizer;
+        this.source_index = 0;
+        this.type_index = 0;
+        // 浏览类型
+        this.browseType = 'movie';
         this.activeRoute.queryParams.subscribe(function (params) {
             _this._id = params['_id'];
-            _this.url = params['url'];
             _this.getMovie();
         });
     }
@@ -134,32 +137,21 @@ var MovieDetailPage = /** @class */ (function () {
      * 修改影视类型
      * @param url   影视地址
      */
-    MovieDetailPage.prototype.changeMovieType = function (url) {
-        this.url = url;
-        // qq播客(v.qq.com)
-        if (this.url.indexOf('v.qq.com') != -1)
-            this.parseUrl = this.config.qqBoke;
-        // PPTV视频(v.pptv.com)
-        else if (this.url.indexOf('v.pptv.com') != -1)
-            this.parseUrl = this.config.pptv;
-        // 奇艺视频(www.iqiyi.com)
-        else if (this.url.indexOf('www.iqiyi.com') != -1)
-            this.parseUrl = this.config.qiyi;
-        // 芒果视频(www.mgtv.com)
-        else if (this.url.indexOf('www.mgtv.com') != -1)
-            this.parseUrl = this.config.mangGuo;
-        // 搜狐视频(tv.sohu.com)
-        else if (this.url.indexOf('tv.sohu.com') != -1)
-            this.parseUrl = this.config.souHuo;
-        // 优酷视频(v.youku.com)
-        else if (this.url.indexOf('v.youku.com') != -1)
-            this.parseUrl = this.config.youKu;
-        // jsm3u8、yjm3u8、zuidam3u8、91m3u8(m3u8)、其它
-        else
-            this.parseUrl = this.config.bljiex;
-        this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.parseUrl + this.url);
-        // 保存浏览记录
-        this.saveBrowseRecords();
+    MovieDetailPage.prototype.changeMovieType = function (_id, source_index, type_index) {
+        var result = this.tools.checkUser();
+        if (result) {
+            // 保存浏览记录
+            this.saveBrowseRecords();
+            //  播放视频
+            this.router.navigate(['/play'], {
+                queryParams: {
+                    _id: _id,
+                    source_index: source_index,
+                    type_index: type_index,
+                    browseType: this.browseType,
+                }
+            });
+        }
     };
     /**
      * 获取影视信息
@@ -169,9 +161,9 @@ var MovieDetailPage = /** @class */ (function () {
         this.tools.getMovieByIdApi(this._id).then(function (data) {
             _this.movie = data.data;
             if (_this.url == null) {
+                _this.source_count = _this.movie.sources.length;
                 _this.url = _this.movie.sources[0].types[0].url;
             }
-            _this.changeMovieType(_this.url);
         });
     };
     /**

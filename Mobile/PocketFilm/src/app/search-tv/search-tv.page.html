@@ -9,11 +9,11 @@
   <ion-content>
   
     <!-- 搜索 -->
-    <div>
+  <div>
       <table style="width: 100%;">
         <tr>
           <td>
-            <ion-searchbar (ionInput)="searchTvs($event)" placeholder="请输入电视名称"></ion-searchbar>
+            <ion-searchbar (ionInput)="searchTvs($event)" placeholder="请输入电视名称" [value]="keyWord"></ion-searchbar>
           </td>
           <td>
             <ion-button color="danger" (click)="doSearch()">搜索</ion-button>
@@ -21,6 +21,14 @@
         </tr>
       </table>
     </div>
+  
+    <!-- 搜索记录 -->
+    <ion-list class="search-history" *ngIf="history">
+      <ion-label class="title">历史记录</ion-label>
+      <div>
+        <span *ngFor="let search of searchList" (click)="searchMoviesWithSearchHistory(search.key_word)">{{search.key_word}}</span>&nbsp;&nbsp;
+      </div>
+    </ion-list>
   
     <!-- 搜索时显示的结果 -->
     <ion-list *ngIf="!search">
