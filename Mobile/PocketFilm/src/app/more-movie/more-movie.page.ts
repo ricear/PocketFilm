@@ -22,7 +22,7 @@ export class MoreMoviePage implements OnInit {
   public selectedTypeNameList = []
   // 0：电影 1：电视剧 2：综艺 3：动漫
   // 影视类型名称列表
-  public typeNameList = ['电影', '电视剧', '综艺', '动漫'];
+  public typeNameList = ['电影', '电视剧', '综艺', '动漫', '少儿'];
   // 电影列表
   public movieList = []
   public movieListTemp = []
@@ -181,24 +181,12 @@ export class MoreMoviePage implements OnInit {
   getMovies() {
     var selectedTypeNames = this.getSelectedTypeNames()
     var movieList = this.storage.get('more-movie-' + this.type + selectedTypeNames + '-' + this.sortType)
-    if (movieList == null || movieList.length == 0 || this.pageIndex > (movieList.length * this.col_size) / this.pageSize) {
+    if (movieList == null || movieList.length == 0 || this.pageIndex > (movieList.length / this.pageSize)) {
       // 本地没有缓存数据
       this.tools.getMovieListApi(this.type, this.selectedTypeNameList, this.pageIndex, this.pageSize, this.sortType, this.keyWord).then((data: any) => {
         // 截取电影名称的长度
-        var name_length = 5
         if (data.code == 0) {
-          this.movieListTemp = data.data
-          this.movieListTemp.forEach((data: any) => {
-            var movie_name = data.name
-            if (movie_name.length > name_length) {
-              movie_name = movie_name.slice(0, name_length) + "..."
-            }
-            data.name = movie_name
-            this.movieListTemp2.push(data)
-          })
-          for (var i = 0; i < this.movieListTemp2.length;) {
-            this.movieList.push(this.movieListTemp2.splice(i, this.col_size))
-          }
+          this.movieList = this.movieList.concat(data.data)
           this.storage.set('more-movie-' + this.type + selectedTypeNames + '-' + this.sortType, this.movieList)
         }
       })
@@ -214,18 +202,12 @@ export class MoreMoviePage implements OnInit {
    */
 
   goMovieDetail(_id) {
-    var result = this.tools.checkUser()
-    if (result) {
-      //  播放视频
-    this.router.navigate(['/play'], {
+    //  跳转到影视详情页
+    this.router.navigate(['/movie-detail'], {
       queryParams: {
-        _id: _id,
-        source_index: this.source_index,
-        type_index: this.type_index,
-        browseType: this.browse_type,
+        _id: _id
       }
     })
-    }
   }
 
   /**

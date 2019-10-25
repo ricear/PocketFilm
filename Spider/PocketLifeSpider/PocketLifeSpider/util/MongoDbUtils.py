@@ -18,6 +18,7 @@ class MongoDbUtils(object):
         self.collection = self.db[collection_name]
 
     def insert(self,dic):
+        print(type(dic).__name__)
         if type(dic).__name__ == 'dict':
             self.collection.insert_one(dic)
             print('insert success 1')

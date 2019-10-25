@@ -18,115 +18,124 @@
  <!-- 下拉刷新 -->
 
  <!-- 推荐数据 -->
- <ion-item lines="none">
-  <ion-label slot="start"><span>猜你喜欢</span></ion-label>
-  <ion-label slot="end" (click)="goMoreRecommendations()"><span>更多</span></ion-label>
-</ion-item>
-<ion-grid>
-  <ion-row *ngFor="let top10CCTV of recommendations">
-    <ion-col *ngFor="let top10CCTV2 of top10CCTV" (click)="goTvDetail(top10CCTV2._id)">
-          <div>
-              <img src="{{top10CCTV2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
-            </div>
-            <p class="movie-detail" style="margin: 0px;">{{top10CCTV2.name}}</p>
-    </ion-col>
-  </ion-row>
-</ion-grid>
+ <!-- 推荐数据 -->
+ <section class="main">
+  <div id="page">
+  </div>
 
- <!-- 央视台 -->
- <ion-item lines="none">
-   <ion-label slot="start"><span>央视台</span></ion-label>
-   <ion-label slot="end" (click)="goMoreTv(cctvName)"><span>更多</span></ion-label>
- </ion-item>
- <ion-grid>
-   <ion-row *ngFor="let top10CCTV of top10CCTVList">
-     <ion-col *ngFor="let top10CCTV2 of top10CCTV" (click)="goTvDetail(top10CCTV2._id)">
-           <div>
-               <img src="{{top10CCTV2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
-             </div>
-             <p class="movie-detail" style="margin: 0px;">{{top10CCTV2.name}}</p>
-     </ion-col>
-   </ion-row>
- </ion-grid>
+  <!-- 央视台 -->
+  <div class="mod_a globalPadding">
+    <div class="th_a"><span class="sMark"><i class="iPoint"></i>央视台</span><span class="span-more"
+        (click)="goMoreTv(cctvName)">更多</span></div>
+    <div class="tb_a">
+      <ul class="picTxt picTxtA clearfix" id="data_list">
+        <li *ngFor="let latestTop10Movie of top10CCTVList" (click)="goTvDetail(top10CCTV2._id)">
+          <div class="con">
+            <a title="{{latestTop10Movie.name}}"><img
+                data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
+                style="width: 158px; height: 159px; display: block;"><span
+                class="sTit">{{latestTop10Movie.name}}</span> </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 
- <!-- 卫视台 -->
- <ion-item lines="none">
-    <ion-label slot="start"><span>卫视台</span></ion-label>
-    <ion-label slot="end" (click)="goMoreTv(satelliteTVName)"><span>更多</span></ion-label>
-  </ion-item>
-  <ion-grid>
-    <ion-row *ngFor="let top10Satellite of top10SatelliteList">
-      <ion-col *ngFor="let top10Satellite2 of top10Satellite" (click)="goTvDetail((top10Satellite2._id))">
-            <div>
-                <img src="{{top10Satellite2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
-              </div>
-              <p class="movie-detail" style="margin: 0px;">{{top10Satellite2.name}}</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <!-- 卫视台 -->
+  <div class="mod_a globalPadding">
+    <div class="th_a"><span class="sMark"><i class="iPoint"></i>卫视台</span><span class="span-more"
+        (click)="goMoreTv(localStationName)">更多</span></div>
+    <div class="tb_a">
+      <ul class="picTxt picTxtA clearfix" id="data_list">
+        <li *ngFor="let latestTop10Movie of top10SatelliteList" (click)="goTvDetail(top10CCTV2._id)">
+          <div class="con">
+            <a title="{{latestTop10Movie.name}}"><img
+                data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
+                style="width: 158px; height: 159px; display: block;"><span
+                class="sTit">{{latestTop10Movie.name}}</span> </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <!-- 地方台 -->
- <ion-item lines="none">
-    <ion-label slot="start"><span>地方台</span></ion-label>
-    <ion-label slot="end" (click)="goMoreTv(localStationName)"><span>更多</span></ion-label>
-  </ion-item>
-  <ion-grid>
-    <ion-row *ngFor="let top10LocalStation of top10LocalStationList">
-      <ion-col *ngFor="let top10LocalStation2 of top10LocalStation" (click)="goTvDetail((top10LocalStation2._id))">
-            <div>
-                <img src="{{top10LocalStation2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
-              </div>
-              <p class="movie-detail" style="margin: 0px;">{{top10LocalStation2.name}}</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <div class="mod_a globalPadding">
+    <div class="th_a"><span class="sMark"><i class="iPoint"></i>地方台</span><span class="span-more"
+        (click)="goMoreTv(localStationName)">更多</span></div>
+    <div class="tb_a">
+      <ul class="picTxt picTxtA clearfix" id="data_list">
+        <li *ngFor="let latestTop10Movie of top10LocalStationList" (click)="goTvDetail(top10CCTV2._id)">
+          <div class="con">
+            <a title="{{latestTop10Movie.name}}"><img
+                data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
+                style="width: 158px; height: 159px; display: block;"><span
+                class="sTit">{{latestTop10Movie.name}}</span> </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <!-- 港澳台 -->
- <ion-item lines="none">
-    <ion-label slot="start"><span>港澳台</span></ion-label>
-    <ion-label slot="end" (click)="goMoreTv(hongkongMacaoTaiwanName)"><span>更多</span></ion-label>
-  </ion-item>
-  <ion-grid>
-    <ion-row *ngFor="let top10hongkongMacaoTaiwan of top10hongkongMacaoTaiwanList">
-      <ion-col *ngFor="let top10hongkongMacaoTaiwan2 of top10hongkongMacaoTaiwan" (click)="goTvDetail((top10hongkongMacaoTaiwan2._id))">
-            <div>
-                <img src="{{top10hongkongMacaoTaiwan2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
-              </div>
-              <p class="movie-detail" style="margin: 0px;">{{top10hongkongMacaoTaiwan2.name}}</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <div class="mod_a globalPadding">
+    <div class="th_a"><span class="sMark"><i class="iPoint"></i>港澳台</span><span class="span-more"
+        (click)="goMoreTv(hongkongMacaoTaiwanName)">更多</span></div>
+    <div class="tb_a">
+      <ul class="picTxt picTxtA clearfix" id="data_list">
+        <li *ngFor="let latestTop10Movie of top10hongkongMacaoTaiwanList" (click)="goTvDetail(top10CCTV2._id)">
+          <div class="con">
+            <a title="{{latestTop10Movie.name}}"><img
+                data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
+                style="width: 158px; height: 159px; display: block;"><span
+                class="sTit">{{latestTop10Movie.name}}</span> </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <!-- 海外台 -->
- <ion-item lines="none">
-    <ion-label slot="start"><span>海外台</span></ion-label>
-    <ion-label slot="end" (click)="goMoreTv(overseasStationName)"><span>更多</span></ion-label>
-  </ion-item>
-  <ion-grid>
-    <ion-row *ngFor="let top10overseasStation of top10overseasStationList">
-      <ion-col *ngFor="let top10overseasStation2 of top10overseasStation" (click)="goTvDetail((top10overseasStation2._id))">
-            <div>
-                <img src="{{top10overseasStation2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
-              </div>
-              <p class="movie-detail" style="margin: 0px;">{{top10overseasStation2.name}}</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <div class="mod_a globalPadding">
+    <div class="th_a"><span class="sMark"><i class="iPoint"></i>海外台</span><span class="span-more"
+        (click)="goMoreTv(overseasStationName)">更多</span></div>
+    <div class="tb_a">
+      <ul class="picTxt picTxtA clearfix" id="data_list">
+        <li *ngFor="let latestTop10Movie of top10overseasStationList" (click)="goTvDetail(top10CCTV2._id)">
+          <div class="con">
+            <a title="{{latestTop10Movie.name}}"><img
+                data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
+                style="width: 158px; height: 159px; display: block;"><span
+                class="sTit">{{latestTop10Movie.name}}</span> </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <!-- 轮播台 -->
- <ion-item lines="none">
-    <ion-label slot="start"><span>轮播台</span></ion-label>
-    <ion-label slot="end" (click)="goMoreTv(carouselName)"><span>更多</span></ion-label>
-  </ion-item>
-  <ion-grid>
-    <ion-row *ngFor="let top10Carousel of top10CarouselList">
-      <ion-col *ngFor="let top10Carousel2 of top10Carousel" (click)="goTvDetail((top10Carousel2._id))">
-            <div>
-                <img src="{{top10Carousel2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
-              </div>
-              <p class="movie-detail" style="margin: 0px;">{{top10Carousel2.name}}</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <div class="mod_a globalPadding">
+    <div class="th_a"><span class="sMark"><i class="iPoint"></i>轮播台</span><span class="span-more"
+        (click)="goMoreTv(carouselName)">更多</span></div>
+    <div class="tb_a">
+      <ul class="picTxt picTxtA clearfix" id="data_list">
+        <li *ngFor="let latestTop10Movie of top10CarouselList" (click)="goTvDetail(top10CCTV2._id)">
+          <div class="con">
+            <a title="{{latestTop10Movie.name}}"><img
+                data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
+                style="width: 158px; height: 159px; display: block;"><span
+                class="sTit">{{latestTop10Movie.name}}</span> </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 </ion-content>

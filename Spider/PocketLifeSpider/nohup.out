@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "PocketLifeSpider/test2.py", line 1, in <module>
+    from PocketLifeSpider.util.CommonUtils import *
+ImportError: No module named PocketLifeSpider.util.CommonUtils

@@ -48,6 +48,23 @@ export class PieceDetailPage implements OnInit {
   }
 
   /**
+   * 切换视频播放资源列表
+   * @param id 资源列表名称
+   */
+	oooTab (id, source_index){
+    this.source_index = source_index
+		this.tools.oooTab(id)
+  }
+  
+  /**
+   * 切换资源列表与简介
+   * @param id 资源列表或简介id
+   */
+  oooTab2(id) {
+    this.tools.oooTab2(id)
+  }
+
+  /**
    * 根据播放地址创造视频资源(适用于小品)
    * @param url 播放地址
    */

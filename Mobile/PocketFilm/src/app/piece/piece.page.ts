@@ -12,9 +12,9 @@ import { ToolsService } from '../tools.service';
 export class PiecePage implements OnInit {
 
   // 小品类型
-  public type = '推荐'
+  public type = '全部'
   public type2 = '全部'
-  public typeList = ['推荐']
+  public typeList = ['全部', '推荐']
   public type2List = []
   public type2Map = new Map()
 
@@ -46,7 +46,7 @@ export class PiecePage implements OnInit {
   // 关键词
   public keyWord = 'null'
   // 限制数量
-  public limit = 16
+  public limit = 15
   // 浏览类型
   public browse_type = 'piece'
 
@@ -55,6 +55,8 @@ export class PiecePage implements OnInit {
     public tools: ToolsService,
     public router: Router
   ) {
+    // 清空缓存
+    this.clearCache()
     // 获取戏曲类型列表
     this.getPieceTypes()
     // 获取小品列表
@@ -99,7 +101,7 @@ export class PiecePage implements OnInit {
 
   getPieces() {
     var movieList = this.storage.get('piece-' + this.type + '-' + this.type2)
-    if (movieList == null || movieList.length == 0 || this.pageIndex > (movieList.length * this.col_size) / this.pageSize) {
+    if (movieList == null || movieList.length == 0 || this.pageIndex > (movieList.length / this.pageSize)) {
       if (this.type == '推荐') {
         this.getRecommendations().then((data: any) => {
           this.pieceList = this.pieceList.concat(data)
@@ -127,21 +129,7 @@ export class PiecePage implements OnInit {
       this.tools.getRecommendationsApi(this.browse_type, '全部', this.limit, this.pageIndex, this.pageSize).then((data: any) => {
         // 截取电影名称的长度
         var name_length = 5
-        var top10Movies = []
-        var latestTop10MoviesTemp = []
-        var latestTop10MoviesTemp2 = []
-        latestTop10MoviesTemp = data.data
-        latestTop10MoviesTemp.forEach((data: any) => {
-          var movie_name = data.name
-          if (movie_name.length > name_length) {
-            movie_name = movie_name.slice(0, name_length) + "..."
-          }
-          data.name = movie_name
-          latestTop10MoviesTemp2.push(data)
-        })
-        for (var i = 0; i < latestTop10MoviesTemp2.length;) {
-          top10Movies.push(latestTop10MoviesTemp2.splice(i, this.col_size))
-        }
+        var top10Movies = data.data
         resolve(top10Movies)
       })
     })
@@ -155,25 +143,11 @@ export class PiecePage implements OnInit {
 
   getTop10Pieces(type, type2): any {
     var top10Pieces = []
-    var latestTop10PiecesTemp = []
-    var latestTop10PiecesTemp2 = []
     // 截取电影名称的长度
-    var name_length = 12
     var promise = new Promise((resolve, reject) => {
       this.tools.getPieceListApi(type, type2, this.pageIndex, this.pageSize, this.keyWord).then((data: any) => {
         if (data.code == 0) {
-          latestTop10PiecesTemp = data.data
-          latestTop10PiecesTemp.forEach((data: any) => {
-            var tv_name = data.name
-            if (tv_name.length > name_length) {
-              tv_name = tv_name.slice(0, name_length) + "..."
-            }
-            data.name = tv_name
-            latestTop10PiecesTemp2.push(data)
-          })
-          for (var i = 0; i < latestTop10PiecesTemp2.length;) {
-            top10Pieces.push(latestTop10PiecesTemp2.splice(i, this.col_size))
-          }
+          top10Pieces = data.data
           resolve(top10Pieces)
         }
       })
@@ -247,7 +221,7 @@ export class PiecePage implements OnInit {
    */
 
   changeType(type) {
-    if (type == '推荐' || this.type2Map.get(type) == '') {
+    if (type == '全部' || type == '推荐' || this.type2Map.get(type) == '') {
       // 如果第一种类型为全部或者没有第二种类型，则设置第二种类型为空
       this.type2List = []
     } else {

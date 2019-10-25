@@ -50,7 +50,7 @@ export class TvPage implements OnInit {
   // 当前页码
   public pageIndex = 1
   // 每页大小
-  public pageSize = 8
+  public pageSize = 9
   // 关键词
   public keyWord = 'null'
   public source_index = 0;
@@ -66,6 +66,8 @@ export class TvPage implements OnInit {
     public tools: ToolsService,
     public router: Router
   ) { 
+    // 清空缓存
+    this.clearCache()
     // 获取电视列表
     this.getTvs()
   }
@@ -140,28 +142,13 @@ export class TvPage implements OnInit {
 
   getTop10Tvs(type): any {
     var top10Tvs = []
-    var latestTop10TvsTemp = []
-    var latestTop10TvsTemp2 = []
-    // 截取电影名称的长度
-    var name_length = 5
     var promise = new Promise((resolve, reject) => {
       var movies = this.storage.get('tv-' + type)
       if (movies == null || movies.length == 0) {
         // 本地没有相应的缓存
       this.tools.getTvListApi(type, this.selectedType, this.pageIndex, this.pageSize, this.keyWord).then((data: any) => {
         if (data.code == 0) {
-          latestTop10TvsTemp = data.data
-          latestTop10TvsTemp.forEach((data: any) => {
-            var tv_name = data.name
-            if (tv_name.length > name_length) {
-              tv_name = tv_name.slice(0, name_length) + "..."
-            }
-            data.name = tv_name
-            latestTop10TvsTemp2.push(data)
-          })
-          for (var i = 0; i < latestTop10TvsTemp2.length;) {
-            top10Tvs.push(latestTop10TvsTemp2.splice(i, this.col_size))
-          }
+          top10Tvs = data.data
           this.storage.set('tv-' + type, top10Tvs)
           resolve(top10Tvs)
         }

@@ -70,7 +70,8 @@
                 <li class="" _t_nav="topnav-2"><a href="/more?type=1">电视剧</a></li>
                 <li class="" _t_nav="topnav-3"><a href="/more?type=2">综艺</a></li>
                 <li class="" _t_nav="topnav-4"><a href="/more?type=3">动漫</a></li>
-                <li class="" _t_nav="topnav-5"><a href="javascript:void(0)">友情链接</a></li>
+                <li class="" _t_nav="topnav-5"><a href="/more?type=4">少儿</a></li>
+                <li class="" _t_nav="topnav-6"><a href="javascript:void(0)">友情链接</a></li>
             </ul>
             </ul>
 
@@ -116,7 +117,7 @@
         </div>
         <!--分类子目录-->
         <div class="nav-down clearfix">
-            <div id="topnav-5" class="nav-down-1" style="display:none;" _t_nav="topnav-5">
+            <div id="topnav-6" class="nav-down-1" style="display:none;" _t_nav="topnav-6">
                 <div class="navigation_top">
                 </div>
                 <div class="nav-down-2 clearfix">
@@ -145,7 +146,7 @@
     function goSearch() {
         var txt = document.getElementById("wd");
         var key_word = txt.value;
-        if (key_word.value == "") {
+        if (key_word == "") {
             alert("请输入影片或演员名");
             key_word.focus();
         } else {
@@ -165,12 +166,21 @@
     </script>
     <script>
     $(function () {
+        // 用户信息按钮点击事件
         $('#userInfo').click(function () {
             $('#userInfoBox').show();
             setTimeout(function(){
                 $('#userInfoBox').hide();
             },4000);
         })
+
+        //  输入框回车事件
+        $("#wd").keyup(function(){
+            if(event.keyCode == 13){
+                goSearch()
+            }
+
+        });
     })
     function logout() {
         $.cookie('userInfo', null, {domain: '.grayson.top'});

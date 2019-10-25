@@ -19,13 +19,10 @@
       <file leaf-file-name="api.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routers/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="1441" column="54" selection-start-line="1441" selection-start-column="43" selection-end-line="1441" selection-end-column="54" />
+            <state relative-caret-position="2588">
+              <caret line="3667" column="20" selection-start-line="3667" selection-start-column="20" selection-end-line="3667" selection-end-column="20" />
               <folding>
-                <element signature="e#58948#62375#0" />
-                <element signature="e#69494#71679#0" />
-                <element signature="e#71720#72744#0" />
-                <element signature="e#73834#75313#0" />
+                <element signature="e#106466#128366#0" />
               </folding>
             </state>
           </provider>
@@ -138,19 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>{type: typeList[type]}</find>
-      <find>type: typeList[type]</find>
-      <find>type: typeList[type],</find>
-      <find>sort: {update_time: -1},</find>
-      <find>/movie/get/all</find>
-      <find>getFor</find>
-      <find>rec</find>
-      <find>recom</find>
-      <find>movie/get/all</find>
-      <find>count</find>
-      <find>update_time</find>
-      <find>validate</find>
-      <find>message/code</find>
       <find>user/info</find>
       <find>user/</find>
       <find>user/register</find>
@@ -168,13 +152,21 @@
       <find>records/ad</find>
       <find>//  浏览类型</find>
       <find>browse_type</find>
+      <find>acquisition_time:-1</find>
+      <find>update_time:-1, release_date: -1</find>
+      <find>release_date:-1, acquisition_time: -1</find>
+      <find>score: -1, release_date:-1</find>
+      <find>/count/get</find>
+      <find>release_date:-1, update_time: -1</find>
+      <find>release_date: -1, score:-1</find>
+      <find>release_date: -1, score:-1, update_time: -1</find>
+      <find>sort_type</find>
+      <find>req.query.sort_type</find>
+      <find>movie/get/all</find>
+      <find>key_word == null</find>
+      <find>find</find>
     </findStrings>
     <replaceStrings>
-      <replace>Express</replace>
-      <replace>Swig</replace>
-      <replace>Mongoose</replace>
-      <replace>BodyParser</replace>
-      <replace>Cookies</replace>
       <replace>//</replace>
       <replace>﻿release_date</replace>
       <replace>release_date</replace>
@@ -198,6 +190,13 @@
       <replace>sort: {acquisition_time: -1},</replace>
       <replace>sort: {acquisition_time:-1, release_date: -1, score: -1},</replace>
       <replace>, acquisition_time:-1, release_date: -1</replace>
+      <replace>update_time:-1</replace>
+      <replace>release_date:-1, update_time: -1</replace>
+      <replace>release_date: -1, score:-1</replace>
+      <replace>release_date:-1, acquisition_time: -1</replace>
+      <replace>release_date: -1, score:-1, acquisition_time: -1</replace>
+      <replace>req.query.sort_type</replace>
+      <replace>sort_type</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -244,6 +243,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,7 +275,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -389,25 +388,28 @@
       <workItem from="1571454749968" duration="1409000" />
       <workItem from="1571468375474" duration="1896000" />
       <workItem from="1571735752472" duration="2196000" />
+      <workItem from="1571816598090" duration="3812000" />
+      <workItem from="1571896880536" duration="5774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198346000" />
+    <option name="totallyTimeSpent" value="207932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="741" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2613185" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32852563" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32428116" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32852563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.328" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38853502" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -432,11 +434,41 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="84" />
+      <option name="time" value="97" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>req.query.sort_type == 0</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>req.query.sort_type == '0'</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>req.query.sort_type</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sort_type</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>type2</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>typeList[type]</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>data.length</expression-string>
         <language-id>JavaScript</language-id>
@@ -449,36 +481,6 @@
       </expression>
       <expression>
         <expression-string>req.body.username</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>user</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>reg</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new RegExp(&quot;/&quot;+today + &quot;/&quot;).replaceAll('\/', '')</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new RegExp(&quot;/&quot;+today + &quot;/&quot;).replace('\/', '')</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new RegExp(&quot;/&quot;+today + &quot;/&quot;)</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>source_type</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -814,13 +816,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routers/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="1441" column="54" selection-start-line="1441" selection-start-column="43" selection-end-line="1441" selection-end-column="54" />
+        <state relative-caret-position="2588">
+          <caret line="3667" column="20" selection-start-line="3667" selection-start-column="20" selection-end-line="3667" selection-end-column="20" />
           <folding>
-            <element signature="e#58948#62375#0" />
-            <element signature="e#69494#71679#0" />
-            <element signature="e#71720#72744#0" />
-            <element signature="e#73834#75313#0" />
+            <element signature="e#106466#128366#0" />
           </folding>
         </state>
       </provider>

@@ -22,7 +22,7 @@ export class FilmPage implements OnInit {
   // 影视类型
   public type = 0
   // 影视类型名称列表
-  public typeNameList = ['电影', '电视剧', '综艺', '动漫'];
+  public typeNameList = ['电影', '电视剧', '综艺', '动漫', '少儿'];
   // 每行电影的数量
   public col_size = 4
   public source_index = 0;
@@ -35,7 +35,7 @@ export class FilmPage implements OnInit {
   // 当前页码
   public pageIndex = 1
   // 每页大小
-  public pageSize = 8
+  public pageSize = 9
   // 关键词
   public keyWord = 'null'
 
@@ -115,23 +115,7 @@ export class FilmPage implements OnInit {
         // 本地没有相应的缓存
         this.tools.getMovieListApi(type, this.selectTypeList, this.pageIndex, this.pageSize, sortType, this.keyWord).then((data: any) => {
           if (data.code == 0) {
-            // 截取电影名称的长度
-            var name_length = 5
-            var top10Movies = []
-            var latestTop10MoviesTemp = []
-            var latestTop10MoviesTemp2 = []
-            latestTop10MoviesTemp = data.data
-            latestTop10MoviesTemp.forEach((data: any) => {
-              var movie_name = data.name
-              if (movie_name.length > name_length) {
-                movie_name = movie_name.slice(0, name_length) + "..."
-              }
-              data.name = movie_name
-              latestTop10MoviesTemp2.push(data)
-            })
-            for (var i = 0; i < latestTop10MoviesTemp2.length;) {
-              top10Movies.push(latestTop10MoviesTemp2.splice(i, this.col_size))
-            }
+            var top10Movies = data.data
             this.storage.set('movie-' + type + '-' + sortType, top10Movies)
             resolve(top10Movies)
           }
@@ -239,8 +223,8 @@ export class FilmPage implements OnInit {
   clearCache() {
     // 清空对应的缓存数据
     this.storage.set('movie-' + this.type + '-recommendations', [])
-    this.storage.set('movie-' + this.type + '-0', [])
     this.storage.set('movie-' + this.type + '-1', [])
+    this.storage.set('movie-' + this.type + '-2', [])
   }
 
 }

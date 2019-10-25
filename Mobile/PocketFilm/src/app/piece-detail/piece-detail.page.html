@@ -8,33 +8,61 @@
   </ion-header>
   
   <ion-content padding>
-    <div style="display: block;">
-        <div style="float: left;margin-right: 10px;">
-            <img [src]="tv.src" [alt]="tv.name" class="movie-detail-src">
+
+      <link rel="stylesheet" type="text/css" href="https://m.88ys.cc/template/wap88ysw/css/tv.detail.css">
+
+      <!-- 影视详情 -->
+      <section class="main">
+        <!-- 详细信息 -->
+        <div class="detailPosterIntro globalPadding clearfix">
+          <div class="posterPic"><img [src]="tv.src" alt="{{tv.name}}" onerror="this.src='https://m.88ys.cc/images/load.gif'">
           </div>
-          <div>
-              <p>
-                  <span class="c01">名称：<span class="c02">{{tv.name}}</span></span>
-                </p>
-                <p>
-                  <span class="c01">类型：<span class="c02">{{tv.type}} / {{tv.type2}}</span></span>
-                </p>
+          <div class="introTxt">
+            <h1>{{tv.name}}</h1>
+            <li>类型1：{{tv.type}}</li>
+            <li>类型2：{{tv.type2}}</li>
           </div>
-    </div>
-    <div style="display: inline-block;margin-top: 15px;">
-      <ion-list style="padding-top: 0rpx;" *ngFor="let source of tv.sources,let i = index">
-        <h3 class="source_name">{{source.name}}</h3>
-        <span *ngFor="let type of source.types,let j = index">
-          <!-- 当前选中项的影视源 -->
-          <a class="c02 source_type source_type_active" (click)="changeMovieType(tv._id, i, j)"
-            *ngIf="i == source_index && j==type_index">{{type.name}}</a>
-          <!-- 不是当前选中项的影视源 -->
-          <a class="c02 source_type" (click)="changeMovieType(tv._id, i, j)" *ngIf="i != source_index || j != type_index">{{type.name}}</a>
-        </span>
-      </ion-list>
-      <p style="color: #999;">
-        <span class="c01">剧情介绍：</span>
-        <span class="c02">{{tv.description}}</span>
-      </p>
-    </div>
+        </div>
+    
+        <!-- 资源列表 -->
+        <div class="tab globalPadding">
+          <ul class="tabNav clearfix">
+            <li><span class="cur" (click)="oooTab2(0)">剧集</span></li>
+            <li><span class="" (click)="oooTab2(1)">简介</span></li>
+          </ul>
+        </div>
+        <div class="tabConList globalPadding">
+          <div class="tabCon" style="display: block;">
+            <dl class="tab2">
+              <!-- 资源名称列表 -->
+              <dt class="tabt3">
+                <div *ngFor="let source of tv.sources,let i = index">
+                  <span id="{{source.name}}" class="current" (click)="oooTab(source.name, i)"
+                    *ngIf="i == source_index">{{source.name}}</span>
+                  <span id="{{source.name}}" (click)="oooTab(source.name, i)"
+                    *ngIf="i != source_index">{{source.name}}</span>
+                </div>
+              </dt>
+              <!-- 资源播放地址列表 -->
+              <div *ngFor="let source of tv.sources,let i = index">
+                <dd class="{{source.name}}" style="display: block;" *ngIf="i == source_index">
+                  <ul class="ulNumList clearfix list_1">
+                    <li (click)="changeMovieType(_id, i, j)" *ngFor="let type of source.types,let j = index"> <a
+                        title="{{type.name}}">{{type.name}}</a></li>
+                  </ul>
+                </dd>
+                <dd class="{{source.name}}" style="display: none;" *ngIf="i != source_index">
+                  <ul class="ulNumList clearfix list_1">
+                    <li (click)="changeMovieType(_id, i, j)" *ngFor="let type of source.types,let j = index"> <a
+                        title="{{type.name}}">{{type.name}}</a></li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <div class="tabCon" style="display: none;">
+            <p class="movieintro" id="movie_info_intro_s"><span style="color:#333;">剧情简介：</span>{{tv.description}}</p>
+          </div>
+        </div>
+      </section>
   </ion-content>

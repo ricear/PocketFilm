@@ -140,23 +140,10 @@ export class MoreTvPage implements OnInit {
 
   getTvs() {
     var movieList = this.storage.get('more-tv-' + this.type + '-' + this.selectedType)
-    if (movieList == null || movieList.length == 0 || this.pageIndex > (movieList.length * this.col_size) / this.pageSize) {
+    if (movieList == null || movieList.length == 0 || this.pageIndex > (movieList.length / this.pageSize)) {
       this.tools.getTvListApi(this.type, this.selectedType, this.pageIndex, this.pageSize, this.keyWord).then((data: any) => {
-        // 截取电影名称的长度
-        var name_length = 5
         if (data.code == 0) {
-          this.tvListTemp = data.data
-          this.tvListTemp.forEach((data: any) => {
-            var movie_name = data.name
-            if (movie_name.length > name_length) {
-              movie_name = movie_name.slice(0, name_length) + "..."
-            }
-            data.name = movie_name
-            this.tvListTemp2.push(data)
-          })
-          for (var i = 0; i < this.tvListTemp2.length;) {
-            this.tvList.push(this.tvListTemp2.splice(i, this.col_size))
-          }
+          this.tvList = this.tvList.concat(data.data)
           this.storage.set('more-tv-' + this.type + '-' + this.selectedType, this.tvList)
         }
       })

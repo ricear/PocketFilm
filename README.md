@@ -55,6 +55,31 @@
 
 ------
 
+#### v4.5.0 `2019/10/25`
+
+- 爬虫：
+  - 所有爬虫新增爬取最近数据功能，一部分爬取6页，一部分爬取2页
+  - 对所有爬虫已经出现的问题进行修改
+- 备份数据库
+
+#### v4.4.0 `2019/10/24`
+
+- 爬虫：
+  - 对所有爬虫已经出现的问题进行修改
+  - ```CommonUtils.py```中新增方法：
+    - ```change_src_suffix(old_suffix, new_suffix)```：修改图片中的地址后缀
+    - ```get_exclude_type2_list()```：获取排除在外的影视第二类型列表
+    - ```modify_movie_type2(type2_list)```：修改影视第二类型
+    - ```combine_movie()```：合并名称相同的影视
+    - ```exclude_piece_type2(type2)```：判断小品类型是否在被排除的类型里面
+    - ```reverse_update_time(update_time)```：转换更新日期
+    - ```reverse_release_date(release_date)```：转换发布日期
+    - ```delete_drama_with_url_invalid()```：删除不正确播放地址的戏曲视频
+- 移动端：
+  - 对页面布局进行调整
+  - 新增搜索记录功能
+- 备份数据库
+
 #### v4.3.0 `2019/10/22`
 
 - 移动端：

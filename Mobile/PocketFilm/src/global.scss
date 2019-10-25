@@ -11,8 +11,13 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 body {
-  font: normal normal 12px/2em "宋体", Verdana, Geneva, sans-serif;
-  color: #444;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  position: relative;
+  font: 12px/1.5 Arial, \5fae\8f6f\96c5\9ed1;
+  background: #f6f6f6;
+  color: #666666;
 }
 
 ion-toolbar {
@@ -121,7 +126,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .MacPlayer a:active {
@@ -266,4 +271,46 @@ video {
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 9px;
+}
+
+ion-segment-button {
+  font-size: 18px;
+}
+
+.mod_a .th_a .sMark i.iPoint {
+  background-color: #f04141;
+}
+
+.picTxt .con .sTit {
+  height: 33px;
+}
+
+.span-more {
+  float: right;
+  margin-right: 18px;
+  color: #000000;
+  font-size: 18px;
+}
+
+.type_list_more ion-segment-button {
+  line-height: 54px;
+  font-size: 18px;
+}
+
+.type_list_more .sc-ion-segment-md-h {
+  --color-checked: none;
+}
+
+.picTxtA {
+  margin-top: 0px;
+}
+
+span.sTit {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.tab[_ngcontent-loi-c0] {
+  font-size: 18px;
 }

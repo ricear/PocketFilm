@@ -130,24 +130,8 @@ export class SearchMoviePage implements OnInit {
     this.search = true
     // 修改为不显示搜索历史记录
     this.history = false
-    // 截取电影名称的长度
-    var name_length = 4
-    this.movieListTemp = this.movieList
-    // 清空影视列表数据
-    this.movieList = []
     // 修改当前页码为1
     this.pageIndex = 1
-    this.movieListTemp.forEach((data: any) => {
-      var movie_name = data.name
-      if (movie_name.length > name_length) {
-        movie_name = movie_name.slice(0, name_length) + "..."
-      }
-      data.name = movie_name
-      this.movieListTemp2.push(data)
-    })
-    for (var i = 0; i < this.movieListTemp2.length;) {
-      this.movieList.push(this.movieListTemp2.splice(i, this.col_size))
-    }
     this.saveSearchHistory()
   }
 

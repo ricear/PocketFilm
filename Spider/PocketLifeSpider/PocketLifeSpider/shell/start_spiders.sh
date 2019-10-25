@@ -21,6 +21,12 @@ string=$1
 array=[]
 if [ ! $1 ]; then
 	string="tencent,youku,iqiyi,zuida,kuyun,yongjiu,ok,ziyuan135,ziyuan33uu,tv,drama,piece,piece2"
+elif [ $1 == 1 ]; then
+	string="tencent,youku,iqiyi,zuida,kuyun,yongjiu"
+elif [ $1 == 2 ]; then
+	string="ok,ziyuan135,ziyuan33uu,tv,drama,piece,piece2"
+elif [ $1 == 'temp' ]; then
+	string="drama,iqiyi,ok,piece,piece2,tencent,ziyuan33uu,ziyuan135"
 fi
 array=(${string//,/ })
 for var in ${array[@]}

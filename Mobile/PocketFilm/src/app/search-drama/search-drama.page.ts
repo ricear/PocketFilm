@@ -132,24 +132,8 @@ export class SearchDramaPage implements OnInit {
   doSearch() {
     // 修改为已搜索
     this.search = true
-    // 截取电视名称的长度
-    var name_length = 5
-    this.tvListTemp = this.tvList
-    // 清空电视列表数据
-    this.tvList = []
     // 修改当前页码为1
     this.pageIndex = 1
-    this.tvListTemp.forEach((data: any) => {
-      var movie_name = data.name
-      if (movie_name.length > name_length) {
-        movie_name = movie_name.slice(0, name_length) + "..."
-      }
-      data.name = movie_name
-      this.tvListTemp2.push(data)
-    })
-    for (var i = 0; i < this.tvListTemp2.length;) {
-      this.tvList.push(this.tvListTemp2.splice(i, this.col_size))
-    }
     this.saveSearchHistory()
   }
 

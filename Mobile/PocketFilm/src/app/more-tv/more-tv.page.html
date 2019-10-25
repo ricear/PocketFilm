@@ -1,45 +1,59 @@
 <ion-header>
-    <ion-toolbar color="danger">
-      <ion-back-button defaultHref="/" slot="start"></ion-back-button>
-      <ion-title>{{type}}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content>
-  
-    <!-- 下拉刷新 -->
-    <ion-refresher (ionRefresh)="doRefresh($event)">
-      <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="松开刷新" refreshingSpinner="circles"
-        refreshingText="正在刷新">
-      </ion-refresher-content>
-    </ion-refresher>
-    <!-- 下拉刷新 -->
+  <ion-toolbar color="danger">
+    <ion-back-button defaultHref="/" slot="start"></ion-back-button>
+    <ion-title>{{type}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- 下拉刷新 -->
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="松开刷新" refreshingSpinner="circles"
+      refreshingText="正在刷新">
+    </ion-refresher-content>
+  </ion-refresher>
+  <!-- 下拉刷新 -->
+
+  <!-- 更多电视 -->
+  <section class="main">
+    <div id="page">
+    </div>
 
     <!-- 分类 -->
-  <p><span *ngFor="let type of typeList;let i = index">
-      <a class="more_movie_type_name more_movie_type_name_selected" (click)="changeTvType(type)"
-        *ngIf="selectedType == type">{{type}}</a>
-      <a class="more_movie_type_name" (click)="changeMovieType(type)"
-        *ngIf="selectedType != type">{{type}}</a>
-    </span></p>
-  
+    <div class="type_list_more">
+      <ion-segment scrollable>
+        <ion-segment-button value="{{type}}" (click)="changeTvType(type)" *ngFor="let type of typeList;let i = index">
+          <a class="more_movie_type_name more_movie_type_name_selected" (click)="changeTvType(type)"
+            *ngIf="selectedType == type">{{type}}</a>
+          <a class="more_movie_type_name" (click)="changeMovieType(type)" *ngIf="selectedType != type">{{type}}</a>
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+
     <!-- 电视列表 -->
-    <ion-grid>
-      <ion-row *ngFor="let tv of tvList">
-        <ion-col *ngFor="let tv2 of tv" (click)="goTvDetail((tv2._id))">
-          <div>
-            <img src="{{tv2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
-          </div>
-          <p class="movie-detail" style="margin: 0px;">{{tv2.name}}</p>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  
-    <!-- 上拉加载更多 -->
-    <ion-infinite-scroll (ionInfinite)="doLoadMore($event)">
-      <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="正在加载">
-      </ion-infinite-scroll-content>
-    </ion-infinite-scroll>
-    <!-- 上拉加载更多 -->
-  
-  </ion-content>
+    <div class="mod_a globalPadding">
+      <div class="tb_a">
+        <ul class="picTxt picTxtA clearfix" id="data_list">
+          <li *ngFor="let latestTop10Movie of tvList" (click)="goMovieDetail((latestTop10Movie._id))">
+            <div class="con">
+              <a title="{{latestTop10Movie.name}}"><img
+                  data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                  onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
+                  style="width: 158px; height: 159px; display: block;"><span
+                  class="sTit">{{latestTop10Movie.name}}</span> </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 上拉加载更多 -->
+  <ion-infinite-scroll (ionInfinite)="doLoadMore($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="正在加载">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+  <!-- 上拉加载更多 -->
+
+</ion-content>

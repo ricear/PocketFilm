@@ -31,19 +31,26 @@
   </ion-segment-button>
 </ion-segment>
 
- <ion-list>
-   <!-- 戏曲类型 -->
-  <ion-grid>
-    <ion-row *ngFor="let piece of pieceList">
-      <ion-col *ngFor="let piece2 of piece" (click)="goPieceDetail((piece2._id))">
-            <div>
-                <img src="{{piece2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
-              </div>
-              <p class="movie-detail" style="margin: 0px;">{{piece2.name}}</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
- </ion-list>
+ <!-- 小品数据 -->
+ <section class="main">
+  <div id="page">
+  </div>
+  <div class="mod_a globalPadding">
+    <div class="tb_a">
+      <ul class="picTxt picTxtA clearfix" id="data_list">
+        <li *ngFor="let latestTop10Movie of pieceList" (click)="goPieceDetail((latestTop10Movie._id))">
+          <div class="con">
+            <a title="{{latestTop10Movie.name}}"><img
+                data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
+                style="width: 158px; height: 159px; display: block;"> <span
+                class="sTit">{{latestTop10Movie.name}}</span> </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
  <!-- 上拉加载更多 -->
  <ion-infinite-scroll (ionInfinite)="doLoadMore($event)">

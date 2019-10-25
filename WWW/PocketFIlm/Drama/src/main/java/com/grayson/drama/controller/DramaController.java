@@ -109,7 +109,7 @@ public class DramaController {
      * @return 影视数据
      */
     @RequestMapping("/more")
-    public String getMoreMovie(ModelMap map, HttpServletRequest request, @RequestParam(value = "type", defaultValue = "全部") String type, @RequestParam(value = "page_index", defaultValue = "1") String page_index, @RequestParam(value = "key_word", defaultValue = "null") String key_word) {
+    public String getMoreMovie(ModelMap map, HttpServletRequest request, @RequestParam(value = "type", defaultValue = "全部") String type, @RequestParam(value = "page_index", defaultValue = "1") String page_index, @RequestParam(value = "key_word", defaultValue = "") String key_word) {
         //  获取用户名
         String cookieName = "userInfo";
         JSONObject userInfo = CommonUtils.getCookieValue(request, cookieName);

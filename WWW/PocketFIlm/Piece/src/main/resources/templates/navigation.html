@@ -95,13 +95,13 @@
             <ul class="search so">
                 <a href="javascript:void(0)">
                     <input type="submit" name="submit" class="imgbt" value="" onclick="goSearch()"/>
-                    <input type="text" id="wd" name="wd" placeholder="请输入影片或演员名" class="input"
+                    <input type="text" id="wd" name="wd" placeholder="请输入小品名称" class="input"
                            onblur="if(this.value==''){ this.value='';this.style.color='#cfcdcd';}"
-                           onfocus="if(this.value=='请输入影片或演员名'){this.value='';this.style.color='';}" value=""
+                           onfocus="if(this.value=='请输入小品名称'){this.value='';this.style.color='';}" value=""
                            th:if="${key_word eq null}"/>
-                    <input type="text" id="wd" name="wd" placeholder="请输入影片或演员名" class="input"
+                    <input type="text" id="wd" name="wd" placeholder="请输入小品名称" class="input"
                            onblur="if(this.value==''){ this.value='';this.style.color='#cfcdcd';}"
-                           onfocus="if(this.value=='请输入影片或演员名'){this.value='';this.style.color='';}"
+                           onfocus="if(this.value=='请输入小品名称'){this.value='';this.style.color='';}"
                            th:value="${key_word}" th:if="${key_word ne null}"/>
                 </a>
             </ul>
@@ -145,8 +145,8 @@
     function goSearch() {
         var txt = document.getElementById("wd");
         var key_word = txt.value;
-        if (key_word.value == "") {
-            alert("请输入影片或演员名");
+        if (key_word == "") {
+            alert("请输入小品名称");
             key_word.focus();
         } else {
             window.location.href = "/search?key_word=" + key_word;
@@ -165,12 +165,21 @@
     </script>
     <script>
     $(function () {
+        // 用户信息按钮点击事件
         $('#userInfo').click(function () {
             $('#userInfoBox').show();
             setTimeout(function(){
                 $('#userInfoBox').hide();
             },4000);
         })
+
+        //  输入框回车事件
+        $("#wd").keyup(function(){
+            if(event.keyCode == 13){
+                goSearch()
+            }
+
+        });
     })
     function logout() {
         $.cookie('userInfo', null, {domain: '.grayson.top'});

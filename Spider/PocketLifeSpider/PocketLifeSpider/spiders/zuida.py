@@ -16,7 +16,11 @@ class ZuidaSpider(scrapy.Spider):
     keyword = None
     type = 'movie_sources'
     # 电影总数
+    page_size = 50
+    total_page = 0
     total = 0
+    total_valid = 0
+    index = 0
 
     custom_settings = {
         'ITEM_PIPELINES': {
@@ -28,22 +32,26 @@ class ZuidaSpider(scrapy.Spider):
             super(ZuidaSpider, self).__init__(name, **kwargs)
             self.orign_url = self.domain + '/?m=vod-index-pg-'
             self.start_urls = [self.orign_url + '1.html']
-            # 用于计算电影总数
-            pattern4 = '[\s\S]*?<li><br/>本站共有影片：<strong>([\s\S]*?)</strong></li>[\s\S]*?'
 
             # 获取电影总数
-            total = 0
-            orign_html = get_one_page(self.start_urls[0])
-            for total_count in parse_one_page(orign_html, pattern4):
-                total = int(total_count)
+            if (target == None):
+                pattern4 = '[\s\S]*?<li><br/>本站共有影片：<strong>([\s\S]*?)</strong></li>[\s\S]*?'
+                orign_html = get_one_page(self.start_urls[0])
+                for total_count in parse_one_page(orign_html, pattern4):
+                    self.total = int(total_count)
 
-            start_page = 2
-            page_size = 50
-            total_page = total // page_size
-            if total_page % page_size != 0:
-                total_page = total_page + 1
-            for page_index in reverse_arr(range(start_page, total_page + 1)):
-                self.start_urls.append(self.orign_url + str(page_index) + '.html')
+                start_page = 2
+                self.total_page = self.total // self.page_size
+                if self.total_page % self.page_size != 0:
+                    self.total_page = self.total_page + 1
+                for page_index in reverse_arr(range(start_page, self.total_page + 1)):
+                    self.start_urls.append(self.orign_url + str(page_index) + '.html')
+            elif (target == 'latest'):
+                start_page = 2
+                self.total_page = 6
+                self.total = self.page_size * self.total_page
+                for page_index in reverse_arr(range(start_page, self.total_page + 1)):
+                    self.start_urls.append(self.orign_url + str(page_index) + '.html')
 
     def parse(self, response):
 
@@ -65,14 +73,13 @@ class ZuidaSpider(scrapy.Spider):
 
         url = response.url
         print('当前页面：' + url)
+        curr_page = url.split('/?m=vod-index-pg-')[1].split('.html')[0]
 
         # url：电影详情页
-        index = 5
         count = -1
-        if self.keyword is not None:
-            index = 4
         for each in reverse_arr(response.xpath("/html/body/div[4]/ul")):
-            count += 1
+            self.index = self.index + 1
+            count = count + 1
             if count == 0 or count == 51:
                 continue
             url2 = each.xpath("./li/span[2]/a/@href").extract()[0]
@@ -93,15 +100,17 @@ class ZuidaSpider(scrapy.Spider):
             movie_item['nickname'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[1]/span/text()'))
             movie_item['directors'] = get_arr_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[2]/span/text()'))
             movie_item['actors'] = get_arr_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[3]/span/text()'))
-            movie_item['type2'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[4]/span/text()'))
-            type = get_type_from_type2(movie_item['type2'])
+            type2 = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[4]/span/text()'))
+            movie_item['type2'] = reverse_type2(type2)
+            type = get_type_from_type2(type2)
+            movie_item['type'] = type
             if (is_exclude_type2(type2) == True):
                 continue
             movie_item['region'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[5]/span/text()'))
             movie_item['language'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[6]/span/text()'))
-            movie_item['release_date'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[7]/span/text()'))
+            movie_item['release_date'] = reverse_release_date(get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[7]/span/text()')))
             movie_item['duration'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[8]/span/text()'))
-            movie_item['update_time'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[9]/span/text()'))
+            movie_item['update_time'] = reverse_update_time(get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[9]/span/text()')))
             movie_item['description'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[14]/div/span[2]/text()'))
             sources = []
             for each2 in each.xpath('./div[4]/div[2]/div/div'):
@@ -113,19 +122,24 @@ class ZuidaSpider(scrapy.Spider):
                     type = {'name': '', 'url': ''}
                     type['name'] = full_name.split('$')[0]
                     type['url'] = full_name.split('$')[1]
-                    print('正在爬取 -> ' + movie_id + ' ' + source['name'] + ' ' + type['name'])
+                    print('正在爬取 ' + curr_page + '/' + (str)(self.total_page) + ' ' + (str)(self.index) + '/' + (str)(
+                        self.total) + ' -> ' + movie_id + ' ' + source['name'] + ' ' + type['name'])
                     types.append(type)
                 source['types'] = types
                 sources.append(source)
             movie_item['sources'] = sources
+            # 跳过播放列表为空的视频并记录
+            flag = 0
+            if (len(types) == 0):
+                continue
             # 视频已爬取且未更新
             # 视频已爬取且未更新
             if (is_need_source(movie_item, 'movie') == False):
                 print(movie_id + ' 已爬取')
                 continue
             yield movie_item
-            self.total += 1
+            self.total_valid = self.total_valid + 1
         # 结束时间
         end = time.time()
         process_time = end - start
-        print('本次共爬取 ' + str(self.total) + ' 条数据，用时 ' + str(process_time) + 's')
+        print('本次共爬取 ' + str(self.total_valid) + ' 条数据，用时 ' + str(process_time) + 's')

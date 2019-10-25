@@ -15,7 +15,11 @@ class KuyunSpider(scrapy.Spider):
     keyword = None
     type = 'movie_sources'
     # 电影总数
+    page_size = 50
+    total_page = 0
     total = 0
+    total_valid = 0
+    index = 0
 
     custom_settings = {
         'ITEM_PIPELINES': {
@@ -29,25 +33,28 @@ class KuyunSpider(scrapy.Spider):
         self.start_urls = [self.orign_url + '1.html']
         # 用于计算电影总数
         # 获取电影总数
-        orign_html = get_one_page(self.start_urls[0], encode='gb2312')
-        time.sleep(2)
-        orign_html = etree.HTML(orign_html)
-        result = orign_html.xpath('//td[@style="text-align:center;color:red;"]/span/text()')[0]
-        total = (int)(result.split('共')[1].split('条')[0])
+        if (target == None):
+            orign_html = get_one_page(self.start_urls[0], encode='gb2312')
+            time.sleep(2)
+            orign_html = etree.HTML(orign_html)
+            result = orign_html.xpath('//td[@style="text-align:center;color:red;"]/span/text()')[0]
+            self.total = (int)(result.split('共')[1].split('条')[0])
 
-        start_page = 2
-        page_size = 50
-        total_page = total // page_size
-        if total_page % page_size != 0:
-            total_page = total_page + 1
-        for page_index in reverse_arr(range(start_page, total_page + 1)):
-            self.start_urls.append(self.orign_url + str(page_index) + '.html')
+            start_page = 2
+            self.total_page = self.total // self.page_size
+            if self.total % self.page_size != 0:
+                self.total_page = self.total_page + 1
+            for page_index in reverse_arr(range(start_page, self.total_page + 1)):
+                self.start_urls.append(self.orign_url + str(page_index) + '.html')
+        elif (target == 'latest'):
+            start_page = 2
+            self.total_page = 6
+            self.total = self.page_size * self.total_page
+            for page_index in reverse_arr(range(start_page, self.total_page + 1)):
+                self.start_urls.append(self.orign_url + str(page_index) + '.html')
 
     def parse(self, response):
 
-        # 判断当前数据是否爬取
-        if check_spider_history(self.type, response.url) == True:
-            pass
         # 开始时间
         start = time.time()
         # 获取 web 驱动
@@ -63,14 +70,13 @@ class KuyunSpider(scrapy.Spider):
 
         url = response.url
         print('当前页面：' + url)
+        curr_page = url.split('-')[1].split('.html')[0]
 
         # url：电影详情页
-        index = 5
         count = -1
-        if self.keyword is not None:
-            index = 4
         for each in reverse_arr(response.xpath('//tr[@class="row"]')):
-            count += 1
+            self.index = self.index + 1
+            count = count + 1
             if count == 0 or count == 51:
                 continue
             url2 = each.xpath("./td/a/@href").extract()[0]
@@ -96,7 +102,7 @@ class KuyunSpider(scrapy.Spider):
             movie_item['nickname'] = movie_item['name']
             movie_item['directors'] = get_arr_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[3]/td/font/a/text()'))
             movie_item['actors'] = get_arr_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[2]/td/font/text()'))
-            movie_item['type2'] = get_str_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[4]/td/font/text()'))
+            movie_item['type2'] = reverse_type2(get_str_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[4]/td/font/text()')))
             if movie_item['type2'].find('综艺') != -1:
                 movie_item['type'] = '综艺'
             elif movie_item['type2'].find('动漫') != -1:
@@ -115,9 +121,9 @@ class KuyunSpider(scrapy.Spider):
                 movie_item['type'] = '电视剧'
             movie_item['region'] = get_str_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[5]/td/font/text()'))
             movie_item['language'] = get_str_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[8]/td/font/text()'))
-            movie_item['release_date'] = get_str_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[9]/td/font/text()'))
+            movie_item['release_date'] = reverse_release_date(get_str_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[9]/td/font/text()')))
             movie_item['duration'] = '无'
-            movie_item['update_time'] = get_str_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[6]/td/font/text()'))
+            movie_item['update_time'] = reverse_update_time(get_str_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[6]/td/font/text()')))
             movie_item['description'] = get_str_from_xpath(each.xpath('//div[@class="intro"]/font/text()'))
             sources = []
             for each2 in each.xpath('//td[@class="bt"]'):
@@ -133,14 +139,18 @@ class KuyunSpider(scrapy.Spider):
                     type = {'name': '', 'url': ''}
                     type['name'] = full_name.split('$')[0]
                     type['url'] = full_name.split('$')[1]
-                    print('正在爬取 -> ' + movie_id + ' ' + source['name'] + ' ' + type['name'])
+                    print('正在爬取 '+curr_page+'/'+(str)(self.total_page)+' '+(str)(self.index)+'/'+(str)(self.total)+' -> ' + movie_id + ' ' + source['name'] + ' ' + type['name'])
                     types.append(type)
                 source['types'] = types
                 sources.append(source)
+                # 跳过播放列表为空的视频并记录
+                flag = 0
+                if (len(types) == 0):
+                    continue
             movie_item['sources'] = sources
             yield movie_item
-            self.total += 1
+            self.total_valid = self.total_valid + 1
         # 结束时间
         end = time.time()
         process_time = end - start
-        print('本次共爬取 ' + str(self.total) + ' 条数据，用时 ' + str(process_time) + 's')
+        print('本次共爬取 ' + str(self.total_valid) + ' 条数据，用时 ' + str(process_time) + 's')

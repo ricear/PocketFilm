@@ -1,0 +1,42 @@
+.detailPosterIntro .introTxt {
+    height: auto;
+  }
+  
+  h1 {
+    margin-top: auto;
+  }
+  
+  .globalPadding {
+    padding-left: 0px;
+  }
+  
+  .introTxt h1 {
+    list-style: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .introTxt span {
+      font: 12px/1.5 Arial,\5FAE\8F6F\96C5\9ED1;
+      display: inline-block;
+  }
+  
+  ion-segment-button button {
+      padding: 0px;
+  }
+  
+  .tab2 dt span.current {
+      background: #f04141;
+  }
+  
+  .tab2 dd {
+      border-top: 1px solid #f04141;
+  }
+  
+  .tab {
+      height: 62px;
+      line-height: 48px;
+      font-size: 21px;
+      padding-bottom: 0px;
+  }

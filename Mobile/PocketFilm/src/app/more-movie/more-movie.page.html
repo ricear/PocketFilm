@@ -15,34 +15,50 @@
   </ion-refresher>
   <!-- 下拉刷新 -->
 
-  <!-- 分类 -->
-  <p *ngFor="let type of typeList;let i = index"><span *ngFor="let typeName of type">
-      <a class="more_movie_type_name more_movie_type_name_selected" (click)="changeMovieType(i, typeName)"
-        *ngIf="selectedTypeNameList[i] == typeName">{{typeName}}</a>
-      <a class="more_movie_type_name" (click)="changeMovieType(i, typeName)"
-        *ngIf="selectedTypeNameList[i] != typeName">{{typeName}}</a>
-    </span></p>
+  <!-- 电影列表 -->
+  <section class="main">
+    <div id="page">
+    </div>
+
+    <!-- 分类 -->
+    <div class="type_list_more">
+        <ion-segment scrollable *ngFor="let type of typeList;let i = index">
+            <ion-segment-button *ngFor="let typeName of type" value="{{type}}" (click)="changeMovieType(i, typeName)">
+              <a class="more_movie_type_name more_movie_type_name_selected" (click)="changeMovieType(i, typeName)"
+                *ngIf="selectedTypeNameList[i] == typeName">{{typeName}}</a>
+              <a class="more_movie_type_name" (click)="changeMovieType(i, typeName)"
+                *ngIf="selectedTypeNameList[i] != typeName">{{typeName}}</a>
+            </ion-segment-button>
+          </ion-segment>
+    </div>
 
     <ion-segment [(ngModel)]="sortType">
-        <ion-segment-button value="1" (click)="changeSortType(1)">
-          最新
-        </ion-segment-button>
-        <ion-segment-button value="2" (click)="changeSortType(2)">
-          最热
-        </ion-segment-button>
-      </ion-segment>
+      <ion-segment-button value="1" (click)="changeSortType(1)">
+        最新
+      </ion-segment-button>
+      <ion-segment-button value="2" (click)="changeSortType(2)">
+        最热
+      </ion-segment-button>
+    </ion-segment>
 
-  <!-- 电影列表 -->
-  <ion-grid>
-    <ion-row *ngFor="let movie of movieList">
-      <ion-col *ngFor="let movie2 of movie" (click)="goMovieDetail((movie2._id))">
-        <div>
-          <img src="{{movie2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'" class="movie_img">
-        </div>
-        <p class="movie-detail" style="margin: 0px;">{{movie2.name}}</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+    <!-- 最热影视 -->
+    <div class="mod_a globalPadding">
+      <div class="tb_a">
+        <ul class="picTxt picTxtA clearfix" id="data_list">
+          <li *ngFor="let latestTop10Movie of movieList" (click)="goMovieDetail((latestTop10Movie._id))">
+            <div class="con">
+              <a title="{{latestTop10Movie.name}}"><img
+                  data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                  onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
+                  style="width: 158px; height: 159px; display: block;"><span class="sNum"><em
+                    class="emScore">{{latestTop10Movie.update_status}}</em></span> <span
+                  class="sTit">{{latestTop10Movie.name}}</span> </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <!-- 上拉加载更多 -->
   <ion-infinite-scroll (ionInfinite)="doLoadMore($event)">

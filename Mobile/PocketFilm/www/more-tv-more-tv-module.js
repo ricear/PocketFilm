@@ -58,7 +58,7 @@ var MoreTvPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n    <ion-toolbar color=\"danger\">\n      <ion-back-button defaultHref=\"/\" slot=\"start\"></ion-back-button>\n      <ion-title>{{type}}</ion-title>\n    </ion-toolbar>\n  </ion-header>\n  \n  <ion-content>\n  \n    <!-- 下拉刷新 -->\n    <ion-refresher (ionRefresh)=\"doRefresh($event)\">\n      <ion-refresher-content pullingIcon=\"arrow-dropdown\" pullingText=\"松开刷新\" refreshingSpinner=\"circles\"\n        refreshingText=\"正在刷新\">\n      </ion-refresher-content>\n    </ion-refresher>\n    <!-- 下拉刷新 -->\n\n    <!-- 分类 -->\n  <p><span *ngFor=\"let type of typeList;let i = index\">\n      <a class=\"more_movie_type_name more_movie_type_name_selected\" (click)=\"changeTvType(type)\"\n        *ngIf=\"selectedType == type\">{{type}}</a>\n      <a class=\"more_movie_type_name\" (click)=\"changeMovieType(type)\"\n        *ngIf=\"selectedType != type\">{{type}}</a>\n    </span></p>\n  \n    <!-- 电视列表 -->\n    <ion-grid>\n      <ion-row *ngFor=\"let tv of tvList\">\n        <ion-col *ngFor=\"let tv2 of tv\" (click)=\"goTvDetail((tv2._id))\">\n          <div>\n            <img src=\"{{tv2.src}}\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\" class=\"movie_img\">\n          </div>\n          <p class=\"movie-detail\" style=\"margin: 0px;\">{{tv2.name}}</p>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  \n    <!-- 上拉加载更多 -->\n    <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n      <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n      </ion-infinite-scroll-content>\n    </ion-infinite-scroll>\n    <!-- 上拉加载更多 -->\n  \n  </ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-back-button defaultHref=\"/\" slot=\"start\"></ion-back-button>\n    <ion-title>{{type}}</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <!-- 下拉刷新 -->\n  <ion-refresher (ionRefresh)=\"doRefresh($event)\">\n    <ion-refresher-content pullingIcon=\"arrow-dropdown\" pullingText=\"松开刷新\" refreshingSpinner=\"circles\"\n      refreshingText=\"正在刷新\">\n    </ion-refresher-content>\n  </ion-refresher>\n  <!-- 下拉刷新 -->\n\n  <!-- 更多电视 -->\n  <section class=\"main\">\n    <div id=\"page\">\n    </div>\n\n    <!-- 分类 -->\n    <div class=\"type_list_more\">\n      <ion-segment scrollable>\n        <ion-segment-button value=\"{{type}}\" (click)=\"changeTvType(type)\" *ngFor=\"let type of typeList;let i = index\">\n          <a class=\"more_movie_type_name more_movie_type_name_selected\" (click)=\"changeTvType(type)\"\n            *ngIf=\"selectedType == type\">{{type}}</a>\n          <a class=\"more_movie_type_name\" (click)=\"changeMovieType(type)\" *ngIf=\"selectedType != type\">{{type}}</a>\n        </ion-segment-button>\n      </ion-segment>\n    </div>\n\n    <!-- 电视列表 -->\n    <div class=\"mod_a globalPadding\">\n      <div class=\"tb_a\">\n        <ul class=\"picTxt picTxtA clearfix\" id=\"data_list\">\n          <li *ngFor=\"let latestTop10Movie of tvList\" (click)=\"goMovieDetail((latestTop10Movie._id))\">\n            <div class=\"con\">\n              <a title=\"{{latestTop10Movie.name}}\"><img\n                  data-src=\"{{latestTop10Movie.src}}\" alt=\"{{latestTop10Movie.name}}\" src=\"{{latestTop10Movie.src}}\"\n                  onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"\n                  style=\"width: 158px; height: 159px; display: block;\"><span\n                  class=\"sTit\">{{latestTop10Movie.name}}</span> </a>\n            </div>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </section>\n\n  <!-- 上拉加载更多 -->\n  <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n    <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n  <!-- 上拉加载更多 -->\n\n</ion-content>"
 
 /***/ }),
 
@@ -218,23 +218,10 @@ var MoreTvPage = /** @class */ (function () {
     MoreTvPage.prototype.getTvs = function () {
         var _this = this;
         var movieList = this.storage.get('more-tv-' + this.type + '-' + this.selectedType);
-        if (movieList == null || movieList.length == 0 || this.pageIndex > (movieList.length * this.col_size) / this.pageSize) {
+        if (movieList == null || movieList.length == 0 || this.pageIndex > (movieList.length / this.pageSize)) {
             this.tools.getTvListApi(this.type, this.selectedType, this.pageIndex, this.pageSize, this.keyWord).then(function (data) {
-                // 截取电影名称的长度
-                var name_length = 5;
                 if (data.code == 0) {
-                    _this.tvListTemp = data.data;
-                    _this.tvListTemp.forEach(function (data) {
-                        var movie_name = data.name;
-                        if (movie_name.length > name_length) {
-                            movie_name = movie_name.slice(0, name_length) + "...";
-                        }
-                        data.name = movie_name;
-                        _this.tvListTemp2.push(data);
-                    });
-                    for (var i = 0; i < _this.tvListTemp2.length;) {
-                        _this.tvList.push(_this.tvListTemp2.splice(i, _this.col_size));
-                    }
+                    _this.tvList = _this.tvList.concat(data.data);
                     _this.storage.set('more-tv-' + _this.type + '-' + _this.selectedType, _this.tvList);
                 }
             });

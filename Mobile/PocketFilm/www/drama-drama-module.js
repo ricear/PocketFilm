@@ -58,7 +58,7 @@ var DramaPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-title style=\"text-align: center;\">戏曲</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <!-- 搜索 -->\n  <ion-searchbar (click)=\"goSearchDrama()\" placeholder=\"请输入戏曲名称\"></ion-searchbar>\n\n  <!-- 下拉刷新 -->\n<ion-refresher (ionRefresh)=\"doRefresh($event)\">\n   <ion-refresher-content pullingIcon=\"arrow-dropdown\" pullingText=\"松开刷新\" refreshingSpinner=\"circles\"\n     refreshingText=\"正在刷新\">\n   </ion-refresher-content>\n </ion-refresher>\n <!-- 下拉刷新 -->\n\n <!-- 戏曲分类 -->\n <ion-segment [(ngModel)]=\"type\" scrollable>\n    <ion-segment-button  *ngFor=\"let type of typeList;let i = index\" value=\"{{type}}\" (click)=\"changeType(type)\">\n      {{type}}\n    </ion-segment-button>\n  </ion-segment>\n\n <ion-list>\n   <!-- 戏曲类型 -->\n  <ion-grid>\n    <ion-row *ngFor=\"let drama of dramaList\">\n      <ion-col *ngFor=\"let drama2 of drama\" (click)=\"goDramaDetail((drama2._id))\">\n            <div>\n                <img src=\"{{drama2.src}}\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\" class=\"movie_img\">\n              </div>\n              <p class=\"movie-detail\" style=\"margin: 0px;\">{{drama2.name}}</p>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n </ion-list>\n\n <!-- 上拉加载更多 -->\n <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n  <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n  </ion-infinite-scroll-content>\n</ion-infinite-scroll>\n<!-- 上拉加载更多 -->\n\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-title style=\"text-align: center;\">戏曲</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <!-- 搜索 -->\n  <ion-searchbar (click)=\"goSearchDrama()\" placeholder=\"请输入戏曲名称\"></ion-searchbar>\n\n  <!-- 下拉刷新 -->\n<ion-refresher (ionRefresh)=\"doRefresh($event)\">\n   <ion-refresher-content pullingIcon=\"arrow-dropdown\" pullingText=\"松开刷新\" refreshingSpinner=\"circles\"\n     refreshingText=\"正在刷新\">\n   </ion-refresher-content>\n </ion-refresher>\n <!-- 下拉刷新 -->\n\n <!-- 戏曲分类 -->\n <ion-segment [(ngModel)]=\"type\" scrollable>\n    <ion-segment-button  *ngFor=\"let type of typeList;let i = index\" value=\"{{type}}\" (click)=\"changeType(type)\">\n      {{type}}\n    </ion-segment-button>\n  </ion-segment>\n\n <!-- 戏曲数据 -->\n <section class=\"main\">\n  <div id=\"page\">\n  </div>\n  <div class=\"mod_a globalPadding\">\n    <div class=\"tb_a\">\n      <ul class=\"picTxt picTxtA clearfix\" id=\"data_list\">\n        <li *ngFor=\"let latestTop10Movie of dramaList\" (click)=\"goDramaDetail((latestTop10Movie._id))\">\n          <div class=\"con\">\n            <a title=\"{{latestTop10Movie.name}}\"><img\n                data-src=\"{{latestTop10Movie.src}}\" alt=\"{{latestTop10Movie.name}}\" src=\"{{latestTop10Movie.src}}\"\n                onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"\n                style=\"width: 158px; height: 159px; display: block;\"> <span\n                class=\"sTit\">{{latestTop10Movie.name}}</span> </a>\n          </div>\n        </li>\n      </ul>\n    </div>\n  </div>\n</section>\n\n <!-- 上拉加载更多 -->\n <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n  <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n  </ion-infinite-scroll-content>\n</ion-infinite-scroll>\n<!-- 上拉加载更多 -->\n\n</ion-content>"
 
 /***/ }),
 
@@ -69,7 +69,7 @@ module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-title
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2RyYW1hL2RyYW1hLnBhZ2Uuc2NzcyJ9 */"
+module.exports = ".detailPosterIntro .introTxt {\n  height: auto; }\n\nh1 {\n  margin-top: auto; }\n\n.globalPadding {\n  padding-left: 0px; }\n\n.introTxt h1 {\n  list-style: none;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden; }\n\n.introTxt span {\n  font: 12px/1.5 Arial,\\5FAE\\8F6F\\96C5\\9ED1;\n  display: inline-block; }\n\nion-segment-button button {\n  padding: 0px; }\n\n.tab2 dt span.current {\n  background: #f04141; }\n\n.tab2 dd {\n  border-top: 1px solid #f04141; }\n\n.tab {\n  height: 62px;\n  line-height: 48px;\n  font-size: 21px;\n  padding-bottom: 0px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy93ZWlwZW5nL1BlcnNvbmFsL1Byb2plY3RzL1BvY2tldEZpbG0vTW9iaWxlL1BvY2tldEZpbG0vc3JjL2FwcC9kcmFtYS9kcmFtYS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxZQUFZLEVBQUE7O0FBR2Q7RUFDRSxnQkFBZ0IsRUFBQTs7QUFHbEI7RUFDRSxpQkFBaUIsRUFBQTs7QUFHbkI7RUFDRSxnQkFBZ0I7RUFDaEIsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQixnQkFBZ0IsRUFBQTs7QUFHbEI7RUFDSSx5Q0FBeUM7RUFDekMscUJBQXFCLEVBQUE7O0FBR3pCO0VBQ0ksWUFBWSxFQUFBOztBQUdoQjtFQUNJLG1CQUFtQixFQUFBOztBQUd2QjtFQUNJLDZCQUE2QixFQUFBOztBQUdqQztFQUNJLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsZUFBZTtFQUNmLG1CQUFtQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvZHJhbWEvZHJhbWEucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmRldGFpbFBvc3RlckludHJvIC5pbnRyb1R4dCB7XG4gICAgaGVpZ2h0OiBhdXRvO1xuICB9XG4gIFxuICBoMSB7XG4gICAgbWFyZ2luLXRvcDogYXV0bztcbiAgfVxuICBcbiAgLmdsb2JhbFBhZGRpbmcge1xuICAgIHBhZGRpbmctbGVmdDogMHB4O1xuICB9XG4gIFxuICAuaW50cm9UeHQgaDEge1xuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICB9XG4gIFxuICAuaW50cm9UeHQgc3BhbiB7XG4gICAgICBmb250OiAxMnB4LzEuNSBBcmlhbCxcXDVGQUVcXDhGNkZcXDk2QzVcXDlFRDE7XG4gICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cbiAgXG4gIGlvbi1zZWdtZW50LWJ1dHRvbiBidXR0b24ge1xuICAgICAgcGFkZGluZzogMHB4O1xuICB9XG4gIFxuICAudGFiMiBkdCBzcGFuLmN1cnJlbnQge1xuICAgICAgYmFja2dyb3VuZDogI2YwNDE0MTtcbiAgfVxuICBcbiAgLnRhYjIgZGQge1xuICAgICAgYm9yZGVyLXRvcDogMXB4IHNvbGlkICNmMDQxNDE7XG4gIH1cbiAgXG4gIC50YWIge1xuICAgICAgaGVpZ2h0OiA2MnB4O1xuICAgICAgbGluZS1oZWlnaHQ6IDQ4cHg7XG4gICAgICBmb250LXNpemU6IDIxcHg7XG4gICAgICBwYWRkaW5nLWJvdHRvbTogMHB4O1xuICB9Il19 */"
 
 /***/ }),
 
@@ -99,8 +99,8 @@ var DramaPage = /** @class */ (function () {
         this.tools = tools;
         this.router = router;
         // 戏曲类型
-        this.type = '推荐';
-        this.typeList = ['推荐'];
+        this.type = '全部';
+        this.typeList = ['全部', '推荐'];
         // 戏曲类型列表
         this.dramaList = [];
         // 推荐数据
@@ -128,11 +128,13 @@ var DramaPage = /** @class */ (function () {
         // 关键词
         this.keyWord = 'null';
         // 限制数量
-        this.limit = 16;
+        this.limit = 15;
         // 浏览类型
         this.browse_type = 'drama';
         // 当前选中的电视类型
-        this.selectedType = '推荐';
+        this.selectedType = '全部';
+        // 清空缓存
+        this.clearCache();
         // 获取戏曲类型列表
         this.getDramaTypes();
         // 获取戏曲列表
@@ -150,7 +152,7 @@ var DramaPage = /** @class */ (function () {
             // 本地缓存数据不存在
             this.tools.getDramaTypeApi().then(function (data) {
                 if (data.code == 0) {
-                    if (_this.typeList.length == 1) {
+                    if (_this.typeList.length == 0 || _this.typeList.length == 2) {
                         var typeList = data.data;
                         for (var i = 0; i < typeList.length; i++) {
                             _this.typeList.push(typeList[i].name);
@@ -171,7 +173,7 @@ var DramaPage = /** @class */ (function () {
     DramaPage.prototype.getDramas = function () {
         var _this = this;
         var movieList = this.storage.get('drama-' + this.type);
-        if (movieList == null || movieList.length == 0 || this.pageIndex > (movieList.length * this.col_size) / this.pageSize) {
+        if (movieList == null || movieList.length == 0 || this.pageIndex > (movieList.length / this.pageSize)) {
             if (this.type == '推荐') {
                 this.getRecommendations().then(function (data) {
                     _this.dramaList = _this.dramaList.concat(data);
@@ -197,23 +199,7 @@ var DramaPage = /** @class */ (function () {
         var _this = this;
         var promise = new Promise(function (resolve, error) {
             _this.tools.getRecommendationsApi(_this.browse_type, '全部', _this.limit, _this.pageIndex, _this.pageSize).then(function (data) {
-                // 截取电影名称的长度
-                var name_length = 5;
-                var top10Movies = [];
-                var latestTop10MoviesTemp = [];
-                var latestTop10MoviesTemp2 = [];
-                latestTop10MoviesTemp = data.data;
-                latestTop10MoviesTemp.forEach(function (data) {
-                    var movie_name = data.name;
-                    if (movie_name.length > name_length) {
-                        movie_name = movie_name.slice(0, name_length) + "...";
-                    }
-                    data.name = movie_name;
-                    latestTop10MoviesTemp2.push(data);
-                });
-                for (var i = 0; i < latestTop10MoviesTemp2.length;) {
-                    top10Movies.push(latestTop10MoviesTemp2.splice(i, _this.col_size));
-                }
+                var top10Movies = data.data;
                 resolve(top10Movies);
             });
         });
@@ -226,25 +212,11 @@ var DramaPage = /** @class */ (function () {
     DramaPage.prototype.getTop10Dramas = function (type) {
         var _this = this;
         var top10Dramas = [];
-        var latestTop10DramasTemp = [];
-        var latestTop10DramasTemp2 = [];
         // 截取电影名称的长度
-        var name_length = 5;
         var promise = new Promise(function (resolve, reject) {
             _this.tools.getDramaListApi(type, _this.pageIndex, _this.pageSize, _this.keyWord).then(function (data) {
                 if (data.code == 0) {
-                    latestTop10DramasTemp = data.data;
-                    latestTop10DramasTemp.forEach(function (data) {
-                        var tv_name = data.name;
-                        if (tv_name.length > name_length) {
-                            tv_name = tv_name.slice(0, name_length) + "...";
-                        }
-                        data.name = tv_name;
-                        latestTop10DramasTemp2.push(data);
-                    });
-                    for (var i = 0; i < latestTop10DramasTemp2.length;) {
-                        top10Dramas.push(latestTop10DramasTemp2.splice(i, _this.col_size));
-                    }
+                    top10Dramas = data.data;
                     resolve(top10Dramas);
                 }
             });
@@ -283,6 +255,8 @@ var DramaPage = /** @class */ (function () {
         this.pageIndex = 1;
         // 获取电视列表
         this.getDramas();
+        // 获取戏曲类型列表
+        this.getDramaTypes();
         if (event) {
             //告诉ionic 刷新数据完成
             event.target.complete();
@@ -319,7 +293,7 @@ var DramaPage = /** @class */ (function () {
      * 清空缓存
      */
     DramaPage.prototype.clearCache = function () {
-        this.storage.set('drama-type' + this.type, []);
+        this.storage.set('drama-type', []);
         this.storage.set('drama-' + this.type, []);
     };
     DramaPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([

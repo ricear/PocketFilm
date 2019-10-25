@@ -47,7 +47,7 @@ class ZuidaSpiderPipeline(object):
         # 执行 sql
         item['acquisition_time'] = get_current_time()
         if (item['acquisition_time'] == '未知'): item['acquisition_time'] = '0'
-        dic = {'id': item['id']}
+        dic = {'name': item['name'], 'type': item['type']}
         movies1 = db_utils.find(dic)
         # 服务器中资源中的最大集数
         max1 = 0
@@ -66,9 +66,15 @@ class ZuidaSpiderPipeline(object):
                 if (source['name'] == item_source['name']):
                     continue
                 sources_tmp.append(source)
-            newdic = {'$set': {'update_status': item['update_status'], 'sources': sources_tmp, 'update_time': item['update_time'], 'acquisition_time': item['acquisition_time']}}
+            newdic = {'$set': {'update_status': item['update_status'], 'sources': sources_tmp,
+                               'update_time': item['update_time'],
+                               'acquisition_time': item['acquisition_time']}}
+            print(dic)
+            print(newdic)
             db_utils.update(dic, newdic)
-        else: db_utils.insert(item)
+        else:
+            print(item)
+            db_utils.insert(item)
         return item
 
 # 将爬取到的数据保存到数据库

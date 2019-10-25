@@ -33,23 +33,35 @@
   <!-- 搜索时显示的结果 -->
   <ion-list *ngIf="!search">
     <ion-item *ngFor="let tv of tvList" (click)="goTvDetail(tv._id)">
-        <ion-thumbnail slot="start">
-            <ion-img [src]="tv.src" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"></ion-img>
+        <ion-thumbnail slot="start" class="ios hydrated">
+            <img src="{{tv.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'">
           </ion-thumbnail>
-      <p>{{tv.name}}</p>
+          <ion-label class="sc-ion-label-ios-h sc-ion-label-ios-s ios hydrated">
+            <h2>{{tv.name}}</h2>
+            <h3>{{tv.type}}&nbsp;&nbsp;{{tv.type2}}</h3>
+          </ion-label>
     </ion-item>
   </ion-list>
   <!-- 搜索后显示的结果 -->
-    <ion-grid *ngIf="search">
-      <ion-row *ngFor="let tv of tvList">
-        <ion-col *ngFor="let tv2 of tv" (click)="goTvDetail((tv2._id))">
-              <div>
-                  <img src="{{tv2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"class="movie_img">
-                </div>
-                <p class="movie-detail" style="margin: 0px;">{{tv2.name}}</p>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+ <section class="main" *ngIf="search">
+    <div id="page">
+    </div>
+    <div class="mod_a globalPadding">
+      <div class="tb_a">
+        <ul class="picTxt picTxtA clearfix" id="data_list">
+          <li *ngFor="let latestTop10Movie of tvList" (click)="goPieceDetail((latestTop10Movie._id))">
+            <div class="con">
+              <a title="{{latestTop10Movie.name}}"><img
+                  data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                  onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
+                  style="width: 158px; height: 159px; display: block;"> <span
+                  class="sTit">{{latestTop10Movie.name}}</span> </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
     <!-- 上拉加载更多 -->
   <ion-infinite-scroll (ionInfinite)="doLoadMore($event)">

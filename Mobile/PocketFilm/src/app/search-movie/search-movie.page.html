@@ -26,32 +26,45 @@
   <ion-list class="search-history" *ngIf="history">
     <ion-label class="title">历史记录</ion-label>
     <div>
-      <span *ngFor="let search of searchList" (click)="searchMoviesWithSearchHistory(search.key_word)">{{search.key_word}}</span>&nbsp;&nbsp;
+      <span *ngFor="let search of searchList"
+        (click)="searchMoviesWithSearchHistory(search.key_word)">{{search.key_word}}</span>&nbsp;&nbsp;
     </div>
   </ion-list>
 
   <!-- 搜索时显示的结果 -->
   <ion-list *ngIf="!search">
     <ion-item *ngFor="let movie of movieList" (click)="goMovieDetail(movie._id)">
-      <ion-thumbnail slot="start">
-        <ion-img [src]="movie.src" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'">
-        </ion-img>
+      <ion-thumbnail slot="start" class="ios hydrated">
+        <img src="{{movie.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'">
       </ion-thumbnail>
-      <p>{{movie.name}}</p>
+      <ion-label class="sc-ion-label-ios-h sc-ion-label-ios-s ios hydrated">
+        <h2>{{movie.name}}</h2>
+        <h3>{{movie.type}}&nbsp;&nbsp;{{movie.type2}}</h3>
+        <p>{{movie.update_status}}</p>
+      </ion-label>
     </ion-item>
   </ion-list>
   <!-- 搜索后显示的结果 -->
-  <ion-grid *ngIf="search">
-    <ion-row *ngFor="let movie of movieList">
-      <ion-col *ngFor="let movie2 of movie" (click)="goMovieDetail((movie2._id))">
-        <div>
-          <img src="{{movie2.src}}" onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
-            class="movie_img">
-        </div>
-        <p class="movie-detail" style="margin: 0px;">{{movie2.name}}</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <section class="main" *ngIf="search">
+    <div id="page">
+    </div>
+    <div class="mod_a globalPadding">
+      <div class="tb_a">
+        <ul class="picTxt picTxtA clearfix" id="data_list">
+          <li *ngFor="let latestTop10Movie of movieList" (click)="goMovieDetail((latestTop10Movie._id))">
+            <div class="con">
+              <a title="{{latestTop10Movie.name}}"><img data-src="{{latestTop10Movie.src}}"
+                  alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                  onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
+                  style="width: 158px; height: 159px; display: block;"><span class="sNum"><em
+                    class="emScore">{{latestTop10Movie.update_status}}</em></span> <span
+                  class="sTit">{{latestTop10Movie.name}}</span> </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <!-- 上拉加载更多 -->
   <ion-infinite-scroll (ionInfinite)="doLoadMore($event)">

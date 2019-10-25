@@ -1,0 +1,9 @@
+爬虫程序备注：
+
+没有问题的爬虫：kuyun、tv、yongjiu、youku、ziyuan33uu、zuida、iqiyi、ok、piece、tencent、ziyuan135
+
+有问题的爬虫：
+
+已经爬取过一遍数据的爬虫：kuyun、tv、yongjiu、youku、zuida
+
+没有爬取过一遍数据的爬虫：drama、iqiyi、ok、piece、piece2、tencent、ziyuan33uu、ziyuan135

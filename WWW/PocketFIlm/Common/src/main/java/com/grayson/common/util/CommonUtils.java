@@ -15,6 +15,7 @@ import org.apache.http.util.EntityUtils;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.constraints.Null;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -58,6 +59,7 @@ public class CommonUtils {
      */
     public static Boolean existCookie(HttpServletRequest request, String cookieName) {
         Cookie[] cookies = request.getCookies();
+        if (cookies == null) return false;
         for (Cookie cookieTemp : cookies) {
             if (cookieTemp.getName().equals("userInfo")) {
                 return true;

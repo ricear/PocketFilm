@@ -6,6 +6,8 @@ import { StorageService } from '../storage.service';
 import { ToolsService } from '../tools.service';
 import { ConfigService } from '../config.service';
 
+declare var $:any;
+
 @Component({
   selector: 'app-movie-detail',
   templateUrl: './movie-detail.page.html',
@@ -45,6 +47,24 @@ export class MovieDetailPage implements OnInit {
 
   ngOnInit() {
   }
+  
+  /**
+   * 切换视频播放资源列表
+   * @param id 资源列表名称
+   */
+	oooTab (id, source_index){
+    this.source_index = source_index
+		this.tools.oooTab(id)
+  }
+  
+  /**
+   * 切换资源列表与简介
+   * @param id 资源列表或简介id
+   */
+  oooTab2(id) {
+    this.tools.oooTab2(id)
+  }
+
 
   /**
    * 修改影视类型

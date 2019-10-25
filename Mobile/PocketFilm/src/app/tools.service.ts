@@ -10,6 +10,8 @@ import { HttpServiceService } from './http-service.service';
 import { StorageService } from './storage.service';
 import { ConfigService } from './config.service';
 
+declare var $:any;
+
 @Injectable({
   providedIn: 'root'
 })
@@ -26,7 +28,7 @@ export class ToolsService {
     public downloader: Downloader,
     public appVersion: AppVersion,
     public sanitizer: DomSanitizer
-    ) {
+  ) {
     console.log('Hello ToolsProvider Provider');
   }
 
@@ -72,6 +74,32 @@ export class ToolsService {
   }
 
   /**
+   * 切换视频播放资源列表
+   * @param id 资源列表名称
+   */
+  oooTab(id) {
+    $("#" + id).addClass("current").siblings().removeClass("current").parent().siblings().hide().siblings("." + id).show();
+  }
+
+  /**
+   * 切换资源列表与简介
+   * @param id 资源列表或简介id
+   */
+  oooTab2(id) {
+    if (id == 0) {
+      $('.tabNav').find('li')[0].children[0].setAttribute('class', 'cur')
+      $('.tabCon')[0].setAttribute('style', 'display: block;')
+      $('.tabNav').find('li')[1].children[0].setAttribute('class', '')
+      $('.tabCon')[1].setAttribute('style', 'display: none;')
+    } else if (id == 1) {
+      $('.tabNav').find('li')[0].children[0].setAttribute('class', '')
+      $('.tabCon')[0].setAttribute('style', 'display: none;')
+      $('.tabNav').find('li')[1].children[0].setAttribute('class', 'cur')
+      $('.tabCon')[1].setAttribute('style', 'display: block;')
+    }
+  }
+
+  /**
    * 获取视频解析地址
    */
 
@@ -79,20 +107,7 @@ export class ToolsService {
     var parseUrl;
     var safeUrl;
     if (movie_type == 'movie') {
-      // qq播客(v.qq.com)
-    if (url.indexOf('v.qq.com') != -1) parseUrl = this.config.qqBoke
-    // PPTV视频(v.pptv.com)
-    else if (url.indexOf('v.pptv.com') != -1) parseUrl = this.config.pptv
-    // 奇艺视频(www.iqiyi.com)
-    else if (url.indexOf('www.iqiyi.com') != -1) parseUrl = this.config.qiyi
-    // 芒果视频(www.mgtv.com)
-    else if (url.indexOf('www.mgtv.com') != -1) parseUrl = this.config.mangGuo
-    // 搜狐视频(tv.sohu.com)
-    else if (url.indexOf('tv.sohu.com') != -1) parseUrl = this.config.souHuo
-    // 优酷视频(v.youku.com)
-    else if (url.indexOf('v.youku.com') != -1) parseUrl = this.config.youKu
-    // jsm3u8、yjm3u8、zuidam3u8、91m3u8(m3u8)、其它
-    else parseUrl = this.config.bljiex
+      parseUrl = this.config.bljiex
     } else if (movie_type == 'tv') {
       parseUrl = this.config.tv
     } else if (movie_type == 'drama') {
@@ -263,7 +278,7 @@ export class ToolsService {
 
   getSearchApi(searchType, pageIndex, pageSize) {
     var promise = new Promise((resolve, reject) => {
-      var api = '/search/get/all?search_type='+searchType+'&page_index=' + pageIndex + '&page_size=' + pageSize
+      var api = '/search/get/all?search_type=' + searchType + '&page_index=' + pageIndex + '&page_size=' + pageSize
       this.httpService.doGet(api, (data) => {
         resolve(data)
       })
@@ -482,7 +497,7 @@ export class ToolsService {
    */
 
   getMovieListApi(type, selectTypeList, pageIndex, pageSize, sortType, keyWord) {
-    var typeList = ['电影', '电视剧', '综艺', '动漫']
+    var typeList = ['电影', '电视剧', '综艺', '动漫', '少儿']
     //  分类
     var type2 = null
     //  地区
@@ -496,8 +511,8 @@ export class ToolsService {
         region = selectTypeList[1]
         release_date = selectTypeList[2]
       } else {
-        //  综艺、动漫
-        type2 = typeList[type]
+        //  综艺、动漫、少儿
+        type2 = typeList[type] + '片'
         region = selectTypeList[0]
         release_date = selectTypeList[1]
       }

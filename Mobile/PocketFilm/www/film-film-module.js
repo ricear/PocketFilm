@@ -74,7 +74,7 @@ var FilmPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-title style=\"text-align: center;\">{{typeNameList[type]}}</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <!-- 下拉刷新 -->\n  <ion-refresher (ionRefresh)=\"doRefresh($event)\">\n    <ion-refresher-content pullingIcon=\"arrow-dropdown\" pullingText=\"松开刷新\" refreshingSpinner=\"circles\"\n      refreshingText=\"正在刷新\">\n    </ion-refresher-content>\n  </ion-refresher>\n  <!-- 下拉刷新 -->\n\n  <!-- 搜索 -->\n  <ion-searchbar (click)=\"goSearchMovie()\" placeholder=\"请输入影视或演员名称\"></ion-searchbar>\n\n  <ion-segment [(ngModel)]=\"type\">\n    <ion-segment-button value=\"0\" (click)=\"changeMovieType(0)\">\n      电影\n    </ion-segment-button>\n    <ion-segment-button value=\"1\" (click)=\"changeMovieType(1)\">\n      电视剧\n    </ion-segment-button>\n    <ion-segment-button value=\"2\" (click)=\"changeMovieType(2)\">\n      综艺\n    </ion-segment-button>\n    <ion-segment-button value=\"3\" (click)=\"changeMovieType(3)\">\n      动漫\n    </ion-segment-button>\n  </ion-segment>\n\n  <!-- 推荐数据 -->\n  <ion-item lines=\"none\">\n    <ion-label slot=\"start\"><span>猜你喜欢</span></ion-label>\n    <ion-label slot=\"end\" (click)=\"goMoreRecommendations()\"><span>更多</span></ion-label>\n  </ion-item>\n  <ion-grid>\n    <ion-row *ngFor=\"let latestTop10Movie of recommendations\">\n      <ion-col *ngFor=\"let latestTop10Movie2 of latestTop10Movie\" (click)=\"goMovieDetail((latestTop10Movie2._id))\">\n        <div>\n          <img src=\"{{latestTop10Movie2.src}}\"\n            onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\" class=\"movie_img\">\n        </div>\n        <p class=\"movie-detail\" style=\"margin: 0px;\">{{latestTop10Movie2.name}}</p>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <!-- 最新影视 -->\n  <ion-item lines=\"none\">\n    <ion-label slot=\"start\"><span>最新{{typeNameList[type]}}</span></ion-label>\n    <ion-label slot=\"end\" (click)=\"goMoreMovie(1)\"><span>更多</span></ion-label>\n  </ion-item>\n  <ion-grid>\n    <ion-row *ngFor=\"let latestTop10Movie of latestTop10Movies\">\n      <ion-col *ngFor=\"let latestTop10Movie2 of latestTop10Movie\" (click)=\"goMovieDetail((latestTop10Movie2._id))\">\n        <div>\n          <img src=\"{{latestTop10Movie2.src}}\"\n            onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\" class=\"movie_img\">\n        </div>\n        <p class=\"movie-detail\" style=\"margin: 0px;\">{{latestTop10Movie2.name}}</p>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <!-- 最热影视 -->\n  <ion-item lines=\"none\">\n    <ion-label slot=\"start\"><span>最热{{typeNameList[type]}}</span></ion-label>\n    <ion-label slot=\"end\" (click)=\"goMoreMovie(2)\"><span>更多</span></ion-label>\n  </ion-item>\n  <ion-grid>\n    <ion-row *ngFor=\"let hottestTop10Movie of hottestTop10Movies\">\n      <ion-col *ngFor=\"let hottestTop10Movie2 of hottestTop10Movie\" (click)=\"goMovieDetail((hottestTop10Movie2._id))\">\n        <div>\n          <img src=\"{{hottestTop10Movie2.src}}\"\n            onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\" class=\"movie_img\">\n        </div>\n        <p class=\"movie-detail\" style=\"margin: 0px;\">{{hottestTop10Movie2.name}}</p>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-title style=\"text-align: center;\">{{typeNameList[type]}}</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <!-- 下拉刷新 -->\n  <ion-refresher (ionRefresh)=\"doRefresh($event)\">\n    <ion-refresher-content pullingIcon=\"arrow-dropdown\" pullingText=\"松开刷新\" refreshingSpinner=\"circles\"\n      refreshingText=\"正在刷新\">\n    </ion-refresher-content>\n  </ion-refresher>\n  <!-- 下拉刷新 -->\n\n  <!-- 搜索 -->\n  <ion-searchbar (click)=\"goSearchMovie()\" placeholder=\"请输入影视或演员名称\"></ion-searchbar>\n\n  <ion-segment scrollable [(ngModel)]=\"type\">\n    <ion-segment-button value=\"0\" (click)=\"changeMovieType(0)\">\n      电影\n    </ion-segment-button>\n    <ion-segment-button value=\"1\" (click)=\"changeMovieType(1)\">\n      电视剧\n    </ion-segment-button>\n    <ion-segment-button value=\"2\" (click)=\"changeMovieType(2)\">\n      综艺\n    </ion-segment-button>\n    <ion-segment-button value=\"3\" (click)=\"changeMovieType(3)\">\n      动漫\n    </ion-segment-button>\n    <ion-segment-button value=\"4\" (click)=\"changeMovieType(4)\">\n      少儿\n    </ion-segment-button>\n  </ion-segment>\n\n  <!-- 推荐数据 -->\n  <section class=\"main\">\n    <div id=\"page\">\n    </div>\n\n    <!-- 最热影视 -->\n    <div class=\"mod_a globalPadding\">\n      <div class=\"th_a\"><span class=\"sMark\"><i class=\"iPoint\"></i>最热{{typeNameList[type]}}</span><span class=\"span-more\"\n          (click)=\"goMoreMovie(1)\">更多</span></div>\n      <div class=\"tb_a\">\n        <ul class=\"picTxt picTxtA clearfix\" id=\"data_list\">\n          <li *ngFor=\"let latestTop10Movie of hottestTop10Movies\" (click)=\"goMovieDetail((latestTop10Movie._id))\">\n            <div class=\"con\">\n              <a title=\"{{latestTop10Movie.name}}\"><img\n                  data-src=\"{{latestTop10Movie.src}}\" alt=\"{{latestTop10Movie.name}}\" src=\"{{latestTop10Movie.src}}\"\n                  onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"\n                  style=\"width: 158px; height: 159px; display: block;\"><span class=\"sNum\"><em\n                    class=\"emScore\">{{latestTop10Movie.update_status}}</em></span> <span\n                  class=\"sTit\">{{latestTop10Movie.name}}</span> </a>\n            </div>\n          </li>\n        </ul>\n      </div>\n    </div>\n\n    <!-- 最新影视 -->\n    <div class=\"mod_a globalPadding\">\n      <div class=\"th_a\"><span class=\"sMark\"><i class=\"iPoint\"></i>最新{{typeNameList[type]}}</span><span class=\"span-more\"\n          (click)=\"goMoreMovie(1)\">更多</span></div>\n      <div class=\"tb_a\">\n        <ul class=\"picTxt picTxtA clearfix\" id=\"data_list\">\n          <li *ngFor=\"let latestTop10Movie of latestTop10Movies\" (click)=\"goMovieDetail((latestTop10Movie._id))\">\n            <div class=\"con\">\n              <a title=\"{{latestTop10Movie.name}}\"><img\n                  data-src=\"{{latestTop10Movie.src}}\" alt=\"{{latestTop10Movie.name}}\" src=\"{{latestTop10Movie.src}}\"\n                  onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"\n                  style=\"width: 158px; height: 159px; display: block;\"><span class=\"sNum\"><em\n                    class=\"emScore\">{{latestTop10Movie.update_status}}</em></span> <span\n                  class=\"sTit\">{{latestTop10Movie.name}}</span> </a>\n            </div>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </section>\n\n</ion-content>"
 
 /***/ }),
 
@@ -123,7 +123,7 @@ var FilmPage = /** @class */ (function () {
         // 影视类型
         this.type = 0;
         // 影视类型名称列表
-        this.typeNameList = ['电影', '电视剧', '综艺', '动漫'];
+        this.typeNameList = ['电影', '电视剧', '综艺', '动漫', '少儿'];
         // 每行电影的数量
         this.col_size = 4;
         this.source_index = 0;
@@ -135,7 +135,7 @@ var FilmPage = /** @class */ (function () {
         // 当前页码
         this.pageIndex = 1;
         // 每页大小
-        this.pageSize = 8;
+        this.pageSize = 9;
         // 关键词
         this.keyWord = 'null';
         // 清空缓存
@@ -207,23 +207,7 @@ var FilmPage = /** @class */ (function () {
                 // 本地没有相应的缓存
                 _this.tools.getMovieListApi(type, _this.selectTypeList, _this.pageIndex, _this.pageSize, sortType, _this.keyWord).then(function (data) {
                     if (data.code == 0) {
-                        // 截取电影名称的长度
-                        var name_length = 5;
-                        var top10Movies = [];
-                        var latestTop10MoviesTemp = [];
-                        var latestTop10MoviesTemp2 = [];
-                        latestTop10MoviesTemp = data.data;
-                        latestTop10MoviesTemp.forEach(function (data) {
-                            var movie_name = data.name;
-                            if (movie_name.length > name_length) {
-                                movie_name = movie_name.slice(0, name_length) + "...";
-                            }
-                            data.name = movie_name;
-                            latestTop10MoviesTemp2.push(data);
-                        });
-                        for (var i = 0; i < latestTop10MoviesTemp2.length;) {
-                            top10Movies.push(latestTop10MoviesTemp2.splice(i, _this.col_size));
-                        }
+                        var top10Movies = data.data;
                         _this.storage.set('movie-' + type + '-' + sortType, top10Movies);
                         resolve(top10Movies);
                     }
@@ -318,8 +302,8 @@ var FilmPage = /** @class */ (function () {
     FilmPage.prototype.clearCache = function () {
         // 清空对应的缓存数据
         this.storage.set('movie-' + this.type + '-recommendations', []);
-        this.storage.set('movie-' + this.type + '-0', []);
         this.storage.set('movie-' + this.type + '-1', []);
+        this.storage.set('movie-' + this.type + '-2', []);
     };
     FilmPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

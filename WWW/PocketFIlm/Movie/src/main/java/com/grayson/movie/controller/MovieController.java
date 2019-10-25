@@ -45,7 +45,7 @@ public class MovieController {
 
         Integer pageSize = 18;
         //  推荐
-        String recommendationsUrl = Configs.API + "/movie/get/all?sort_type=0&page_size=" + pageSize;
+        String recommendationsUrl = Configs.API + "/movie/get/all?sort_type=2&page_size=" + pageSize;
         //  电影
         String movies0Url = Configs.API + "/movie/get/all?type=0&page_size=" + pageSize;
         //  电视剧
@@ -54,6 +54,8 @@ public class MovieController {
         String movies2Url = Configs.API + "/movie/get/all?type=2&page_size=" + pageSize;
         //  动漫
         String movies3Url = Configs.API + "/movie/get/all?type=3&page_size=" + pageSize;
+        //  少儿
+        String movies4Url = Configs.API + "/movie/get/all?type=4&page_size=" + pageSize;
         //  今日更新
         String todayMoviesUrl = Configs.API + "/get/today?type=movie";
         //  今日更新数据量
@@ -63,6 +65,7 @@ public class MovieController {
         JSONObject movies1Object = CommonUtils.doGet(movies1Url);
         JSONObject movies2Object = CommonUtils.doGet(movies2Url);
         JSONObject movies3Object = CommonUtils.doGet(movies3Url);
+        JSONObject movies4Object = CommonUtils.doGet(movies4Url);
         JSONObject todayMoviesObject = CommonUtils.doGet(todayMoviesUrl);
         JSONObject todayCountObject = CommonUtils.doGet(todayCountUrl);
         map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
@@ -70,6 +73,7 @@ public class MovieController {
         map.addAttribute("movies1", movies1Object.getJSONArray("data"));
         map.addAttribute("movies2", movies2Object.getJSONArray("data"));
         map.addAttribute("movies3", movies3Object.getJSONArray("data"));
+        map.addAttribute("movies4", movies4Object.getJSONArray("data"));
         map.addAttribute("todayMovies", todayMoviesObject.getJSONArray("data"));
         map.addAttribute("todayCount", todayCountObject.getInteger("data"));
         map.addAttribute("title", "掌上影视_免费在线观看电影电视剧综艺动漫韩剧港剧台剧泰剧欧美剧日剧");
@@ -141,7 +145,7 @@ public class MovieController {
      * @return 影视数据
      */
     @RequestMapping("/more")
-    public String getMoreMovie(ModelMap map, HttpServletRequest request, @RequestParam(value = "type", defaultValue = "0") String type, @RequestParam(value = "type2", defaultValue = "全部") String type2, @RequestParam(value = "re_gion", defaultValue = "全部") String region, @RequestParam(value = "release_date", defaultValue = "全部") String release_date, @RequestParam(value = "page_index", defaultValue = "1") String page_index, @RequestParam(value = "sort_type", defaultValue = "0") String sort_type, @RequestParam(value = "key_word", defaultValue = "null") String key_word) {
+    public String getMoreMovie(ModelMap map, HttpServletRequest request, @RequestParam(value = "type", defaultValue = "0") String type, @RequestParam(value = "type2", defaultValue = "全部") String type2, @RequestParam(value = "re_gion", defaultValue = "全部") String region, @RequestParam(value = "release_date", defaultValue = "全部") String release_date, @RequestParam(value = "page_index", defaultValue = "1") String page_index, @RequestParam(value = "sort_type", defaultValue = "0") String sort_type, @RequestParam(value = "key_word", defaultValue = "") String key_word) {
         //  获取用户名
         String cookieName = "userInfo";
         JSONObject userInfo = CommonUtils.getCookieValue(request, cookieName);
@@ -158,7 +162,7 @@ public class MovieController {
 
         //  影视类型
         List<String> typeNames = new ArrayList<>();
-        typeNames.addAll(Arrays.asList("电影", "电视剧", "综艺", "动漫"));
+        typeNames.addAll(Arrays.asList("电影", "电视剧", "综艺", "动漫", "少儿"));
         //  每页大小
         Integer pageSize = 30;
         //  获取影视类型

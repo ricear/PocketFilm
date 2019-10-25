@@ -58,7 +58,7 @@ var SearchMoviePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-back-button defaultHref=\"/\" slot=\"start\"></ion-back-button>\n    <ion-title style=\"text-align: center;\">影视搜索</ion-title>\n  </ion-toolbar>\n\n</ion-header>\n\n<ion-content>\n\n  <!-- 搜索 -->\n  <div>\n    <table style=\"width: 100%;\">\n      <tr>\n        <td>\n          <ion-searchbar (ionInput)=\"searchMovies($event)\" placeholder=\"请输入影视或演员名称\" [value]=\"keyWord\"></ion-searchbar>\n        </td>\n        <td>\n          <ion-button color=\"danger\" (click)=\"doSearch()\">搜索</ion-button>\n        </td>\n      </tr>\n    </table>\n  </div>\n\n  <!-- 搜索记录 -->\n  <ion-list class=\"search-history\" *ngIf=\"history\">\n    <ion-label class=\"title\">历史记录</ion-label>\n    <div>\n      <span *ngFor=\"let search of searchList\" (click)=\"searchMoviesWithSearchHistory(search.key_word)\">{{search.key_word}}</span>&nbsp;&nbsp;\n    </div>\n  </ion-list>\n\n  <!-- 搜索时显示的结果 -->\n  <ion-list *ngIf=\"!search\">\n    <ion-item *ngFor=\"let movie of movieList\" (click)=\"goMovieDetail(movie._id)\">\n      <ion-thumbnail slot=\"start\">\n        <ion-img [src]=\"movie.src\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\">\n        </ion-img>\n      </ion-thumbnail>\n      <p>{{movie.name}}</p>\n    </ion-item>\n  </ion-list>\n  <!-- 搜索后显示的结果 -->\n  <ion-grid *ngIf=\"search\">\n    <ion-row *ngFor=\"let movie of movieList\">\n      <ion-col *ngFor=\"let movie2 of movie\" (click)=\"goMovieDetail((movie2._id))\">\n        <div>\n          <img src=\"{{movie2.src}}\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"\n            class=\"movie_img\">\n        </div>\n        <p class=\"movie-detail\" style=\"margin: 0px;\">{{movie2.name}}</p>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n  <!-- 上拉加载更多 -->\n  <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n    <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n  <!-- 上拉加载更多 -->\n\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-back-button defaultHref=\"/\" slot=\"start\"></ion-back-button>\n    <ion-title style=\"text-align: center;\">影视搜索</ion-title>\n  </ion-toolbar>\n\n</ion-header>\n\n<ion-content>\n\n  <!-- 搜索 -->\n  <div>\n    <table style=\"width: 100%;\">\n      <tr>\n        <td>\n          <ion-searchbar (ionInput)=\"searchMovies($event)\" placeholder=\"请输入影视或演员名称\" [value]=\"keyWord\"></ion-searchbar>\n        </td>\n        <td>\n          <ion-button color=\"danger\" (click)=\"doSearch()\">搜索</ion-button>\n        </td>\n      </tr>\n    </table>\n  </div>\n\n  <!-- 搜索记录 -->\n  <ion-list class=\"search-history\" *ngIf=\"history\">\n    <ion-label class=\"title\">历史记录</ion-label>\n    <div>\n      <span *ngFor=\"let search of searchList\"\n        (click)=\"searchMoviesWithSearchHistory(search.key_word)\">{{search.key_word}}</span>&nbsp;&nbsp;\n    </div>\n  </ion-list>\n\n  <!-- 搜索时显示的结果 -->\n  <ion-list *ngIf=\"!search\">\n    <ion-item *ngFor=\"let movie of movieList\" (click)=\"goMovieDetail(movie._id)\">\n      <ion-thumbnail slot=\"start\" class=\"ios hydrated\">\n        <img src=\"{{movie.src}}\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\">\n      </ion-thumbnail>\n      <ion-label class=\"sc-ion-label-ios-h sc-ion-label-ios-s ios hydrated\">\n        <h2>{{movie.name}}</h2>\n        <h3>{{movie.type}}&nbsp;&nbsp;{{movie.type2}}</h3>\n        <p>{{movie.update_status}}</p>\n      </ion-label>\n    </ion-item>\n  </ion-list>\n  <!-- 搜索后显示的结果 -->\n  <section class=\"main\" *ngIf=\"search\">\n    <div id=\"page\">\n    </div>\n    <div class=\"mod_a globalPadding\">\n      <div class=\"tb_a\">\n        <ul class=\"picTxt picTxtA clearfix\" id=\"data_list\">\n          <li *ngFor=\"let latestTop10Movie of movieList\" (click)=\"goMovieDetail((latestTop10Movie._id))\">\n            <div class=\"con\">\n              <a title=\"{{latestTop10Movie.name}}\"><img data-src=\"{{latestTop10Movie.src}}\"\n                  alt=\"{{latestTop10Movie.name}}\" src=\"{{latestTop10Movie.src}}\"\n                  onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"\n                  style=\"width: 158px; height: 159px; display: block;\"><span class=\"sNum\"><em\n                    class=\"emScore\">{{latestTop10Movie.update_status}}</em></span> <span\n                  class=\"sTit\">{{latestTop10Movie.name}}</span> </a>\n            </div>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </section>\n\n  <!-- 上拉加载更多 -->\n  <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n    <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n  <!-- 上拉加载更多 -->\n\n</ion-content>"
 
 /***/ }),
 
@@ -195,29 +195,12 @@ var SearchMoviePage = /** @class */ (function () {
      * 搜索
      */
     SearchMoviePage.prototype.doSearch = function () {
-        var _this = this;
         // 修改为已搜索
         this.search = true;
         // 修改为不显示搜索历史记录
         this.history = false;
-        // 截取电影名称的长度
-        var name_length = 4;
-        this.movieListTemp = this.movieList;
-        // 清空影视列表数据
-        this.movieList = [];
         // 修改当前页码为1
         this.pageIndex = 1;
-        this.movieListTemp.forEach(function (data) {
-            var movie_name = data.name;
-            if (movie_name.length > name_length) {
-                movie_name = movie_name.slice(0, name_length) + "...";
-            }
-            data.name = movie_name;
-            _this.movieListTemp2.push(data);
-        });
-        for (var i = 0; i < this.movieListTemp2.length;) {
-            this.movieList.push(this.movieListTemp2.splice(i, this.col_size));
-        }
         this.saveSearchHistory();
     };
     /**

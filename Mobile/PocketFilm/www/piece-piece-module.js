@@ -58,7 +58,7 @@ var PiecePageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-title style=\"text-align: center;\">小品</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <!-- 搜索 -->\n  <ion-searchbar (click)=\"goSearchPiece()\" placeholder=\"请输入小品名称\"></ion-searchbar>\n\n  <!-- 下拉刷新 -->\n<ion-refresher (ionRefresh)=\"doRefresh($event)\">\n   <ion-refresher-content pullingIcon=\"arrow-dropdown\" pullingText=\"松开刷新\" refreshingSpinner=\"circles\"\n     refreshingText=\"正在刷新\">\n   </ion-refresher-content>\n </ion-refresher>\n <!-- 下拉刷新 -->\n\n <!-- 第一种戏曲分类 -->\n <ion-segment [(ngModel)]=\"type\" scrollable>\n    <ion-segment-button  *ngFor=\"let type of typeList;let i = index\" value=\"{{type}}\" (click)=\"changeType(type)\">\n      {{type}}\n    </ion-segment-button>\n  </ion-segment>\n\n  <!-- 第二种戏曲分类 -->\n <ion-segment [(ngModel)]=\"type2\" scrollable>\n  <ion-segment-button  *ngFor=\"let type of type2List;let i = index\" value=\"{{type}}\" (click)=\"changeType2(type)\">\n    {{type}}\n  </ion-segment-button>\n</ion-segment>\n\n <ion-list>\n   <!-- 戏曲类型 -->\n  <ion-grid>\n    <ion-row *ngFor=\"let piece of pieceList\">\n      <ion-col *ngFor=\"let piece2 of piece\" (click)=\"goPieceDetail((piece2._id))\">\n            <div>\n                <img src=\"{{piece2.src}}\" onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\" class=\"movie_img\">\n              </div>\n              <p class=\"movie-detail\" style=\"margin: 0px;\">{{piece2.name}}</p>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n </ion-list>\n\n <!-- 上拉加载更多 -->\n <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n  <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n  </ion-infinite-scroll-content>\n</ion-infinite-scroll>\n<!-- 上拉加载更多 -->\n\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-title style=\"text-align: center;\">小品</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <!-- 搜索 -->\n  <ion-searchbar (click)=\"goSearchPiece()\" placeholder=\"请输入小品名称\"></ion-searchbar>\n\n  <!-- 下拉刷新 -->\n<ion-refresher (ionRefresh)=\"doRefresh($event)\">\n   <ion-refresher-content pullingIcon=\"arrow-dropdown\" pullingText=\"松开刷新\" refreshingSpinner=\"circles\"\n     refreshingText=\"正在刷新\">\n   </ion-refresher-content>\n </ion-refresher>\n <!-- 下拉刷新 -->\n\n <!-- 第一种戏曲分类 -->\n <ion-segment [(ngModel)]=\"type\" scrollable>\n    <ion-segment-button  *ngFor=\"let type of typeList;let i = index\" value=\"{{type}}\" (click)=\"changeType(type)\">\n      {{type}}\n    </ion-segment-button>\n  </ion-segment>\n\n  <!-- 第二种戏曲分类 -->\n <ion-segment [(ngModel)]=\"type2\" scrollable>\n  <ion-segment-button  *ngFor=\"let type of type2List;let i = index\" value=\"{{type}}\" (click)=\"changeType2(type)\">\n    {{type}}\n  </ion-segment-button>\n</ion-segment>\n\n <!-- 小品数据 -->\n <section class=\"main\">\n  <div id=\"page\">\n  </div>\n  <div class=\"mod_a globalPadding\">\n    <div class=\"tb_a\">\n      <ul class=\"picTxt picTxtA clearfix\" id=\"data_list\">\n        <li *ngFor=\"let latestTop10Movie of pieceList\" (click)=\"goPieceDetail((latestTop10Movie._id))\">\n          <div class=\"con\">\n            <a title=\"{{latestTop10Movie.name}}\"><img\n                data-src=\"{{latestTop10Movie.src}}\" alt=\"{{latestTop10Movie.name}}\" src=\"{{latestTop10Movie.src}}\"\n                onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"\n                style=\"width: 158px; height: 159px; display: block;\"> <span\n                class=\"sTit\">{{latestTop10Movie.name}}</span> </a>\n          </div>\n        </li>\n      </ul>\n    </div>\n  </div>\n</section>\n\n <!-- 上拉加载更多 -->\n <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n  <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n  </ion-infinite-scroll-content>\n</ion-infinite-scroll>\n<!-- 上拉加载更多 -->\n\n</ion-content>"
 
 /***/ }),
 
@@ -99,9 +99,9 @@ var PiecePage = /** @class */ (function () {
         this.tools = tools;
         this.router = router;
         // 小品类型
-        this.type = '推荐';
+        this.type = '全部';
         this.type2 = '全部';
-        this.typeList = ['推荐'];
+        this.typeList = ['全部', '推荐'];
         this.type2List = [];
         this.type2Map = new Map();
         // 小品类型列表
@@ -129,9 +129,11 @@ var PiecePage = /** @class */ (function () {
         // 关键词
         this.keyWord = 'null';
         // 限制数量
-        this.limit = 16;
+        this.limit = 15;
         // 浏览类型
         this.browse_type = 'piece';
+        // 清空缓存
+        this.clearCache();
         // 获取戏曲类型列表
         this.getPieceTypes();
         // 获取小品列表
@@ -174,7 +176,7 @@ var PiecePage = /** @class */ (function () {
     PiecePage.prototype.getPieces = function () {
         var _this = this;
         var movieList = this.storage.get('piece-' + this.type + '-' + this.type2);
-        if (movieList == null || movieList.length == 0 || this.pageIndex > (movieList.length * this.col_size) / this.pageSize) {
+        if (movieList == null || movieList.length == 0 || this.pageIndex > (movieList.length / this.pageSize)) {
             if (this.type == '推荐') {
                 this.getRecommendations().then(function (data) {
                     _this.pieceList = _this.pieceList.concat(data);
@@ -203,21 +205,7 @@ var PiecePage = /** @class */ (function () {
             _this.tools.getRecommendationsApi(_this.browse_type, '全部', _this.limit, _this.pageIndex, _this.pageSize).then(function (data) {
                 // 截取电影名称的长度
                 var name_length = 5;
-                var top10Movies = [];
-                var latestTop10MoviesTemp = [];
-                var latestTop10MoviesTemp2 = [];
-                latestTop10MoviesTemp = data.data;
-                latestTop10MoviesTemp.forEach(function (data) {
-                    var movie_name = data.name;
-                    if (movie_name.length > name_length) {
-                        movie_name = movie_name.slice(0, name_length) + "...";
-                    }
-                    data.name = movie_name;
-                    latestTop10MoviesTemp2.push(data);
-                });
-                for (var i = 0; i < latestTop10MoviesTemp2.length;) {
-                    top10Movies.push(latestTop10MoviesTemp2.splice(i, _this.col_size));
-                }
+                var top10Movies = data.data;
                 resolve(top10Movies);
             });
         });
@@ -230,25 +218,11 @@ var PiecePage = /** @class */ (function () {
     PiecePage.prototype.getTop10Pieces = function (type, type2) {
         var _this = this;
         var top10Pieces = [];
-        var latestTop10PiecesTemp = [];
-        var latestTop10PiecesTemp2 = [];
         // 截取电影名称的长度
-        var name_length = 12;
         var promise = new Promise(function (resolve, reject) {
             _this.tools.getPieceListApi(type, type2, _this.pageIndex, _this.pageSize, _this.keyWord).then(function (data) {
                 if (data.code == 0) {
-                    latestTop10PiecesTemp = data.data;
-                    latestTop10PiecesTemp.forEach(function (data) {
-                        var tv_name = data.name;
-                        if (tv_name.length > name_length) {
-                            tv_name = tv_name.slice(0, name_length) + "...";
-                        }
-                        data.name = tv_name;
-                        latestTop10PiecesTemp2.push(data);
-                    });
-                    for (var i = 0; i < latestTop10PiecesTemp2.length;) {
-                        top10Pieces.push(latestTop10PiecesTemp2.splice(i, _this.col_size));
-                    }
+                    top10Pieces = data.data;
                     resolve(top10Pieces);
                 }
             });
@@ -312,7 +286,7 @@ var PiecePage = /** @class */ (function () {
      * 改变第一种小品类型
      */
     PiecePage.prototype.changeType = function (type) {
-        if (type == '推荐' || this.type2Map.get(type) == '') {
+        if (type == '全部' || type == '推荐' || this.type2Map.get(type) == '') {
             // 如果第一种类型为全部或者没有第二种类型，则设置第二种类型为空
             this.type2List = [];
         }

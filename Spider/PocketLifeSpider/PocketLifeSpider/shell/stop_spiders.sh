@@ -23,6 +23,6 @@ for var in ${array[@]}
 do
 	# 停止服务
 	echo '正在停止 '${var} 
-	ps -ef | grep ${var} | grep -v grep |awk '{print $2}' | xargs kill -9
+	ps -ef | grep 'scrapy crawl '${var} | grep -v grep |awk '{print $2}' | xargs kill -9
 	echo ${var} ' 停止成功'
 done

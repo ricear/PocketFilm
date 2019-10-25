@@ -15,6 +15,11 @@ class Ziyuan135Spider(scrapy.Spider):
     type = 'movie_sources'
     # 电影总数
     total = 0
+    page_size = 50
+    total_page = 0
+    total = 0
+    total_valid = 0
+    index = 0
 
     custom_settings = {
         'ITEM_PIPELINES': {
@@ -23,27 +28,30 @@ class Ziyuan135Spider(scrapy.Spider):
     }
 
     def __init__(self, target=None, keyword=None, name=None, **kwargs):
-            super(Ziyuan135Spider, self).__init__(name, **kwargs)
-            self.orign_url = self.domain + '/?m=vod-index-pg-'
-            self.start_urls = [self.orign_url + '1.html']
+        super(Ziyuan135Spider, self).__init__(name, **kwargs)
+        self.orign_url = self.domain + '/?m=vod-index-pg-'
+        self.start_urls = [self.orign_url + '1.html']
+
+        if (target == None):
             # 获取电影总数
-            total = 0
             orign_html = get_one_page(self.start_urls[0])
             orign_html = etree.HTML(orign_html)
-            total = (int)(get_str_from_xpath(orign_html.xpath('//div[@class="topright"]/ul[2]/li/strong/text()')))
+            self.total = (int)(get_str_from_xpath(orign_html.xpath('//div[@class="topright"]/ul[2]/li/strong/text()')))
             start_page = 2
-            page_size = 50
-            total_page = total // page_size
-            if total_page % page_size != 0:
-                total_page = total_page + 1
-            for page_index in reverse_arr(range(start_page, total_page + 1)):
+            self.total_page = self.total // self.page_size
+            if self.total % self.page_size != 0:
+                self.total_page = self.total_page + 1
+            for page_index in reverse_arr(range(start_page, self.total_page + 1)):
+                self.start_urls.append(self.orign_url + str(page_index) + '.html')
+        elif (target == 'latest'):
+            start_page = 2
+            self.total_page = 6
+            self.total = self.page_size * self.total_page
+            for page_index in reverse_arr(range(start_page, self.total_page + 1)):
                 self.start_urls.append(self.orign_url + str(page_index) + '.html')
 
     def parse(self, response):
 
-        # 判断当前数据是否爬取
-        if check_spider_history(self.type, response.url) == True:
-            pass
         # 开始时间
         start = time.time()
         # 获取 web 驱动
@@ -59,18 +67,27 @@ class Ziyuan135Spider(scrapy.Spider):
 
         url = response.url
         print('当前页面：' + url)
+        curr_page = url.split('/?m=vod-index-pg-')[1].split('.html')[0]
 
         # url：电影详情页
-        index = 5
         count = -1
-        if self.keyword is not None:
-            index = 4
         for each in reverse_arr(response.xpath('//div[@class="xing_vb"]/ul')):
-            count += 1
+            self.index = self.index + 1
+            count = count + 1
             if count == 0 or count == 51:
                 continue
+            url2 = get_str_from_xpath(each.xpath("./li/span[2]/a/@href"))
+            print(url2)
+            id_splits = url2.split('id-')
+            if (len(id_splits) < 2): continue
+            movie_id = id_splits[1].split('.html')[0]
+            # id, src, name, update_time, actors, type, score, release_date, description
+            # 解析视频源
+            # http://135zy0.com/?m=vod-detail-id-14.html
+            url2 = self.domain + '/?m=vod-detail-id-'+movie_id+'.html'
+            print(url2)
             try:
-                url2 = each.xpath("./li/span[2]/a/@href").extract()[0]
+                html = get_one_page(url2)
             except:
                 # 记录跳过的视频信息
                 history_type = 'ziyuan135'
@@ -79,10 +96,6 @@ class Ziyuan135Spider(scrapy.Spider):
                 if (check_spider_history(history_type, history_url, history_text) == False):
                     write_spider_history(history_type, history_url, history_text)
                 continue
-            movie_id = url2.split('id-')[1].split('.html')[0]
-            # id, src, name, update_time, actors, type, score, release_date, description
-            # 解析视频源
-            html = get_one_page(self.domain + url2)
             html = etree.HTML(html)
             # /html/body/div[5]/div[1]/div/div
             # /html/body/div[5]/div[1]/div/div/div[2]/div[1]/h2
@@ -108,13 +121,13 @@ class Ziyuan135Spider(scrapy.Spider):
             if (type == '综艺' or type == '动漫'):
                 if (type2.endswith('片') == False):
                     type2 = type2 + '片'
-            movie_item['type2'] = type2
+            movie_item['type2'] = reverse_type2(type2)
             movie_item['type'] = type
             movie_item['region'] = reverse_region(get_str_from_xpath(each.xpath('./div[2]/div[2]/ul/li[5]/span/text()')))
             movie_item['language'] = get_str_from_xpath(each.xpath('./div[2]/div[2]/ul/li[6]/span/text()'))
-            movie_item['release_date'] = get_str_from_xpath(each.xpath('./div[2]/div[2]/ul/li[7]/span/text()'))
+            movie_item['release_date'] = reverse_release_date(get_str_from_xpath(each.xpath('./div[2]/div[2]/ul/li[7]/span/text()')))
             movie_item['duration'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[8]/span/text()'))
-            movie_item['update_time'] = get_str_from_xpath(each.xpath('./div[2]/div[2]/ul/li[8]/span/text()'))
+            movie_item['update_time'] = reverse_update_time(get_str_from_xpath(each.xpath('./div[2]/div[2]/ul/li[8]/span/text()')))
             movie_item['description'] = get_str_from_xpath(html.xpath('/html/body/div[5]/div[3]/div[2]/text()'))
             sources = []
             count = 1
@@ -127,13 +140,18 @@ class Ziyuan135Spider(scrapy.Spider):
                     type = {'name': '', 'url': ''}
                     type['name'] = get_str_from_xpath(each2.xpath('./text()')).split('$')[0]
                     type['url'] = get_str_from_xpath(each2.xpath('./input/@value'))
-                    print('正在爬取 -> ' + movie_id + ' ' + source['name'] + ' ' + type['name'])
+                    print('正在爬取 ' + curr_page + '/' + (str)(self.total_page) + ' ' + (str)(self.index) + '/' + (str)(
+                        self.total) + ' -> ' + movie_id + ' ' + source['name'] + ' ' + type['name'])
                     types.append(type)
                     count = count + 1
                 index = index + 1
                 source['types'] = types
                 sources.append(source)
             movie_item['sources'] = sources
+            # 跳过播放列表为空的视频并记录
+            flag = 0
+            if (len(types) == 0):
+                continue
             if (movie_item['update_status']) == '':
                 movie_item['update_status'] = sources[0]['types'][0]['name']
             # 视频已爬取且未更新
@@ -141,8 +159,8 @@ class Ziyuan135Spider(scrapy.Spider):
                 print(movie_id + ' 已爬取')
                 continue
             yield movie_item
-            self.total += 1
+            self.total_valid = self.total_valid + 1
         # 结束时间
         end = time.time()
         process_time = end - start
-        print('本次共爬取 ' + str(self.total) + ' 条数据，用时 ' + str(process_time) + 's')
+        print('本次共爬取 ' + str(self.total_valid) + ' 条数据，用时 ' + str(process_time) + 's')
