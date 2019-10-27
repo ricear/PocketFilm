@@ -19,7 +19,7 @@
       <file leaf-file-name="api.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routers/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
+            <state relative-caret-position="234">
               <caret line="1643" column="36" selection-start-line="1643" selection-start-column="36" selection-end-line="1643" selection-end-column="36" />
             </state>
           </provider>
@@ -132,7 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>user/</find>
       <find>user/register</find>
       <find>login</find>
       <find>browse</find>
@@ -162,6 +161,7 @@
       <find>key_word == null</find>
       <find>find</find>
       <find>count</find>
+      <find>version/a</find>
     </findStrings>
     <replaceStrings>
       <replace>//</replace>
@@ -389,12 +389,12 @@
       <workItem from="1571896880536" duration="5774000" />
       <workItem from="1572055047072" duration="1193000" />
       <workItem from="1572071685709" duration="3610000" />
-      <workItem from="1572185426329" duration="32000" />
+      <workItem from="1572185426329" duration="559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212767000" />
+    <option name="totallyTimeSpent" value="213294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="741" extended-state="0" />
@@ -816,7 +816,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routers/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
+        <state relative-caret-position="234">
           <caret line="1643" column="36" selection-start-line="1643" selection-start-column="36" selection-end-line="1643" selection-end-column="36" />
         </state>
       </provider>

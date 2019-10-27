@@ -1750,3 +1750,2504 @@ find success 65662
 正在爬取 1/6 20/300 -> 1529 yjyun 第84集
 第85集$https://youku.iqiyi-yongjiu.com/share/1zfkLU50G0jjpauA
 正在爬取 1/6 20/300 -> 1529 yjyun 第85集
+第86集$https://youku.iqiyi-yongjiu.com/share/01U2xwqv0cRFgY3O
+正在爬取 1/6 20/300 -> 1529 yjyun 第86集
+第87集$https://youku.iqiyi-yongjiu.com/share/KhCrptwhCCmcy2md
+正在爬取 1/6 20/300 -> 1529 yjyun 第87集
+第88集$https://youku.iqiyi-yongjiu.com/share/mjKZuPzZII4rfdFl
+正在爬取 1/6 20/300 -> 1529 yjyun 第88集
+第89集$https://v3.yongjiujiexi.com/share/QOBxQ2VZfGlb4cBM
+正在爬取 1/6 20/300 -> 1529 yjyun 第89集
+第90集$https://v3.yongjiujiexi.com/share/r73ZbkqBmYJ4HGMw
+正在爬取 1/6 20/300 -> 1529 yjyun 第90集
+第91集$https://yj.yongjiu6.com/share/TqPwNoeY2vaKHx00
+正在爬取 1/6 20/300 -> 1529 yjyun 第91集
+第92集$https://yj.yongjiu6.com/share/urIs3Diezc9hEvV1
+正在爬取 1/6 20/300 -> 1529 yjyun 第92集
+第93集$https://yj.yongjiu6.com/share/fBcJMGXJ3eNrSIzY
+正在爬取 1/6 20/300 -> 1529 yjyun 第93集
+第94集$https://yj.yongjiu6.com/share/6RjH9ifhAhkYNXqp
+正在爬取 1/6 20/300 -> 1529 yjyun 第94集
+第95集$https://yj.yongjiu6.com/share/6IIyjl6y1pgsS1EL
+正在爬取 1/6 20/300 -> 1529 yjyun 第95集
+第96集$https://yj.yongjiu6.com/share/if3YvusC9M6Xi3uW
+正在爬取 1/6 20/300 -> 1529 yjyun 第96集
+第97集$https://yj.yongjiu6.com/share/w1JQVQzoxaDu33BG
+正在爬取 1/6 20/300 -> 1529 yjyun 第97集
+第98集$https://yj.yongjiu6.com/share/eucWxp0ZBzwKwCHB
+正在爬取 1/6 20/300 -> 1529 yjyun 第98集
+第99集$https://yj.yongjiu6.com/share/EURoOmwl0rmqtdkY
+正在爬取 1/6 20/300 -> 1529 yjyun 第99集
+第100集$https://v3.yongjiujiexi.com/share/2iMg3HosvkZWX7fL
+正在爬取 1/6 20/300 -> 1529 yjyun 第100集
+第101集$https://v3.yongjiujiexi.com/share/y1p212uyPNrJe0Xv
+正在爬取 1/6 20/300 -> 1529 yjyun 第101集
+第102集$https://yj.yongjiu6.com/share/3aWUdhG3MVeDIMco
+正在爬取 1/6 20/300 -> 1529 yjyun 第102集
+第103集$https://v3.yongjiujiexi.com/share/GFJXOjsw4hslAmLu
+正在爬取 1/6 20/300 -> 1529 yjyun 第103集
+第104集$https://yj.yongjiu6.com/share/SoOnUVFkhYvdiops
+正在爬取 1/6 20/300 -> 1529 yjyun 第104集
+第105集$https://yj.yongjiu6.com/share/5jjUEDXEN9VT0JAc
+正在爬取 1/6 20/300 -> 1529 yjyun 第105集
+第106集$https://v3.yongjiujiexi.com/share/aHu9IJTNR2b6Hhcl
+正在爬取 1/6 20/300 -> 1529 yjyun 第106集
+第107集$https://yj.yongjiu6.com/share/PL1pv8otEOQfb5UZ
+正在爬取 1/6 20/300 -> 1529 yjyun 第107集
+第108集$https://yj.yongjiu6.com/share/eZVp2U44bBnZ9e0j
+正在爬取 1/6 20/300 -> 1529 yjyun 第108集
+第109集$https://gaoqing.bibi-baidu.com/share/ffeabd223de0d4eacb9a3e6e53e5448d
+正在爬取 1/6 20/300 -> 1529 yjyun 第109集
+第110集$https://gaoqing.bibi-baidu.com/share/6eb6e75fddec0218351dc5c0c8464104
+正在爬取 1/6 20/300 -> 1529 yjyun 第110集
+第111集$https://gaoqing.bibi-baidu.com/share/b432f34c5a997c8e7c806a895ecc5e25
+正在爬取 1/6 20/300 -> 1529 yjyun 第111集
+第112集$https://dapian.video-yongjiu.com/share/fb8feff253bb6c834deb61ec76baa893
+正在爬取 1/6 20/300 -> 1529 yjyun 第112集
+第113集$https://dapian.video-yongjiu.com/share/5f6371c9126149517d9ba475def53139
+正在爬取 1/6 20/300 -> 1529 yjyun 第113集
+第114集$https://dapian.video-yongjiu.com/share/f21e255f89e0f258accbe4e984eef486
+正在爬取 1/6 20/300 -> 1529 yjyun 第114集
+第115集$https://gaoqing.bibi-baidu.com/share/34186e9eb70e30487210b962e867b742
+正在爬取 1/6 20/300 -> 1529 yjyun 第115集
+第116集$https://dapian.video-yongjiu.com/share/73c14008d55c730e10bb9412a5be1a16
+正在爬取 1/6 20/300 -> 1529 yjyun 第116集
+第117集$https://dapian.video-yongjiu.com/share/d814f4e3dcf9e6f473e213232b9ba115
+正在爬取 1/6 20/300 -> 1529 yjyun 第117集
+第118集$https://dapian.video-yongjiu.com/share/07b2ee9f02d5e6e8894377afb4feed32
+正在爬取 1/6 20/300 -> 1529 yjyun 第118集
+第119集$https://dapian.video-yongjiu.com/share/f8d2e80c1458ea2501f98a2cafadb397
+正在爬取 1/6 20/300 -> 1529 yjyun 第119集
+第120集$https://dapian.video-yongjiu.com/share/28498620653e59a7e22c2b50748e2766
+正在爬取 1/6 20/300 -> 1529 yjyun 第120集
+第121集$https://dapian.video-yongjiu.com/share/4cea2358d3cc5f8cd32397ca9bc51b94
+正在爬取 1/6 20/300 -> 1529 yjyun 第121集
+第122集$https://dapian.video-yongjiu.com/share/2a8009525763356ad5e3bb48b7475b4d
+正在爬取 1/6 20/300 -> 1529 yjyun 第122集
+第123集$https://dapian.video-yongjiu.com/share/eb76370dc310e4cf08aa362593c451a1
+正在爬取 1/6 20/300 -> 1529 yjyun 第123集
+第124集$https://dapian.video-yongjiu.com/share/3a098b02e2d67a733c661fa9bfbe89ec
+正在爬取 1/6 20/300 -> 1529 yjyun 第124集
+第125集$https://dapian.video-yongjiu.com/share/5694b3b8e68d534f207261f9217afb73
+正在爬取 1/6 20/300 -> 1529 yjyun 第125集
+第126集$https://dapian.video-yongjiu.com/share/91dacc0f5b8d3192aa89bc86db450dc1
+正在爬取 1/6 20/300 -> 1529 yjyun 第126集
+第127集$https://dapian.video-yongjiu.com/share/89a26a363b87a87ac6a94277e841b7f4
+正在爬取 1/6 20/300 -> 1529 yjyun 第127集
+第128集$https://dapian.video-yongjiu.com/share/e523eebf638ca962ed5639f247e5bcbf
+正在爬取 1/6 20/300 -> 1529 yjyun 第128集
+第129集$https://dapian.video-yongjiu.com/share/1d5db17b95b0e6f0d6a73bb51ef38945
+正在爬取 1/6 20/300 -> 1529 yjyun 第129集
+第130集$https://dapian.video-yongjiu.com/share/d3ed9e3df6007d59a203f7b692880796
+正在爬取 1/6 20/300 -> 1529 yjyun 第130集
+20190524$https://v3.yongjiujiexi.com/share/4rF77ouAttv12AMT
+正在爬取 1/6 21/300 -> 24477 yjyun 20190524
+20190607$https://dapian.video-yongjiu.com/share/68264bdb65b97eeae6788aa3348e553c
+正在爬取 1/6 21/300 -> 24477 yjyun 20190607
+20190621$https://dapian.video-yongjiu.com/share/39027dfad5138c9ca0c474d71db915c3
+正在爬取 1/6 21/300 -> 24477 yjyun 20190621
+20190628$https://gaoqing.bibi-baidu.com/share/b7ee0d0d4d5ef995aae0fc691e6d840d
+正在爬取 1/6 21/300 -> 24477 yjyun 20190628
+20190819期$https://dapian.video-yongjiu.com/share/da21bae82c02d1e2b8168d57cd3fbab7
+正在爬取 1/6 21/300 -> 24477 yjyun 20190819期
+20190809期$https://dapian.video-yongjiu.com/share/1872e3d47e965d2e64f63ca01dd937f9
+正在爬取 1/6 21/300 -> 24477 yjyun 20190809期
+20190823期$https://dapian.video-yongjiu.com/share/a1324603d9b1a22277809229934a36fd
+正在爬取 1/6 21/300 -> 24477 yjyun 20190823期
+20190906期$https://dapian.video-yongjiu.com/share/21a8e1f481e73c7e7d9b8f154930b010
+正在爬取 1/6 21/300 -> 24477 yjyun 20190906期
+20190913期$https://dapian.video-yongjiu.com/share/0c620bcfc2a979fe9f22acbe0019f276
+正在爬取 1/6 21/300 -> 24477 yjyun 20190913期
+20190920期$https://dapian.video-yongjiu.com/share/636b1370d6dfae91f2042eef96c994b1
+正在爬取 1/6 21/300 -> 24477 yjyun 20190920期
+20190927期$https://dapian.video-yongjiu.com/share/b025cd6cde5038544af3b6bea29a7a5e
+正在爬取 1/6 21/300 -> 24477 yjyun 20190927期
+20191004期$https://dapian.video-yongjiu.com/share/918d58be2384bacb0c9bfc0481364d1a
+正在爬取 1/6 21/300 -> 24477 yjyun 20191004期
+20191011期$https://dapian.video-yongjiu.com/share/5d62cc5dde712d7c31f35cd30b15439c
+正在爬取 1/6 21/300 -> 24477 yjyun 20191011期
+20191025期$https://dapian.video-yongjiu.com/share/366971226c73b87ab69e87918b9338a5
+正在爬取 1/6 21/300 -> 24477 yjyun 20191025期
+20190119$https://v3.yongjiujiexi.com/share/4kStpvR9Xm4tWK6a
+正在爬取 1/6 22/300 -> 19827 yjyun 20190119
+20190126$https://v3.yongjiujiexi.com/share/ggZo9TI2Xs1ehtWn
+正在爬取 1/6 22/300 -> 19827 yjyun 20190126
+20190202$https://v3.yongjiujiexi.com/share/arVbHhYgFsPowydh
+正在爬取 1/6 22/300 -> 19827 yjyun 20190202
+20190205$https://v3.yongjiujiexi.com/share/x9vfjG2Dp8Al6mJQ
+正在爬取 1/6 22/300 -> 19827 yjyun 20190205
+20190209$https://v3.yongjiujiexi.com/share/mJi1v1Y4E9jiQN8x
+正在爬取 1/6 22/300 -> 19827 yjyun 20190209
+20190216$https://v3.yongjiujiexi.com/share/RzGeNqS1OJY6mfMp
+正在爬取 1/6 22/300 -> 19827 yjyun 20190216
+20190223$https://v3.yongjiujiexi.com/share/irUHoPcF0W1KzC4r
+正在爬取 1/6 22/300 -> 19827 yjyun 20190223
+20190302$https://v3.yongjiujiexi.com/share/Oehd0KFZCbDeAbit
+正在爬取 1/6 22/300 -> 19827 yjyun 20190302
+20190309$https://v3.yongjiujiexi.com/share/4w6yMuuK8d0dvtxC
+正在爬取 1/6 22/300 -> 19827 yjyun 20190309
+20190316$https://v3.yongjiujiexi.com/share/1F2lzq3ny2PIIBgY
+正在爬取 1/6 22/300 -> 19827 yjyun 20190316
+20190323$https://v3.yongjiujiexi.com/share/QCoIExl9CyGVfgLY
+正在爬取 1/6 22/300 -> 19827 yjyun 20190323
+20190330$https://yj.yongjiu6.com/share/PCMSqBMoyrlKKrBL
+正在爬取 1/6 22/300 -> 19827 yjyun 20190330
+20190406$https://yj.yongjiu6.com/share/xawW5WygPT83yVTt
+正在爬取 1/6 22/300 -> 19827 yjyun 20190406
+20190413$https://v3.yongjiujiexi.com/share/s85XDCPMU5ArFuio
+正在爬取 1/6 22/300 -> 19827 yjyun 20190413
+20190420$https://v3.yongjiujiexi.com/share/aNKmqjadhZlpURhQ
+正在爬取 1/6 22/300 -> 19827 yjyun 20190420
+20190427$https://yj.yongjiu6.com/share/oBEPTZX3iT25S6YW
+正在爬取 1/6 22/300 -> 19827 yjyun 20190427
+20190504$https://yj.yongjiu6.com/share/YyXZpgde5MmNEQOg
+正在爬取 1/6 22/300 -> 19827 yjyun 20190504
+20190511$https://v3.yongjiujiexi.com/share/nbQ0Z1sKw6ELmgMd
+正在爬取 1/6 22/300 -> 19827 yjyun 20190511
+20190518$https://v3.yongjiujiexi.com/share/rJ0g00B7jia1YsXk
+正在爬取 1/6 22/300 -> 19827 yjyun 20190518
+20190525$https://v3.yongjiujiexi.com/share/sbkzW21eX3TrNQM0
+正在爬取 1/6 22/300 -> 19827 yjyun 20190525
+20190601$https://dapian.video-yongjiu.com/share/41ae36ecb9b3eee609d05b90c14222fb
+正在爬取 1/6 22/300 -> 19827 yjyun 20190601
+20190608$https://gaoqing.bibi-baidu.com/share/09c6c3783b4a70054da74f2538ed47c6
+正在爬取 1/6 22/300 -> 19827 yjyun 20190608
+20190615$https://gaoqing.bibi-baidu.com/share/e74c0d42b4433905293aab661fcf8ddb
+正在爬取 1/6 22/300 -> 19827 yjyun 20190615
+20190622$https://gaoqing.bibi-baidu.com/share/ed277964a8959e72a0d987e598dfbe72
+正在爬取 1/6 22/300 -> 19827 yjyun 20190622
+20190629$https://gaoqing.bibi-baidu.com/share/471c50ad1a156d7256eddfd747d77931
+正在爬取 1/6 22/300 -> 19827 yjyun 20190629
+20190706$https://gaoqing.bibi-baidu.com/share/0fd4b8a8354a77a3fa75e3d97e7a34e6
+正在爬取 1/6 22/300 -> 19827 yjyun 20190706
+20190713$https://gaoqing.bibi-baidu.com/share/502cbcfede9f1df5528af4204f33e0c8
+正在爬取 1/6 22/300 -> 19827 yjyun 20190713
+20190720期$https://dapian.video-yongjiu.com/share/d3f5d4de09ea19461dab00590df91e4f
+正在爬取 1/6 22/300 -> 19827 yjyun 20190720期
+20190803期$https://dapian.video-yongjiu.com/share/38ccdf8d538de2d6a6deb2ed17d1f873
+正在爬取 1/6 22/300 -> 19827 yjyun 20190803期
+20190810期$https://dapian.video-yongjiu.com/share/b0b07fecb2354efcdfc9671484b6eaa9
+正在爬取 1/6 22/300 -> 19827 yjyun 20190810期
+20190817期$https://dapian.video-yongjiu.com/share/7818354194c4feae57304abadc2c437c
+正在爬取 1/6 22/300 -> 19827 yjyun 20190817期
+20190824期$https://dapian.video-yongjiu.com/share/3d57fe6de705fec3cecae336ae23a03a
+正在爬取 1/6 22/300 -> 19827 yjyun 20190824期
+20190831期$https://dapian.video-yongjiu.com/share/9b22a40256b079f338827b0ff1f4792b
+正在爬取 1/6 22/300 -> 19827 yjyun 20190831期
+20190907期$https://dapian.video-yongjiu.com/share/9697361bd81c04fb4ea891d63104a5a3
+正在爬取 1/6 22/300 -> 19827 yjyun 20190907期
+20190914期$https://dapian.video-yongjiu.com/share/e1ff36b97044a1c7c73c73e4d27aeba4
+正在爬取 1/6 22/300 -> 19827 yjyun 20190914期
+20191005期$https://dapian.video-yongjiu.com/share/5807f0ed140fffaa1f35f16baf72e31b
+正在爬取 1/6 22/300 -> 19827 yjyun 20191005期
+20191012期$https://dapian.video-yongjiu.com/share/af7fc8485f40dc495bc626d6dbe7faf1
+正在爬取 1/6 22/300 -> 19827 yjyun 20191012期
+20191026期$https://dapian.video-yongjiu.com/share/1d8535d9bbe1c66cb6ba50e7f9bb9ee9
+正在爬取 1/6 22/300 -> 19827 yjyun 20191026期
+HD1080P中字$https://dapian.video-yongjiu.com/share/bc7386076e4bf0bd4c58874726403e1e
+正在爬取 1/6 24/300 -> 29857 yjyun HD1080P中字
+第1003集$https://dapian.video-yongjiu.com/share/c5f453687c90109e1f24e56e728a5470
+正在爬取 1/6 25/300 -> 29126 yjyun 第1003集
+第1009集$https://dapian.video-yongjiu.com/share/5d5e9515b2f2319924790e7b360ca785
+正在爬取 1/6 25/300 -> 29126 yjyun 第1009集
+第01集$https://dapian.video-yongjiu.com/share/aabc3012bc828d9b6855535f836f146a
+正在爬取 1/6 26/300 -> 29005 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/eb852fa9d9e60316fa715602baf5bc05
+正在爬取 1/6 26/300 -> 29005 yjyun 第02集
+第03集$http://txxs.mahua-yongjiu.com/share/c81e728d9d4c2f636f067f89cc14862c
+正在爬取 1/6 26/300 -> 29005 yjyun 第03集
+第01集$https://dapian.video-yongjiu.com/share/91cbfe3225b01df1272fd0856ff2bece
+正在爬取 1/6 27/300 -> 28995 yjyun 第01集
+第02集$http://txxs.mahua-yongjiu.com/share/6512bd43d9caa6e02c990b0a82652dca
+正在爬取 1/6 27/300 -> 28995 yjyun 第02集
+第03集$http://txxs.mahua-yongjiu.com/share/d3d9446802a44259755d38e6d163e820
+正在爬取 1/6 27/300 -> 28995 yjyun 第03集
+第01集$https://dapian.video-yongjiu.com/share/5133aa1d673894d5a05b9d83809b9dbe
+正在爬取 1/6 28/300 -> 25849 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/e3b6fb0fd4df098162eede3313c54a8d
+正在爬取 1/6 28/300 -> 25849 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/ca7be8306ecc3f5fa30ff2c41e64fa7b
+正在爬取 1/6 28/300 -> 25849 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/7d3d5bcad324d3edc08e40738e663554
+正在爬取 1/6 28/300 -> 25849 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/7a576629fef88f3e636afd33b09e8289
+正在爬取 1/6 28/300 -> 25849 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/a3c36d0c741ddabbdb44b35a4fbebcb4
+正在爬取 1/6 28/300 -> 25849 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/532923f11ac97d3e7cb0130315b067dc
+正在爬取 1/6 28/300 -> 25849 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/3e91970f771a2c473ae36b60d1146068
+正在爬取 1/6 28/300 -> 25849 yjyun 第08集
+第09集$https://dapian.video-yongjiu.com/share/dc1322dd294effcdac9942803027b362
+正在爬取 1/6 28/300 -> 25849 yjyun 第09集
+第10集$https://dapian.video-yongjiu.com/share/1980fa3bbff704c8bec1b7196cf7dfbc
+正在爬取 1/6 28/300 -> 25849 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/1eee58f7a5d6bd6df171b1d131acd79a
+正在爬取 1/6 28/300 -> 25849 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/9f173dfe8f89078ce25d06126842cef1
+正在爬取 1/6 28/300 -> 25849 yjyun 第12集
+第13集$https://dapian.video-yongjiu.com/share/f23077b60542b92033df4d2e208706de
+正在爬取 1/6 28/300 -> 25849 yjyun 第13集
+第14集$https://dapian.video-yongjiu.com/share/c8145db7ac25fc6cbe4dada249230970
+正在爬取 1/6 28/300 -> 25849 yjyun 第14集
+第15集$https://dapian.video-yongjiu.com/share/7a101913ba86716f839a622ab65bdf3d
+正在爬取 1/6 28/300 -> 25849 yjyun 第15集
+第16集$https://dapian.video-yongjiu.com/share/b20bdabb93c52a6dda63cee1f15fb81e
+正在爬取 1/6 28/300 -> 25849 yjyun 第16集
+第17集$https://dapian.video-yongjiu.com/share/81517079882bbb04ab3b2c1fb244f336
+正在爬取 1/6 28/300 -> 25849 yjyun 第17集
+第18集$https://dapian.video-yongjiu.com/share/efbd304f121218045cb7032edcc74b9f
+正在爬取 1/6 28/300 -> 25849 yjyun 第18集
+第19集$https://dapian.video-yongjiu.com/share/9a405a7732ab4f806431a48f6398a7cb
+正在爬取 1/6 28/300 -> 25849 yjyun 第19集
+第20集$https://dapian.video-yongjiu.com/share/482018fcb72d6725497bebbe9bb83833
+正在爬取 1/6 28/300 -> 25849 yjyun 第20集
+第21集$https://dapian.video-yongjiu.com/share/26c7cc8d05a0dc19cfc07baa975877f1
+正在爬取 1/6 28/300 -> 25849 yjyun 第21集
+第22集$http://txxs.mahua-yongjiu.com/share/c51ce410c124a10e0db5e4b97fc2af39
+正在爬取 1/6 28/300 -> 25849 yjyun 第22集
+第01集$https://dapian.video-yongjiu.com/share/6d16b39c4bdd5c238d55ea70055b4846
+正在爬取 1/6 29/300 -> 28240 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/67fc57486b0fa4d0870568426f32171e
+正在爬取 1/6 29/300 -> 28240 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/4123de1fe8a9630ecd3fbcabaaa95189
+正在爬取 1/6 29/300 -> 28240 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/e63ea51eeb9eb4b91a6c3e5bf35695ed
+正在爬取 1/6 29/300 -> 28240 yjyun 第04集
+第05集$http://txxs.mahua-yongjiu.com/share/45c48cce2e2d7fbdea1afc51c7c6ad26
+正在爬取 1/6 29/300 -> 28240 yjyun 第05集
+第01集$https://dapian.video-yongjiu.com/share/186b690e29892f137b4c34cfa40a3a4d
+正在爬取 1/6 30/300 -> 26657 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/c975028469b2db5ff182d45c92bef0ec
+正在爬取 1/6 30/300 -> 26657 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/8ce8ac3252f7a8981a64d5a473e48ea0
+正在爬取 1/6 30/300 -> 26657 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/77d51151b884ad3ff45714ec42c3dba8
+正在爬取 1/6 30/300 -> 26657 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/3ee7811d398ae2240f5d3f0684ecb8d3
+正在爬取 1/6 30/300 -> 26657 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/4363f14c8e54babb17770c2b4980ceed
+正在爬取 1/6 30/300 -> 26657 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/069802d489a7b73dd31fd13b0f2cd690
+正在爬取 1/6 30/300 -> 26657 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/4d6a0e7e466e151b0a886d2f027183c1
+正在爬取 1/6 30/300 -> 26657 yjyun 第08集
+第09集$https://dapian.video-yongjiu.com/share/0b823d8b45ee3eaf26e538b6cff6f451
+正在爬取 1/6 30/300 -> 26657 yjyun 第09集
+第10集$https://dapian.video-yongjiu.com/share/17827012d084a8cfe269cb35c89e8242
+正在爬取 1/6 30/300 -> 26657 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/5f74249208205551b0714e4c5dcca970
+正在爬取 1/6 30/300 -> 26657 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/aabb29c2158c804b224ffa70bce9d99c
+正在爬取 1/6 30/300 -> 26657 yjyun 第12集
+第13集$https://dapian.video-yongjiu.com/share/ca196f0118b778df5b7fe97b8aea596a
+正在爬取 1/6 30/300 -> 26657 yjyun 第13集
+第14集$https://dapian.video-yongjiu.com/share/2459e63c0cc08d3717f1e159de44586e
+正在爬取 1/6 30/300 -> 26657 yjyun 第14集
+第15集$http://txxs.mahua-yongjiu.com/share/c20ad4d76fe97759aa27a0c99bff6710
+正在爬取 1/6 30/300 -> 26657 yjyun 第15集
+第01集$https://dapian.video-yongjiu.com/share/0b37354e8046d235c36ceb34b8d3754c
+正在爬取 1/6 31/300 -> 28156 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/a2a6a5c6ea38cac0864685dffaea8e92
+正在爬取 1/6 31/300 -> 28156 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/e6e97acfea8d0d3b34ffd456ab9f665c
+正在爬取 1/6 31/300 -> 28156 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/ffba90305889de903ea9b6a6ec4376d9
+正在爬取 1/6 31/300 -> 28156 yjyun 第04集
+第05集$http://txxs.mahua-yongjiu.com/share/c9f0f895fb98ab9159f51fd0297e236d
+正在爬取 1/6 31/300 -> 28156 yjyun 第05集
+第01集$http://txxs.mahua-yongjiu.com/share/eccbc87e4b5ce2fe28308fd9f2a7baf3
+正在爬取 1/6 32/300 -> 29858 yjyun 第01集
+第02集$http://txxs.mahua-yongjiu.com/share/a87ff679a2f3e71d9181a67b7542122c
+正在爬取 1/6 32/300 -> 29858 yjyun 第02集
+第03集$http://txxs.mahua-yongjiu.com/share/e4da3b7fbbce2345d7772b0674a318d5
+正在爬取 1/6 32/300 -> 29858 yjyun 第03集
+第04集$http://txxs.mahua-yongjiu.com/share/1679091c5a880faf6fb5e6087eb1b2dc
+正在爬取 1/6 32/300 -> 29858 yjyun 第04集
+第05集$http://txxs.mahua-yongjiu.com/share/8f14e45fceea167a5a36dedd4bea2543
+正在爬取 1/6 32/300 -> 29858 yjyun 第05集
+20191020期$http://txxs.mahua-yongjiu.com/share/aab3238922bcc25a6f606eb525ffdc56
+正在爬取 1/6 33/300 -> 29859 yjyun 20191020期
+20191013期$https://dapian.video-yongjiu.com/share/8ef93cebb16ab2421ec29798f32a31ff
+正在爬取 1/6 35/300 -> 29040 yjyun 20191013期
+20191020期$https://dapian.video-yongjiu.com/share/bb633eed6f972501da3ea6d9eb9d5e77
+正在爬取 1/6 35/300 -> 29040 yjyun 20191020期
+20191027期$http://txxs.mahua-yongjiu.com/share/b6d767d2f8ed5d21a44b0e5886680cb9
+正在爬取 1/6 35/300 -> 29040 yjyun 20191027期
+20190811期$https://dapian.video-yongjiu.com/share/837a7924b8c0aa866e41b2721f66135c
+正在爬取 1/6 36/300 -> 26131 yjyun 20190811期
+20190818期$https://dapian.video-yongjiu.com/share/fc5a29b5d423c94cdfacb0f706eecdb7
+正在爬取 1/6 36/300 -> 26131 yjyun 20190818期
+20190908期$https://dapian.video-yongjiu.com/share/4053e4891648aa5d0bd54fe6f4beb464
+正在爬取 1/6 36/300 -> 26131 yjyun 20190908期
+20190915期$https://dapian.video-yongjiu.com/share/3fd1b2c1e64d1b6e4a31d9d668849979
+正在爬取 1/6 36/300 -> 26131 yjyun 20190915期
+20190922期$https://dapian.video-yongjiu.com/share/671792587502028b6cd4be7c4d662d08
+正在爬取 1/6 36/300 -> 26131 yjyun 20190922期
+20190929期$https://dapian.video-yongjiu.com/share/d346c2bc24a74cc35bc7c84444da4925
+正在爬取 1/6 36/300 -> 26131 yjyun 20190929期
+20191006期$https://dapian.video-yongjiu.com/share/7bbeb6ee3bfac6732d2df45227ae0e69
+正在爬取 1/6 36/300 -> 26131 yjyun 20191006期
+20191013期$https://dapian.video-yongjiu.com/share/8c368c3a4eece69ea3177a5c36e9f7e4
+正在爬取 1/6 36/300 -> 26131 yjyun 20191013期
+20191020期$https://dapian.video-yongjiu.com/share/d282f0519f8a6cbdb8cf7ac415e9d05d
+正在爬取 1/6 36/300 -> 26131 yjyun 20191020期
+20191027期$http://txxs.mahua-yongjiu.com/share/3c59dc048e8850243be8079a5c74d079
+正在爬取 1/6 36/300 -> 26131 yjyun 20191027期
+20190907期$https://dapian.video-yongjiu.com/share/f17a7558451bf1e93b8a8f5549e4938f
+正在爬取 1/6 37/300 -> 26709 yjyun 20190907期
+20190914期$https://dapian.video-yongjiu.com/share/a529ea43c249fcbee9685c74d8baa9eb
+正在爬取 1/6 37/300 -> 26709 yjyun 20190914期
+20190921期$https://dapian.video-yongjiu.com/share/1fc87e47c0e943e0fb0c36bafbfa8510
+正在爬取 1/6 37/300 -> 26709 yjyun 20190921期
+20190928期$https://dapian.video-yongjiu.com/share/30c9e61c56a0a84b7fd7176f0323d0b6
+正在爬取 1/6 37/300 -> 26709 yjyun 20190928期
+20191019期$https://dapian.video-yongjiu.com/share/c611c3bb714aa29ef5c4dbee6eb0e8c8
+正在爬取 1/6 37/300 -> 26709 yjyun 20191019期
+20191026期$http://txxs.mahua-yongjiu.com/share/37693cfc748049e45d87b8c7d8b9aacd
+正在爬取 1/6 37/300 -> 26709 yjyun 20191026期
+第01集$https://dapian.video-yongjiu.com/share/4513c30b7d281d3bd5b6f91ddb1f61b9
+正在爬取 1/6 38/300 -> 26455 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/d2cb583f4b5bdc51b965ae555ee6bca5
+正在爬取 1/6 38/300 -> 26455 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/4d171e8c3b2ef70c7afb02614b99e632
+正在爬取 1/6 38/300 -> 26455 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/c4dc035d67bc669546c560622ac4bdd4
+正在爬取 1/6 38/300 -> 26455 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/2548e0a7d08ca169af9729e03206e6a1
+正在爬取 1/6 38/300 -> 26455 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/035d4ef6febd5268f7589ea4017e9b82
+正在爬取 1/6 38/300 -> 26455 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/9b01b09edbdae327a17ccc47cc5c6992
+正在爬取 1/6 38/300 -> 26455 yjyun 第07集
+第08集$https://gaoqing.bibi-baidu.com/share/6f3ee5b43d930a54d31a59930b071adc
+正在爬取 1/6 38/300 -> 26455 yjyun 第08集
+第09集$http://txxs.mahua-yongjiu.com/share/c16a5320fa475530d9583c34fd356ef5
+正在爬取 1/6 38/300 -> 26455 yjyun 第09集
+HD1080P国语$http://txxs.mahua-yongjiu.com/share/33e75ff09dd601bbe69f351039152189
+正在爬取 1/6 39/300 -> 26111 yjyun HD1080P国语
+HD1080P英语$http://txxs.mahua-yongjiu.com/share/6ea9ab1baa0efb9e19094440c317e21b
+正在爬取 1/6 39/300 -> 26111 yjyun HD1080P英语
+HD1080P中字$http://txxs.mahua-yongjiu.com/share/34173cb38f07f89ddbebc2ac9128303f
+正在爬取 1/6 41/300 -> 29861 yjyun HD1080P中字
+HD720P中字$http://txxs.mahua-yongjiu.com/share/4e732ced3463d06de0ca9a15b6153677
+正在爬取 1/6 42/300 -> 29862 yjyun HD720P中字
+第01集$https://dapian.video-yongjiu.com/share/996d38f817b4ba74e4c38fb1286d28ab
+正在爬取 1/6 43/300 -> 29038 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/6432821a1d5b2b35b3c47142fbf29a02
+正在爬取 1/6 43/300 -> 29038 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/3347efd591f95b516252b9a131a088ab
+正在爬取 1/6 43/300 -> 29038 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/be18f4dac22b7a34ce750a5e3e2eed21
+正在爬取 1/6 43/300 -> 29038 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/5df75c5bbcc72fc281fbac97679c1413
+正在爬取 1/6 43/300 -> 29038 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/dd2bdf6cb881176bc2c0c568e1a180fa
+正在爬取 1/6 43/300 -> 29038 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/dc754039e4ce819027917a58ab573643
+正在爬取 1/6 43/300 -> 29038 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/b206b111781109301c0da69764842777
+正在爬取 1/6 43/300 -> 29038 yjyun 第08集
+第09集$https://dapian.video-yongjiu.com/share/2d5321f0813775370f774070cad46fbe
+正在爬取 1/6 43/300 -> 29038 yjyun 第09集
+第10集$https://dapian.video-yongjiu.com/share/646c24129029da404e57ef28757537b8
+正在爬取 1/6 43/300 -> 29038 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/9fcf121685a67211a2c72753dbdece9a
+正在爬取 1/6 43/300 -> 29038 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/ffcda792e9cf98819caf142a417dc000
+正在爬取 1/6 43/300 -> 29038 yjyun 第12集
+第13集$https://dapian.video-yongjiu.com/share/06e1133c97ef0f86dc7f8985896bcbb5
+正在爬取 1/6 43/300 -> 29038 yjyun 第13集
+第14集$https://dapian.video-yongjiu.com/share/f78bf9e685eddc7a35b71503d2603a0f
+正在爬取 1/6 43/300 -> 29038 yjyun 第14集
+第15集$https://dapian.video-yongjiu.com/share/bb91b5e0c0d06915055e3f03d6bc3816
+正在爬取 1/6 43/300 -> 29038 yjyun 第15集
+第16集$https://dapian.video-yongjiu.com/share/f477b7bc78101c4ae91008a6a403104e
+正在爬取 1/6 43/300 -> 29038 yjyun 第16集
+第17集$https://dapian.video-yongjiu.com/share/708633e902f815941088bda74ddfa8d8
+正在爬取 1/6 43/300 -> 29038 yjyun 第17集
+第18集$https://dapian.video-yongjiu.com/share/b5cfd61c1cbee98c213154d26400aeae
+正在爬取 1/6 43/300 -> 29038 yjyun 第18集
+第19集$https://dapian.video-yongjiu.com/share/12479ddde207e0bcfc2c19b8ca87c926
+正在爬取 1/6 43/300 -> 29038 yjyun 第19集
+第20集$https://dapian.video-yongjiu.com/share/68722b092586cf1d41e07bb366c760c6
+正在爬取 1/6 43/300 -> 29038 yjyun 第20集
+第21集$https://dapian.video-yongjiu.com/share/8d0ec730b0d5671646e4d7828a69d534
+正在爬取 1/6 43/300 -> 29038 yjyun 第21集
+第22集$https://dapian.video-yongjiu.com/share/777b02102eecc65c3778e53776b416d6
+正在爬取 1/6 43/300 -> 29038 yjyun 第22集
+第23集$https://dapian.video-yongjiu.com/share/8e4cb3c0ff79723d70198239ad918d31
+正在爬取 1/6 43/300 -> 29038 yjyun 第23集
+第24集$https://dapian.video-yongjiu.com/share/21c1f9ec2efafedf9e2bd429875471c0
+正在爬取 1/6 43/300 -> 29038 yjyun 第24集
+第25集$https://dapian.video-yongjiu.com/share/357429c78239304d194f517cde4ad439
+正在爬取 1/6 43/300 -> 29038 yjyun 第25集
+第26集$https://dapian.video-yongjiu.com/share/fc0aafd651946d038137a3b480c2e639
+正在爬取 1/6 43/300 -> 29038 yjyun 第26集
+第27集$http://txxs.mahua-yongjiu.com/share/1ff1de774005f8da13f42943881c655f
+正在爬取 1/6 43/300 -> 29038 yjyun 第27集
+第28集$http://txxs.mahua-yongjiu.com/share/e369853df766fa44e1ed0ff613f563bd
+正在爬取 1/6 43/300 -> 29038 yjyun 第28集
+第01集$https://dapian.video-yongjiu.com/share/014e9a539b0a40ad7f66d375722ec86e
+正在爬取 1/6 44/300 -> 29665 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/7f291776879b343afce967d7e3412370
+正在爬取 1/6 44/300 -> 29665 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/c310688b6d82ca7ea9c1889ccc3416ee
+正在爬取 1/6 44/300 -> 29665 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/5b011d9e8a36fa05832f9c3032d10123
+正在爬取 1/6 44/300 -> 29665 yjyun 第04集
+第05集$http://txxs.mahua-yongjiu.com/share/8e296a067a37563370ded05f5a3bf3ec
+正在爬取 1/6 44/300 -> 29665 yjyun 第05集
+第06集$http://txxs.mahua-yongjiu.com/share/1c383cd30b7c298ab50293adfecb7b18
+正在爬取 1/6 44/300 -> 29665 yjyun 第06集
+20191013期$https://dapian.video-yongjiu.com/share/380c50225d67f81afaf12a795543782a
+正在爬取 1/6 46/300 -> 29043 yjyun 20191013期
+20191020期$https://dapian.video-yongjiu.com/share/538b58f65612127aff09cf6d0d9f5721
+正在爬取 1/6 46/300 -> 29043 yjyun 20191020期
+20191027期$http://txxs.mahua-yongjiu.com/share/19ca14e7ea6328a42e0eb13d585e4c22
+正在爬取 1/6 46/300 -> 29043 yjyun 20191027期
+第01集$https://dapian.video-yongjiu.com/share/a9d4a0a256f5e6ae0452039e3493f22c
+正在爬取 1/6 47/300 -> 29534 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/9128f1bd1903249f745a20da0215e889
+正在爬取 1/6 47/300 -> 29534 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/648d1c9a9c61b78d8b44a984bab0dd09
+正在爬取 1/6 47/300 -> 29534 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/aa37c29c8617abcde038d5e0ec298828
+正在爬取 1/6 47/300 -> 29534 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/771e733b6bd5754e577ea698d33849f9
+正在爬取 1/6 47/300 -> 29534 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/f05a5279ad8f888dda342a7c6e458658
+正在爬取 1/6 47/300 -> 29534 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/d4f700c81022c855e0041af836222bb4
+正在爬取 1/6 47/300 -> 29534 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/9be2610ec283e1a45c7642ab8dcd713b
+正在爬取 1/6 47/300 -> 29534 yjyun 第08集
+第09集$http://txxs.mahua-yongjiu.com/share/6364d3f0f495b6ab9dcf8d3b5c6e0b01
+正在爬取 1/6 47/300 -> 29534 yjyun 第09集
+第10集$http://txxs.mahua-yongjiu.com/share/a5bfc9e07964f8dddeb95fc584cd965d
+正在爬取 1/6 47/300 -> 29534 yjyun 第10集
+20190406$https://yj.yongjiu6.com/share/1FRcszEl7cvhAL5A
+正在爬取 1/6 48/300 -> 23681 yjyun 20190406
+20190413$https://v3.yongjiujiexi.com/share/v8RfkDx5jg7arxiv
+正在爬取 1/6 48/300 -> 23681 yjyun 20190413
+20190420$https://v3.yongjiujiexi.com/share/St4ye8gzDwz7blV2
+正在爬取 1/6 48/300 -> 23681 yjyun 20190420
+20190504$https://v3.yongjiujiexi.com/share/1zqa1F5KeCyHxtCT
+正在爬取 1/6 48/300 -> 23681 yjyun 20190504
+20190511$https://v3.yongjiujiexi.com/share/ccdZT6MQmzbf2uEM
+正在爬取 1/6 48/300 -> 23681 yjyun 20190511
+20190518$https://yj.yongjiu6.com/share/Mjjeizvh3uohF8RD
+正在爬取 1/6 48/300 -> 23681 yjyun 20190518
+20190601$https://gaoqing.bibi-baidu.com/share/3435c378bb76d4357324dd7e69f3cd18
+正在爬取 1/6 48/300 -> 23681 yjyun 20190601
+20190608$https://dapian.video-yongjiu.com/share/500e75a036dc2d7d2fec5da1b71d36c
+正在爬取 1/6 48/300 -> 23681 yjyun 20190608
+20190622$https://dapian.video-yongjiu.com/share/b4568df26077653eeadf29596708c94b
+正在爬取 1/6 48/300 -> 23681 yjyun 20190622
+20190629$https://gaoqing.bibi-baidu.com/share/de7f47e09c8e05e6021ababdf6bc58e7
+正在爬取 1/6 48/300 -> 23681 yjyun 20190629
+20190706$https://gaoqing.bibi-baidu.com/share/fb8e51c5c713f2aaf71f62e03c5298db
+正在爬取 1/6 48/300 -> 23681 yjyun 20190706
+20190713$https://gaoqing.bibi-baidu.com/share/4f164cf233807fc02da06599a1264dee
+正在爬取 1/6 48/300 -> 23681 yjyun 20190713
+20190721期$https://dapian.video-yongjiu.com/share/09e7655fc1dc8fa7c9d6c4478313d5e6
+正在爬取 1/6 48/300 -> 23681 yjyun 20190721期
+20190727期$https://dapian.video-yongjiu.com/share/5b658d2a925565f0755e035597f8d22f
+正在爬取 1/6 48/300 -> 23681 yjyun 20190727期
+20190810期$https://gaoqing.bibi-baidu.com/share/38faae069a1371784081ea9ad9b279d0
+正在爬取 1/6 48/300 -> 23681 yjyun 20190810期
+20190817期$https://gaoqing.bibi-baidu.com/share/dba4c1a117472f6aca95211285d0587e
+正在爬取 1/6 48/300 -> 23681 yjyun 20190817期
+20190824期$https://dapian.video-yongjiu.com/share/e36e62f84744ea6916927027c9d651ad
+正在爬取 1/6 48/300 -> 23681 yjyun 20190824期
+20190831期$https://dapian.video-yongjiu.com/share/7a1bb1ae4894617e33fe25166afca9d9
+正在爬取 1/6 48/300 -> 23681 yjyun 20190831期
+20190914期$https://dapian.video-yongjiu.com/share/01067f6f4ec8b1a0843daccb97664995
+正在爬取 1/6 48/300 -> 23681 yjyun 20190914期
+20190921期$https://dapian.video-yongjiu.com/share/47eb3187889a93d645fd86b3ca9ca304
+正在爬取 1/6 48/300 -> 23681 yjyun 20190921期
+20190928期$https://dapian.video-yongjiu.com/share/a2e091a8051029947bb7b22a678e67af
+正在爬取 1/6 48/300 -> 23681 yjyun 20190928期
+20191005期$https://dapian.video-yongjiu.com/share/9b816e24fbac7e0fcec9dedf31c14ced
+正在爬取 1/6 48/300 -> 23681 yjyun 20191005期
+20191012期$https://dapian.video-yongjiu.com/share/c53eb50893377ca287be8ce398855353
+正在爬取 1/6 48/300 -> 23681 yjyun 20191012期
+20191026期$http://txxs.mahua-yongjiu.com/share/3416a75f4cea9109507cacd8e2f2aefc
+正在爬取 1/6 48/300 -> 23681 yjyun 20191026期
+20190106$https://youku.iqiyi-yongjiu.com/share/w0yn4c7moAf0nNQH
+正在爬取 1/6 49/300 -> 17795 yjyun 20190106
+20190113$https://v3.yongjiujiexi.com/share/3qEYIxFvZ3ThVLa6
+正在爬取 1/6 49/300 -> 17795 yjyun 20190113
+20190120$https://v3.yongjiujiexi.com/share/E6EZ3FHSbugjiccW
+正在爬取 1/6 49/300 -> 17795 yjyun 20190120
+20190127$https://yj.yongjiu6.com/share/ziBi9Pq68j7VlAr6
+正在爬取 1/6 49/300 -> 17795 yjyun 20190127
+20190203$https://yj.yongjiu6.com/share/Lgs4iytPOgrUrNXi
+正在爬取 1/6 49/300 -> 17795 yjyun 20190203
+20190210$https://yj.yongjiu6.com/share/8RlELlIHj7sKbESw
+正在爬取 1/6 49/300 -> 17795 yjyun 20190210
+20190217$https://yj.yongjiu6.com/share/fkM28hMxFrBbMjy5
+正在爬取 1/6 49/300 -> 17795 yjyun 20190217
+20190224$https://yj.yongjiu6.com/share/KNq3LZId4oyKE16J
+正在爬取 1/6 49/300 -> 17795 yjyun 20190224
+20190303$https://yj.yongjiu6.com/share/coDsrx4uRQvJfT14
+正在爬取 1/6 49/300 -> 17795 yjyun 20190303
+20190310$https://yj.yongjiu6.com/share/cPzdsKOyFZNEHlb9
+正在爬取 1/6 49/300 -> 17795 yjyun 20190310
+20190317$https://yj.yongjiu6.com/share/KmpAKYxWkj4GXjO4
+正在爬取 1/6 49/300 -> 17795 yjyun 20190317
+20190324$https://yj.yongjiu6.com/share/7xH2nPGxjG7G8aU4
+正在爬取 1/6 49/300 -> 17795 yjyun 20190324
+20190331$https://yj.yongjiu6.com/share/oE8ro94a86jdYoLh
+正在爬取 1/6 49/300 -> 17795 yjyun 20190331
+20190407$https://yj.yongjiu6.com/share/R4V8hjIoXQGjcn2f
+正在爬取 1/6 49/300 -> 17795 yjyun 20190407
+20190414$https://v3.yongjiujiexi.com/share/lFacXQkwLwVP1eUE
+正在爬取 1/6 49/300 -> 17795 yjyun 20190414
+20190421$https://yj.yongjiu6.com/share/XfpCmxMutvrRdy2Y
+正在爬取 1/6 49/300 -> 17795 yjyun 20190421
+20190428$https://yj.yongjiu6.com/share/yDIcuk5nCYcPq6VN
+正在爬取 1/6 49/300 -> 17795 yjyun 20190428
+20190505$https://v3.yongjiujiexi.com/share/2OJRQA9PtyZc1pMY
+正在爬取 1/6 49/300 -> 17795 yjyun 20190505
+20190512$https://yj.yongjiu6.com/share/MO7GvfTCGvE6tmeA
+正在爬取 1/6 49/300 -> 17795 yjyun 20190512
+20190519$https://yj.yongjiu6.com/share/8lyFkkfD0vmUkgoO
+正在爬取 1/6 49/300 -> 17795 yjyun 20190519
+20190526$https://v3.yongjiujiexi.com/share/62bjjVmGxuBX5Fpx
+正在爬取 1/6 49/300 -> 17795 yjyun 20190526
+20190602$https://dapian.video-yongjiu.com/share/a8abb4bb284b5b27aa7cb790dc20f80b
+正在爬取 1/6 49/300 -> 17795 yjyun 20190602
+20190609$https://dapian.video-yongjiu.com/share/e70611883d2760c8bbafb4acb29e3446
+正在爬取 1/6 49/300 -> 17795 yjyun 20190609
+20190616$https://gaoqing.bibi-baidu.com/share/36ac8e558ac7690b6f44e2cb5ef93322
+正在爬取 1/6 49/300 -> 17795 yjyun 20190616
+20190623$https://dapian.video-yongjiu.com/share/dc5d637ed5e62c36ecb73b654b05ba2a
+正在爬取 1/6 49/300 -> 17795 yjyun 20190623
+20190707$https://gaoqing.bibi-baidu.com/share/094bb65ef46d3eb4be0a87877ec333eb
+正在爬取 1/6 49/300 -> 17795 yjyun 20190707
+20190714$https://gaoqing.bibi-baidu.com/share/9f96f36b7aae3b1ff847c26ac94c604e
+正在爬取 1/6 49/300 -> 17795 yjyun 20190714
+20190721期$https://dapian.video-yongjiu.com/share/5eb13cb69b6e20dd7a42030f5936a9dc
+正在爬取 1/6 49/300 -> 17795 yjyun 20190721期
+20190728期$https://dapian.video-yongjiu.com/share/e7d4c8d4fe04d9b4539a075d809c6d01
+正在爬取 1/6 49/300 -> 17795 yjyun 20190728期
+20190804期$https://dapian.video-yongjiu.com/share/1fdc0ee9d95c71d73df82ac8f0721459
+正在爬取 1/6 49/300 -> 17795 yjyun 20190804期
+20190811期$https://dapian.video-yongjiu.com/share/f629ed9325990b10543ab5946c1362fb
+正在爬取 1/6 49/300 -> 17795 yjyun 20190811期
+20190818期$https://dapian.video-yongjiu.com/share/a8d2795765fb6a8659fd48d8ca7eb888
+正在爬取 1/6 49/300 -> 17795 yjyun 20190818期
+20190825期$https://dapian.video-yongjiu.com/share/11f9e78e4899a78dedd439fc583b6693
+正在爬取 1/6 49/300 -> 17795 yjyun 20190825期
+20190901期$https://dapian.video-yongjiu.com/share/d6f8d124087ad4c23fe66b89b7893523
+正在爬取 1/6 49/300 -> 17795 yjyun 20190901期
+20190901期$https://dapian.video-yongjiu.com/share/4d22136ec8f25b566fdd61bc0d5045b4
+正在爬取 1/6 49/300 -> 17795 yjyun 20190901期
+20190915期$https://dapian.video-yongjiu.com/share/cb163ca892e056942e0e62c30953bd85
+正在爬取 1/6 49/300 -> 17795 yjyun 20190915期
+20190922期$https://dapian.video-yongjiu.com/share/72cc4c5e6cbde70aa374bf94076ad722
+正在爬取 1/6 49/300 -> 17795 yjyun 20190922期
+20190929期$https://dapian.video-yongjiu.com/share/00e16b766ea96e422a61ca6eea9c146b
+正在爬取 1/6 49/300 -> 17795 yjyun 20190929期
+20191006期$https://dapian.video-yongjiu.com/share/e6fb52c108655e3dbb47bfeccce12131
+正在爬取 1/6 49/300 -> 17795 yjyun 20191006期
+20191013期$https://dapian.video-yongjiu.com/share/37915daf6e872d58791b5e5cb144fc4a
+正在爬取 1/6 49/300 -> 17795 yjyun 20191013期
+20191020期$https://dapian.video-yongjiu.com/share/17dcdf4af5a32bce2d8b16b775dcfb84
+正在爬取 1/6 49/300 -> 17795 yjyun 20191020期
+20191027期$http://txxs.mahua-yongjiu.com/share/d645920e395fedad7bbbed0eca3fe2e0
+正在爬取 1/6 49/300 -> 17795 yjyun 20191027期
+20190824期$https://dapian.video-yongjiu.com/share/ee3dd1c2669f11eabe41d99571167c74
+正在爬取 1/6 50/300 -> 26390 yjyun 20190824期
+20190907期$https://dapian.video-yongjiu.com/share/7ce7fe98a64dd1ef509fedb677fcea5a
+正在爬取 1/6 50/300 -> 26390 yjyun 20190907期
+20190921期$https://dapian.video-yongjiu.com/share/4d49748e7e3256f0ffb1a1726451a901
+正在爬取 1/6 50/300 -> 26390 yjyun 20190921期
+20190928期$https://dapian.video-yongjiu.com/share/1e56fad414ee7e1760cb0dc170db7436
+正在爬取 1/6 50/300 -> 26390 yjyun 20190928期
+20191005期$https://dapian.video-yongjiu.com/share/71014f3b2f3b8f52e2d6ee2304db7e95
+正在爬取 1/6 50/300 -> 26390 yjyun 20191005期
+20191012期$https://dapian.video-yongjiu.com/share/13d23bb5a0c8a46940f849dda4c22180
+正在爬取 1/6 50/300 -> 26390 yjyun 20191012期
+20191019期$http://txxs.mahua-yongjiu.com/share/d67d8ab4f4c10bf22aa353e27879133c
+正在爬取 1/6 50/300 -> 26390 yjyun 20191019期
+20191026期$http://txxs.mahua-yongjiu.com/share/a5771bce93e200c36f7cd9dfd0e5deaa
+正在爬取 1/6 50/300 -> 26390 yjyun 20191026期
+本次共爬取 0 条数据，用时 83.02004313468933s
+find success 65673
+当前页面：http://www.yongjiuzy.cc/?m=vod-index-pg-3.html
+20190102$https://youku.iqiyi-yongjiu.com/share/I6qgd8Mf2bVQlfto
+正在爬取 3/6 52/300 -> 6303 yjyun 20190102
+20190103$https://youku.iqiyi-yongjiu.com/share/LtowgJQEkuln7vOv
+正在爬取 3/6 52/300 -> 6303 yjyun 20190103
+20190104$https://youku.iqiyi-yongjiu.com/share/31F2J4nnqdFeXeZr
+正在爬取 3/6 52/300 -> 6303 yjyun 20190104
+20190107$https://youku.iqiyi-yongjiu.com/share/cVJdUaEUDhl4uKmZ
+正在爬取 3/6 52/300 -> 6303 yjyun 20190107
+20190108$https://youku.iqiyi-yongjiu.com/share/YDgIRCnrbvTmM5BH
+正在爬取 3/6 52/300 -> 6303 yjyun 20190108
+20190109$https://youku.iqiyi-yongjiu.com/share/e82h2F4mYnvdTo9l
+正在爬取 3/6 52/300 -> 6303 yjyun 20190109
+20190110$https://v3.yongjiujiexi.com/share/BtZzdBeYSt7yzDhR
+正在爬取 3/6 52/300 -> 6303 yjyun 20190110
+20190114$https://v3.yongjiujiexi.com/share/5KLN2C3zLORJbvSz
+正在爬取 3/6 52/300 -> 6303 yjyun 20190114
+20190115$https://v3.yongjiujiexi.com/share/foob6JwO2TFE24sc
+正在爬取 3/6 52/300 -> 6303 yjyun 20190115
+20190116$https://v3.yongjiujiexi.com/share/RIg7TpvueryD5D2N
+正在爬取 3/6 52/300 -> 6303 yjyun 20190116
+20190117$https://v3.yongjiujiexi.com/share/nt6Ote1tn5kxufz8
+正在爬取 3/6 52/300 -> 6303 yjyun 20190117
+20190118$https://v3.yongjiujiexi.com/share/5JXavyHBn6uQlkrJ
+正在爬取 3/6 52/300 -> 6303 yjyun 20190118
+20190121$https://v3.yongjiujiexi.com/share/xC4dgQJlPJWUN6qG
+正在爬取 3/6 52/300 -> 6303 yjyun 20190121
+20190122$https://v3.yongjiujiexi.com/share/S8G8A7kJm8SwyAbd
+正在爬取 3/6 52/300 -> 6303 yjyun 20190122
+20190123$https://v3.yongjiujiexi.com/share/fXGbjeuNViSPoVxn
+正在爬取 3/6 52/300 -> 6303 yjyun 20190123
+20190124$https://yj.yongjiu6.com/share/0FaBpJFz2mP4YqVV
+正在爬取 3/6 52/300 -> 6303 yjyun 20190124
+20190128$https://yj.yongjiu6.com/share/BOPUVFoUhiBm2jUQ
+正在爬取 3/6 52/300 -> 6303 yjyun 20190128
+20190129$https://yj.yongjiu6.com/share/VYd1f8h6udsuiQO6
+正在爬取 3/6 52/300 -> 6303 yjyun 20190129
+20190130$https://yj.yongjiu6.com/share/c0BVpu1oPLEZQ5RZ
+正在爬取 3/6 52/300 -> 6303 yjyun 20190130
+20190131$https://yj.yongjiu6.com/share/ujHWNjk87rOuwuU4
+正在爬取 3/6 52/300 -> 6303 yjyun 20190131
+20190201$https://yj.yongjiu6.com/share/j8HQfsEBgKg2BIml
+正在爬取 3/6 52/300 -> 6303 yjyun 20190201
+20190205$https://yj.yongjiu6.com/share/FhtQ5tiAu3YWZfxl
+正在爬取 3/6 52/300 -> 6303 yjyun 20190205
+20190206$https://yj.yongjiu6.com/share/KTq8DcVRdPxN3xGX
+正在爬取 3/6 52/300 -> 6303 yjyun 20190206
+20190207$https://yj.yongjiu6.com/share/24mmT9toqeTIoOrK
+正在爬取 3/6 52/300 -> 6303 yjyun 20190207
+20190208$https://yj.yongjiu6.com/share/aizu1jmKZ2tk59ZP
+正在爬取 3/6 52/300 -> 6303 yjyun 20190208
+20190211$https://yj.yongjiu6.com/share/05TBYoUoiUrp6Ant
+正在爬取 3/6 52/300 -> 6303 yjyun 20190211
+20190212$https://yj.yongjiu6.com/share/y9EFcqvWx9Z5mg7D
+正在爬取 3/6 52/300 -> 6303 yjyun 20190212
+20190213$https://yj.yongjiu6.com/share/A5Gkx3RKgad5ZmAM
+正在爬取 3/6 52/300 -> 6303 yjyun 20190213
+20190214$https://yj.yongjiu6.com/share/VCnBhXeVxOyzselB
+正在爬取 3/6 52/300 -> 6303 yjyun 20190214
+20190218$https://yj.yongjiu6.com/share/2Dp7XEDNICHpyLWS
+正在爬取 3/6 52/300 -> 6303 yjyun 20190218
+20190219$https://yj.yongjiu6.com/share/FkV85AE5VAR99rpN
+正在爬取 3/6 52/300 -> 6303 yjyun 20190219
+20190220$https://yj.yongjiu6.com/share/GSgewCG3QSY2M5SI
+正在爬取 3/6 52/300 -> 6303 yjyun 20190220
+20190221$https://yj.yongjiu6.com/share/gxgytCQV56b83MPh
+正在爬取 3/6 52/300 -> 6303 yjyun 20190221
+20190222$https://yj.yongjiu6.com/share/0rSZgXvLfCH30Hwh
+正在爬取 3/6 52/300 -> 6303 yjyun 20190222
+20190225$https://yj.yongjiu6.com/share/lHrRdOJr1TzeUhW6
+正在爬取 3/6 52/300 -> 6303 yjyun 20190225
+20190226$https://yj.yongjiu6.com/share/2XDLGbai0rI5GMpd
+正在爬取 3/6 52/300 -> 6303 yjyun 20190226
+20190227$https://yj.yongjiu6.com/share/L3ntf1DUYrKT95wD
+正在爬取 3/6 52/300 -> 6303 yjyun 20190227
+20190228$https://yj.yongjiu6.com/share/NIi0O5ZhMm0Yb3HU
+正在爬取 3/6 52/300 -> 6303 yjyun 20190228
+20190304$https://yj.yongjiu6.com/share/ehMvI2pTjLHaZ4Ft
+正在爬取 3/6 52/300 -> 6303 yjyun 20190304
+20190305$https://yj.yongjiu6.com/share/EklIWscg6WcKmB9Y
+正在爬取 3/6 52/300 -> 6303 yjyun 20190305
+20190306$https://yj.yongjiu6.com/share/mO2LYQIVpnVpnwNv
+正在爬取 3/6 52/300 -> 6303 yjyun 20190306
+20190307$https://yj.yongjiu6.com/share/euOiYfMMXfyfHVlE
+正在爬取 3/6 52/300 -> 6303 yjyun 20190307
+20190311$https://yj.yongjiu6.com/share/ytsuv5JCkCVTCJYe
+正在爬取 3/6 52/300 -> 6303 yjyun 20190311
+20190312$https://yj.yongjiu6.com/share/7aTqIYfdTuP1RGvr
+正在爬取 3/6 52/300 -> 6303 yjyun 20190312
+20190313$https://yj.yongjiu6.com/share/nHq8XzQ4kjRiqzfj
+正在爬取 3/6 52/300 -> 6303 yjyun 20190313
+20190314$https://yj.yongjiu6.com/share/6C3MDUeZRZ0XjAdT
+正在爬取 3/6 52/300 -> 6303 yjyun 20190314
+20190315$https://v3.yongjiujiexi.com/share/AMkUtsNjcqIk38Cl
+正在爬取 3/6 52/300 -> 6303 yjyun 20190315
+20190318$https://v3.yongjiujiexi.com/share/YevhLvLgmKv3zK2I
+正在爬取 3/6 52/300 -> 6303 yjyun 20190318
+20190319$https://yj.yongjiu6.com/share/8MIbEoIrI7AaCfXh
+正在爬取 3/6 52/300 -> 6303 yjyun 20190319
+20190320$https://v3.yongjiujiexi.com/share/cAbSFQk7bBeF4hmi
+正在爬取 3/6 52/300 -> 6303 yjyun 20190320
+20190321$https://v3.yongjiujiexi.com/share/JTE8vDTRrDXy91WP
+正在爬取 3/6 52/300 -> 6303 yjyun 20190321
+20190322$https://yj.yongjiu6.com/share/jSsHmRNsPPdEGGcS
+正在爬取 3/6 52/300 -> 6303 yjyun 20190322
+20190325$https://yj.yongjiu6.com/share/QEJjMDHwQoiuDY4K
+正在爬取 3/6 52/300 -> 6303 yjyun 20190325
+20190327$https://yj.yongjiu6.com/share/5BrzpTulFoZOjPTA
+正在爬取 3/6 52/300 -> 6303 yjyun 20190327
+20190328$https://yj.yongjiu6.com/share/EyiCNWldOtQHJW4R
+正在爬取 3/6 52/300 -> 6303 yjyun 20190328
+20190329$https://yj.yongjiu6.com/share/Zl3T3TbLhpHju3iI
+正在爬取 3/6 52/300 -> 6303 yjyun 20190329
+20190401$https://v3.yongjiujiexi.com/share/LDRywkBsBaic1X4Z
+正在爬取 3/6 52/300 -> 6303 yjyun 20190401
+20190402$https://v3.yongjiujiexi.com/share/0yAvBTDB9yp4ZZlt
+正在爬取 3/6 52/300 -> 6303 yjyun 20190402
+20190403$https://v3.yongjiujiexi.com/share/Ohsrv6uZkQR3peCx
+正在爬取 3/6 52/300 -> 6303 yjyun 20190403
+20190404$https://yj.yongjiu6.com/share/pap8FQRMX4EZGMOs
+正在爬取 3/6 52/300 -> 6303 yjyun 20190404
+20190405$https://yj.yongjiu6.com/share/GJf3iWojHSpF2gfA
+正在爬取 3/6 52/300 -> 6303 yjyun 20190405
+20190408$https://v3.yongjiujiexi.com/share/MZDeGZeoKydKZBK9
+正在爬取 3/6 52/300 -> 6303 yjyun 20190408
+20190409$https://v3.yongjiujiexi.com/share/eMLL8QbrEeM3qekm
+正在爬取 3/6 52/300 -> 6303 yjyun 20190409
+20190410$https://yj.yongjiu6.com/share/rFhJ1vbKW3UIk9f8
+正在爬取 3/6 52/300 -> 6303 yjyun 20190410
+20190411$https://yj.yongjiu6.com/share/wTVkoJAaIi9evtRu
+正在爬取 3/6 52/300 -> 6303 yjyun 20190411
+20190412$https://v3.yongjiujiexi.com/share/sou8eRaAuFTJ9wmh
+正在爬取 3/6 52/300 -> 6303 yjyun 20190412
+20190415$https://yj.yongjiu6.com/share/wuwy1I1bvdOFgKov
+正在爬取 3/6 52/300 -> 6303 yjyun 20190415
+20190417$https://yj.yongjiu6.com/share/LWfCYDJIVL9Si6Rv
+正在爬取 3/6 52/300 -> 6303 yjyun 20190417
+20190418$https://yj.yongjiu6.com/share/oWGir82BMc0JDPSj
+正在爬取 3/6 52/300 -> 6303 yjyun 20190418
+20190419$https://v3.yongjiujiexi.com/share/EGhhkyytwy6XwsS8
+正在爬取 3/6 52/300 -> 6303 yjyun 20190419
+20190422$https://yj.yongjiu6.com/share/rDkHJLZMjtvplVde
+正在爬取 3/6 52/300 -> 6303 yjyun 20190422
+20190423$https://v3.yongjiujiexi.com/share/EZAhiik8cHy6kOyN
+正在爬取 3/6 52/300 -> 6303 yjyun 20190423
+20190424$https://v3.yongjiujiexi.com/share/eoZf5qIZIqQPsW3i
+正在爬取 3/6 52/300 -> 6303 yjyun 20190424
+20190425$https://yj.yongjiu6.com/share/1wYERXA3RIJgSKf8
+正在爬取 3/6 52/300 -> 6303 yjyun 20190425
+20190426$https://yj.yongjiu6.com/share/6ccndhcKhl4ohcpK
+正在爬取 3/6 52/300 -> 6303 yjyun 20190426
+20190429$https://yj.yongjiu6.com/share/PmBOAaxOven3VScH
+正在爬取 3/6 52/300 -> 6303 yjyun 20190429
+20190430$https://yj.yongjiu6.com/share/mRygOg3uHhlWlqyO
+正在爬取 3/6 52/300 -> 6303 yjyun 20190430
+20190501$https://yj.yongjiu6.com/share/Vslxa2saeuUtzU56
+正在爬取 3/6 52/300 -> 6303 yjyun 20190501
+20190502$https://yj.yongjiu6.com/share/5jQ8SpOxAGdgMjU0
+正在爬取 3/6 52/300 -> 6303 yjyun 20190502
+20190503$https://v3.yongjiujiexi.com/share/9fHe5POaJB2jfkHj
+正在爬取 3/6 52/300 -> 6303 yjyun 20190503
+20190507$https://v3.yongjiujiexi.com/share/bmUbDTxl5Dc075WD
+正在爬取 3/6 52/300 -> 6303 yjyun 20190507
+20190508$https://yj.yongjiu6.com/share/NP1EizISJfxPil9I
+正在爬取 3/6 52/300 -> 6303 yjyun 20190508
+20190509$https://v3.yongjiujiexi.com/share/Df7MsItz0Dy45JCx
+正在爬取 3/6 52/300 -> 6303 yjyun 20190509
+20190510$https://v3.yongjiujiexi.com/share/DJEVT0AKAkgGpjHj
+正在爬取 3/6 52/300 -> 6303 yjyun 20190510
+20190513$https://yj.yongjiu6.com/share/zdDNaVcTy0wu7Dug
+正在爬取 3/6 52/300 -> 6303 yjyun 20190513
+20190514$https://v3.yongjiujiexi.com/share/xpOqzFMp9FKi9wQj
+正在爬取 3/6 52/300 -> 6303 yjyun 20190514
+20190515$https://v3.yongjiujiexi.com/share/8afdj2onwRH3cVWP
+正在爬取 3/6 52/300 -> 6303 yjyun 20190515
+20190516$https://yj.yongjiu6.com/share/aToiW7MCu8NSmiJq
+正在爬取 3/6 52/300 -> 6303 yjyun 20190516
+20190517$https://v3.yongjiujiexi.com/share/kG3xTnl4DKR1IvlA
+正在爬取 3/6 52/300 -> 6303 yjyun 20190517
+20190520$https://yj.yongjiu6.com/share/TXvWA6jLg5HYQKte
+正在爬取 3/6 52/300 -> 6303 yjyun 20190520
+20190521$https://v3.yongjiujiexi.com/share/LCljUXi9ZsOdFWgA
+正在爬取 3/6 52/300 -> 6303 yjyun 20190521
+20190522$https://yj.yongjiu6.com/share/ALj0DMmHsActBd4J
+正在爬取 3/6 52/300 -> 6303 yjyun 20190522
+20190523$https://v3.yongjiujiexi.com/share/Qyu3fKEo9Svg3rIg
+正在爬取 3/6 52/300 -> 6303 yjyun 20190523
+20190524$https://v3.yongjiujiexi.com/share/LLZvj4GjLzlHPwX9
+正在爬取 3/6 52/300 -> 6303 yjyun 20190524
+20190527$https://dapian.video-yongjiu.com/share/d82c8d1619ad8176d665453cfb2e55f0
+正在爬取 3/6 52/300 -> 6303 yjyun 20190527
+20190528$https://dapian.video-yongjiu.com/share/1afa34a7f984eeabdbb0a7d494132ee5
+正在爬取 3/6 52/300 -> 6303 yjyun 20190528
+20190529$https://dapian.video-yongjiu.com/share/0aa1883c6411f7873cb83dacb17b0afc
+正在爬取 3/6 52/300 -> 6303 yjyun 20190529
+20190530$https://dapian.video-yongjiu.com/share/34ed066df378efacc9b924ec161e7639
+正在爬取 3/6 52/300 -> 6303 yjyun 20190530
+20190531$https://gaoqing.bibi-baidu.com/share/ba2fd310dcaa8781a9a652a31baf3c68
+正在爬取 3/6 52/300 -> 6303 yjyun 20190531
+20190603$https://dapian.video-yongjiu.com/share/13f320e7b5ead1024ac95c3b208610db
+正在爬取 3/6 52/300 -> 6303 yjyun 20190603
+20190604$https://dapian.video-yongjiu.com/share/a7aeed74714116f3b292a982238f83d2
+正在爬取 3/6 52/300 -> 6303 yjyun 20190604
+20190605$https://gaoqing.bibi-baidu.com/share/f47d0ad31c4c49061b9e505593e3db98
+正在爬取 3/6 52/300 -> 6303 yjyun 20190605
+20190606$https://gaoqing.bibi-baidu.com/share/24146db4eb48c718b84cae0a0799dcfc
+正在爬取 3/6 52/300 -> 6303 yjyun 20190606
+20190607$https://dapian.video-yongjiu.com/share/3a066bda8c96b9478bb0512f0a43028c
+正在爬取 3/6 52/300 -> 6303 yjyun 20190607
+20190610$https://gaoqing.bibi-baidu.com/share/4fa7c62536118cc404dec4a0ca88d4f6
+正在爬取 3/6 52/300 -> 6303 yjyun 20190610
+20190611$https://gaoqing.bibi-baidu.com/share/e655c7716a4b3ea67f48c6322fc42ed6
+正在爬取 3/6 52/300 -> 6303 yjyun 20190611
+20190612$https://gaoqing.bibi-baidu.com/share/dc5c768b5dc76a084531934b34601977
+正在爬取 3/6 52/300 -> 6303 yjyun 20190612
+20190613$https://dapian.video-yongjiu.com/share/9246444d94f081e3549803b928260f56
+正在爬取 3/6 52/300 -> 6303 yjyun 20190613
+20190614$https://dapian.video-yongjiu.com/share/dc58e3a306451c9d670adcd37004f48f
+正在爬取 3/6 52/300 -> 6303 yjyun 20190614
+20190617$https://dapian.video-yongjiu.com/share/3bbfdde8842a5c44a0323518eec97cbe
+正在爬取 3/6 52/300 -> 6303 yjyun 20190617
+20190618$https://gaoqing.bibi-baidu.com/share/fea9c11c4ad9a395a636ed944a28b51a
+正在爬取 3/6 52/300 -> 6303 yjyun 20190618
+20190619$https://gaoqing.bibi-baidu.com/share/777669af68dbccabc30c3b6bcaa81825
+正在爬取 3/6 52/300 -> 6303 yjyun 20190619
+20190620$https://dapian.video-yongjiu.com/share/3e15cc11f979ed25912dff5b0669f2cd
+正在爬取 3/6 52/300 -> 6303 yjyun 20190620
+20190621$https://dapian.video-yongjiu.com/share/6e79ed05baec2754e25b4eac73a332d2
+正在爬取 3/6 52/300 -> 6303 yjyun 20190621
+20190624$https://gaoqing.bibi-baidu.com/share/f5b1b89d98b7286673128a5fb112cb9a
+正在爬取 3/6 52/300 -> 6303 yjyun 20190624
+20190625$https://gaoqing.bibi-baidu.com/share/5848ad959570f87753a60ce8be1567f3
+正在爬取 3/6 52/300 -> 6303 yjyun 20190625
+20190626$https://gaoqing.bibi-baidu.com/share/8004d637b6236202217be3dfcdd8ce59
+正在爬取 3/6 52/300 -> 6303 yjyun 20190626
+20190627$https://gaoqing.bibi-baidu.com/share/85ae750ad1dbdc5c2703bcfe97e77152
+正在爬取 3/6 52/300 -> 6303 yjyun 20190627
+20190628$https://gaoqing.bibi-baidu.com/share/0b6ace9e8971cf36f1782aa982a708db
+正在爬取 3/6 52/300 -> 6303 yjyun 20190628
+20190701$https://gaoqing.bibi-baidu.com/share/60a0575ee6ce460e1d86c0e9d281c4f1
+正在爬取 3/6 52/300 -> 6303 yjyun 20190701
+20190702$https://gaoqing.bibi-baidu.com/share/143758ee65fb29d30caa170c0db0ed36
+正在爬取 3/6 52/300 -> 6303 yjyun 20190702
+20190703$https://gaoqing.bibi-baidu.com/share/576d026223582a390cd323bef4bad026
+正在爬取 3/6 52/300 -> 6303 yjyun 20190703
+20190704$https://gaoqing.bibi-baidu.com/share/1cdf14d1e3699d61d237cf76ce1c2dca
+正在爬取 3/6 52/300 -> 6303 yjyun 20190704
+20190705$https://gaoqing.bibi-baidu.com/share/1b69ebedb522700034547abc5652ffac
+正在爬取 3/6 52/300 -> 6303 yjyun 20190705
+20190708$https://gaoqing.bibi-baidu.com/share/fc8fdb29501a6289b7bc8b0bdd8155df
+正在爬取 3/6 52/300 -> 6303 yjyun 20190708
+20190709$https://dapian.video-yongjiu.com/share/663772ea088360f95bac3dc7ffb841be
+正在爬取 3/6 52/300 -> 6303 yjyun 20190709
+20190710$https://dapian.video-yongjiu.com/share/73b817090081cef1bca77232f4532c5d
+正在爬取 3/6 52/300 -> 6303 yjyun 20190710
+20190711$https://dapian.video-yongjiu.com/share/ec47a5de1ebd60f559fee4afd739d59b
+正在爬取 3/6 52/300 -> 6303 yjyun 20190711
+20190712$https://dapian.video-yongjiu.com/share/272e11700558e27be60f7489d2d782e7
+正在爬取 3/6 52/300 -> 6303 yjyun 20190712
+20190715期$https://dapian.video-yongjiu.com/share/3cfbdf468f0a03187f6cee51a25e5e9a
+正在爬取 3/6 52/300 -> 6303 yjyun 20190715期
+20190716期$https://dapian.video-yongjiu.com/share/de7f47e09c8e05e6021ababdf6bc58e7
+正在爬取 3/6 52/300 -> 6303 yjyun 20190716期
+20190717期$https://dapian.video-yongjiu.com/share/ba304f3809ed31d0ad97b5a2b5df2a39
+正在爬取 3/6 52/300 -> 6303 yjyun 20190717期
+20190718期$https://dapian.video-yongjiu.com/share/34306d99c63613fad5b2a140398c0420
+正在爬取 3/6 52/300 -> 6303 yjyun 20190718期
+20190719期$https://dapian.video-yongjiu.com/share/c3810d4a9513b028fc0f2a83cb6d7b50
+正在爬取 3/6 52/300 -> 6303 yjyun 20190719期
+20190722期$https://dapian.video-yongjiu.com/share/27d8d40b22f812a1ba6c26f8ef7df480
+正在爬取 3/6 52/300 -> 6303 yjyun 20190722期
+20190723期$https://dapian.video-yongjiu.com/share/00b76fddeaaa7d8c2c43d504b2babd8a
+正在爬取 3/6 52/300 -> 6303 yjyun 20190723期
+20190724期$https://dapian.video-yongjiu.com/share/f64b2463cf1dba199491c885dff932f3
+正在爬取 3/6 52/300 -> 6303 yjyun 20190724期
+20190725期$https://dapian.video-yongjiu.com/share/79cc30c73507cfc25d20fe7f7bcfd91b
+正在爬取 3/6 52/300 -> 6303 yjyun 20190725期
+20190726期$https://dapian.video-yongjiu.com/share/54fe976ba170c19ebae453679b362263
+正在爬取 3/6 52/300 -> 6303 yjyun 20190726期
+20190729期$https://dapian.video-yongjiu.com/share/c4098249cc953bd98b54e57a1ad89d12
+正在爬取 3/6 52/300 -> 6303 yjyun 20190729期
+20190730期$https://dapian.video-yongjiu.com/share/6074c6aa3488f3c2dddff2a7ca821aab
+正在爬取 3/6 52/300 -> 6303 yjyun 20190730期
+20190801期$https://dapian.video-yongjiu.com/share/c344336196d5ec19bd54fd14befdde87
+正在爬取 3/6 52/300 -> 6303 yjyun 20190801期
+20190802期$https://dapian.video-yongjiu.com/share/417fbbf2e9d5a28a855a11894b2e795a
+正在爬取 3/6 52/300 -> 6303 yjyun 20190802期
+20190805期$https://dapian.video-yongjiu.com/share/81e793dc8317a3dbc3534ed3f242c418
+正在爬取 3/6 52/300 -> 6303 yjyun 20190805期
+20190806期$https://dapian.video-yongjiu.com/share/d37eb50d868361ea729bb4147eb3c1d8
+正在爬取 3/6 52/300 -> 6303 yjyun 20190806期
+20190807期$https://gaoqing.bibi-baidu.com/share/95688ba636a4720a85b3634acfec8cdd
+正在爬取 3/6 52/300 -> 6303 yjyun 20190807期
+20190808期$https://dapian.video-yongjiu.com/share/15756c350dae3457b2718a29dc0018cb
+正在爬取 3/6 52/300 -> 6303 yjyun 20190808期
+20190809期$https://dapian.video-yongjiu.com/share/c20bb2d9a50d5ac1f713f8b34d9aac5a
+正在爬取 3/6 52/300 -> 6303 yjyun 20190809期
+20190812期$https://dapian.video-yongjiu.com/share/1abf005ea3f957c5cb79941ab7707c11
+正在爬取 3/6 52/300 -> 6303 yjyun 20190812期
+20190813期$https://dapian.video-yongjiu.com/share/b56522cb95aa89c207e129509362cce3
+正在爬取 3/6 52/300 -> 6303 yjyun 20190813期
+20190814期$https://dapian.video-yongjiu.com/share/58ec72df0caca51df569d0b497c33805
+正在爬取 3/6 52/300 -> 6303 yjyun 20190814期
+20190815期$https://dapian.video-yongjiu.com/share/e46709aa58ba51019b4e6c1b23d9ae03
+正在爬取 3/6 52/300 -> 6303 yjyun 20190815期
+20190816期$https://dapian.video-yongjiu.com/share/c035226640b6b89ffaf333f54e523c10
+正在爬取 3/6 52/300 -> 6303 yjyun 20190816期
+20190819期$https://dapian.video-yongjiu.com/share/bc6fe82635b1429d3e886eec0fc34f49
+正在爬取 3/6 52/300 -> 6303 yjyun 20190819期
+20190820期$https://dapian.video-yongjiu.com/share/068004fef1759529ff6f29015cde17cd
+正在爬取 3/6 52/300 -> 6303 yjyun 20190820期
+20190821期$https://dapian.video-yongjiu.com/share/d728587fff2d87201eae0a158507d814
+正在爬取 3/6 52/300 -> 6303 yjyun 20190821期
+20190822期$https://dapian.video-yongjiu.com/share/c165ed49edbd0e69b120bee701bdb794
+正在爬取 3/6 52/300 -> 6303 yjyun 20190822期
+20190823期$https://dapian.video-yongjiu.com/share/9f03268e82461f179f372e61621f42d9
+正在爬取 3/6 52/300 -> 6303 yjyun 20190823期
+20190826期$https://dapian.video-yongjiu.com/share/4e668929edb3bf915e1a3a9d96c3c97e
+正在爬取 3/6 52/300 -> 6303 yjyun 20190826期
+20190827期$https://dapian.video-yongjiu.com/share/0b4078ee99ffc88fb383ffcdcd377d67
+正在爬取 3/6 52/300 -> 6303 yjyun 20190827期
+20190828期$https://dapian.video-yongjiu.com/share/735a8b95123648555736192cd3978bc1
+正在爬取 3/6 52/300 -> 6303 yjyun 20190828期
+20190829期$https://dapian.video-yongjiu.com/share/9e9ed6d2fc9dbdfdfb8b8e93906d9212
+正在爬取 3/6 52/300 -> 6303 yjyun 20190829期
+20190830期$https://dapian.video-yongjiu.com/share/dd111a74f4ff9cf2cbf198cef2579800
+正在爬取 3/6 52/300 -> 6303 yjyun 20190830期
+20190902期$https://dapian.video-yongjiu.com/share/c0a0756dd0a93eb7c840fdeb3c65808e
+正在爬取 3/6 52/300 -> 6303 yjyun 20190902期
+20190903期$https://dapian.video-yongjiu.com/share/16a4d8f9442ec82c5d390079cad8f194
+正在爬取 3/6 52/300 -> 6303 yjyun 20190903期
+20190904期$https://dapian.video-yongjiu.com/share/4d68e143defa221fead61c84de7527a3
+正在爬取 3/6 52/300 -> 6303 yjyun 20190904期
+20190905期$https://dapian.video-yongjiu.com/share/68bd22864919297c8c8a8c32378e89b4
+正在爬取 3/6 52/300 -> 6303 yjyun 20190905期
+20190906期$https://dapian.video-yongjiu.com/share/52f4691a4de70b3c441bca6c546979d9
+正在爬取 3/6 52/300 -> 6303 yjyun 20190906期
+20190909期$https://dapian.video-yongjiu.com/share/d81d658f7fb3fca03ea5e74f787f1f51
+正在爬取 3/6 52/300 -> 6303 yjyun 20190909期
+20190910期$https://dapian.video-yongjiu.com/share/2b6bb5354a56ce256116b6b307a1ea10
+正在爬取 3/6 52/300 -> 6303 yjyun 20190910期
+20190911期$https://dapian.video-yongjiu.com/share/239786e7cc274460b889c47f6dcdc2f3
+正在爬取 3/6 52/300 -> 6303 yjyun 20190911期
+20190912期$https://dapian.video-yongjiu.com/share/747e32ab0fea7fbd2ad9ec03daa3f840
+正在爬取 3/6 52/300 -> 6303 yjyun 20190912期
+20190917期$https://dapian.video-yongjiu.com/share/c0e2bf725db7e7a854b8c181154d8059
+正在爬取 3/6 52/300 -> 6303 yjyun 20190917期
+20190918期$https://dapian.video-yongjiu.com/share/bb01f00daaeac676313d2031dfd1e419
+正在爬取 3/6 52/300 -> 6303 yjyun 20190918期
+20190919期$https://dapian.video-yongjiu.com/share/e3537ccce7b6d7ed1b54f9a585985716
+正在爬取 3/6 52/300 -> 6303 yjyun 20190919期
+20190920期$https://dapian.video-yongjiu.com/share/b09007d46d54f6bb4166f7d582a3f5d9
+正在爬取 3/6 52/300 -> 6303 yjyun 20190920期
+20190923期$https://dapian.video-yongjiu.com/share/201ecef3255bae210a1b2c0ae4a21c7a
+正在爬取 3/6 52/300 -> 6303 yjyun 20190923期
+20190924期$https://dapian.video-yongjiu.com/share/25b9dc004db52a787bd8a8df8c29c2dc
+正在爬取 3/6 52/300 -> 6303 yjyun 20190924期
+20190925期$https://dapian.video-yongjiu.com/share/7e77e4a1b051ec0a510b48eaec2f3a3c
+正在爬取 3/6 52/300 -> 6303 yjyun 20190925期
+20190926期$https://dapian.video-yongjiu.com/share/a41a6a3856ee3c8c2816d4828b64f560
+正在爬取 3/6 52/300 -> 6303 yjyun 20190926期
+20190927期$https://dapian.video-yongjiu.com/share/19e321d9f307ccfc1c37106191cbbc74
+正在爬取 3/6 52/300 -> 6303 yjyun 20190927期
+20190930期$https://dapian.video-yongjiu.com/share/2907d2584b4215ec733f9b4b09d83765
+正在爬取 3/6 52/300 -> 6303 yjyun 20190930期
+20191001期$https://dapian.video-yongjiu.com/share/0a9f1e65f58217963050ce14588e84f8
+正在爬取 3/6 52/300 -> 6303 yjyun 20191001期
+20191002期$https://dapian.video-yongjiu.com/share/2485d846dc142c8056986d6b551f5486
+正在爬取 3/6 52/300 -> 6303 yjyun 20191002期
+20191003期$https://dapian.video-yongjiu.com/share/eadc317f2764a00bec1b729a56321cd3
+正在爬取 3/6 52/300 -> 6303 yjyun 20191003期
+20191004期$https://dapian.video-yongjiu.com/share/3f79a9566332ca2ddca3367b61ede6a8
+正在爬取 3/6 52/300 -> 6303 yjyun 20191004期
+20191007期$https://dapian.video-yongjiu.com/share/36e6bfe59546f6b2f2a4c16eebfac314
+正在爬取 3/6 52/300 -> 6303 yjyun 20191007期
+20191008期$https://dapian.video-yongjiu.com/share/84464b3e226fd6b271dd79e4216a5245
+正在爬取 3/6 52/300 -> 6303 yjyun 20191008期
+20191009期$https://dapian.video-yongjiu.com/share/d0f4d66ae3725509ded460e6a0c4e38d
+正在爬取 3/6 52/300 -> 6303 yjyun 20191009期
+20191010期$https://dapian.video-yongjiu.com/share/4198f9d67624156e01306d74490fff41
+正在爬取 3/6 52/300 -> 6303 yjyun 20191010期
+20191011期$https://dapian.video-yongjiu.com/share/e89cc78c23df05d8eaeef6a5d0316d08
+正在爬取 3/6 52/300 -> 6303 yjyun 20191011期
+20191014期$https://dapian.video-yongjiu.com/share/d3c54c14c14c2f5900dddd0d16974251
+正在爬取 3/6 52/300 -> 6303 yjyun 20191014期
+20191015期$https://dapian.video-yongjiu.com/share/e6a3684de5e80c535db4f65de1d27041
+正在爬取 3/6 52/300 -> 6303 yjyun 20191015期
+20191016期$https://dapian.video-yongjiu.com/share/5b04bd53d09643498576fb2bf876a707
+正在爬取 3/6 52/300 -> 6303 yjyun 20191016期
+20191017期$https://dapian.video-yongjiu.com/share/2b423dc1a327648b419922ee8980e8dd
+正在爬取 3/6 52/300 -> 6303 yjyun 20191017期
+20191018期$https://dapian.video-yongjiu.com/share/7a7acdc3dfc8102141368e4c51f7dd3e
+正在爬取 3/6 52/300 -> 6303 yjyun 20191018期
+20191021期$https://dapian.video-yongjiu.com/share/b398807ae3446a3fc2aface42e1c1aff
+正在爬取 3/6 52/300 -> 6303 yjyun 20191021期
+20191022期$https://dapian.video-yongjiu.com/share/5e33df39aef5d2e4762ba3da9b62b156
+正在爬取 3/6 52/300 -> 6303 yjyun 20191022期
+20191023期$https://dapian.video-yongjiu.com/share/d11875b53233adc482d07142c4b80ffa
+正在爬取 3/6 52/300 -> 6303 yjyun 20191023期
+20191024期$https://dapian.video-yongjiu.com/share/1c157f204d830f6a84149692ad5c8616
+正在爬取 3/6 52/300 -> 6303 yjyun 20191024期
+20191025期$https://dapian.video-yongjiu.com/20191026/20927_239c46cc/index.m3u8
+正在爬取 3/6 52/300 -> 6303 yjyun 20191025期
+20190207$https://v3.yongjiujiexi.com/share/qet6lzfqpeFOVzYf
+正在爬取 3/6 53/300 -> 17798 yjyun 20190207
+20190206$https://v3.yongjiujiexi.com/share/DR0byFgw1cV8eMGb
+正在爬取 3/6 53/300 -> 17798 yjyun 20190206
+20190105$https://youku.iqiyi-yongjiu.com/share/NCYpbOUoe1UC7odW
+正在爬取 3/6 53/300 -> 17798 yjyun 20190105
+20190104$https://youku.iqiyi-yongjiu.com/share/h8M56txmAnna0tQ1
+正在爬取 3/6 53/300 -> 17798 yjyun 20190104
+20190103$https://youku.iqiyi-yongjiu.com/share/3HUPudUAClioVY5n
+正在爬取 3/6 53/300 -> 17798 yjyun 20190103
+20190107$https://youku.iqiyi-yongjiu.com/share/w5EK3cWilf2jD2rd
+正在爬取 3/6 53/300 -> 17798 yjyun 20190107
+20190109$https://youku.iqiyi-yongjiu.com/share/XQ3uO74cp5tpUJfW
+正在爬取 3/6 53/300 -> 17798 yjyun 20190109
+20190111$https://v3.yongjiujiexi.com/share/rIHsbVvlz4dY5whe
+正在爬取 3/6 53/300 -> 17798 yjyun 20190111
+20190116$https://v3.yongjiujiexi.com/share/xTB2UADDK3ZfuvEh
+正在爬取 3/6 53/300 -> 17798 yjyun 20190116
+20190117$https://v3.yongjiujiexi.com/share/CclE0aEI2yA8D7Ta
+正在爬取 3/6 53/300 -> 17798 yjyun 20190117
+20190118$https://v3.yongjiujiexi.com/share/ipbeNW8hJexRXDUG
+正在爬取 3/6 53/300 -> 17798 yjyun 20190118
+20190122$https://v3.yongjiujiexi.com/share/cDjQ50c5yltVOZ3r
+正在爬取 3/6 53/300 -> 17798 yjyun 20190122
+20190123$https://v3.yongjiujiexi.com/share/vB2GGwtVDS9Jds8f
+正在爬取 3/6 53/300 -> 17798 yjyun 20190123
+20190125$https://yj.yongjiu6.com/share/uepWKljDUTbvyqi5
+正在爬取 3/6 53/300 -> 17798 yjyun 20190125
+20190126$https://yj.yongjiu6.com/share/xFz05faugktlEL3U
+正在爬取 3/6 53/300 -> 17798 yjyun 20190126
+20190128$https://yj.yongjiu6.com/share/fNHv0sNAoPG9FOZ6
+正在爬取 3/6 53/300 -> 17798 yjyun 20190128
+20190129$https://yj.yongjiu6.com/share/s1tvKFwlMd7ZKyuf
+正在爬取 3/6 53/300 -> 17798 yjyun 20190129
+20190130$https://yj.yongjiu6.com/share/0skemntcwi9bT1od
+正在爬取 3/6 53/300 -> 17798 yjyun 20190130
+20190131$https://yj.yongjiu6.com/share/WPuA16dK6Hc2GlpO
+正在爬取 3/6 53/300 -> 17798 yjyun 20190131
+20190201$https://yj.yongjiu6.com/share/UtCwl6evJN3Yuc2L
+正在爬取 3/6 53/300 -> 17798 yjyun 20190201
+20190202$https://yj.yongjiu6.com/share/gZsjgmHiB3cZ4eRo
+正在爬取 3/6 53/300 -> 17798 yjyun 20190202
+20190205$https://yj.yongjiu6.com/share/Kz51S8yIqKvvtjPb
+正在爬取 3/6 53/300 -> 17798 yjyun 20190205
+20190208$https://yj.yongjiu6.com/share/NkowBCi2BHAmRn6L
+正在爬取 3/6 53/300 -> 17798 yjyun 20190208
+20190211$https://v3.yongjiujiexi.com/share/cR4r9pXXKe5u4f4t
+正在爬取 3/6 53/300 -> 17798 yjyun 20190211
+20190212$https://yj.yongjiu6.com/share/9wCqcFxdQUTj8tEU
+正在爬取 3/6 53/300 -> 17798 yjyun 20190212
+20190215$https://yj.yongjiu6.com/share/TMmgdxwTsPLdY1Pj
+正在爬取 3/6 53/300 -> 17798 yjyun 20190215
+20190216$https://yj.yongjiu6.com/share/O5tmFPKxa5kqfAhD
+正在爬取 3/6 53/300 -> 17798 yjyun 20190216
+20190220$https://yj.yongjiu6.com/share/7Owt6RL6QpjNeGOx
+正在爬取 3/6 53/300 -> 17798 yjyun 20190220
+20190222$https://yj.yongjiu6.com/share/TZRyUNHkOkfEk9Ea
+正在爬取 3/6 53/300 -> 17798 yjyun 20190222
+20190225$https://yj.yongjiu6.com/share/p9Y7gErhftKsBEEN
+正在爬取 3/6 53/300 -> 17798 yjyun 20190225
+20190226$https://yj.yongjiu6.com/share/LnlGEUNfxh89edtt
+正在爬取 3/6 53/300 -> 17798 yjyun 20190226
+20190227$https://yj.yongjiu6.com/share/wTzyxnpPu1biD2Gb
+正在爬取 3/6 53/300 -> 17798 yjyun 20190227
+20190228$https://yj.yongjiu6.com/share/KzoeGUcW7TuzoPfF
+正在爬取 3/6 53/300 -> 17798 yjyun 20190228
+20190302$https://yj.yongjiu6.com/share/9hrWb7WicgWWPjDS
+正在爬取 3/6 53/300 -> 17798 yjyun 20190302
+20190304$https://yj.yongjiu6.com/share/eJUPBFjQ7SoASujS
+正在爬取 3/6 53/300 -> 17798 yjyun 20190304
+20190306$https://yj.yongjiu6.com/share/TzmOFY9nq1zg8gGf
+正在爬取 3/6 53/300 -> 17798 yjyun 20190306
+20190307$https://yj.yongjiu6.com/share/j9IyiBOV1y6NSkoA
+正在爬取 3/6 53/300 -> 17798 yjyun 20190307
+20190308$https://yj.yongjiu6.com/share/iZ7Ih4Qg9PjQUVlF
+正在爬取 3/6 53/300 -> 17798 yjyun 20190308
+20190309$https://yj.yongjiu6.com/share/bj75vIKHf1lwLi1M
+正在爬取 3/6 53/300 -> 17798 yjyun 20190309
+20190311$https://yj.yongjiu6.com/share/tRtX85xrgyasv45m
+正在爬取 3/6 53/300 -> 17798 yjyun 20190311
+20190312$https://yj.yongjiu6.com/share/P5hhs8N2lXXE9f2N
+正在爬取 3/6 53/300 -> 17798 yjyun 20190312
+20190313$https://yj.yongjiu6.com/share/vJERqS3USoSzhrhY
+正在爬取 3/6 53/300 -> 17798 yjyun 20190313
+20190314$https://yj.yongjiu6.com/share/s9yFRkIAQWwSg5ks
+正在爬取 3/6 53/300 -> 17798 yjyun 20190314
+20190315$https://v3.yongjiujiexi.com/share/jXXOtLujkgxKrXGv
+正在爬取 3/6 53/300 -> 17798 yjyun 20190315
+20190318$https://v3.yongjiujiexi.com/share/UBJmolIsQ0BCjKf0
+正在爬取 3/6 53/300 -> 17798 yjyun 20190318
+20190319$https://yj.yongjiu6.com/share/uds8mSLZ4LDJ2ttD
+正在爬取 3/6 53/300 -> 17798 yjyun 20190319
+20190320$https://v3.yongjiujiexi.com/share/w355tpN9uNhO5P1t
+正在爬取 3/6 53/300 -> 17798 yjyun 20190320
+20190321$https://v3.yongjiujiexi.com/share/FliO4k5epszffKJC
+正在爬取 3/6 53/300 -> 17798 yjyun 20190321
+20190322$https://yj.yongjiu6.com/share/w4uLKk2Tdw2RQH3r
+正在爬取 3/6 53/300 -> 17798 yjyun 20190322
+20190325$https://yj.yongjiu6.com/share/xb5k0yTCOmEZ14hK
+正在爬取 3/6 53/300 -> 17798 yjyun 20190325
+20190326$https://v3.yongjiujiexi.com/share/eQdF4rOxNe1C9PY9
+正在爬取 3/6 53/300 -> 17798 yjyun 20190326
+20190327$https://yj.yongjiu6.com/share/hdlnzoVdAEgLbKND
+正在爬取 3/6 53/300 -> 17798 yjyun 20190327
+20190328$https://yj.yongjiu6.com/share/WZ1TjBDwN4QT4CDR
+正在爬取 3/6 53/300 -> 17798 yjyun 20190328
+20190329$https://yj.yongjiu6.com/share/7wzRsB8eKYJZPuNM
+正在爬取 3/6 53/300 -> 17798 yjyun 20190329
+20190401$https://v3.yongjiujiexi.com/share/Cixc40rrcpL6cbuL
+正在爬取 3/6 53/300 -> 17798 yjyun 20190401
+20190402$https://v3.yongjiujiexi.com/share/gii4uAv6qEhAIeqX
+正在爬取 3/6 53/300 -> 17798 yjyun 20190402
+20190403$https://v3.yongjiujiexi.com/share/DkyDXG4ksDtgyXja
+正在爬取 3/6 53/300 -> 17798 yjyun 20190403
+20190404$https://yj.yongjiu6.com/share/x5qRvI8qbt8h8m2e
+正在爬取 3/6 53/300 -> 17798 yjyun 20190404
+20190405$https://yj.yongjiu6.com/share/fGejT23CBmKi6oML
+正在爬取 3/6 53/300 -> 17798 yjyun 20190405
+20190408$https://v3.yongjiujiexi.com/share/OD6p5j3ILtxWZ4II
+正在爬取 3/6 53/300 -> 17798 yjyun 20190408
+20190409$https://v3.yongjiujiexi.com/share/1dKA98XkBGKTcm6z
+正在爬取 3/6 53/300 -> 17798 yjyun 20190409
+20190410$https://yj.yongjiu6.com/share/7y8hdCIyRaua9UNp
+正在爬取 3/6 53/300 -> 17798 yjyun 20190410
+20190411$https://yj.yongjiu6.com/share/KZJXyJV8SBTCzwm3
+正在爬取 3/6 53/300 -> 17798 yjyun 20190411
+20190412$https://v3.yongjiujiexi.com/share/KpspX9XF5wOp46Bz
+正在爬取 3/6 53/300 -> 17798 yjyun 20190412
+20190415$https://yj.yongjiu6.com/share/Ij7EqZpFghtSe8ll
+正在爬取 3/6 53/300 -> 17798 yjyun 20190415
+20190416$https://yj.yongjiu6.com/share/uq32mXnmXlbvBcTN
+正在爬取 3/6 53/300 -> 17798 yjyun 20190416
+20190417$https://yj.yongjiu6.com/share/Wd9wxxVyoyLlswwo
+正在爬取 3/6 53/300 -> 17798 yjyun 20190417
+20190418$https://yj.yongjiu6.com/share/kCdrCPE9bHSA0SyY
+正在爬取 3/6 53/300 -> 17798 yjyun 20190418
+20190419$https://v3.yongjiujiexi.com/share/L69ehyQ6CS9z0tvo
+正在爬取 3/6 53/300 -> 17798 yjyun 20190419
+20190420$https://v3.yongjiujiexi.com/share/DOctc6VSiSIHxKxf
+正在爬取 3/6 53/300 -> 17798 yjyun 20190420
+20190422$https://v3.yongjiujiexi.com/share/lzUyVb0heE4p8nF8
+正在爬取 3/6 53/300 -> 17798 yjyun 20190422
+20190423$https://v3.yongjiujiexi.com/share/UlW1p9e0Ra4487hf
+正在爬取 3/6 53/300 -> 17798 yjyun 20190423
+20190425$https://yj.yongjiu6.com/share/6Z4lm8WpvBpeGquu
+正在爬取 3/6 53/300 -> 17798 yjyun 20190425
+20190426$https://yj.yongjiu6.com/share/5B22L81ycl2UEOXD
+正在爬取 3/6 53/300 -> 17798 yjyun 20190426
+20190429$https://yj.yongjiu6.com/share/nwMDM5IntUY07cJf
+正在爬取 3/6 53/300 -> 17798 yjyun 20190429
+20190430$https://yj.yongjiu6.com/share/SoHJZBf0QUo2ldzW
+正在爬取 3/6 53/300 -> 17798 yjyun 20190430
+20190501$https://yj.yongjiu6.com/share/G9gVEdhI84ESafyy
+正在爬取 3/6 53/300 -> 17798 yjyun 20190501
+20190503$https://v3.yongjiujiexi.com/share/UGSyabpu6Tewojyy
+正在爬取 3/6 53/300 -> 17798 yjyun 20190503
+20190506$https://v3.yongjiujiexi.com/share/RPdQHMUMT9sr3pVS
+正在爬取 3/6 53/300 -> 17798 yjyun 20190506
+20190507$https://v3.yongjiujiexi.com/share/Dd15V0AAnMCy7oUS
+正在爬取 3/6 53/300 -> 17798 yjyun 20190507
+20190508$https://yj.yongjiu6.com/share/mHY7xfR9WRDRtXNQ
+正在爬取 3/6 53/300 -> 17798 yjyun 20190508
+20190509$https://v3.yongjiujiexi.com/share/nTvniH6AMwBmXNFh
+正在爬取 3/6 53/300 -> 17798 yjyun 20190509
+20190510$https://v3.yongjiujiexi.com/share/XW0WPNirEoo6za4e
+正在爬取 3/6 53/300 -> 17798 yjyun 20190510
+20190513$https://v3.yongjiujiexi.com/share/FnSdtNs90fSB99vz
+正在爬取 3/6 53/300 -> 17798 yjyun 20190513
+20190514$https://v3.yongjiujiexi.com/share/NRdVxIPd7gkMfALy
+正在爬取 3/6 53/300 -> 17798 yjyun 20190514
+20190515$https://v3.yongjiujiexi.com/share/3ZkDNOMhxCgLxkGB
+正在爬取 3/6 53/300 -> 17798 yjyun 20190515
+20190516$https://yj.yongjiu6.com/share/ng7IIxDdUTxa2Iz5
+正在爬取 3/6 53/300 -> 17798 yjyun 20190516
+20190517$https://v3.yongjiujiexi.com/share/5keMZFOmTN95y64o
+正在爬取 3/6 53/300 -> 17798 yjyun 20190517
+20190520$https://yj.yongjiu6.com/share/ztTfB7X2A0meh5IL
+正在爬取 3/6 53/300 -> 17798 yjyun 20190520
+20190521$https://v3.yongjiujiexi.com/share/gIg6sdNBTc503E6O
+正在爬取 3/6 53/300 -> 17798 yjyun 20190521
+20190522$https://yj.yongjiu6.com/share/HG3wTIlsWh5AatsW
+正在爬取 3/6 53/300 -> 17798 yjyun 20190522
+20190523$https://v3.yongjiujiexi.com/share/N4TJ43CyzXui3K31
+正在爬取 3/6 53/300 -> 17798 yjyun 20190523
+20190524$https://v3.yongjiujiexi.com/share/mr1ZQsKsBebG9aWi
+正在爬取 3/6 53/300 -> 17798 yjyun 20190524
+20190527$https://dapian.video-yongjiu.com/share/b53b3a3d6ab90ce0268229151c9bde11
+正在爬取 3/6 53/300 -> 17798 yjyun 20190527
+20190528$https://dapian.video-yongjiu.com/share/9fc3d7152ba9336a670e36d0ed79bc43
+正在爬取 3/6 53/300 -> 17798 yjyun 20190528
+20190529$https://dapian.video-yongjiu.com/share/bd686fd640be98efaae0091fa301e613
+正在爬取 3/6 53/300 -> 17798 yjyun 20190529
+20190530$https://dapian.video-yongjiu.com/share/37bc2f75bf1bcfe8450a1a41c200364c
+正在爬取 3/6 53/300 -> 17798 yjyun 20190530
+20190531$https://gaoqing.bibi-baidu.com/share/85422afb467e9456013a2a51d4dff702
+正在爬取 3/6 53/300 -> 17798 yjyun 20190531
+20190603$https://dapian.video-yongjiu.com/share/37f0e884fbad9667e38940169d0a3c95
+正在爬取 3/6 53/300 -> 17798 yjyun 20190603
+20190604$https://dapian.video-yongjiu.com/share/a8849b052492b5106526b2331e526138
+正在爬取 3/6 53/300 -> 17798 yjyun 20190604
+20190605$https://gaoqing.bibi-baidu.com/share/c8fbbc86abe8bd6a5eb6a3b4d0411301
+正在爬取 3/6 53/300 -> 17798 yjyun 20190605
+20190606$https://gaoqing.bibi-baidu.com/share/3806734b256c27e41ec2c6bffa26d9e7
+正在爬取 3/6 53/300 -> 17798 yjyun 20190606
+20190607$https://dapian.video-yongjiu.com/share/8757150decbd89b0f5442ca3db4d0e0e
+正在爬取 3/6 53/300 -> 17798 yjyun 20190607
+20190610$https://gaoqing.bibi-baidu.com/share/0c0a7566915f4f24853fc4192689aa7e
+正在爬取 3/6 53/300 -> 17798 yjyun 20190610
+20190611$https://gaoqing.bibi-baidu.com/share/fcdf25d6e191893e705819b177cddea0
+正在爬取 3/6 53/300 -> 17798 yjyun 20190611
+20190612$https://gaoqing.bibi-baidu.com/share/b710915795b9e9c02cf10d6d2bdb688c
+正在爬取 3/6 53/300 -> 17798 yjyun 20190612
+20190613$https://dapian.video-yongjiu.com/share/1587965fb4d4b5afe8428a4a024feb0d
+正在爬取 3/6 53/300 -> 17798 yjyun 20190613
+20190614$https://dapian.video-yongjiu.com/share/1b0114c51cc532ed34e1954b5b9e4b58
+正在爬取 3/6 53/300 -> 17798 yjyun 20190614
+20190617$https://dapian.video-yongjiu.com/share/5e76bef6e019b2541ff53db39f407a98
+正在爬取 3/6 53/300 -> 17798 yjyun 20190617
+20190618$https://gaoqing.bibi-baidu.com/share/cd3afef9b8b89558cd56638c3631868a
+正在爬取 3/6 53/300 -> 17798 yjyun 20190618
+20190619$https://gaoqing.bibi-baidu.com/share/20c9f5700da1088260df60fcc5df2b53
+正在爬取 3/6 53/300 -> 17798 yjyun 20190619
+20190620$https://dapian.video-yongjiu.com/share/6a5dfac4be1502501489fc0f5a24b667
+正在爬取 3/6 53/300 -> 17798 yjyun 20190620
+20190621$https://dapian.video-yongjiu.com/share/09b15d48a1514d8209b192a8b8f34e48
+正在爬取 3/6 53/300 -> 17798 yjyun 20190621
+20190624$https://gaoqing.bibi-baidu.com/share/182e6c2d3d78eef40e5dac7da77a748f
+正在爬取 3/6 53/300 -> 17798 yjyun 20190624
+20190625$https://gaoqing.bibi-baidu.com/share/c5c1cb0bebd56ae38817b251ad72bedb
+正在爬取 3/6 53/300 -> 17798 yjyun 20190625
+20190626$https://gaoqing.bibi-baidu.com/share/4db0f8b0fc895da263fd77fc8aecabe4
+正在爬取 3/6 53/300 -> 17798 yjyun 20190626
+20190627$https://gaoqing.bibi-baidu.com/share/c3d377d10b13f8b39bf1218a60fe77b1
+正在爬取 3/6 53/300 -> 17798 yjyun 20190627
+20190628$https://gaoqing.bibi-baidu.com/share/0987b8b338d6c90bbedd8631bc499221
+正在爬取 3/6 53/300 -> 17798 yjyun 20190628
+20190701$https://gaoqing.bibi-baidu.com/share/f95ec3de395b4bce25b39ef6138da871
+正在爬取 3/6 53/300 -> 17798 yjyun 20190701
+20190702$https://gaoqing.bibi-baidu.com/share/fa6c94460e902005a0b660266190c8ba
+正在爬取 3/6 53/300 -> 17798 yjyun 20190702
+20190703$https://gaoqing.bibi-baidu.com/share/1be883eec3231f9fe43c35bd1b4b3bb5
+正在爬取 3/6 53/300 -> 17798 yjyun 20190703
+20190704$https://dapian.video-yongjiu.com/share/6b5754d737784b51ec5075c0dc437bf0
+正在爬取 3/6 53/300 -> 17798 yjyun 20190704
+20190705$https://gaoqing.bibi-baidu.com/share/c79ec57a8e72a87d8a69d2c6b8a2a8d4
+正在爬取 3/6 53/300 -> 17798 yjyun 20190705
+20190708$https://gaoqing.bibi-baidu.com/share/d71f5142463efcf6dc7be216cf4644b5
+正在爬取 3/6 53/300 -> 17798 yjyun 20190708
+20190709$https://dapian.video-yongjiu.com/share/f3b7e5d3eb074cde5b76e26bc0fb5776
+正在爬取 3/6 53/300 -> 17798 yjyun 20190709
+20190710$https://dapian.video-yongjiu.com/share/dba31bb5c75992690f20c2d3b370ec7c
+正在爬取 3/6 53/300 -> 17798 yjyun 20190710
+20190711$https://dapian.video-yongjiu.com/share/f40438b554cc0e3d96ee6064c5798f55
+正在爬取 3/6 53/300 -> 17798 yjyun 20190711
+20190712$https://dapian.video-yongjiu.com/share/7b66e8931c93da8c88a0a8b6dec62f9e
+正在爬取 3/6 53/300 -> 17798 yjyun 20190712
+20190715期$https://dapian.video-yongjiu.com/share/dab49080d80c724aad5ebf158d63df41
+正在爬取 3/6 53/300 -> 17798 yjyun 20190715期
+20190716期$https://dapian.video-yongjiu.com/share/285a25c17f351708754cdb6d56f3962e
+正在爬取 3/6 53/300 -> 17798 yjyun 20190716期
+20190718期$https://dapian.video-yongjiu.com/share/335d3d1cd7ef05ec77714a215134914c
+正在爬取 3/6 53/300 -> 17798 yjyun 20190718期
+20190719期$https://dapian.video-yongjiu.com/share/6df182582740607da754e4515b70e32d
+正在爬取 3/6 53/300 -> 17798 yjyun 20190719期
+20190722期$https://dapian.video-yongjiu.com/share/8526e0962a844e4a2f158d831d5fddf7
+正在爬取 3/6 53/300 -> 17798 yjyun 20190722期
+20190723期$https://dapian.video-yongjiu.com/share/7d6548bdc0082aacc950ed35e91fcccb
+正在爬取 3/6 53/300 -> 17798 yjyun 20190723期
+20190724期$https://dapian.video-yongjiu.com/share/1f5795e7b93f423c397e6f7aaff80133
+正在爬取 3/6 53/300 -> 17798 yjyun 20190724期
+20190725期$https://dapian.video-yongjiu.com/share/0f089a3bcf38d052f7882d12b3923a82
+正在爬取 3/6 53/300 -> 17798 yjyun 20190725期
+20190726期$https://dapian.video-yongjiu.com/share/415585bd389b69659223807d77a96791
+正在爬取 3/6 53/300 -> 17798 yjyun 20190726期
+20190729期$https://dapian.video-yongjiu.com/share/110209d8fae7417509ba71ad97c17639
+正在爬取 3/6 53/300 -> 17798 yjyun 20190729期
+20190730期$https://dapian.video-yongjiu.com/share/4efb80f630ccecb2d3b9b2087b0f9c89
+正在爬取 3/6 53/300 -> 17798 yjyun 20190730期
+20190731期$https://dapian.video-yongjiu.com/share/b448d8292fd27ae25bbc2e09ad43ff88
+正在爬取 3/6 53/300 -> 17798 yjyun 20190731期
+20190801期$https://dapian.video-yongjiu.com/share/70a32110fff0f26d301e58ebbca9cb9f
+正在爬取 3/6 53/300 -> 17798 yjyun 20190801期
+20190802期$https://dapian.video-yongjiu.com/share/177db6acfe388526a4c7bff88e1feb15
+正在爬取 3/6 53/300 -> 17798 yjyun 20190802期
+20190805期$https://dapian.video-yongjiu.com/share/653c579e3f9ba5c03f2f2f8cf4512b39
+正在爬取 3/6 53/300 -> 17798 yjyun 20190805期
+20190806期$https://dapian.video-yongjiu.com/share/c6102b3727b2a7d8b1bb6981147081ef
+正在爬取 3/6 53/300 -> 17798 yjyun 20190806期
+20190807期$https://gaoqing.bibi-baidu.com/share/136c2f0599b3a0175c544b72e4861b9f
+正在爬取 3/6 53/300 -> 17798 yjyun 20190807期
+20190808期$https://dapian.video-yongjiu.com/share/32bbf7b2bc4ed14eb1e9c2580056a989
+正在爬取 3/6 53/300 -> 17798 yjyun 20190808期
+20190809期$https://dapian.video-yongjiu.com/share/8860a4e27cbbe4c63821b429211684a3
+正在爬取 3/6 53/300 -> 17798 yjyun 20190809期
+20190812期$https://dapian.video-yongjiu.com/share/82273dfbbc9cc64149d6e6d52d3104fa
+正在爬取 3/6 53/300 -> 17798 yjyun 20190812期
+20190813期$https://dapian.video-yongjiu.com/share/5e2b66750529d8ae895ad2591118466f
+正在爬取 3/6 53/300 -> 17798 yjyun 20190813期
+20190814期$https://dapian.video-yongjiu.com/share/d042be1b4b72c110d21287b3dad13867
+正在爬取 3/6 53/300 -> 17798 yjyun 20190814期
+20190815期$https://dapian.video-yongjiu.com/share/305ddad049f65a2c241dbb6e6f746c54
+正在爬取 3/6 53/300 -> 17798 yjyun 20190815期
+20190816期$https://dapian.video-yongjiu.com/share/bcff3f632fd16ff099a49c2f0932b47a
+正在爬取 3/6 53/300 -> 17798 yjyun 20190816期
+20190819期$https://dapian.video-yongjiu.com/share/30aaa42805c04522a16e12d7e5b87437
+正在爬取 3/6 53/300 -> 17798 yjyun 20190819期
+20190820期$https://dapian.video-yongjiu.com/share/2f4059ce1227f021edc5d9c6f0f17dc1
+正在爬取 3/6 53/300 -> 17798 yjyun 20190820期
+20190821期$https://dapian.video-yongjiu.com/share/ae95296e27d7f695f891cd26b4f37078
+正在爬取 3/6 53/300 -> 17798 yjyun 20190821期
+20190822期$https://dapian.video-yongjiu.com/share/7bee424db269e7f9c5d0a68c7a635018
+正在爬取 3/6 53/300 -> 17798 yjyun 20190822期
+20190823期$https://dapian.video-yongjiu.com/share/dff1749a367a95e75a84a6385df5dfa9
+正在爬取 3/6 53/300 -> 17798 yjyun 20190823期
+20190826期$https://dapian.video-yongjiu.com/share/0465a1824942fac19824528343613213
+正在爬取 3/6 53/300 -> 17798 yjyun 20190826期
+20190827期$https://dapian.video-yongjiu.com/share/e0e6518d2cac6a5b1fa6b05498a5e7be
+正在爬取 3/6 53/300 -> 17798 yjyun 20190827期
+20190828期$https://dapian.video-yongjiu.com/share/b430bedaf544d495473ae9767afc7111
+正在爬取 3/6 53/300 -> 17798 yjyun 20190828期
+20190829期$https://dapian.video-yongjiu.com/share/c91c0b6681d733fe9b76c95b8996b1ab
+正在爬取 3/6 53/300 -> 17798 yjyun 20190829期
+20190830期$https://dapian.video-yongjiu.com/share/115c343463041f8763d7552fdce43c9f
+正在爬取 3/6 53/300 -> 17798 yjyun 20190830期
+20190902期$https://dapian.video-yongjiu.com/share/70876df606415b050df59005c3cff238
+正在爬取 3/6 53/300 -> 17798 yjyun 20190902期
+20190903期$https://dapian.video-yongjiu.com/share/4cfbc51c4d39c53146a0064ca373ddef
+正在爬取 3/6 53/300 -> 17798 yjyun 20190903期
+20190905期$https://dapian.video-yongjiu.com/share/445dc1bd2498d250b1a65a9bbe4bb5d9
+正在爬取 3/6 53/300 -> 17798 yjyun 20190905期
+20190906期$https://dapian.video-yongjiu.com/share/c36b81d5293acd2e3d41f1bdc1d0aefb
+正在爬取 3/6 53/300 -> 17798 yjyun 20190906期
+20190909期$https://dapian.video-yongjiu.com/share/f6e25176c96f7d7c8c7d74ff8babee5d
+正在爬取 3/6 53/300 -> 17798 yjyun 20190909期
+20190910期$https://dapian.video-yongjiu.com/share/ff4dfdf5904e920ce52b48c1cef97829
+正在爬取 3/6 53/300 -> 17798 yjyun 20190910期
+20190911期$https://dapian.video-yongjiu.com/share/175cbada323f6874f9d26985f9378efb
+正在爬取 3/6 53/300 -> 17798 yjyun 20190911期
+20190912期$https://dapian.video-yongjiu.com/share/9806b902e654c2ddd3b611099436037a
+正在爬取 3/6 53/300 -> 17798 yjyun 20190912期
+20190916期$https://dapian.video-yongjiu.com/share/1dd5a4016c624ef51f0542d4ae60e281
+正在爬取 3/6 53/300 -> 17798 yjyun 20190916期
+20190917期$https://dapian.video-yongjiu.com/share/c4536001673379765300886594b6b485
+正在爬取 3/6 53/300 -> 17798 yjyun 20190917期
+20190918期$https://dapian.video-yongjiu.com/share/757deb22acbb6b1e217fc378ac78b2a4
+正在爬取 3/6 53/300 -> 17798 yjyun 20190918期
+20190919期$https://dapian.video-yongjiu.com/share/1d221442f2e2158c01747714f9bb00f5
+正在爬取 3/6 53/300 -> 17798 yjyun 20190919期
+20190920期$https://dapian.video-yongjiu.com/share/aeaeb80c3d5feeb0e2c2c7b0938045c2
+正在爬取 3/6 53/300 -> 17798 yjyun 20190920期
+20190925期$https://dapian.video-yongjiu.com/share/4766154cea472a154f89d033051372de
+正在爬取 3/6 53/300 -> 17798 yjyun 20190925期
+20190926期$https://dapian.video-yongjiu.com/share/2d3bd60a2d899b49827efa1d74476809
+正在爬取 3/6 53/300 -> 17798 yjyun 20190926期
+20190930期$https://dapian.video-yongjiu.com/share/c29568179ca4f6e62552f14d69b810b2
+正在爬取 3/6 53/300 -> 17798 yjyun 20190930期
+20191002期$https://dapian.video-yongjiu.com/share/eab2156d0c600ceb7e814018273aec86
+正在爬取 3/6 53/300 -> 17798 yjyun 20191002期
+20191007期$https://dapian.video-yongjiu.com/share/719c6c64efb8dbf088b2677dee1a2c2e
+正在爬取 3/6 53/300 -> 17798 yjyun 20191007期
+20191008期$https://dapian.video-yongjiu.com/share/60cab8d25a3d32111c3290219c0b872b
+正在爬取 3/6 53/300 -> 17798 yjyun 20191008期
+20191011期$https://dapian.video-yongjiu.com/share/94b6ce9c1dbb412dcc36e2850627056f
+正在爬取 3/6 53/300 -> 17798 yjyun 20191011期
+20191014期$https://dapian.video-yongjiu.com/share/69ceed2a4ffe2ae23f8abf71d534a4bd
+正在爬取 3/6 53/300 -> 17798 yjyun 20191014期
+20191015期$https://dapian.video-yongjiu.com/share/02bcce140a5a811fe91b7980a6192f4a
+正在爬取 3/6 53/300 -> 17798 yjyun 20191015期
+20191016期$https://dapian.video-yongjiu.com/share/384aa2c2ca5996fc30438d97a5550988
+正在爬取 3/6 53/300 -> 17798 yjyun 20191016期
+20191017期$https://dapian.video-yongjiu.com/share/1e1aee7d1c2f371f8cd3442dcdc4e8cd
+正在爬取 3/6 53/300 -> 17798 yjyun 20191017期
+20191022期$https://dapian.video-yongjiu.com/share/3795d3a1bcd79ee934bf8ae37c031191
+正在爬取 3/6 53/300 -> 17798 yjyun 20191022期
+20191023期$https://dapian.video-yongjiu.com/share/17f7e7fcee1365802f541af4470ec23e
+正在爬取 3/6 53/300 -> 17798 yjyun 20191023期
+20191024期$https://dapian.video-yongjiu.com/share/8ca22b09aeb179a42c434b12b381c692
+正在爬取 3/6 53/300 -> 17798 yjyun 20191024期
+20191025期$https://dapian.video-yongjiu.com/share/175b0230afbb0ad5a51a2c70b9c768df
+正在爬取 3/6 53/300 -> 17798 yjyun 20191025期
+20190104$https://v3.yongjiujiexi.com/share/7FKKLJbDawa9sr06
+正在爬取 3/6 54/300 -> 19918 yjyun 20190104
+20190111$https://v3.yongjiujiexi.com/share/VjSQKrNGQhO01nYe
+正在爬取 3/6 54/300 -> 19918 yjyun 20190111
+20190118$https://v3.yongjiujiexi.com/share/ubzF73Y30YcdaH4K
+正在爬取 3/6 54/300 -> 19918 yjyun 20190118
+20190125$https://v3.yongjiujiexi.com/share/lCRvmTbzHPCA2diS
+正在爬取 3/6 54/300 -> 19918 yjyun 20190125
+20190201$https://v3.yongjiujiexi.com/share/dzXmTZZXnNNqSj26
+正在爬取 3/6 54/300 -> 19918 yjyun 20190201
+20190208$https://v3.yongjiujiexi.com/share/CN658eAZAO59Oe9B
+正在爬取 3/6 54/300 -> 19918 yjyun 20190208
+20190215$https://v3.yongjiujiexi.com/share/DOFOaoVv8NB5pLfC
+正在爬取 3/6 54/300 -> 19918 yjyun 20190215
+20190222$https://v3.yongjiujiexi.com/share/aVXlL1s8XGSH9iW3
+正在爬取 3/6 54/300 -> 19918 yjyun 20190222
+20190301$https://v3.yongjiujiexi.com/share/q7a1FaJWJUBWoOkz
+正在爬取 3/6 54/300 -> 19918 yjyun 20190301
+20190308$https://v3.yongjiujiexi.com/share/ljTV7UA5OV37XBeu
+正在爬取 3/6 54/300 -> 19918 yjyun 20190308
+20190315$https://v3.yongjiujiexi.com/share/GmPQOpqbHMesLPLf
+正在爬取 3/6 54/300 -> 19918 yjyun 20190315
+20190322$https://v3.yongjiujiexi.com/share/72KFibzCPAMDBfJW
+正在爬取 3/6 54/300 -> 19918 yjyun 20190322
+20190329$https://yj.yongjiu6.com/share/VFFkSbZejE9Z2yuj
+正在爬取 3/6 54/300 -> 19918 yjyun 20190329
+20190405$https://yj.yongjiu6.com/share/dBoeOUOA8iSBsuwq
+正在爬取 3/6 54/300 -> 19918 yjyun 20190405
+20190412$https://v3.yongjiujiexi.com/share/3Sgc4zrHl8dUdeeA
+正在爬取 3/6 54/300 -> 19918 yjyun 20190412
+20190419$https://v3.yongjiujiexi.com/share/tACdgo1adUCT5xjE
+正在爬取 3/6 54/300 -> 19918 yjyun 20190419
+20190426$https://yj.yongjiu6.com/share/DcDwRmqVFIb1eKmh
+正在爬取 3/6 54/300 -> 19918 yjyun 20190426
+20190503$https://v3.yongjiujiexi.com/share/V0PjylGOJVW8lXv9
+正在爬取 3/6 54/300 -> 19918 yjyun 20190503
+20190510$https://v3.yongjiujiexi.com/share/s7Hrs3IJh0kdTld5
+正在爬取 3/6 54/300 -> 19918 yjyun 20190510
+20190517$https://v3.yongjiujiexi.com/share/GwL38gsNKYsDkLkL
+正在爬取 3/6 54/300 -> 19918 yjyun 20190517
+20190524$https://v3.yongjiujiexi.com/share/pGFDxwcddjJzIODq
+正在爬取 3/6 54/300 -> 19918 yjyun 20190524
+20190531$https://gaoqing.bibi-baidu.com/share/13f320e7b5ead1024ac95c3b208610db
+正在爬取 3/6 54/300 -> 19918 yjyun 20190531
+20190607$https://dapian.video-yongjiu.com/share/2291d2ec3b3048d1a6f86c2c4591b7e0
+正在爬取 3/6 54/300 -> 19918 yjyun 20190607
+20190614$https://dapian.video-yongjiu.com/share/a1519de5b5d44b31a01de013b9b51a80
+正在爬取 3/6 54/300 -> 19918 yjyun 20190614
+20190621$https://dapian.video-yongjiu.com/share/5b6ba13f79129a74a3e819b78e36b922
+正在爬取 3/6 54/300 -> 19918 yjyun 20190621
+20190628$https://gaoqing.bibi-baidu.com/share/8b9e7ab295e87570551db122a04c6f7c
+正在爬取 3/6 54/300 -> 19918 yjyun 20190628
+20190705$https://gaoqing.bibi-baidu.com/share/6098ed616e715171f0dabad60a8e5197
+正在爬取 3/6 54/300 -> 19918 yjyun 20190705
+20190712$https://dapian.video-yongjiu.com/share/03bfc1d4783966c69cc6aef8247e0103
+正在爬取 3/6 54/300 -> 19918 yjyun 20190712
+20190719期$https://dapian.video-yongjiu.com/share/2e5c2cb8d13e8fba78d95211440ba326
+正在爬取 3/6 54/300 -> 19918 yjyun 20190719期
+20190726期$https://dapian.video-yongjiu.com/share/999028872cfff7ae8ee330a33cbd3874
+正在爬取 3/6 54/300 -> 19918 yjyun 20190726期
+20190802期$https://dapian.video-yongjiu.com/share/5b8e9841e87fb8fc590434f5d933c92c
+正在爬取 3/6 54/300 -> 19918 yjyun 20190802期
+20190809期$https://dapian.video-yongjiu.com/share/6cf75a28ed72a43ef7ca1b66ff345859
+正在爬取 3/6 54/300 -> 19918 yjyun 20190809期
+20190816期$https://dapian.video-yongjiu.com/share/e1226495c14f1a62ae17aa76c1f0d457
+正在爬取 3/6 54/300 -> 19918 yjyun 20190816期
+20190823期$https://dapian.video-yongjiu.com/share/840c3eda3ea42ecd90aeb3434f3510b7
+正在爬取 3/6 54/300 -> 19918 yjyun 20190823期
+20190830期$https://dapian.video-yongjiu.com/share/8fe6833df81e224e08ce9be4abfa89a0
+正在爬取 3/6 54/300 -> 19918 yjyun 20190830期
+20190906期$https://dapian.video-yongjiu.com/share/ab7a710458b8378b523e39143a6764d6
+正在爬取 3/6 54/300 -> 19918 yjyun 20190906期
+20190913期$https://dapian.video-yongjiu.com/share/c1e247e2235eb596c080297d6903cf39
+正在爬取 3/6 54/300 -> 19918 yjyun 20190913期
+20190920期$https://dapian.video-yongjiu.com/share/0a343d089f3bd7ea28315af8b4370155
+正在爬取 3/6 54/300 -> 19918 yjyun 20190920期
+20190927期$https://dapian.video-yongjiu.com/share/e7d755d1aef5d1ceeb803e20063a334c
+正在爬取 3/6 54/300 -> 19918 yjyun 20190927期
+20191004期$https://dapian.video-yongjiu.com/share/d36e6dc0e73616d5b48392f1862c3089
+正在爬取 3/6 54/300 -> 19918 yjyun 20191004期
+20191011期$https://dapian.video-yongjiu.com/share/f31b56f9432b4f03b3b5f4611be3fd96
+正在爬取 3/6 54/300 -> 19918 yjyun 20191011期
+20191018期$https://dapian.video-yongjiu.com/share/84e17d99a1e885b374d0cb2e25d7aa4b
+正在爬取 3/6 54/300 -> 19918 yjyun 20191018期
+20191025期$https://dapian.video-yongjiu.com/share/14d010488fdb86b7b84ad331943cbb35
+正在爬取 3/6 54/300 -> 19918 yjyun 20191025期
+20190831期$https://dapian.video-yongjiu.com/share/d9812f756d0df06c7381945d2e2c7d4b
+正在爬取 3/6 56/300 -> 26551 yjyun 20190831期
+20190907期$https://dapian.video-yongjiu.com/share/f014d3d6593c369164be6775d5fab1af
+正在爬取 3/6 56/300 -> 26551 yjyun 20190907期
+20190914期$https://dapian.video-yongjiu.com/share/41fa3925a7ec42ce029c43d6676e4b2c
+正在爬取 3/6 56/300 -> 26551 yjyun 20190914期
+20190921期$https://dapian.video-yongjiu.com/share/51b2e138a07e3570fb7147311365a5eb
+正在爬取 3/6 56/300 -> 26551 yjyun 20190921期
+20180928期$https://dapian.video-yongjiu.com/share/7d49eeedfb19f1aaac0bc4f12e74d8b1
+正在爬取 3/6 56/300 -> 26551 yjyun 20180928期
+20191005期$https://dapian.video-yongjiu.com/share/5ba560e450ca899ff7f25d00077c3fff
+正在爬取 3/6 56/300 -> 26551 yjyun 20191005期
+20191012期$https://dapian.video-yongjiu.com/share/a1c7060e48b086dff8f6e99abbfb181f
+正在爬取 3/6 56/300 -> 26551 yjyun 20191012期
+20191019期$https://dapian.video-yongjiu.com/share/d1f2767f75c7a38bc77d43e2050293d9
+正在爬取 3/6 56/300 -> 26551 yjyun 20191019期
+20191026期$https://dapian.video-yongjiu.com/share/b4c09291255e39e37e6eaf492991d330
+正在爬取 3/6 56/300 -> 26551 yjyun 20191026期
+第01集$https://dapian.video-yongjiu.com/share/1514f187930072575629709336826443
+正在爬取 3/6 57/300 -> 27220 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/24a7ffe3bda20532c5f116825ff5dfcf
+正在爬取 3/6 57/300 -> 27220 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/5be40437b695b83e1356be1ac5724c50
+正在爬取 3/6 57/300 -> 27220 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/67a20639726a041ddbbd0f78e010f78b
+正在爬取 3/6 57/300 -> 27220 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/5e4a09c72949f70c2bab629d3baca2d8
+正在爬取 3/6 57/300 -> 27220 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/de25b9df3e268442417dc026149880e4
+正在爬取 3/6 57/300 -> 27220 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/79b32d0931a0e402c4bf9c2297caaec2
+正在爬取 3/6 57/300 -> 27220 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/99d1e1fe9f1e565a009688a315b90a3a
+正在爬取 3/6 57/300 -> 27220 yjyun 第08集
+第09集$https://dapian.video-yongjiu.com/share/84d2f3b46b8baf9d28b497f803e7f46d
+正在爬取 3/6 57/300 -> 27220 yjyun 第09集
+第10集$https://dapian.video-yongjiu.com/share/4991a0a8bc16b501dc8a85ff2e917190
+正在爬取 3/6 57/300 -> 27220 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/11b465eaf4a22936bb9ab2ce39324e45
+正在爬取 3/6 57/300 -> 27220 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/109ea5d046f5ff9ed62a35991fc7af53
+正在爬取 3/6 57/300 -> 27220 yjyun 第12集
+20190825期$https://dapian.video-yongjiu.com/share/3d3103fc27ffaea9fcbaebd91c8fff07
+正在爬取 3/6 58/300 -> 26394 yjyun 20190825期
+20190901期$https://dapian.video-yongjiu.com/share/1759e864edd6cb2200926b3a2f729dac
+正在爬取 3/6 58/300 -> 26394 yjyun 20190901期
+20190915期$https://dapian.video-yongjiu.com/share/1634908a456f1807f5c7375e92dddeb2
+正在爬取 3/6 58/300 -> 26394 yjyun 20190915期
+20190922期$https://dapian.video-yongjiu.com/share/d4ff76af57c1ebcc7eca3807b9a431a6
+正在爬取 3/6 58/300 -> 26394 yjyun 20190922期
+20190929期$https://dapian.video-yongjiu.com/share/96fb9b48825b741083d35b0137af1be0
+正在爬取 3/6 58/300 -> 26394 yjyun 20190929期
+20191013期$https://dapian.video-yongjiu.com/share/5a42e672e08bf35f9317d8fe0e28975a
+正在爬取 3/6 58/300 -> 26394 yjyun 20191013期
+20191019期$https://dapian.video-yongjiu.com/share/b400f98a2d7ae72b97cb87a354ebfb9f
+正在爬取 3/6 58/300 -> 26394 yjyun 20191019期
+20191026期$https://dapian.video-yongjiu.com/share/2cfd73d6effa33badc4c55b0c67a056d
+正在爬取 3/6 58/300 -> 26394 yjyun 20191026期
+20190105$https://youku.iqiyi-yongjiu.com/share/HQ9NBZiJUhX2wlgA
+正在爬取 3/6 59/300 -> 17678 yjyun 20190105
+20190112$https://v3.yongjiujiexi.com/share/5YMVInShRufKjm1s
+正在爬取 3/6 59/300 -> 17678 yjyun 20190112
+20190119$https://v3.yongjiujiexi.com/share/AOdNhVq0tKEyl9Vx
+正在爬取 3/6 59/300 -> 17678 yjyun 20190119
+20190126$https://yj.yongjiu6.com/share/akZzH2C1MIFv7c0c
+正在爬取 3/6 59/300 -> 17678 yjyun 20190126
+20190202$https://yj.yongjiu6.com/share/8CcN1O5wbLSva5g3
+正在爬取 3/6 59/300 -> 17678 yjyun 20190202
+20190209$https://v3.yongjiujiexi.com/share/UHB4u7oDk2Z5vswo
+正在爬取 3/6 59/300 -> 17678 yjyun 20190209
+20190216$https://yj.yongjiu6.com/share/0sx6rR6s3qT8ku30
+正在爬取 3/6 59/300 -> 17678 yjyun 20190216
+20190223$https://yj.yongjiu6.com/share/WEeUjofpN3enpKKg
+正在爬取 3/6 59/300 -> 17678 yjyun 20190223
+20190309$https://yj.yongjiu6.com/share/FRap5MM5XK9pk5mP
+正在爬取 3/6 59/300 -> 17678 yjyun 20190309
+20190316$https://v3.yongjiujiexi.com/share/4OPxlzOaWDX33WSG
+正在爬取 3/6 59/300 -> 17678 yjyun 20190316
+20190323$https://yj.yongjiu6.com/share/BjfPWLKxbFgs98o0
+正在爬取 3/6 59/300 -> 17678 yjyun 20190323
+20190330$https://yj.yongjiu6.com/share/kokZ1LOx1sIscHOa
+正在爬取 3/6 59/300 -> 17678 yjyun 20190330
+20190406$https://v3.yongjiujiexi.com/share/hrB47uWd80c5aMLv
+正在爬取 3/6 59/300 -> 17678 yjyun 20190406
+20190413$https://v3.yongjiujiexi.com/share/Q7G5xIryo4g6h460
+正在爬取 3/6 59/300 -> 17678 yjyun 20190413
+20190420$https://v3.yongjiujiexi.com/share/R13fTlteSZX7GRYs
+正在爬取 3/6 59/300 -> 17678 yjyun 20190420
+20190427$https://v3.yongjiujiexi.com/share/5J51pCFqtaZs5gPe
+正在爬取 3/6 59/300 -> 17678 yjyun 20190427
+20190503期$https://v3.yongjiujiexi.com/share/TJ2FJQNYSYULnyuf
+正在爬取 3/6 59/300 -> 17678 yjyun 20190503期
+20190511期$https://yj.yongjiu6.com/share/Cy2dj0Hluv2SsJhc
+正在爬取 3/6 59/300 -> 17678 yjyun 20190511期
+20190518期$https://v3.yongjiujiexi.com/share/IFBbk0lBy2DR9r2S
+正在爬取 3/6 59/300 -> 17678 yjyun 20190518期
+20190608期$https://gaoqing.bibi-baidu.com/share/184260348236f9554fe9375772ff966e
+正在爬取 3/6 59/300 -> 17678 yjyun 20190608期
+20190615期$https://gaoqing.bibi-baidu.com/share/4888241374e8c62ddd9b4c3cfd091f96
+正在爬取 3/6 59/300 -> 17678 yjyun 20190615期
+20190622期$https://dapian.video-yongjiu.com/share/6449f44a102fde848669bdd9eb6b76fa
+正在爬取 3/6 59/300 -> 17678 yjyun 20190622期
+20190628期$https://dapian.video-yongjiu.com/share/934b535800b1cba8f96a5d72f72f1611
+正在爬取 3/6 59/300 -> 17678 yjyun 20190628期
+20190705期$https://dapian.video-yongjiu.com/share/92f54963fc39a9d87c2253186808ea61
+正在爬取 3/6 59/300 -> 17678 yjyun 20190705期
+20190713期$https://dapian.video-yongjiu.com/share/a92c274b8be496fb05d95033552eeddd
+正在爬取 3/6 59/300 -> 17678 yjyun 20190713期
+20190720期$https://dapian.video-yongjiu.com/share/86c51678350f656dcc7f490a43946ee5
+正在爬取 3/6 59/300 -> 17678 yjyun 20190720期
+20190727期$https://dapian.video-yongjiu.com/share/4f164cf233807fc02da06599a1264dee
+正在爬取 3/6 59/300 -> 17678 yjyun 20190727期
+20190803期$https://dapian.video-yongjiu.com/share/3ba9af181751761d3b387f74ded2d783
+正在爬取 3/6 59/300 -> 17678 yjyun 20190803期
+20190810期$https://dapian.video-yongjiu.com/share/993edc98ca87f7e08494eec37fa836f7
+正在爬取 3/6 59/300 -> 17678 yjyun 20190810期
+20190817期$https://dapian.video-yongjiu.com/share/4efa8b668ee1198289bb15965d9705b6
+正在爬取 3/6 59/300 -> 17678 yjyun 20190817期
+20190824期$https://dapian.video-yongjiu.com/share/a2f94d8e28139ce8120147d24fe3b8f6
+正在爬取 3/6 59/300 -> 17678 yjyun 20190824期
+20190831期$https://dapian.video-yongjiu.com/share/d3c7d16586ecd8fdc7c8781a225a572f
+正在爬取 3/6 59/300 -> 17678 yjyun 20190831期
+20190907期$https://dapian.video-yongjiu.com/share/501e3f8a108d7ab9335ceecd363d113d
+正在爬取 3/6 59/300 -> 17678 yjyun 20190907期
+20190914期$https://dapian.video-yongjiu.com/share/38a8e18d75e95ca619af8df0da1417f2
+正在爬取 3/6 59/300 -> 17678 yjyun 20190914期
+20190921期$https://dapian.video-yongjiu.com/share/bfa20d86a59044ef90a4609dde03985c
+正在爬取 3/6 59/300 -> 17678 yjyun 20190921期
+20190928期$https://dapian.video-yongjiu.com/share/85040c47172a95869f1a82c180ae7701
+正在爬取 3/6 59/300 -> 17678 yjyun 20190928期
+20191005期$https://dapian.video-yongjiu.com/share/134dd796229f80f23b75af20495b8d50
+正在爬取 3/6 59/300 -> 17678 yjyun 20191005期
+20191012期$https://dapian.video-yongjiu.com/share/c05aaffc668eaa784dbbc2b10db0483c
+正在爬取 3/6 59/300 -> 17678 yjyun 20191012期
+20191019期$https://dapian.video-yongjiu.com/share/bc80ecf162f29b1afc2c38244c970619
+正在爬取 3/6 59/300 -> 17678 yjyun 20191019期
+20191026期$https://dapian.video-yongjiu.com/share/1ecb6468735bde11b1d125b787158088
+正在爬取 3/6 59/300 -> 17678 yjyun 20191026期
+第01集$https://dapian.video-yongjiu.com/share/897a9a2b554640752d749543235a1b16
+正在爬取 3/6 60/300 -> 26532 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/65684369725be7c63a49221213a928e6
+正在爬取 3/6 60/300 -> 26532 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/e72d58699e2b0ef6fb64ab80fff4e29c
+正在爬取 3/6 60/300 -> 26532 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/ab43c4e87d82d0c6b0f9b02654aaf23c
+正在爬取 3/6 60/300 -> 26532 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/2bada0d8cffac40c988e44a273ba58d7
+正在爬取 3/6 60/300 -> 26532 yjyun 第05集
+第01集$https://dapian.video-yongjiu.com/share/d7678df0f1716c9893c21506a07c809d
+正在爬取 3/6 61/300 -> 29287 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/6b72ae1b07bcd7ac94b68f62d7cf4d8b
+正在爬取 3/6 61/300 -> 29287 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/3c8aad396b170bc506e316d9225735b0
+正在爬取 3/6 61/300 -> 29287 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/038a237670b78d07d7e5fd9092e82bdd
+正在爬取 3/6 61/300 -> 29287 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/24195119088b213cafd968936c1a10ff
+正在爬取 3/6 61/300 -> 29287 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/05c0ae7c6b605732401aa102a62970b3
+正在爬取 3/6 61/300 -> 29287 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/3cb7820f34d947f7c4c3531ed72254b0
+正在爬取 3/6 61/300 -> 29287 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/715f390c232030c410b5ff0aa1034a1c
+正在爬取 3/6 61/300 -> 29287 yjyun 第08集
+第09集$https://dapian.video-yongjiu.com/share/04c0e78a0e5ff3259fd1fc0239065a3a
+正在爬取 3/6 61/300 -> 29287 yjyun 第09集
+第10集$https://dapian.video-yongjiu.com/share/e4a5e8fb022785d56a9cefcaa4ac0ee5
+正在爬取 3/6 61/300 -> 29287 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/b817f8dad313f809b7e71a53e14a9231
+正在爬取 3/6 61/300 -> 29287 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/25882fc11893a88810ef1482f9a84a49
+正在爬取 3/6 61/300 -> 29287 yjyun 第12集
+第13集$https://dapian.video-yongjiu.com/share/7f7fc17485016b50781712c529de1df4
+正在爬取 3/6 61/300 -> 29287 yjyun 第13集
+第14集$https://dapian.video-yongjiu.com/share/d4c5ee388670c4a29987462458c5310f
+正在爬取 3/6 61/300 -> 29287 yjyun 第14集
+第15集$https://dapian.video-yongjiu.com/share/fc7b572c63f97ab8e2f9cc309152492d
+正在爬取 3/6 61/300 -> 29287 yjyun 第15集
+第16集$https://dapian.video-yongjiu.com/share/ac1195357ddafa8192abdf6fb2dde004
+正在爬取 3/6 61/300 -> 29287 yjyun 第16集
+第17集$https://dapian.video-yongjiu.com/share/fff079091fab64095f9cad3298f1057a
+正在爬取 3/6 61/300 -> 29287 yjyun 第17集
+第18集$https://dapian.video-yongjiu.com/share/b887f82284199f5553f5cf0d1453bd1d
+正在爬取 3/6 61/300 -> 29287 yjyun 第18集
+第01集$https://dapian.video-yongjiu.com/share/eb9e69146976f3d040ad7c1f0d9fece0
+正在爬取 3/6 62/300 -> 29666 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/2a960e2c4cf05b146eadfb3fc72b6665
+正在爬取 3/6 62/300 -> 29666 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/338fa17e14b16a99d24a5f09fd49c17d
+正在爬取 3/6 62/300 -> 29666 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/75b8241ed29d71d3011ae167116e722c
+正在爬取 3/6 62/300 -> 29666 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/960ade68ab05b7e113c6c410ba34c4ee
+正在爬取 3/6 62/300 -> 29666 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/31910e7811999746bcaec5c692b7f04d
+正在爬取 3/6 62/300 -> 29666 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/03d015a5f7a729b37c5f35c89516c4b2
+正在爬取 3/6 62/300 -> 29666 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/bed6efa1f192db7c30ede96dbb9d76ee
+正在爬取 3/6 62/300 -> 29666 yjyun 第08集
+第09集$https://dapian.video-yongjiu.com/share/9a9507ccbb6be14e614c0c61cb485c83
+正在爬取 3/6 62/300 -> 29666 yjyun 第09集
+第10集$https://dapian.video-yongjiu.com/share/264a8d02fe9429236ad8796df3f16ec6
+正在爬取 3/6 62/300 -> 29666 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/aa40df143035c234478be31c91463953
+正在爬取 3/6 62/300 -> 29666 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/0832f3473e5c452694a193e668e38ad1
+正在爬取 3/6 62/300 -> 29666 yjyun 第12集
+第13集$https://dapian.video-yongjiu.com/share/c1bc7f81bdba1b65aca9d6d1592b41ad
+正在爬取 3/6 62/300 -> 29666 yjyun 第13集
+第14集$https://dapian.video-yongjiu.com/share/b8e13fb2d666b3ef456839ea878a0ab8
+正在爬取 3/6 62/300 -> 29666 yjyun 第14集
+第15集$https://dapian.video-yongjiu.com/share/197fabf83fac149373c2c7acdd53f0c2
+正在爬取 3/6 62/300 -> 29666 yjyun 第15集
+第16集$https://dapian.video-yongjiu.com/share/8e047e51a0262a54c2dffb2274683c07
+正在爬取 3/6 62/300 -> 29666 yjyun 第16集
+20191012期$https://dapian.video-yongjiu.com/share/9e1c2f13d481c7ccc6673a3ac668799f
+正在爬取 3/6 63/300 -> 29032 yjyun 20191012期
+20191019期$https://dapian.video-yongjiu.com/share/731b104c87788ed39b5b5e7571145e7b
+正在爬取 3/6 63/300 -> 29032 yjyun 20191019期
+20191026期$https://dapian.video-yongjiu.com/share/9833dfe00e523737467c90974b3ff70c
+正在爬取 3/6 63/300 -> 29032 yjyun 20191026期
+find success 65674
+当前页面：http://www.yongjiuzy.cc/?m=vod-index-pg-6.html
+第01集$https://dapian.video-yongjiu.com/share/a7dc8392b70ca7379b1e2daea1709162
+正在爬取 6/6 67/300 -> 29739 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/07e11194ae0cf612a6d02dfddca524bd
+正在爬取 6/6 67/300 -> 29739 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/7269551457062ac80044ae5e0fb1b882
+正在爬取 6/6 67/300 -> 29739 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/4b3909f00d45451966f2fdc01cdcc610
+正在爬取 6/6 67/300 -> 29739 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/85410779053820c804ddc69ae4a48d9d
+正在爬取 6/6 67/300 -> 29739 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/76e29a9f2d8037429c360bdefcca0f57
+正在爬取 6/6 67/300 -> 29739 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/68f7706048943bb1314c6cf8e18a99e4
+正在爬取 6/6 67/300 -> 29739 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/053c837dca3a5636ad1c9bccd6af3415
+正在爬取 6/6 67/300 -> 29739 yjyun 第08集
+第09集$https://dapian.video-yongjiu.com/share/1cc1fab198176208789cf94b71412dc8
+正在爬取 6/6 67/300 -> 29739 yjyun 第09集
+第10集$https://dapian.video-yongjiu.com/share/b8b195466d4f833578d5ee14a9a3c5b8
+正在爬取 6/6 67/300 -> 29739 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/186ba2b5d093634fd7a873faea7e41ba
+正在爬取 6/6 67/300 -> 29739 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/b2f83c409ce63012229fb9cd465bdcfe
+正在爬取 6/6 67/300 -> 29739 yjyun 第12集
+HD720P中字$https://dapian.video-yongjiu.com/share/89b3f18cd4609f9af4d1aa05a3df378e
+正在爬取 6/6 68/300 -> 29740 yjyun HD720P中字
+第01集$https://dapian.video-yongjiu.com/share/10ada88209bc465aa0ebd61bc248733e
+正在爬取 6/6 69/300 -> 27575 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/f2671992766736eaee5018a1de716c86
+正在爬取 6/6 69/300 -> 27575 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/86158a6b3924670a32dad65bbc41bd95
+正在爬取 6/6 69/300 -> 27575 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/c47a3ba2c793b5b9e21260f903c37d4d
+正在爬取 6/6 69/300 -> 27575 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/efe7beaa44d6e14c30432d43b2522ba2
+正在爬取 6/6 69/300 -> 27575 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/5898493fbdf4a44a24084021b2215f85
+正在爬取 6/6 69/300 -> 27575 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/1ad93267910df9c994eae8e51f527c7b
+正在爬取 6/6 69/300 -> 27575 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/63e6bc520edcbaa95446b5690d989f30
+正在爬取 6/6 69/300 -> 27575 yjyun 第08集
+第09集$https://dapian.video-yongjiu.com/share/e1c2e55cc575a2ccb30e7bbafc011b03
+正在爬取 6/6 69/300 -> 27575 yjyun 第09集
+第10集$https://dapian.video-yongjiu.com/share/32f791428812696ee7ce8f161ecd490c
+正在爬取 6/6 69/300 -> 27575 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/b6b48639e4627ac7813f3501da8e4465
+正在爬取 6/6 69/300 -> 27575 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/dba0ff02313bd467ce9d52df8d6c80e6
+正在爬取 6/6 69/300 -> 27575 yjyun 第12集
+第13集$https://dapian.video-yongjiu.com/share/d13dda85502e18dac4bca8c4c429b86c
+正在爬取 6/6 69/300 -> 27575 yjyun 第13集
+第14集$https://dapian.video-yongjiu.com/share/7207cc49aa823ca90c015aacf4e9c161
+正在爬取 6/6 69/300 -> 27575 yjyun 第14集
+第15集$https://dapian.video-yongjiu.com/share/042886829869470b75f63dddfd7e9d9d
+正在爬取 6/6 69/300 -> 27575 yjyun 第15集
+第16集$https://dapian.video-yongjiu.com/share/b4e996f75bdf4c28209feba4693ff228
+正在爬取 6/6 69/300 -> 27575 yjyun 第16集
+第17集$https://dapian.video-yongjiu.com/share/ca6037b5974c5b0dac440bcdfb299bce
+正在爬取 6/6 69/300 -> 27575 yjyun 第17集
+第18集$https://dapian.video-yongjiu.com/share/eb5053f7d2403c84a849b040014903ac
+正在爬取 6/6 69/300 -> 27575 yjyun 第18集
+第19集$https://dapian.video-yongjiu.com/share/20872559d95722c9d6a71d973c1a00b5
+正在爬取 6/6 69/300 -> 27575 yjyun 第19集
+第20集$https://dapian.video-yongjiu.com/share/798cfc169a66eb10aa814f8a45d5ef42
+正在爬取 6/6 69/300 -> 27575 yjyun 第20集
+第21集$https://dapian.video-yongjiu.com/share/6e188dc874a5c7bee808852f9020c0c9
+正在爬取 6/6 69/300 -> 27575 yjyun 第21集
+第22集$https://dapian.video-yongjiu.com/share/68e0937d0f20f63d46f066cb42c048a0
+正在爬取 6/6 69/300 -> 27575 yjyun 第22集
+第23集$https://dapian.video-yongjiu.com/share/6ea1301c76a2752155f93ff51443ad01
+正在爬取 6/6 69/300 -> 27575 yjyun 第23集
+第24集$https://dapian.video-yongjiu.com/share/10b3a190826923700349cc96979e8b48
+正在爬取 6/6 69/300 -> 27575 yjyun 第24集
+第25集$https://dapian.video-yongjiu.com/share/d3636814355d8734527d64d9a229acc3
+正在爬取 6/6 69/300 -> 27575 yjyun 第25集
+第26集$https://dapian.video-yongjiu.com/share/129e4760599f99cd2841b7a19d03e07e
+正在爬取 6/6 69/300 -> 27575 yjyun 第26集
+第27集$https://dapian.video-yongjiu.com/share/8c67c2ac63f3a3c9517e2e4c8c72798f
+正在爬取 6/6 69/300 -> 27575 yjyun 第27集
+第28集$https://dapian.video-yongjiu.com/share/da5dc4875e3401ea2bd35ee8f56277a6
+正在爬取 6/6 69/300 -> 27575 yjyun 第28集
+第29集$https://dapian.video-yongjiu.com/share/be19b5f3f1fab3af9028503f50c864db
+正在爬取 6/6 69/300 -> 27575 yjyun 第29集
+第30集$https://dapian.video-yongjiu.com/share/a3dd176fb68ba78b8297421f5a093f24
+正在爬取 6/6 69/300 -> 27575 yjyun 第30集
+第31集$https://dapian.video-yongjiu.com/share/8596dd1dc67d1200fe0606146fcee1a4
+正在爬取 6/6 69/300 -> 27575 yjyun 第31集
+第01集$https://yj.yongjiu6.com/share/s1DVK6GpKnQV2QuN
+正在爬取 6/6 70/300 -> 24199 yjyun 第01集
+第02集$https://yj.yongjiu6.com/share/zKGPayLty2MiJdTh
+正在爬取 6/6 70/300 -> 24199 yjyun 第02集
+第03集$https://yj.yongjiu6.com/share/JJcQM4H9yhi9nYe3
+正在爬取 6/6 70/300 -> 24199 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/9be40cee5b0eee1462c82c6964087ff9
+正在爬取 6/6 70/300 -> 24199 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/5ef698cd9fe650923ea331c15af3b160
+正在爬取 6/6 70/300 -> 24199 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/05049e90fa4f5039a8cadc6acbb4b2cc
+正在爬取 6/6 70/300 -> 24199 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/cf004fdc76fa1a4f25f62e0eb5261ca3
+正在爬取 6/6 70/300 -> 24199 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/8c7bbbba95c1025975e548cee86dfadc
+正在爬取 6/6 70/300 -> 24199 yjyun 第08集
+第09集$https://gaoqing.bibi-baidu.com/share/1f34004ebcb05f9acda6016d5cc52d5e
+正在爬取 6/6 70/300 -> 24199 yjyun 第09集
+第10集$https://gaoqing.bibi-baidu.com/share/b06b5541a62ed438f956b662b4e1ec28
+正在爬取 6/6 70/300 -> 24199 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/2a8a812400df8963b2e2ac0ed01b07b8
+正在爬取 6/6 70/300 -> 24199 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/e02e27e04fdff967ba7d76fb24b8069d
+正在爬取 6/6 70/300 -> 24199 yjyun 第12集
+第13集$https://dapian.video-yongjiu.com/share/4b3acf483fac3b2baaad311f1cef9674
+正在爬取 6/6 70/300 -> 24199 yjyun 第13集
+第14集$https://dapian.video-yongjiu.com/share/46d3f6029f6170ebccb28945964d09bf
+正在爬取 6/6 70/300 -> 24199 yjyun 第14集
+第15集$https://dapian.video-yongjiu.com/share/d403137434343677b98efc88cbd5493d
+正在爬取 6/6 70/300 -> 24199 yjyun 第15集
+第16集$https://dapian.video-yongjiu.com/share/7eb532aef980c36170c0b4426f082b87
+正在爬取 6/6 70/300 -> 24199 yjyun 第16集
+第17集$https://dapian.video-yongjiu.com/share/f5cfbc876972bd0d031c8abc37344c28
+正在爬取 6/6 70/300 -> 24199 yjyun 第17集
+第18集$https://dapian.video-yongjiu.com/share/66fe2bcc701bb627e111be6847a8436c
+正在爬取 6/6 70/300 -> 24199 yjyun 第18集
+第19集$https://dapian.video-yongjiu.com/share/1ce3e6e3f452828e23a0c94572bef9d9
+正在爬取 6/6 70/300 -> 24199 yjyun 第19集
+第20集$https://dapian.video-yongjiu.com/share/bf15fc6473a38b79c0a233e9c6581775
+正在爬取 6/6 70/300 -> 24199 yjyun 第20集
+第21集$https://dapian.video-yongjiu.com/share/0e19a8bac63f97a513063dcb9a64442b
+正在爬取 6/6 70/300 -> 24199 yjyun 第21集
+第22集$https://dapian.video-yongjiu.com/share/e7fed988dd5f2a44bb605bffd0f6c19d
+正在爬取 6/6 70/300 -> 24199 yjyun 第22集
+第23集$https://dapian.video-yongjiu.com/share/cdf039a172c2935f315a7d4cec997c35
+正在爬取 6/6 70/300 -> 24199 yjyun 第23集
+第24集$https://dapian.video-yongjiu.com/share/fcee1c9ad92de3cb8a6ed6d0622cb4ad
+正在爬取 6/6 70/300 -> 24199 yjyun 第24集
+第25集$https://dapian.video-yongjiu.com/share/7db8742948ee2a4a67999d26941bfa01
+正在爬取 6/6 70/300 -> 24199 yjyun 第25集
+第26集$https://dapian.video-yongjiu.com/share/f5b3a62a162d8ae1e7e1f2cd34defd1a
+正在爬取 6/6 70/300 -> 24199 yjyun 第26集
+第27集$https://dapian.video-yongjiu.com/share/47f17aa979b53fbf7930d7e8bc2f3f03
+正在爬取 6/6 70/300 -> 24199 yjyun 第27集
+第28集$https://dapian.video-yongjiu.com/share/37c9c9e3401bacdf3fb42cb447dadb4b
+正在爬取 6/6 70/300 -> 24199 yjyun 第28集
+第01集$https://dapian.video-yongjiu.com/share/6a70a091e469207c3709ce5f014f9f8b
+正在爬取 6/6 71/300 -> 28992 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/b2acf06f5459437420efd16f91c4b932
+正在爬取 6/6 71/300 -> 28992 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/67eb5e92661b494826add1d403863257
+正在爬取 6/6 71/300 -> 28992 yjyun 第03集
+第01集$https://dapian.video-yongjiu.com/share/4641f63dd756285f550c6361c9da2e31
+正在爬取 6/6 72/300 -> 24198 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/0192adec1a16b0565dc3f70b5d235a40
+正在爬取 6/6 72/300 -> 24198 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/3c63021df32e126a8dcf115d07e23f59
+正在爬取 6/6 72/300 -> 24198 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/043ea4eb48d314b91e95fb5052d3d8f0
+正在爬取 6/6 72/300 -> 24198 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/bafd1b75c5f0ceb81050a853c9faa911
+正在爬取 6/6 72/300 -> 24198 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/aa8da3e60fb65cda2ae6b220268c4964
+正在爬取 6/6 72/300 -> 24198 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/f84f4800d13741a98ddf9bc46e58355c
+正在爬取 6/6 72/300 -> 24198 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/a93dddc1fd67c3a6409fafb5801d7d50
+正在爬取 6/6 72/300 -> 24198 yjyun 第08集
+第09集$https://dapian.video-yongjiu.com/share/36cc76f6dc57f50bdbda82f92aff1b94
+正在爬取 6/6 72/300 -> 24198 yjyun 第09集
+第10集$https://dapian.video-yongjiu.com/share/df5665df072805334c14ca0c79bbe794
+正在爬取 6/6 72/300 -> 24198 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/262f3d665f3ebe0bb7af2a1044ea9d23
+正在爬取 6/6 72/300 -> 24198 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/570f6ff5228e5ab43af45555c8710998
+正在爬取 6/6 72/300 -> 24198 yjyun 第12集
+第13集$https://dapian.video-yongjiu.com/share/d203bbe1b9e242a034b376bafda15a99
+正在爬取 6/6 72/300 -> 24198 yjyun 第13集
+第14集$https://dapian.video-yongjiu.com/share/cd50a6640d6284992905dc447fd7701d
+正在爬取 6/6 72/300 -> 24198 yjyun 第14集
+第15集$https://dapian.video-yongjiu.com/share/0d8b5e804141b2297b65df6ff6c9ce27
+正在爬取 6/6 72/300 -> 24198 yjyun 第15集
+第17集$https://dapian.video-yongjiu.com/share/4cf06252cc21d496e754ad7185d0617d
+正在爬取 6/6 72/300 -> 24198 yjyun 第17集
+第18集$https://dapian.video-yongjiu.com/share/1ad31a8fd663d63f490bde6093821c7a
+正在爬取 6/6 72/300 -> 24198 yjyun 第18集
+第19集$https://dapian.video-yongjiu.com/share/7fb56a46e022f780f9de8fbd72aa091b
+正在爬取 6/6 72/300 -> 24198 yjyun 第19集
+第20集$https://dapian.video-yongjiu.com/share/4a3cffe005397d4cffdee044f1c8d30e
+正在爬取 6/6 72/300 -> 24198 yjyun 第20集
+第21集$https://dapian.video-yongjiu.com/share/d56fac4fc074379769b86e77e00422dc
+正在爬取 6/6 72/300 -> 24198 yjyun 第21集
+第22集$https://dapian.video-yongjiu.com/share/fa45e04412386eaef9d603bc349b5065
+正在爬取 6/6 72/300 -> 24198 yjyun 第22集
+第23集$https://dapian.video-yongjiu.com/share/2dc8bd91d566cac1abc88917ca71e1ee
+正在爬取 6/6 72/300 -> 24198 yjyun 第23集
+第24集$https://dapian.video-yongjiu.com/share/f4aaa6f85a8a9a5cc063b6b109fe75a2
+正在爬取 6/6 72/300 -> 24198 yjyun 第24集
+第25集$https://dapian.video-yongjiu.com/share/92703b40f4978c54122f6ecedb781546
+正在爬取 6/6 72/300 -> 24198 yjyun 第25集
+第26集$https://dapian.video-yongjiu.com/share/6a1ee3f23287b452bfc735ea0381ddc5
+正在爬取 6/6 72/300 -> 24198 yjyun 第26集
+第27集$https://dapian.video-yongjiu.com/share/652ea064e0352bd940d881f815c03175
+正在爬取 6/6 72/300 -> 24198 yjyun 第27集
+第28集$https://dapian.video-yongjiu.com/share/543817ed62fa34e371bb229d4f7b603f
+正在爬取 6/6 72/300 -> 24198 yjyun 第28集
+第29集$https://dapian.video-yongjiu.com/share/0d730fb2cb696e47fbbe4b2054b10de7
+正在爬取 6/6 72/300 -> 24198 yjyun 第29集
+第30集$https://dapian.video-yongjiu.com/share/13dec0385c17ef4b459548218fe37fa8
+正在爬取 6/6 72/300 -> 24198 yjyun 第30集
+第31集$https://dapian.video-yongjiu.com/share/4526ff9c12cbeaf09fff0a778938b52e
+正在爬取 6/6 72/300 -> 24198 yjyun 第31集
+第32集$https://dapian.video-yongjiu.com/share/e06015c0688508d35fc02b0434cb7ce9
+正在爬取 6/6 72/300 -> 24198 yjyun 第32集
+第01集$https://dapian.video-yongjiu.com/share/81bea31a79deb32965455a1e507c944f
+正在爬取 6/6 73/300 -> 29741 yjyun 第01集
+第01集$https://dapian.video-yongjiu.com/share/50075d2902d41e5cb9903a24689a7d78
+正在爬取 6/6 74/300 -> 27930 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/85faaa6cbdf6530166a70321acfa7b27
+正在爬取 6/6 74/300 -> 27930 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/f32094203d9e03c8d1340050a9dddfc6
+正在爬取 6/6 74/300 -> 27930 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/68b3d03d38ad88126ede9cee289b6661
+正在爬取 6/6 74/300 -> 27930 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/690af400ca2ca5b18049a36bdf1974d8
+正在爬取 6/6 74/300 -> 27930 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/b5a043534c00c86a0c8487b42d4b3e29
+正在爬取 6/6 74/300 -> 27930 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/d56184285e24d57eebb9540ac92d8cbf
+正在爬取 6/6 74/300 -> 27930 yjyun 第07集
+第01集$https://dapian.video-yongjiu.com/share/737233cb87dfe0e7b5525a1b7ecc112c
+正在爬取 6/6 75/300 -> 29533 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/9df41c354c19a3d8c3eb5b2840cfe5d2
+正在爬取 6/6 75/300 -> 29533 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/f49177d35c5ee6c915013284e89a729b
+正在爬取 6/6 75/300 -> 29533 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/1ecebe34c185027ee9e6a2d55747f945
+正在爬取 6/6 75/300 -> 29533 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/9abcd7ad0d9b1da387a19cc3fc572cde
+正在爬取 6/6 75/300 -> 29533 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/aa9a5147c8baff914423f5d1bfba879b
+正在爬取 6/6 75/300 -> 29533 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/6147246665001872dd5a886d418f990c
+正在爬取 6/6 75/300 -> 29533 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/565d9a3631f5940b9facd0f153b5f569
+正在爬取 6/6 75/300 -> 29533 yjyun 第08集
+第09集$https://dapian.video-yongjiu.com/share/2cedf2fcda27c6c4953d358c5fa06815
+正在爬取 6/6 75/300 -> 29533 yjyun 第09集
+第10集$https://dapian.video-yongjiu.com/share/0865860a7cdf4a65d79dd78c31f8a7d9
+正在爬取 6/6 75/300 -> 29533 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/3fd2afe674eecaf065b1e3687992a511
+正在爬取 6/6 75/300 -> 29533 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/ca9f9c4764430f980dca8d70e29d8e5e
+正在爬取 6/6 75/300 -> 29533 yjyun 第12集
+第13集$https://dapian.video-yongjiu.com/share/f0f68749983c98403d5954cd5e0b7b30
+正在爬取 6/6 75/300 -> 29533 yjyun 第13集
+第14集$https://dapian.video-yongjiu.com/share/714aeac233808ffb2b01e3910edff2bc
+正在爬取 6/6 75/300 -> 29533 yjyun 第14集
+第15集$https://dapian.video-yongjiu.com/share/659c836a3fdfcb380e8608d2241f5523
+正在爬取 6/6 75/300 -> 29533 yjyun 第15集
+第16集$https://dapian.video-yongjiu.com/share/1fa19a98316222ab4bcac1af0412e2ab
+正在爬取 6/6 75/300 -> 29533 yjyun 第16集
+第01集$https://dapian.video-yongjiu.com/share/36e7e1795f0af462cc534d34f3e1cab3
+正在爬取 6/6 76/300 -> 29606 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/53e1e04df729350fbab77ed1d2d16df3
+正在爬取 6/6 76/300 -> 29606 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/9c9304f46197154416dce79e2fb2422a
+正在爬取 6/6 76/300 -> 29606 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/e811387c8fc99fc6fe3585e61f7917a8
+正在爬取 6/6 76/300 -> 29606 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/58a293c4c86b4c0000b0e683c77432a8
+正在爬取 6/6 76/300 -> 29606 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/747362c8d29bf10de1fd34c0a75b5259
+正在爬取 6/6 76/300 -> 29606 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/f6341b15960dc8f15b6d507a43bd2c00
+正在爬取 6/6 76/300 -> 29606 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/0b6b2c2092fa735afd2b9b1da3d5db43
+正在爬取 6/6 76/300 -> 29606 yjyun 第08集
+第09集$https://dapian.video-yongjiu.com/share/8292195f4bd46e2ba9790f674a4c906f
+正在爬取 6/6 76/300 -> 29606 yjyun 第09集
+第10集$https://dapian.video-yongjiu.com/share/b1ae293d97f4b7f67633115722c1009c
+正在爬取 6/6 76/300 -> 29606 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/e75108d621ee19656f7c6e6454e840e0
+正在爬取 6/6 76/300 -> 29606 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/bd90b9ce1c34dd19e6a634a162ad65c8
+正在爬取 6/6 76/300 -> 29606 yjyun 第12集
+HD1080P中字$https://dapian.video-yongjiu.com/share/e0c082bdcbcf050ff454698580c89289
+正在爬取 6/6 77/300 -> 29742 yjyun HD1080P中字
+第01集$https://dapian.video-yongjiu.com/share/2e3a567dcc390811e4dfa8d478e4a149
+正在爬取 6/6 78/300 -> 28011 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/631e5d78c846ec09125ebe7e7030b0ca
+正在爬取 6/6 78/300 -> 28011 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/2d5b3be8503916af8d41e5add640b0b6
+正在爬取 6/6 78/300 -> 28011 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/fb2a60d35f7623b1045f0cf59156fdbc
+正在爬取 6/6 78/300 -> 28011 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/d50b2d3afe5ec033d560dd1318b2707b
+正在爬取 6/6 78/300 -> 28011 yjyun 第05集
+第01集$https://dapian.video-yongjiu.com/share/be6ea238d9be0fc60080a6f8a8188817
+正在爬取 6/6 79/300 -> 29222 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/7efcd8c929bcbfd5b016c00a711f5759
+正在爬取 6/6 79/300 -> 29222 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/43a30d90c4430a7de2ec7fc705164403
+正在爬取 6/6 79/300 -> 29222 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/2c0676e88b88ce25cf400559e7f012a0
+正在爬取 6/6 79/300 -> 29222 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/56613d94c5eec17e84ddc87eb39b72ea
+正在爬取 6/6 79/300 -> 29222 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/0104a01d56843d792960e61b15b82b75
+正在爬取 6/6 79/300 -> 29222 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/fcba6537741bf200fd2d7e965afd9770
+正在爬取 6/6 79/300 -> 29222 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/a3f66d3a6aab9fa2ad9a6a0cfae58f98
+正在爬取 6/6 79/300 -> 29222 yjyun 第08集
+第09集$https://dapian.video-yongjiu.com/share/45f71a702b70bc7415bcd9fcc790e551
+正在爬取 6/6 79/300 -> 29222 yjyun 第09集
+第10集$https://dapian.video-yongjiu.com/share/dcacc2b04bdf831ef070af1abeb61d7a
+正在爬取 6/6 79/300 -> 29222 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/989f78982634dc53561c1c70e229d226
+正在爬取 6/6 79/300 -> 29222 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/8e0421004941cba9a3a903e2443cae69
+正在爬取 6/6 79/300 -> 29222 yjyun 第12集
+第13集$https://dapian.video-yongjiu.com/share/2da22496e4afdf5c24de98c404030188
+正在爬取 6/6 79/300 -> 29222 yjyun 第13集
+第14集$https://dapian.video-yongjiu.com/share/91c5307541a803c91d54d05f35a8a464
+正在爬取 6/6 79/300 -> 29222 yjyun 第14集
+第15集$https://dapian.video-yongjiu.com/share/f771411826d0924c724437288664459f
+正在爬取 6/6 79/300 -> 29222 yjyun 第15集
+第16集$https://dapian.video-yongjiu.com/share/fb815aa1774a7063ccb7c532866d306c
+正在爬取 6/6 79/300 -> 29222 yjyun 第16集
+第17集$https://dapian.video-yongjiu.com/share/76f724c00d35300c934cff48aff270f9
+正在爬取 6/6 79/300 -> 29222 yjyun 第17集
+第18集$https://dapian.video-yongjiu.com/share/1a8f6c02ab62ed3289b946135058d7a7
+正在爬取 6/6 79/300 -> 29222 yjyun 第18集
+第19集$https://dapian.video-yongjiu.com/share/592b1f6887c30e03ab96c13144e15dfb
+正在爬取 6/6 79/300 -> 29222 yjyun 第19集
+第20集$https://dapian.video-yongjiu.com/share/8b78421d9ab29962ef6082f8233fbcec
+正在爬取 6/6 79/300 -> 29222 yjyun 第20集
+第21集$https://dapian.video-yongjiu.com/share/a8884e9c752930207aeea09cc88b3988
+正在爬取 6/6 79/300 -> 29222 yjyun 第21集
+第22集$https://dapian.video-yongjiu.com/share/9379ffb164c5becfb0a55e1c0c2f6d37
+正在爬取 6/6 79/300 -> 29222 yjyun 第22集
+第01集$https://dapian.video-yongjiu.com/share/4f6aea3724faf620b6c218b66ae7310d
+正在爬取 6/6 81/300 -> 27743 yjyun 第01集
+第02集$https://dapian.video-yongjiu.com/share/485647024b3598cebfa72f5b68546662
+正在爬取 6/6 81/300 -> 27743 yjyun 第02集
+第03集$https://dapian.video-yongjiu.com/share/4861650dafeb90c197212d5c90e60a7b
+正在爬取 6/6 81/300 -> 27743 yjyun 第03集
+第04集$https://dapian.video-yongjiu.com/share/4e5916dda041e42d18d9cf266d56b62b
+正在爬取 6/6 81/300 -> 27743 yjyun 第04集
+第05集$https://dapian.video-yongjiu.com/share/82cbf6c40bb43fb0df95defe85f4e938
+正在爬取 6/6 81/300 -> 27743 yjyun 第05集
+第06集$https://dapian.video-yongjiu.com/share/85984b9d2eb57c8dcf9cddb02def51b8
+正在爬取 6/6 81/300 -> 27743 yjyun 第06集
+第07集$https://dapian.video-yongjiu.com/share/0df9db3088320cff4c7b2e2ec39d1610
+正在爬取 6/6 81/300 -> 27743 yjyun 第07集
+第08集$https://dapian.video-yongjiu.com/share/d118d975f3cdf403187a078f3a06f866
+正在爬取 6/6 81/300 -> 27743 yjyun 第08集
+第09集$https://dapian.video-yongjiu.com/share/aff272815fa63358420d88a9c6d37b91
+正在爬取 6/6 81/300 -> 27743 yjyun 第09集
+第10集$https://dapian.video-yongjiu.com/share/e900ad3b2019268e3182123407fda545
+正在爬取 6/6 81/300 -> 27743 yjyun 第10集
+第11集$https://dapian.video-yongjiu.com/share/0af07e9885819ecb85897611e758433b
+正在爬取 6/6 81/300 -> 27743 yjyun 第11集
+第12集$https://dapian.video-yongjiu.com/share/7ed0cbc5d0da361b0a44f57766d15691
+正在爬取 6/6 81/300 -> 27743 yjyun 第12集
+第13集$https://dapian.video-yongjiu.com/share/aeb1a5f7eb1d81499e7d93dd105d9430
+正在爬取 6/6 81/300 -> 27743 yjyun 第13集
+第14集$https://dapian.video-yongjiu.com/share/d5095748fbfebc4b9f93391ec93f1f8c
+正在爬取 6/6 81/300 -> 27743 yjyun 第14集
+第15集$https://dapian.video-yongjiu.com/share/15b3cc9bb49f2b301401591d1b394ef5
+正在爬取 6/6 81/300 -> 27743 yjyun 第15集
+第16集$https://dapian.video-yongjiu.com/share/6f14ca8be6ec0fa38b261c92c3bd61a9
+正在爬取 6/6 81/300 -> 27743 yjyun 第16集
+第17集$https://dapian.video-yongjiu.com/share/a448d243623481d4c7347af46753217e
+正在爬取 6/6 81/300 -> 27743 yjyun 第17集
+第18集$https://dapian.video-yongjiu.com/share/47a0a618c0365cf757ff3021ee5ef976
+正在爬取 6/6 81/300 -> 27743 yjyun 第18集
+第19集$https://dapian.video-yongjiu.com/share/eb6de71b465f16507cadfb2347a9d98f
+正在爬取 6/6 81/300 -> 27743 yjyun 第19集
+第20集$https://dapian.video-yongjiu.com/share/e33bdf729e96e6de85b6ffa555ff59db
+正在爬取 6/6 81/300 -> 27743 yjyun 第20集
+第21集$https://dapian.video-yongjiu.com/share/e9cf01c03f0979eb59cc770a5b87a542
+正在爬取 6/6 81/300 -> 27743 yjyun 第21集
+第22集$https://dapian.video-yongjiu.com/share/5f2150c49f5aa191fdee5f8d26c3e50e
+正在爬取 6/6 81/300 -> 27743 yjyun 第22集
+第23集$https://dapian.video-yongjiu.com/share/7399a8aa203c68565ff7196769deadc6
+正在爬取 6/6 81/300 -> 27743 yjyun 第23集
+第24集$https://dapian.video-yongjiu.com/share/2cfd22322a832d773c4218f4559fa174
+正在爬取 6/6 81/300 -> 27743 yjyun 第24集
+第25集$https://dapian.video-yongjiu.com/share/03b06206b64419da3d036690d99c5eda
+正在爬取 6/6 81/300 -> 27743 yjyun 第25集
+第26集$https://dapian.video-yongjiu.com/share/32b31047bf68aefa8bb491d46a432e8c
+正在爬取 6/6 81/300 -> 27743 yjyun 第26集
+第27集$https://dapian.video-yongjiu.com/share/3b173c9b8b2aa4b457c807ec7584038d
+正在爬取 6/6 81/300 -> 27743 yjyun 第27集
+第28集$https://dapian.video-yongjiu.com/share/a57e40ec230ff3f9c17fadf6ae6b6577
+正在爬取 6/6 81/300 -> 27743 yjyun 第28集
+第29集$https://dapian.video-yongjiu.com/share/5d91312f638b1913b186c0c76df66a6a
+正在爬取 6/6 81/300 -> 27743 yjyun 第29集
+第30集$https://dapian.video-yongjiu.com/share/85bb07bea16780c3974da113d3b0805f
+正在爬取 6/6 81/300 -> 27743 yjyun 第30集
+第31集$https://dapian.video-yongjiu.com/share/950c4761e0ce26395c319950de90f0d1
+正在爬取 6/6 81/300 -> 27743 yjyun 第31集
+第32集$https://dapian.video-yongjiu.com/share/5af2de2fbcd7535745699d05f0481ca4
+正在爬取 6/6 81/300 -> 27743 yjyun 第32集
+第33集$https://dapian.video-yongjiu.com/share/650170b55ee391260d8f1ce10d493661
+正在爬取 6/6 81/300 -> 27743 yjyun 第33集
+第34集$https://dapian.video-yongjiu.com/share/95459d948426c5018171cca8f8dbc5fa
+正在爬取 6/6 81/300 -> 27743 yjyun 第34集
+第35集$https://dapian.video-yongjiu.com/share/8f5c8acfebc4073ffd8f56522d137223
+正在爬取 6/6 81/300 -> 27743 yjyun 第35集
+第36集$https://dapian.video-yongjiu.com/share/53d1de246afd1e5bad259d797cca3950
+正在爬取 6/6 81/300 -> 27743 yjyun 第36集
+20191011期$https://dapian.video-yongjiu.com/share/2b9417a4338deb0d31ef9b39d444413a
+正在爬取 6/6 82/300 -> 28934 yjyun 20191011期
+20191018期$https://dapian.video-yongjiu.com/share/6ea8e8b5aa29eb1b1e3c9d2690afcbd1
+正在爬取 6/6 82/300 -> 28934 yjyun 20191018期
+20191025期$https://dapian.video-yongjiu.com/share/33c14ab38a8923e563e17b79e41693ba
+正在爬取 6/6 82/300 -> 28934 yjyun 20191025期
+20190101期$https://gaoqing.bibi-baidu.com/share/6d8e4836f22d0a921638c5a785a62896
+正在爬取 6/6 83/300 -> 18107 yjyun 20190101期
+20190102期$https://gaoqing.bibi-baidu.com/share/a7453a5f026fb6831d68bdc9cb0edcae
+正在爬取 6/6 83/300 -> 18107 yjyun 20190102期
+20190103期$https://gaoqing.bibi-baidu.com/share/c49e446a46fa27a6e18ffb6119461c3f
+正在爬取 6/6 83/300 -> 18107 yjyun 20190103期
+20190108期$https://gaoqing.bibi-baidu.com/share/9fd5e502c1640f62738c8a908d3eb0f7
+正在爬取 6/6 83/300 -> 18107 yjyun 20190108期
+20190109期$https://gaoqing.bibi-baidu.com/share/6c7de1f27f7de61a6daddfffbe05c058
+正在爬取 6/6 83/300 -> 18107 yjyun 20190109期
+20190110期$https://gaoqing.bibi-baidu.com/share/ca5150ff1c65880ded50f92ed067c95e
+正在爬取 6/6 83/300 -> 18107 yjyun 20190110期
+20190115期$https://gaoqing.bibi-baidu.com/share/d82d678e9583c1f5f283ec56fbf1abb7
+正在爬取 6/6 83/300 -> 18107 yjyun 20190115期
+20190116期$https://gaoqing.bibi-baidu.com/share/b367e525a7e574817c19ad24b7b35607
+正在爬取 6/6 83/300 -> 18107 yjyun 20190116期
+20190117期$https://gaoqing.bibi-baidu.com/share/f655e8f9339af2b629ebed05b585423a
+正在爬取 6/6 83/300 -> 18107 yjyun 20190117期
+20190122期$https://gaoqing.bibi-baidu.com/share/a44ba9086b2b83ccf2baf7c678723449
+正在爬取 6/6 83/300 -> 18107 yjyun 20190122期
+20190123期$https://gaoqing.bibi-baidu.com/share/2c2fb9efd4b8a1f837bf47004a49ce45
+正在爬取 6/6 83/300 -> 18107 yjyun 20190123期
+20190124期$https://gaoqing.bibi-baidu.com/share/01c6fc8bc32f1237be039ceb6b4b4b2d
+正在爬取 6/6 83/300 -> 18107 yjyun 20190124期
+20190129期$https://gaoqing.bibi-baidu.com/share/0d85eb24e2add96ff1a7021f83c1abc9
+正在爬取 6/6 83/300 -> 18107 yjyun 20190129期
+20190130期$https://gaoqing.bibi-baidu.com/share/a2b15837edac15df90721968986f7f8e
+正在爬取 6/6 83/300 -> 18107 yjyun 20190130期
+20190131期$https://gaoqing.bibi-baidu.com/share/3fefa7bea6f56955b72610cda97bc45b
+正在爬取 6/6 83/300 -> 18107 yjyun 20190131期
+20190212期$https://gaoqing.bibi-baidu.com/share/28b805f5645425ce44eaf6bcba79a40c
+正在爬取 6/6 83/300 -> 18107 yjyun 20190212期
+20190213期$https://gaoqing.bibi-baidu.com/share/38f629170ac3ab74b9d6d2cc411c2f3c
+正在爬取 6/6 83/300 -> 18107 yjyun 20190213期
+20190214期$https://gaoqing.bibi-baidu.com/share/0a7d7a81e8e3a20e4c34748e98ef45f6
+正在爬取 6/6 83/300 -> 18107 yjyun 20190214期
+20190219期$https://gaoqing.bibi-baidu.com/share/efe34c4e2190e97d1adc625902822b13
+正在爬取 6/6 83/300 -> 18107 yjyun 20190219期
+20190220期$https://gaoqing.bibi-baidu.com/share/9aa70957fde5ac24d3f5c61776a06053
+正在爬取 6/6 83/300 -> 18107 yjyun 20190220期
+20190221期$https://gaoqing.bibi-baidu.com/share/3dfa05a594c0e171bc690aa9101496b6
+正在爬取 6/6 83/300 -> 18107 yjyun 20190221期
+20190226期$https://gaoqing.bibi-baidu.com/share/3ebd728de6fa78aa8bc932e9abece9c0
+正在爬取 6/6 83/300 -> 18107 yjyun 20190226期
+20190305期$https://gaoqing.bibi-baidu.com/share/375abb16ea7c1f83be31ce4c3495ec41
+正在爬取 6/6 83/300 -> 18107 yjyun 20190305期
+20190306期$https://gaoqing.bibi-baidu.com/share/9f03268e82461f179f372e61621f42d9
+正在爬取 6/6 83/300 -> 18107 yjyun 20190306期
+20190307期$https://gaoqing.bibi-baidu.com/share/872694b2ab50601615cbad2bc50d98d6
+正在爬取 6/6 83/300 -> 18107 yjyun 20190307期
+20190312期$https://gaoqing.bibi-baidu.com/share/fc1dc4549df0335d7f506edb5d66af16
+正在爬取 6/6 83/300 -> 18107 yjyun 20190312期
+20190313期$https://gaoqing.bibi-baidu.com/share/abceedf5017915685f379075f00a5ccd
+正在爬取 6/6 83/300 -> 18107 yjyun 20190313期
+20190314期$https://gaoqing.bibi-baidu.com/share/ff1d4796fe85a21ba86081db7bf2196b
+正在爬取 6/6 83/300 -> 18107 yjyun 20190314期
+20190315期$https://gaoqing.bibi-baidu.com/share/2ed0828621535a2a85a8f8e3388080d2
+正在爬取 6/6 83/300 -> 18107 yjyun 20190315期
+20190319期$https://gaoqing.bibi-baidu.com/share/4cea2358d3cc5f8cd32397ca9bc51b94
+正在爬取 6/6 83/300 -> 18107 yjyun 20190319期
+20190320期$https://gaoqing.bibi-baidu.com/share/f52c3cbf371351206c419e50ce29c802
+正在爬取 6/6 83/300 -> 18107 yjyun 20190320期
+20190321期$https://gaoqing.bibi-baidu.com/share/c22ad2b09a726d564cd5666c93e080ac
+正在爬取 6/6 83/300 -> 18107 yjyun 20190321期
+20190322期$https://gaoqing.bibi-baidu.com/share/3c09bb10e2189124fdd8f467cc8b55a7
+正在爬取 6/6 83/300 -> 18107 yjyun 20190322期
+20190325期$https://gaoqing.bibi-baidu.com/share/48cb136b65a69e8c2aa22913a0d91b2f
+正在爬取 6/6 83/300 -> 18107 yjyun 20190325期
+20190326期$https://gaoqing.bibi-baidu.com/share/81d7118d88d5570189ace943bd14f142
+正在爬取 6/6 83/300 -> 18107 yjyun 20190326期
+20190327期$https://gaoqing.bibi-baidu.com/share/3187b1703c3b9b19bb63c027d8efc2f1
+正在爬取 6/6 83/300 -> 18107 yjyun 20190327期
+20190328期$https://gaoqing.bibi-baidu.com/share/098930a1f6c40597f933a2d617f798ba
+正在爬取 6/6 83/300 -> 18107 yjyun 20190328期
+20190329期$https://gaoqing.bibi-baidu.com/share/c617ea9609ec341360765f6d29b5814e
+正在爬取 6/6 83/300 -> 18107 yjyun 20190329期
+20190401期$https://gaoqing.bibi-baidu.com/share/b4189d9de0fb2b9cce090bd1a15e3420
+正在爬取 6/6 83/300 -> 18107 yjyun 20190401期
+20190402期$https://gaoqing.bibi-baidu.com/share/f9a325eeb537335085a48ee8ac9a4b0e
+正在爬取 6/6 83/300 -> 18107 yjyun 20190402期
+20190403期$https://gaoqing.bibi-baidu.com/share/6ce1861d265248f9c9dd2ed2f88dbdf9
+正在爬取 6/6 83/300 -> 18107 yjyun 20190403期
+20190404期$https://gaoqing.bibi-baidu.com/share/21d58309d158bcb0e3e70a3827221e7c
+正在爬取 6/6 83/300 -> 18107 yjyun 20190404期
+20190405期$https://gaoqing.bibi-baidu.com/share/661c1c090ff5831a647202397c61d73c
+正在爬取 6/6 83/300 -> 18107 yjyun 20190405期
+20190408期$https://gaoqing.bibi-baidu.com/share/d921c3c762b1522c475ac8fc0811bb0f
+正在爬取 6/6 83/300 -> 18107 yjyun 20190408期
+20190409期$https://gaoqing.bibi-baidu.com/share/eebe038e47780c96e2762b5e2003cef7
+正在爬取 6/6 83/300 -> 18107 yjyun 20190409期
+20190410期$https://gaoqing.bibi-baidu.com/share/94fee470b43270a912c27d56c27b3211
+正在爬取 6/6 83/300 -> 18107 yjyun 20190410期
+20190411期$https://gaoqing.bibi-baidu.com/share/9fdef890a0a6f2496628626367d39280
+正在爬取 6/6 83/300 -> 18107 yjyun 20190411期
+20190412期$https://gaoqing.bibi-baidu.com/share/f1f485b532be392dd7964f94dbd0562a
+正在爬取 6/6 83/300 -> 18107 yjyun 20190412期
+20190415期$https://gaoqing.bibi-baidu.com/share/83a368f54768f506b833130584455df4
+正在爬取 6/6 83/300 -> 18107 yjyun 20190415期
+20190416期$https://gaoqing.bibi-baidu.com/share/f7f84297f903c4ae67e9b17ebb49c5a3
+正在爬取 6/6 83/300 -> 18107 yjyun 20190416期
+20190417期$https://gaoqing.bibi-baidu.com/share/dc1322dd294effcdac9942803027b362
+正在爬取 6/6 83/300 -> 18107 yjyun 20190417期
+20190418期$https://gaoqing.bibi-baidu.com/share/b0ced0814fa6619b258c1dc71bc965c9
+正在爬取 6/6 83/300 -> 18107 yjyun 20190418期
+20190419期$https://gaoqing.bibi-baidu.com/share/35ec253885cf090f80881b44180afb00
+正在爬取 6/6 83/300 -> 18107 yjyun 20190419期
+20190420期$https://gaoqing.bibi-baidu.com/share/d5756748da7d4fc61bb0b1bcba6e6d4d
+正在爬取 6/6 83/300 -> 18107 yjyun 20190420期
+20190422期$https://gaoqing.bibi-baidu.com/share/6ef07f927172f6d48f2e72d606a03713
+正在爬取 6/6 83/300 -> 18107 yjyun 20190422期
+20190423期$https://gaoqing.bibi-baidu.com/share/5c9452254bccd24b8ad0bb1ab4408ad1
+正在爬取 6/6 83/300 -> 18107 yjyun 20190423期
+20190424期$https://gaoqing.bibi-baidu.com/share/21186d7b1482412ab14f0332b8aee119
+正在爬取 6/6 83/300 -> 18107 yjyun 20190424期
+20190425期$https://gaoqing.bibi-baidu.com/share/5eb2a86c4e7f9ba6dfe6f786e90c26d7
+正在爬取 6/6 83/300 -> 18107 yjyun 20190425期
+20190426期$https://gaoqing.bibi-baidu.com/share/9f0609b9d45dd55bed75f892cf095fcf
+正在爬取 6/6 83/300 -> 18107 yjyun 20190426期
+20190429期$https://gaoqing.bibi-baidu.com/share/bf65417dcecc7f2b0006e1f5793b7143
+正在爬取 6/6 83/300 -> 18107 yjyun 20190429期
+20190430期$https://gaoqing.bibi-baidu.com/share/28891cb4ab421830acc36b1f5fd6c91e
+正在爬取 6/6 83/300 -> 18107 yjyun 20190430期
+20190501期$https://gaoqing.bibi-baidu.com/share/ee3dd1c2669f11eabe41d99571167c74
+正在爬取 6/6 83/300 -> 18107 yjyun 20190501期
+20190503期$https://gaoqing.bibi-baidu.com/share/3850b1a23fec9e1b958601a27109d0d5
+正在爬取 6/6 83/300 -> 18107 yjyun 20190503期
+20190506期$https://gaoqing.bibi-baidu.com/share/11f9e78e4899a78dedd439fc583b6693
+正在爬取 6/6 83/300 -> 18107 yjyun 20190506期
+20190507期$https://gaoqing.bibi-baidu.com/share/e36e62f84744ea6916927027c9d651ad
+正在爬取 6/6 83/300 -> 18107 yjyun 20190507期
+20190508期$https://gaoqing.bibi-baidu.com/share/3677481dc67fc92d2347a706e9a64285
+正在爬取 6/6 83/300 -> 18107 yjyun 20190508期
+20190509期$https://gaoqing.bibi-baidu.com/share/7c21c080c204c2ec7523ae6fc12033a6
+正在爬取 6/6 83/300 -> 18107 yjyun 20190509期
+20190510期$https://gaoqing.bibi-baidu.com/share/d1d7015fbf729403d7329560afecff1d
+正在爬取 6/6 83/300 -> 18107 yjyun 20190510期
+20190513期$https://gaoqing.bibi-baidu.com/share/d4bad256c73a6b25b86cc9c1a77255b1
+正在爬取 6/6 83/300 -> 18107 yjyun 20190513期
+20190514期$https://gaoqing.bibi-baidu.com/share/ebef22399dd37c14fcbe768327022889
+正在爬取 6/6 83/300 -> 18107 yjyun 20190514期
+20190515期$https://gaoqing.bibi-baidu.com/share/ea33b4fd0fc1ea0a40344be8a8641123
+正在爬取 6/6 83/300 -> 18107 yjyun 20190515期
+20190516期$https://gaoqing.bibi-baidu.com/share/16475e51b4ac5c7c9d726d9efb3642f2
+正在爬取 6/6 83/300 -> 18107 yjyun 20190516期
+20190517期$https://gaoqing.bibi-baidu.com/share/aad5adc307c4dd7e457509423a7f3734
+正在爬取 6/6 83/300 -> 18107 yjyun 20190517期
+20190520期$https://gaoqing.bibi-baidu.com/share/c292b3e9629fee6bbb741eb109321cf8
+正在爬取 6/6 83/300 -> 18107 yjyun 20190520期
+20190521期$https://gaoqing.bibi-baidu.com/share/30dd22174d06b0cd2e50c352a8a8a49e
+正在爬取 6/6 83/300 -> 18107 yjyun 20190521期
+20190522期$https://gaoqing.bibi-baidu.com/share/b1b14f09e876174212e19b14fa8fed64
+正在爬取 6/6 83/300 -> 18107 yjyun 20190522期
+20190523期$https://gaoqing.bibi-baidu.com/share/db27a2459bbd1a02bc74db649d9759bd
+正在爬取 6/6 83/300 -> 18107 yjyun 20190523期
+20190524期$https://gaoqing.bibi-baidu.com/share/76908ab39c07d85c0b3693ce5d700771
+正在爬取 6/6 83/300 -> 18107 yjyun 20190524期
+20190527期$https://gaoqing.bibi-baidu.com/share/1c330c47cabfad26af32d6249919ecb8
+正在爬取 6/6 83/300 -> 18107 yjyun 20190527期
+20190528期$https://gaoqing.bibi-baidu.com/share/c3c617a9b80b3ae1ebd868b0017cc349
+正在爬取 6/6 83/300 -> 18107 yjyun 20190528期
+20190529期$https://gaoqing.bibi-baidu.com/share/16fa2b0294e410b2551c3bf6965c0853
+正在爬取 6/6 83/300 -> 18107 yjyun 20190529期
+20190530期$https://gaoqing.bibi-baidu.com/share/d6428eecbe0f7dff83fc607c5044b2b9
+正在爬取 6/6 83/300 -> 18107 yjyun 20190530期
+20190531期$https://gaoqing.bibi-baidu.com/share/316282ddb77e11b0b58c60ed59b1e308
+正在爬取 6/6 83/300 -> 18107 yjyun 20190531期
+20190603期$https://gaoqing.bibi-baidu.com/share/d04eb5de4d99080be674f159197a514a
+正在爬取 6/6 83/300 -> 18107 yjyun 20190603期
+20190604期$https://gaoqing.bibi-baidu.com/share/7867d6557b82ed3b5d61e6591a2a2fd3
+正在爬取 6/6 83/300 -> 18107 yjyun 20190604期
+20190605期$https://gaoqing.bibi-baidu.com/share/97737a7937a18cf131d9e21eda811113
+正在爬取 6/6 83/300 -> 18107 yjyun 20190605期
+20190606期$https://gaoqing.bibi-baidu.com/share/2191b602b73b93ec19da67d1b7e349c6
+正在爬取 6/6 83/300 -> 18107 yjyun 20190606期
+20190607期$https://gaoqing.bibi-baidu.com/share/3d3103fc27ffaea9fcbaebd91c8fff07
+正在爬取 6/6 83/300 -> 18107 yjyun 20190607期
+20190610期$https://gaoqing.bibi-baidu.com/share/92350dee085a781753d9301fea11d51c
+正在爬取 6/6 83/300 -> 18107 yjyun 20190610期
+20190612期$https://gaoqing.bibi-baidu.com/share/a6640ad0aca7033809ffa7165c3040f9
+正在爬取 6/6 83/300 -> 18107 yjyun 20190612期
+20190613期$https://gaoqing.bibi-baidu.com/share/c0167d1ca6ea4be5f7907b98a20fc225
+正在爬取 6/6 83/300 -> 18107 yjyun 20190613期
+20190614期$https://gaoqing.bibi-baidu.com/share/b977b532403e14d6681a00f78f95506e
+正在爬取 6/6 83/300 -> 18107 yjyun 20190614期
+20190617期$https://gaoqing.bibi-baidu.com/share/af086cdab7954f11a518e3af68dc2fce
+正在爬取 6/6 83/300 -> 18107 yjyun 20190617期
+20190618期$https://gaoqing.bibi-baidu.com/share/39016cfe079db1bfb359ca72fcba3fd8
+正在爬取 6/6 83/300 -> 18107 yjyun 20190618期
+20190619期$https://gaoqing.bibi-baidu.com/share/f5bf2f80e0924a366859e958c6507ea9
+正在爬取 6/6 83/300 -> 18107 yjyun 20190619期
+20190620期$https://gaoqing.bibi-baidu.com/share/9dc603ead062664055f36b11fe0cad61
+正在爬取 6/6 83/300 -> 18107 yjyun 20190620期
+20190624期$https://gaoqing.bibi-baidu.com/share/e05e2327a8ceada096724afc802bbf7e
+正在爬取 6/6 83/300 -> 18107 yjyun 20190624期
+20190625期$https://gaoqing.bibi-baidu.com/share/2e09926f3de94fa8c07ac5a8f3edc5cd
+正在爬取 6/6 83/300 -> 18107 yjyun 20190625期
+20190626期$https://gaoqing.bibi-baidu.com/share/3acb2a202ae4bea8840224e6fce16fd0
+正在爬取 6/6 83/300 -> 18107 yjyun 20190626期
+20190627期$https://gaoqing.bibi-baidu.com/share/d563cb0699fbe7bc92d64815915918cd
+正在爬取 6/6 83/300 -> 18107 yjyun 20190627期
+20190628期$https://gaoqing.bibi-baidu.com/share/492284833481ed2fd377c50abdedf9f1
+正在爬取 6/6 83/300 -> 18107 yjyun 20190628期
+20190701期$https://gaoqing.bibi-baidu.com/share/04f19115dfa286fb61ab634a2717ed37
+正在爬取 6/6 83/300 -> 18107 yjyun 20190701期
+20190702期$https://gaoqing.bibi-baidu.com/share/ebc03fa648c2cd7da9d63b9ed835664e
+正在爬取 6/6 83/300 -> 18107 yjyun 20190702期
+20190703期$https://gaoqing.bibi-baidu.com/share/f4666b1c34893ee557dccbfe3382e965
+正在爬取 6/6 83/300 -> 18107 yjyun 20190703期
+20190704期$https://gaoqing.bibi-baidu.com/share/398410ece9d7343091093a2a7f8ee381
+正在爬取 6/6 83/300 -> 18107 yjyun 20190704期
+20190705期$https://gaoqing.bibi-baidu.com/share/4d215ab7508a3e089af43fb605dd27d1
+正在爬取 6/6 83/300 -> 18107 yjyun 20190705期
+20190706期$https://gaoqing.bibi-baidu.com/share/3d57fe6de705fec3cecae336ae23a03a
+正在爬取 6/6 83/300 -> 18107 yjyun 20190706期
+20190708期$https://gaoqing.bibi-baidu.com/share/6f0ca67289d79eb35d19decbc0a08453
+正在爬取 6/6 83/300 -> 18107 yjyun 20190708期
+20190709期$https://gaoqing.bibi-baidu.com/share/642eaa3479d2eb1130f6e0564f00f751
+正在爬取 6/6 83/300 -> 18107 yjyun 20190709期
+20190710期$https://gaoqing.bibi-baidu.com/share/51681a7c14879f9eca39669df858f75b
+正在爬取 6/6 83/300 -> 18107 yjyun 20190710期
+20190711期$https://gaoqing.bibi-baidu.com/share/d0379e4d73faa565d3e7f22b307c80f7
+正在爬取 6/6 83/300 -> 18107 yjyun 20190711期
+20190712期$https://gaoqing.bibi-baidu.com/share/a10463df69e52e78372b724471434ec9
+正在爬取 6/6 83/300 -> 18107 yjyun 20190712期
+20190715期$https://gaoqing.bibi-baidu.com/share/b704ea2c39778f07c617f6b7ce480e9e
+正在爬取 6/6 83/300 -> 18107 yjyun 20190715期
+20190716期$https://gaoqing.bibi-baidu.com/share/45f6a4a57549a5720dfdcdf643c78b83
+正在爬取 6/6 83/300 -> 18107 yjyun 20190716期
+20190717期$https://gaoqing.bibi-baidu.com/share/4ef30115b941a1bcd71ffebb50c69ece
+正在爬取 6/6 83/300 -> 18107 yjyun 20190717期
+20190718期$https://gaoqing.bibi-baidu.com/share/dfc7defac6624a80f02b02e22b14e8fd
+正在爬取 6/6 83/300 -> 18107 yjyun 20190718期
+20190719期$https://gaoqing.bibi-baidu.com/share/0ae775a8cb3b499ad1fca944e6f5c836
+正在爬取 6/6 83/300 -> 18107 yjyun 20190719期
+20190722期$https://gaoqing.bibi-baidu.com/share/26178fc759d2b89c45dd31962f81dc61
+正在爬取 6/6 83/300 -> 18107 yjyun 20190722期
+20190723期$https://gaoqing.bibi-baidu.com/share/e2c9cd9303b5c85296b84213935f37fd
+正在爬取 6/6 83/300 -> 18107 yjyun 20190723期
+20190724期$https://gaoqing.bibi-baidu.com/share/25824988925b5fd75ef84e8202957b74
+正在爬取 6/6 83/300 -> 18107 yjyun 20190724期
+20190725期$https://gaoqing.bibi-baidu.com/share/c8877cff22082a16395a57e97232bb6f
+正在爬取 6/6 83/300 -> 18107 yjyun 20190725期
+20190726期$https://gaoqing.bibi-baidu.com/share/a2790947391a51d18dc235eea344d981
+正在爬取 6/6 83/300 -> 18107 yjyun 20190726期
+20190729期$https://gaoqing.bibi-baidu.com/share/8ca696ca160520b1cf5a569b4be525e8
+正在爬取 6/6 83/300 -> 18107 yjyun 20190729期
+20190730期$https://gaoqing.bibi-baidu.com/share/624567140fecc40163fed3c45a959a7c
+正在爬取 6/6 83/300 -> 18107 yjyun 20190730期
+20190731期$https://gaoqing.bibi-baidu.com/share/4150d6a4725ff1484640c9d2e458a429
+正在爬取 6/6 83/300 -> 18107 yjyun 20190731期
+20190801期$https://gaoqing.bibi-baidu.com/share/ebf99bb5df6533b6dd9180a59034698d
+正在爬取 6/6 83/300 -> 18107 yjyun 20190801期
+20190802期$https://gaoqing.bibi-baidu.com/share/89daa89c41ffb71f97a15ad3ae830a06
+正在爬取 6/6 83/300 -> 18107 yjyun 20190802期
+20190805期$https://gaoqing.bibi-baidu.com/share/d97d404b6119214e4a7018391195240a
+正在爬取 6/6 83/300 -> 18107 yjyun 20190805期
+20190806期$https://gaoqing.bibi-baidu.com/share/b0bb808a5994aefa4f47d7ec6e58c984
+正在爬取 6/6 83/300 -> 18107 yjyun 20190806期
+20190807期$https://gaoqing.bibi-baidu.com/share/d10f24cc96c40a85ed11ce68142e80df
+正在爬取 6/6 83/300 -> 18107 yjyun 20190807期
+20190808期$https://gaoqing.bibi-baidu.com/share/5118af07364440598cd7a922ccf4a955
+正在爬取 6/6 83/300 -> 18107 yjyun 20190808期
+20190812期$https://gaoqing.bibi-baidu.com/share/d26b10ca0de48de1619fcefc39d00d64
+正在爬取 6/6 83/300 -> 18107 yjyun 20190812期
+20190813期$https://gaoqing.bibi-baidu.com/share/fc3dee15d074d783730c00430d839765
+正在爬取 6/6 83/300 -> 18107 yjyun 20190813期
+20190814期$https://gaoqing.bibi-baidu.com/share/51594de14eeb96bc7fe59cf5cad96706
+正在爬取 6/6 83/300 -> 18107 yjyun 20190814期
+20190815期$https://gaoqing.bibi-baidu.com/share/1457c0d6bfcb4967418bfb8ac142f64a
+正在爬取 6/6 83/300 -> 18107 yjyun 20190815期
+20190816期$https://gaoqing.bibi-baidu.com/share/bd6226970e9ffbc8305184d53e5dcd99
+正在爬取 6/6 83/300 -> 18107 yjyun 20190816期
+20190819期$https://gaoqing.bibi-baidu.com/share/8386fa112ba70c3f60b6907d3812bb9e
+正在爬取 6/6 83/300 -> 18107 yjyun 20190819期
+20190820期$https://gaoqing.bibi-baidu.com/share/4c56392b1bd5e94efe423ed048c7b91a
+正在爬取 6/6 83/300 -> 18107 yjyun 20190820期
+20190821期$https://gaoqing.bibi-baidu.com/share/a18aa23ee676d7f5ffb34cf16df3e08c
+正在爬取 6/6 83/300 -> 18107 yjyun 20190821期
+20190822期$https://gaoqing.bibi-baidu.com/share/5a44a53b7d26bb1e54c05222f186dcfb
+正在爬取 6/6 83/300 -> 18107 yjyun 20190822期
+20190823期$https://gaoqing.bibi-baidu.com/share/a5909bff60540745d3da1ccda2f99bff
+正在爬取 6/6 83/300 -> 18107 yjyun 20190823期
+20190826期$https://gaoqing.bibi-baidu.com/share/f4db8537e9d75da46c4efc36a2d70956
+正在爬取 6/6 83/300 -> 18107 yjyun 20190826期
+20190827期$https://gaoqing.bibi-baidu.com/share/e2a89271adb634edc3e692846f9e0675
+正在爬取 6/6 83/300 -> 18107 yjyun 20190827期
+20190828期$https://gaoqing.bibi-baidu.com/share/71ddb91e8fa0541e426a54e538075a5a
+正在爬取 6/6 83/300 -> 18107 yjyun 20190828期
+20190829期$https://gaoqing.bibi-baidu.com/share/e4d09d3f57c2c971c8b2bf8efb416a0a
+正在爬取 6/6 83/300 -> 18107 yjyun 20190829期
+20190830期$https://gaoqing.bibi-baidu.com/share/bc45ee46080d94757d84677cd9fb7395
+正在爬取 6/6 83/300 -> 18107 yjyun 20190830期
+20190902期$https://gaoqing.bibi-baidu.com/share/497d0b20f66cebdedc7935e3ffd46efa
+正在爬取 6/6 83/300 -> 18107 yjyun 20190902期
+20190903期$https://gaoqing.bibi-baidu.com/share/e71ad22eed10d8f6f8242f67695b215f
+正在爬取 6/6 83/300 -> 18107 yjyun 20190903期
+20190904期$https://gaoqing.bibi-baidu.com/share/671f0311e2754fcdd37f70a8550379bc
+正在爬取 6/6 83/300 -> 18107 yjyun 20190904期
+20190905期$https://gaoqing.bibi-baidu.com/share/b8a6550662b363eb34145965d64d0cfb
+正在爬取 6/6 83/300 -> 18107 yjyun 20190905期
+20190906期$https://gaoqing.bibi-baidu.com/share/1d7c2aae840867027b7edd17b6aaa0e9
+正在爬取 6/6 83/300 -> 18107 yjyun 20190906期
+20190907期$https://gaoqing.bibi-baidu.com/share/5cb0e249689cd6d8369c4885435a56c2
+正在爬取 6/6 83/300 -> 18107 yjyun 20190907期
+20190908期$https://gaoqing.bibi-baidu.com/share/1b38735595369838f208dd2b25315195
+正在爬取 6/6 83/300 -> 18107 yjyun 20190908期
+20190909期$https://gaoqing.bibi-baidu.com/share/471684d6c43cfc529b30d600113dae63
+正在爬取 6/6 83/300 -> 18107 yjyun 20190909期
+20190910期$https://gaoqing.bibi-baidu.com/share/c879ec4dfeaa4d0f14f8f395a09941c2
+正在爬取 6/6 83/300 -> 18107 yjyun 20190910期
+20190911期$https://gaoqing.bibi-baidu.com/share/bc2ba6bff2342259d8fb150b02dc1565
+正在爬取 6/6 83/300 -> 18107 yjyun 20190911期
+20190914期$https://gaoqing.bibi-baidu.com/share/2a51262b66cced52912358502a37a010
+正在爬取 6/6 83/300 -> 18107 yjyun 20190914期
+20190915期$https://gaoqing.bibi-baidu.com/share/88052b22c8c2349c0599bd39a654c534
+正在爬取 6/6 83/300 -> 18107 yjyun 20190915期
+20190916期$https://gaoqing.bibi-baidu.com/share/59d9b46aa00c70238bb89056cfeb96c0
+正在爬取 6/6 83/300 -> 18107 yjyun 20190916期
+20190917期$https://gaoqing.bibi-baidu.com/share/04f2a4140112ae491f66a1c558df795f
+正在爬取 6/6 83/300 -> 18107 yjyun 20190917期
+20190918期$https://gaoqing.bibi-baidu.com/share/8576a5108a045a711b0927e2408d4b34
+正在爬取 6/6 83/300 -> 18107 yjyun 20190918期
+20190919期$https://gaoqing.bibi-baidu.com/share/9ce3d416394a5c9a29756027ff8cb37a
+正在爬取 6/6 83/300 -> 18107 yjyun 20190919期
+20190920期$https://dapian.video-yongjiu.com/share/5a2cb441c18f6535a9fb765251345d0f
+正在爬取 6/6 83/300 -> 18107 yjyun 20190920期
+20190923期$https://dapian.video-yongjiu.com/share/a35e2f4a3fa64ee63ab18d8072b3a806
+正在爬取 6/6 83/300 -> 18107 yjyun 20190923期
+20190924期$https://dapian.video-yongjiu.com/share/530ebdeb0491c0459e00298fcdb3a2bd
+正在爬取 6/6 83/300 -> 18107 yjyun 20190924期
+20190925期$https://dapian.video-yongjiu.com/share/80e95d403709b12e758a590b74d9965e
+正在爬取 6/6 83/300 -> 18107 yjyun 20190925期
+20190926期$https://dapian.video-yongjiu.com/share/12423e210ece56bfeb607e01ee9210fb
+正在爬取 6/6 83/300 -> 18107 yjyun 20190926期
+20190927期$https://dapian.video-yongjiu.com/share/f37baa052ef9fff7d5671e655907c6f2
+正在爬取 6/6 83/300 -> 18107 yjyun 20190927期
+20190930期$https://dapian.video-yongjiu.com/share/07401aaff3da03b55ec7be2c6a6e5691
+正在爬取 6/6 83/300 -> 18107 yjyun 20190930期
+20191001期$https://dapian.video-yongjiu.com/share/12e369da0630f39bda204840c316a6ed
+正在爬取 6/6 83/300 -> 18107 yjyun 20191001期
+20191002期$https://dapian.video-yongjiu.com/share/b8e60c2aec9d6135c765749b2e3bb99e
+正在爬取 6/6 83/300 -> 18107 yjyun 20191002期
+20191003期$https://dapian.video-yongjiu.com/share/020f6fecd026539260779d34aa1a6944
+正在爬取 6/6 83/300 -> 18107 yjyun 20191003期
+20191004期$https://dapian.video-yongjiu.com/share/d72eecc6b164864790fe25f2bd64a8ab
+正在爬取 6/6 83/300 -> 18107 yjyun 20191004期
+20191007期$https://dapian.video-yongjiu.com/share/6290e2147f11696464441c57a13891fd
+正在爬取 6/6 83/300 -> 18107 yjyun 20191007期
+20191008期$https://dapian.video-yongjiu.com/share/160743788aa7329fe5ebd7d19383e361
+正在爬取 6/6 83/300 -> 18107 yjyun 20191008期
+20191010期$https://dapian.video-yongjiu.com/share/3d94d7a9d5b0826898e1203a05d83b84
+正在爬取 6/6 83/300 -> 18107 yjyun 20191010期
+20191011期$https://dapian.video-yongjiu.com/share/58d07ec4a553036d571ae5d22ca4f5ac
+正在爬取 6/6 83/300 -> 18107 yjyun 20191011期
+20191014期$https://dapian.video-yongjiu.com/share/3b711f9b6132fbe397bc5ff44c46133a
+正在爬取 6/6 83/300 -> 18107 yjyun 20191014期
+20191015期$https://dapian.video-yongjiu.com/share/94b21f11c7148f780f842edeee360ddb
+正在爬取 6/6 83/300 -> 18107 yjyun 20191015期
+20191016期$https://dapian.video-yongjiu.com/share/0d399929b9a355b71fe83dfe8b6f41f5
+正在爬取 6/6 83/300 -> 18107 yjyun 20191016期
+20191017期$https://dapian.video-yongjiu.com/share/ea9c07b5d0be2b8ee4631ee110f97fb4
+正在爬取 6/6 83/300 -> 18107 yjyun 20191017期
+20191018期$https://dapian.video-yongjiu.com/share/804713141ec20a9ea3543b9b3f98672a
+正在爬取 6/6 83/300 -> 18107 yjyun 20191018期
