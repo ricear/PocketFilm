@@ -1,4 +1,4 @@
 from PocketLifeSpider.util.CommonUtils import *
 
 if __name__ == '__main__':
-    change_src_suffix('webp', 'jpg')
+    generate_app_qrcode_image()

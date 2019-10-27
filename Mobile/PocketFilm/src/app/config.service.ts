@@ -7,7 +7,7 @@ export class ConfigService {
 
   // 公用地址
   // public sourceUrl = 'https://pocket.mynatapp.cc';
-  public sourceUrl = 'http://pocket.mynatapp.cc';
+  public sourceUrl = 'http://103.45.178.220';
   // public请求地址
   public publicUrl = this.sourceUrl +  '/public';
   //api请求地址
@@ -17,7 +17,7 @@ export class ConfigService {
   // app名称
   public appName = '掌上影视'
   // app源文件名称
-  public appSourceName = 'app-debug.apk'
+  public appSourceName = 'PocketFilm.apk'
 
   // 影视解析地址
   public parseUrl = 'http://jx.aeidu.cn/?url='
@@ -50,8 +50,10 @@ export class ConfigService {
   // haohuala
   public haohuala = 'http://api.lhh.la/vip/?url='
 
+  // 影视
+  public movie = this.jx66
   // 电视
-  public tv = this.m3u8
+  public tv = this.jx66
 
   // 戏曲解析地址
   public drama = this.jx66

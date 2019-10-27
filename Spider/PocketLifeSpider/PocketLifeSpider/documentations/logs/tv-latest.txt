@@ -1,0 +1,173 @@
+2019-10-27 08:21:01 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: PocketLifeSpider)
+2019-10-27 08:21:01 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.1 (v3.7.1:260ec2c36a, Oct 20 2018, 00:48:40) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.7.0-x86_64-i386-64bit
+2019-10-27 08:21:01 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'PocketLifeSpider', 'DOWNLOAD_TIMEOUT': 15, 'NEWSPIDER_MODULE': 'PocketLifeSpider.spiders', 'SPIDER_MODULES': ['PocketLifeSpider.spiders']}
+2019-10-27 08:21:01 [scrapy.extensions.telnet] INFO: Telnet Password: 91a0ad63ef11d326
+2019-10-27 08:21:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-10-27 08:21:01 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.haoqu.net:80
+2019-10-27 08:21:02 [urllib3.connectionpool] DEBUG: http://www.haoqu.net:80 "GET /zhibo HTTP/1.1" 301 162
+2019-10-27 08:21:02 [urllib3.connectionpool] DEBUG: http://www.haoqu.net:80 "GET /zhibo/ HTTP/1.1" 200 None
+2019-10-27 08:21:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-10-27 08:21:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-10-27 08:21:02 [scrapy.middleware] INFO: Enabled item pipelines:
+['PocketLifeSpider.pipelines.TvSpiderPipeline']
+2019-10-27 08:21:02 [scrapy.core.engine] INFO: Spider opened
+2019-10-27 08:21:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-10-27 08:21:02 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6037
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/hunan/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/1/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/guangdong/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/liaoning/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/jiangsu/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/beijing/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/anhui/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/zhejiang/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/jiangxi/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/heilongjiang/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/shanghai/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/shandong/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/yunnan/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/sichuan/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/henan/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/hubei/> (referer: None)
+2019-10-27 08:21:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.haoqu.net/3/fujian/> (referer: None)
+2019-10-27 08:21:03 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49280/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["enable-automation"], "prefs": {"download.default_directory": "/Users/weipeng/Personal/Projects/YoutubeVideoDownloader/YoutubeVideoDownloader/", "download.prompt_for_download": true, "download.directory_upgrade": true, "safebrowsing.enabled": true, "profile.managed_default_content_settings.images": 1, "profile.content_settings.plugin_whitelist.adobe-flash-player": 1, "profile.content_settings.exceptions.plugins.*,*.per_resource.adobe-flash-player": 1}, "extensions": [], "args": ["--headless", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["enable-automation"], "prefs": {"download.default_directory": "/Users/weipeng/Personal/Projects/YoutubeVideoDownloader/YoutubeVideoDownloader/", "download.prompt_for_download": true, "download.directory_upgrade": true, "safebrowsing.enabled": true, "profile.managed_default_content_settings.images": 1, "profile.content_settings.plugin_whitelist.adobe-flash-player": 1, "profile.content_settings.exceptions.plugins.*,*.per_resource.adobe-flash-player": 1}, "extensions": [], "args": ["--headless", "--disable-gpu"]}}}
+2019-10-27 08:21:03 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:49280
+2019-10-27 08:21:04 [urllib3.connectionpool] DEBUG: http://127.0.0.1:49280 "POST /session HTTP/1.1" 200 688
+2019-10-27 08:21:04 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-10-27 08:21:05 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.haoqu.net:80
+2019-10-27 08:21:05 [urllib3.connectionpool] DEBUG: http://www.haoqu.net:80 "GET /3/hunan/ HTTP/1.1" 200 None
+2019-10-27 08:21:05 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49280/session/83c5f05c6dbf8728ae43742c14541639/url {"url": "http://www.haoqu.net/3/hunan/hngg.html"}
+2019-10-27 08:21:05 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2019-10-27 08:21:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.haoqu.net/3/hunan/> (referer: None)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1321, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 265, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/weipeng/Personal/Projects/PocketFilm/Spider/PocketLifeSpider/PocketLifeSpider/spiders/tv.py", line 132, in parse
+    driver.get(url)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/request.py", line 72, in request
+    **urlopen_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/request.py", line 150, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/poolmanager.py", line 323, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/util/retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/packages/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1321, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 265, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2019-10-27 08:21:06 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49389/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["enable-automation"], "prefs": {"download.default_directory": "/Users/weipeng/Personal/Projects/YoutubeVideoDownloader/YoutubeVideoDownloader/", "download.prompt_for_download": true, "download.directory_upgrade": true, "safebrowsing.enabled": true, "profile.managed_default_content_settings.images": 1, "profile.content_settings.plugin_whitelist.adobe-flash-player": 1, "profile.content_settings.exceptions.plugins.*,*.per_resource.adobe-flash-player": 1}, "extensions": [], "args": ["--headless", "--disable-gpu"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["enable-automation"], "prefs": {"download.default_directory": "/Users/weipeng/Personal/Projects/YoutubeVideoDownloader/YoutubeVideoDownloader/", "download.prompt_for_download": true, "download.directory_upgrade": true, "safebrowsing.enabled": true, "profile.managed_default_content_settings.images": 1, "profile.content_settings.plugin_whitelist.adobe-flash-player": 1, "profile.content_settings.exceptions.plugins.*,*.per_resource.adobe-flash-player": 1}, "extensions": [], "args": ["--headless", "--disable-gpu"]}}}
+2019-10-27 08:21:06 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:49389
+2019-10-27 08:21:07 [urllib3.connectionpool] DEBUG: http://127.0.0.1:49389 "POST /session HTTP/1.1" 200 688
+2019-10-27 08:21:07 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-10-27 08:21:07 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.haoqu.net:80
+2019-10-27 08:21:08 [urllib3.connectionpool] DEBUG: http://www.haoqu.net:80 "GET /1/ HTTP/1.1" 200 None
+2019-10-27 08:21:08 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49389/session/2f0cef7f54d5ce0415fdc198eeb74075/url {"url": "http://www.haoqu.net/1/cctv1.html"}
+2019-10-27 08:21:10 [urllib3.connectionpool] DEBUG: http://127.0.0.1:49389 "POST /session/2f0cef7f54d5ce0415fdc198eeb74075/url HTTP/1.1" 200 14
+2019-10-27 08:21:10 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-10-27 08:21:10 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.haoqu.net:80
+2019-10-27 08:21:11 [urllib3.connectionpool] DEBUG: http://www.haoqu.net:80 "GET /1/cctv1.html HTTP/1.1" 200 None
+2019-10-27 08:21:11 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49389/session/2f0cef7f54d5ce0415fdc198eeb74075/url {"url": "http://www.haoqu.net/1/347.html"}
+2019-10-27 08:21:12 [urllib3.connectionpool] DEBUG: http://127.0.0.1:49389 "POST /session/2f0cef7f54d5ce0415fdc198eeb74075/url HTTP/1.1" 200 14
+2019-10-27 08:21:12 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-10-27 08:21:12 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.haoqu.net:80
+2019-10-27 08:21:12 [urllib3.connectionpool] DEBUG: http://www.haoqu.net:80 "GET /1/347.html HTTP/1.1" 200 None
+2019-10-27 08:21:12 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49389/session/2f0cef7f54d5ce0415fdc198eeb74075/url {"url": "http://www.haoqu.net/1/cctv3.html"}
+2019-10-27 08:21:13 [urllib3.connectionpool] DEBUG: http://127.0.0.1:49389 "POST /session/2f0cef7f54d5ce0415fdc198eeb74075/url HTTP/1.1" 200 14
+2019-10-27 08:21:13 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-10-27 08:21:13 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.haoqu.net:80
+2019-10-27 08:21:13 [urllib3.connectionpool] DEBUG: http://www.haoqu.net:80 "GET /1/cctv3.html HTTP/1.1" 200 None
+2019-10-27 08:21:14 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49389/session/2f0cef7f54d5ce0415fdc198eeb74075/url {"url": "http://www.haoqu.net/1/cctv4.html"}
+2019-10-27 08:21:14 [urllib3.connectionpool] DEBUG: http://127.0.0.1:49389 "POST /session/2f0cef7f54d5ce0415fdc198eeb74075/url HTTP/1.1" 200 14
+2019-10-27 08:21:14 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-10-27 08:21:14 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.haoqu.net:80
+2019-10-27 08:21:14 [urllib3.connectionpool] DEBUG: http://www.haoqu.net:80 "GET /1/cctv4.html HTTP/1.1" 200 None
+2019-10-27 08:21:15 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49389/session/2f0cef7f54d5ce0415fdc198eeb74075/url {"url": "http://www.haoqu.net/1/cctv4-america.html"}
+2019-10-27 08:21:16 [urllib3.connectionpool] DEBUG: http://127.0.0.1:49389 "POST /session/2f0cef7f54d5ce0415fdc198eeb74075/url HTTP/1.1" 200 14
+2019-10-27 08:21:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-10-27 08:21:16 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.haoqu.net:80
+2019-10-27 08:21:16 [urllib3.connectionpool] DEBUG: http://www.haoqu.net:80 "GET /1/cctv4-america.html HTTP/1.1" 200 None
+2019-10-27 08:21:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49389/session/2f0cef7f54d5ce0415fdc198eeb74075/url {"url": "http://www.haoqu.net/1/cctv4-europe.html"}
+2019-10-27 08:21:18 [urllib3.connectionpool] DEBUG: http://127.0.0.1:49389 "POST /session/2f0cef7f54d5ce0415fdc198eeb74075/url HTTP/1.1" 200 14
+2019-10-27 08:21:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-10-27 08:21:18 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.haoqu.net:80
+2019-10-27 08:21:18 [urllib3.connectionpool] DEBUG: http://www.haoqu.net:80 "GET /1/cctv4-europe.html HTTP/1.1" 200 None
+2019-10-27 08:21:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49389/session/2f0cef7f54d5ce0415fdc198eeb74075/url {"url": "http://www.haoqu.net/1/cctv5.html"}
+2019-10-27 08:21:20 [urllib3.connectionpool] DEBUG: http://127.0.0.1:49389 "POST /session/2f0cef7f54d5ce0415fdc198eeb74075/url HTTP/1.1" 200 14
+2019-10-27 08:21:20 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-10-27 08:21:20 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.haoqu.net:80
+2019-10-27 08:21:20 [urllib3.connectionpool] DEBUG: http://www.haoqu.net:80 "GET /1/cctv5.html HTTP/1.1" 200 None
+2019-10-27 08:21:21 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49389/session/2f0cef7f54d5ce0415fdc198eeb74075/url {"url": "http://www.haoqu.net/1/cctv5+.html"}
+2019-10-27 08:21:22 [urllib3.connectionpool] DEBUG: http://127.0.0.1:49389 "POST /session/2f0cef7f54d5ce0415fdc198eeb74075/url HTTP/1.1" 200 14
+2019-10-27 08:21:22 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2019-10-27 08:21:22 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.haoqu.net:80
+2019-10-27 08:21:22 [urllib3.connectionpool] DEBUG: http://www.haoqu.net:80 "GET /1/cctv5+.html HTTP/1.1" 200 None
+2019-10-27 08:21:23 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:49389/session/2f0cef7f54d5ce0415fdc198eeb74075/url {"url": "http://www.haoqu.net/1/cctv6.html"}

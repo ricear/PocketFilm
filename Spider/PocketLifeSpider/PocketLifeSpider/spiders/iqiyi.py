@@ -86,7 +86,8 @@ class IqiyiSpider(scrapy.Spider):
         # 影视后缀
         type_suffix = self.type_suffix_dic.get(type_num)
         if (self.target == 'latest'):
-            self.total_page = 2
+            self.totalPage = 1
+            self.total = self.totalPage * self.pageSize * len(self.start_urls)
 
         # 生成视频列表地址
         for i in reverse_arr(range(1, self.totalPage + 1)):

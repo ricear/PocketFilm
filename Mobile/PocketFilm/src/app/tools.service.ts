@@ -107,9 +107,13 @@ export class ToolsService {
     var parseUrl;
     var safeUrl;
     if (movie_type == 'movie') {
-      parseUrl = this.config.bljiex
+      parseUrl = this.config.movie
     } else if (movie_type == 'tv') {
-      parseUrl = this.config.tv
+      if (url.includes('player')) {
+        parseUrl = ''
+      } else {
+        parseUrl = this.config.tv
+      }
     } else if (movie_type == 'drama') {
       parseUrl = this.config.drama
     } else if (movie_type == 'piece') {

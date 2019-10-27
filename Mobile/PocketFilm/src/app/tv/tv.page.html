@@ -29,7 +29,7 @@
         (click)="goMoreTv(cctvName)">更多</span></div>
     <div class="tb_a">
       <ul class="picTxt picTxtA clearfix" id="data_list">
-        <li *ngFor="let latestTop10Movie of top10CCTVList" (click)="goTvDetail(top10CCTV2._id)">
+        <li *ngFor="let latestTop10Movie of top10CCTVList" (click)="goTvDetail(latestTop10Movie._id)">
           <div class="con">
             <a title="{{latestTop10Movie.name}}"><img
                 data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"

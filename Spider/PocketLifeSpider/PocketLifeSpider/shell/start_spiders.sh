@@ -13,32 +13,76 @@ echo 启动腾讯视频、优酷视频爬虫：sh start_spiders.sh tencent,youku
 echo ''
 
 # 程序
+cd '/Users/weipeng/Personal/Projects/PocketFilm/Spider/PocketLifeSpider/PocketLifeSpider/shell'
 current_path=$("pwd")
 parent_current_path=$(dirname ${current_path})
 echo ${parent_current_path}
 cd ${parent_current_path}
 string=$1
+if [ ! $2 ]; then
+	type="all"
+else
+	type=$2
+fi
 array=[]
-if [ ! $1 ]; then
-	string="tencent,youku,iqiyi,zuida,kuyun,yongjiu,ok,ziyuan135,ziyuan33uu,tv,drama,piece,piece2"
-elif [ $1 == 1 ]; then
-	string="tencent,youku,iqiyi,zuida,kuyun,yongjiu"
-elif [ $1 == 2 ]; then
-	string="ok,ziyuan135,ziyuan33uu,tv,drama,piece,piece2"
+if [ $1 == "all" ]; then
+	string="tencent,youku,iqiyi,zuida,kuyun,yongjiu,ok,ziyuan135,ziyuan33uu"
+elif [ $1 == 'daily' ]; then
+	string="tv,drama,piece,piece2"
 elif [ $1 == 'temp' ]; then
-	string="drama,iqiyi,ok,piece,piece2,tencent,ziyuan33uu,ziyuan135"
+	string="zuida,kuyun,yongjiu,ok,ziyuan135,ziyuan33uu"
 fi
 array=(${string//,/ })
+if [ $type == 'all' ]; then
+# 爬取全部数据
 for var in ${array[@]}
 do
 	# 启动服务
 	echo '正在启动 '${var} 
 	# 获取当前目录
-	file=${parent_current_path}/documentations/logs/${var}.txt
+	file=${parent_current_path}/documentations/logs/${var}-${type}.txt
 	# -f 参数判断 $file 是否存在
 	if [ ! -f ${file} ]; then
  	touch ${file}
 	fi
-	nohup /Library/Frameworks/Python.framework/Versions/3.7/bin/scrapy crawl ${var} > ${file} &
+	nohup scrapy crawl ${var} > ${file} &
 	echo ${var} ' 启动成功'
 done
+else
+# 爬取最新数据
+while :
+do
+i=0
+while :
+do
+	var=${array[$i]}
+	if [ $i == 0 ]; then
+	last=${var}
+	fi
+    #监控服务是是否存活，这里是通过监控端口来监控服务，这里也可以替换为其他服务
+	pid=`ps -ef | grep "scrapy crawl ${last} -a target=latest" | grep -v grep |awk '{print $2}'`
+	echo "scrapy crawl ${last} -a target=latest"
+	echo $pid
+	if [ ! $pid ]
+	then
+	# 启动服务
+	echo ${last}' 运行完成，正在启动 '${var} 
+	# 获取当前目录
+	file=${parent_current_path}/documentations/logs/${var}-${type}.txt
+	# -f 参数判断 $file 是否存在
+	if [ ! -f ${file} ]; then
+ 	touch ${file}
+	fi
+	nohup scrapy crawl ${var} -a target=latest > ${file} &
+	echo ${var} ' 启动成功'
+	i=$(($i+1))
+	echo $i
+	if [ $i == ${#array[@]} ]; then
+	break
+	fi
+	last=$var
+	fi
+	sleep 10
+done
+done
+fi

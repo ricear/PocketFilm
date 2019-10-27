@@ -1,3 +1,3 @@
 #!bin/bash
-path=$(dirname "$PWD")
-echo ${path}
+pid=`ps -ef | grep "mongod" | grep -v grep |awk '{print $2}'`
+echo $pid

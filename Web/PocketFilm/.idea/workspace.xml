@@ -19,11 +19,8 @@
       <file leaf-file-name="api.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routers/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2588">
-              <caret line="3667" column="20" selection-start-line="3667" selection-start-column="20" selection-end-line="3667" selection-end-column="20" />
-              <folding>
-                <element signature="e#106466#128366#0" />
-              </folding>
+            <state relative-caret-position="205">
+              <caret line="1643" column="36" selection-start-line="1643" selection-start-column="36" selection-end-line="1643" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -107,8 +104,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
+            <state relative-caret-position="720">
+              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -135,7 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>user/info</find>
       <find>user/</find>
       <find>user/register</find>
       <find>login</find>
@@ -165,6 +161,7 @@
       <find>movie/get/all</find>
       <find>key_word == null</find>
       <find>find</find>
+      <find>count</find>
     </findStrings>
     <replaceStrings>
       <replace>//</replace>
@@ -390,11 +387,14 @@
       <workItem from="1571735752472" duration="2196000" />
       <workItem from="1571816598090" duration="3812000" />
       <workItem from="1571896880536" duration="5774000" />
+      <workItem from="1572055047072" duration="1193000" />
+      <workItem from="1572071685709" duration="3610000" />
+      <workItem from="1572185426329" duration="32000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207932000" />
+    <option name="totallyTimeSpent" value="212767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="741" extended-state="0" />
@@ -434,11 +434,26 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="97" />
+      <option name="time" value="103" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>db</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>db.db(dbName)</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>typeList[type]</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>req.query.sort_type == 0</expression-string>
         <language-id>JavaScript</language-id>
@@ -465,22 +480,7 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>typeList[type]</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
         <expression-string>data.length</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>data</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>req.body.username</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -764,13 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
@@ -814,13 +807,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routers/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2588">
-          <caret line="3667" column="20" selection-start-line="3667" selection-start-column="20" selection-end-line="3667" selection-end-column="20" />
-          <folding>
-            <element signature="e#106466#128366#0" />
-          </folding>
+        <state relative-caret-position="205">
+          <caret line="1643" column="36" selection-start-line="1643" selection-start-column="36" selection-end-line="1643" selection-end-column="36" />
         </state>
       </provider>
     </entry>

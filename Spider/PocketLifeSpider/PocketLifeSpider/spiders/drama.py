@@ -58,6 +58,8 @@ class DramaSpider(scrapy.Spider):
         for total2 in parse_one_page(html, pattern3):
             total = (int)(total2)
         total_page = total / page_size
+        if (self.target == 'latest'):
+            total_page = 6
         if total % page_size != 0:
             total_page += 1
         if (self.target == 'latest'):

@@ -11,7 +11,7 @@ if __name__ == '__main__':
     # execute(["scrapy", "crawl", "movie", "-a", "target=1", "-a", "keyword=余罪"])
     # zuida
     # execute(["scrapy", "crawl", "zuida"])
-    execute(["scrapy", "crawl", "zuida", "-a", "target=latest"])
+    # execute(["scrapy", "crawl", "zuida", "-a", "target=latest"])
     # kuyun
     # execute(["scrapy", "crawl", "kuyun"])
     # execute(["scrapy", "crawl", "kuyun", "-a", "target=latest"])
@@ -20,7 +20,7 @@ if __name__ == '__main__':
     # execute(["scrapy", "crawl", "tencent", "-a", "target=latest"])
     # youku
     # execute(["scrapy", "crawl", "youku"])
-    # execute(["scrapy", "crawl", "youku", "-a", "target=latest"])
+    execute(["scrapy", "crawl", "youku", "-a", "target=latest"])
     # iqiyi
     # execute(["scrapy", "crawl", "iqiyi"])
     # execute(["scrapy", "crawl", "iqiyi", "-a", "target=latest"])

@@ -41,7 +41,8 @@ class YoukuSpider(scrapy.Spider):
         super(YoukuSpider, self).__init__(name, **kwargs)
         self.target = target
         if (self.target == 'latest'):
-            self.total_page = 2
+            self.totalPage = 1
+            self.total = self.totalPage * self.pageSize * len(self.start_urls)
 
     def parse(self, response):
 
@@ -71,7 +72,7 @@ class YoukuSpider(scrapy.Spider):
 
 
         # 生成视频列表地址
-        for i in reverse_arr(range(1, self.totalPage)):
+        for i in reverse_arr(range(1, self.totalPage + 1)):
             url = origin_url.split('p=')[0] + 'p=' + str(i)
             print(url)
             response = get_response(url)

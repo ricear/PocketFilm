@@ -146,7 +146,7 @@ router.get('/count/get', function (req, res, next) {
         //  年代
         var release_date = req.query.release_date == null || req.query.release_date == 'null' || req.query.release_date == '全部' ? '全部' : req.query.release_date
         //  关键词
-        var key_word = req.query.key_word
+        var key_word = req.query.key_word == '' || req.query.key_word == null || req.query.key_word == 'null' ? 'null' : req.query.key_word
         if (key_word == null || key_word == 'null') {
             if (req.query.sort_type == 0 || req.query.sort_type == 1) {
                 // 根据更新时间进行排序
@@ -1633,7 +1633,7 @@ router.post('/version/add', function (req, res, next) {
     //  描述
     var descriptions = req.body.descriptions.split('\\n')
     //  更新时间
-    var acquisition_time = getFormatDate2()
+    var update_time = getFormatDate2()
 
     mongoClient.connect(dbURL, function (err, db) {
         var version = db.db(dbName).collection('version');
@@ -1641,7 +1641,7 @@ router.post('/version/add', function (req, res, next) {
         var versionInfo = {
             version_number: version_number,
             descriptions: descriptions,
-            acquisition_time: acquisition_time
+            update_time: update_time
         };
         version.find({version_number: versionInfo.version_number}).toArray(function (err, data) {
             if (data.length == 0) {

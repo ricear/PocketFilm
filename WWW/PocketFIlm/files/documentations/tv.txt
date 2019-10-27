@@ -1,0 +1,19 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.8.RELEASE)
+
+2019-10-26 16:46:03.602  INFO 4755 --- [           main] com.grayson.tv.TVApplication             : Starting TVApplication v0.0.1-SNAPSHOT on weipeng with PID 4755 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-10-26 16:46:03.615  INFO 4755 --- [           main] com.grayson.tv.TVApplication             : No active profile set, falling back to default profiles: default
+2019-10-26 16:46:11.038  INFO 4755 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-10-26 16:46:11.379  INFO 4755 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-26 16:46:11.423  INFO 4755 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-26 16:46:12.108  INFO 4755 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-26 16:46:12.108  INFO 4755 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8162 ms
+2019-10-26 16:46:13.771  INFO 4755 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-26 16:46:15.885  INFO 4755 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-10-26 16:46:15.897  INFO 4755 --- [           main] com.grayson.tv.TVApplication             : Started TVApplication in 20.57 seconds (JVM running for 23.32)

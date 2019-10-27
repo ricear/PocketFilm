@@ -51,6 +51,7 @@ public class TVController {
         String movies2Url = Configs.API + "/tv/get/all?type=地方台&page_size=" + pageSize;
         //  港澳台
         String movies3Url = Configs.API + "/tv/get/all?type=港澳台&page_size=" + pageSize;
+        System.out.println(recommendationsUrl);
         JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
         JSONObject movies0Object = CommonUtils.doGet(movies0Url);
         JSONObject movies1Object = CommonUtils.doGet(movies1Url);

@@ -77,14 +77,15 @@ class TencentSpider(scrapy.Spider):
             else:
                 total_page = (int)(total / page_size) + 1
             if (self.target == 'latest'):
-                total_page = 2
+                total_page = 1
+                total = total_page * page_size
 
             #   获取影视列表内容
             #   电影
             if (movie_type == 'movie'):
-                for offset_temp in reverse_arr(range(start_page, total + 1, page_size)):
+                for offset_temp in reverse_arr(range(start_page, total, page_size)):
                     current_page = (int)(offset_temp / page_size) + 1
-                    url = self.domain + '/x/bu/pagesheet/list?_all=1&append=1&channel=' + movie_type + '&listpage=2&offset=' + (
+                    url = self.domain + '/x/bu/pagesheet/list?_all=1&append=1&channel=' + movie_type + '&listpage='+(str)(current_page)+'&offset=' + (
                         str)(offset_temp) + '&pagesize=' + (str)(page_size) + '&sort=19'
                     print('当前页面：' + url)
                     count = 0
@@ -194,9 +195,9 @@ class TencentSpider(scrapy.Spider):
                         self.total_valid = self.total_valid + 1
             #   电视剧
             if (movie_type == 'tv'):
-                for offset_temp in reverse_arr(range(start_page, total + 1, page_size)):
+                for offset_temp in reverse_arr(range(start_page, total, page_size)):
                     current_page = (int)(offset_temp / page_size) + 1
-                    url = self.domain + '/x/bu/pagesheet/list?_all=1&append=1&channel=' + movie_type + '&listpage=2&offset=' + (
+                    url = self.domain + '/x/bu/pagesheet/list?_all=1&append=1&channel=' + movie_type + '&listpage='+(str)(current_page)+'&offset=' + (
                         str)(offset_temp) + '&pagesize=' + (str)(page_size) + '&sort=19'
                     print('当前页面：' + url)
                     count = 0
@@ -340,9 +341,9 @@ class TencentSpider(scrapy.Spider):
                             self.total_valid = self.total_valid + 1
             #   综艺
             if (movie_type == 'variety'):
-                for offset_temp in reverse_arr(range(start_page, total + 1, page_size)):
+                for offset_temp in reverse_arr(range(start_page, total, page_size)):
                     current_page = (int)(offset_temp / page_size) + 1
-                    url = self.domain + '/x/bu/pagesheet/list?_all=1&append=1&channel=' + movie_type + '&listpage=2&offset=' + (
+                    url = self.domain + '/x/bu/pagesheet/list?_all=1&append=1&channel=' + movie_type + '&listpage='+(str)(current_page)+'&offset=' + (
                         str)(offset_temp) + '&pagesize=' + (str)(page_size) + '&sort=19'
                     print('当前页面：' + url)
                     count = 0
@@ -439,9 +440,9 @@ class TencentSpider(scrapy.Spider):
                         self.total_valid = self.total_valid + 1
             #   动漫
             if (movie_type == 'cartoon'):
-                for offset_temp in reverse_arr(range(start_page, total + 1, page_size)):
+                for offset_temp in reverse_arr(range(start_page, total, page_size)):
                     current_page = (int)(offset_temp / page_size) + 1
-                    url = self.domain + '/x/bu/pagesheet/list?_all=1&append=1&channel=' + movie_type + '&listpage=2&offset=' + (
+                    url = self.domain + '/x/bu/pagesheet/list?_all=1&append=1&channel=' + movie_type + '&listpage='+(str)(current_page)+'&offset=' + (
                         str)(offset_temp) + '&pagesize=' + (str)(page_size) + '&sort=19'
                     print('当前页面：' + url)
                     count = 0
@@ -547,9 +548,9 @@ class TencentSpider(scrapy.Spider):
                         self.total_valid = self.total_valid + 1
             #   少儿
             if (movie_type == 'child'):
-                for offset_temp in reverse_arr(range(start_page, total + 1, page_size)):
+                for offset_temp in reverse_arr(range(start_page, total, page_size)):
                     current_page = (int)(offset_temp / page_size) + 1
-                    url = self.domain + '/x/bu/pagesheet/list?_all=1&append=1&channel=' + movie_type + '&listpage=2&offset=' + (
+                    url = self.domain + '/x/bu/pagesheet/list?_all=1&append=1&channel=' + movie_type + '&listpage='+(str)(current_page)+'&offset=' + (
                         str)(offset_temp) + '&pagesize=' + (str)(page_size) + '&sort=19'
                     print('当前页面：' + url)
                     count = 0

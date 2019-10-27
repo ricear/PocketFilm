@@ -1343,7 +1343,7 @@ var ConfigService = /** @class */ (function () {
     function ConfigService() {
         // 公用地址
         // public sourceUrl = 'https://pocket.mynatapp.cc';
-        this.sourceUrl = 'http://pocket.mynatapp.cc';
+        this.sourceUrl = 'http://103.45.178.220';
         // public请求地址
         this.publicUrl = this.sourceUrl + '/public';
         //api请求地址
@@ -1352,7 +1352,7 @@ var ConfigService = /** @class */ (function () {
         // app名称
         this.appName = '掌上影视';
         // app源文件名称
-        this.appSourceName = 'app-debug.apk';
+        this.appSourceName = 'PocketFilm.apk';
         // 影视解析地址
         this.parseUrl = 'http://jx.aeidu.cn/?url=';
         // 电影
@@ -1382,8 +1382,10 @@ var ConfigService = /** @class */ (function () {
         this.ckmov = 'https://www.ckmov.vip/api.php?url=';
         // haohuala
         this.haohuala = 'http://api.lhh.la/vip/?url=';
+        // 影视
+        this.movie = this.jx66;
         // 电视
-        this.tv = this.m3u8;
+        this.tv = this.jx66;
         // 戏曲解析地址
         this.drama = this.jx66;
         // 小品
@@ -1685,10 +1687,15 @@ var ToolsService = /** @class */ (function () {
         var parseUrl;
         var safeUrl;
         if (movie_type == 'movie') {
-            parseUrl = this.config.bljiex;
+            parseUrl = this.config.movie;
         }
         else if (movie_type == 'tv') {
-            parseUrl = this.config.tv;
+            if (url.includes('player')) {
+                parseUrl = '';
+            }
+            else {
+                parseUrl = this.config.tv;
+            }
         }
         else if (movie_type == 'drama') {
             parseUrl = this.config.drama;

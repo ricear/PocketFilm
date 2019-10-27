@@ -30,6 +30,9 @@ class ZuidaSpiderPipeline(object):
 
         item = dict(item)
 
+        # 转换影视第二类型
+        item['type2'] = reverse_type2(item['type2'])
+
         # 更新影视分类
         collection = 'movie_type'
         db_utils = MongoDbUtils(collection)
