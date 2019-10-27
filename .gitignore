@@ -17,3 +17,7 @@ Spider/PocketLifeSpider/PocketLifeSpider/util/CommonUtils.py
 Spider/PocketLifeSpider/.idea/workspace.xml
 db_backup/
 Spider/PocketLifeSpider/.idea/vcs.xml
+*.out
+*.log
+*.txt
+Spider/PocketLifeSpider/PocketLifeSpider/documentations/logs/ok-all.txt
