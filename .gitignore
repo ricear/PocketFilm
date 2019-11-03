@@ -22,3 +22,7 @@ Spider/PocketLifeSpider/.idea/vcs.xml
 *.txt
 Spider/PocketLifeSpider/PocketLifeSpider/documentations/logs/ok-all.txt
 *.txt
+Web/PocketFilm/.idea/workspace.xml
+Spider/PocketLifeSpider/PocketLifeSpider/ghostdriver.log
+*.txt
+*.pyc
