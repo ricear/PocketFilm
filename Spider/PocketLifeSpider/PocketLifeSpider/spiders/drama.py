@@ -30,21 +30,16 @@ class DramaSpider(scrapy.Spider):
     def __init__(self, target=None, name=None, **kwargs):
         super(DramaSpider, self).__init__(name, **kwargs)
         self.target = target
-        if (target is None):
-            html = get_one_page(self.orign_url, 'gb2312')
-            pattern = '[\s\S]*?<div class="acc2 ">([\s\S]*?)</div>'
-            for row in parse_one_page(html, pattern):
-                pattern2 = '[\s\S]*?<a href="([\s\S]*?)"[\s\S]*?>([\s\S]*?)</a>[\s\S]*?'
-                for col in parse_one_page(row, pattern2):
-                    # 戏曲分类型地址
-                    url = self.orign_url + col[0]
-                    if '.html' not in url:
-                        url = url + 'index.html'
-                        self.start_urls.append(url)
-                    # 戏曲类型名称
-                    drama_type_name = col[1]
-                    if 'font' in col[1]:
-                        drama_type_name = col[1].split('>')[1].split('<')[0]
+        html = get_one_page(self.orign_url, 'gb2312')
+        pattern = '[\s\S]*?<div class="acc2 ">([\s\S]*?)</div>'
+        for row in parse_one_page(html, pattern):
+            pattern2 = '[\s\S]*?<a href="([\s\S]*?)"[\s\S]*?>([\s\S]*?)</a>[\s\S]*?'
+            for col in parse_one_page(row, pattern2):
+                # 戏曲分类型地址
+                url = self.orign_url + col[0]
+                if '.html' not in url:
+                    url = url + 'index.html'
+                    self.start_urls.append(url)
 
     def parse(self, response):
 
@@ -58,27 +53,19 @@ class DramaSpider(scrapy.Spider):
         for total2 in parse_one_page(html, pattern3):
             total = (int)(total2)
         total_page = total / page_size
-        if (self.target == 'latest'):
-            total_page = 6
         if total % page_size != 0:
             total_page += 1
         if (self.target == 'latest'):
-            total_page = 6
-        url_list = []
-        if (self.target is None):
-            for index in numpy.arange(1, total_page + 1, 1):
-                drama_type_url = response.url
-                if 'index.html' in response.url:
-                    url = drama_type_url
-                else:
-                    if '.html' not in response.url:
-                        url = response.url + 'index.html'
-                if index != 1:
-                    url = url.split('.html')[0] + (str)((int)(index)) + '.html'
-                    url_list.append(url)
-        elif (self.target == 'history'):
-            url_list = get_spider_history(self.type)
-        for url in url_list:
+            total_page = 1
+        for index in numpy.arange(1, total_page + 1, 1):
+            drama_type_url = response.url
+            if 'index.html' in response.url:
+                url = drama_type_url
+            else:
+                if '.html' not in response.url:
+                    url = response.url + 'index.html'
+            if index != 1:
+                url = url.split('.html')[0] + (str)((int)(index)) + '.html'
             html = get_one_page(url.split('\n')[0], 'gb2312')
             pattern3 = '[\s\S]*?<div class="content bord mtop">[\s\S]*?([\s\S]*?)</div>'
             for div in parse_one_page(html, pattern3):

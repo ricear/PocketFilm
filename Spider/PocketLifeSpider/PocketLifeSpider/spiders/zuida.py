@@ -48,7 +48,7 @@ class ZuidaSpider(scrapy.Spider):
                     self.start_urls.append(self.orign_url + str(page_index) + '.html')
             elif (target == 'latest'):
                 start_page = 2
-                self.total_page = 6
+                self.total_page = 1
                 self.total = self.page_size * self.total_page
                 for page_index in reverse_arr(range(start_page, self.total_page + 1)):
                     self.start_urls.append(self.orign_url + str(page_index) + '.html')
@@ -88,6 +88,7 @@ class ZuidaSpider(scrapy.Spider):
             movie_server = db_utils.find(dic)
             # id, src, name, update_time, actors, type, score, release_date, description
             # 解析视频源
+            print(self.domain + url2)
             html = get_one_page(self.domain + url2)
             html = etree.HTML(html)
             each = html.xpath('/html/body/div[4]')[0]
@@ -101,11 +102,11 @@ class ZuidaSpider(scrapy.Spider):
             movie_item['directors'] = get_arr_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[2]/span/text()'))
             movie_item['actors'] = get_arr_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[3]/span/text()'))
             type2 = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[4]/span/text()'))
+            if (is_exclude_type2(type2) == True):
+                continue
             movie_item['type2'] = reverse_type2(type2)
             type = get_type_from_type2(type2)
             movie_item['type'] = type
-            if (is_exclude_type2(type2) == True):
-                continue
             movie_item['region'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[5]/span/text()'))
             movie_item['language'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[6]/span/text()'))
             movie_item['release_date'] = reverse_release_date(get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[7]/span/text()')))

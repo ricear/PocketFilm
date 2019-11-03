@@ -30,23 +30,42 @@ if [ $1 == "all" ]; then
 elif [ $1 == 'daily' ]; then
 	string="tv,drama,piece,piece2"
 elif [ $1 == 'temp' ]; then
-	string="zuida,kuyun,yongjiu,ok,ziyuan135,ziyuan33uu"
+	string="tencent,youku,iqiyi"
 fi
 array=(${string//,/ })
 if [ $type == 'all' ]; then
 # 爬取全部数据
-for var in ${array[@]}
+i=0
+while :
 do
+	var=${array[$i]}
+	if [ $i == 0 ]; then
+	last=${var}
+	fi
+    #监控服务是是否存活，这里是通过监控端口来监控服务，这里也可以替换为其他服务
+	pid=`ps -ef | grep "scrapy crawl ${last}" | grep -v grep |awk '{print $2}'`
+	echo "scrapy crawl ${last}"
+	echo $pid
+	if [ ! $pid ]
+	then
 	# 启动服务
-	echo '正在启动 '${var} 
+	echo ${last}' 运行完成，正在启动 '${var} 
 	# 获取当前目录
 	file=${parent_current_path}/documentations/logs/${var}-${type}.txt
 	# -f 参数判断 $file 是否存在
 	if [ ! -f ${file} ]; then
  	touch ${file}
 	fi
-	nohup scrapy crawl ${var} > ${file} &
+	nohup /Library/Frameworks/Python.framework/Versions/3.7/bin/scrapy crawl ${var} > ${file} 2>&1 &
 	echo ${var} ' 启动成功'
+	i=$(($i+1))
+	echo $i
+	if [ $i == ${#array[@]} ]; then
+	break
+	fi
+	last=$var
+	fi
+	sleep 10
 done
 else
 # 爬取最新数据
@@ -73,7 +92,7 @@ do
 	if [ ! -f ${file} ]; then
  	touch ${file}
 	fi
-	nohup scrapy crawl ${var} -a target=latest > ${file} &
+	nohup /Library/Frameworks/Python.framework/Versions/3.7/bin/scrapy crawl ${var} -a target=latest > ${file} 2>&1 &
 	echo ${var} ' 启动成功'
 	i=$(($i+1))
 	echo $i
@@ -84,5 +103,6 @@ do
 	fi
 	sleep 10
 done
+sleep 600
 done
 fi

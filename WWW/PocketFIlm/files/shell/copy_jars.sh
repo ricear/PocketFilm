@@ -50,3 +50,7 @@ do
 		echo 'jar 包获取成功'
 	fi
 done
+# 将 jar 包上传到服务器
+echo '将 jar 包上传到服务器'
+scp ../jars/*.jar root@103.45.178.220:/usr/local/projects/PocketFilm/files/jars/
+echo '已完成'

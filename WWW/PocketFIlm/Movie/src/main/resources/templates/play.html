@@ -190,7 +190,7 @@
                                 scrolling="no" width="100%" height="550"
                                 style="position: absolute; z-index: 99998; display: none;"></iframe>
                         <iframe width="100%" height="550"
-                                th:src="'https://vip.bljiex.com/?v=' + ${type.url}"
+                                th:src="'http://api.lhh.la/vip/?url=' + ${type.url}"
                                 frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"
                                 allowfullscreen="ture" th:each="type, typeStat : ${source.types}"
                                 th:if="${typeStat.index eq type_index}"></iframe>

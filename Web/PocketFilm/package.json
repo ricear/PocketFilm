@@ -6,6 +6,7 @@
     "body-parser": "^1.18.3",
     "btoa": "^1.2.1",
     "cookies": "^0.7.3",
+    "elasticsearch": "^16.4.0",
     "express": "^4.16.4",
     "fs": "0.0.1-security",
     "jquery": "^3.4.1",

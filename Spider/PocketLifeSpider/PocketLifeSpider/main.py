@@ -20,7 +20,7 @@ if __name__ == '__main__':
     # execute(["scrapy", "crawl", "tencent", "-a", "target=latest"])
     # youku
     # execute(["scrapy", "crawl", "youku"])
-    execute(["scrapy", "crawl", "youku", "-a", "target=latest"])
+    # execute(["scrapy", "crawl", "youku", "-a", "target=latest"])
     # iqiyi
     # execute(["scrapy", "crawl", "iqiyi"])
     # execute(["scrapy", "crawl", "iqiyi", "-a", "target=latest"])
@@ -44,7 +44,7 @@ if __name__ == '__main__':
     # execute(["scrapy", "crawl", "tv", "-a", "target=latest"])
     # drama
     # execute(["scrapy", "crawl", "drama"])
-    # execute(["scrapy", "crawl", "drama"], "-a", "target=latest")
+    execute(["scrapy", "crawl", "drama", "-a", "target=latest"])
     # drama_type
     # execute(["scrapy", "crawl", "drama_type"])
     # piece

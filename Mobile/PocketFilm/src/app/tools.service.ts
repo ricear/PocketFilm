@@ -231,6 +231,7 @@ export class ToolsService {
       var descriptions = version.descriptions
       var update_time = version.update_time
       this.appVersion.getVersionNumber().then((appVersionNumber: any) => {
+        console.log(appVersionNumber + ' ' + version_number)
         if (appVersionNumber < version_number) {
           // 有新版本
           var message = ''

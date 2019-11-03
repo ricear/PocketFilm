@@ -78,7 +78,7 @@ class Piece2Spider(scrapy.Spider):
         html = etree.HTML(html)
         total_page = (int)(get_str_from_xpath(html.xpath('//ul[@class="pagination"]/li[last()-1]/a/text()')))
         if (self.target == 'latest'):
-            total_page = 6
+            total_page = 1
         for page_index in reverse_arr(range(start_page, total_page + 1)):
             if (page_index == 1):
                 a2 = url

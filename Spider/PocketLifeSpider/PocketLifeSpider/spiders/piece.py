@@ -53,7 +53,7 @@ class PieceSpider(scrapy.Spider):
                     type_index = num[0]
                     total_page = (int)(num[1])
         if (self.target == 'latest'):
-            total_page = 6
+            total_page = 1
         for page_index in range(start_page, total_page + 1):
             if (page_index == 1):
                 a2 = url

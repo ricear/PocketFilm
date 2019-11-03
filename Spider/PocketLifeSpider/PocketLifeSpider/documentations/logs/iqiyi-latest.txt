@@ -1,0 +1,518 @@
+find success 74994
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+http://www.iqiyi.com/a_19rrk60i51.html
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第1集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第2集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第3集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第4集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第5集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第6集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第7集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第8集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第9集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第10集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第11集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第12集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第13集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第14集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第15集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第16集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第17集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第18集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第19集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第20集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第21集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第22集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第23集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第24集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第25集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第26集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第27集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第28集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第29集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第30集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第31集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第32集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第33集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第34集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第35集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第36集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第37集
+正在爬取 电视剧 1/1 11/240 -> 19rrk60i51 爱奇艺视频 第38集
+find success 1
+19rrk60i51 已爬取
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+http://www.iqiyi.com/a_19rrjadvbp.html
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第1集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第2集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第3集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第4集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第5集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第6集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第7集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第8集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第9集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第10集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第11集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第12集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第13集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第14集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第15集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第16集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第17集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第18集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第19集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第20集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第21集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第22集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第23集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第24集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第25集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第26集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第27集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第28集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第29集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第30集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第31集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第32集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第33集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第34集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第35集
+正在爬取 电视剧 1/1 17/240 -> 19rrjadvbp 爱奇艺视频 第36集
+find success 1
+19rrjadvbp 已爬取
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+http://www.iqiyi.com/a_19rrk2hct9.html
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第1集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第2集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第3集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第4集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第5集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第6集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第7集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第8集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第9集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第10集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第11集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第12集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第13集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第14集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第15集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第16集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第17集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第18集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第19集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第20集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第21集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第22集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第23集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第24集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第25集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第26集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第27集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第28集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第29集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第30集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第31集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第32集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第33集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第34集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第35集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第36集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第37集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第38集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第39集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第40集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第41集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第42集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第43集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第44集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第45集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第46集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第47集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第48集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第49集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第50集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第51集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第52集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第53集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第54集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第55集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第56集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第57集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第58集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第59集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第60集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第61集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第62集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第63集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第64集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第65集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第66集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第67集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第68集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第69集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第70集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第71集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第72集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第73集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第74集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第75集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第76集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第77集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第78集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第79集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第80集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第81集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第1集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第2集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第3集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第4集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第5集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第6集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第7集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第8集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第9集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第10集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第11集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第12集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第13集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第14集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第15集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第16集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第17集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第18集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第19集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第20集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第21集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第22集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第23集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第24集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第25集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第26集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第27集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第28集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第29集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第30集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第31集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第32集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第33集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第34集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第35集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第36集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第37集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第38集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第39集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第40集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第41集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第42集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第43集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第44集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第45集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第46集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第47集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第48集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第49集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第50集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第51集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第52集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第53集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第54集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第55集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第56集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第57集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第58集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第59集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第60集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第61集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第62集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第63集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第64集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第65集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第66集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第67集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第68集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第69集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第70集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第71集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第72集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第73集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第74集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第75集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第76集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第77集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第78集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第79集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第80集
+正在爬取 电视剧 1/1 19/240 -> 19rrk2hct9 爱奇艺视频 第81集
+find success 1
+19rrk2hct9 已爬取
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+http://www.iqiyi.com/a_19rrhz06e5.html
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+http://www.iqiyi.com/a_19rrharlvd.html
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+http://www.iqiyi.com/a_19rrhz7ia1.html
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+http://www.iqiyi.com/a_19rrhz7mdd.html
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+http://www.iqiyi.com/a_19rrh990gh.html
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第1集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第2集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第3集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第4集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第5集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第6集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第7集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第8集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第9集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第10集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第11集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第12集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第13集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第14集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第15集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第16集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第17集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第18集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第19集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第20集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第21集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第22集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第23集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第24集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第25集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第26集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第27集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第28集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第29集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第30集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第31集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第32集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第33集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第34集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第35集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第36集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第37集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第38集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第39集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第40集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第41集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第42集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第43集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第44集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第45集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第46集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第47集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第48集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第49集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第50集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第51集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第52集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第53集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第54集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第55集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第1集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第2集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第3集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第4集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第5集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第6集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第7集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第8集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第9集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第10集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第11集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第12集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第13集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第14集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第15集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第16集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第17集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第18集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第19集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第20集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第21集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第22集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第23集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第24集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第25集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第26集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第27集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第28集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第29集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第30集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第31集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第32集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第33集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第34集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第35集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第36集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第37集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第38集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第39集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第40集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第41集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第42集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第43集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第44集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第45集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第46集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第47集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第48集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第49集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第50集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第51集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第52集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第53集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第54集
+正在爬取 电视剧 1/1 39/240 -> 19rrh990gh 爱奇艺视频 第55集
+find success 1
+19rrh990gh 已爬取
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=2&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+本次共爬取 0 条数据，用时 61.44958829879761s
+find success 74994
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=1&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+http://www.iqiyi.com/v_19rrkbqj9o.html
+正在爬取 电影 1/1 51/240 -> 19rrkbqj9o 爱奇艺视频 夏洛特烦恼
+find success 1
+find success 1
+find success 1
+{'name': '夏洛特烦恼', 'type': '电影'}
+{'$set': {'update_status': '爱奇艺视频', 'sources': [{'name': '爱奇艺视频', 'types': [{'name': '夏洛特烦恼', 'url': 'http://www.iqiyi.com/v_19rrkbqj9o.html'}]}, {'name': '来源:kkyun', 'types': [{'name': 'HD1080P中字', 'url': 'http://sina.jingpinxiazai.com/share/9KzPBMGlN7QkKNmC'}]}, {'name': '腾讯视频', 'types': [{'name': '普通话', 'url': 'http://v.qq.com/x/cover/ge1vg9evjfeb6l0.html'}]}, {'name': '来源:kkm3u8', 'types': [{'name': 'HD1080P中字', 'url': 'http://sina.jingpinxiazai.com/20180926/Fg8oLQWY/index.m3u8'}]}, {'name': 'zuidam3u8', 'types': [{'name': 'HD1280高清国语中字版', 'url': 'http://bili.meijuzuida.com/20190620/18464_0d5f3381/index.m3u8'}]}, {'name': 'zuidall', 'types': [{'name': 'HD1280高清国语中字版', 'url': 'http://bili.meijuzuida.com/share/a584750e807e73159a3ec38cf03ec65f'}]}], 'update_time': '2019-10-31 18:13:22', 'acquisition_time': '2019-10-31 18:13:24'}}
+update success 1
+http://www.iqiyi.com/v_19rrcsuqyw.html
+正在爬取 电影 1/1 53/240 -> 19rrcsuqyw 爱奇艺视频 风语咒
+find success 1
+19rrcsuqyw 已爬取
+http://www.iqiyi.com/v_19rr9cokl0.html
+正在爬取 电影 1/1 55/240 -> 19rr9cokl0 爱奇艺视频 亚洲之爱
+find success 1
+19rr9cokl0 已爬取
+http://www.iqiyi.com/v_19rrk2m114.html
+正在爬取 电影 1/1 60/240 -> 19rrk2m114 爱奇艺视频 惊天动地
+find success 1
+19rrk2m114 已爬取
+http://www.iqiyi.com/v_19rrdmmmg8.html
+正在爬取 电影 1/1 62/240 -> 19rrdmmmg8 爱奇艺视频 X战警：黑凤凰
+find success 74994
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=15&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+http://www.iqiyi.com/a_19rrhy6ejd.html
+正在爬取 少儿 1/1 64/240 -> 19rrhy6ejd 爱奇艺视频 第1集
+正在爬取 少儿 1/1 64/240 -> 19rrhy6ejd 爱奇艺视频 第2集
+正在爬取 少儿 1/1 64/240 -> 19rrhy6ejd 爱奇艺视频 第3集
+正在爬取 少儿 1/1 64/240 -> 19rrhy6ejd 爱奇艺视频 第4集
+正在爬取 少儿 1/1 64/240 -> 19rrhy6ejd 爱奇艺视频 第5集
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=15&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+find success 1
+find success 1
+find success 1
+{'name': '工程车四兄弟', 'type': '少儿'}
+{'$set': {'update_status': '更新至30集', 'sources': [{'name': '爱奇艺视频', 'types': [{'name': '第1集', 'url': 'http://www.iqiyi.com/v_19rtucc86s.html'}, {'name': '第2集', 'url': 'http://www.iqiyi.com/v_19rtuba6j4.html'}, {'name': '第3集', 'url': 'http://www.iqiyi.com/v_19rtublm64.html'}, {'name': '第4集', 'url': 'http://www.iqiyi.com/v_19rtubl5x8.html'}, {'name': '第5集', 'url': 'http://www.iqiyi.com/v_19rtubnsng.html'}]}, {'name': '优酷视频', 'types': [{'name': '1 沙滩乐园', 'url': 'https://v.youku.com/v_show/id_XNDM5NzM2NDcwMA==.html'}, {'name': '2 人民公园', 'url': 'https://v.youku.com/v_show/id_XNDM5NzM3MDU4NA==.html'}, {'name': '3 焕新洗车店', 'url': 'https://v.youku.com/v_show/id_XNDM5NzM4Mjc3Mg==.html'}, {'name': '4 综合游乐园', 'url': 'https://v.youku.com/v_show/id_XNDM5NzM5Njc5Ng==.html'}, {'name': '5 多层停车场', 'url': 'https://v.youku.com/v_show/id_XNDM5NzQwMjk3Ng==.html'}, {'name': '6 隧道欢乐多', 'url': 'https://v.youku.com/v_show/id_XNDM5NzQxMTU4MA==.html'}, {'name': '7 萌萌火车站', 'url': 'https://v.youku.com/v_show/id_XNDM5NzQxODM2OA==.html'}, {'name': '8 炫酷飞机场', 'url': 'https://v.youku.com/v_show/id_XNDM5NzQ0NTgwMA==.html'}, {'name': '9 室内游乐场', 'url': 'https://v.youku.com/v_show/id_XNDM5NzQ1MzcyOA==.html'}, {'name': '10 全民农场', 'url': 'https://v.youku.com/v_show/id_XNDM5Nzg1MTAwMA==.html'}]}], 'update_time': '2019-10-31 18:13:36', 'acquisition_time': '2019-10-31 18:13:40'}}
+update success 1
+find success 74994
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=4&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+http://www.iqiyi.com/a_19rrhbkfv1.html
+正在爬取 动漫 1/1 74/240 -> 19rrhbkfv1 爱奇艺视频 第1集
+正在爬取 动漫 1/1 74/240 -> 19rrhbkfv1 爱奇艺视频 第2集
+正在爬取 动漫 1/1 74/240 -> 19rrhbkfv1 爱奇艺视频 第3集
+正在爬取 动漫 1/1 74/240 -> 19rrhbkfv1 爱奇艺视频 第4集
+正在爬取 动漫 1/1 74/240 -> 19rrhbkfv1 爱奇艺视频 第5集
+正在爬取 动漫 1/1 74/240 -> 19rrhbkfv1 爱奇艺视频 第6集
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=4&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+find success 1
+find success 1
+find success 1
+{'name': '葫芦兄弟', 'type': '动漫'}
+{'$set': {'update_status': '更新至13集', 'sources': [{'name': '爱奇艺视频', 'types': [{'name': '第1集', 'url': 'http://www.iqiyi.com/v_19rrmucyoc.html'}, {'name': '第2集', 'url': 'http://www.iqiyi.com/v_19rrmud1eo.html'}, {'name': '第3集', 'url': 'http://www.iqiyi.com/v_19rrmud178.html'}, {'name': '第4集', 'url': 'http://www.iqiyi.com/v_19rrmud0y0.html'}, {'name': '第5集', 'url': 'http://www.iqiyi.com/v_19rrmud34k.html'}, {'name': '第6集', 'url': 'http://www.iqiyi.com/v_19rrmud4u8.html'}]}, {'name': 'ckm3u8', 'types': [{'name': '第01集', 'url': 'https://ifeng.com-v-ifeng.com/20180723/24037_93a89772/index.m3u8'}]}, {'name': '来源:kkyun', 'types': [{'name': 'DVD珍藏版', 'url': 'http://videos.kkyun-iqiyi.com/share/o1nSeTZCvUEhE1UN'}]}, {'name': '来源:kkm3u8', 'types': [{'name': 'DVD珍藏版', 'url': 'http://videos.kkyun-iqiyi.com/20180113/oFFzu8mC/index.m3u8'}]}, {'name': '腾讯视频', 'types': [{'name': '葫芦兄弟第1集：神峰奇遇', 'url': 'http://v.qq.com/x/cover/2iqrhqekbtgwp1s/c01350046ds.html'}, {'name': '葫芦兄弟第2集：七色葫芦', 'url': 'http://v.qq.com/x/cover/2iqrhqekbtgwp1s/s0135pkchtp.html'}, {'name': '葫芦兄弟第3集：误入泥潭', 'url': 'http://v.qq.com/x/cover/2iqrhqekbtgwp1s/s0135vh2yyg.html'}, {'name': '葫芦兄弟第4集：梦窟迷境', 'url': 'http://v.qq.com/x/cover/2iqrhqekbtgwp1s/j0135c2xzzt.html'}, {'name': '葫芦兄弟第5集：绝路逢生', 'url': 'http://v.qq.com/x/cover/2iqrhqekbtgwp1s/y0135k2wa6w.html'}, {'name': '葫芦兄弟第6集：钢筋铁骨', 'url': 'http://v.qq.com/x/cover/2iqrhqekbtgwp1s/s0135ydd2o4.html'}, {'name': '葫芦兄弟第7集：水火奇功', 'url': 'http://v.qq.com/x/cover/2iqrhqekbtgwp1s/m01356kzefd.html'}, {'name': '葫芦兄弟第8集：酒酣心冰', 'url': 'http://v.qq.com/x/cover/2iqrhqekbtgwp1s/r0135cxr0ql.html'}, {'name': '葫芦兄弟第9集：幽谷彩莲', 'url': 'http://v.qq.com/x/cover/2iqrhqekbtgwp1s/r0135hifgt8.html'}, {'name': '葫芦兄弟第10集：捕风捉影', 'url': 'http://v.qq.com/x/cover/2iqrhqekbtgwp1s/u01353afq30.html'}, {'name': '葫芦兄弟第11集：巧夺如意', 'url': 'http://v.qq.com/x/cover/2iqrhqekbtgwp1s/g0135mz15ht.html'}, {'name': '葫芦兄弟第12集：妖迷心窍', 'url': 'http://v.qq.com/x/cover/2iqrhqekbtgwp1s/d0135vr8mtd.html'}, {'name': '葫芦兄弟第13集：七子连心', 'url': 'http://v.qq.com/x/cover/2iqrhqekbtgwp1s/v013524o7h5.html'}]}, {'name': 'kuyun', 'types': [{'name': '第01集', 'url': 'https://ifeng.com-v-ifeng.com/share/9f15dd77bfcd0d8143ce0beb217ed18a'}]}], 'update_time': '2019-10-31 18:13:48', 'acquisition_time': '2019-10-31 18:13:54'}}
+update success 1
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=15&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=15&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+http://www.iqiyi.com/a_19rrhb6gpt.html
+正在爬取 少儿 1/1 79/240 -> 19rrhb6gpt 爱奇艺视频 第1集
+正在爬取 少儿 1/1 79/240 -> 19rrhb6gpt 爱奇艺视频 第2集
+正在爬取 少儿 1/1 79/240 -> 19rrhb6gpt 爱奇艺视频 第3集
+正在爬取 少儿 1/1 79/240 -> 19rrhb6gpt 爱奇艺视频 第4集
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=15&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+正在爬取 少儿 1/1 79/240 -> 19rrhb6gpt 爱奇艺视频 第1集
+正在爬取 少儿 1/1 79/240 -> 19rrhb6gpt 爱奇艺视频 第2集
+正在爬取 少儿 1/1 79/240 -> 19rrhb6gpt 爱奇艺视频 第3集
+正在爬取 少儿 1/1 79/240 -> 19rrhb6gpt 爱奇艺视频 第4集
+http://www.iqiyi.com/a_19rrhztuy1.html
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第1集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第2集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第3集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第4集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第5集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第6集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第7集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第8集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第9集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第10集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第11集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第12集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第13集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第14集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第15集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第16集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第17集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第18集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第19集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第20集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第21集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第22集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第23集
+正在爬取 动漫 1/1 80/240 -> 19rrhztuy1 爱奇艺视频 第24集
+find success 1
+find success 1
+find success 1
+{'name': '总裁的天价萌妻 第3季 追踪真相', 'type': '动漫'}
+{'$set': {'update_status': '更新至24集', 'sources': [{'name': '爱奇艺视频', 'types': [{'name': '第1集', 'url': 'http://www.iqiyi.com/v_19rsztdu00.html'}, {'name': '第2集', 'url': 'http://www.iqiyi.com/v_19rszs3or8.html'}, {'name': '第3集', 'url': 'http://www.iqiyi.com/v_19rszb7kvs.html'}, {'name': '第4集', 'url': 'http://www.iqiyi.com/v_19rszj22z4.html'}, {'name': '第5集', 'url': 'http://www.iqiyi.com/v_19rt4eeg0k.html'}, {'name': '第6集', 'url': 'http://www.iqiyi.com/v_19rt37kkvk.html'}, {'name': '第7集', 'url': 'http://www.iqiyi.com/v_19rsphbmvk.html'}, {'name': '第8集', 'url': 'http://www.iqiyi.com/v_19rugvwesk.html'}, {'name': '第9集', 'url': 'http://www.iqiyi.com/v_19ruln2zsg.html'}, {'name': '第10集', 'url': 'http://www.iqiyi.com/v_19rukg0w8g.html'}, {'name': '第11集', 'url': 'http://www.iqiyi.com/v_19ruk1llwo.html'}, {'name': '第12集', 'url': 'http://www.iqiyi.com/v_19ruavr7s4.html'}, {'name': '第13集', 'url': 'http://www.iqiyi.com/v_19rtxk4wa4.html'}, {'name': '第14集', 'url': 'http://www.iqiyi.com/v_19ru46qzgk.html'}, {'name': '第15集', 'url': 'http://www.iqiyi.com/v_19ru54nsb8.html'}, {'name': '第16集', 'url': 'http://www.iqiyi.com/v_19ru1xoomw.html'}, {'name': '第17集', 'url': 'http://www.iqiyi.com/v_19ru2yjkjs.html'}, {'name': '第18集', 'url': 'http://www.iqiyi.com/v_19rtuydrvg.html'}, {'name': '第19集', 'url': 'http://www.iqiyi.com/v_19rtso5ny4.html'}, {'name': '第20集', 'url': 'http://www.iqiyi.com/v_19rttzeg4s.html'}, {'name': '第21集', 'url': 'http://www.iqiyi.com/v_19rvgupzhs.html'}, {'name': '第22集', 'url': 'http://www.iqiyi.com/v_19rveyd5gw.html'}, {'name': '第23集', 'url': 'http://www.iqiyi.com/v_19rvfwkoac.html'}, {'name': '第24集', 'url': 'http://www.iqiyi.com/v_19rvmfgl70.html'}]}], 'update_time': '2019-10-31 18:14:01', 'acquisition_time': '2019-10-31 18:14:07'}}
+update success 1
+iqiyi -> https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=4&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1 已跳过
+http://www.iqiyi.com/a_19rrhz78px.html
+正在爬取 动漫 1/1 83/240 -> 19rrhz78px 爱奇艺视频 第1集
+正在爬取 动漫 1/1 83/240 -> 19rrhz78px 爱奇艺视频 第2集
+正在爬取 动漫 1/1 83/240 -> 19rrhz78px 爱奇艺视频 第3集
+正在爬取 动漫 1/1 83/240 -> 19rrhz78px 爱奇艺视频 第4集
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=4&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+find success 1
+find success 1
+find success 1
+{'name': '战鼎', 'type': '动漫'}
+{'$set': {'update_status': '更新至6集', 'sources': [{'name': '爱奇艺视频', 'types': [{'name': '第1集', 'url': 'http://www.iqiyi.com/v_19ru2nf070.html'}, {'name': '第2集', 'url': 'http://www.iqiyi.com/v_19ru2malto.html'}, {'name': '第3集', 'url': 'http://www.iqiyi.com/v_19ru2mehsw.html'}, {'name': '第4集', 'url': 'http://www.iqiyi.com/v_19rttmyt7o.html'}]}, {'name': '优酷视频', 'types': [{'name': '1 匹夫无罪，怀璧其罪', 'url': 'https://v.youku.com/v_show/id_XNDM4MDc0NDE1Ng==.html'}, {'name': '2 战鼎初现，长空觉醒', 'url': 'https://v.youku.com/v_show/id_XNDM4MDc1MTA2OA==.html'}, {'name': '3 一无所有，修炼重启', 'url': 'https://v.youku.com/v_show/id_XNDM4MDc1MjgwNA==.html'}, {'name': '4 木彩灵怒斩姚帅', 'url': 'https://v.youku.com/v_show/id_XNDM5ODM2MTQ3Mg==.html'}, {'name': '5 云长空揭秘“内丹骗局”', 'url': 'https://v.youku.com/v_show/id_XNDQwODU5ODUyOA==.html'}, {'name': '6 烈火VS阵风', 'url': 'https://v.youku.com/v_show/id_XNDQxNzgwODM2MA==.html'}]}, {'name': '来源:kkyun', 'types': [{'name': '第01集', 'url': 'http://meigui.qqqq-kuyun.com/share/d196f1cdf8a30b4002133f8ca0fa5ba5'}, {'name': '第02集', 'url': 'http://meigui.qqqq-kuyun.com/share/3d50a489984362c71713b9fd1cf79ef0'}, {'name': '第03集', 'url': 'http://meigui.qqqq-kuyun.com/share/9063366e3ba3efafeddfb78e4e422c62'}, {'name': '第04集', 'url': 'http://meigui.qqqq-kuyun.com/share/b7c2ef08997828f54b6aaf75ec07637d'}, {'name': '第05集', 'url': 'http://guihua.feifei-kuyun.com/share/647eb61673d5e4df8a069bde0d77fff5'}, {'name': '第06集', 'url': 'http://guihua.feifei-kuyun.com/share/db4af40394d17c2399d9b2becf0a961d'}]}, {'name': 'zuidam3u8', 'types': [{'name': '第01集', 'url': 'http://mei.huazuida.com/20191002/5992_1546a12c/index.m3u8'}, {'name': '第02集', 'url': 'http://mei.huazuida.com/20191002/5990_97b411ed/index.m3u8'}, {'name': '第03集', 'url': 'http://feifei.feifeizuida.com/20191009/19731_689397a3/index.m3u8'}, {'name': '第04集', 'url': 'http://feifei.feifeizuida.com/20191016/20189_22c04279/index.m3u8'}, {'name': '第05集', 'url': 'http://hong.tianzhen-zuida.com/20191031/12443_eae980ce/index.m3u8'}, {'name': '第06集', 'url': 'http://hong.tianzhen-zuida.com/20191031/12437_df76e452/index.m3u8'}]}, {'name': '来源：135m3u8', 'types': [{'name': '05', 'url': 'https://s1.135-cdn.com/20191024/zpWbrHnUFqCG4Ide/index.m3u8'}, {'name': '04', 'url': 'https://s1.135-cdn.com/20191017/CcGvWLlFPr4wbjEQ/index.m3u8'}, {'name': '03', 'url': 'https://ddppnew1.135-cdn.com/20191010/DnZom9Mj/index.m3u8'}, {'name': '02', 'url': 'https://ddppnew1.135-cdn.com/20191010/1eFHVv8O/index.m3u8'}, {'name': '01', 'url': 'https://ddppnew1.135-cdn.com/20191010/FSJ1iHiX/index.m3u8'}]}, {'name': 'zuidall', 'types': [{'name': '第01集', 'url': 'http://mei.huazuida.com/share/675f9820626f5bc0afb47b57890b466e'}, {'name': '第02集', 'url': 'http://mei.huazuida.com/share/3cba81c5c6cac4ce77157631fc2dc277'}, {'name': '第03集', 'url': 'http://feifei.feifeizuida.com/share/d5a92a68f9af953b26eafb935a054ce7'}, {'name': '第04集', 'url': 'http://feifei.feifeizuida.com/share/dc384cb3d4d6be360e0bb8052e569358'}]}, {'name': '来源:kkm3u8', 'types': [{'name': '第01集', 'url': 'http://meigui.qqqq-kuyun.com/20191002/21468_e32e830b/index.m3u8'}, {'name': '第02集', 'url': 'http://meigui.qqqq-kuyun.com/20191002/21466_9f3413e2/index.m3u8'}, {'name': '第03集', 'url': 'http://meigui.qqqq-kuyun.com/20191002/21478_1d233294/index.m3u8'}, {'name': '第04集', 'url': 'http://meigui.qqqq-kuyun.com/20191016/23284_4abaa2b2/index.m3u8'}]}, {'name': '来源:xunlei', 'types': [{'name': '第01集', 'url': 'http://mitao.xiazaikuyun.com/20191003/55791_294cd064/战鼎EP01.mp4'}, {'name': '第02集', 'url': 'http://mitao.xiazaikuyun.com/20191003/55790_a8f5fae4/战鼎EP02.mp4'}, {'name': '第03集', 'url': 'http://mitao.xiazaikuyun.com/20191003/55785_310332ab/战鼎EP03.mp4'}]}], 'update_time': '2019-10-31 18:14:09', 'acquisition_time': '2019-10-31 18:14:13'}}
+update success 1
+http://www.iqiyi.com/a_19rrhsgdfl.html
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=4&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+本次共爬取 5 条数据，用时 36.084450006484985s
+find success 74996
+https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=6&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=&mode=11&pageNum=1&pageSize=48&site=iqiyi&source_type=&three_category_id=&without_qipu=1
+http://www.iqiyi.com/a_19rrgxouw1.html

@@ -53,15 +53,15 @@ class ZuidaSpiderPipeline(object):
         dic = {'name': item['name'], 'type': item['type']}
         movies1 = db_utils.find(dic)
         # 服务器中资源中的最大集数
-        max1 = 0
-        # 新爬取视频中资源中的最大集数
-        max2 = 0
+        max = 0
         if (movies1.count() > 0):
             # 当前视频已爬取且更新，将新爬去的数据更新到数据库
             movies1_temp = movies1.__getitem__(0)
             movies1_source_names_temp = []
             sources_tmp = []
             for source in movies1_temp['sources']:
+                if (len(list(filter(lambda type: '预告' not in type['name'], source['types']))) > max):
+                    max = len(source['types'])
                 movies1_source_names_temp.append(source['name'])
             item_source = item['sources'][0]
             sources_tmp.append(item_source)
@@ -69,7 +69,12 @@ class ZuidaSpiderPipeline(object):
                 if (source['name'] == item_source['name']):
                     continue
                 sources_tmp.append(source)
-            newdic = {'$set': {'update_status': item['update_status'], 'sources': sources_tmp,
+            # 修改影视最新更新状态
+            if (len(item_source['types']) >= max):
+                update_status = item['update_status']
+            else:
+                update_status = movies1_temp['update_status']
+            newdic = {'$set': {'update_status': update_status, 'sources': sources_tmp,
                                'update_time': item['update_time'],
                                'acquisition_time': item['acquisition_time']}}
             print(dic)

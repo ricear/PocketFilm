@@ -48,7 +48,7 @@ class KuyunSpider(scrapy.Spider):
                 self.start_urls.append(self.orign_url + str(page_index) + '.html')
         elif (target == 'latest'):
             start_page = 2
-            self.total_page = 6
+            self.total_page = 1
             self.total = self.page_size * self.total_page
             for page_index in reverse_arr(range(start_page, self.total_page + 1)):
                 self.start_urls.append(self.orign_url + str(page_index) + '.html')
@@ -102,7 +102,10 @@ class KuyunSpider(scrapy.Spider):
             movie_item['nickname'] = movie_item['name']
             movie_item['directors'] = get_arr_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[3]/td/font/a/text()'))
             movie_item['actors'] = get_arr_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[2]/td/font/text()'))
-            movie_item['type2'] = reverse_type2(get_str_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[4]/td/font/text()')))
+            type2 = get_str_from_xpath(each.xpath('./tr[1]/td[2]/table/tr[4]/td/font/text()'))
+            if (is_exclude_type2(type2) == True):
+                continue
+            movie_item['type2'] = reverse_type2(type2)
             if movie_item['type2'].find('综艺') != -1:
                 movie_item['type'] = '综艺'
             elif movie_item['type2'].find('动漫') != -1:

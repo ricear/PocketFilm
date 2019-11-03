@@ -196,7 +196,7 @@
                         <iframe width="100%" height="550"
                                 th:src="${source.url}"
                                 frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"
-                                allowfullscreen="ture" th:if="${#strings.containsIgnoreCase(source.url,'haoqu')}"></iframe>
+                                allowfullscreen="ture" th:if="${#strings.containsIgnoreCase(source.url,'haoqu') or #strings.containsIgnoreCase(source.url,'html')}"></iframe>
                     </td>
                     <td id="playright" valign="top">
                         <div class="rightlist" id="rightlist" style="height:550px;">

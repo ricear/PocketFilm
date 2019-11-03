@@ -57,9 +57,6 @@ class TvSpider(scrapy.Spider):
         # 开始时间
         start = time.time()
 
-        # 获取 web 驱动
-        driver = get_driver(1)
-
         # 获取所有电影的 id，用于判断电影是否已经爬取
         collection = 'tv'
         db_utils = MongoDbUtils(collection)
@@ -82,20 +79,10 @@ class TvSpider(scrapy.Spider):
                     tv_item['src'] = get_str_from_xpath(each2.xpath('./a/img/@src'))
                     tv_item['name'] = get_str_from_xpath(each2.xpath('./a/span/strong/text()'))
                     url = self.orign_url + get_str_from_xpath(each2.xpath("./a/@href"))
-                    driver.get(url)
 
                     # 解析电视详情
                     html = get_one_page(url, encode="gb2312")
-                    try:
-                        html = etree.HTML(html)
-                    except:
-                        # 记录跳过的视频信息
-                        history_type = 'tv'
-                        history_url = url
-                        history_text = '跳过'
-                        if (check_spider_history(history_type, history_url, history_text) == False):
-                            write_spider_history(history_type, history_url, history_text)
-                        continue
+                    html = etree.HTML(html)
                     tv_item['type'] = reverse_tv_type(type)
                     dic = {'name': tv_item['name']}
                     if db_utils.find(dic).count() > 0:
@@ -105,22 +92,24 @@ class TvSpider(scrapy.Spider):
                         html.xpath('//*[@id="bd"]/div[3]/div[1]/div/div[2]/div[2]/div/p/text()'))
                     sources = []
                     tmp_tv_source_index = 1
-                    for tmp_tv_source in html.xpath('//*[@id="bd"]/div[3]/div[1]/div/div[1]/div/div[1]/ul/li/span'):
-                        tmp_tv_source_name = get_str_from_xpath(tmp_tv_source.xpath('./text()'))
-                        driver.find_element_by_xpath('//*[@id="bd"]/div[3]/div[1]/div/div[1]/div/div[1]/ul/li[' + (str)(
-                            tmp_tv_source_index) + ']/span').click()
-                        time.sleep(2)
-                        iframe = driver.find_element_by_xpath('//*[@id="iplayer"]')
-                        driver.switch_to_frame(iframe)
-                        source_url = driver.execute_script("return signal").split('$')[1]
+                    for tmp_tv_source in html.xpath('//*[@id="bd"]/div[3]/div[1]/div/div[1]/div/div[1]/ul/li'):
+                        type_id = get_str_from_xpath(tmp_tv_source.xpath('./@data-player'))
+                        tmp_tv_source_name = get_str_from_xpath(tmp_tv_source.xpath('./span/text()'))
+                        url = 'http://www.haoqu.net/e/extend/tv.php?id=' + type_id
+                        html = get_one_page(url, encode='gbk')
+                        pattern = '[\s\S]*?signal =([\s\S]*?);'
+                        for str in parse_one_page(html, pattern):
+                            source_url = str.split("'")[1].split('$')[1]
                         source = {'name': tmp_tv_source_name, 'url': source_url}
                         sources.append(source)
                         print('正在抓取 -> ' + tv_item['name'] + ' ' + source['name'] + ' ' + source['url'])
-                        print('切换到主frame')
-                        driver.switch_to.parent_frame()
                         tmp_tv_source_index = tmp_tv_source_index + 1
+                    # 过滤掉没有资源的电视数据
+                    if (sources == []):
+                        continue
                     tv_item['sources'] = sources
                     yield tv_item
+                    self.total += 1
         else:
             #   不是港澳台
             for each2 in html.xpath("//*[@id='bd']/div[3]/div[1]/div/div/div/div/ul/li"):
@@ -129,7 +118,6 @@ class TvSpider(scrapy.Spider):
                 tv_item['name'] = get_str_from_xpath(each2.xpath('./a/span/strong/text()'))
                 url = self.orign_url + get_str_from_xpath(each2.xpath("./a/@href"))
                 print(url)
-                driver.get(url)
 
                 # 解析电视详情
                 html = get_one_page(url, encode="gb2312")
@@ -154,26 +142,26 @@ class TvSpider(scrapy.Spider):
                     html.xpath('//*[@id="bd"]/div[3]/div[1]/div/div[2]/div[2]/div/p/text()'))
                 sources = []
                 tmp_tv_source_index = 1
-                for tmp_tv_source in html.xpath('//*[@id="bd"]/div[3]/div[1]/div/div[1]/div/div[1]/ul/li/span'):
-                    tmp_tv_source_name = get_str_from_xpath(tmp_tv_source.xpath('./text()'))
-                    driver.find_element_by_xpath('//*[@id="bd"]/div[3]/div[1]/div/div[1]/div/div[1]/ul/li[' + (str)(
-                        tmp_tv_source_index) + ']/span').click()
-                    time.sleep(2)
-                    iframe = driver.find_element_by_xpath('//*[@id="iplayer"]')
-                    driver.switch_to_frame(iframe)
-                    source_url = driver.execute_script("return signal").split('$')[1]
+                for tmp_tv_source in html.xpath('//*[@id="bd"]/div[3]/div[1]/div/div[1]/div/div[1]/ul/li'):
+                    type_id = get_str_from_xpath(tmp_tv_source.xpath('./@data-player'))
+                    tmp_tv_source_name = get_str_from_xpath(tmp_tv_source.xpath('./span/text()'))
+                    url = 'http://www.haoqu.net/e/extend/tv.php?id=' + type_id
+                    html = get_one_page(url, encode='gbk')
+                    pattern = '[\s\S]*?signal =([\s\S]*?);'
+                    for str in parse_one_page(html, pattern):
+                        source_url = str.split("'")[1].split('$')[1]
                     source = {'name': tmp_tv_source_name, 'url': source_url}
                     sources.append(source)
                     print('正在抓取 -> ' + tv_item['name'] + ' ' + source['name'] + ' ' + source['url'])
-                    print('切换到主frame')
-                    driver.switch_to.parent_frame()
                     tmp_tv_source_index = tmp_tv_source_index + 1
+                # 过滤掉没有资源的电视数据
+                if (sources == []):
+                    continue
                 tv_item['sources'] = sources
                 yield tv_item
                 self.total += 1
 
         # 结束时间
-        driver.quit()
         end = time.time()
         process_time = end - start
         print('本次共爬取 ' + str(self.total) + ' 条数据，用时 ' + str(process_time) + 's')

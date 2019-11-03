@@ -1604,7 +1604,7 @@ router.get('/version/get/latest', function (req, res, next) {
         version.find(
             {},
             {
-                sort: {acquisition_time: -1},
+                sort: {update_time: -1},
                 limit: 1
             }).toArray(function (err, data) {
             if (data) {
