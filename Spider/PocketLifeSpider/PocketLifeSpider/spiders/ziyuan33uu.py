@@ -30,7 +30,7 @@ class Ziyuan33uuSpider(scrapy.Spider):
             super(Ziyuan33uuSpider, self).__init__(name, **kwargs)
             self.orign_url = self.domain + '/?m=vod-index-pg-'
             self.start_urls = [self.orign_url + '1.html']
-            if (target == None):
+            if (target == 'all'):
                 url = self.start_urls[0]
                 orign_html = get_one_page(url)
                 try:
@@ -65,8 +65,6 @@ class Ziyuan33uuSpider(scrapy.Spider):
             pass
         # 开始时间
         start = time.time()
-        # 获取 web 驱动
-        driver = get_driver()
         # 获取所有电影的 id，用于判断电影是否已经爬取
         collection = 'movie'
         db_utils = MongoDbUtils(collection)

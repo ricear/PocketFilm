@@ -57,20 +57,17 @@ class IqiyiSpider(scrapy.Spider):
         super(IqiyiSpider, self).__init__(name, **kwargs)
         self.target = target
         # 影视类型数字列表
-        # type_num_list = ['1', '2', '6', '4', '15']
-        type_num_list = ['1']
+        type_num_list = ['1', '2', '6', '4', '15']
         tmp_year_list = []
         for tmp_year in range(2017, (int)(get_year())+1):
-            tmp_year_list.append(tmp_year)
+            tmp_year_list.append((str)(tmp_year))
         tmp_year_list2 = ['2011_2016', '2000_2010', '1990_1999', '1980_1989', '1964_1979']
         for tmp_year in tmp_year_list2:
             tmp_year_list.append((str)(tmp_year))
-        if (self.target == None):
+        if (self.target == 'all'):
             for tmp_type_num in type_num_list:
                 for year in tmp_year_list:
-                    url = 'https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=' + tmp_type_num + '&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=' + year + '&mode=' + (
-                        str)(self.mod) + '&pageNum=1&pageSize=' + (
-                        str)(self.pageSize) + '&site=iqiyi&source_type=&three_category_id=&without_qipu=1'
+                    url = 'https://pcw-api.iqiyi.com/search/video/videolists?access_play_control_platform=14&channel_id=' + tmp_type_num + '&data_type=1&from=pcw_list&is_album_finished=&is_purchase=&key=&market_release_date_level=' + year + '&mode=' + (str)(self.mod) + '&pageNum=1&pageSize=' + (str)(self.pageSize) + '&site=iqiyi&source_type=&three_category_id=&without_qipu=1'
                     self.start_urls.append(url)
         elif (self.target == 'latest'):
             for tmp_type_num in type_num_list:
@@ -86,9 +83,6 @@ class IqiyiSpider(scrapy.Spider):
 
         # 开始时间
         start = time.time()
-
-        # 获取 web 驱动
-        driver = get_driver()
 
         # 获取所有电影的 id，用于判断电影是否已经爬取
         collection = 'movie'
@@ -238,8 +232,12 @@ class IqiyiSpider(scrapy.Spider):
                     movie_item['region'] = reverse_region(region)
                     movie_item['language'] = language
                 # 解析播放列表
+                driver = get_driver()
                 driver.get(videoLink)
                 param = driver.execute_script('return param')
+                html = driver.page_source
+                html = etree.HTML(html)
+                driver.quit()
                 albumId = param['albumId']
                 if (albumId == '0' and type_num != '1'):
                     break
@@ -248,19 +246,19 @@ class IqiyiSpider(scrapy.Spider):
                 types = []
                 # 电影
                 if (type_num == '1'):
-                    each = driver.find_element_by_xpath('//*[@id="rightPlayList"]/div[1]/ul/li')
+                    each = html.xpath('//*[@id="rightPlayList"]/div[1]/ul/li')[0]
                     type = {'name': '', 'url': ''}
-                    type['name'] = each.find_element_by_xpath('./div[1]/a').get_property('title')
+                    type['name'] = get_str_from_xpath(each.xpath('./div[1]/a/@title'))
                     type['url'] = videoLink
                     print('正在爬取 ' + movie_type + ' ' + (str)(i) + '/' + (str)(self.totalPage) + ' ' + (str)(
                         self.index) + '/' + (str)(self.total) + ' -> ' + movie_id + ' ' + source['name'] + ' ' +
                           type['name'])
                     types.append(type)
-                    xpath_length = len(driver.find_elements_by_xpath('//*[@id="widget-movie-superseries"]/ul/li'))
+                    xpath_length = len(each.xpath('//*[@id="widget-movie-superseries"]/ul/li'))
                     if (xpath_length > 0):
                         type = {'name': '', 'url': ''}
-                        type['name'] = driver.find_element_by_xpath('//*[@id="widget-movie-superseries"]/div/h3').get_property('text')
-                        type['url'] = driver.find_element_by_xpath('//*[@id="widget-movie-superseries"]/ul/li/div[1]/a').get_property('href').split('?')[0]
+                        type['name'] = get_str_from_xpath(each.xpath('//*[@id="widget-movie-superseries"]/div/h3/text()'))
+                        type['url'] = get_str_from_xpath(each.xpath('//*[@id="widget-movie-superseries"]/ul/li/div[1]/a/@href')).split('?')[0]
                         print('正在爬取 ' + movie_type + ' ' + (str)(i) + '/' + (str)(self.totalPage) + ' ' + (str)(
                             self.index) + '/' + (str)(self.total) + ' -> ' + movie_id + ' ' + source['name'] + ' ' +
                               type['name'])
@@ -322,7 +320,6 @@ class IqiyiSpider(scrapy.Spider):
                 yield movie_item
                 self.total_valid += 1
         # 结束时间
-        driver.quit()
         end = time.time()
         process_time = end - start
         print('本次共爬取 ' + str(self.total_valid) + ' 条数据，用时 ' + str(process_time) + 's')

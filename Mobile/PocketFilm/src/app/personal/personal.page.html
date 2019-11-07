@@ -11,7 +11,7 @@
       <tbody>
         <tr *ngIf="!userId">
           <td style="padding-right: .9rem;width: 6.2rem;">
-            <img src="https://img5.duitang.com/uploads/item/201409/23/20140923094045_BNYji.thumb.700_0.png" alt=""
+            <img src="https://c-ssl.duitang.com/uploads/item/201409/23/20140923094045_BNYji.thumb.700_0.png" alt=""
               style="border-radius: 3rem;">
           </td>
           <td>
@@ -52,6 +52,12 @@
       <ion-item>
         <i class="iconfont icon-unie601" style="color:aqua;font-size: 21px;"></i>
         <ion-label style="padding-left: 10px;">收藏</ion-label>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </ion-item>
+      <!-- 反馈 -->
+      <ion-item (click)=goFeedbackPage()>
+        <i class="iconfont icon-ziyuan" style="color:#ff9a00;font-size: 21px;"></i>
+        <ion-label style="padding-left: 10px;">反馈</ion-label>
         <ion-icon name="arrow-forward"></ion-icon>
       </ion-item>
       <!-- 设置 -->

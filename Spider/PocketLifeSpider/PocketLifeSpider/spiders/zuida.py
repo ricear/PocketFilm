@@ -34,7 +34,7 @@ class ZuidaSpider(scrapy.Spider):
             self.start_urls = [self.orign_url + '1.html']
 
             # 获取电影总数
-            if (target == None):
+            if (target == 'all'):
                 pattern4 = '[\s\S]*?<li><br/>本站共有影片：<strong>([\s\S]*?)</strong></li>[\s\S]*?'
                 orign_html = get_one_page(self.start_urls[0])
                 for total_count in parse_one_page(orign_html, pattern4):
@@ -60,8 +60,6 @@ class ZuidaSpider(scrapy.Spider):
             pass
         # 开始时间
         start = time.time()
-        # 获取 web 驱动
-        driver = get_driver()
         # 获取所有电影的 id，用于判断电影是否已经爬取
         collection = 'movie'
         db_utils = MongoDbUtils(collection)

@@ -33,7 +33,7 @@ class KuyunSpider(scrapy.Spider):
         self.start_urls = [self.orign_url + '1.html']
         # 用于计算电影总数
         # 获取电影总数
-        if (target == None):
+        if (target == 'all'):
             orign_html = get_one_page(self.start_urls[0], encode='gb2312')
             time.sleep(2)
             orign_html = etree.HTML(orign_html)
@@ -57,8 +57,6 @@ class KuyunSpider(scrapy.Spider):
 
         # 开始时间
         start = time.time()
-        # 获取 web 驱动
-        driver = get_driver()
         # 获取所有电影的 id，用于判断电影是否已经爬取
         collection = 'movie'
         db_utils = MongoDbUtils(collection)

@@ -58,7 +58,7 @@ var PersonalPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-title style=\"text-align: center;\">个人中心</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <div style=\"border-bottom: 1px solid #dedede;padding: 12px 16px;\">\n    <table style=\"width: 100%;\">\n      <tbody>\n        <tr *ngIf=\"!userId\">\n          <td style=\"padding-right: .9rem;width: 6.2rem;\">\n            <img src=\"https://img5.duitang.com/uploads/item/201409/23/20140923094045_BNYji.thumb.700_0.png\" alt=\"\"\n              style=\"border-radius: 3rem;\">\n          </td>\n          <td>\n            <h3>\n              <a (click)=\"goLoginPage()\" style=\"color: lightgreen;\">登录</a><span\n                style=\"color: blue;\">&nbsp;/&nbsp;</span><a (click)=\"goRegisterPage()\" style=\"color: red;\">注册</a>\n            </h3>\n          </td>\n        </tr>\n        <tr *ngIf=\"userId\">\n          <td style=\"padding-right: .9rem;width: 6.2rem;\">\n            <img src=\"{{userInfo.avatar}}\" alt=\"\" style=\"border-radius: 3rem;\">\n          </td>\n          <td>\n            <h4>{{userInfo.username}}</h4>\n            <p style=\"color: #bfb9b9;\" *ngIf=\"userInfo.activate\">已激活</p>\n            <p style=\"color: #bfb9b9;\" *ngIf=\"!userInfo.activate\">未激活</p>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n  <div>\n    <ion-list>\n      <!-- 浏览记录 -->\n      <ion-item (click)=goBrowseRecordPage()>\n        <i class=\"iconfont icon-liulanjilu\" style=\"color:red;font-size: 21px;\"></i>\n        <ion-label style=\"padding-left: 10px;\">浏览记录</ion-label>\n        <ion-icon name=\"arrow-forward\"></ion-icon>\n      </ion-item>\n      <!-- 激活状态 -->\n      <ion-item>\n        <i class=\"iconfont icon-jihuo\" style=\"color:pink;font-size: 21px;\"></i>\n        <ion-label style=\"padding-left: 10px;\">激活状态</ion-label>\n        <ion-icon name=\"arrow-forward\"></ion-icon>\n      </ion-item>\n      <!-- 收藏 -->\n      <ion-item>\n        <i class=\"iconfont icon-unie601\" style=\"color:aqua;font-size: 21px;\"></i>\n        <ion-label style=\"padding-left: 10px;\">收藏</ion-label>\n        <ion-icon name=\"arrow-forward\"></ion-icon>\n      </ion-item>\n      <!-- 设置 -->\n      <ion-item (click)=goSettingPage()>\n        <i class=\"iconfont icon-shezhi\" style=\"color:blue;font-size: 21px;\"></i>\n        <ion-label style=\"padding-left: 10px;\">设置</ion-label>\n        <ion-icon name=\"arrow-forward\"></ion-icon>\n      </ion-item>\n    </ion-list>\n  </div>\n\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-title style=\"text-align: center;\">个人中心</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <div style=\"border-bottom: 1px solid #dedede;padding: 12px 16px;\">\n    <table style=\"width: 100%;\">\n      <tbody>\n        <tr *ngIf=\"!userId\">\n          <td style=\"padding-right: .9rem;width: 6.2rem;\">\n            <img src=\"https://c-ssl.duitang.com/uploads/item/201409/23/20140923094045_BNYji.thumb.700_0.png\" alt=\"\"\n              style=\"border-radius: 3rem;\">\n          </td>\n          <td>\n            <h3>\n              <a (click)=\"goLoginPage()\" style=\"color: lightgreen;\">登录</a><span\n                style=\"color: blue;\">&nbsp;/&nbsp;</span><a (click)=\"goRegisterPage()\" style=\"color: red;\">注册</a>\n            </h3>\n          </td>\n        </tr>\n        <tr *ngIf=\"userId\">\n          <td style=\"padding-right: .9rem;width: 6.2rem;\">\n            <img src=\"{{userInfo.avatar}}\" alt=\"\" style=\"border-radius: 3rem;\">\n          </td>\n          <td>\n            <h4>{{userInfo.username}}</h4>\n            <p style=\"color: #bfb9b9;\" *ngIf=\"userInfo.activate\">已激活</p>\n            <p style=\"color: #bfb9b9;\" *ngIf=\"!userInfo.activate\">未激活</p>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n  <div>\n    <ion-list>\n      <!-- 浏览记录 -->\n      <ion-item (click)=goBrowseRecordPage()>\n        <i class=\"iconfont icon-liulanjilu\" style=\"color:red;font-size: 21px;\"></i>\n        <ion-label style=\"padding-left: 10px;\">浏览记录</ion-label>\n        <ion-icon name=\"arrow-forward\"></ion-icon>\n      </ion-item>\n      <!-- 激活状态 -->\n      <ion-item>\n        <i class=\"iconfont icon-jihuo\" style=\"color:pink;font-size: 21px;\"></i>\n        <ion-label style=\"padding-left: 10px;\">激活状态</ion-label>\n        <ion-icon name=\"arrow-forward\"></ion-icon>\n      </ion-item>\n      <!-- 收藏 -->\n      <ion-item>\n        <i class=\"iconfont icon-unie601\" style=\"color:aqua;font-size: 21px;\"></i>\n        <ion-label style=\"padding-left: 10px;\">收藏</ion-label>\n        <ion-icon name=\"arrow-forward\"></ion-icon>\n      </ion-item>\n      <!-- 反馈 -->\n      <ion-item (click)=goFeedbackPage()>\n        <i class=\"iconfont icon-ziyuan\" style=\"color:#ff9a00;font-size: 21px;\"></i>\n        <ion-label style=\"padding-left: 10px;\">反馈</ion-label>\n        <ion-icon name=\"arrow-forward\"></ion-icon>\n      </ion-item>\n      <!-- 设置 -->\n      <ion-item (click)=goSettingPage()>\n        <i class=\"iconfont icon-shezhi\" style=\"color:blue;font-size: 21px;\"></i>\n        <ion-label style=\"padding-left: 10px;\">设置</ion-label>\n        <ion-icon name=\"arrow-forward\"></ion-icon>\n      </ion-item>\n    </ion-list>\n  </div>\n\n</ion-content>"
 
 /***/ }),
 
@@ -114,7 +114,6 @@ var PersonalPage = /** @class */ (function () {
             this.userId = userId;
             this.tools.getUserApi(userId).then(function (data) {
                 if (data.code == 0) {
-                    console.log(data);
                     _this.userInfo = data.userInfo;
                 }
             });
@@ -140,13 +139,28 @@ var PersonalPage = /** @class */ (function () {
      * 跳转到设置页
      */
     PersonalPage.prototype.goSettingPage = function () {
-        this.router.navigate(['/setting']);
+        var result = this.tools.checkUser();
+        if (result) {
+            this.router.navigate(['/setting']);
+        }
     };
     /**
      * 跳转到浏览记录页
      */
     PersonalPage.prototype.goBrowseRecordPage = function () {
-        this.router.navigate(['/browse-record']);
+        var result = this.tools.checkUser();
+        if (result) {
+            this.router.navigate(['/browse-record']);
+        }
+    };
+    /**
+     * 跳转到反馈页
+     */
+    PersonalPage.prototype.goFeedbackPage = function () {
+        var result = this.tools.checkUser();
+        if (result) {
+            this.router.navigate(['/feedback']);
+        }
     };
     PersonalPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

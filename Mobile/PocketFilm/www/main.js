@@ -888,6 +888,10 @@ var map = {
 		"./src/app/drama-detail/drama-detail.module.ts",
 		"drama-detail-drama-detail-module"
 	],
+	"./feedback/feedback.module": [
+		"./src/app/feedback/feedback.module.ts",
+		"feedback-feedback-module"
+	],
 	"./input-password/input-password.module": [
 		"./src/app/input-password/input-password.module.ts",
 		"input-password-input-password-module"
@@ -1021,6 +1025,7 @@ var routes = [
     { path: 'more-recommend-movie', loadChildren: './more-recommend-movie/more-recommend-movie.module#MoreRecommendMoviePageModule' },
     { path: 'more-recommend-tv', loadChildren: './more-recommend-tv/more-recommend-tv.module#MoreRecommendTvPageModule' },
     { path: 'play', loadChildren: './play/play.module#PlayPageModule' },
+    { path: 'feedback', loadChildren: './feedback/feedback.module#FeedbackPageModule' },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -1344,6 +1349,7 @@ var ConfigService = /** @class */ (function () {
         // 公用地址
         // public sourceUrl = 'https://pocket.mynatapp.cc';
         this.sourceUrl = 'http://103.45.178.220';
+        // public sourceUrl = 'http://api.grayson.top';
         // public请求地址
         this.publicUrl = this.sourceUrl + '/public';
         //api请求地址
@@ -1681,6 +1687,66 @@ var ToolsService = /** @class */ (function () {
         }
     };
     /**
+     * 回复反馈信息
+     */
+    ToolsService.prototype.doReplyFeedbackApi = function (_id, reply) {
+        var _this = this;
+        var promise = new Promise(function (resolve, reject) {
+            var api = '/feedback/reply';
+            var feedback = {
+                '_id': _id,
+                'reply': reply
+            };
+            _this.httpService.doPost(api, feedback, function (data) {
+                resolve(data);
+            });
+        });
+        return promise;
+    };
+    /**
+     * 获取反馈信息
+     * @param pageIndex     当前页码
+     * @param pageSize      每页大小
+     */
+    ToolsService.prototype.getFeedbackApi = function (is_reply, pageIndex, pageSize) {
+        var _this = this;
+        var promise = new Promise(function (resolve, reject) {
+            var api = '/feedback/get/all?is_reply=' + is_reply + '&page_index=' + pageIndex + '&page_size=' + pageSize;
+            _this.httpService.doGet(api, function (data) {
+                resolve(data);
+            });
+        });
+        return promise;
+    };
+    /**
+     * 添加反馈信息
+     * @param content 反馈内容
+     */
+    ToolsService.prototype.doPostFeedbackApi = function (content) {
+        var _this = this;
+        var promise = new Promise(function (resolve, reject) {
+            var api = '/feedback/add';
+            var user_name = _this.storage.get('user_name');
+            // 手机 uuid 
+            var device_uuid = _this.device.uuid;
+            // 系统版本  
+            var device_version = _this.device.version;
+            // 返回手机的平台信息  (android/ios 等等)
+            var device_platform = _this.device.platform;
+            var feedback = {
+                'content': content,
+                'user_name': user_name,
+                'device_uuid': device_uuid,
+                'device_version': device_version,
+                'device_platform': device_platform
+            };
+            _this.httpService.doPost(api, feedback, function (data) {
+                resolve(data);
+            });
+        });
+        return promise;
+    };
+    /**
      * 获取视频解析地址
      */
     ToolsService.prototype.getParseUrl = function (movie_type, url) {
@@ -1825,6 +1891,7 @@ var ToolsService = /** @class */ (function () {
             var descriptions = version.descriptions;
             var update_time = version.update_time;
             _this.appVersion.getVersionNumber().then(function (appVersionNumber) {
+                console.log(appVersionNumber + ' ' + version_number);
                 if (appVersionNumber < version_number) {
                     // 有新版本
                     var message = '';
@@ -1889,7 +1956,8 @@ var ToolsService = /** @class */ (function () {
     ToolsService.prototype.getRecordsApi = function (pageIndex, pageSize) {
         var _this = this;
         var promise = new Promise(function (resolve, reject) {
-            var api = '/records/get/all?page_index=' + pageIndex + '&page_size=' + pageSize;
+            var user_name = _this.storage.get('user_name');
+            var api = '/records/get/all?user_name=' + user_name + '&page_index=' + pageIndex + '&page_size=' + pageSize;
             _this.httpService.doGet(api, function (data) {
                 resolve(data);
             });
@@ -1932,7 +2000,7 @@ var ToolsService = /** @class */ (function () {
         return promise;
     };
     /**
-     *
+     * 添加浏览记录
      * @param browseType 浏览的影视类型
      * @param id 影视id
      * @param name 影视名称
@@ -2099,10 +2167,18 @@ var ToolsService = /** @class */ (function () {
                 release_date = selectTypeList[2];
             }
             else {
-                //  综艺、动漫、少儿
-                type2 = typeList[type] + '片';
-                region = selectTypeList[0];
-                release_date = selectTypeList[1];
+                if (type == '4') {
+                    // 少儿
+                    type2 = 'null';
+                    region = selectTypeList[0];
+                    release_date = selectTypeList[1];
+                }
+                else {
+                    //  综艺、动漫
+                    type2 = typeList[type] + '片';
+                    region = selectTypeList[0];
+                    release_date = selectTypeList[1];
+                }
             }
         }
         var promise = new Promise(function (resolve, reject) {

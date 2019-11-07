@@ -39,9 +39,8 @@ class YoukuSpider(scrapy.Spider):
         super(YoukuSpider, self).__init__(name, **kwargs)
         self.target = target
         # 影视类型数字列表
-        # type_num_list = ['96', '97', '85', '100', '177']
-        type_num_list = ['97']
-        if (self.target == None):
+        type_num_list = ['96', '97', '85', '100', '177']
+        if (self.target == 'all'):
             for tmp_type_num in type_num_list:
                 url = 'https://list.youku.com/category/show/c_'+tmp_type_num+'.html'
                 html = get_one_page(url)
@@ -64,9 +63,6 @@ class YoukuSpider(scrapy.Spider):
 
         # 开始时间
         start = time.time()
-
-        # 获取 web 驱动
-        driver = get_driver()
 
         # 获取所有电影的 id，用于判断电影是否已经爬取
         collection = 'movie'
@@ -100,22 +96,20 @@ class YoukuSpider(scrapy.Spider):
                 movie_item = MovieItem()
                 movie_item['src'] = list['img']
                 movie_item['name'] = list['title']
-                movie_item['update_status'] = list['summary']
+                update_status = list['summary']
+                if (update_status == None or update_status == ''):
+                    update_status == '优酷视频'
+                movie_item['update_status'] = update_status
                 # 解析视频详情
                 videoLink = 'https:' + list['videoLink']
                 html = get_one_page(videoLink)
                 html = etree.HTML(html)
                 detail_url = 'https:' + get_str_from_xpath(html.xpath('//div[@class="tvinfo"]/h2/a/@href')).split('?')[0]
                 print(videoLink + ' ' + detail_url)
-                if (detail_url == 'https:'):
-                    # 记录跳过的视频信息
-                    history_type = 'youku'
-                    history_url = videoLink
-                    history_text = '跳过'
-                    if (check_spider_history(history_type, history_url, history_text) == False):
-                        write_spider_history(history_type, history_url, history_text)
+                try:
+                    movie_id = detail_url.split('.html')[0].split('show/')[1]
+                except:
                     continue
-                movie_id = detail_url.split('.html')[0].split('show/')[1]
                 movie_item['id'] = movie_id
                 html = get_one_page(detail_url)
                 html = etree.HTML(html)
@@ -154,8 +148,10 @@ class YoukuSpider(scrapy.Spider):
                 movie_item['language'] = '内详'
                 movie_item['duration'] = '0'
                 # 解析播放列表
+                driver = get_driver()
                 driver.get(detail_url)
                 page_config = driver.execute_script('return window.PageConfig')
+                driver.quit()
                 showid = page_config['showid']
                 sources = []
                 source = {'name': '优酷视频', 'types': []}
@@ -163,10 +159,9 @@ class YoukuSpider(scrapy.Spider):
                 for page in range(1, 60):
                     url = 'https://v.youku.com/page/playlist?&showid=' + showid + '&videoCategoryId=' + type_num + '&isSimple=false&videoEncodeId=' + \
                             movie_id.split('id_')[1] + '%3D%3D&page=' + (str)(page)
-                    driver.get(
-                        url)
                     print(url)
-                    html = json.loads(driver.find_element_by_xpath('//pre').__getattribute__('text'))['html']
+                    html = get_one_page(url)
+                    html = json.loads(html)['html']
                     html = etree.HTML(html)
                     # 如果页数已经超过有效页数，则停止获取下面的页数的资源类型
                     if (html == None):

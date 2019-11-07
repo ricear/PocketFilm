@@ -23,6 +23,7 @@ const routes: Routes = [
   { path: 'more-recommend-movie', loadChildren: './more-recommend-movie/more-recommend-movie.module#MoreRecommendMoviePageModule' },
   { path: 'more-recommend-tv', loadChildren: './more-recommend-tv/more-recommend-tv.module#MoreRecommendTvPageModule' },
   { path: 'play', loadChildren: './play/play.module#PlayPageModule' },
+  { path: 'feedback', loadChildren: './feedback/feedback.module#FeedbackPageModule' },
 ];
 @NgModule({
   imports: [

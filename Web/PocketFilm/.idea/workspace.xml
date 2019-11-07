@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="6320dbc0-5ee0-41f7-bfdc-6e81729f886f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/PocketFilm.apk" beforeDir="false" afterPath="$PROJECT_DIR$/public/PocketFilm.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routers/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routers/api.js" afterDir="false" />
     </list>
@@ -22,8 +20,17 @@
       <file leaf-file-name="api.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routers/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="3195" column="47" lean-forward="true" selection-start-line="3195" selection-start-column="47" selection-end-line="3195" selection-end-column="47" />
+            <state relative-caret-position="324">
+              <caret line="1969" column="34" selection-start-line="1969" selection-start-column="34" selection-end-line="1969" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collection.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/collection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3420">
+              <caret line="228" column="25" selection-start-line="228" selection-start-column="21" selection-end-line="228" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -107,7 +114,7 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="765">
               <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
             </state>
           </provider>
@@ -135,24 +142,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>login</find>
-      <find>browse</find>
-      <find>浏览记录</find>
-      <find>movie/</find>
-      <find>movie/get</find>
-      <find>sort: {name: 1},</find>
-      <find>tv/get/all</find>
-      <find>sort: {release_date:-1, acquisition_time: -1, score: -1},</find>
-      <find>, release_date:-1, acquisition_time: -1</find>
-      <find>reco</find>
-      <find>records</find>
-      <find>records/ad</find>
-      <find>//  浏览类型</find>
-      <find>browse_type</find>
-      <find>acquisition_time:-1</find>
-      <find>update_time:-1, release_date: -1</find>
-      <find>release_date:-1, acquisition_time: -1</find>
-      <find>score: -1, release_date:-1</find>
       <find>/count/get</find>
       <find>release_date:-1, update_time: -1</find>
       <find>release_date: -1, score:-1</find>
@@ -164,10 +153,27 @@
       <find>count</find>
       <find>version/a</find>
       <find>client</find>
+      <find>get/to</find>
+      <find>records</find>
+      <find>records/add</find>
+      <find>records/get</find>
+      <find>regis</find>
+      <find>userin</find>
+      <find>login</find>
+      <find>feedback</find>
+      <find>feedback/add</find>
+      <find>replay</find>
+      <find>update</find>
+      <find>save</find>
+      <find>register</find>
+      <find>ava</find>
       <find>movie/get/all</find>
+      <find>count/get/</find>
+      <find>count/get</find>
+      <find>feed</find>
+      <find>feedback/</find>
     </findStrings>
     <replaceStrings>
-      <replace>//</replace>
       <replace>﻿release_date</replace>
       <replace>release_date</replace>
       <replace>https://www.parsevideo.com/static</replace>
@@ -197,6 +203,7 @@
       <replace>release_date: -1, score:-1, acquisition_time: -1</replace>
       <replace>req.query.sort_type</replace>
       <replace>sort_type</replace>
+      <replace>reply</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -243,6 +250,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,7 +282,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -395,11 +402,15 @@
       <workItem from="1572185426329" duration="559000" />
       <workItem from="1572256651629" duration="715000" />
       <workItem from="1572508606246" duration="1593000" />
+      <workItem from="1572836286755" duration="1347000" />
+      <workItem from="1573091417516" duration="3573000" />
+      <workItem from="1573099368360" duration="16973000" />
+      <workItem from="1573135307034" duration="793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215602000" />
+    <option name="totallyTimeSpent" value="238288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="741" extended-state="0" />
@@ -439,23 +450,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="106" />
+      <option name="time" value="125" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>data</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>db</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>db.db(dbName)</expression-string>
+        <expression-string>type2</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -465,43 +466,43 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>req.query.sort_type == 0</expression-string>
+        <expression-string>data</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>req.query.sort_type == '0'</expression-string>
+        <expression-string>'2019-10-27 12:46:45'.split(' ')[0].split('-').slice(0, 2).join('-')</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>req.query.sort_type</expression-string>
+        <expression-string>'2019-10-27 12:46:45'.split(' ')[0].split('-').slice(0, 2)</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>sort_type</expression-string>
+        <expression-string>'2019-10-27 12:46:45'.split(' ')[0].split('-').slice(0)</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>type2</expression-string>
+        <expression-string>'2019-10-27 12:46:45'.split(' ')[0].split('-')</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>'2019-10-27 12:46:45'.split(' ')[0].split('-').slice(1)</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>'2019-10-27 12:46:45'.split(' ')[0].split('-').slice(2)</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/index4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/movie_type.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -814,15 +815,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="765">
           <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3420">
+          <caret line="228" column="25" selection-start-line="228" selection-start-column="21" selection-end-line="228" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routers/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="3195" column="47" lean-forward="true" selection-start-line="3195" selection-start-column="47" selection-end-line="3195" selection-end-column="47" />
+        <state relative-caret-position="324">
+          <caret line="1969" column="34" selection-start-line="1969" selection-start-column="34" selection-end-line="1969" selection-end-column="34" />
         </state>
       </provider>
     </entry>

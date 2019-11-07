@@ -34,7 +34,6 @@ export class PersonalPage implements OnInit {
       this.userId=userId;
       this.tools.getUserApi(userId).then((data: any) => {
         if (data.code == 0) {
-          console.log(data)
           this.userInfo = data.userInfo
         }
       })
@@ -62,14 +61,30 @@ export class PersonalPage implements OnInit {
    * 跳转到设置页
    */
   goSettingPage() {
-    this.router.navigate(['/setting'])
+    var result = this.tools.checkUser()
+    if (result) {
+      this.router.navigate(['/setting'])
+    }
   }
 
   /**
    * 跳转到浏览记录页
    */
   goBrowseRecordPage() {
-    this.router.navigate(['/browse-record'])
+    var result = this.tools.checkUser()
+    if (result) {
+      this.router.navigate(['/browse-record'])
+    }
+  }
+
+  /**
+   * 跳转到反馈页
+   */
+  goFeedbackPage() {
+    var result = this.tools.checkUser()
+    if (result) {
+      this.router.navigate(['/feedback'])
+    }
   }
 
 }

@@ -144,3 +144,12 @@ https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=219511601&page=1&size=30
 https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=228302701&page=3&size=30
 https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=100246201&page=3&size=30
 https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=113379001&page=3&size=30
+https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=103398001&page=4&size=30
+https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=247140401&page=3&size=30
+https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=204218901&page=3&size=30
+https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=247374701&page=2&size=30
+https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=205979901&page=3&size=30
+https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=246349701&page=2&size=30
+https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=200100701&page=16&size=30
+https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=246176701&page=2&size=30
+https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=247129601&page=2&size=30

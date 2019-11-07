@@ -32,7 +32,7 @@ class Ziyuan135Spider(scrapy.Spider):
         self.orign_url = self.domain + '/?m=vod-index-pg-'
         self.start_urls = [self.orign_url + '1.html']
 
-        if (target == None):
+        if (target == 'all'):
             # 获取电影总数
             orign_html = get_one_page(self.start_urls[0])
             orign_html = etree.HTML(orign_html)
@@ -54,8 +54,6 @@ class Ziyuan135Spider(scrapy.Spider):
 
         # 开始时间
         start = time.time()
-        # 获取 web 驱动
-        driver = get_driver()
         # 获取所有电影的 id，用于判断电影是否已经爬取
         collection = 'movie'
         db_utils = MongoDbUtils(collection)

@@ -10,7 +10,7 @@ import { HttpServiceService } from './http-service.service';
 import { StorageService } from './storage.service';
 import { ConfigService } from './config.service';
 
-declare var $:any;
+declare var $: any;
 
 @Injectable({
   providedIn: 'root'
@@ -97,6 +97,68 @@ export class ToolsService {
       $('.tabNav').find('li')[1].children[0].setAttribute('class', 'cur')
       $('.tabCon')[1].setAttribute('style', 'display: block;')
     }
+  }
+
+  /**
+   * 回复反馈信息
+   */
+
+  doReplyFeedbackApi(_id, reply) {
+    var promise = new Promise((resolve, reject) => {
+      var api = '/feedback/reply'
+      var feedback = {
+        '_id': _id,
+        'reply': reply
+      }
+      this.httpService.doPost(api, feedback, (data) => {
+        resolve(data)
+      })
+    })
+    return promise
+  }
+
+  /**
+   * 获取反馈信息
+   * @param pageIndex     当前页码
+   * @param pageSize      每页大小
+   */
+
+  getFeedbackApi(is_reply, pageIndex, pageSize) {
+    var promise = new Promise((resolve, reject) => {
+      var api = '/feedback/get/all?is_reply=' + is_reply + '&page_index=' + pageIndex + '&page_size=' + pageSize
+      this.httpService.doGet(api, (data) => {
+        resolve(data)
+      })
+    })
+    return promise
+  }
+
+  /**
+   * 添加反馈信息
+   * @param content 反馈内容
+   */
+  doPostFeedbackApi(content) {
+    var promise = new Promise((resolve, reject) => {
+      var api = '/feedback/add'
+      var user_name = this.storage.get('user_name')
+      // 手机 uuid 
+      var device_uuid = this.device.uuid
+      // 系统版本  
+      var device_version = this.device.version
+      // 返回手机的平台信息  (android/ios 等等)
+      var device_platform = this.device.platform
+      var feedback = {
+        'content': content,
+        'user_name': user_name,
+        'device_uuid': device_uuid,
+        'device_version': device_version,
+        'device_platform': device_platform
+      }
+      this.httpService.doPost(api, feedback, (data) => {
+        resolve(data)
+      })
+    })
+    return promise
   }
 
   /**
@@ -299,7 +361,8 @@ export class ToolsService {
 
   getRecordsApi(pageIndex, pageSize) {
     var promise = new Promise((resolve, reject) => {
-      var api = '/records/get/all?page_index=' + pageIndex + '&page_size=' + pageSize
+      var user_name = this.storage.get('user_name')
+      var api = '/records/get/all?user_name=' + user_name + '&page_index=' + pageIndex + '&page_size=' + pageSize
       this.httpService.doGet(api, (data) => {
         resolve(data)
       })
@@ -343,7 +406,7 @@ export class ToolsService {
   }
 
   /**
-   * 
+   * 添加浏览记录
    * @param browseType 浏览的影视类型
    * @param id 影视id
    * @param name 影视名称
@@ -516,10 +579,17 @@ export class ToolsService {
         region = selectTypeList[1]
         release_date = selectTypeList[2]
       } else {
-        //  综艺、动漫、少儿
-        type2 = typeList[type] + '片'
-        region = selectTypeList[0]
-        release_date = selectTypeList[1]
+        if (type == '4') {
+          // 少儿
+          type2 = 'null'
+          region = selectTypeList[0]
+          release_date = selectTypeList[1]
+        } else {
+          //  综艺、动漫
+          type2 = typeList[type] + '片'
+          region = selectTypeList[0]
+          release_date = selectTypeList[1]
+        }
       }
     }
     var promise = new Promise((resolve, reject) => {

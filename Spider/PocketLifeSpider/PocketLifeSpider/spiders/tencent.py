@@ -5,6 +5,7 @@ from PocketLifeSpider.items import MovieItem
 from PocketLifeSpider.util.MongoDbUtils import MongoDbUtils
 from PocketLifeSpider.util.CommonUtils import *
 
+
 class TencentSpider(scrapy.Spider):
     name = 'tencent'
     allowed_domains = ['v.qq.com']
@@ -15,7 +16,6 @@ class TencentSpider(scrapy.Spider):
     type = 'movie_sources'
     # 影视类型数字列表
     type_list = ['movie', 'tv', 'variety', 'cartoon', 'child']
-    # type_list = ['cartoon']
     type_name_dic = {'movie': '电影', 'tv': '电视剧', 'variety': '综艺', 'cartoon': '动漫', 'child': '少儿'}
 
     # 电影总数
@@ -32,7 +32,7 @@ class TencentSpider(scrapy.Spider):
     def __init__(self, target=None, name=None, **kwargs):
         super(TencentSpider, self).__init__(name, **kwargs)
         self.target = target
-        if (self.target == None):
+        if (self.target == 'all'):
             for tmp_type in self.type_list:
                 url = 'https://v.qq.com/channel/' + tmp_type + '?listpage=1&channel=' + tmp_type + ''
                 html = get_one_page(url)
@@ -60,9 +60,6 @@ class TencentSpider(scrapy.Spider):
         # 开始时间
         start = time.time()
 
-        # 获取web驱动
-        driver = get_driver()
-
         # 获取所有电影的 id，用于判断电影是否已经爬取
         collection = 'movie'
         db_utils = MongoDbUtils(collection)
@@ -72,13 +69,13 @@ class TencentSpider(scrapy.Spider):
         for movie_id in data:
             movie_ids.append(movie_id['id'])
 
-        url = response.url
-        movie_type = url.split('channel=')[1].split('&')[0]
-        orign_html = get_one_page(url)
+        origin_url = response.url
+        movie_type = origin_url.split('channel=')[1].split('&')[0]
+        orign_html = get_one_page(origin_url)
         flag = 0
         html = etree.HTML(orign_html)
         if (flag == 0):
-            if (self.target == None):
+            if (self.target == 'all'):
                 total = 2000
             elif (self.target == 'latest'):
                 total = (int)(get_str_from_xpath(html.xpath('/html/body/div[5]/div/div[1]/div[1]/span/text()')))
@@ -96,7 +93,7 @@ class TencentSpider(scrapy.Spider):
             #   获取影视列表内容
             for offset_temp in reverse_arr(range(start_page, total, page_size)):
                 current_page = (int)(offset_temp / page_size) + 1
-                url = url.replace('listpage=1', 'listpage=' + (str)(current_page)).replace('offset=0', 'offset=' + (str)(offset_temp))
+                url = origin_url.replace('listpage=1', 'listpage=' + (str)(current_page)).replace('offset=0', 'offset=' + (str)(offset_temp))
                 print('当前页面：' + url)
                 count = 0
                 html = get_one_page(url)
@@ -108,22 +105,36 @@ class TencentSpider(scrapy.Spider):
                     movie_item['id'] = movie_id
                     movie_item['src'] = get_str_from_xpath(each.xpath("./a/img[1]/@src"))
                     movie_item['name'] = get_str_from_xpath(each.xpath("./a/@title"))
-                    update_status = get_str_from_xpath(each.xpath("./div/text()"))
+                    if (movie_type == 'movie'):
+                        update_status = '腾讯视频'
+                    else:
+                        update_status = get_str_from_xpath(each.xpath("./div/text()"))
                     # id, src, name, update_time, actors, type, score, release_date, description
                     # 解析视频详情
                     # https://v.qq.com/x/cover/mzc00200uj8xmtb.html
                     url = self.domain + '/x/cover/' + movie_id + '.html'
                     print(url)
+                    driver = get_driver()
                     driver.get(url)
                     cover_info = driver.execute_script('return COVER_INFO')
+                    driver.quit()
                     try:
                         score = cover_info['score']['score']
                     except:
                         score = get_random_str()
                     movie_item['score'] = score
-                    movie_item['nickname'] = cover_info['second_title']
-                    if (update_status == ''):
-                        update_status = cover_info['episode_updated']
+                    try:
+                        nick_name = cover_info['second_title']
+                    except:
+                        nick_name = movie_item['name']
+                    movie_item['nickname'] = nick_name
+                    if (update_status == '' or update_status == None):
+                        try:
+                            update_status = cover_info['episode_updated']
+                            if (update_status == None):
+                                continue
+                        except:
+                            continue
                     movie_item['update_status'] = update_status
                     try:
                         directors = cover_info['director']

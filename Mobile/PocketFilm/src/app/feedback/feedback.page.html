@@ -1,0 +1,118 @@
+<ion-header>
+    <ion-toolbar color="danger">
+      <ion-back-button defaultHref="/" slot="start"></ion-back-button>
+      <ion-title>反馈</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+
+  <!-- 下拉刷新 -->
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="松开刷新" refreshingSpinner="circles"
+        refreshingText="正在刷新">
+      </ion-refresher-content>
+    </ion-refresher>
+    <!-- 下拉刷新 -->
+
+  <section class="main">
+    <div id="page"></div>
+    <div class="tbmov-notice">
+      <p>请勿催新片！如果有资源，我们肯定更新，什么时候有资源，时间不确定。禁片本站不收录。</p>
+      <p>注：为了避免发恶意发广告，求片留言已开启审核模式，求片一次就好请不要刷屏。</p>
+    </div>
+    <div class="sohu-comments">
+      <div id="SOHUCS">
+        <div id="SOHU_MAIN">
+          <div class="module-cmt-header">
+            <div class="clear-g section-title-w">
+              <div class="title-user-w">
+                <div node-type="user" class="clear-g user-wrap-w">
+                  <span node-type="user-name" class="wrap-name-w"></span>
+                </div>
+              </div>
+            </div>
+            <div class="cmt_form clearfix">
+              <input type="hidden" id="g_rid" name="g_rid" value="">
+              <div class="section-cbox-w">
+                <div class="cbox-block-w clear-g">
+                  <div node-type="block-head-w" class="block-head-w">
+                    <div node-type="header-login" class="header-login"><input
+                        style="border: 0px; cursor: pointer; background-color:transparent;height: 40px; line-height: 40px; margin:-4px 0 0 6px;vertical-align:middle; color:#e74851; font-size:14px; "
+                        type="text" id="g_name" name="g_name" value="内容"></div>
+                  </div>
+                  <div node-type="login-select" class="block-post-w">
+                    <div class="module-cmt-box">
+                      <div class="post-wrap-w">
+                        <div class="post-wrap-border-l"></div>
+                        <div class="post-wrap-border-r"></div>
+                        <div node-type="post-wrap-main" class="post-wrap-main">
+                          <div class="post-wrap-border-t">
+                            <div node-type="post-wrap-border-t-l" class="post-wrap-border-t-l"></div>
+                            <div node-type="post-wrap-border-t-r" class="post-wrap-border-t-r"></div>
+                          </div>
+                          <div class="wrap-area-w">
+                            <div class="area-textarea-w">
+                              <textarea node-type="textarea" id="g_content" name="g_content"
+                                class="textarea-fw textarea-bf" placeholder="请学会搜索和看上面的提示在来留言，不然一律不回复。"
+                                onkeyup="MAC.Remaining(this,200,'g_remaining')" [(ngModel)]="content"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="text-align: center;">
+                          <ion-button ion-button color="danger" block
+                            style="margin-top: 1rem;width: 100%;border-radius: .5rem;" (click)="doPostFeedback()">发布</ion-button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 切换是否回复 -->
+      <ion-segment [(ngModel)]="is_reply" *ngIf="userInfo.type == 'administrator'">
+          <ion-segment-button value="true" (click)="changeIsReplyType(true)">
+            已回复
+          </ion-segment-button>
+          <ion-segment-button value="false" (click)="changeIsReplyType(false)">
+            未回复
+          </ion-segment-button>
+        </ion-segment>
+
+        <!-- 反馈信息列表 -->
+      <div class="cmt_msg" id="cmt_msg" *ngFor="let feedback of feedbackList, let i = index">
+        <div class="cmt_wrap">
+          <div class="cmt_item clearfix">
+            <span class="face_wrap fl"><img class="facepl" src="{{feedback.user_avatar}}"></span>
+            <div class="item_con fl" style="width: 100%;">
+              <p class="top1">
+                <span class="name">{{feedback.user_name}}</span>
+                ({{feedback.record_time}})
+              </p>
+              <p class="con">{{feedback.content}}&nbsp;&nbsp;<span id="show_reply_{{i}}" (click)="showReplyButton(i)" *ngIf="feedback.is_reply == 'false' && userInfo.type == 'administrator'">回复</span></p>
+
+              <p class="text-red" *ngIf="feedback.is_reply == 'true'">管理员回复：{{feedback.reply}}</p>
+              <p *ngIf="feedback.is_reply == 'false'" style="display: none" id="show_reply2_{{i}}">
+                <ion-input style="border: 1px solid #f04141; color: rgb(51, 51, 51);" id="reply{{i}}"></ion-input>
+                <ion-button ion-button color="danger" (click)="reply(feedback._id, i)">确认</ion-button>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 上拉加载更多 -->
+  <ion-infinite-scroll (ionInfinite)="doLoadMore($event)">
+      <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="正在加载">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+    <!-- 上拉加载更多 -->
+
+</ion-content>

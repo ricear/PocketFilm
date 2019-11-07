@@ -43,6 +43,9 @@ class ZuidaSpiderPipeline(object):
             dic = {'type': '分类'}
             new_dic = {'$set': {'names': names}}
             db_utils.update(dic, new_dic)
+        update_status = item['update_status']
+        if (update_status == '' or update_status == None):
+            item['update_status'] = item['sources'][0]['name']
 
         # 申请资源
         collection = 'movie'
@@ -70,7 +73,7 @@ class ZuidaSpiderPipeline(object):
                     continue
                 sources_tmp.append(source)
             # 修改影视最新更新状态
-            if (len(item_source['types']) >= max):
+            if (len(item_source['types']) > max):
                 update_status = item['update_status']
             else:
                 update_status = movies1_temp['update_status']

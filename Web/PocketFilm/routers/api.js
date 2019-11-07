@@ -10,7 +10,8 @@ var router = express.Router();
 //  MongoDb 客户端
 var mongoClient = require('mongodb').MongoClient;
 //  MongoDB 连接地址
-var dbURL = 'mongodb://localhost:27017';
+// var dbURL = 'mongodb://localhost:27017';
+var dbURL = 'mongodb://103.45.178.220:27017';
 //  MongoDb 的 ObjectId
 var objectId = require('mongodb').ObjectId;
 //  使用 Jquery
@@ -33,10 +34,10 @@ var responseData;
 
 //  默认头像列表
 var avatarList = [
-    'https://img5.duitang.com/uploads/item/201409/23/20140923094045_BNYji.thumb.700_0.png',
-    'https://img4.duitang.com/uploads/item/201306/26/20130626090600_AE4Pn.thumb.700_0.jpeg',
-    'https://img4.duitang.com/uploads/item/201305/15/20130515204443_cSZzP.thumb.700_0.png',
-    'https://cdn.duitang.com/uploads/item/201209/22/20120922192105_8jEwk.thumb.600_0.jpeg'
+    'https://c-ssl.duitang.com/uploads/item/201409/23/20140923094045_BNYji.thumb.700_0.png',
+    'https://c-ssl.duitang.com/uploads/item/201306/26/20130626090600_AE4Pn.thumb.700_0.jpeg',
+    'https://c-ssl.duitang.com/uploads/item/201305/15/20130515204443_cSZzP.thumb.700_0.png',
+    'https://c-ssl.duitang.com/uploads/item/201209/22/20120922192105_8jEwk.thumb.600_0.jpeg'
 ]
 
 //  入口
@@ -108,7 +109,7 @@ function getFormatDate3() {
     var year = nowDate.getFullYear();
     var month = nowDate.getMonth() + 1 < 10 ? "0" + (nowDate.getMonth() + 1) : nowDate.getMonth() + 1;
     var date = nowDate.getDate() < 10 ? "0" + nowDate.getDate() : nowDate.getDate();
-    return year + "-" + month + "-" + date ;
+    return year + "-" + month + "-" + date;
 }
 
 /**
@@ -624,7 +625,7 @@ router.get('/count/get', function (req, res, next) {
                     var movie = db.db(dbName).collection('tv');
                     movie.find(
                         {}
-                        ).toArray(function (err, data) {
+                    ).toArray(function (err, data) {
                         if (data) {
                             responseData.code = 0;
                             responseData.message = '电视信息获取成功';
@@ -1021,8 +1022,9 @@ router.get('/count/get', function (req, res, next) {
                             },
                             {
                                 sort: {name: 1},
-                                collation: {locale: "zh"}}
-                            ).toArray(function (err, data) {
+                                collation: {locale: "zh"}
+                            }
+                        ).toArray(function (err, data) {
                             if (data) {
                                 responseData.code = 0;
                                 responseData.message = '小品信息获取成功';
@@ -1048,7 +1050,8 @@ router.get('/count/get', function (req, res, next) {
                             },
                             {
                                 sort: {name: 1},
-                                collation: {locale: "zh"}}
+                                collation: {locale: "zh"}
+                            }
                         ).toArray(function (err, data) {
                             if (data) {
                                 responseData.code = 0;
@@ -1096,7 +1099,8 @@ router.get('/count/get', function (req, res, next) {
                         },
                         {
                             sort: {name: 1},
-                            collation: {locale: "zh"}}
+                            collation: {locale: "zh"}
+                        }
                     ).toArray(function (err, data) {
                         if (data) {
                             responseData.code = 0;
@@ -1142,7 +1146,8 @@ router.get('/count/get', function (req, res, next) {
                             },
                             {
                                 sort: {name: 1},
-                                collation: {locale: "zh"}}
+                                collation: {locale: "zh"}
+                            }
                         ).toArray(function (err, data) {
                             if (data) {
                                 responseData.code = 0;
@@ -1187,7 +1192,8 @@ router.get('/count/get', function (req, res, next) {
                             },
                             {
                                 sort: {name: 1},
-                                collation: {locale: "zh"}}
+                                collation: {locale: "zh"}
+                            }
                         ).toArray(function (err, data) {
                             if (data) {
                                 responseData.code = 0;
@@ -1259,7 +1265,8 @@ router.get('/recommendations/get', function (req, res, next) {
                             },
                             {
                                 sort: {name: 1},
-                                collation: {locale: "zh"}}
+                                collation: {locale: "zh"}
+                            }
                         ).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
@@ -1285,7 +1292,8 @@ router.get('/recommendations/get', function (req, res, next) {
                             },
                             {
                                 sort: {name: 1},
-                                collation: {locale: "zh"}}
+                                collation: {locale: "zh"}
+                            }
                         ).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
@@ -1343,7 +1351,8 @@ router.get('/recommendations/get', function (req, res, next) {
                             },
                             {
                                 sort: {name: 1},
-                                collation: {locale: "zh"}}
+                                collation: {locale: "zh"}
+                            }
                         ).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
@@ -1369,7 +1378,8 @@ router.get('/recommendations/get', function (req, res, next) {
                             },
                             {
                                 sort: {name: 1},
-                                collation: {locale: "zh"}}
+                                collation: {locale: "zh"}
+                            }
                         ).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
@@ -1429,7 +1439,8 @@ router.get('/recommendations/get', function (req, res, next) {
                             },
                             {
                                 sort: {name: 1},
-                                collation: {locale: "zh"}}
+                                collation: {locale: "zh"}
+                            }
                         ).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
@@ -1454,7 +1465,8 @@ router.get('/recommendations/get', function (req, res, next) {
                             },
                             {
                                 sort: {name: 1},
-                                collation: {locale: "zh"}}
+                                collation: {locale: "zh"}
+                            }
                         ).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
@@ -1512,7 +1524,8 @@ router.get('/recommendations/get', function (req, res, next) {
                             },
                             {
                                 sort: {name: 1},
-                                collation: {locale: "zh"}}
+                                collation: {locale: "zh"}
+                            }
                         ).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
@@ -1537,7 +1550,8 @@ router.get('/recommendations/get', function (req, res, next) {
                             },
                             {
                                 sort: {name: 1},
-                                collation: {locale: "zh"}}
+                                collation: {locale: "zh"}
+                            }
                         ).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
@@ -1668,6 +1682,328 @@ router.post('/version/add', function (req, res, next) {
         })
     })
 })
+
+/**
+ * 获取所有反馈信息数量
+ */
+
+router.get('/count/get/feedback', function (req, res, next) {
+    //  用户名
+    var user_name = req.query.user_name == null || req.query.user_name == 'null' ? null : req.query.user_name
+    //  是否回复
+    var is_reply = req.query.is_reply == null || req.query.is_reply == 'null' ? null : req.query.is_reply
+    //  浏览类型
+    var browse_type = req.query.browse_type == null || req.query.browse_type == 'null' ? null : req.query.browse_type
+    // 每页大小
+    var page_size = req.query.page_size == null || req.query.page_size == 'null' ? 20 : +req.query.page_size
+    // 当前页数
+    var page_index = req.query.page_index == null || req.query.page_index == 'null' ? 1 : +req.query.page_index
+    //    全部
+    if (user_name != null) {
+        if (is_reply != null) {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('feedback');
+                movie.find(
+                    {
+                        user_name: user_name,
+                        is_reply: is_reply,
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '反馈信息获取成功';
+                        responseData.data = data.length;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '反馈信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        } else {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('feedback');
+                movie.find(
+                    {user_name: user_name}).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '反馈信息获取成功';
+                        responseData.data = data.length;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '反馈信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        }
+
+    } else {
+        if (is_reply != null) {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('feedback');
+                movie.find(
+                    {
+                        is_reply: is_reply,
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '反馈信息获取成功';
+                        responseData.data = data.length;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '反馈信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        } else {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('feedback');
+                movie.find(
+                    {}).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '反馈信息获取成功';
+                        responseData.data = data.length;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '反馈信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        }
+    }
+})
+
+/**
+ * 回复反馈信息
+ */
+
+router.post('/feedback/reply', function (req, res, next) {
+    var _id = req.body._id;
+    var reply = req.body.reply;
+    mongoClient.connect(dbURL, function (err, db) {
+        var records = db.db(dbName).collection('feedback');
+        //将记录信息更新到数据库中
+        records.update({
+                _id: objectId(_id)
+            },
+            {
+                $set: {
+                    reply: reply,
+                    is_reply: 'true',
+                    record_time: getFormatDate2()
+                }
+            }).then(function (data) {
+            if (data) {
+                //保存成功
+                responseData.code = 0;
+                responseData.message = '修改成功';
+                res.json(responseData);
+            } else {
+                //注册失败
+                responseData.code = 1;
+                responseData.message = '修改失败';
+                res.json(responseData);
+            }
+        })
+    })
+
+});
+
+/**
+ * 获取所有反馈信息
+ */
+
+router.get('/feedback/get/all', function (req, res, next) {
+    //  用户名
+    var user_name = req.query.user_name == null || req.query.user_name == 'null' ? null : req.query.user_name
+    //  是否回复
+    var is_reply = req.query.is_reply == null || req.query.is_reply == 'null' ? null : req.query.is_reply
+    //  浏览类型
+    var browse_type = req.query.browse_type == null || req.query.browse_type == 'null' ? null : req.query.browse_type
+    // 每页大小
+    var page_size = req.query.page_size == null || req.query.page_size == 'null' ? 20 : +req.query.page_size
+    // 当前页数
+    var page_index = req.query.page_index == null || req.query.page_index == 'null' ? 1 : +req.query.page_index
+    //    全部
+    if (user_name != null) {
+        if (is_reply != null) {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('feedback');
+                movie.find(
+                    {
+                        user_name: user_name,
+                        is_reply: is_reply,
+                    },
+                    {
+                        sort: {record_time: -1},
+                        collation: {locale: "zh"},
+                        skip: page_size * (page_index - 1),
+                        limit: page_size
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '反馈信息获取成功';
+                        responseData.data = data;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '反馈信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        } else {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('feedback');
+                movie.find(
+                    {user_name: user_name},
+                    {
+                        sort: {record_time: -1},
+                        collation: {locale: "zh"},
+                        skip: page_size * (page_index - 1),
+                        limit: page_size
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '反馈信息获取成功';
+                        responseData.data = data;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '反馈信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        }
+
+    } else {
+        if (is_reply != null) {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('feedback');
+                movie.find(
+                    {
+                        is_reply: is_reply,
+                    },
+                    {
+                        sort: {record_time: -1},
+                        collation: {locale: "zh"},
+                        skip: page_size * (page_index - 1),
+                        limit: page_size
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '反馈信息获取成功';
+                        responseData.data = data;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '反馈信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        } else {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('feedback');
+                movie.find(
+                    {},
+                    {
+                        sort: {record_time: -1},
+                        collation: {locale: "zh"},
+                        skip: page_size * (page_index - 1),
+                        limit: page_size
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '反馈信息获取成功';
+                        responseData.data = data;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '反馈信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        }
+    }
+})
+
+/**
+ * 添加反馈信息
+ */
+
+router.post('/feedback/add', function (req, res, next) {
+    var content = req.body.content;
+    var user_name = req.body.user_name;
+    var record_time = getFormatDate2();
+    var device_uuid = req.body.device_uuid;
+    var device_version = req.body.device_version;
+    var device_platform = req.body.device_platform;
+
+    mongoClient.connect(dbURL, function (err, db) {
+        var user = db.db(dbName).collection('user');
+        user.find({'username': user_name}).toArray(function (err, userInfo) {
+            if (userInfo.length > 0) {
+                user = userInfo[0]
+                mongoClient.connect(dbURL, function (err, db) {
+                    var records = db.db(dbName).collection('feedback');
+                    //将记录信息写入到数据库中
+                    var recordsInfo = {
+                        content: content,
+                        reply: '',
+                        is_reply: 'false',
+                        user_name: user_name,
+                        user_avatar: user.avatar,
+                        record_time: record_time,
+                        device_uuid: device_uuid,
+                        device_version: device_version,
+                        device_platform: device_platform,
+                    };
+                    records.save(recordsInfo).then(function (data) {
+                        if (data) {
+                            //保存成功f
+                            responseData.code = 0;
+                            responseData.message = '保存成功';
+                            responseData.data = recordsInfo;
+                            res.json(responseData);
+                        } else {
+                            //注册失败
+                            responseData.code = 1;
+                            responseData.message = '保存失败';
+                            res.json(responseData);
+                        }
+                    })
+                })
+            }
+        })
+    })
+
+});
 
 /**
  * 获取所有搜索记录
@@ -2026,7 +2362,8 @@ router.get('/piece/get/_id', function (req, res, next) {
         movie.find({_id: _id},
             {
                 sort: {name: 1},
-                collation: {locale: "zh"}}
+                collation: {locale: "zh"}
+            }
         ).toArray(function (err, data) {
             if (data) {
                 responseData.code = 0;
@@ -2366,7 +2703,8 @@ router.get('/drama/get/all', function (req, res, next) {
                     },
                     {
                         sort: {name: 1},
-                        collation: {locale: "zh"}}
+                        collation: {locale: "zh"}
+                    }
                 ).toArray(function (err, data) {
                     if (data) {
                         responseData.code = 0;
@@ -2398,7 +2736,8 @@ router.get('/drama/get/all', function (req, res, next) {
                     },
                     {
                         sort: {name: 1},
-                        collation: {locale: "zh"}}
+                        collation: {locale: "zh"}
+                    }
                 ).toArray(function (err, data) {
                     if (data) {
                         responseData.code = 0;
@@ -2608,13 +2947,16 @@ router.get('/get/today', function (req, res, next) {
     var type = req.query.type == null || req.query.type == 'null' ? '全部' : req.query.type
     var top_num = 15
     var today = getFormatDate3();
-    if (type != '全部'){
+    if (type != '全部') {
         mongoClient.connect(dbURL, function (err, db) {
             var movie = db.db(dbName).collection(type);
             // 1 为升序，-1 为降序
             movie.find(
-                {acquisition_time: {$regex: eval("/"+today+"/i")}},
-                {sort: {'release_date': -1, 'acquisition_time': -1, 'score': -1}, limit: top_num}).toArray(function (err, data) {
+                {acquisition_time: {$regex: eval("/" + today + "/i")}},
+                {
+                    sort: {'release_date': -1, 'acquisition_time': -1, 'score': -1},
+                    limit: top_num
+                }).toArray(function (err, data) {
                 if (data) {
                     responseData.code = 0;
                     responseData.message = '影视信息获取成功';
@@ -2647,7 +2989,7 @@ router.get('/count/get/today', function (req, res, next) {
             var movie = db.db(dbName).collection(type);
             // 1 为升序，-1 为降序
             movie.find(
-                {acquisition_time: {$regex: eval("/"+today+"/i")}}).toArray(function (err, data) {
+                {acquisition_time: {$regex: eval("/" + today + "/i")}}).toArray(function (err, data) {
                 if (data) {
                     responseData.code = 0;
                     responseData.message = '影视信息获取成功';
@@ -2728,7 +3070,7 @@ router.get('/movie/get/all', function (req, res, next) {
                         movie.find(
                             {},
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2755,7 +3097,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2782,7 +3124,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2810,7 +3152,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2838,7 +3180,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 type2: type2
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2866,7 +3208,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2894,7 +3236,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2923,7 +3265,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2951,7 +3293,7 @@ router.get('/movie/get/all', function (req, res, next) {
                         movie.find(
                             {},
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -2978,7 +3320,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3005,7 +3347,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3033,7 +3375,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3061,7 +3403,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 type2: type2
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3089,7 +3431,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3117,7 +3459,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3146,7 +3488,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3211,7 +3553,7 @@ router.get('/movie/get/all', function (req, res, next) {
                         movie.find(
                             {type: typeList[type]},
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3239,7 +3581,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3267,7 +3609,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3296,7 +3638,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3325,7 +3667,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 type2: type2
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3354,7 +3696,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3383,7 +3725,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3413,7 +3755,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {release_date:-1, acquisition_time: -1, score: -1},
+                                sort: {release_date: -1, acquisition_time: -1, score: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3441,7 +3783,7 @@ router.get('/movie/get/all', function (req, res, next) {
                         movie.find(
                             {type: typeList[type]},
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3469,7 +3811,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3497,7 +3839,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3526,7 +3868,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3555,7 +3897,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 type2: type2
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3584,7 +3926,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date,
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3613,7 +3955,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 region: region
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -3643,7 +3985,7 @@ router.get('/movie/get/all', function (req, res, next) {
                                 release_date: release_date
                             },
                             {
-                                sort: {release_date: -1, score:-1, acquisition_time: -1},
+                                sort: {release_date: -1, score: -1, acquisition_time: -1},
                                 skip: page_size * (page_index - 1),
                                 limit: page_size
                             }).toArray(function (err, data) {
@@ -4184,6 +4526,7 @@ router.post('/user/register', function (req, res, next) {
                     register_time: register_time,
                     activate: true,
                     activate_time: register_time,
+                    type: 'common',
                     avatar: avatarList[getRandomNum(0, avatarList.length - 1)]
                 };
                 user.save(userInfo).then(function (data) {
