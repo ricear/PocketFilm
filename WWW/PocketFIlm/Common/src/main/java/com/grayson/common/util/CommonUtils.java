@@ -29,6 +29,39 @@ import java.util.List;
 public class CommonUtils {
 
     /**
+     * 获取解析地址
+     *
+     * @param movieType 影视类型
+     * @param url       影视播放地址
+     * @return 解析后的播放地址
+     */
+    public static String getParseUrl(String movieType, String url) {
+        String parseUrl = "";
+        if (movieType == "movie") {
+            if (url.startsWith("aHR0")) {
+                parseUrl = Configs.JX40 + url;
+            } else {
+                parseUrl = Configs.BLJIEX + url;
+            }
+        } else if (movieType == "tv") {
+            if (url.contains("player")) {
+                parseUrl = url;
+            } else {
+                parseUrl = Configs.FO97 + url;
+            }
+        } else if (movieType == "drama") {
+            parseUrl = Configs.LHH + url;
+        } else if (movieType == "piece") {
+            if (url.endsWith("m3u8")) {
+                parseUrl = Configs.BLJIEX + url;
+            } else {
+                parseUrl = Configs.LHH + url;
+            }
+        }
+        return parseUrl;
+    }
+
+    /**
      * 获取浏览记录
      *
      * @param request     HTTP请求
@@ -120,40 +153,41 @@ public class CommonUtils {
 
     /**
      * 执行POST请求
-     * @param url   请求地址
-     * @param json  数据
+     *
+     * @param url  请求地址
+     * @param json 数据
      * @return
      */
-    public static String doPost(String url, JSONObject json){
+    public static String doPost(String url, JSONObject json) {
         String result = "";
         HttpPost post;
         post = new HttpPost(url);
-        try{
+        try {
             CloseableHttpClient httpClient = HttpClients.createDefault();
 
-            post.setHeader("Content-Type","application/json;charset=utf-8");
+            post.setHeader("Content-Type", "application/json;charset=utf-8");
             post.addHeader("Authorization", "Basic YWRtaW46");
-            StringEntity postingString = new StringEntity(json.toString(),"utf-8");
+            StringEntity postingString = new StringEntity(json.toString(), "utf-8");
             post.setEntity(postingString);
             HttpResponse response = httpClient.execute(post);
 
             InputStream in = response.getEntity().getContent();
             BufferedReader br = new BufferedReader(new InputStreamReader(in, "utf-8"));
-            StringBuilder strber= new StringBuilder();
+            StringBuilder strber = new StringBuilder();
             String line = null;
-            while((line = br.readLine())!=null){
-                strber.append(line+'\n');
+            while ((line = br.readLine()) != null) {
+                strber.append(line + '\n');
             }
             br.close();
             in.close();
             result = strber.toString();
-            if(response.getStatusLine().getStatusCode()!=HttpStatus.SC_OK){
+            if (response.getStatusLine().getStatusCode() != HttpStatus.SC_OK) {
                 result = "服务器异常";
             }
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println("请求异常");
             throw new RuntimeException(e);
-        } finally{
+        } finally {
             post.abort();
         }
         return result;

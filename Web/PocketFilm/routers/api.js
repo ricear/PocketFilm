@@ -1216,13 +1216,62 @@ router.get('/count/get', function (req, res, next) {
 })
 
 /**
- * 获取推荐的数据
+ * 获取推荐的数据(影视)
  */
 
 router.get('/recommendations/get', function (req, res, next) {
+    var movie_id = req.query.movie_id
+    var type = req.query.type
+    // 每页大小
+    var page_size = req.query.page_size == null || req.query.page_size == 'null' ? 20 : +req.query.page_size
+    // 当前页数
+    var page_index = req.query.page_index == null || req.query.page_index == 'null' ? 1 : +req.query.page_index
+    var limit = req.query.limit == null || req.query.limit == 'null' ? page_size : parseInt(req.query.limit)
+    mongoClient.connect(dbURL, function (err, db) {
+        var movie = db.db(dbName).collection('recommendations');
+        movie.aggregate([
+            {
+                $match: {'temp_id': objectId(movie_id)}
+            },
+            {
+                $lookup: {
+                    from: type,
+                    localField: "temp_id2",
+                    foreignField: "_id",
+                    as: "movie"
+                }
+            },
+            {
+                $sort: {euclidean: -1}
+            },
+            {
+                $limit: page_size
+            }
+        ]).toArray(function (err, data) {
+            if (data != null) {
+                responseData.code = 0;
+                responseData.message = '影视推荐数据获取成功';
+                responseData.data = data;
+                res.json(responseData);
+            } else {
+                responseData.code = 1;
+                responseData.message = '影视推荐数据失败';
+                res.json(responseData);
+            }
+            // 释放资源
+            db.close();
+        })
+    })
+})
+
+/**
+ * 获取推荐的数据(用户名)
+ */
+
+router.get('/recommendations/get/user', function (req, res, next) {
     var user_name = req.query.user_name
     var browse_type = req.query.browse_type
-    var type = req.query.type == null || req.query.type == 'null' ? '全部' : req.query.type
+    var type = req.query.type == null || req.query.type == 'null' || req.query.type == '推荐' ? '全部' : req.query.type
     // 每页大小
     var page_size = req.query.page_size == null || req.query.page_size == 'null' ? 20 : +req.query.page_size
     // 当前页数
@@ -1242,40 +1291,34 @@ router.get('/recommendations/get', function (req, res, next) {
                         limit: 1
                     }).toArray(function (err, data) {
                     if (data.length > 0) {
-                        var movie = db.db(dbName).collection(browse_type);
-                        var name = data[0].name
-                        var key_word = data[0].type2
-                        movie.find(
+                        var movie = db.db(dbName).collection('recommendations');
+                        movie.aggregate([
                             {
-                                $or: [{
-                                    name: {
-                                        $regex: name,
-                                        $options: "six"
-                                    }
-                                }, {
-                                    type2: {
-                                        $regex: key_word,
-                                        $options: "six"
-                                    }
-                                }]
+                                $match: {'temp_id': objectId(data[0]['id'])}
                             },
                             {
-                                skip: page_size * (page_index - 1),
-                                limit: limit
+                                $lookup: {
+                                    from: browse_type,
+                                    localField: "temp_id2",
+                                    foreignField: "_id",
+                                    as: "movie"
+                                }
                             },
                             {
-                                sort: {name: 1},
-                                collation: {locale: "zh"}
+                                $sort: {euclidean: -1}
+                            },
+                            {
+                                $limit: page_size
                             }
-                        ).toArray(function (err, data2) {
+                        ]).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
-                                responseData.message = '影视信息获取成功';
+                                responseData.message = '影视推荐数据获取成功';
                                 responseData.data = data2;
                                 res.json(responseData);
                             } else {
                                 responseData.code = 1;
-                                responseData.message = '影视信息获取失败';
+                                responseData.message = '影视推荐获取数据失败';
                                 res.json(responseData);
                             }
                             // 释放资源
@@ -1285,7 +1328,7 @@ router.get('/recommendations/get', function (req, res, next) {
                         //  当前类型下没有浏览记录的用户
                         var movie = db.db(dbName).collection(browse_type);
                         movie.find(
-                            {type: type},
+                            {},
                             {
                                 skip: page_size * (page_index - 1),
                                 limit: limit
@@ -1297,12 +1340,12 @@ router.get('/recommendations/get', function (req, res, next) {
                         ).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
-                                responseData.message = '影视信息获取成功';
+                                responseData.message = '影视推荐数据获取成功';
                                 responseData.data = data2;
                                 res.json(responseData);
                             } else {
                                 responseData.code = 1;
-                                responseData.message = '影视信息获取失败';
+                                responseData.message = '影视推荐数据获取失败';
                                 res.json(responseData);
                             }
                             // 释放资源
@@ -1327,41 +1370,34 @@ router.get('/recommendations/get', function (req, res, next) {
                         limit: 1
                     }).toArray(function (err, data) {
                     if (data.length > 0) {
-                        var movie = db.db(dbName).collection(browse_type);
-                        var name = data[0].name
-                        var key_word = data[0].type2
-                        movie.find(
+                        var movie = db.db(dbName).collection('recommendations');
+                        movie.aggregate([
                             {
-                                $or: [{
-                                    name: {
-                                        $regex: name,
-                                        $options: "six"
-                                    }
-                                }, {
-                                    type2: {
-                                        $regex: key_word,
-                                        $options: "six"
-                                    }
-                                }]
+                                $match: {'temp_id': objectId(data[0]['id'])}
                             },
                             {
-                                sort: {score: -1},
-                                skip: page_size * (page_index - 1),
-                                limit: limit
+                                $lookup: {
+                                    from: browse_type,
+                                    localField: "temp_id2",
+                                    foreignField: "_id",
+                                    as: "movie"
+                                }
                             },
                             {
-                                sort: {name: 1},
-                                collation: {locale: "zh"}
+                                $sort: {euclidean: -1}
+                            },
+                            {
+                                $limit: page_size
                             }
-                        ).toArray(function (err, data2) {
+                        ]).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
-                                responseData.message = '影视信息获取成功';
+                                responseData.message = '影视推荐数据获取成功';
                                 responseData.data = data2;
                                 res.json(responseData);
                             } else {
                                 responseData.code = 1;
-                                responseData.message = '影视信息获取失败';
+                                responseData.message = '影视推荐获取数据失败';
                                 res.json(responseData);
                             }
                             // 释放资源
@@ -1383,12 +1419,12 @@ router.get('/recommendations/get', function (req, res, next) {
                         ).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
-                                responseData.message = '影视信息获取成功';
+                                responseData.message = '影视推荐数据获取成功';
                                 responseData.data = data2;
                                 res.json(responseData);
                             } else {
                                 responseData.code = 1;
-                                responseData.message = '影视信息获取失败';
+                                responseData.message = '影视推荐数据获取失败';
                                 res.json(responseData);
                             }
                             // 释放资源
@@ -1404,6 +1440,76 @@ router.get('/recommendations/get', function (req, res, next) {
                 })
             })
         }
+    } else if (browse_type == 'tv') {
+        mongoClient.connect(dbURL, function (err, db) {
+            var records = db.db(dbName).collection('records');
+            records.find(
+                {user_name: user_name, browse_type: browse_type},
+                {
+                    sort: {record_time: -1},
+                    collation: {locale: "zh"},
+                    limit: 1
+                }).toArray(function (err, data) {
+                if (data && data.length > 0) {
+                    var movie = db.db(dbName).collection(browse_type);
+                    movie.find(
+                        {
+                            type: data[0].type
+                        },
+                        {
+                            sort: {name: 1},
+                            collation: {locale: "zh"},
+                            skip: page_size * (page_index - 1),
+                            limit: page_size
+                        }).toArray(function (err, data2) {
+                        if (data2) {
+                            responseData.code = 0;
+                            responseData.message = '影视推荐数据获取成功';
+                            responseData.data = data2;
+                            res.json(responseData);
+                        } else {
+                            responseData.code = 1;
+                            responseData.message = '影视推荐数据获取失败';
+                            res.json(responseData);
+                        }
+                        // 释放资源
+                        db.close();
+                    })
+                } else if (data.length == 0) {
+                    var movie = db.db(dbName).collection(browse_type);
+                    movie.find(
+                        {},
+                        {
+                            skip: page_size * (page_index - 1),
+                            limit: limit
+                        },
+                        {
+                            sort: {name: 1},
+                            collation: {locale: "zh"}
+                        }
+                    ).toArray(function (err, data2) {
+                        if (data2) {
+                            responseData.code = 0;
+                            responseData.message = '影视推荐数据获取成功';
+                            responseData.data = data2;
+                            res.json(responseData);
+                        } else {
+                            responseData.code = 1;
+                            responseData.message = '影视推荐数据获取失败';
+                            res.json(responseData);
+                        }
+                        // 释放资源
+                        db.close();
+                    })
+                } else {
+                    responseData.code = 1;
+                    responseData.message = '浏览记录获取失败';
+                    res.json(responseData);
+                }
+                // 释放资源
+                db.close();
+            })
+        })
     } else {
         if (type == '全部') {
             mongoClient.connect(dbURL, function (err, db) {
@@ -1416,40 +1522,34 @@ router.get('/recommendations/get', function (req, res, next) {
                         limit: 1
                     }).toArray(function (err, data) {
                     if (data && data.length > 0) {
-                        var movie = db.db(dbName).collection(browse_type);
-                        var name = data[0].name
-                        var key_word = data[0].type
-                        movie.find(
+                        var movie = db.db(dbName).collection('recommendations');
+                        movie.aggregate([
                             {
-                                $or: [{
-                                    name: {
-                                        $regex: name,
-                                        $options: "six"
-                                    }
-                                }, {
-                                    type: {
-                                        $regex: key_word,
-                                        $options: "six"
-                                    }
-                                }]
+                                $match: {'temp_id': objectId(data[0]['id'])}
                             },
                             {
-                                skip: page_size * (page_index - 1),
-                                limit: limit
+                                $lookup: {
+                                    from: browse_type,
+                                    localField: "temp_id2",
+                                    foreignField: "_id",
+                                    as: "movie"
+                                }
                             },
                             {
-                                sort: {name: 1},
-                                collation: {locale: "zh"}
+                                $sort: {euclidean: -1}
+                            },
+                            {
+                                $limit: page_size
                             }
-                        ).toArray(function (err, data2) {
+                        ]).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
-                                responseData.message = '影视信息获取成功';
+                                responseData.message = '影视推荐数据获取成功';
                                 responseData.data = data2;
                                 res.json(responseData);
                             } else {
                                 responseData.code = 1;
-                                responseData.message = '影视信息获取失败';
+                                responseData.message = '影视推荐数据获取失败';
                                 res.json(responseData);
                             }
                             // 释放资源
@@ -1470,12 +1570,12 @@ router.get('/recommendations/get', function (req, res, next) {
                         ).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
-                                responseData.message = '影视信息获取成功';
+                                responseData.message = '影视推荐数据获取成功';
                                 responseData.data = data2;
                                 res.json(responseData);
                             } else {
                                 responseData.code = 1;
-                                responseData.message = '影视信息获取失败';
+                                responseData.message = '影视推荐数据获取失败';
                                 res.json(responseData);
                             }
                             // 释放资源
@@ -1501,40 +1601,34 @@ router.get('/recommendations/get', function (req, res, next) {
                         limit: 1
                     }).toArray(function (err, data) {
                     if (data.length > 0) {
-                        var movie = db.db(dbName).collection(browse_type);
-                        var name = data[0].name
-                        var key_word = data[0].type
-                        movie.find(
+                        var movie = db.db(dbName).collection('recommendations');
+                        movie.aggregate([
                             {
-                                $or: [{
-                                    name: {
-                                        $regex: name,
-                                        $options: "six"
-                                    }
-                                }, {
-                                    type: {
-                                        $regex: key_word,
-                                        $options: "six"
-                                    }
-                                }]
+                                $match: {'temp_id': objectId(data[0]['id'])}
                             },
                             {
-                                skip: page_size * (page_index - 1),
-                                limit: limit
+                                $lookup: {
+                                    from: browse_type,
+                                    localField: "temp_id2",
+                                    foreignField: "_id",
+                                    as: "movie"
+                                }
                             },
                             {
-                                sort: {name: 1},
-                                collation: {locale: "zh"}
+                                $sort: {euclidean: -1}
+                            },
+                            {
+                                $limit: page_size
                             }
-                        ).toArray(function (err, data2) {
+                        ]).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
-                                responseData.message = '影视信息获取成功';
+                                responseData.message = '影视推荐数据获取成功';
                                 responseData.data = data2;
                                 res.json(responseData);
                             } else {
                                 responseData.code = 1;
-                                responseData.message = '影视信息获取失败';
+                                responseData.message = '影视推荐获取数据失败';
                                 res.json(responseData);
                             }
                             // 释放资源
@@ -1555,12 +1649,12 @@ router.get('/recommendations/get', function (req, res, next) {
                         ).toArray(function (err, data2) {
                             if (data2) {
                                 responseData.code = 0;
-                                responseData.message = '影视信息获取成功';
+                                responseData.message = '影视推荐数据获取成功';
                                 responseData.data = data2;
                                 res.json(responseData);
                             } else {
                                 responseData.code = 1;
-                                responseData.message = '影视信息获取失败';
+                                responseData.message = '影视推荐数据获取失败';
                                 res.json(responseData);
                             }
                             // 释放资源
@@ -2682,7 +2776,7 @@ router.get('/drama/get/_id', function (req, res, next) {
  */
 
 router.get('/drama/get/all', function (req, res, next) {
-    var type = req.query.type
+    var type = req.query.type == null || req.query.type == 'null' ? '全部' : req.query.type
     // 每页大小
     var page_size = req.query.page_size == null || req.query.page_size == 'null' ? 20 : +req.query.page_size
     // 当前页数

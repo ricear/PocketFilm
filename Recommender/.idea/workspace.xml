@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="826a54cc-6fef-4832-8b18-0beb6977b63d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/CommonUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/config.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/config.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/drama-detail/drama-detail.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/drama-detail/drama-detail.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/drama-detail/drama-detail.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/drama-detail/drama-detail.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/drama/drama.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/drama/drama.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/drama/drama.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/drama/drama.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/film/film.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/film/film.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/film/film.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/film/film.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/more-movie/more-movie.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/more-movie/more-movie.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/more-recommend-movie/more-recommend-movie.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/more-recommend-movie/more-recommend-movie.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/more-recommend-movie/more-recommend-movie.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/more-recommend-movie/more-recommend-movie.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/more-recommend-tv/more-recommend-tv.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/more-recommend-tv/more-recommend-tv.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/more-recommend-tv/more-recommend-tv.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/more-recommend-tv/more-recommend-tv.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/more-tv/more-tv.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/more-tv/more-tv.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/movie-detail/movie-detail.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/movie-detail/movie-detail.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/movie-detail/movie-detail.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/movie-detail/movie-detail.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/piece-detail/piece-detail.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/piece-detail/piece-detail.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/piece-detail/piece-detail.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/piece-detail/piece-detail.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/piece/piece.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/piece/piece.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/piece/piece.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/piece/piece.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/search-drama/search-drama.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/search-drama/search-drama.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/search-movie/search-movie.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/search-movie/search-movie.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/search-piece/search-piece.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/search-piece/search-piece.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/search-tv/search-tv.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/search-tv/search-tv.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/tools.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/tools.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/tv-detail/tv-detail.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/tv-detail/tv-detail.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/tv/tv.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/tv/tv.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/tv/tv.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/src/app/tv/tv.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/drama-detail-drama-detail-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/drama-detail-drama-detail-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/drama-detail-drama-detail-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/drama-detail-drama-detail-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/drama-drama-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/drama-drama-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/drama-drama-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/drama-drama-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/film-film-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/film-film-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/film-film-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/film-film-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-movie-more-movie-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-movie-more-movie-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-movie-more-movie-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-movie-more-movie-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-recommend-movie-more-recommend-movie-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-recommend-movie-more-recommend-movie-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-recommend-movie-more-recommend-movie-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-recommend-movie-more-recommend-movie-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-recommend-tv-more-recommend-tv-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-recommend-tv-more-recommend-tv-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-recommend-tv-more-recommend-tv-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-recommend-tv-more-recommend-tv-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-tv-more-tv-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-tv-more-tv-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-tv-more-tv-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/more-tv-more-tv-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/movie-detail-movie-detail-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/movie-detail-movie-detail-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/movie-detail-movie-detail-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/movie-detail-movie-detail-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/piece-detail-piece-detail-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/piece-detail-piece-detail-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/piece-detail-piece-detail-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/piece-detail-piece-detail-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/piece-piece-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/piece-piece-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/piece-piece-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/piece-piece-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-drama-search-drama-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-drama-search-drama-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-drama-search-drama-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-drama-search-drama-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-movie-search-movie-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-movie-search-movie-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-movie-search-movie-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-movie-search-movie-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-piece-search-piece-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-piece-search-piece-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-piece-search-piece-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-piece-search-piece-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-tv-search-tv-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-tv-search-tv-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-tv-search-tv-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/search-tv-search-tv-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/tv-detail-tv-detail-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/tv-detail-tv-detail-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/tv-detail-tv-detail-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/tv-detail-tv-detail-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/tv-tv-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/tv-tv-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mobile/PocketFilm/www/tv-tv-module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../Mobile/PocketFilm/www/tv-tv-module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spider/PocketLifeSpider/PocketLifeSpider/documentations/history/ziyuan135.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/PocketLifeSpider/PocketLifeSpider/documentations/history/ziyuan135.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spider/PocketLifeSpider/PocketLifeSpider/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/PocketLifeSpider/PocketLifeSpider/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spider/PocketLifeSpider/PocketLifeSpider/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Spider/PocketLifeSpider/PocketLifeSpider/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/Common/src/main/java/com/grayson/common/config/Configs.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/Common/src/main/java/com/grayson/common/config/Configs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/Common/src/main/java/com/grayson/common/util/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/Common/src/main/java/com/grayson/common/util/CommonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/Drama/src/main/java/com/grayson/drama/controller/DramaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/Drama/src/main/java/com/grayson/drama/controller/DramaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/Drama/src/main/resources/templates/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/Drama/src/main/resources/templates/movie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/Drama/src/main/resources/templates/play.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/Drama/src/main/resources/templates/play.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/Movie/src/main/java/com/grayson/movie/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/Movie/src/main/java/com/grayson/movie/controller/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/Movie/src/main/resources/templates/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/Movie/src/main/resources/templates/movie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/Movie/src/main/resources/templates/play.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/Movie/src/main/resources/templates/play.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/Piece/src/main/java/com/grayson/piece/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/Piece/src/main/java/com/grayson/piece/controller/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/Piece/src/main/resources/templates/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/Piece/src/main/resources/templates/movie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/Piece/src/main/resources/templates/play.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/Piece/src/main/resources/templates/play.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/TV/src/main/java/com/grayson/tv/controller/TVController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/TV/src/main/java/com/grayson/tv/controller/TVController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/TV/src/main/resources/templates/play.html" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/TV/src/main/resources/templates/play.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/files/jars/drama-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/files/jars/movie-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/files/jars/movie-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/files/jars/piece-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/files/jars/piece-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/files/jars/tv-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WWW/PocketFIlm/files/jars/www-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../WWW/PocketFIlm/files/jars/www-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web/PocketFilm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Web/PocketFilm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web/PocketFilm/public/PocketFilm.apk" beforeDir="false" afterPath="$PROJECT_DIR$/../Web/PocketFilm/public/PocketFilm.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web/PocketFilm/routers/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Web/PocketFilm/routers/api.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Recommender$recommender.coverage" NAME="recommender Coverage Results" MODIFIED="1573263779489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Recommender$test.coverage" NAME="test Coverage Results" MODIFIED="1573288518661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Recommender" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recommender.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/util/CommonUtils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///opt/anaconda3/envs/Recommender/lib/python3.6/site-packages/pymongo/common.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7710">
+              <caret line="534" selection-start-line="534" selection-end-line="534" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///opt/anaconda3/envs/Recommender/lib/python3.6/site-packages/pymongo/cursor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8760">
+              <caret line="607" selection-start-line="607" selection-end-line="607" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///opt/anaconda3/envs/Recommender/lib/python3.6/site-packages/pymongo/pool.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4230">
+              <caret line="289" selection-start-line="289" selection-end-line="289" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///opt/anaconda3/envs/Recommender/lib/python3.6/site-packages/pymongo/bulk.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1725">
+              <caret line="139" selection-start-line="139" selection-end-line="139" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///opt/anaconda3/envs/Recommender/lib/python3.6/site-packages/pymongo/helpers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///opt/anaconda3/envs/Recommender/lib/python3.6/site-packages/pymongo/collection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8370">
+              <caret line="596" selection-start-line="596" selection-end-line="596" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/MongoDbUtils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>movies3</find>
+      <find>tmp_movie</find>
+      <find>婚外情事第</find>
+      <find>dic</find>
+      <find>db_utils5</find>
+      <find>sort</find>
+      <find>推荐数据不用更新</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>movie</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/util/MongoDbUtils.py" />
+        <option value="$PROJECT_DIR$/util/CommonUtils.py" />
+        <option value="$PROJECT_DIR$/recommender.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="740" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Recommender" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Recommender" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Recommender" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.test">
+    <configuration name="recommender" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Recommender" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recommender.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Recommender" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.recommender" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="826a54cc-6fef-4832-8b18-0beb6977b63d" name="Default Changelist" comment="" />
+      <created>1573195323005</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573195323005</updated>
+      <workItem from="1573195326498" duration="11265000" />
+      <workItem from="1573219309219" duration="5561000" />
+      <workItem from="1573254213253" duration="478000" />
+      <workItem from="1573256140926" duration="11726000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="29030000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="740" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49871466" visible="true" weight="0.26171243" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5012854" side_tool="true" weight="0.24959612" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39969134" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="R Packages" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/util/CommonUtils.py</url>
+          <line>136</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>movie1['_id']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>movie1</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>recommendations</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(list)(db_utils6.find(dic3).sort([('euclidean', -1)]))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sort_movies</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>recommendations[len(recommendations) - 1]['euclidean']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>recommendations[len(recommendations) - 1]['euclidean'] == sort_movies[len(sort_movies) - 1]['euclidean']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>recommendations[len(recommendations) - 1] == sort_movies[len(sort_movies) - 1]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>recommendations[len(recommendations) - 1] = sort_movies[len(sort_movies) - 1]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file:///opt/anaconda3/envs/Recommender/lib/python3.6/tokenize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6780">
+          <caret line="460" column="13" selection-start-line="460" selection-start-column="13" selection-end-line="460" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/anaconda3/envs/Recommender/lib/python3.6/site-packages/pymongo/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7710">
+          <caret line="534" selection-start-line="534" selection-end-line="534" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/anaconda3/envs/Recommender/lib/python3.6/site-packages/pymongo/cursor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8760">
+          <caret line="607" selection-start-line="607" selection-end-line="607" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/anaconda3/envs/Recommender/lib/python3.6/site-packages/pymongo/pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4230">
+          <caret line="289" selection-start-line="289" selection-end-line="289" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/anaconda3/envs/Recommender/lib/python3.6/site-packages/pymongo/bulk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/anaconda3/envs/Recommender/lib/python3.6/site-packages/pymongo/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/anaconda3/envs/Recommender/lib/python3.6/site-packages/pymongo/collection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8370">
+          <caret line="596" selection-start-line="596" selection-end-line="596" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/MongoDbUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/CommonUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

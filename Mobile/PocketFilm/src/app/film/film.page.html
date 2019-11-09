@@ -19,24 +19,52 @@
 
   <ion-segment scrollable [(ngModel)]="type">
     <ion-segment-button value="0" (click)="changeMovieType(0)">
-      电影
+      全部
     </ion-segment-button>
-    <ion-segment-button value="1" (click)="changeMovieType(1)">
-      电视剧
+    <ion-segment-button value="1" (click)="changeMovieType(1)" *ngIf="recommendations.length != 0">
+      推荐
     </ion-segment-button>
     <ion-segment-button value="2" (click)="changeMovieType(2)">
-      综艺
+      电影
     </ion-segment-button>
     <ion-segment-button value="3" (click)="changeMovieType(3)">
-      动漫
+      电视剧
     </ion-segment-button>
     <ion-segment-button value="4" (click)="changeMovieType(4)">
+      综艺
+    </ion-segment-button>
+    <ion-segment-button value="5" (click)="changeMovieType(5)">
+      动漫
+    </ion-segment-button>
+    <ion-segment-button value="6" (click)="changeMovieType(6)">
       少儿
     </ion-segment-button>
   </ion-segment>
 
-  <!-- 推荐数据 -->
-  <section class="main">
+  <!-- 全部、推荐 -->
+  <section class="main" *ngIf="type <= 1">
+    <div id="page">
+    </div>
+    <div class="mod_a globalPadding">
+      <div class="tb_a">
+        <ul class="picTxt picTxtA clearfix" id="data_list">
+          <li *ngFor="let latestTop10Movie of latestTop10Movies" (click)="goMovieDetail((latestTop10Movie._id))">
+            <div class="con">
+              <a title="{{latestTop10Movie.name}}"><img data-src="{{latestTop10Movie.src}}"
+                  alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                  onerror="onerror=null;src='https://m.88ys.cc/images/load.gif'"
+                  style="width: 158px; height: 159px; display: block;"><span class="sNum"><em
+                    class="emScore">{{latestTop10Movie.update_status}}</em></span> <span
+                  class="sTit">{{latestTop10Movie.name}}</span> </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 电影、电视剧、综艺、动漫 -->
+  <section class="main" *ngIf="type > 1">
     <div id="page">
     </div>
 
@@ -48,9 +76,9 @@
         <ul class="picTxt picTxtA clearfix" id="data_list">
           <li *ngFor="let latestTop10Movie of hottestTop10Movies" (click)="goMovieDetail((latestTop10Movie._id))">
             <div class="con">
-              <a title="{{latestTop10Movie.name}}"><img
-                  data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
-                  onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
+              <a title="{{latestTop10Movie.name}}"><img data-src="{{latestTop10Movie.src}}"
+                  alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                  onerror="onerror=null;src='https://m.88ys.cc/images/load.gif'"
                   style="width: 158px; height: 159px; display: block;"><span class="sNum"><em
                     class="emScore">{{latestTop10Movie.update_status}}</em></span> <span
                   class="sTit">{{latestTop10Movie.name}}</span> </a>
@@ -68,9 +96,9 @@
         <ul class="picTxt picTxtA clearfix" id="data_list">
           <li *ngFor="let latestTop10Movie of latestTop10Movies" (click)="goMovieDetail((latestTop10Movie._id))">
             <div class="con">
-              <a title="{{latestTop10Movie.name}}"><img
-                  data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
-                  onerror="onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'"
+              <a title="{{latestTop10Movie.name}}"><img data-src="{{latestTop10Movie.src}}"
+                  alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                  onerror="onerror=null;src='https://m.88ys.cc/images/load.gif'"
                   style="width: 158px; height: 159px; display: block;"><span class="sNum"><em
                     class="emScore">{{latestTop10Movie.update_status}}</em></span> <span
                   class="sTit">{{latestTop10Movie.name}}</span> </a>
@@ -80,5 +108,12 @@
       </div>
     </div>
   </section>
+
+  <!-- 上拉加载更多 -->
+  <ion-infinite-scroll (ionInfinite)="doLoadMore($event)" *ngIf="type == 0">
+      <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="正在加载">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+    <!-- 上拉加载更多 -->
 
 </ion-content>

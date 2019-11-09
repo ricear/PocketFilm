@@ -66,14 +66,19 @@ class ZuidaSpiderPipeline(object):
                 if (len(list(filter(lambda type: '预告' not in type['name'], source['types']))) > max):
                     max = len(source['types'])
                 movies1_source_names_temp.append(source['name'])
-            item_source = item['sources'][0]
-            sources_tmp.append(item_source)
+            item_source_names = []
+            item_source_types_max = 0
+            for item_source in item['sources']:
+                sources_tmp.append(item_source)
+                item_source_names.append(item_source['name'])
+                if (len(item_source['types']) > item_source_types_max):
+                    item_source_types_max = len(item_source['types'])
             for source in movies1_temp['sources']:
-                if (source['name'] == item_source['name']):
+                if (source['name'] in item_source_names):
                     continue
                 sources_tmp.append(source)
             # 修改影视最新更新状态
-            if (len(item_source['types']) > max):
+            if (item_source_types_max > max):
                 update_status = item['update_status']
             else:
                 update_status = movies1_temp['update_status']

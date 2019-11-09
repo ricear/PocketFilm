@@ -30,6 +30,8 @@ export class MovieDetailPage implements OnInit {
   public type_index = 0;
   // 浏览类型
   public browseType = 'movie';
+  // 影视推荐数据
+  public recommendations = []
 
   constructor(
     public activeRoute: ActivatedRoute,
@@ -65,6 +67,19 @@ export class MovieDetailPage implements OnInit {
     this.tools.oooTab2(id)
   }
 
+  /**
+   * 跳转到影视详情页
+   * @param _id 影视_id
+   */
+
+  goMovieDetail(_id) {
+    //  跳转到影视详情页
+    this.router.navigate(['/movie-detail'], {
+      queryParams: {
+        _id: _id
+      }
+    })
+  }
 
   /**
    * 修改影视类型
@@ -93,12 +108,24 @@ export class MovieDetailPage implements OnInit {
    */
 
   getMovie() {
+    // 获取影视详情
     this.tools.getMovieByIdApi(this._id).then((data: any) => {
       this.movie = data.data
       if (this.url == null) {
         this.source_count = this.movie.sources.length
         this.url = this.movie.sources[0].types[0].url
       }
+      // 获取影视推荐信息
+      this.tools.getRecommendationsApi(this.movie._id, 'movie').then((data: any) => {
+        var top10Movies = []
+        var latestTop10MoviesTemp = []
+        latestTop10MoviesTemp = data.data
+        latestTop10MoviesTemp.forEach((data: any) => {
+          var movie = data.movie[0]
+          top10Movies.push(movie)
+        })
+        this.recommendations = top10Movies
+      })
     })
   }
 

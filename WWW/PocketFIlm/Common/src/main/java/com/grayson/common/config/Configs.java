@@ -13,4 +13,15 @@ public class Configs {
     public static String API = API_HOST + "/api";
     public static String LOGIN_API = WWW_HOST + "/login";
 
+    //  解析接口
+    //  用于影视、小品
+    //  用于解析 m3u8 格式
+    public static String BLJIEX = "https://vip.bljiex.com/?v=";
+    //  用于解析以 aHR0 开头的格式
+    public static String JX40 = "https://jx40.net/url=";
+    //  用于电视
+    public static String FO97 = "https://play.fo97.cn/?url=";
+    //  用于戏曲
+    public static String LHH = "http://api.lhh.la/vip/?url=";
+
 }

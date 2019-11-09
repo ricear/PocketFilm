@@ -44,8 +44,16 @@ public class MovieController {
         map.addAttribute("records", records);
 
         Integer pageSize = 18;
+
         //  推荐
-        String recommendationsUrl = Configs.API + "/movie/get/all?sort_type=2&page_size=" + pageSize;
+        String recommendationsUrl = Configs.API + "/recommendations/get/user?user_name=" + username + "&browse_type=movie&page_size=" + pageSize;
+        //  热门推荐
+        String hottestMoviesUrl = Configs.API + "/movie/get/all?sort_type=2&page_size=" + pageSize;
+        JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
+        JSONObject hottestMoviesObject = CommonUtils.doGet(hottestMoviesUrl);
+        map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
+        map.addAttribute("hottestMovies", hottestMoviesObject.getJSONArray("data"));
+
         //  电影
         String movies0Url = Configs.API + "/movie/get/all?type=0&page_size=" + pageSize;
         //  电视剧
@@ -60,7 +68,6 @@ public class MovieController {
         String todayMoviesUrl = Configs.API + "/get/today?type=movie";
         //  今日更新数据量
         String todayCountUrl = Configs.API + "/count/get/today?type=movie";
-        JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
         JSONObject movies0Object = CommonUtils.doGet(movies0Url);
         JSONObject movies1Object = CommonUtils.doGet(movies1Url);
         JSONObject movies2Object = CommonUtils.doGet(movies2Url);
@@ -68,7 +75,6 @@ public class MovieController {
         JSONObject movies4Object = CommonUtils.doGet(movies4Url);
         JSONObject todayMoviesObject = CommonUtils.doGet(todayMoviesUrl);
         JSONObject todayCountObject = CommonUtils.doGet(todayCountUrl);
-        map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
         map.addAttribute("movies0", movies0Object.getJSONArray("data"));
         map.addAttribute("movies1", movies1Object.getJSONArray("data"));
         map.addAttribute("movies2", movies2Object.getJSONArray("data"));
@@ -103,13 +109,25 @@ public class MovieController {
         map.addAttribute("username", username);
         map.addAttribute("records", records);
 
+        //  影视详情
         String url = Configs.API + "/movie/get/_id?_id=" + _id;
+
+        //  推荐
+        Integer pageSize = 12;
+        String recommendationsUrl = Configs.API + "/recommendations/get?movie_id=" + _id + "&type=movie&page_size=" + pageSize;
+        JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
+        map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
+
         JSONObject jsonObject = CommonUtils.doGet(url);
         JSONObject movie = jsonObject.getJSONObject("data");
         map.addAttribute("movie", movie);
         map.put("source_index", sourceIndex);
         map.put("type_index", typeIndex);
-        map.put("source", jsonObject.getJSONObject("data").getJSONArray("sources").getJSONObject(sourceIndex));
+        JSONObject sourceObject = jsonObject.getJSONObject("data").getJSONArray("sources").getJSONObject(sourceIndex);
+        map.put("source", sourceObject);
+        String currentUrl = sourceObject.getJSONArray("types").getJSONObject(typeIndex).getString("url");
+        String playUrl = CommonUtils.getParseUrl("movie", currentUrl);
+        map.put("play_url", playUrl);
         map.put("title", "《" + jsonObject.getJSONObject("data").get("name") + "》免费在线观看-策驰影院免费在线观看高清电影" + jsonObject.getJSONObject("data").get("name"));
 
         //  记录浏览历史

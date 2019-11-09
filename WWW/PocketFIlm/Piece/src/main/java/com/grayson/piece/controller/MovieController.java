@@ -39,9 +39,16 @@ public class MovieController {
         map.addAttribute("username", username);
         map.addAttribute("records", records);
 
-        Integer pageSize = 18;
         //  推荐
-        String recommendationsUrl = Configs.API + "/recommendations/get?browse_type=piece&page_size=" + pageSize;
+        Integer pageSize = 18;
+        String recommendationsUrl = Configs.API + "/recommendations/get/user?user_name=" + username + "&browse_type=piece&page_size=" + pageSize;
+        //  热门推荐
+        String hottestMoviesUrl = Configs.API + "/piece/get/all?page_size=" + pageSize;
+        JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
+        JSONObject hottestMoviesObject = CommonUtils.doGet(hottestMoviesUrl);
+        map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
+        map.addAttribute("hottestMovies", hottestMoviesObject.getJSONArray("data"));
+
         //  赵家班
         String movies0Url = Configs.API + "/piece/get/all?type=赵家班&page_size=" + pageSize;
         //  郭德纲
@@ -56,7 +63,6 @@ public class MovieController {
         String todayMoviesUrl = Configs.API + "/get/today?type=piece";
         //  今日更新数据量
         String todayCountUrl = Configs.API + "/count/get/today?type=piece";
-        JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
         JSONObject movies0Object = CommonUtils.doGet(movies0Url);
         JSONObject movies1Object = CommonUtils.doGet(movies1Url);
         JSONObject movies2Object = CommonUtils.doGet(movies2Url);
@@ -93,6 +99,12 @@ public class MovieController {
             username = userInfo.getString("username");
         }
 
+        //  推荐
+        Integer pageSize = 12;
+        String recommendationsUrl = Configs.API + "/recommendations/get?movie_id=" + _id + "&type=piece&page_size=" + pageSize;
+        JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
+        map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
+
         //  获取浏览记录
         JSONArray records = CommonUtils.getRecords(request, "piece");
 
@@ -103,6 +115,9 @@ public class MovieController {
         JSONObject jsonObject = CommonUtils.doGet(url);
         JSONObject movie = jsonObject.getJSONObject("data");
         map.addAttribute("movie", movie);
+        String currentUrl = movie.getString("url");
+        String playUrl = CommonUtils.getParseUrl("piece", currentUrl);
+        map.put("play_url", playUrl);
         map.put("title", movie.get("name") + "免费在线观看-掌上小品免费在线观看最新搞笑小品" + movie.get("name"));
 
         //  记录浏览历史

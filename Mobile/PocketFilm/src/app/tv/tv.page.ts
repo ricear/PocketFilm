@@ -80,8 +80,6 @@ export class TvPage implements OnInit {
    */
 
   getTvs() {
-    // 推荐数据
-    this.getRecommendations().then((data: any) => { this.recommendations = data })
     // 央视台
     this.getTop10Tvs(this.cctvName).then((data: any) => { this.top10CCTVList = data })
     // 卫视台
@@ -94,45 +92,6 @@ export class TvPage implements OnInit {
     this.getTop10Tvs(this.overseasStationName).then((data: any) => { this.top10overseasStationList = data })
     // 轮播台
     this.getTop10Tvs(this.carouselName).then((data: any) => { this.top10CarouselList = data })
-  }
-
-  /**
-   * 获取推荐数据
-   */
-
-  getRecommendations() {
-    var promise = new Promise((resolve, error) => {
-      var recommendations = this.storage.get('tv-recommendations')
-      if (recommendations == null || recommendations.length == 0) {
-        // 本地没有推荐数据的缓存
-      this.tools.getRecommendationsApi(this.browse_type).then((data: any) => {
-        // 截取电影名称的长度
-        var name_length = 5
-        var top10Movies = []
-        var latestTop10MoviesTemp = []
-        var latestTop10MoviesTemp2 = []
-        latestTop10MoviesTemp = data.data
-        latestTop10MoviesTemp.forEach((data: any) => {
-          var movie_name = data.name
-          if (movie_name.length > name_length) {
-            movie_name = movie_name.slice(0, name_length) + "..."
-          }
-          data.name = movie_name
-          latestTop10MoviesTemp2.push(data)
-        })
-        for (var i = 0; i < latestTop10MoviesTemp2.length;) {
-          top10Movies.push(latestTop10MoviesTemp2.splice(i, this.col_size))
-        }
-        // 将推荐数据缓存到本地
-        this.storage.set('tv-recommendations', top10Movies)
-        resolve(top10Movies)
-      })
-    } else {
-      // 本地有推荐数据的缓存
-      resolve(recommendations)
-    }
-    })
-    return promise
   }
 
   /**

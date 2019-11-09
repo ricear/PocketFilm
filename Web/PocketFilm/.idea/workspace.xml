@@ -20,8 +20,11 @@
       <file leaf-file-name="api.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routers/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="1969" column="34" selection-start-line="1969" selection-start-column="34" selection-end-line="1969" selection-end-column="34" />
+            <state relative-caret-position="198">
+              <caret line="1423" column="31" selection-start-line="1423" selection-start-column="31" selection-end-line="1423" selection-end-column="31" />
+              <folding>
+                <element signature="e#52856#56464#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,16 +145,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/count/get</find>
-      <find>release_date:-1, update_time: -1</find>
-      <find>release_date: -1, score:-1</find>
-      <find>release_date: -1, score:-1, update_time: -1</find>
-      <find>sort_type</find>
-      <find>req.query.sort_type</find>
-      <find>key_word == null</find>
-      <find>find</find>
-      <find>count</find>
-      <find>version/a</find>
       <find>client</find>
       <find>get/to</find>
       <find>records</find>
@@ -172,12 +165,18 @@
       <find>count/get</find>
       <find>feed</find>
       <find>feedback/</find>
+      <find>aggre</find>
+      <find>影视推荐数据失败</find>
+      <find>objectId(data['_id'])</find>
+      <find>data[0]['_id']</find>
+      <find>data[0]['id']</find>
+      <find>recommen</find>
+      <find>drama/get/all</find>
+      <find>reco</find>
+      <find>recommendations/get</find>
+      <find>recommendations/get/user</find>
     </findStrings>
     <replaceStrings>
-      <replace>﻿release_date</replace>
-      <replace>release_date</replace>
-      <replace>https://www.parsevideo.com/static</replace>
-      <replace>http://www.icantv.cn/public</replace>
       <replace>386cd39c500d0452ebf5357dc6ccad79</replace>
       <replace>src=&quot;:https://free-ss.site/</replace>
       <replace>src=&quot;https://free-ss.site/</replace>
@@ -204,6 +203,10 @@
       <replace>req.query.sort_type</replace>
       <replace>sort_type</replace>
       <replace>reply</replace>
+      <replace>影视推荐获取数据失败</replace>
+      <replace>data[0]['_id']</replace>
+      <replace>data[0]['id']</replace>
+      <replace>objectId(data[0]['id'])</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -240,7 +243,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="741" />
@@ -406,26 +409,27 @@
       <workItem from="1573091417516" duration="3573000" />
       <workItem from="1573099368360" duration="16973000" />
       <workItem from="1573135307034" duration="793000" />
+      <workItem from="1573270869357" duration="15562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238288000" />
+    <option name="totallyTimeSpent" value="253850000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="741" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="740" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2613185" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32852563" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32428116" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32852563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.328" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3875598" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38853502" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -450,18 +454,26 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="125" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="151" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>type2</expression-string>
+        <expression-string>type</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>typeList[type]</expression-string>
+        <expression-string>data[0].type</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data[0].name</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -471,32 +483,27 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>'2019-10-27 12:46:45'.split(' ')[0].split('-').slice(0, 2).join('-')</expression-string>
+        <expression-string>page_size</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>'2019-10-27 12:46:45'.split(' ')[0].split('-').slice(0, 2)</expression-string>
+        <expression-string>page_size * (page_index - 1)</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>'2019-10-27 12:46:45'.split(' ')[0].split('-').slice(0)</expression-string>
+        <expression-string>req.query.page_size</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>'2019-10-27 12:46:45'.split(' ')[0].split('-')</expression-string>
+        <expression-string>objectId(data[0]['id'])</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>'2019-10-27 12:46:45'.split(' ')[0].split('-').slice(1)</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>'2019-10-27 12:46:45'.split(' ')[0].split('-').slice(2)</expression-string>
+        <expression-string>objectId(objectId(data[0]['id']))</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -829,8 +836,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routers/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="1969" column="34" selection-start-line="1969" selection-start-column="34" selection-end-line="1969" selection-end-column="34" />
+        <state relative-caret-position="198">
+          <caret line="1423" column="31" selection-start-line="1423" selection-start-column="31" selection-end-line="1423" selection-end-column="31" />
+          <folding>
+            <element signature="e#52856#56464#0" />
+          </folding>
         </state>
       </provider>
     </entry>

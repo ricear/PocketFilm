@@ -58,7 +58,7 @@ var DramaPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-title style=\"text-align: center;\">戏曲</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <!-- 搜索 -->\n  <ion-searchbar (click)=\"goSearchDrama()\" placeholder=\"请输入戏曲名称\"></ion-searchbar>\n\n  <!-- 下拉刷新 -->\n<ion-refresher (ionRefresh)=\"doRefresh($event)\">\n   <ion-refresher-content pullingIcon=\"arrow-dropdown\" pullingText=\"松开刷新\" refreshingSpinner=\"circles\"\n     refreshingText=\"正在刷新\">\n   </ion-refresher-content>\n </ion-refresher>\n <!-- 下拉刷新 -->\n\n <!-- 戏曲分类 -->\n <ion-segment [(ngModel)]=\"type\" scrollable>\n    <ion-segment-button  *ngFor=\"let type of typeList;let i = index\" value=\"{{type}}\" (click)=\"changeType(type)\">\n      {{type}}\n    </ion-segment-button>\n  </ion-segment>\n\n <!-- 戏曲数据 -->\n <section class=\"main\">\n  <div id=\"page\">\n  </div>\n  <div class=\"mod_a globalPadding\">\n    <div class=\"tb_a\">\n      <ul class=\"picTxt picTxtA clearfix\" id=\"data_list\">\n        <li *ngFor=\"let latestTop10Movie of dramaList\" (click)=\"goDramaDetail((latestTop10Movie._id))\">\n          <div class=\"con\">\n            <a title=\"{{latestTop10Movie.name}}\"><img\n                data-src=\"{{latestTop10Movie.src}}\" alt=\"{{latestTop10Movie.name}}\" src=\"{{latestTop10Movie.src}}\"\n                onerror=\"onerror=null;src='https://gxtstatic.com/xl/statics/img/nopic.gif'\"\n                style=\"width: 158px; height: 159px; display: block;\"> <span\n                class=\"sTit\">{{latestTop10Movie.name}}</span> </a>\n          </div>\n        </li>\n      </ul>\n    </div>\n  </div>\n</section>\n\n <!-- 上拉加载更多 -->\n <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n  <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n  </ion-infinite-scroll-content>\n</ion-infinite-scroll>\n<!-- 上拉加载更多 -->\n\n</ion-content>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-title style=\"text-align: center;\">戏曲</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <!-- 搜索 -->\n  <ion-searchbar (click)=\"goSearchDrama()\" placeholder=\"请输入戏曲名称\"></ion-searchbar>\n\n  <!-- 下拉刷新 -->\n<ion-refresher (ionRefresh)=\"doRefresh($event)\">\n   <ion-refresher-content pullingIcon=\"arrow-dropdown\" pullingText=\"松开刷新\" refreshingSpinner=\"circles\"\n     refreshingText=\"正在刷新\">\n   </ion-refresher-content>\n </ion-refresher>\n <!-- 下拉刷新 -->\n\n <!-- 戏曲分类 -->\n <ion-segment [(ngModel)]=\"type\" scrollable>\n    <ion-segment-button  *ngFor=\"let type of typeList;let i = index\" value=\"{{type}}\" (click)=\"changeType(type)\">\n      {{type}}\n    </ion-segment-button>\n  </ion-segment>\n\n <!-- 戏曲数据 -->\n <section class=\"main\">\n  <div id=\"page\">\n  </div>\n  <div class=\"mod_a globalPadding\">\n    <div class=\"tb_a\">\n      <ul class=\"picTxt picTxtA clearfix\" id=\"data_list\">\n        <li *ngFor=\"let latestTop10Movie of dramaList\" (click)=\"goDramaDetail((latestTop10Movie._id))\">\n          <div class=\"con\">\n            <a title=\"{{latestTop10Movie.name}}\"><img\n                data-src=\"{{latestTop10Movie.src}}\" alt=\"{{latestTop10Movie.name}}\" src=\"{{latestTop10Movie.src}}\"\n                onerror=\"onerror=null;src='https://m.88ys.cc/images/load.gif'\"\n                style=\"width: 158px; height: 159px; display: block;\"> <span\n                class=\"sTit\">{{latestTop10Movie.name}}</span> </a>\n          </div>\n        </li>\n      </ul>\n    </div>\n  </div>\n</section>\n\n <!-- 上拉加载更多 -->\n <ion-infinite-scroll (ionInfinite)=\"doLoadMore($event)\">\n  <ion-infinite-scroll-content loadingSpinner=\"bubbles\" loadingText=\"正在加载\">\n  </ion-infinite-scroll-content>\n</ion-infinite-scroll>\n<!-- 上拉加载更多 -->\n\n</ion-content>"
 
 /***/ }),
 
@@ -100,7 +100,7 @@ var DramaPage = /** @class */ (function () {
         this.router = router;
         // 戏曲类型
         this.type = '全部';
-        this.typeList = ['全部', '推荐'];
+        this.typeList = ['全部'];
         // 戏曲类型列表
         this.dramaList = [];
         // 推荐数据
@@ -150,16 +150,23 @@ var DramaPage = /** @class */ (function () {
         var typeList = this.storage.get('drama-type');
         if (typeList == null || typeList.length == 0) {
             // 本地缓存数据不存在
-            this.tools.getDramaTypeApi().then(function (data) {
-                if (data.code == 0) {
-                    if (_this.typeList.length == 0 || _this.typeList.length == 2) {
-                        var typeList = data.data;
-                        for (var i = 0; i < typeList.length; i++) {
-                            _this.typeList.push(typeList[i].name);
-                        }
-                        _this.storage.set('drama-type', _this.typeList);
-                    }
+            this.getRecommendations().then(function (data) {
+                _this.dramaList = _this.dramaList.concat(data);
+                if (data.length > 0) {
+                    _this.typeList.push('推荐');
+                    _this.storage.set('drama-' + _this.type, _this.dramaList);
                 }
+                _this.tools.getDramaTypeApi().then(function (data) {
+                    if (data.code == 0) {
+                        if (_this.typeList.length == 0 || _this.typeList.length == 1 || _this.typeList.length == 2) {
+                            var typeList = data.data;
+                            for (var i = 0; i < typeList.length; i++) {
+                                _this.typeList.push(typeList[i].name);
+                            }
+                            _this.storage.set('drama-type', _this.typeList);
+                        }
+                    }
+                });
             });
         }
         else {
@@ -198,7 +205,7 @@ var DramaPage = /** @class */ (function () {
     DramaPage.prototype.getRecommendations = function () {
         var _this = this;
         var promise = new Promise(function (resolve, error) {
-            _this.tools.getRecommendationsApi(_this.browse_type, '全部', _this.limit, _this.pageIndex, _this.pageSize).then(function (data) {
+            _this.tools.getRecommendationsByUserApi(_this.browse_type, '全部', _this.limit, _this.pageIndex, _this.pageSize).then(function (data) {
                 var top10Movies = data.data;
                 resolve(top10Movies);
             });

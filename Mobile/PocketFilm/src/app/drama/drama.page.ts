@@ -13,7 +13,7 @@ export class DramaPage implements OnInit {
 
   // 戏曲类型
   public type = '全部'
-  public typeList = ['全部', '推荐']
+  public typeList = ['全部']
 
   // 戏曲类型列表
   public dramaList = []
@@ -76,16 +76,23 @@ export class DramaPage implements OnInit {
     var typeList = this.storage.get('drama-type')
     if (typeList == null || typeList.length == 0) {
       // 本地缓存数据不存在
-      this.tools.getDramaTypeApi().then((data: any) => {
-        if (data.code == 0) {
-          if (this.typeList.length == 0 || this.typeList.length == 2) {
-            var typeList = data.data
-            for (var i = 0; i < typeList.length; i++) {
-              this.typeList.push(typeList[i].name)
-            }
-            this.storage.set('drama-type', this.typeList)
-          }
+      this.getRecommendations().then((data: any) => {
+        this.dramaList = this.dramaList.concat(data)
+        if (data.length > 0) {
+          this.typeList.push('推荐')
+          this.storage.set('drama-' + this.type, this.dramaList)
         }
+        this.tools.getDramaTypeApi().then((data: any) => {
+          if (data.code == 0) {
+            if (this.typeList.length == 0 || this.typeList.length == 1 || this.typeList.length == 2) {
+              var typeList = data.data
+              for (var i = 0; i < typeList.length; i++) {
+                this.typeList.push(typeList[i].name)
+              }
+              this.storage.set('drama-type', this.typeList)
+            }
+          }
+        })
       })
     } else {
       // 本地缓存数据存在
@@ -99,23 +106,23 @@ export class DramaPage implements OnInit {
 
   getDramas() {
     var movieList = this.storage.get('drama-' + this.type)
-    if (movieList == null || movieList.length == 0  || this.pageIndex > (movieList.length / this.pageSize)) {
-    if (this.type == '推荐') {
-      this.getRecommendations().then((data: any) => { 
-        this.dramaList = this.dramaList.concat(data) 
-        this.storage.set('drama-' + this.type, this.dramaList)
-      })
+    if (movieList == null || movieList.length == 0 || this.pageIndex > (movieList.length / this.pageSize)) {
+      if (this.type == '推荐') {
+        this.getRecommendations().then((data: any) => {
+          this.dramaList = this.dramaList.concat(data)
+          this.storage.set('drama-' + this.type, this.dramaList)
+        })
+      } else {
+        this.getTop10Dramas(this.type).then((data2: any) => {
+          this.dramaList = this.dramaList.concat(data2)
+          this.storage.set('drama-' + this.type, this.dramaList)
+        })
+      }
     } else {
-      this.getTop10Dramas(this.type).then((data2: any) => {
-        this.dramaList = this.dramaList.concat(data2)
-        this.storage.set('drama-' + this.type, this.dramaList)
-      })
+      // 本地有缓存数据
+      this.dramaList = movieList
     }
-  } else {
-    // 本地有缓存数据
-    this.dramaList = movieList
-  }
-    
+
   }
 
   /**
@@ -124,7 +131,7 @@ export class DramaPage implements OnInit {
 
   getRecommendations() {
     var promise = new Promise((resolve, error) => {
-      this.tools.getRecommendationsApi(this.browse_type, '全部', this.limit, this.pageIndex, this.pageSize).then((data: any) => {
+      this.tools.getRecommendationsByUserApi(this.browse_type, '全部', this.limit, this.pageIndex, this.pageSize).then((data: any) => {
         var top10Movies = data.data
         resolve(top10Movies)
       })
@@ -157,7 +164,7 @@ export class DramaPage implements OnInit {
    */
 
   goDramaDetail(_id) {
-      //  跳转到影视详情页
+    //  跳转到影视详情页
     this.router.navigate(['/drama-detail'], {
       queryParams: {
         _id: _id

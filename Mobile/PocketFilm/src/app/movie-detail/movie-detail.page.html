@@ -25,6 +25,7 @@
         <li>类型：{{movie.type2}}</li>
         <li>地区：{{movie.region}}</li>
         <li>上映日期：{{movie.release_date}}</li>
+        <li>更新时间：{{movie.acquisition_time}}</li>
       </div>
     </div>
 
@@ -35,36 +36,59 @@
         <li><span class="" (click)="oooTab2(1)">简介</span></li>
       </ul>
     </div>
-    <div class="tabConList globalPadding">
+    <div class="tabConList globalPadding" style="display: inline-block;">
       <div class="tabCon" style="display: block;">
         <dl class="tab2">
           <!-- 资源名称列表 -->
           <dt class="tabt3">
             <div *ngFor="let source of movie.sources,let i = index">
-                <span id="{{source.name}}" class="current" (click)="oooTab(source.name, i)" *ngIf="i == source_index">{{source.name}}</span>
-                <span id="{{source.name}}" (click)="oooTab(source.name, i)" *ngIf="i != source_index">{{source.name}}</span>
+              <span id="{{source.name}}" class="current" (click)="oooTab(source.name, i)"
+                *ngIf="i == source_index">{{source.name}}</span>
+              <span id="{{source.name}}" (click)="oooTab(source.name, i)"
+                *ngIf="i != source_index">{{source.name}}</span>
             </div>
           </dt>
           <!-- 资源播放地址列表 -->
           <div *ngFor="let source of movie.sources,let i = index">
-              <dd class="{{source.name}}" style="display: block;"  *ngIf="i == source_index">
-                  <ul class="ulNumList clearfix list_1">
-                    <li (click)="changeMovieType(_id, i, j)" *ngFor="let type of source.types,let j = index"> <a title="{{type.name}}">{{type.name}}</a></li>
-                  </ul>
-                </dd>
-                <dd class="{{source.name}}" style="display: none;"  *ngIf="i != source_index">
-                    <ul class="ulNumList clearfix list_1">
-                      <li (click)="changeMovieType(_id, i, j)" *ngFor="let type of source.types,let j = index"> <a title="{{type.name}}">{{type.name}}</a></li>
-                    </ul>
-                  </dd>
+            <dd class="{{source.name}}" style="display: block;" *ngIf="i == source_index">
+              <ul class="ulNumList clearfix list_1">
+                <li (click)="changeMovieType(_id, i, j)" *ngFor="let type of source.types,let j = index"> <a
+                    title="{{type.name}}">{{type.name}}</a></li>
+              </ul>
+            </dd>
+            <dd class="{{source.name}}" style="display: none;" *ngIf="i != source_index">
+              <ul class="ulNumList clearfix list_1">
+                <li (click)="changeMovieType(_id, i, j)" *ngFor="let type of source.types,let j = index"> <a
+                    title="{{type.name}}">{{type.name}}</a></li>
+              </ul>
+            </dd>
           </div>
         </dl>
       </div>
       <div class="tabCon" style="display: none;">
-        <p class="movieintro" id="movie_info_intro_s"><span
-            style="color:#333;">剧情简介：</span>{{movie.description}}</p>
+        <p class="movieintro" id="movie_info_intro_s"><span style="color:#333;">剧情简介：</span>{{movie.description}}</p>
       </div>
     </div>
+  </section>
 
+  <!-- 相关推荐 -->
+  <section class="main">
+    <div class="mod_a globalPadding" *ngIf="recommendations.length != 0">
+        <div class="th_a"><span class="sMark">相关推荐</span></div>
+        <div class="tb_a">
+          <ul class="picTxt picTxtA clearfix" id="data_list">
+            <li *ngFor="let latestTop10Movie of recommendations" (click)="goMovieDetail((latestTop10Movie._id))">
+              <div class="con">
+                <a title="{{latestTop10Movie.name}}"><img data-src="{{latestTop10Movie.src}}"
+                    alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                    onerror="onerror=null;src='https://m.88ys.cc/images/load.gif'"
+                    style="width: 158px; height: 159px; display: block;"><span class="sNum"><em
+                      class="emScore">{{latestTop10Movie.update_status}}</em></span> <span
+                    class="sTit">{{latestTop10Movie.name}}</span> </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
   </section>
 </ion-content>

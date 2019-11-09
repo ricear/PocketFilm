@@ -190,10 +190,9 @@
                                 scrolling="no" width="100%" height="550"
                                 style="position: absolute; z-index: 99998; display: none;"></iframe>
                         <iframe width="100%" height="550"
-                                th:src="'http://api.lhh.la/vip/?url=' + ${type.url}"
+                                th:src="${play_url}"
                                 frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"
-                                allowfullscreen="true" th:each="type, typeStat : ${source.types}"
-                                th:if="${typeStat.index eq type_index}"></iframe>
+                                allowfullscreen="true"></iframe>
                     </td>
                     <td id="playright" valign="top">
                         <div class="rightlist" id="rightlist" style="height:550px;">
@@ -288,6 +287,39 @@
         </dl>
     </div>
     <p></p>
+    <div class="index-area clearfix" th:if="${#lists.isEmpty(recommendations) == false}">
+        e
+        <ul>
+
+            <div class="qcontainer" th:each="recommendation : ${recommendations}">
+                <div class="film" th:each="movie : ${recommendation.movie}">
+                    <div class="face front">
+                        <li class="p2 MPli1"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0&type_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                            <span class="index5njcom titletj5nj">
+						<i th:text="${movie.name}"></i>
+					</span>
+                        </a>
+                        </li>
+                    </div>
+                    <div class="face back">
+                        <li class="p2 MPli"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0&type_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
+                            <span class="video-bg"></span>
+                            <span class="lzbz">
+						<p class="name" th:text="${movie.name}"></p>
+						<p class="actor" th:text="${movie.type}">
+						</p>
+						</span>
+                            <p class="other">
+                                <i></i>
+                            </p>
+                        </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+        </ul>
+    </div>
 </div>
 <script src="http://www.5nj.com/js/cnzz4.js"></script>
 <script type='text/javascript' charset='utf-8' src='https://p.zxhrq.cn/vtdd/swh960sav773huj.js'></script>

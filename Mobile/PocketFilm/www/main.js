@@ -1348,7 +1348,7 @@ var ConfigService = /** @class */ (function () {
     function ConfigService() {
         // 公用地址
         // public sourceUrl = 'https://pocket.mynatapp.cc';
-        this.sourceUrl = 'http://103.45.178.220';
+        this.sourceUrl = 'http://103.45.178.220:9000';
         // public sourceUrl = 'http://api.grayson.top';
         // public请求地址
         this.publicUrl = this.sourceUrl + '/public';
@@ -1773,22 +1773,45 @@ var ToolsService = /** @class */ (function () {
         return safeUrl;
     };
     /**
-     * 获取推荐数据
+     * 获取推荐数据(影视)
      * @param browse_type   浏览类型
      * @param type          资源类型
      * @param limit         限制数量
      * @param page_index    当前页码
      * @param page_size     每页大小
      */
-    ToolsService.prototype.getRecommendationsApi = function (browse_type, type, limit, page_index, page_size) {
+    ToolsService.prototype.getRecommendationsApi = function (movie_id, type, page_size) {
+        var _this = this;
+        if (page_size === void 0) { page_size = 12; }
+        var promise = new Promise(function (resolve, reject) {
+            var api = '/recommendations/get?movie_id=' + movie_id + '&type=' + type + '&page_size=' + page_size;
+            _this.httpService.doGet(api, function (data) {
+                resolve(data);
+            });
+        });
+        return promise;
+    };
+    /**
+     * 获取推荐数据(用户)
+     * @param browse_type   浏览类型
+     * @param type          资源类型
+     * @param limit         限制数量
+     * @param page_index    当前页码
+     * @param page_size     每页大小
+     */
+    ToolsService.prototype.getRecommendationsByUserApi = function (browse_type, type, limit, page_index, page_size) {
         var _this = this;
         if (type === void 0) { type = '全部'; }
         if (limit === void 0) { limit = 8; }
         if (page_index === void 0) { page_index = 1; }
-        if (page_size === void 0) { page_size = 20; }
+        if (page_size === void 0) { page_size = 18; }
+        if (browse_type == 'tv') {
+            // 电视时
+            page_size = 9;
+        }
         var user_name = this.storage.get('user_name');
         var promise = new Promise(function (resolve, reject) {
-            var api = '/recommendations/get?user_name=' + user_name + '&browse_type=' + browse_type + '&type=' + type + '&limit=' + limit + '&page_index=' + page_index + '&page_size=' + page_size;
+            var api = '/recommendations/get/user?user_name=' + user_name + '&browse_type=' + browse_type + '&type=' + type + '&limit=' + limit + '&page_index=' + page_index + '&page_size=' + page_size;
             _this.httpService.doGet(api, function (data) {
                 resolve(data);
             });

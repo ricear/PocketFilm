@@ -42,7 +42,7 @@ public class TVController {
 
         Integer pageSize = 18;
         //  推荐
-        String recommendationsUrl = Configs.API + "/recommendations/get?browse_type=tv&page_size=" + pageSize;
+        String recommendationsUrl = Configs.API + "/recommendations/get/user?user_name="+username+"&browse_type=tv&page_size=" + pageSize;
         //  央视台
         String movies0Url = Configs.API + "/tv/get/all?type=央视台&page_size=" + pageSize;
         //  卫视台
@@ -94,7 +94,11 @@ public class TVController {
         JSONObject movie = jsonObject.getJSONObject("data");
         map.addAttribute("movie", movie);
         map.put("source_index", sourceIndex);
-        map.put("source", movie.getJSONArray("sources").getJSONObject(sourceIndex));
+        JSONObject sourceObject = jsonObject.getJSONObject("data").getJSONArray("sources").getJSONObject(sourceIndex);
+        map.put("source", sourceObject);
+        String currentUrl = sourceObject.getString("url");
+        String playUrl = CommonUtils.getParseUrl("tv", currentUrl);
+        map.put("play_url", playUrl);
         map.put("title", "《" + movie.get("name") + "》免费在线观看-掌上电视免费在线观看高清电视直播" + movie.get("name"));
 
         //  记录浏览历史

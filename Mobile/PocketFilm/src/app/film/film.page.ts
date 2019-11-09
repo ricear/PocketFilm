@@ -22,7 +22,7 @@ export class FilmPage implements OnInit {
   // 影视类型
   public type = 0
   // 影视类型名称列表
-  public typeNameList = ['电影', '电视剧', '综艺', '动漫', '少儿'];
+  public typeNameList = ['全部', '推荐', '电影', '电视剧', '综艺', '动漫', '少儿'];
   // 每行电影的数量
   public col_size = 4
   public source_index = 0;
@@ -43,7 +43,7 @@ export class FilmPage implements OnInit {
     public storage: StorageService,
     public tools: ToolsService,
     public router: Router) {
-      // 清空缓存
+    // 清空缓存
     this.clearCache()
     // 获取影视列表
     this.getMovies()
@@ -59,9 +59,26 @@ export class FilmPage implements OnInit {
    */
 
   getMovies() {
-    this.getRecommendations().then((data: any) => { this.recommendations = data })
-    this.getTop10Movies(this.type, 1).then((data: any) => { this.latestTop10Movies = data })
-    this.getTop10Movies(this.type, 2).then((data: any) => { this.hottestTop10Movies = data })
+    // 获取推荐数据
+    this.getRecommendations().then((data: any) => {
+      this.recommendations = data
+      if (this.type == 0) {
+        // 全部
+        this.getTop10Movies('全部', 0).then((data: any) => {
+          this.latestTop10Movies = this.latestTop10Movies.concat(data)
+        })
+      } else if (this.type == 1) {
+        // 推荐
+        this.latestTop10Movies = this.recommendations
+      } else {
+        this.getTop10Movies(this.type - 2, 2).then((data: any) => {
+          this.hottestTop10Movies = data
+        })
+        this.getTop10Movies(this.type - 2, 0).then((data: any) => {
+          this.latestTop10Movies = data
+        })
+      }
+    })
   }
 
   /**
@@ -70,29 +87,25 @@ export class FilmPage implements OnInit {
 
   getRecommendations() {
     var promise = new Promise((resolve, error) => {
-      var recommendations = this.storage.get('movie-' + this.type + '-recommendations')
+      var recommendations = this.storage.get('movie-recommendations')
       if (recommendations == null || recommendations.length == 0) {
         // 本地没有推荐数据的缓存
-        this.tools.getRecommendationsApi(this.browse_type, this.typeNameList[this.type]).then((data: any) => {
-          // 截取电影名称的长度
-          var name_length = 5
+        this.tools.getRecommendationsByUserApi(this.browse_type, this.typeNameList[this.type]).then((data: any) => {
           var top10Movies = []
           var latestTop10MoviesTemp = []
-          var latestTop10MoviesTemp2 = []
           latestTop10MoviesTemp = data.data
-          latestTop10MoviesTemp.forEach((data: any) => {
-            var movie_name = data.name
-            if (movie_name.length > name_length) {
-              movie_name = movie_name.slice(0, name_length) + "..."
-            }
-            data.name = movie_name
-            latestTop10MoviesTemp2.push(data)
-          })
-          for (var i = 0; i < latestTop10MoviesTemp2.length;) {
-            top10Movies.push(latestTop10MoviesTemp2.splice(i, this.col_size))
+          if (latestTop10MoviesTemp.length > 0 && latestTop10MoviesTemp[0].euclidean == null) {
+            // 用户没有登陆时获取到的推荐数据
+            top10Movies = latestTop10MoviesTemp
+          } else {
+            // 用户没有登陆后获取到的推荐数据
+            latestTop10MoviesTemp.forEach((data: any) => {
+              var movie = data.movie[0]
+              top10Movies.push(movie)
+            })
           }
           // 将推荐数据缓存到本地
-          this.storage.set('movie-' + this.type + '-recommendations', top10Movies)
+          this.storage.set('movie-recommendations', top10Movies)
           resolve(top10Movies)
         })
       } else {
@@ -110,13 +123,19 @@ export class FilmPage implements OnInit {
 
   getTop10Movies(type, sortType): any {
     var promise = new Promise((resolve, reject) => {
-      var movies = this.storage.get('movie-' + type + '-' + sortType)
-      if (movies == null || movies.length == 0) {
+      var storageName = ''
+      if (type == '全部') {
+        storageName = 'movie-all'
+      } else {
+        storageName = 'movie-' + type + '-' + sortType
+      }
+      var movies = this.storage.get(storageName)
+      if (movies == null || movies.length == 0 || this.pageIndex > (movies.length / this.pageSize)) {
         // 本地没有相应的缓存
         this.tools.getMovieListApi(type, this.selectTypeList, this.pageIndex, this.pageSize, sortType, this.keyWord).then((data: any) => {
           if (data.code == 0) {
             var top10Movies = data.data
-            this.storage.set('movie-' + type + '-' + sortType, top10Movies)
+            this.storage.set(storageName, top10Movies)
             resolve(top10Movies)
           }
         })
@@ -134,7 +153,7 @@ export class FilmPage implements OnInit {
    */
 
   goMovieDetail(_id) {
-      //  跳转到影视详情页
+    //  跳转到影视详情页
     this.router.navigate(['/movie-detail'], {
       queryParams: {
         _id: _id
@@ -162,7 +181,7 @@ export class FilmPage implements OnInit {
   goMoreMovie(sortType) {
     this.router.navigate(['/more-movie'], {
       queryParams: {
-        type: this.type,
+        type: this.type - 2,
         sortType: sortType
       }
     })
@@ -199,6 +218,22 @@ export class FilmPage implements OnInit {
   }
 
   /**
+   * 上拉加载更多
+   * @param event 事件对象
+   */
+
+  doLoadMore(event) {
+    // 将当前页码加1
+    this.pageIndex = this.pageIndex + 1
+    // 获取影视列表
+    this.getMovies()
+    if (event) {
+      //告诉ionic 刷新数据完成
+      event.target.complete();
+    }
+  }
+
+  /**
    * 改变影视类型
    * @param i 一级分类序号
    * @param j 二级分类序号
@@ -222,7 +257,11 @@ export class FilmPage implements OnInit {
 
   clearCache() {
     // 清空对应的缓存数据
-    this.storage.set('movie-' + this.type + '-recommendations', [])
+    this.storage.set('movie-all', [])
+    if (this.type == 0 || this.type == 1) {
+      // 当在全部、推荐页面刷新时更新推荐数据，其他页面刷新时不更新推荐数据
+      this.storage.set('movie-recommendations', [])
+    }
     this.storage.set('movie-' + this.type + '-1', [])
     this.storage.set('movie-' + this.type + '-2', [])
   }

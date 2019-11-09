@@ -14,7 +14,7 @@ export class PiecePage implements OnInit {
   // 小品类型
   public type = '全部'
   public type2 = '全部'
-  public typeList = ['全部', '推荐']
+  public typeList = ['全部']
   public type2List = []
   public type2Map = new Map()
 
@@ -75,16 +75,23 @@ export class PiecePage implements OnInit {
     var typeData = this.storage.get('piece-type-data')
     if (typeList == null || typeList.length == 0) {
       // 本地缓存数据不存在
-      this.tools.getPieceTypeApi().then((data: any) => {
-        if (data.code == 0) {
-          var typeList = data.data
-          for (var i = 0; i < typeList.length; i++) {
-            this.typeList.push(typeList[i].name)
-            this.type2Map.set(typeList[i].name, typeList[i].types)
-          }
-          this.storage.set('piece-type-data', typeList)
-          this.storage.set('piece-type-list', this.typeList)
+      this.getRecommendations().then((data: any) => {
+        this.pieceList = this.pieceList.concat(data)
+        if (data.length > 0) {
+          this.typeList.push('推荐')
+          this.storage.set('piece-' + this.type + '-' + this.type2, this.pieceList)
         }
+        this.tools.getPieceTypeApi().then((data: any) => {
+          if (data.code == 0) {
+            var typeList = data.data
+            for (var i = 0; i < typeList.length; i++) {
+              this.typeList.push(typeList[i].name)
+              this.type2Map.set(typeList[i].name, typeList[i].types)
+            }
+            this.storage.set('piece-type-data', typeList)
+            this.storage.set('piece-type-list', this.typeList)
+          }
+        })
       })
     } else {
       // 本地缓存数据存在
@@ -126,7 +133,7 @@ export class PiecePage implements OnInit {
 
   getRecommendations() {
     var promise = new Promise((resolve, error) => {
-      this.tools.getRecommendationsApi(this.browse_type, '全部', this.limit, this.pageIndex, this.pageSize).then((data: any) => {
+      this.tools.getRecommendationsByUserApi(this.browse_type, '全部', this.limit, this.pageIndex, this.pageSize).then((data: any) => {
         // 截取电影名称的长度
         var name_length = 5
         var top10Movies = data.data

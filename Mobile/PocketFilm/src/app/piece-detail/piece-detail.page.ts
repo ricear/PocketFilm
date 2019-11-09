@@ -25,6 +25,8 @@ export class PieceDetailPage implements OnInit {
   public type_index = 0;
   // 浏览类型
   public browseType = 'piece';
+  // 影视推荐数据
+  public recommendations = []
 
   constructor(
     public storage: StorageService,
@@ -89,6 +91,17 @@ export class PieceDetailPage implements OnInit {
         this.source_count = this.tv.sources.length
         this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.config.piece + this.url)
       }
+      // 获取影视推荐信息
+      this.tools.getRecommendationsApi(this.tv._id, 'piece').then((data: any) => {
+        var top10Movies = []
+        var latestTop10MoviesTemp = []
+        latestTop10MoviesTemp = data.data
+        latestTop10MoviesTemp.forEach((data: any) => {
+          var movie = data.movie[0]
+          top10Movies.push(movie)
+        })
+        this.recommendations = top10Movies
+      })
     })
   }
 

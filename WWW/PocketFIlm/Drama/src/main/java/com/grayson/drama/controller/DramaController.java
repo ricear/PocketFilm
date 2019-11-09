@@ -39,10 +39,16 @@ public class DramaController {
         map.addAttribute("username", username);
         map.addAttribute("records", records);
 
-        Integer pageSize = 18;
         //  推荐
-        String recommendationsUrl = Configs.API + "/recommendations/get?browse_type=drama&page_size=" + pageSize;
+        Integer pageSize = 18;
+        String recommendationsUrl = Configs.API + "/recommendations/get/user?user_name=" + username + "&browse_type=drama&page_size=" + pageSize;
+        //  热门推荐
+        String hottestMoviesUrl = Configs.API + "/drama/get/all?page_size=" + pageSize;
         JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
+        JSONObject hottestMoviesObject = CommonUtils.doGet(hottestMoviesUrl);
+        map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
+        map.addAttribute("hottestMovies", hottestMoviesObject.getJSONArray("data"));
+
         map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
         map.addAttribute("title", "掌上戏曲_免费在线观看京剧豫剧越剧秦腔民间小调二人转");
         return "movie.html";
@@ -65,6 +71,12 @@ public class DramaController {
             username = userInfo.getString("username");
         }
 
+        //  推荐
+        Integer pageSize = 12;
+        String recommendationsUrl = Configs.API + "/recommendations/get?movie_id=" + _id + "&type=drama&page_size=" + pageSize;
+        JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
+        map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
+
         //  获取浏览记录
         JSONArray records = CommonUtils.getRecords(request, "drama");
 
@@ -77,7 +89,11 @@ public class DramaController {
         map.addAttribute("movie", movie);
         map.put("source_index", sourceIndex);
         map.put("type_index", typeIndex);
-        map.put("source", movie.getJSONArray("sources").getJSONObject(sourceIndex));
+        JSONObject sourceObject = jsonObject.getJSONObject("data").getJSONArray("sources").getJSONObject(sourceIndex);
+        map.put("source", sourceObject);
+        String currentUrl = sourceObject.getJSONArray("types").getJSONObject(typeIndex).getString("url");
+        String playUrl = CommonUtils.getParseUrl("drama", currentUrl);
+        map.put("play_url", playUrl);
         map.put("title", "《" + movie.get("name") + "》免费在线观看-掌上戏曲免费在线观看高清戏曲直播" + movie.get("name"));
 
         //  记录浏览历史

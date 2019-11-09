@@ -21,6 +21,7 @@
             <h1>{{tv.name}}</h1>
             <li>类型1：{{tv.type}}</li>
             <li>类型2：{{tv.type2}}</li>
+            <li>更新时间：{{tv.acquisition_time}}</li>
           </div>
         </div>
     
@@ -31,7 +32,7 @@
             <li><span class="" (click)="oooTab2(1)">简介</span></li>
           </ul>
         </div>
-        <div class="tabConList globalPadding">
+        <div class="tabConList globalPadding" style="display: inline-block;">
           <div class="tabCon" style="display: block;">
             <dl class="tab2">
               <!-- 资源名称列表 -->
@@ -65,4 +66,25 @@
           </div>
         </div>
       </section>
+
+      <!-- 相关推荐 -->
+  <section class="main">
+      <div class="mod_a globalPadding" *ngIf="recommendations.length != 0">
+          <div class="th_a"><span class="sMark">相关推荐</span></div>
+          <div class="tb_a">
+            <ul class="picTxt picTxtA clearfix" id="data_list">
+              <li *ngFor="let latestTop10Movie of recommendations" (click)="goMovieDetail((latestTop10Movie._id))">
+                <div class="con">
+                  <a title="{{latestTop10Movie.name}}"><img data-src="{{latestTop10Movie.src}}"
+                      alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
+                      onerror="onerror=null;src='https://m.88ys.cc/images/load.gif'"
+                      style="width: 158px; height: 159px; display: block;"><span class="sNum"><em
+                        class="emScore">{{latestTop10Movie.update_status}}</em></span> <span
+                      class="sTit">{{latestTop10Movie.name}}</span> </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </section>
   </ion-content>

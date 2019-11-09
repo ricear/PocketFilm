@@ -55,6 +55,28 @@
 
 ------
 
+#### v5.3.0 `2019/11/9`
+
+- 新增推荐系统模块，该推荐系统是基于内容的协同过滤算法实现的，用于计算影视相关性矩阵，然后根据用户的浏览记录为用户推荐相似的影视
+  - ```CommonUtils.py```中新增方法：
+    - ```distinct(items,key)```：对字典列表根据指定的key去重
+    - ```get_yesterday()```：获取昨天的日期
+    - ```get_equal_rate_1(str1, str2)```：计算两个字符串的相似度
+    - ```get_recommendations(movie_type, type)```：计算影视的相似度
+    - ```calculate_euclidean(movie1,movie2, types, weight_types_dic)```：计算两个物品的相似度(欧几里德距离)
+- 爬虫：
+  - 新增40资源站(```ziyuan40```)爬虫，网址为：[https://jx40.net](https://jx40.net/)
+- 移动端
+  - 版本更新到 ```3.2.0```
+  - 新增影视推荐功能
+- 网页版
+  - 新增影视推荐功能
+- API接口
+  - 新增相关接口：
+    - ```/recommendations/get/user```：获取推荐的数据(用户名)
+    - ```/recommendations/get```：获取推荐的数据(影视)
+- 备份数据库
+
 #### v5.2.0 `2019/11/7`
 
 - 爬虫：

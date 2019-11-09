@@ -190,13 +190,9 @@
                                 scrolling="no" width="100%" height="550"
                                 style="position: absolute; z-index: 99998; display: none;"></iframe>
                         <iframe width="100%" height="550"
-                                th:src="'https://play.fo97.cn/?url=' + ${source.url}"
+                                th:src="${play_url}"
                                 frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"
-                                allowfullscreen="ture" th:if="!${#strings.containsIgnoreCase(source.url,'haoqu')}"></iframe>
-                        <iframe width="100%" height="550"
-                                th:src="${source.url}"
-                                frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"
-                                allowfullscreen="ture" th:if="${#strings.containsIgnoreCase(source.url,'haoqu') or #strings.containsIgnoreCase(source.url,'html')}"></iframe>
+                                allowfullscreen="ture"></iframe>
                     </td>
                     <td id="playright" valign="top">
                         <div class="rightlist" id="rightlist" style="height:550px;">

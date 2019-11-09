@@ -7,7 +7,7 @@ export class ConfigService {
 
   // 公用地址
   // public sourceUrl = 'https://pocket.mynatapp.cc';
-  public sourceUrl = 'http://103.45.178.220';
+  public sourceUrl = 'http://103.45.178.220:9000';
   // public sourceUrl = 'http://api.grayson.top';
   // public请求地址
   public publicUrl = this.sourceUrl +  '/public';

@@ -72,7 +72,7 @@ export class MoreRecommendTvPage implements OnInit {
 
   getTvsTemp() {
     var promise = new Promise((resolve, error) => {
-      this.tools.getRecommendationsApi(this.browse_type, this.type, this.limit, this.pageIndex, this.pageSize).then((data: any) => {
+      this.tools.getRecommendationsByUserApi(this.browse_type, this.type, this.limit, this.pageIndex, this.pageSize).then((data: any) => {
         // 截取电影名称的长度
         var name_length = 5
         if (data.code == 0) {
