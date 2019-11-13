@@ -50,6 +50,8 @@ export class ConfigService {
   public ckmov = 'https://www.ckmov.vip/api.php?url='
   // haohuala
   public haohuala = 'http://api.lhh.la/vip/?url='
+  // jx40
+  public jx40 = 'https://jx40.net/url='
 
   // 影视
   public movie = this.jx66

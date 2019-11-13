@@ -58,7 +58,7 @@
                         <gm th:text="'0' + ${todayMovieStat.index+1}"></gm>
                         <span class="az" th:text="${todayMovie.name}">></span></a></li>
                     <li th:if="${todayMovieStat.index+1 ge 10}"><a
-                            href="'/play?_id=' + ${todayMovie._id} + '&source_index=0&type_index=0'" target="_blank"
+                            th:href="'/play?_id=' + ${todayMovie._id} + '&source_index=0&type_index=0'" target="_blank"
                             th:title="${todayMovie.name}"><span class="bz" th:text="${todayMovie.type2}"></span>
                         <gm th:text="${todayMovieStat.index+1}"></gm>
                         <span class="az" th:text="${todayMovie.name}">></span></a></li>
@@ -130,7 +130,7 @@
                         <gm th:text="'0' + ${todayMovieStat.index+1}"></gm>
                         <span class="az" th:text="${todayMovie.name}">></span></a></li>
                     <li th:if="${todayMovieStat.index+1 ge 10}"><a
-                            href="'/play?_id=' + ${todayMovie._id} + '&source_index=0&type_index=0'" target="_blank"
+                            th:href="'/play?_id=' + ${todayMovie._id} + '&source_index=0&type_index=0'" target="_blank"
                             th:title="${todayMovie.name}"><span class="bz" th:text="${todayMovie.type2}"></span>
                         <gm th:text="${todayMovieStat.index+1}"></gm>
                         <span class="az" th:text="${todayMovie.name}">></span></a></li>

@@ -57,6 +57,9 @@ class ZuidaSpiderPipeline(object):
         movies1 = db_utils.find(dic)
         # 服务器中资源中的最大集数
         max = 0
+        score = item['score']
+        if (score == '0.0'):
+            score = get_random_str()
         if (movies1.count() > 0):
             # 当前视频已爬取且更新，将新爬去的数据更新到数据库
             movies1_temp = movies1.__getitem__(0)
@@ -82,7 +85,9 @@ class ZuidaSpiderPipeline(object):
                 update_status = item['update_status']
             else:
                 update_status = movies1_temp['update_status']
-            newdic = {'$set': {'update_status': update_status, 'sources': sources_tmp,
+            newdic = {'$set': {'update_status': update_status,
+                               'sources': sources_tmp,
+                               'score': score,
                                'update_time': item['update_time'],
                                'acquisition_time': item['acquisition_time']}}
             print(dic)

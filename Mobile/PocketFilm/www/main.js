@@ -1388,6 +1388,8 @@ var ConfigService = /** @class */ (function () {
         this.ckmov = 'https://www.ckmov.vip/api.php?url=';
         // haohuala
         this.haohuala = 'http://api.lhh.la/vip/?url=';
+        // jx40
+        this.jx40 = 'https://jx40.net/url=';
         // 影视
         this.movie = this.jx66;
         // 电视

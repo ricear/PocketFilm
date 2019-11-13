@@ -94,7 +94,7 @@
         <a th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${page_index - 1}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" class="pagelink_a" th:if="${page_index gt 1}">上一页</a>
         <span th:each="page : ${pages}">
         <span class="pagenow ee" th:if="${page eq page_index}" th:text="${page}"></span>
-        <a target="_self" class="pagelink_b ee" th:href="'/more?type='+${type}+'&type'+${sort_type}+'=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${page}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" th:if="${page ne page_index}" th:text="${page}"></a>
+        <a target="_self" class="pagelink_b ee" th:href="'/more?type='+${type}+'&type2=' +${type2}+ '&re_gion=' +${region}+ '&release_date='+${release_date}+'&page_index='+${page}+'&sort_type='+${sort_type}+'&key_word='+${key_word}" th:if="${page ne page_index}" th:text="${page}"></a>
         </span>
         <span class="pagelink_b" th:text="${page_index} + '/' + ${total_page}"></span>
         <em th:if="${page_index ge total_page}">下一页</em>

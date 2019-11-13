@@ -42,11 +42,11 @@ class MongoDbUtils(object):
         self.conn.close()
         return count
 
-    def find(self,dic):
+    def find(self,dic, no_cursor_timeout = False):
         if type(dic).__name__ == 'list':
-            data = self.collection.find(dic[0], dic[1])
+            data = self.collection.find(dic[0], dic[1], no_cursor_timeout = no_cursor_timeout)
         else:
-            data = self.collection.find(dic)
+            data = self.collection.find(dic, no_cursor_timeout = no_cursor_timeout)
         print('find success ' + str(data.count()))
         # 释放资源
         self.conn.close()

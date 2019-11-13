@@ -16,7 +16,7 @@ echo ''
 string=$1
 array=[]
 if [ ! $1 ]; then
-	string="tencent,youku,iqiyi,zuida,kuyun,yongjiu,ok,ziyuan135,ziyuan33uu,tv,drama,piece,piece2"
+	string="tencent,youku,iqiyi,zuida,kuyun,yongjiu,ok,ziyuan135,ziyuan33uu,tv,drama,piece,piece2,piece3,piece4"
 fi
 ps -ef | grep 'start_spider'${var} | grep -v grep |awk '{print $2}' | xargs kill -9
 array=(${string//,/ })

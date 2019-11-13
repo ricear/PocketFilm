@@ -85,11 +85,12 @@ class PieceSpider(scrapy.Spider):
                     for a3 in html2.xpath('/html/body/div/div[5]/div[1]/a'):
                         type = get_str_from_xpath(html2.xpath('/html/body/div/div[5]/div[1]/a[2]/text()'))
                         type2 = get_str_from_xpath(html2.xpath('/html/body/div/div[5]/div[1]/a[3]/text()'))
-                        if (exclude_piece_type2(type2) == True):
-                            continue
-                        if len(type2) > 10:
-                            # 当前小品没有第二种类型
-                            type2 = ''
+                    if (exclude_piece_type2(type2) == True):
+                        continue
+                    if len(type2) > 10:
+                        # 当前小品没有第二种类型
+                        type2 = ''
+                    modify_piece_type(type, type2)
                     url2 = 'https://v.youku.com/v_show/id_' + play_id + '==.html'
                     piece = {
                         'name': name,

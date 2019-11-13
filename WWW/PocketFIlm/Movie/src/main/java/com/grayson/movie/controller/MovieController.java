@@ -48,7 +48,7 @@ public class MovieController {
         //  推荐
         String recommendationsUrl = Configs.API + "/recommendations/get/user?user_name=" + username + "&browse_type=movie&page_size=" + pageSize;
         //  热门推荐
-        String hottestMoviesUrl = Configs.API + "/movie/get/all?sort_type=2&page_size=" + pageSize;
+        String hottestMoviesUrl = Configs.API + "/get/today?type=movie&sort_type=2&page_size=" + pageSize;
         JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
         JSONObject hottestMoviesObject = CommonUtils.doGet(hottestMoviesUrl);
         map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));

@@ -46,6 +46,10 @@ class Piece2Spider(scrapy.Spider):
         type2 = self.a_name_lists.get(url)
         if (exclude_piece_type2(type2) == True):
             pass
+        if len(type2) > 10:
+            # 当前小品没有第二种类型
+            type2 = ''
+        modify_piece_type(type, type2)
         collection = 'piece_type'
         db_util = MongoDbUtils(collection)
         dic = {}

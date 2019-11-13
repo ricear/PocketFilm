@@ -37,7 +37,7 @@ if __name__ == '__main__':
     # execute(["scrapy", "crawl", "ziyuan33uu", "-a", "target=latest"])
     # ziyuan40
     # execute(["scrapy", "crawl", "ziyuan40", "-a", "target=all"])
-    execute(["scrapy", "crawl", "ziyuan40", "-a", "target=latest"])
+    # execute(["scrapy", "crawl", "ziyuan40", "-a", "target=latest"])
     # movie_type
     # execute(["scrapy", "crawl", "movie_type"])
     # movie_source
@@ -56,5 +56,11 @@ if __name__ == '__main__':
     # piece2
     # execute(["scrapy", "crawl", "piece2", "-a", "target=all"])
     # execute(["scrapy", "crawl", "piece2", "-a", "target=latest"])
+    # piece3
+    execute(["scrapy", "crawl", "piece3", "-a", "target=all"])
+    # execute(["scrapy", "crawl", "piece3", "-a", "target=latest"])
+    # piece4
+    # execute(["scrapy", "crawl", "piece4", "-a", "target=all"])
+    # execute(["scrapy", "crawl", "piece4", "-a", "target=latest"])
     # piece_type
     # execute(["scrapy", "crawl", "piece_type"])

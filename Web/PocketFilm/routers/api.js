@@ -1123,30 +1123,7 @@ router.get('/count/get', function (req, res, next) {
                         var movie = db.db(dbName).collection('piece');
                         movie.find(
                             {
-                                $or: [
-                                    {
-                                        name: {
-                                            $regex: key_word,
-                                            $options: "six"
-                                        }
-                                    },
-                                    {
-                                        type: {
-                                            $regex: key_word,
-                                            $options: "six"
-                                        }
-                                    },
-                                    {
-                                        type2: {
-                                            $regex: key_word,
-                                            $options: "six"
-                                        }
-                                    }
-                                ]
-                            },
-                            {
-                                sort: {name: 1},
-                                collation: {locale: "zh"}
+                                type: type
                             }
                         ).toArray(function (err, data) {
                             if (data) {
@@ -1169,30 +1146,8 @@ router.get('/count/get', function (req, res, next) {
                         var movie = db.db(dbName).collection('piece');
                         movie.find(
                             {
-                                $or: [
-                                    {
-                                        name: {
-                                            $regex: key_word,
-                                            $options: "six"
-                                        }
-                                    },
-                                    {
-                                        type: {
-                                            $regex: key_word,
-                                            $options: "six"
-                                        }
-                                    },
-                                    {
-                                        type2: {
-                                            $regex: key_word,
-                                            $options: "six"
-                                        }
-                                    }
-                                ]
-                            },
-                            {
-                                sort: {name: 1},
-                                collation: {locale: "zh"}
+                                type: type,
+                                type2: type2,
                             }
                         ).toArray(function (err, data) {
                             if (data) {
@@ -1712,7 +1667,7 @@ router.get('/version/get/latest', function (req, res, next) {
         version.find(
             {},
             {
-                sort: {update_time: -1},
+                sort: {acquisition_time: -1},
                 limit: 1
             }).toArray(function (err, data) {
             if (data) {
@@ -1741,7 +1696,7 @@ router.post('/version/add', function (req, res, next) {
     //  描述
     var descriptions = req.body.descriptions.split('\\n')
     //  更新时间
-    var update_time = getFormatDate2()
+    var acquisition_time = getFormatDate2()
 
     mongoClient.connect(dbURL, function (err, db) {
         var version = db.db(dbName).collection('version');
@@ -1749,7 +1704,7 @@ router.post('/version/add', function (req, res, next) {
         var versionInfo = {
             version_number: version_number,
             descriptions: descriptions,
-            update_time: update_time
+            acquisition_time: acquisition_time
         };
         version.find({version_number: versionInfo.version_number}).toArray(function (err, data) {
             if (data.length == 0) {
@@ -2486,8 +2441,8 @@ router.get('/piece/get/all', function (req, res, next) {
     var page_size = req.query.page_size == null || req.query.page_size == 'null' ? 20 : +req.query.page_size
     // 当前页数
     var page_index = req.query.page_index == null || req.query.page_index == 'null' ? 1 : +req.query.page_index
-    var key_word = req.query.key_word
-    if (key_word == null || key_word == 'null') {
+    var key_word = req.query.key_word == null || req.query.key_word == 'null' || req.query.key_word == '' ? null : req.query.key_word
+    if (key_word == null) {
         if (type == '全部') {
             //    全部
             mongoClient.connect(dbURL, function (err, db) {
@@ -3039,32 +2994,75 @@ router.get('/movie/hottest/top', function (req, res, next) {
  */
 router.get('/get/today', function (req, res, next) {
     var type = req.query.type == null || req.query.type == 'null' ? '全部' : req.query.type
-    var top_num = 15
+    var sort_type = req.query.sort_type == null || req.query.sort_type == 'null' ? 0 : req.query.sort_type
+    var page_size = req.query.page_size == null || req.query.page_size == 'null' ? 15 : +req.query.page_size
     var today = getFormatDate3();
     if (type != '全部') {
-        mongoClient.connect(dbURL, function (err, db) {
-            var movie = db.db(dbName).collection(type);
-            // 1 为升序，-1 为降序
-            movie.find(
-                {acquisition_time: {$regex: eval("/" + today + "/i")}},
-                {
-                    sort: {'release_date': -1, 'acquisition_time': -1, 'score': -1},
-                    limit: top_num
-                }).toArray(function (err, data) {
-                if (data) {
-                    responseData.code = 0;
-                    responseData.message = '影视信息获取成功';
-                    responseData.data = data;
-                    res.json(responseData);
-                } else {
-                    responseData.code = 1;
-                    responseData.message = '影视信息获取失败';
-                    res.json(responseData);
-                }
-                // 释放资源
-                db.close();
+        if (sort_type == '0') {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection(type);
+                // 1 为升序，-1 为降序
+                movie.find(
+                    {
+                        $and: [
+                            {acquisition_time: {$regex: eval("/" + today + "/i")}},
+                            {type2: {$ne: '欧美剧'}},
+                            {type2: {$ne: '海外剧'}},
+                            {type2: {$ne: '日本剧'}},
+                            {type2: {$ne: '其他剧'}}
+                        ]
+                    },
+                    {
+                        sort: {'release_date': -1, 'acquisition_time': -1, 'score': -1},
+                        limit: page_size
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '影视信息获取成功';
+                        responseData.data = data;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '影视信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
             })
-        })
+        } else {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection(type);
+                // 1 为升序，-1 为降序
+                movie.find(
+                    {
+                        $and: [
+                            {acquisition_time: {$regex: eval("/" + today + "/i")}},
+                            {type2: {$ne: '欧美剧'}},
+                            {type2: {$ne: '海外剧'}},
+                            {type2: {$ne: '日本剧'}},
+                            {type2: {$ne: '其他剧'}}
+                        ]
+                    },
+                    {
+                        sort: {'release_date': -1, 'score': -1, 'acquisition_time': -1},
+                        limit: page_size
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '影视信息获取成功';
+                        responseData.data = data;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '影视信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        }
     } else {
         responseData.code = 3;
         responseData.message = '参数错误';
@@ -3608,15 +3606,23 @@ router.get('/movie/get/all', function (req, res, next) {
                 var movie = db.db(dbName).collection('movie');
                 movie.find(
                     {
-                        $or: [{
-                            name: {
-                                $regex: key_word,
-                                $options: "six"
+                        $or: [
+                            {
+                                name: {
+                                    $regex: key_word,
+                                    $options: "six"
+                                }
+                            },
+                            {
+                                actors: {$elemMatch: {$regex: key_word, $options: "six"}}
+                            },
+                            {
+                                directors: {$elemMatch: {$regex: key_word, $options: "six"}}
                             }
-                        }, {actors: {$elemMatch: {$regex: key_word, $options: "six"}}}]
+                        ]
                     },
                     {
-                        sort: {name: 1},
+                        sort: {release_date: -1, acquisition_time: -1},
                         collation: {locale: "zh"},
                         skip: page_size * (page_index - 1),
                         limit: page_size
@@ -4110,10 +4116,16 @@ router.get('/movie/get/all', function (req, res, next) {
                                 $regex: key_word,
                                 $options: "six"
                             }
-                        }, {actors: {$elemMatch: {$regex: key_word, $options: "six"}}}]
+                        }, {
+                            actors: {$elemMatch: {$regex: key_word, $options: "six"}}
+                        },
+                            {
+                                directors: {$elemMatch: {$regex: key_word, $options: "six"}}
+                            }
+                        ]
                     },
                     {
-                        sort: {name: 1},
+                        sort: {release_date: -1, acquisition_time: -1},
                         collation: {locale: "zh"},
                         skip: page_size * (page_index - 1),
                         limit: page_size
