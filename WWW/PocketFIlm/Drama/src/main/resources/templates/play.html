@@ -198,7 +198,9 @@
                         <div class="rightlist" id="rightlist" style="height:550px;">
                             <div th:each="source, sourceStat : ${movie.sources}">
                                 <div th:id="'main' + ${sourceStat.index}" class="h2_on"
-                                     th:if="${sourceStat.index eq source_index}">
+                                     th:if="${sourceStat.index eq source_index}"><h2
+                                        th:onclick="'MacPlayer.Tabs('+${sourceStat.index}+','+${sourceStat.size - 1}+')'"
+                                        th:text="${source.name}"></h2>
                                     <ul th:id="'sub' + ${sourceStat.index}" style="display:block">
                                         <li th:each="type, typeStat : ${source.types}">
                                             <a class="list_on" th:if="${typeStat.index eq type_index}"
@@ -212,7 +214,9 @@
                                     </ul>
                                 </div>
                                 <div th:id="'main' + ${sourceStat.index}" class="h2"
-                                     th:if="${sourceStat.index ne source_index}">
+                                     th:if="${sourceStat.index ne source_index}"><h2
+                                        th:onclick="'MacPlayer.Tabs('+${sourceStat.index}+','+${sourceStat.size - 1}+')'"
+                                        th:text="${source.name}"></h2>
                                     <ul th:id="'sub' + ${sourceStat.index}" style="display:none">
                                         <li th:each="type, typeStat : ${source.types}">
                                             <a class="list_on" th:if="${typeStat.index eq type_index}"

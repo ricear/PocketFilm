@@ -306,7 +306,6 @@ ion-segment-button {
 }
 
 span.sTit {
-  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -323,4 +322,14 @@ span.sTit {
   padding: 10px;
   color: red;
   font-size: 14px;
+}
+
+.rightlist h2{
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.rightlist a {
+  white-space: nowrap;
+  overflow: hidden;
 }

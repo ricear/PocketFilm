@@ -49,7 +49,31 @@ public class DramaController {
         map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
         map.addAttribute("hottestMovies", hottestMoviesObject.getJSONArray("data"));
 
+        //  京剧
+        String movies0Url = Configs.API + "/drama/get/all?type=京剧&page_size=" + pageSize;
+        //  豫剧
+        String movies1Url = Configs.API + "/drama/get/all?type=豫剧&page_size=" + pageSize;
+        //  秦腔
+        String movies2Url = Configs.API + "/drama/get/all?type=秦腔&page_size=" + pageSize;
+        //  民间小调
+        String movies3Url = Configs.API + "/drama/get/all?type=民间小调&page_size=" + pageSize;
+        //  今日更新
+        String todayMoviesUrl = Configs.API + "/get/today?type=drama";
+        //  今日更新数据量
+        String todayCountUrl = Configs.API + "/count/get/today?type=drama";
+        JSONObject movies0Object = CommonUtils.doGet(movies0Url);
+        JSONObject movies1Object = CommonUtils.doGet(movies1Url);
+        JSONObject movies2Object = CommonUtils.doGet(movies2Url);
+        JSONObject movies3Object = CommonUtils.doGet(movies3Url);
+        JSONObject todayMoviesObject = CommonUtils.doGet(todayMoviesUrl);
+        JSONObject todayCountObject = CommonUtils.doGet(todayCountUrl);
         map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
+        map.addAttribute("movies0", movies0Object.getJSONArray("data"));
+        map.addAttribute("movies1", movies1Object.getJSONArray("data"));
+        map.addAttribute("movies2", movies2Object.getJSONArray("data"));
+        map.addAttribute("movies3", movies3Object.getJSONArray("data"));
+        map.addAttribute("todayMovies", todayMoviesObject.getJSONArray("data"));
+        map.addAttribute("todayCount", todayCountObject.getInteger("data"));
         map.addAttribute("title", "掌上戏曲_免费在线观看京剧豫剧越剧秦腔民间小调二人转");
         return "movie.html";
     }

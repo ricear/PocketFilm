@@ -17,6 +17,7 @@ class Piece4Spider(scrapy.Spider):
 
     def __init__(self, target=None, name=None, **kwargs):
         super(Piece4Spider, self).__init__(name, **kwargs)
+        self.target = target
         type_list = ['2', '1', '3', '14', '15']
         for type in type_list:
             self.start_urls.append(self.origin_url + '?cate=' + type)
@@ -31,7 +32,7 @@ class Piece4Spider(scrapy.Spider):
 
         start_page = 1
         url = response.url
-        total_page = 100
+        total_page = 40
         if (self.target == 'latest'):
             total_page = 1
         for page_index in reverse_arr(range(start_page, total_page + 1)):
@@ -39,7 +40,10 @@ class Piece4Spider(scrapy.Spider):
                 a2 = url
             else:
                 a2 = url + '&page=' + (str)(page_index)
+            print(a2)
             html = get_one_page(a2)
+            if (html == None):
+                continue
             html = etree.HTML(html)
             type = html.xpath('//div[@class="catecon"]/div/h3')[0].text.strip()
             html_xpath = html.xpath('//div[@class="catecon"]/ul/li')
@@ -54,7 +58,7 @@ class Piece4Spider(scrapy.Spider):
                     description = get_str_from_xpath(li.xpath('./div[2]/a/text()'))
                     name = '《' + description.split('《')[1].split('》')[0] + '》'
                     src = get_str_from_xpath(li.xpath('./div/a/img/@src'))
-                    dic = {'drama_url': play_url}
+                    dic = {'url': play_url}
                     find_piece = db_util.find(dic)
                     if find_piece.count() >= 1:
                         print(name + ' -> 已爬取')
@@ -91,7 +95,6 @@ class Piece4Spider(scrapy.Spider):
                     db_util.insert(piece)
                     self.total += 1
                 except:
-                    self.total += 1
                     continue
         # 结束时间
         end = time.time()

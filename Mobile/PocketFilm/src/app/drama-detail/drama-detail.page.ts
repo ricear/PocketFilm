@@ -75,7 +75,6 @@ export class DramaDetailPage implements OnInit {
       this.tv = data.data
       if (this.url == null) {
         this.url = this.tv.sources[0].types[0].url
-        this.tv.sources[0].name = this.tv.name
         this.source_count = this.tv.sources.length
         this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.config.drama + this.url)
       }

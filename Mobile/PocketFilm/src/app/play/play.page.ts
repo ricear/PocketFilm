@@ -128,7 +128,7 @@ export class PlayPage implements OnInit {
         this.movie = data.data
         if (this.url == null) {
           this.source_count = this.movie.sources.length
-          this.type = this.movie.sources[0].types[0]
+          this.type = this.movie.sources[this.source_index].types[this.type_index]
           this.url = this.type.url
           this.safeUrl = this.tools.getParseUrl(this.browseType, this.url)
         }
@@ -154,7 +154,6 @@ export class PlayPage implements OnInit {
         if (this.url == null) {
           this.source_count = this.movie.sources.length
           this.type = this.movie.sources[0].types[0]
-          this.movie.sources[0].name = this.movie.name
           this.url = this.type.url
           this.safeUrl = this.tools.getParseUrl(this.browseType, this.url)
         }

@@ -93,6 +93,8 @@ class DramaItem(scrapy.Item):
     drama_description = scrapy.Field()
     # 播放时长
     play_time = scrapy.Field()
+    # 原始播放地址
+    drama_url = scrapy.Field()
     # 戏曲源
     sources = scrapy.Field()
     # 采集时间

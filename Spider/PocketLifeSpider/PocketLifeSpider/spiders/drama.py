@@ -31,15 +31,12 @@ class DramaSpider(scrapy.Spider):
         super(DramaSpider, self).__init__(name, **kwargs)
         self.target = target
         html = get_one_page(self.orign_url, 'gb2312')
-        pattern = '[\s\S]*?<div class="acc2 ">([\s\S]*?)</div>'
-        for row in parse_one_page(html, pattern):
-            pattern2 = '[\s\S]*?<a href="([\s\S]*?)"[\s\S]*?>([\s\S]*?)</a>[\s\S]*?'
-            for col in parse_one_page(row, pattern2):
-                # 戏曲分类型地址
-                url = self.orign_url + col[0]
-                if '.html' not in url:
-                    url = url + 'index.html'
-                    self.start_urls.append(url)
+        html = etree.HTML(html)
+        for a in html.xpath('//div[@class="acc2 "]/div/a/@href'):
+            a = self.orign_url + (str)(a)
+            if '.html' not in a:
+                a = a + 'index.html'
+            self.start_urls.append(a)
 
     def parse(self, response):
 
@@ -48,10 +45,8 @@ class DramaSpider(scrapy.Spider):
 
         page_size = 24
         html = get_one_page(response.url, 'gb2312')
-        pattern3 = '[\s\S]*?<div id="page" class="bord mtop">[\s\S]*?共([\s\S]*?)部[\s\S]*?'
-        total = 0
-        for total2 in parse_one_page(html, pattern3):
-            total = (int)(total2)
+        html = etree.HTML(html)
+        total = (int)(get_str_from_xpath(html.xpath('//*[@id="page"]/text()')).split('共')[1].split('部')[0])
         total_page = total / page_size
         if total % page_size != 0:
             total_page += 1
@@ -67,88 +62,72 @@ class DramaSpider(scrapy.Spider):
             if index != 1:
                 url = url.split('.html')[0] + (str)((int)(index)) + '.html'
             html = get_one_page(url.split('\n')[0], 'gb2312')
-            pattern3 = '[\s\S]*?<div class="content bord mtop">[\s\S]*?([\s\S]*?)</div>'
-            for div in parse_one_page(html, pattern3):
-                pattern4 = '[\s\S]*?<li>[\s\S]*?<a href="([\s\S]*?)"[\s\S]*?src="([\s\S]*?)"[\s\S]*?title="([\s\S]*?)"[\s\S]*?说明：([\s\S]*?)</p>[\s\S]*?频道：([\s\S]*?)</p>[\s\S]*?更新：([\s\S]*?)</p>[\s\S]*?简介：([\s\S]*?)</p>[\s\S]*?</li>'
-                for drama in parse_one_page(div, pattern4):
-                    dramaItem = DramaItem()
-                    # ('148451', '京剧锁五龙孟广禄主演', '未知', '京剧', '2019/4/25 14:32:11', '京剧锁五龙孟广禄主演详情请观看该戏曲，谢谢光临')
-                    id = drama[0]
-                    # http://www.xiqu5.com/jj/index2.html
-                    drama_url = url.split('.html')[0].split('index')[0] + id
-                    dic = {'id': id}
-                    find_drama = self.dbutils.find(dic)
-                    source_exists = False
-                    print(url)
-                    if find_drama.count() >= 1:
-                        for tmp_drama in find_drama:
-                            if len(tmp_drama['sources']) == 0:
-                                print(id + ' ->已插入，戏曲源未抓取')
-                            else:
-                                print(id + ' ->已插入，戏曲源已抓取')
-                                source_exists = True
-                            break
-                    else:
-                        dramaItem['id'] = id
-                        dramaItem['src'] = drama[1]
-                        dramaItem['name'] = drama[2]
-                        dramaItem['description'] = drama[3]
-                        dramaItem['type'] = drama[4]
-                        dramaItem['update_time'] = reverse_update_time(drama[5])
-                        dramaItem['introduction'] = drama[6]
-                        type_name = drama_url.split('/')[3]
-                    if source_exists == True:
-                        continue
-                    # 戏曲源没有抓取
-                    html = get_one_page(drama_url, 'gb2312')
-                    pattern = '[\s\S]*?戏曲说明：([\s\S]*?)</span>[\s\S]*?播放时长：<em>([\s\S]*?)</em>'
-                    # 解析资源种类
-                    for drama2 in parse_one_page(html, pattern):
-                        print('正在解析戏曲信息 -> ' + id)
-                        dramaItem['drama_description'] = drama2[0]
-                        dramaItem['play_time'] = drama2[1]
-                        print(id + ' -> 戏曲说明:' + dramaItem['drama_description'] + ' 播放时长:' + dramaItem['play_time'])
-                        pattern = '<div class="bord demand mtop">[\s\S]*?</h3>([\s\S]*?)<div class="clear"></div>'
-                    sources = []
-                    count_source = 1
-                    # 解析类型种类
-                    for source_html in parse_one_page(html, pattern):
-                        if count_source > 1:
-                            break
+            html = etree.HTML(html)
+            for div in html.xpath('//div[@class="content bord mtop"]/ul/li'):
+                dramaItem = DramaItem()
+                # ('148451', '京剧锁五龙孟广禄主演', '未知', '京剧', '2019/4/25 14:32:11', '京剧锁五龙孟广禄主演详情请观看该戏曲，谢谢光临')
+                id = get_str_from_xpath(div.xpath('./a/@href'))
+                # http://www.xiqu5.com/jj/index2.html
+                drama_url = url.split('.html')[0].split('index')[0] + id
+                dic = {'id': id}
+                find_drama = self.dbutils.find(dic)
+                source_exists = False
+                print(url)
+                if find_drama.count() >= 1:
+                    for tmp_drama in find_drama:
+                        if len(tmp_drama['sources']) == 0:
+                            print(id + ' ->已插入，戏曲源未抓取')
+                        else:
+                            print(id + ' ->已插入，戏曲源已抓取')
+                            source_exists = True
+                        break
+                else:
+                    dramaItem['id'] = id
+                    dramaItem['src'] = get_str_from_xpath(div.xpath('./a/img/@src'))
+                    dramaItem['name'] = get_str_from_xpath(div.xpath('./h5/a/@title'))
+                    dramaItem['description'] = get_str_from_xpath(div.xpath('./p[1]/text()')).split('：')[1]
+                    dramaItem['type'] = get_str_from_xpath(div.xpath('./p[2]/text()')).split('：')[1]
+                    dramaItem['update_time'] = get_str_from_xpath(div.xpath('./p[3]/text()')).split('：')[1]
+                    dramaItem['introduction'] = get_str_from_xpath(div.xpath('./p[4]/text()')).split('：')[1]
+                    type_name = drama_url.split('/')[3]
+                if source_exists == True:
+                    continue
+                # 戏曲源没有抓取
+                html = get_one_page(drama_url, 'gb2312')
+                html = etree.HTML(html)
+                # 解析资源种类
+                print('正在解析戏曲信息 -> ' + id)
+                dramaItem['drama_description'] = get_str_from_xpath(html.xpath('//*[@id="alrum"]/div[1]/div[1]/div[2]/span/text()')).split('：')[1]
+                dramaItem['play_time'] = get_str_from_xpath(html.xpath('//*[@id="alrum"]/div[1]/div[1]/div[2]/span[6]/em/text()'))
+                print(id + ' -> 戏曲说明:' + dramaItem['drama_description'] + ' 播放时长:' + dramaItem['play_time'])
+                sources = []
+                # 解析类型种类
+                try:
+                    for source_html in html.xpath('//div[@class="bord demand mtop"]'):
+                        source_name = get_str_from_xpath(source_html.xpath('./h3/font/text()'))
                         types = []
-                        pattern = '[\s\S]*?<a [\s\S]*? href="([\s\S]*?)" title="([\s\S]*?)">[\s\S]*?</a>'
-                        for type in parse_one_page(source_html, pattern):
-                            type_html = type[0]
-                            type_name = type[1]
-                            html = get_one_page(drama_url + '/' + type_html)
-                            pattern = '[\s\S]*?var arr2 = [\s\S]*?"([\s\S]*?).youku'
+                        for type in source_html.xpath('./div[1]/a'):
+                            type_html = drama_url + '/' + get_str_from_xpath(type.xpath('./@href'))
+                            type_name = get_str_from_xpath(type.xpath('./text()'))
+                            html = get_one_page(type_html)
+                            html = etree.HTML(html)
                             # 解析播放地址
-                            type_id = ''
-                            for t_id in parse_one_page(html, pattern):
-                                type_id = t_id
+                            type_id = (str)(html.xpath('//*[@id="alrum"]/div[1]/div[2]/script[1]/text()')[0]).split('"')[1].split('.youku')[0]
                             url2 = 'https://v.youku.com/v_show/id_' + type_id + '.html'
                             type = {'name': type_name, 'url': url2}
                             types.append(type)
-                        source = {'types': types}
+                        source = {'name': source_name, 'types': types}
                         sources.append(source)
-                        count_source += 1
-                    dramaItem['sources'] = sources
-                    dramaItem['acquisition_time'] = get_current_time()
-                    dic = {'id': id}
-                    try:
-                        print('正在插入 -> 类型:' + type_name + ' 当前页:' + (str)((int)(index)) + ' 总页数:' + (str)(
-                            (int)(total_page)) + ' 戏曲id:' + id + ' 戏曲名称:' + dramaItem['name'])
-                    except:
-                        # 记录跳过的视频信息
-                        history_type = 'drama'
-                        history_url = drama_url
-                        history_text = '跳过'
-                        if (check_spider_history(history_type, history_url, history_text) == False):
-                            write_spider_history(history_type, history_url, history_text)
-                        continue
-                    self.dbutils.insert(dict(dramaItem))
-                    print(id + ' -> 信息插入完成')
-                    self.total += 1
+                except:
+                    continue
+                dramaItem['sources'] = sources
+                dramaItem['acquisition_time'] = get_current_time()
+                dramaItem['drama_url'] = drama_url
+                print('正在插入 -> 类型:' + type_name + ' 当前页:' + (str)((int)(index)) + ' 总页数:' + (str)(
+                    (int)(total_page)) + ' 戏曲id:' + id + ' 戏曲名称:' + dramaItem['name'])
+                self.dbutils.insert(dict(dramaItem))
+                print(id + ' -> 信息插入完成')
+                self.total += 1
         # 结束时间
         end = time.time()
         process_time = end - start

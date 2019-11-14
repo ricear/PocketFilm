@@ -17,6 +17,7 @@ class Piece3Spider(scrapy.Spider):
 
     def __init__(self, target=None, name=None, **kwargs):
         super(Piece3Spider, self).__init__(name, **kwargs)
+        self.target = target
         type_list = ['new', 'chunwan', 'xiangsheng', 'weidianying']
         for type in type_list:
             self.start_urls.append(self.origin_url + '/' + type)
@@ -41,7 +42,8 @@ class Piece3Spider(scrapy.Spider):
             if (page_index == 1):
                 a2 = url
             else:
-                a2 = url + '/index_' + (str)(page_index) + '.html'
+                a2 = url + 'index_' + (str)(page_index) + '.html'
+            print(a2)
             html = get_one_page(a2)
             html = etree.HTML(html)
             html_xpath = html.xpath('//ul[@class="article-list float"]')[0].xpath('./li')
@@ -56,7 +58,7 @@ class Piece3Spider(scrapy.Spider):
                     name = get_str_from_xpath(li.xpath('./p[1]/a/text()'))
                     src = self.origin_url + '/' + get_str_from_xpath(li.xpath('./div/a/img/@src'))
                     description = get_str_from_xpath(li.xpath('./div/a/@title'))
-                    dic = {'drama_url': play_url}
+                    dic = {'url': play_url}
                     find_piece = db_util.find(dic)
                     if find_piece.count() >= 1:
                         print(name + ' -> 已爬取')
@@ -90,7 +92,6 @@ class Piece3Spider(scrapy.Spider):
                     db_util.insert(piece)
                     self.total += 1
                 except:
-                    self.total += 1
                     continue
         # 结束时间
         end = time.time()
