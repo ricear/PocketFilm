@@ -46,10 +46,12 @@ if __name__ == '__main__':
     # execute(["scrapy", "crawl", "tv"])
     # execute(["scrapy", "crawl", "tv", "-a", "target=latest"])
     # drama
-    execute(["scrapy", "crawl", "drama", "-a", "target=all"])
+    # execute(["scrapy", "crawl", "drama", "-a", "target=all"])
     # execute(["scrapy", "crawl", "drama", "-a", "target=latest"])
     # drama_type
     # execute(["scrapy", "crawl", "drama_type"])
+    # piece_type
+    execute(["scrapy", "crawl", "piece_type"])
     # piece
     # execute(["scrapy", "crawl", "piece", "-a", "target=all"])
     # execute(["scrapy", "crawl", "piece", "-a", "target=latest"])

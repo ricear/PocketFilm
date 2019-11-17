@@ -147,7 +147,6 @@ var DramaDetailPage = /** @class */ (function () {
             _this.tv = data.data;
             if (_this.url == null) {
                 _this.url = _this.tv.sources[0].types[0].url;
-                _this.tv.sources[0].name = _this.tv.name;
                 _this.source_count = _this.tv.sources.length;
                 _this.safeUrl = _this.sanitizer.bypassSecurityTrustResourceUrl(_this.config.drama + _this.url);
             }

@@ -307,5 +307,5 @@ public class MovieController {
         return "search-movie.html";
 
     }
-    
+
 }

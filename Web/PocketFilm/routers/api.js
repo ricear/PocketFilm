@@ -1281,31 +1281,10 @@ router.get('/recommendations/get/user', function (req, res, next) {
                         })
                     } else if (data.length == 0) {
                         //  当前类型下没有浏览记录的用户
-                        var movie = db.db(dbName).collection(browse_type);
-                        movie.find(
-                            {},
-                            {
-                                skip: page_size * (page_index - 1),
-                                limit: limit
-                            },
-                            {
-                                sort: {name: 1},
-                                collation: {locale: "zh"}
-                            }
-                        ).toArray(function (err, data2) {
-                            if (data2) {
-                                responseData.code = 0;
-                                responseData.message = '影视推荐数据获取成功';
-                                responseData.data = data2;
-                                res.json(responseData);
-                            } else {
-                                responseData.code = 1;
-                                responseData.message = '影视推荐数据获取失败';
-                                res.json(responseData);
-                            }
-                            // 释放资源
-                            db.close();
-                        })
+                        responseData.code = 0;
+                        responseData.message = '影视推荐数据获取成功';
+                        responseData.data = data;
+                        res.json(responseData);
                     } else {
                         responseData.code = 1;
                         responseData.message = '浏览记录获取失败';
@@ -1359,35 +1338,10 @@ router.get('/recommendations/get/user', function (req, res, next) {
                             db.close();
                         })
                     } else if (data.length == 0) {
-                        var movie = db.db(dbName).collection(browse_type);
-                        movie.find(
-                            {type: type},
-                            {
-                                sort: {score: -1},
-                                skip: page_size * (page_index - 1),
-                                limit: limit
-                            },
-                            {
-                                sort: {name: 1},
-                                collation: {locale: "zh"}
-                            }
-                        ).toArray(function (err, data2) {
-                            if (data2) {
-                                responseData.code = 0;
-                                responseData.message = '影视推荐数据获取成功';
-                                responseData.data = data2;
-                                res.json(responseData);
-                            } else {
-                                responseData.code = 1;
-                                responseData.message = '影视推荐数据获取失败';
-                                res.json(responseData);
-                            }
-                            // 释放资源
-                            db.close();
-                        })
-                    } else {
-                        responseData.code = 1;
-                        responseData.message = '浏览记录获取失败';
+                        //  当前类型下没有浏览记录的用户
+                        responseData.code = 0;
+                        responseData.message = '影视推荐数据获取成功';
+                        responseData.data = data;
                         res.json(responseData);
                     }
                     // 释放资源
@@ -1431,34 +1385,10 @@ router.get('/recommendations/get/user', function (req, res, next) {
                         db.close();
                     })
                 } else if (data.length == 0) {
-                    var movie = db.db(dbName).collection(browse_type);
-                    movie.find(
-                        {},
-                        {
-                            skip: page_size * (page_index - 1),
-                            limit: limit
-                        },
-                        {
-                            sort: {name: 1},
-                            collation: {locale: "zh"}
-                        }
-                    ).toArray(function (err, data2) {
-                        if (data2) {
-                            responseData.code = 0;
-                            responseData.message = '影视推荐数据获取成功';
-                            responseData.data = data2;
-                            res.json(responseData);
-                        } else {
-                            responseData.code = 1;
-                            responseData.message = '影视推荐数据获取失败';
-                            res.json(responseData);
-                        }
-                        // 释放资源
-                        db.close();
-                    })
-                } else {
-                    responseData.code = 1;
-                    responseData.message = '浏览记录获取失败';
+                    //  当前类型下没有浏览记录的用户
+                    responseData.code = 0;
+                    responseData.message = '影视推荐数据获取成功';
+                    responseData.data = data;
                     res.json(responseData);
                 }
                 // 释放资源
@@ -1511,31 +1441,11 @@ router.get('/recommendations/get/user', function (req, res, next) {
                             db.close();
                         })
                     } else if (data.length == 0) {
-                        var movie = db.db(dbName).collection(browse_type);
-                        movie.find(
-                            {},
-                            {
-                                skip: page_size * (page_index - 1),
-                                limit: limit
-                            },
-                            {
-                                sort: {name: 1},
-                                collation: {locale: "zh"}
-                            }
-                        ).toArray(function (err, data2) {
-                            if (data2) {
-                                responseData.code = 0;
-                                responseData.message = '影视推荐数据获取成功';
-                                responseData.data = data2;
-                                res.json(responseData);
-                            } else {
-                                responseData.code = 1;
-                                responseData.message = '影视推荐数据获取失败';
-                                res.json(responseData);
-                            }
-                            // 释放资源
-                            db.close();
-                        })
+                        //  当前类型下没有浏览记录的用户
+                        responseData.code = 0;
+                        responseData.message = '影视推荐数据获取成功';
+                        responseData.data = data;
+                        res.json(responseData);
                     } else {
                         responseData.code = 1;
                         responseData.message = '浏览记录获取失败';
@@ -1590,31 +1500,11 @@ router.get('/recommendations/get/user', function (req, res, next) {
                             db.close();
                         })
                     } else if (data.length == 0) {
-                        var movie = db.db(dbName).collection(browse_type);
-                        movie.find(
-                            {},
-                            {
-                                skip: page_size * (page_index - 1),
-                                limit: limit
-                            },
-                            {
-                                sort: {name: 1},
-                                collation: {locale: "zh"}
-                            }
-                        ).toArray(function (err, data2) {
-                            if (data2) {
-                                responseData.code = 0;
-                                responseData.message = '影视推荐数据获取成功';
-                                responseData.data = data2;
-                                res.json(responseData);
-                            } else {
-                                responseData.code = 1;
-                                responseData.message = '影视推荐数据获取失败';
-                                res.json(responseData);
-                            }
-                            // 释放资源
-                            db.close();
-                        })
+                        //  当前类型下没有浏览记录的用户
+                        responseData.code = 0;
+                        responseData.message = '影视推荐数据获取成功';
+                        responseData.data = data;
+                        res.json(responseData);
                     } else {
                         responseData.code = 1;
                         responseData.message = '浏览记录获取失败';

@@ -46,7 +46,22 @@
             })();
         })();
         </script>
-
+        <script>
+        var system = {
+            win: false,
+            mac: false,
+            xll: false
+        };
+        //检测平台
+        var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0;
+        system.mac = p.indexOf("Mac") == 0;
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+        //跳转语句
+        if (!(system.win || system.mac || system.xll)) {//转向电脑界面
+            window.location.href = "http://m.grayson.top";
+        }
+        </script>
         <!--[if lt ie 9]>
         <script type="text/javascript" src="//o3bnyc.creatby.com/coolsite-front-v2/thirdparty_js/html5shiv.js"></script>
         <script type="text/javascript"

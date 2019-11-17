@@ -38,6 +38,7 @@
     "@ionic/angular": "^4.1.0",
     "@ionic/pro": "2.0.4",
     "cordova-android": "7.1.4",
+    "cordova-browser": "6.0.0",
     "cordova-ios": "^5.0.1",
     "cordova-plugin-app-version": "0.1.9",
     "cordova-plugin-device": "^2.0.2",
@@ -122,7 +123,8 @@
       "cordova-plugin-streaming-media": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "browser"
     ],
     "config": {
       "unsafe-perm": true

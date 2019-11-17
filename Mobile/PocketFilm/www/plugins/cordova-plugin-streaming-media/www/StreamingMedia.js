@@ -1,5 +1,4 @@
-cordova.define("cordova-plugin-streaming-media.StreamingMedia", function(require, exports, module) {
-"use strict";
+cordova.define("cordova-plugin-streaming-media.StreamingMedia", function(require, exports, module) { "use strict";
 function StreamingMedia() {
 }
 

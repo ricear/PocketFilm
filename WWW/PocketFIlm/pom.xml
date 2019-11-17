@@ -42,6 +42,13 @@
             <artifactId>httpclient</artifactId>
             <version>4.3.1</version>
         </dependency>
+
+        <!--ognl-->
+        <dependency>
+            <groupId>ognl</groupId>
+            <artifactId>ognl</artifactId>
+            <version>3.1.12</version>
+        </dependency>
     </dependencies>
     </dependencyManagement>
 

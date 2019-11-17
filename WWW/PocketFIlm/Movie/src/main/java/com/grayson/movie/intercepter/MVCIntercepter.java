@@ -17,6 +17,10 @@ import javax.servlet.http.HttpServletResponse;
 public class MVCIntercepter implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        //  设置response查询的码表
+        response.setCharacterEncoding("UTF-8");
+        //  通过一个头"Content-type"告知客户端使用何种码表
+        response.setHeader("Content-type", "text/html;charset=UTF-8");
         String cookieName = "userInfo";
         Boolean existCookie = CommonUtils.existCookie(request, cookieName);
         String url = request.getRequestURI().toString();

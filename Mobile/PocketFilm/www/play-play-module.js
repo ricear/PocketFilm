@@ -193,7 +193,7 @@ var PlayPage = /** @class */ (function () {
                 _this.movie = data.data;
                 if (_this.url == null) {
                     _this.source_count = _this.movie.sources.length;
-                    _this.type = _this.movie.sources[0].types[0];
+                    _this.type = _this.movie.sources[_this.source_index].types[_this.type_index];
                     _this.url = _this.type.url;
                     _this.safeUrl = _this.tools.getParseUrl(_this.browseType, _this.url);
                 }
@@ -221,7 +221,6 @@ var PlayPage = /** @class */ (function () {
                 if (_this.url == null) {
                     _this.source_count = _this.movie.sources.length;
                     _this.type = _this.movie.sources[0].types[0];
-                    _this.movie.sources[0].name = _this.movie.name;
                     _this.url = _this.type.url;
                     _this.safeUrl = _this.tools.getParseUrl(_this.browseType, _this.url);
                 }

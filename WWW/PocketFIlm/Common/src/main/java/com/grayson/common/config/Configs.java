@@ -17,6 +17,7 @@ public class Configs {
     //  用于影视、小品
     //  用于解析 m3u8 格式
     public static String BLJIEX = "https://vip.bljiex.com/?v=";
+    public static String RDHK = "http://jx.rdhk.net/?v=";
     //  用于解析以 aHR0 开头的格式
     public static String JX40 = "https://jx40.net/url=";
     //  用于电视
