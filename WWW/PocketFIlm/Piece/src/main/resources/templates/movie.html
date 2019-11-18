@@ -26,7 +26,7 @@
                                 <span class="video-bg"></span>
                                 <span class="lzbz">
 						<p class="name" th:text="${movie.name}"></p>
-						<p class="actor" th:text="${movie.type}">
+						<p class="actor" th:text="${movie.type2}">
 						</p>
 						</span>
                                 <p class="other">
@@ -40,32 +40,7 @@
 
             </ul>
         </div>
-        <div class="index-tj-r">
-            <h3 class="title index-color">&nbsp;今日更新<span class="genxin"><a href="/?m=label-new.html" target="_blank"
-                                                                            th:title="'今日更新'+${todayCount}+'部影片'"
-                                                                            th:text="${todayCount}"></a>部</span></h3>
-            <ul>
-
-                <div th:each="todayMovie, todayMovieStat : ${todayMovies}">
-                    <li th:if="${todayMovieStat.index+1 le 3}"><a
-                            th:href="'/play?_id=' + ${todayMovie._id} + '&source_index=0&type_index=0'" target="_blank"
-                            th:title="${todayMovie.name}"><span class="bz" th:text="${todayMovie.type2}"></span>
-                        <gm class="gs" th:text="'0' + ${todayMovieStat.index+1}"></gm>
-                        <span class="az" th:text="${todayMovie.name}"></span></a></li>
-                    <li th:if="${todayMovieStat.index+1 gt 3 && todayMovieStat.index+1 < 10}"><a
-                            th:href="'/play?_id=' + ${todayMovie._id} + '&source_index=0&type_index=0'" target="_blank"
-                            th:title="${todayMovie.name}"><span class="bz" th:text="${todayMovie.type2}"></span>
-                        <gm th:text="'0' + ${todayMovieStat.index+1}"></gm>
-                        <span class="az" th:text="${todayMovie.name}">></span></a></li>
-                    <li th:if="${todayMovieStat.index+1 ge 10}"><a
-                            th:href="'/play?_id=' + ${todayMovie._id} + '&source_index=0&type_index=0'" target="_blank"
-                            th:title="${todayMovie.name}"><span class="bz" th:text="${todayMovie.type2}"></span>
-                        <gm th:text="${todayMovieStat.index+1}"></gm>
-                        <span class="az" th:text="${todayMovie.name}">></span></a></li>
-                </div>
-
-            </ul>
-        </div>
+        <div class="index-tj-r" id="jinrigengxin"></div>
     </div>
 
     <div class="index-tj clearfix" th:if="${#lists.isEmpty(recommendations) == true}">
@@ -98,7 +73,7 @@
                                 <span class="video-bg"></span>
                                 <span class="lzbz">
 						<p class="name" th:text="${movie.name}"></p>
-						<p class="actor" th:text="${movie.type}">
+						<p class="actor" th:text="${movie.type2}">
 						</p>
 						</span>
                                 <p class="other">
@@ -112,32 +87,7 @@
 
             </ul>
         </div>
-        <div class="index-tj-r">
-            <h3 class="title index-color">&nbsp;今日更新<span class="genxin"><a href="/?m=label-new.html" target="_blank"
-                                                                            th:title="'今日更新'+${todayCount}+'部影片'"
-                                                                            th:text="${todayCount}"></a>部</span></h3>
-            <ul>
-
-                <div th:each="todayMovie, todayMovieStat : ${todayMovies}">
-                    <li th:if="${todayMovieStat.index+1 le 3}"><a
-                            th:href="'/play?_id=' + ${todayMovie._id} + '&source_index=0&type_index=0'" target="_blank"
-                            th:title="${todayMovie.name}"><span class="bz" th:text="${todayMovie.type2}"></span>
-                        <gm class="gs" th:text="'0' + ${todayMovieStat.index+1}"></gm>
-                        <span class="az" th:text="${todayMovie.name}"></span></a></li>
-                    <li th:if="${todayMovieStat.index+1 gt 3 && todayMovieStat.index+1 < 10}"><a
-                            th:href="'/play?_id=' + ${todayMovie._id} + '&source_index=0&type_index=0'" target="_blank"
-                            th:title="${todayMovie.name}"><span class="bz" th:text="${todayMovie.type2}"></span>
-                        <gm th:text="'0' + ${todayMovieStat.index+1}"></gm>
-                        <span class="az" th:text="${todayMovie.name}">></span></a></li>
-                    <li th:if="${todayMovieStat.index+1 ge 10}"><a
-                            th:href="'/play?_id=' + ${todayMovie._id} + '&source_index=0&type_index=0'" target="_blank"
-                            th:title="${todayMovie.name}"><span class="bz" th:text="${todayMovie.type2}"></span>
-                        <gm th:text="${todayMovieStat.index+1}"></gm>
-                        <span class="az" th:text="${todayMovie.name}">></span></a></li>
-                </div>
-
-            </ul>
-        </div>
+        <div class="index-tj-r" id="jinrigengxin"></div>
     </div>
 
     <div class="index-area clearfix">
@@ -147,44 +97,7 @@
 	</span>
             <a href="/more?type=赵家班">&nbsp;赵家班</a>
         </h3>
-        <ul>
-            <div class="qcontainer" th:each="movie : ${movies0}">
-                <div class="film">
-                    <div class="face front">
-                        <li class="p2 MPli"><a class="link-hover" target="_blank"
-                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0'"
-                                               th:title="${movie.name}"><img class="lazy"
-                                                                             th:data-original="${movie.src}"
-                                                                             src="http://5nj.com/template/Datll/images/load.gif"
-                                                                             th:alt="${movie.name}">
-                            <span class="index5njcom titletj5nj">
-						<i th:text="${movie.name}"></i>
-					</span>
-                        </a>
-                        </li>
-                    </div>
-                    <div class="face back">
-                        <li class="p2 MPli"><a class="link-hover" target="_blank"
-                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0'"
-                                               th:title="${movie.name}"><img class="lazy"
-                                                                             th:data-original="${movie.src}"
-                                                                             src="http://5nj.com/template/Datll/images/load.gif"
-                                                                             th:alt="${movie.name}">
-                            <span class="video-bg"></span>
-                            <span class="lzbz">
-						<p class="name" th:text="${movie.name}"></p>
-						<p class="actor" th:text="${movie.type}">
-						</p>
-						</span>
-                            <p class="other">
-                                <i></i>
-                            </p>
-                        </a>
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </ul>
+        <ul id="zhaojiaban"></ul>
     </div>
 
     <div class="index-area clearfix">
@@ -194,44 +107,7 @@
 	</span>
             <a href="/more?type=郭德纲">&nbsp;郭德纲</a>
         </h3>
-        <ul>
-            <div class="qcontainer" th:each="movie : ${movies1}">
-                <div class="film">
-                    <div class="face front">
-                        <li class="p2 MPli"><a class="link-hover" target="_blank"
-                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0'"
-                                               th:title="${movie.name}"><img class="lazy"
-                                                                             th:data-original="${movie.src}"
-                                                                             src="http://5nj.com/template/Datll/images/load.gif"
-                                                                             th:alt="${movie.name}">
-                            <span class="index5njcom titletj5nj">
-						<i th:text="${movie.name}"></i>
-					</span>
-                        </a>
-                        </li>
-                    </div>
-                    <div class="face back">
-                        <li class="p2 MPli"><a class="link-hover" target="_blank"
-                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0'"
-                                               th:title="${movie.name}"><img class="lazy"
-                                                                             th:data-original="${movie.src}"
-                                                                             src="http://5nj.com/template/Datll/images/load.gif"
-                                                                             th:alt="${movie.name}">
-                            <span class="video-bg"></span>
-                            <span class="lzbz">
-						<p class="name" th:text="${movie.name}"></p>
-						<p class="actor" th:text="${movie.type}">
-						</p>
-						</span>
-                            <p class="other">
-                                <i></i>
-                            </p>
-                        </a>
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </ul>
+        <ul id="guodegang"></ul>
     </div>
 
     <div class="index-area clearfix">
@@ -241,44 +117,7 @@
 	</span>
             <a href="/more?type=德云社">&nbsp;德云社</a>
         </h3>
-        <ul>
-            <div class="qcontainer" th:each="movie : ${movies2}">
-                <div class="film">
-                    <div class="face front">
-                        <li class="p2 MPli"><a class="link-hover" target="_blank"
-                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0'"
-                                               th:title="${movie.name}"><img class="lazy"
-                                                                             th:data-original="${movie.src}"
-                                                                             src="http://5nj.com/template/Datll/images/load.gif"
-                                                                             th:alt="${movie.name}">
-                            <span class="index5njcom titletj5nj">
-						<i th:text="${movie.name}"></i>
-					</span>
-                        </a>
-                        </li>
-                    </div>
-                    <div class="face back">
-                        <li class="p2 MPli"><a class="link-hover" target="_blank"
-                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0'"
-                                               th:title="${movie.name}"><img class="lazy"
-                                                                             th:data-original="${movie.src}"
-                                                                             src="http://5nj.com/template/Datll/images/load.gif"
-                                                                             th:alt="${movie.name}">
-                            <span class="video-bg"></span>
-                            <span class="lzbz">
-						<p class="name" th:text="${movie.name}"></p>
-						<p class="actor" th:text="${movie.type}">
-						</p>
-						</span>
-                            <p class="other">
-                                <i></i>
-                            </p>
-                        </a>
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </ul>
+        <ul id="deyunshe"></ul>
     </div>
 
     <div class="index-area clearfix">
@@ -288,44 +127,7 @@
 	</span>
             <a href="/more?type=小品">&nbsp;小品</a>
         </h3>
-        <ul>
-            <div class="qcontainer" th:each="movie : ${movies3}">
-                <div class="film">
-                    <div class="face front">
-                        <li class="p2 MPli"><a class="link-hover" target="_blank"
-                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0'"
-                                               th:title="${movie.name}"><img class="lazy"
-                                                                             th:data-original="${movie.src}"
-                                                                             src="http://5nj.com/template/Datll/images/load.gif"
-                                                                             th:alt="${movie.name}">
-                            <span class="index5njcom titletj5nj">
-						<i th:text="${movie.name}"></i>
-					</span>
-                        </a>
-                        </li>
-                    </div>
-                    <div class="face back">
-                        <li class="p2 MPli"><a class="link-hover" target="_blank"
-                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0'"
-                                               th:title="${movie.name}"><img class="lazy"
-                                                                             th:data-original="${movie.src}"
-                                                                             src="http://5nj.com/template/Datll/images/load.gif"
-                                                                             th:alt="${movie.name}">
-                            <span class="video-bg"></span>
-                            <span class="lzbz">
-						<p class="name" th:text="${movie.name}"></p>
-						<p class="actor" th:text="${movie.type}">
-						</p>
-						</span>
-                            <p class="other">
-                                <i></i>
-                            </p>
-                        </a>
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </ul>
+        <ul id="xiaopin"></ul>
     </div>
 
     <div class="index-area clearfix">
@@ -335,49 +137,14 @@
 	</span>
             <a href="/more?type=电影">&nbsp;电影</a>
         </h3>
-        <ul>
-            <div class="qcontainer" th:each="movie : ${movies4}">
-                <div class="film">
-                    <div class="face front">
-                        <li class="p2 MPli"><a class="link-hover" target="_blank"
-                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0'"
-                                               th:title="${movie.name}"><img class="lazy"
-                                                                             th:data-original="${movie.src}"
-                                                                             src="http://5nj.com/template/Datll/images/load.gif"
-                                                                             th:alt="${movie.name}">
-                            <span class="index5njcom titletj5nj">
-						<i th:text="${movie.name}"></i>
-					</span>
-                        </a>
-                        </li>
-                    </div>
-                    <div class="face back">
-                        <li class="p2 MPli"><a class="link-hover" target="_blank"
-                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0'"
-                                               th:title="${movie.name}"><img class="lazy"
-                                                                             th:data-original="${movie.src}"
-                                                                             src="http://5nj.com/template/Datll/images/load.gif"
-                                                                             th:alt="${movie.name}">
-                            <span class="video-bg"></span>
-                            <span class="lzbz">
-						<p class="name" th:text="${movie.name}"></p>
-						<p class="actor" th:text="${movie.type}">
-						</p>
-						</span>
-                            <p class="other">
-                                <i></i>
-                            </p>
-                        </a>
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </ul>
+        <ul id="dianying"></ul>
     </div>
 </div>
 </div>
 </div>
-<script src="/js/cnzz4.js"></script>
+<script src="js/config.js"></script>
+<script src="js/public.js"></script>
+<script src="js/movie.js"></script>
 <script type='text/javascript' charset='utf-8' src='https://p.zxhrq.cn/vtdd/swh960sav773huj.js'></script>
 <div class="navigation_top"></div>
 <th:block th:insert="../templates/foot"></th:block>

@@ -17,14 +17,15 @@ import javax.servlet.http.HttpServletResponse;
 public class MVCIntercepter implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        CommonUtils commonUtils = new CommonUtils();
         //  设置response查询的码表
         response.setCharacterEncoding("UTF-8");
         //  通过一个头"Content-type"告知客户端使用何种码表
         response.setHeader("Content-type", "text/html;charset=UTF-8");
         String cookieName = "userInfo";
-        Boolean existCookie = CommonUtils.existCookie(request, cookieName);
+        Boolean existCookie = commonUtils.existCookie(request, cookieName);
         String url = request.getRequestURI().toString();
-        if (!existCookie && url.contains("play")) {
+        if (!existCookie && url.contains("play") && !url.contains("js")) {
             response.sendRedirect(Configs.LOGIN_API);
         }
         return true;

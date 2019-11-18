@@ -270,39 +270,11 @@
         </dl>
     </div>
     <p></p>
-    <div class="index-area clearfix" th:if="${#lists.isEmpty(recommendations) == false}">
-        <h3 class="title index-color">&nbsp;相关推荐</h3>
-        <ul>
-            <div class="qcontainer" th:each="recommendation : ${recommendations}">
-                <div class="film" th:each="movie : ${recommendation.movie}">
-                    <div class="face front">
-                        <li class="p2 MPli"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
-                            <span class="index5njcom titletj5nj">
-						<i th:text="${movie.name}"></i>
-					</span>
-                        </a>
-                        </li>
-                    </div>
-                    <div class="face back">
-                        <li class="p2 MPli"><a class="link-hover" target="_blank" th:href="'/play?_id=' + ${movie._id} + '&source_index=0'" th:title="${movie.name}"><img class="lazy" th:data-original="${movie.src}" src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
-                            <span class="video-bg"></span>
-                            <span class="lzbz">
-						<p class="name" th:text="${movie.name}"></p>
-						<p class="actor" th:text="${movie.type}">
-						</p>
-						</span>
-                            <p class="other">
-                                <i></i>
-                            </p>
-                        </a>
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </ul>
-    </div>
+    <div id="xiangguantuijian"></div>
 </div>
-<script src="http://www.5nj.com/js/cnzz4.js"></script>
+<script src="js/config.js"></script>
+<script src="js/public.js"></script>
+<script src="js/play.js"></script>
 <script type='text/javascript' charset='utf-8' src='https://p.zxhrq.cn/vtdd/swh960sav773huj.js'></script>
 <div class="navigation_top"></div>
 <th:block th:insert="../templates/foot"></th:block>

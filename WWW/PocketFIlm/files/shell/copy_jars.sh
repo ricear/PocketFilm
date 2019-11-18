@@ -21,36 +21,37 @@ if [ ! $1 ]; then
 	string="www,movie,tv,drama,piece"
 fi
 array=(${string//,/ })
+# 获取 jar 包
 for var in ${array[@]}
 do
+	# 获取jar包
+	echo '正在获取 '$var' 包'
 	if [ $var == www ]; then
-		# 获取jar包
-		echo '正在获取 jar 包'
 		cp ../../WWW/target/www-0.0.1-SNAPSHOT.jar ../jars/
-		echo 'jar 包获取成功'
 	elif [ $var == movie ]; then
-		# 获取jar包
-		echo '正在获取 jar 包'
 		cp ../../Movie/target/movie-0.0.1-SNAPSHOT.jar ../jars/
-		echo 'jar 包获取成功'
 	elif [ $var == tv ]; then
-		# 获取jar包
-		echo '正在获取 jar 包'
 		cp ../../TV/target/tv-0.0.1-SNAPSHOT.jar ../jars/
-		echo 'jar 包获取成功'
 	elif [ $var == drama ]; then
-		# 获取jar包
-		echo '正在获取 jar 包'
 		cp ../../Drama/target/drama-0.0.1-SNAPSHOT.jar ../jars/
-		echo 'jar 包获取成功'
 	elif [ $var == piece ]; then
-		# 获取jar包
-		echo '正在获取 jar 包'
 		cp ../../Piece/target/piece-0.0.1-SNAPSHOT.jar ../jars/
-		echo 'jar 包获取成功'
 	fi
+	echo $var' 包获取成功'
 done
+
+# 上传 jar 包
+if [ ! $1 ]; then
 # 将 jar 包上传到服务器
-echo '将 jar 包上传到服务器'
-scp ../jars/*.jar root@103.45.178.220:/usr/local/projects/PocketFilm/files/jars/
-echo '已完成'
+	echo '正在将 jar 包上传到服务器'
+	scp ../jars/*.jar root@103.45.178.220:/usr/local/projects/PocketFilm/files/jars/
+	echo '已完成'
+else
+for var in ${array[@]}
+do
+	# 将 jar 包上传到服务器
+	echo '正在将 $var 包上传到服务器'
+	scp ../jars/${var}-*.jar root@103.45.178.220:/usr/local/projects/PocketFilm/files/jars/
+	echo '已完成'
+done
+fi

@@ -3,6 +3,9 @@ package com.grayson.movie.controller;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.grayson.common.util.CommonUtils;
+import com.grayson.common.util.CommonUtils;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,59 +32,24 @@ public class MovieController {
      */
     @RequestMapping("/")
     public String getMovie(ModelMap map, HttpServletRequest request) {
+        CommonUtils commonUtils = new CommonUtils();
         //  获取用户名
         String cookieName = "userInfo";
-        JSONObject userInfo = CommonUtils.getCookieValue(request, cookieName);
+        JSONObject userInfo = commonUtils.getCookieValue(request, cookieName);
         String username = null;
         if (userInfo != null) {
             username = userInfo.getString("username");
         }
-
-        //  获取浏览记录
-        JSONArray records = CommonUtils.getRecords(request, "movie");
-
         map.addAttribute("username", username);
-        map.addAttribute("records", records);
-
         Integer pageSize = 18;
-
         //  推荐
         String recommendationsUrl = Configs.API + "/recommendations/get/user?user_name=" + username + "&browse_type=movie&page_size=" + pageSize;
         //  热门推荐
         String hottestMoviesUrl = Configs.API + "/get/today?type=movie&sort_type=2&page_size=" + pageSize;
-        JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
-        JSONObject hottestMoviesObject = CommonUtils.doGet(hottestMoviesUrl);
+        JSONObject recommendationsObject = commonUtils.doGet(recommendationsUrl);
+        JSONObject hottestMoviesObject = commonUtils.doGet(hottestMoviesUrl);
         map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
         map.addAttribute("hottestMovies", hottestMoviesObject.getJSONArray("data"));
-
-        //  电影
-        String movies0Url = Configs.API + "/movie/get/all?type=0&page_size=" + pageSize;
-        //  电视剧
-        String movies1Url = Configs.API + "/movie/get/all?type=1&page_size=" + pageSize;
-        //  综艺
-        String movies2Url = Configs.API + "/movie/get/all?type=2&page_size=" + pageSize;
-        //  动漫
-        String movies3Url = Configs.API + "/movie/get/all?type=3&page_size=" + pageSize;
-        //  少儿
-        String movies4Url = Configs.API + "/movie/get/all?type=4&page_size=" + pageSize;
-        //  今日更新
-        String todayMoviesUrl = Configs.API + "/get/today?type=movie";
-        //  今日更新数据量
-        String todayCountUrl = Configs.API + "/count/get/today?type=movie";
-        JSONObject movies0Object = CommonUtils.doGet(movies0Url);
-        JSONObject movies1Object = CommonUtils.doGet(movies1Url);
-        JSONObject movies2Object = CommonUtils.doGet(movies2Url);
-        JSONObject movies3Object = CommonUtils.doGet(movies3Url);
-        JSONObject movies4Object = CommonUtils.doGet(movies4Url);
-        JSONObject todayMoviesObject = CommonUtils.doGet(todayMoviesUrl);
-        JSONObject todayCountObject = CommonUtils.doGet(todayCountUrl);
-        map.addAttribute("movies0", movies0Object.getJSONArray("data"));
-        map.addAttribute("movies1", movies1Object.getJSONArray("data"));
-        map.addAttribute("movies2", movies2Object.getJSONArray("data"));
-        map.addAttribute("movies3", movies3Object.getJSONArray("data"));
-        map.addAttribute("movies4", movies4Object.getJSONArray("data"));
-        map.addAttribute("todayMovies", todayMoviesObject.getJSONArray("data"));
-        map.addAttribute("todayCount", todayCountObject.getInteger("data"));
         map.addAttribute("title", "掌上影视_免费在线观看电影电视剧综艺动漫韩剧港剧台剧泰剧欧美剧日剧");
         return "movie.html";
     }
@@ -95,30 +63,21 @@ public class MovieController {
      */
     @RequestMapping("/play")
     public String playMovie(ModelMap map, HttpServletRequest request, @RequestParam("_id") String _id, @RequestParam("source_index") Integer sourceIndex, @RequestParam("type_index") Integer typeIndex) {
+        CommonUtils commonUtils = new CommonUtils();
         //  获取用户名
         String cookieName = "userInfo";
-        JSONObject userInfo = CommonUtils.getCookieValue(request, cookieName);
+        JSONObject userInfo = commonUtils.getCookieValue(request, cookieName);
         String username = null;
         if (userInfo != null) {
             username = userInfo.getString("username");
         }
 
-        //  获取浏览记录
-        JSONArray records = CommonUtils.getRecords(request, "movie");
-
         map.addAttribute("username", username);
-        map.addAttribute("records", records);
 
         //  影视详情
         String url = Configs.API + "/movie/get/_id?_id=" + _id;
 
-        //  推荐
-        Integer pageSize = 12;
-        String recommendationsUrl = Configs.API + "/recommendations/get?movie_id=" + _id + "&type=movie&page_size=" + pageSize;
-        JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
-        map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
-
-        JSONObject jsonObject = CommonUtils.doGet(url);
+        JSONObject jsonObject = commonUtils.doGet(url);
         JSONObject movie = jsonObject.getJSONObject("data");
         map.addAttribute("movie", movie);
         map.put("source_index", sourceIndex);
@@ -126,7 +85,7 @@ public class MovieController {
         JSONObject sourceObject = jsonObject.getJSONObject("data").getJSONArray("sources").getJSONObject(sourceIndex);
         map.put("source", sourceObject);
         String currentUrl = sourceObject.getJSONArray("types").getJSONObject(typeIndex).getString("url");
-        String playUrl = CommonUtils.getParseUrl("movie", currentUrl);
+        String playUrl = commonUtils.getParseUrl("movie", currentUrl);
         map.put("play_url", playUrl);
         map.put("title", "《" + jsonObject.getJSONObject("data").get("name") + "》免费在线观看-策驰影院免费在线观看高清电影" + jsonObject.getJSONObject("data").get("name"));
 
@@ -144,7 +103,7 @@ public class MovieController {
         recordsToRecordObject.put("device_version", System.getProperty("os.version"));
         recordsToRecordObject.put("device_platform", System.getProperty("os.name"));
         String recordsUrl = Configs.API + "/records/add";
-        CommonUtils.doPost(recordsUrl, recordsToRecordObject);
+        commonUtils.doPost(recordsUrl, recordsToRecordObject);
 
         return "play.html";
     }
@@ -164,19 +123,18 @@ public class MovieController {
      */
     @RequestMapping("/more")
     public String getMoreMovie(ModelMap map, HttpServletRequest request, @RequestParam(value = "type", defaultValue = "0") String type, @RequestParam(value = "type2", defaultValue = "全部") String type2, @RequestParam(value = "re_gion", defaultValue = "全部") String region, @RequestParam(value = "release_date", defaultValue = "全部") String release_date, @RequestParam(value = "page_index", defaultValue = "1") String page_index, @RequestParam(value = "sort_type", defaultValue = "0") String sort_type, @RequestParam(value = "key_word", defaultValue = "") String key_word) {
+        CommonUtils commonUtils = new CommonUtils();
+        if (key_word.equals("null")) {
+            key_word = "";
+        }
         //  获取用户名
         String cookieName = "userInfo";
-        JSONObject userInfo = CommonUtils.getCookieValue(request, cookieName);
+        JSONObject userInfo = commonUtils.getCookieValue(request, cookieName);
         String username = null;
         if (userInfo != null) {
             username = userInfo.getString("username");
         }
-
-        //  获取浏览记录
-        JSONArray records = CommonUtils.getRecords(request, "movie");
-
         map.addAttribute("username", username);
-        map.addAttribute("records", records);
 
         //  影视类型
         List<String> typeNames = new ArrayList<>();
@@ -185,7 +143,7 @@ public class MovieController {
         Integer pageSize = 30;
         //  获取影视类型
         String typeUrl = Configs.API + "/movie/type/get/all";
-        JSONObject typeObject = CommonUtils.doGet(typeUrl);
+        JSONObject typeObject = commonUtils.doGet(typeUrl);
         JSONArray movieTypesTemp = typeObject.getJSONArray("data");
         JSONArray movieTypes = new JSONArray();
         if (type.equals("0") || type.equals("1")) {
@@ -221,34 +179,14 @@ public class MovieController {
             }
         }
 
-        //  获取影视资源数量
-        String countMovieUrl = Configs.API + "/count/get?source_type=movie&type=" + type + "&type2=" + type2 + "&region=" + region + "&release_date=" + release_date + "&page_index=" + page_index + "&page_size=" + pageSize + "&sort_type=" + sort_type + "&key_word=" + key_word + "";
-        JSONObject countMovieObject = CommonUtils.doGet(countMovieUrl);
-        Integer count = countMovieObject.getInteger("data");
-
-        //  获取影视数据
-        String moreMovieUrl = Configs.API + "/movie/get/all?type=" + type + "&type2=" + type2 + "&region=" + region + "&release_date=" + release_date + "&page_index=" + page_index + "&page_size=" + pageSize + "&sort_type=" + sort_type + "&key_word=" + key_word + "";
-        JSONObject movieObject = CommonUtils.doGet(moreMovieUrl);
-
-        //  获取页数相关信息
-        Integer pageIndex = Integer.parseInt(page_index);
-        Integer totalPage = count / pageSize;
-        totalPage = count % pageSize == 0 ? totalPage : totalPage + 1;
-        List<Integer> pages = CommonUtils.getPages(count, pageIndex, pageSize, totalPage);
-
         map.addAttribute("movieTypes", movieTypes);
-        map.addAttribute("count", count);
-        map.addAttribute("movies", movieObject.getJSONArray("data"));
         map.addAttribute("type", type);
         map.addAttribute("type2", type2);
         map.addAttribute("region", region);
         map.addAttribute("release_date", release_date);
-        map.addAttribute("page_index", pageIndex);
-        map.addAttribute("page_size", pageSize);
-        map.addAttribute("total_page", totalPage);
+        map.addAttribute("page_index", page_index);
         map.addAttribute("sort_type", Integer.parseInt(sort_type));
         map.addAttribute("key_word", key_word);
-        map.addAttribute("pages", pages);
         map.addAttribute("typeName", typeNames.get(Integer.parseInt(type)));
         map.addAttribute("title", typeNames.get(Integer.parseInt(type)) + "频道第"+page_index+"页-免费在线观看-掌上影视");
         return "more-movie.html";
@@ -264,44 +202,19 @@ public class MovieController {
      */
     @RequestMapping("/search")
     public String searchMovie(ModelMap map, HttpServletRequest request, @RequestParam(value = "page_index", defaultValue = "1") String page_index, @RequestParam(value = "sort_type", defaultValue = "0") String sort_type, @RequestParam(value = "key_word", defaultValue = "null") String key_word) {
+        CommonUtils commonUtils = new CommonUtils();
         //  获取用户名
         String cookieName = "userInfo";
-        JSONObject userInfo = CommonUtils.getCookieValue(request, cookieName);
+        JSONObject userInfo = commonUtils.getCookieValue(request, cookieName);
         String username = null;
         if (userInfo != null) {
             username = userInfo.getString("username");
         }
 
-        //  获取浏览记录
-        JSONArray records = CommonUtils.getRecords(request, "movie");
-
         map.addAttribute("username", username);
-        map.addAttribute("records", records);
-
-        //  获取影视资源数量
-        String countMovieUrl = Configs.API + "/count/get?source_type=movie&key_word=" + key_word + "";
-        JSONObject countMovieObject = CommonUtils.doGet(countMovieUrl);
-        Integer count = countMovieObject.getInteger("data");
-
-        //  获取影视数据
-        Integer pageSize = 30;
-        String moreMovieUrl = Configs.API + "/movie/get/all?key_word="+key_word+"&page_index=" + page_index + "&page_size=" + pageSize  + "&sort_type=" + sort_type;
-        JSONObject movieObject = CommonUtils.doGet(moreMovieUrl);
-
-        //  获取页数相关信息
-        Integer pageIndex = Integer.parseInt(page_index);
-        Integer totalPage = count / pageSize;
-        totalPage = count % pageSize == 0 ? totalPage : totalPage + 1;
-        List<Integer> pages = CommonUtils.getPages(count, pageIndex, pageSize, totalPage);
-
-        map.addAttribute("count", count);
-        map.addAttribute("movies", movieObject.getJSONArray("data"));
-        map.addAttribute("page_index", pageIndex);
-        map.addAttribute("page_size", pageSize);
-        map.addAttribute("total_page", totalPage);
+        map.addAttribute("page_index", page_index);
         map.addAttribute("sort_type", Integer.parseInt(sort_type));
         map.addAttribute("key_word", key_word);
-        map.addAttribute("pages", pages);
         map.addAttribute("title", key_word + "-掌上影视影片搜索");
 
         return "search-movie.html";

@@ -106,11 +106,7 @@
                            th:value="${key_word}" th:if="${key_word ne null}"/>
                 </a>
             </ul>
-            <dl class="drop-box history_box" id="history_box" style="top: 60px; display: none;">
-                <dt><span>观看记录</span>
-                </dt>
-                <dd class="even" th:each="record : ${records}"><span th:text="${record.type2}"></span><a th:href="'/play?_id=' + ${record.id} + '&source_index=0&type_index=0'" class="hx_title" th:text="${record.name}"></a></dd>
-            </dl>
+            <dl class="drop-box history_box" id="history_box" style="top: 60px; display: none;"></dl>
             <div style="position: absolute;padding: 10px;background: #f6f6f9;overflow: hidden;animation-name: history_box;animation-duration: .3s;margin-left: 92%;width: 135px;border: 1px solid #afafaf;border-top: 0;box-shadow: 0 2px 4px rgba(0, 0, 0, .2);display: none" id="userInfoBox">
                 <a href="javascript:void(0)" onclick="logout()" style="text-align: right;padding-right: 5px;height: 28px;line-height: 28px;border-bottom: 1px solid #ccc;">退出</a>
             </div>

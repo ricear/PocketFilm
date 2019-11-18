@@ -31,8 +31,9 @@ public class WWWController {
      */
     @RequestMapping("/")
     public String getMovie(ModelMap map, HttpServletRequest request) {
+        CommonUtils commonUtils = new CommonUtils();
         String cookieName = "userInfo";
-        JSONObject userInfo = CommonUtils.getCookieValue(request, cookieName);
+        JSONObject userInfo = commonUtils.getCookieValue(request, cookieName);
         map.addAttribute("userInfo", userInfo);
         return "index.html";
     }
@@ -65,25 +66,26 @@ public class WWWController {
     @RequestMapping("/feedback")
     public String feedback(ModelMap map, HttpServletRequest request, @RequestParam(value = "page_index", defaultValue = "1") String page_index) {
 
+        CommonUtils commonUtils = new CommonUtils();
         String cookieName = "userInfo";
-        JSONObject userInfo = CommonUtils.getCookieValue(request, cookieName);
+        JSONObject userInfo = commonUtils.getCookieValue(request, cookieName);
         map.addAttribute("userInfo", userInfo);
 
         Integer pageSize = 18;
         //  反馈信息
         String feedbackListUrl = Configs.API + "/feedback/get/all?page_index=" + page_index + "&page_size=" + pageSize;
-        JSONObject feedbackObject = CommonUtils.doGet(feedbackListUrl);
+        JSONObject feedbackObject = commonUtils.doGet(feedbackListUrl);
 
         //  获取反馈信息数量
         String countMovieUrl = Configs.API + "/count/get/feedback";
-        JSONObject countMovieObject = CommonUtils.doGet(countMovieUrl);
+        JSONObject countMovieObject = commonUtils.doGet(countMovieUrl);
         Integer count = countMovieObject.getInteger("data");
 
         //  获取页数相关信息
         Integer pageIndex = Integer.parseInt(page_index);
         Integer totalPage = count / pageSize;
         totalPage = count % pageSize == 0 ? totalPage : totalPage + 1;
-        List<Integer> pages = CommonUtils.getPages(count, pageIndex, pageSize, totalPage);
+        List<Integer> pages = commonUtils.getPages(count, pageIndex, pageSize, totalPage);
 
         map.addAttribute("feedbackList", feedbackObject.getJSONArray("data"));
         map.addAttribute("page_index", pageIndex);
@@ -101,8 +103,9 @@ public class WWWController {
      */
     @RequestMapping("/feedback/add")
     public String feedbackRelease(ModelMap map, HttpServletRequest request, @RequestBody String g_content) {
+        CommonUtils commonUtils = new CommonUtils();
         String cookieName = "userInfo";
-        JSONObject userInfo = CommonUtils.getCookieValue(request, cookieName);
+        JSONObject userInfo = commonUtils.getCookieValue(request, cookieName);
         String user_name = userInfo.getString("username");
         String content = null;
         try {
@@ -120,7 +123,7 @@ public class WWWController {
         feedback.setDevice_version(device_version);
         feedback.setDevice_platform(device_platform);
         String feedbackAddUrl = Configs.API + "/feedback/add";
-        CommonUtils.doPost(feedbackAddUrl, JSONObject.parseObject(JSON.toJSONString(feedback)));
+        commonUtils.doPost(feedbackAddUrl, JSONObject.parseObject(JSON.toJSONString(feedback)));
         return "feedback-add.html";
     }
 

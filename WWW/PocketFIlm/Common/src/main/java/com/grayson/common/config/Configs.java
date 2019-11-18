@@ -6,7 +6,8 @@ package com.grayson.common.config;
 public class Configs {
 
     //  主机名
-    public static String API_HOST = "http://api.grayson.top";
+//    public static String API_HOST = "http://api.grayson.top";
+    public static String API_HOST = "http://103.45.178.220:9000";
     public static String WWW_HOST = "http://www.grayson.top";
 
     //  api 接口名

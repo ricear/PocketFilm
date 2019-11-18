@@ -12,6 +12,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.springframework.scheduling.annotation.Async;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
@@ -31,54 +32,13 @@ import java.util.List;
 public class CommonUtils {
 
     /**
-     * 生成首页静态页面
-     */
-    public void createIndexHtml() {
-        try {
-
-            ClassLoaderTemplateResolver resolver = new ClassLoaderTemplateResolver();
-            resolver.setPrefix("templates/");
-            resolver.setSuffix(".html");
-            TemplateEngine templateEngine = new TemplateEngine();
-            templateEngine.setTemplateResolver(resolver);
-
-            Context context = new Context();
-//            context.setVariable("users", userService.findAllUsers());
-
-            /**获取输出目标文件输出流------开始*/
-            String filepath = this.getClass().getResource("/").toURI().getPath() + "static/";
-            File folder = new File(filepath);
-            //如果文件夹不存在
-            if (!folder.exists()) {
-                folder.mkdir();
-            }
-            String indexFileName = "index.html";
-            File indexHtml = new File(folder, indexFileName);
-            //如果html文件不存在
-            if (!indexHtml.exists()) {
-                indexHtml.createNewFile();
-            }
-            Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(indexHtml), "UTF-8"));
-            /**获取输出目标文件输出流------结束*/
-
-            templateEngine.process("list", context, writer);
-            writer.flush();
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
      * 获取解析地址
      *
      * @param movieType 影视类型
      * @param url       影视播放地址
      * @return 解析后的播放地址
      */
-    public static String getParseUrl(String movieType, String url) {
+    public String getParseUrl(String movieType, String url) {
         String parseUrl = "";
         if (movieType == "movie") {
             if (url.startsWith("aHR0")) {
@@ -107,7 +67,8 @@ public class CommonUtils {
      * @param browse_type 浏览类型
      * @return 浏览记录
      */
-    public static JSONArray getRecords(HttpServletRequest request, String browse_type) {
+    @Async
+    public JSONArray getRecords(HttpServletRequest request, String browse_type) {
         String cookieName = "userInfo";
         JSONObject userInfo = getCookieValue(request, cookieName);
         if (userInfo != null) {
@@ -129,7 +90,7 @@ public class CommonUtils {
      * @param cookieName cookie 名称
      * @return
      */
-    public static Boolean existCookie(HttpServletRequest request, String cookieName) {
+    public Boolean existCookie(HttpServletRequest request, String cookieName) {
         Cookie[] cookies = request.getCookies();
         if (cookies == null) return false;
         for (Cookie cookieTemp : cookies) {
@@ -197,6 +158,7 @@ public class CommonUtils {
      * @param json 数据
      * @return
      */
+    @Async
     public static String doPost(String url, JSONObject json) {
         String result = "";
         HttpPost post;
@@ -238,7 +200,8 @@ public class CommonUtils {
      * @param url 求求地址
      * @return 返回的数据
      */
-    public static JSONObject doGet(String url) {
+    @Async
+    public JSONObject doGet(String url) {
         HttpClient client = HttpClients.createDefault();
         // 要调用的接口方法
         HttpGet get = new HttpGet(url);

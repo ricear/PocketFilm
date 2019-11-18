@@ -27,41 +27,14 @@ public class TVController {
     @RequestMapping("/")
     public String getMovie(ModelMap map, HttpServletRequest request) {
         //  获取用户名
+        CommonUtils commonUtils = new CommonUtils();
         String cookieName = "userInfo";
-        JSONObject userInfo = CommonUtils.getCookieValue(request, cookieName);
+        JSONObject userInfo = commonUtils.getCookieValue(request, cookieName);
         String username = null;
         if (userInfo != null) {
             username = userInfo.getString("username");
         }
-
-        //  获取浏览记录
-        JSONArray records = CommonUtils.getRecords(request, "tv");
-
         map.addAttribute("username", username);
-        map.addAttribute("records", records);
-
-        Integer pageSize = 18;
-        //  推荐
-        String recommendationsUrl = Configs.API + "/recommendations/get/user?user_name="+username+"&browse_type=tv&page_size=" + pageSize;
-        //  央视台
-        String movies0Url = Configs.API + "/tv/get/all?type=央视台&page_size=" + pageSize;
-        //  卫视台
-        String movies1Url = Configs.API + "/tv/get/all?type=卫视台&page_size=" + pageSize;
-        //  地方台
-        String movies2Url = Configs.API + "/tv/get/all?type=地方台&page_size=" + pageSize;
-        //  港澳台
-        String movies3Url = Configs.API + "/tv/get/all?type=港澳台&page_size=" + pageSize;
-        System.out.println(recommendationsUrl);
-        JSONObject recommendationsObject = CommonUtils.doGet(recommendationsUrl);
-        JSONObject movies0Object = CommonUtils.doGet(movies0Url);
-        JSONObject movies1Object = CommonUtils.doGet(movies1Url);
-        JSONObject movies2Object = CommonUtils.doGet(movies2Url);
-        JSONObject movies3Object = CommonUtils.doGet(movies3Url);
-        map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
-        map.addAttribute("movies0", movies0Object.getJSONArray("data"));
-        map.addAttribute("movies1", movies1Object.getJSONArray("data"));
-        map.addAttribute("movies2", movies2Object.getJSONArray("data"));
-        map.addAttribute("movies3", movies3Object.getJSONArray("data"));
         map.addAttribute("title", "掌上电视_免费在线观看央视台卫视台地方台港澳台海外台轮播台");
         return "movie.html";
     }
@@ -76,28 +49,29 @@ public class TVController {
     @RequestMapping("/play")
     public String playMovie(ModelMap map, HttpServletRequest request, @RequestParam("_id") String _id, @RequestParam("source_index") Integer sourceIndex) {
         //  获取用户名
+        CommonUtils commonUtils = new CommonUtils();
         String cookieName = "userInfo";
-        JSONObject userInfo = CommonUtils.getCookieValue(request, cookieName);
+        JSONObject userInfo = commonUtils.getCookieValue(request, cookieName);
         String username = null;
         if (userInfo != null) {
             username = userInfo.getString("username");
         }
 
         //  获取浏览记录
-        JSONArray records = CommonUtils.getRecords(request, "tv");
+        JSONArray records = commonUtils.getRecords(request, "tv");
 
         map.addAttribute("username", username);
         map.addAttribute("records", records);
 
         String url = Configs.API + "/tv/get/_id?_id=" + _id;
-        JSONObject jsonObject = CommonUtils.doGet(url);
+        JSONObject jsonObject = commonUtils.doGet(url);
         JSONObject movie = jsonObject.getJSONObject("data");
         map.addAttribute("movie", movie);
         map.put("source_index", sourceIndex);
         JSONObject sourceObject = jsonObject.getJSONObject("data").getJSONArray("sources").getJSONObject(sourceIndex);
         map.put("source", sourceObject);
         String currentUrl = sourceObject.getString("url");
-        String playUrl = CommonUtils.getParseUrl("tv", currentUrl);
+        String playUrl = commonUtils.getParseUrl("tv", currentUrl);
         map.put("play_url", playUrl);
         map.put("title", "《" + movie.get("name") + "》免费在线观看-掌上电视免费在线观看高清电视直播" + movie.get("name"));
 
@@ -115,7 +89,7 @@ public class TVController {
         recordsToRecordObject.put("device_version", System.getProperty("os.version"));
         recordsToRecordObject.put("device_platform", System.getProperty("os.name"));
         String recordsUrl = Configs.API + "/records/add";
-        CommonUtils.doPost(recordsUrl, recordsToRecordObject);
+        commonUtils.doPost(recordsUrl, recordsToRecordObject);
 
         return "play.html";
     }
@@ -132,15 +106,19 @@ public class TVController {
     @RequestMapping("/more")
     public String getMoreMovie(ModelMap map, HttpServletRequest request, @RequestParam(value = "type", defaultValue = "全部") String type, @RequestParam(value = "selected_type", defaultValue = "全部") String selected_type, @RequestParam(value = "page_index", defaultValue = "1") String page_index, @RequestParam(value = "key_word", defaultValue = "") String key_word) {
         //  获取用户名
+        CommonUtils commonUtils = new CommonUtils();
+        if (key_word.equals("null")) {
+            key_word = "";
+        }
         String cookieName = "userInfo";
-        JSONObject userInfo = CommonUtils.getCookieValue(request, cookieName);
+        JSONObject userInfo = commonUtils.getCookieValue(request, cookieName);
         String username = null;
         if (userInfo != null) {
             username = userInfo.getString("username");
         }
 
         //  获取浏览记录
-        JSONArray records = CommonUtils.getRecords(request, "tv");
+        JSONArray records = commonUtils.getRecords(request, "tv");
 
         map.addAttribute("username", username);
         map.addAttribute("records", records);
@@ -159,31 +137,10 @@ public class TVController {
             movieTypes.add(Arrays.asList("类型二", "全部","韩国台", "英国台", "海外台", "美国台", "新加坡台", "印度台", "马来西亚台", "加拿大台", "法国台"));
         }
 
-        //  获取影视资源数量
-        String countMovieUrl = Configs.API + "/count/get?source_type=tv&type=" + type + "&selected_type=" + selected_type + "&page_index=" + page_index + "&page_size=" + pageSize + "&key_word=" + key_word + "";
-        JSONObject countMovieObject = CommonUtils.doGet(countMovieUrl);
-        Integer count = countMovieObject.getInteger("data");
-
-        //  获取影视数据
-        String moreMovieUrl = Configs.API + "/tv/get/all?type=" + type + "&selected_type=" + selected_type + "&page_index=" + page_index + "&page_size=" + pageSize + "&key_word=" + key_word + "";
-        JSONObject movieObject = CommonUtils.doGet(moreMovieUrl);
-
-        //  获取页数相关信息
-        Integer pageIndex = Integer.parseInt(page_index);
-        Integer totalPage = count / pageSize;
-        totalPage = count % pageSize == 0 ? totalPage : totalPage + 1;
-        List<Integer> pages = CommonUtils.getPages(count, pageIndex, pageSize, totalPage);
-
         map.addAttribute("movieTypes", movieTypes);
-        map.addAttribute("count", count);
-        map.addAttribute("movies", movieObject.getJSONArray("data"));
         map.addAttribute("type", type);
         map.addAttribute("selected_type", selected_type);
-        map.addAttribute("page_index", pageIndex);
-        map.addAttribute("page_size", pageSize);
-        map.addAttribute("total_page", totalPage);
         map.addAttribute("key_word", key_word);
-        map.addAttribute("pages", pages);
         map.addAttribute("title", type + "频道第" + page_index + "页-免费在线观看-掌上电视");
         return "more-movie.html";
     }
@@ -200,45 +157,17 @@ public class TVController {
     @RequestMapping("/search")
     public String searchMovie(ModelMap map, HttpServletRequest request, @RequestParam(value = "page_index", defaultValue = "1") String page_index, @RequestParam(value = "sort_type", defaultValue = "0") String sort_type, @RequestParam(value = "key_word", defaultValue = "null") String key_word) {
         //  获取用户名
+        CommonUtils commonUtils = new CommonUtils();
         String cookieName = "userInfo";
-        JSONObject userInfo = CommonUtils.getCookieValue(request, cookieName);
+        JSONObject userInfo = commonUtils.getCookieValue(request, cookieName);
         String username = null;
         if (userInfo != null) {
             username = userInfo.getString("username");
         }
-
-        //  获取浏览记录
-        JSONArray records = CommonUtils.getRecords(request, "tv");
-
         map.addAttribute("username", username);
-        map.addAttribute("records", records);
-
-        //  获取影视资源数量
-        String countMovieUrl = Configs.API + "/count/get?type=全部&source_type=tv&key_word=" + key_word + "";
-        JSONObject countMovieObject = CommonUtils.doGet(countMovieUrl);
-        Integer count = countMovieObject.getInteger("data");
-
-        //  获取影视数据
-        Integer pageSize = 30;
-        String moreMovieUrl = Configs.API + "/tv/get/all?type=全部&key_word=" + key_word + "&page_index=" + page_index + "&page_size=" + pageSize + "&sort_type=" + sort_type;
-        JSONObject movieObject = CommonUtils.doGet(moreMovieUrl);
-
-        //  获取页数相关信息
-        Integer pageIndex = Integer.parseInt(page_index);
-        Integer totalPage = count / pageSize;
-        totalPage = count % pageSize == 0 ? totalPage : totalPage + 1;
-        List<Integer> pages = CommonUtils.getPages(count, pageIndex, pageSize, totalPage);
-
-        map.addAttribute("count", count);
-        map.addAttribute("movies", movieObject.getJSONArray("data"));
-        map.addAttribute("page_index", pageIndex);
-        map.addAttribute("page_size", pageSize);
-        map.addAttribute("total_page", totalPage);
         map.addAttribute("sort_type", Integer.parseInt(sort_type));
         map.addAttribute("key_word", key_word);
-        map.addAttribute("pages", pages);
         map.addAttribute("title", key_word + "-掌上电视电视搜索");
-
         return "search-movie.html";
 
     }

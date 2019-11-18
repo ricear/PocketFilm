@@ -14,8 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 public class MVCIntercepter implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        CommonUtils commonUtils = new CommonUtils();
         String cookieName = "userInfo";
-        Boolean existCookie = CommonUtils.existCookie(request, cookieName);
+        Boolean existCookie = commonUtils.existCookie(request, cookieName);
         String url = request.getRequestURI().toString();
         if (!existCookie && url.contains("play")) {
             response.sendRedirect(Configs.LOGIN_API);

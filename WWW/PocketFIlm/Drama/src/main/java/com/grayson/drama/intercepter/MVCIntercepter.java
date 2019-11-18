@@ -2,6 +2,7 @@ package com.grayson.drama.intercepter;
 
 import com.grayson.common.config.Configs;
 import com.grayson.common.util.CommonUtils;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -14,8 +15,9 @@ import javax.servlet.http.HttpServletResponse;
 public class MVCIntercepter implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        CommonUtils commonUtils = new CommonUtils();
         String cookieName = "userInfo";
-        Boolean existCookie = CommonUtils.existCookie(request, cookieName);
+        Boolean existCookie = commonUtils.existCookie(request, cookieName);
         String url = request.getRequestURI().toString();
         if (!existCookie && url.contains("play")) {
             response.sendRedirect(Configs.LOGIN_API);

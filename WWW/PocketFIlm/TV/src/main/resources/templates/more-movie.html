@@ -20,32 +20,32 @@
                     <div th:each="movieType2, movieType2Stat : ${movieType}">
                     <dt th:if="${movieType2Stat.index eq 0}"><span th:text="${movieType2} + ':&nbsp;'"></span></dt>
                         <dd th:if="${movieTypeStat.index eq 0 && movieType2Stat.index eq 1 && movieType2 eq type}">
-                            <a th:href="'/more?type='+${movieType2}+'&selected_type='+${movieType2}+'&page_index='+${page_index}+'&key_word='+${key_word}+''"
+                            <a th:href="'/more?type='+${movieType2}+'&selected_type='+${movieType2}+'&key_word='+${key_word}+''"
                                class="on" th:text="${movieType2}"></a>
                         </dd>
                         <dd th:if="${movieTypeStat.index eq 0 && movieType2Stat.index eq 1 && movieType2 ne type}">
-                            <a th:href="'/more?type='+${movieType2}+'&selected_type='+${movieType2}+'&page_index='+${page_index}+'&key_word='+${key_word}+''" th:text="${movieType2}"></a>
+                            <a th:href="'/more?type='+${movieType2}+'&selected_type='+${movieType2}+'&key_word='+${key_word}+''" th:text="${movieType2}"></a>
                         </dd>
                         <dd th:if="${movieTypeStat.index eq 1 && movieType2Stat.index eq 1 && movieType2 eq selected_type}">
-                            <a th:href="'/more?type='+${movieType2}+'&selected_type='+${movieType2}+'&page_index='+${page_index}+'&key_word='+${key_word}+''"
+                            <a th:href="'/more?type='+${movieType2}+'&selected_type='+${movieType2}+'&key_word='+${key_word}+''"
                                class="on" th:text="${movieType2}"></a>
                         </dd>
                         <dd th:if="${movieTypeStat.index eq 1 && movieType2Stat.index eq 1 && movieType2 ne selected_type}">
-                            <a th:href="'/more?type='+${movieType2}+'&selected_type='+${movieType2}+'&page_index='+${page_index}+'&key_word='+${key_word}+''" th:text="${movieType2}"></a>
+                            <a th:href="'/more?type='+${movieType2}+'&selected_type='+${movieType2}+'&key_word='+${key_word}+''" th:text="${movieType2}"></a>
                         </dd>
                         <dd th:if="${movieTypeStat.index eq 0 && movieType2Stat.index gt 1 && movieType2 eq type}">
-                            <a th:href="'/more?type='+${movieType2}+'&selected_type='+${selected_type}+'&page_index='+${page_index}+'&key_word='+${key_word}+''"
+                            <a th:href="'/more?type='+${movieType2}+'&selected_type='+${selected_type}+'&key_word='+${key_word}+''"
                                class="on" th:text="${movieType2}"></a>
                         </dd>
                         <dd th:if="${movieTypeStat.index eq 0 && movieType2Stat.index gt 1 && movieType2 ne type}">
-                            <a th:href="'/more?type='+${movieType2}+'&selected_type='+${selected_type}+'&page_index='+${page_index}+'&key_word='+${key_word}+''"th:text="${movieType2}"></a>
+                            <a th:href="'/more?type='+${movieType2}+'&selected_type='+${selected_type}+'&key_word='+${key_word}+''"th:text="${movieType2}"></a>
                         </dd>
                         <dd th:if="${movieTypeStat.index eq 1 && movieType2Stat.index gt 1 && movieType2 eq selected_type}">
-                            <a th:href="'/more?type='+${type}+'&selected_type='+${movieType2}+'&page_index='+${page_index}+'&key_word='+${key_word}+''"
+                            <a th:href="'/more?type='+${type}+'&selected_type='+${movieType2}+'&key_word='+${key_word}+''"
                                class="on" th:text="${movieType2}"></a>
                         </dd>
                         <dd th:if="${movieTypeStat.index eq 1 && movieType2Stat.index gt 1 && movieType2 ne selected_type}">
-                            <a th:href="'/more?type='+${type}+'&selected_type='+${movieType2}+'&page_index='+${page_index}+'&key_word='+${key_word}+''"th:text="${movieType2}"></a>
+                            <a th:href="'/more?type='+${type}+'&selected_type='+${movieType2}+'&key_word='+${key_word}+''"th:text="${movieType2}"></a>
                         </dd>
                     </div>
                 </dl>
@@ -53,73 +53,18 @@
         </div>
     </div>
     <div class="sy-jg mb">
-        <p class="jg">共<span class="count" th:text="${count}"></span>个筛选结果</p>
+        <p class="jg">共<span class="count" id="count"></span>个筛选结果</p>
     </div>
     <div class="index-area clearfix">
-        <ul>
-
-            <div class="qcontainer " th:each="movie : ${movies}">
-                <div class="film">
-                    <div class="face front">
-                        <li class="p1 MPli"><a class="link-hover" target="_blank"
-                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0'"
-                                               th:title="${movie.name}"><img
-                                class="lazy" th:data-original="${movie.src}"
-                                src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
-                            <span class="index5njcom title5nj">
-						<i th:text="${movie.name}"></i>
-					</span>
-                        </a>
-                        </li>
-                    </div>
-                    <div class="face back">
-                        <li class="p1 MPli"><a class="link-hover" target="_blank"
-                                               th:href="'/play?_id=' + ${movie._id} + '&source_index=0'"
-                                               th:title="${movie.name}"><img
-                                class="lazy" th:data-original="${movie.src}"
-                                src="http://5nj.com/template/Datll/images/load.gif" th:alt="${movie.name}">
-                            <span class="video-bg"></span><span class="lzbz">
-								<p class="name" th:text="${movie.name}">
-								</p>
-								<p class="actor" th:text="${movie.type}">
-								</p>
-								</span>
-                            <p class="other">
-                                <i></i>
-                            </p>
-                        </a>
-                        </li>
-                    </div>
-                </div>
-            </div>
-
-        </ul>
+        <ul id="more-movies"></ul>
     </div>
-    <div class="page mb clearfix">
-        <em th:if="${page_index le 1}">首页</em>
-        <a th:href="'/more?type='+${type}+'&selected_type='+${selected_type}+'&page_index=1&key_word='+${key_word}+''"
-           class="pagelink_a" th:if="${page_index gt 1}">首页</a>
-        <em th:if="${page_index le 1}">上一页</em>
-        <a th:href="'/more?type='+${type}+'&selected_type='+${selected_type}+'&page_index='+${page_index - 1}+'&key_word='+${key_word}+''"
-           class="pagelink_a" th:if="${page_index gt 1}">上一页</a>
-        <span th:each="page : ${pages}">
-        <span class="pagenow ee" th:if="${page eq page_index}" th:text="${page}"></span>
-        <a target="_self" class="pagelink_b ee"
-           th:href="'/more?type='+${type}+'&selected_type='+${selected_type}+'&page_index='+${page}+'&key_word='+${key_word}+''"
-           th:if="${page ne page_index}" th:text="${page}"></a>
-        </span>
-        <span class="pagelink_b" th:text="${page_index} + '/' + ${total_page}"></span>
-        <em th:if="${page_index ge total_page}">下一页</em>
-        <a th:href="'/more?type='+${type}+'&selected_type='+${selected_type}+'&page_index='+${page_index + 1}+'&key_word='+${key_word}+''"
-           class="pagelink_a" th:if="${page_index lt total_page}">下一页</a>
-        <em th:if="${page_index eq total_page}">尾页</em>
-        <a th:href="'/more?type='+${type}+'&selected_type='+${selected_type}+'&page_index='+${total_page}+'&key_word='+${key_word}+''"
-           class="pagelink_a" th:if="${page_index ne total_page}">尾页</a>
-    </div>
+    <div class="page mb clearfix" id="pages"></div>
 </div>
 </div>
 </div>
-<script src="/js/cnzz4.js"></script>
+<script src="js/config.js"></script>
+<script src="js/public.js"></script>
+<script src="js/more-movie.js"></script>
 <script type='text/javascript' charset='utf-8' src='https://p.zxhrq.cn/vtdd/swh960sav773huj.js'></script>
 <div class="navigation_top"></div>
 <th:block th:insert="../templates/foot"></th:block>
