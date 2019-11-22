@@ -6,6 +6,56 @@
 
 > 本项目仅为学习之作，请勿用作商业用途，否则后果自负！
 
+### 系统版本
+
+* NodeJS：v10.16.3
+* JDK：1.8.0
+* MongoDB：v4.0.3
+* Python：3.7.4
+* Scrapy：1.6.0
+* Nginx：1.17.0
+
+### 部署方法
+
+* 在你的服务器中建立文件夹`/usr/local/etc`，将`/usr/local/projects/PocketFilm/etc`下面的文件复制到`/usr/local/etc`下面，然后将`/usr/local/etc/nginx/nginx.conf`中的域名修改为你自己对应的域名
+* 在你的服务器中建立文件夹`/usr/local/projects`
+* 将`Server/PocketFilm`上传到你的服务器中的`/usr/local/projects`下面
+* 进入到`/usr/local/projects/PocketFilm`中，以下操作均是相对于当前文件夹
+* 进入到`files/shell`文件夹中
+  * 启动`Nginx`：`sh start_nginx.sh `
+  * 启动`MongoDB`：`nohup sh monitor.sh >/dev/null 2>nohup-monitor.out & `
+  * 启动接口服务：`nohup sh start_api.sh >/dev/null 2>nohup-api.out &`
+  * 启动掌上、掌上影视、掌上电视、掌上戏曲、掌上小品：`sh start_pocketfilm.sh`，如果启动单个或多个的话，其命令为`sh start_pocketfilm.sh movie,tv,drama`，不同的服务以逗号隔开，关闭相关服务的命令为`sh stop_pocketfilm.sh`，关闭单个或多个的命令为`sh stop_pocketfilm.sh movie,tv,drama`，不同的服务以逗号隔开
+  * 启动推荐服务：`sh start_recommender.sh`
+* 进入到`Spider/PocketLifeSpider/PocketLifeSpider/shell`文件夹中
+  * 启动爬虫：
+    * 爬取全部数据：`nohup sh start_spiders.sh all all >/dev/null 2>nohup-all-all.out & `
+    * 爬取最近数据：`nohup sh start_spiders.sh all latest >/dev/null 2>nohup-all-latest.out & `
+    * 参数说明：`sh start_spiders.sh all all`
+      * 第一个`all`：爬虫类型，`all`表示全部爬虫，单个或多个爬虫以逗号分开，例如：`sh start_spiders.sh tencent,youku,iqiyi all`
+      * 第二个`all`：表示全部数据，如果想爬取最近数据，则为`latest`，例如：`nohup sh start_spiders.sh all latest >/dev/null 2>nohup-all-latest.out & `
+
+### 使用说明
+
+* 项目分为接口服务、Web端、移动端、小程序、爬虫五个模块，不同模块使用不同的IDE导入相应的代码，具体如下：
+  * 接口服务：文件夹为`Web/PocketFilm`
+    * 使用`WebStorm`导入相应代码
+    * 修改`Web/PocketFilm/routers/api.js`中的`var dbURL = 'mongodb://***:27017';`，将`***`修改为你自己服务器对应的ip
+    * 修改`Web/PocketFilm/routers/api.js`中的`var avatarList`，将其中的默认图片修改为你自己的默认图片地址
+  * Web端：文件夹为`WWW/PocketFilm`
+    * 使用`Intellij IDEA`导入相应代码
+    * 修改项目的Maven仓库地址
+    * 修改`WWW/PocketFIlm/Common/src/main/java/com/grayson/common/config/Configs.java`中的`public static String API_HOST = "http://***:9000";`，将`***`修改为你自己服务器对应的ip，然后使用软件右侧的`MavenProjects`中的`Common`中的`Lifecycle->install`将其安装到你的Maven仓库中
+  * 移动端：文件夹为`Mobile/PocketFilm`
+    * 使用`Visual Studio Code`导入相应的代码
+    * 修改`Mobile/PocketFilm/src/app/config.service.ts`中的`public sourceUrl = 'http://***:9000';`，将`***`修改为你自己服务器对应的ip
+  * 小程序：文件夹为`Applet/PocketFilm`
+    * 使用`微信web开发者工具`导入相应的代码
+    * 修改`Applet/PocketFilm/utils/util.js`中的`const configUrl = 'http://***:9000';`，将`***`修改为你自己服务器对应的ip
+  * 爬虫：文件夹为`Spider/PocketFilm`
+    * 使用`PyCharm`导入相应的代码
+    * 修改`Spider/PocketLifeSpider/PocketLifeSpider/util/MongoDbUtils.py`中的`"ip":'***'`，将`***`修改为你自己服务器对应的ip
+
 ### 功能展示
 
 #### Web端
@@ -54,6 +104,11 @@
 ### 更新日志
 
 ------
+
+#### v5.7.0 `2019/11/22`
+
+- 更新`README.md`文件，新增`部署方法`、`使用说明`
+- 备份数据库
 
 #### v5.6.0 `2019/11/18`
 

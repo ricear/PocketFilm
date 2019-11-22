@@ -50,7 +50,7 @@ else
 for var in ${array[@]}
 do
 	# 将 jar 包上传到服务器
-	echo '正在将 $var 包上传到服务器'
+	echo '正在将 '$var' 包上传到服务器'
 	scp ../jars/${var}-*.jar root@103.45.178.220:/usr/local/projects/PocketFilm/files/jars/
 	echo '已完成'
 done

@@ -1,0 +1,10 @@
+Server: nginx
+Date: Thu, 27 Jun 2019 07:39:58 GMT
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+Set-Cookie: security_session_verify=89bd5ed0fcd72f84b2bda27994d98000; expires=Sun, 30-Jun-19 13:21:50 GMT; path=/; HttpOnly
+Expires: Thu, 27 Jun 2019 08:39:58 GMT
+Cache-Control: max-age=3600
+Pragma: no-cache
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Encoding: gzip
