@@ -7,10 +7,10 @@ from PocketLifeSpider.util.CommonUtils import *
 
 class ZuidaSpider(scrapy.Spider):
     name = 'zuida'
-    allowed_domains = ['www.zuidazy1.net']
-    # start_urls = ['http://www.zuidazy1.net/']
+    allowed_domains = ['www.zuidazy2.net']
+    # start_urls = ['http://www.zuidazy2.net/']
     start_urls = []
-    domain = 'http://www.zuidazy1.net'
+    domain = 'http://www.zuidazy2.net'
     search_domain = 'https://www.xunleiyy.com/search.php'
     # 搜索关键词
     keyword = None

@@ -10,8 +10,8 @@ var router = express.Router();
 //  MongoDb 客户端
 var mongoClient = require('mongodb').MongoClient;
 //  MongoDB 连接地址
-// var dbURL = 'mongodb://localhost:27017';
-var dbURL = 'mongodb://103.45.178.220:27017';
+var dbURL = 'mongodb://localhost:27017';
+// var dbURL = 'mongodb://149.129.94.197:27017';
 //  MongoDb 的 ObjectId
 var objectId = require('mongodb').ObjectId;
 //  使用 Jquery
@@ -34,10 +34,10 @@ var responseData;
 
 //  默认头像列表
 var avatarList = [
-    'http://api.grayson.top/public/1.png',
-    'http://api.grayson.top/public/2.jpeg',
-    'http://api.grayson.top/public/3.png',
-    'http://api.grayson.top/public/4.jpeg'
+    'http://api.grayson.top/public/avatars/1.png',
+    'http://api.grayson.top/public/avatars/2.jpeg',
+    'http://api.grayson.top/public/avatars/3.png',
+    'http://api.grayson.top/public/avatars/4.jpeg'
 ]
 
 //  入口

@@ -95,6 +95,17 @@ class ZuidaSpiderPipeline(object):
             db_utils.update(dic, newdic)
         else:
             print(item)
+            url = item['src']
+            # 下载图片到本地
+            res = requests.get(url, stream=True)
+            if res.status_code == 200:
+                uuid = generate_uuid()
+                save_img_path = Configs.IMAGES_PATH + '/%s.jpg' % uuid
+                # 保存下载的图片
+                with open(save_img_path, 'wb') as fs:
+                    for chunk in res.iter_content(1024):
+                        fs.write(chunk)
+                item['src'] = save_img_path
             db_utils.insert(item)
         return item
 

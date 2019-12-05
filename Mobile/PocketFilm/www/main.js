@@ -1348,8 +1348,8 @@ var ConfigService = /** @class */ (function () {
     function ConfigService() {
         // 公用地址
         // public sourceUrl = 'https://pocket.mynatapp.cc';
-        this.sourceUrl = 'http://103.45.178.220:9000';
         // public sourceUrl = 'http://api.grayson.top';
+        this.sourceUrl = 'http://103.45.172.213:9000';
         // public请求地址
         this.publicUrl = this.sourceUrl + '/public';
         //api请求地址
@@ -1872,7 +1872,7 @@ var ToolsService = /** @class */ (function () {
                                     handler: function () {
                                         // 下载最新版本
                                         var request = {
-                                            uri: _this.config.publicUrl + '/' + _this.config.appSourceName,
+                                            uri: _this.config.publicUrl + '/apks/' + _this.config.appSourceName,
                                             title: _this.config.appName,
                                             description: '',
                                             mimeType: '',

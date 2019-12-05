@@ -278,7 +278,7 @@ export class ToolsService {
           handler: () => {
             // 下载最新版本
             var request = {
-              uri: this.config.publicUrl + '/' + this.config.appSourceName,
+              uri: this.config.publicUrl + '/apks/' + this.config.appSourceName,
               title: this.config.appName,
               description: '',
               mimeType: '',
