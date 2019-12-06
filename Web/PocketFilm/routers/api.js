@@ -10,8 +10,8 @@ var router = express.Router();
 //  MongoDb 客户端
 var mongoClient = require('mongodb').MongoClient;
 //  MongoDB 连接地址
-var dbURL = 'mongodb://localhost:27017';
-// var dbURL = 'mongodb://149.129.94.197:27017';
+// var dbURL = 'mongodb://localhost:27017';
+var dbURL = 'mongodb://103.45.172.213:27017';
 //  MongoDb 的 ObjectId
 var objectId = require('mongodb').ObjectId;
 //  使用 Jquery

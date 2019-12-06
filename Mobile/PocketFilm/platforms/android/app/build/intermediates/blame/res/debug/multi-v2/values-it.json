@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/weipeng/Personal/Projects/PocketFilm/Mobile/PocketFilm/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-it/values-it.xml",
+            "map": [
+                {
+                    "source": "/Users/weipeng/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/64b9e843b63cc50addbc78d7115f173a/res/values-it/values-it.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "13",
+                        "startColumns": "4",
+                        "startOffsets": "915",
+                        "endColumns": "100",
+                        "endOffsets": "1011"
+                    }
+                },
+                {
+                    "source": "/Users/weipeng/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.6.1.aar/9edbf7cea058aa96e39fc81e6a8c3270/res/values-it/values-it.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,136,215,291,361,444,523,610,687,759,844",
+                        "endColumns": "80,78,75,69,82,78,86,76,71,84,70",
+                        "endOffsets": "131,210,286,356,439,518,605,682,754,839,910"
+                    }
+                }
+            ]
+        }
+    ]
+}

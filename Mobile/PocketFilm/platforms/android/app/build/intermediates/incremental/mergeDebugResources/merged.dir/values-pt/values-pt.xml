@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exo_controls_fastforward_description">"Avançar"</string>
+    <string name="exo_controls_next_description">"Próxima faixa"</string>
+    <string name="exo_controls_pause_description">"Pausar"</string>
+    <string name="exo_controls_play_description">"Reproduzir"</string>
+    <string name="exo_controls_previous_description">"Faixa anterior"</string>
+    <string name="exo_controls_repeat_all_description">"Repetir tudo"</string>
+    <string name="exo_controls_repeat_off_description">"Não repetir"</string>
+    <string name="exo_controls_repeat_one_description">"Repetir uma"</string>
+    <string name="exo_controls_rewind_description">"Retroceder"</string>
+    <string name="exo_controls_shuffle_description">"Reproduzir aleatoriamente"</string>
+    <string name="exo_controls_stop_description">"Parar"</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>

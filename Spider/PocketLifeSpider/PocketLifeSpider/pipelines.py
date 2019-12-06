@@ -105,7 +105,7 @@ class ZuidaSpiderPipeline(object):
                 with open(save_img_path, 'wb') as fs:
                     for chunk in res.iter_content(1024):
                         fs.write(chunk)
-                item['src'] = save_img_path
+                item['src'] = Configs.IMAGES_HOST + '/%s.jpg' % uuid
             db_utils.insert(item)
         return item
 

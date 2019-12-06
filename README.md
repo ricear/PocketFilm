@@ -105,7 +105,28 @@
 
 ------
 
-#### v5.1.0 `2019/12/5`
+#### v6.2.0 `2019/12/6`
+
+- 图片服务器：
+  - 新增图片服务器项目：
+    - 项目名称：`ImageWeb`
+    - 接口地址：`http://images.grayson.top`
+  - 将原先下载的本地图片移动到图片服务器中
+- 移动网页服务器：
+  - 新增移动网页服务器项目：
+    - 项目名称：`MobileWeb`
+    - 接口地址：`http://m.grayson.top`
+- 爬虫：
+  - `CommonUtils.py`中新增方法：
+    - `def modify_src()`：修改图片地址(将包含/public...的地址修改为images.grayson.top的形式)
+    - `generate_uuid()`：生成uuid
+    - `download_film_image()`：下载影视图片
+    - `download_image(db_utils, url_list, thread_num=10)`：多线程下载图片
+    - `combine_piece()`：合并名称播放地址的小品
+    - `modify_piece_type(type, type2)`：修改小品的类型
+    - `get_today()`：获取今天的日期
+
+#### v6.1.0 `2019/12/5`
 
 - 爬虫：
   - 新增采集资源师将图片保存到本地的功能

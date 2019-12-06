@@ -1,5 +1,4 @@
-// var API_HOST = 'http://api.grayson.top'
-var API_HOST = 'http://103.45.172.213:9000'
+var API_HOST = 'http://api.grayson.top'
 var API = API_HOST + '/api'
 
 var username = JSON.parse($.cookie('userInfo'))['username']

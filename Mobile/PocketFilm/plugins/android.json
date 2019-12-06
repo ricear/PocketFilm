@@ -13,6 +13,9 @@
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.grayson.pocketfilm"
     },
+    "cordova-plugin-exoplayer": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
     "cordova-plugin-file-opener2": {
       "ANDROID_SUPPORT_V4_VERSION": "27.+",
       "PACKAGE_NAME": "com.grayson.pocketfilm"
@@ -36,6 +39,9 @@
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.grayson.pocketfilm"
     },
+    "cordova-plugin-streaming-media": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.grayson.pocketfilm"
     },
@@ -44,12 +50,6 @@
       "PACKAGE_NAME": "com.grayson.pocketfilm"
     },
     "integrator-cordova-plugin-downloader": {
-      "PACKAGE_NAME": "com.grayson.pocketfilm"
-    },
-    "cordova-plugin-streaming-media": {
-      "PACKAGE_NAME": "com.grayson.pocketfilm"
-    },
-    "cordova-plugin-exoplayer": {
       "PACKAGE_NAME": "com.grayson.pocketfilm"
     }
   },

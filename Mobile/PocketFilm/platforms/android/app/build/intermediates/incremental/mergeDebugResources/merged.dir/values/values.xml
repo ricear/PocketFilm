@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="controller_layout_id"/>
+    <attr format="reference" name="coordinatorLayoutStyle"/>
+    <attr format="integer" name="fastforward_increment"/>
+    <attr format="reference" name="player_layout_id"/>
+    <attr name="repeat_toggle_modes">
+    <flag name="none" value="0"/>
+    <flag name="one" value="1"/>
+    <flag name="all" value="2"/>
+  </attr>
+    <attr format="enum" name="resize_mode">
+    <enum name="fit" value="0"/>
+    <enum name="fixed_width" value="1"/>
+    <enum name="fixed_height" value="2"/>
+    <enum name="fill" value="3"/>
+  </attr>
+    <attr format="integer" name="rewind_increment"/>
+    <attr format="boolean" name="show_shuffle_button"/>
+    <attr format="integer" name="show_timeout"/>
+    <attr format="enum" name="surface_type">
+    <enum name="none" value="0"/>
+    <enum name="surface_view" value="1"/>
+    <enum name="texture_view" value="2"/>
+  </attr>
+    <color name="accent_color">#3399CC</color>
+    <color name="background_color">#cc000000</color>
+    <color name="exo_edit_mode_background_color">#FFF4F3F0</color>
+    <color name="foreground_color">@android:color/white</color>
+    <color name="notification_action_color_filter">#ffffffff</color>
+    <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="notification_material_background_media_default_color">#ff424242</color>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="secondary_text_default_material_light">#8a000000</color>
+    <declare-styleable name="AspectRatioFrameLayout"><attr name="resize_mode"/></declare-styleable>
+    <declare-styleable name="CoordinatorLayout"><attr format="reference" name="keylines"/><attr format="color|reference" name="statusBarBackground"/></declare-styleable>
+    <declare-styleable name="CoordinatorLayout_Layout"><attr name="android:layout_gravity"/><attr format="string" name="layout_behavior"/><attr format="reference" name="layout_anchor"/><attr format="integer" name="layout_keyline"/><attr name="layout_anchorGravity">
+            
+            <flag name="top" value="0x30"/>
+            
+            <flag name="bottom" value="0x50"/>
+            
+            <flag name="left" value="0x03"/>
+            
+            <flag name="right" value="0x05"/>
+            
+            <flag name="center_vertical" value="0x10"/>
+            
+            <flag name="fill_vertical" value="0x70"/>
+            
+            <flag name="center_horizontal" value="0x01"/>
+            
+            <flag name="fill_horizontal" value="0x07"/>
+            
+            <flag name="center" value="0x11"/>
+            
+            <flag name="fill" value="0x77"/>
+            
+            <flag name="clip_vertical" value="0x80"/>
+            
+            <flag name="clip_horizontal" value="0x08"/>
+            
+            <flag name="start" value="0x00800003"/>
+            
+            <flag name="end" value="0x00800005"/>
+        </attr><attr format="enum" name="layout_insetEdge">
+            
+            <enum name="none" value="0x0"/>
+            
+            <enum name="top" value="0x30"/>
+            
+            <enum name="bottom" value="0x50"/>
+            
+            <enum name="left" value="0x03"/>
+            
+            <enum name="right" value="0x05"/>
+            
+            <enum name="start" value="0x00800003"/>
+            
+            <enum name="end" value="0x00800005"/>
+        </attr><attr name="layout_dodgeInsetEdges">
+            
+            <flag name="none" value="0x0"/>
+            
+            <flag name="top" value="0x30"/>
+            
+            <flag name="bottom" value="0x50"/>
+            
+            <flag name="left" value="0x03"/>
+            
+            <flag name="right" value="0x05"/>
+            
+            <flag name="start" value="0x00800003"/>
+            
+            <flag name="end" value="0x00800005"/>
+            
+            <flag name="all" value="0x77"/>
+        </attr></declare-styleable>
+    <declare-styleable name="DefaultTimeBar"><attr format="dimension" name="bar_height"/><attr format="dimension" name="touch_target_height"/><attr format="dimension" name="ad_marker_width"/><attr format="dimension" name="scrubber_enabled_size"/><attr format="dimension" name="scrubber_disabled_size"/><attr format="dimension" name="scrubber_dragged_size"/><attr format="reference" name="scrubber_drawable"/><attr format="color" name="played_color"/><attr format="color" name="scrubber_color"/><attr format="color" name="buffered_color"/><attr format="color" name="unplayed_color"/><attr format="color" name="ad_marker_color"/><attr format="color" name="played_ad_marker_color"/></declare-styleable>
+    <declare-styleable name="FontFamily"><attr format="string" name="fontProviderAuthority"/><attr format="string" name="fontProviderPackage"/><attr format="string" name="fontProviderQuery"/><attr format="reference" name="fontProviderCerts"/><attr name="fontProviderFetchStrategy">
+            
+            <enum name="blocking" value="0"/>
+            
+            <enum name="async" value="1"/>
+        </attr><attr format="integer" name="fontProviderFetchTimeout">
+          
+            <enum name="forever" value="-1"/>
+        </attr></declare-styleable>
+    <declare-styleable name="FontFamilyFont"><attr name="fontStyle">
+            <enum name="normal" value="0"/>
+            <enum name="italic" value="1"/>
+        </attr><attr format="reference" name="font"/><attr format="integer" name="fontWeight"/><attr name="android:fontStyle"/><attr name="android:font"/><attr name="android:fontWeight"/></declare-styleable>
+    <declare-styleable name="PlaybackControlView"><attr name="show_timeout"/><attr name="rewind_increment"/><attr name="fastforward_increment"/><attr name="repeat_toggle_modes"/><attr name="show_shuffle_button"/><attr name="controller_layout_id"/></declare-styleable>
+    <declare-styleable name="SimpleExoPlayerView"><attr format="boolean" name="use_artwork"/><attr format="color" name="shutter_background_color"/><attr format="reference" name="default_artwork"/><attr format="boolean" name="use_controller"/><attr format="boolean" name="hide_on_touch"/><attr format="boolean" name="hide_during_ads"/><attr format="boolean" name="auto_show"/><attr name="resize_mode"/><attr name="surface_type"/><attr name="player_layout_id"/><attr name="show_timeout"/><attr name="rewind_increment"/><attr name="fastforward_increment"/><attr name="repeat_toggle_modes"/><attr name="show_shuffle_button"/><attr name="controller_layout_id"/></declare-styleable>
+    <dimen name="button_height">96dp</dimen>
+    <dimen name="button_width">96dp</dimen>
+    <dimen name="compat_button_inset_horizontal_material">4dp</dimen>
+    <dimen name="compat_button_inset_vertical_material">6dp</dimen>
+    <dimen name="compat_button_padding_horizontal_material">8dp</dimen>
+    <dimen name="compat_button_padding_vertical_material">4dp</dimen>
+    <dimen name="compat_control_corner_material">2dp</dimen>
+    <dimen name="exo_media_button_height">52dp</dimen>
+    <dimen name="exo_media_button_width">71dp</dimen>
+    <dimen name="notification_action_icon_size">32dp</dimen>
+    <dimen name="notification_action_text_size">13sp</dimen>
+    <dimen name="notification_big_circle_margin">12dp</dimen>
+    <dimen name="notification_content_margin_start">8dp</dimen>
+    <dimen name="notification_large_icon_height">64dp</dimen>
+    <dimen name="notification_large_icon_width">64dp</dimen>
+    <dimen name="notification_main_column_padding_top">10dp</dimen>
+    <dimen name="notification_media_narrow_margin">@dimen/notification_content_margin_start</dimen>
+    <dimen name="notification_right_icon_size">16dp</dimen>
+    <dimen name="notification_right_side_padding_top">2dp</dimen>
+    <dimen name="notification_small_icon_background_padding">3dp</dimen>
+    <dimen name="notification_small_icon_size_as_large">24dp</dimen>
+    <dimen name="notification_subtext_size">13sp</dimen>
+    <dimen name="notification_top_pad">10dp</dimen>
+    <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="padding">12dp</dimen>
+    <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <item name="exo_artwork" type="id"/>
+    <item name="exo_buffering" type="id"/>
+    <item name="exo_buttons" type="id"/>
+    <item name="exo_content_frame" type="id"/>
+    <item name="exo_controller" type="id"/>
+    <item name="exo_controller_placeholder" type="id"/>
+    <item name="exo_duration" type="id"/>
+    <item name="exo_ffwd" type="id"/>
+    <item name="exo_image" type="id"/>
+    <item name="exo_next" type="id"/>
+    <item name="exo_overlay" type="id"/>
+    <item name="exo_pause" type="id"/>
+    <item name="exo_play" type="id"/>
+    <item name="exo_position" type="id"/>
+    <item name="exo_prev" type="id"/>
+    <item name="exo_progress" type="id"/>
+    <item name="exo_repeat_toggle" type="id"/>
+    <item name="exo_rew" type="id"/>
+    <item name="exo_shuffle" type="id"/>
+    <item name="exo_shutter" type="id"/>
+    <item name="exo_subtitle" type="id"/>
+    <item name="exo_subtitles" type="id"/>
+    <item name="exo_timebar" type="id"/>
+    <item name="exo_title" type="id"/>
+    <item name="line1" type="id"/>
+    <item name="line3" type="id"/>
+    <item name="tag_transition_group" type="id"/>
+    <item name="text" type="id"/>
+    <item name="text2" type="id"/>
+    <item name="title" type="id"/>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="app_name">掌上影视</string>
+    <string name="exo_controls_fastforward_description">Fast forward</string>
+    <string name="exo_controls_next_description">Next track</string>
+    <string name="exo_controls_pause_description">Pause</string>
+    <string name="exo_controls_play_description">Play</string>
+    <string name="exo_controls_previous_description">Previous track</string>
+    <string name="exo_controls_repeat_all_description">Repeat all</string>
+    <string name="exo_controls_repeat_off_description">Repeat none</string>
+    <string name="exo_controls_repeat_one_description">Repeat one</string>
+    <string name="exo_controls_rewind_description">Rewind</string>
+    <string name="exo_controls_shuffle_description">Shuffle</string>
+    <string name="exo_controls_stop_description">Stop</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <style name="Exo">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:layout_marginLeft">@dimen/padding</item>
+        <item name="android:layout_marginRight">@dimen/padding</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="Exo.FastForward">
+        <item name="android:src">@drawable/fastforward</item>
+    </style>
+    <style name="Exo.Next">
+        <item name="android:src">@drawable/next</item>
+    </style>
+    <style name="Exo.Pause">
+        <item name="android:src">@drawable/pause</item>
+    </style>
+    <style name="Exo.Play">
+        <item name="android:src">@drawable/play</item>
+    </style>
+    <style name="Exo.Previous">
+        <item name="android:src">@drawable/previous</item>
+    </style>
+    <style name="Exo.Rewind">
+        <item name="android:src">@drawable/rewind</item>
+    </style>
+    <style name="ExoMediaButton">
+    <item name="android:background">?android:attr/selectableItemBackground</item>
+    <item name="android:layout_width">@dimen/exo_media_button_width</item>
+    <item name="android:layout_height">@dimen/exo_media_button_height</item>
+  </style>
+    <style name="ExoMediaButton.FastForward">
+    <item name="android:src">@drawable/exo_controls_fastforward</item>
+    <item name="android:contentDescription">@string/exo_controls_fastforward_description</item>
+  </style>
+    <style name="ExoMediaButton.Next">
+    <item name="android:src">@drawable/exo_controls_next</item>
+    <item name="android:contentDescription">@string/exo_controls_next_description</item>
+  </style>
+    <style name="ExoMediaButton.Pause">
+    <item name="android:src">@drawable/exo_controls_pause</item>
+    <item name="android:contentDescription">@string/exo_controls_pause_description</item>
+  </style>
+    <style name="ExoMediaButton.Play">
+    <item name="android:src">@drawable/exo_controls_play</item>
+    <item name="android:contentDescription">@string/exo_controls_play_description</item>
+  </style>
+    <style name="ExoMediaButton.Previous">
+    <item name="android:src">@drawable/exo_controls_previous</item>
+    <item name="android:contentDescription">@string/exo_controls_previous_description</item>
+  </style>
+    <style name="ExoMediaButton.Rewind">
+    <item name="android:src">@drawable/exo_controls_rewind</item>
+    <item name="android:contentDescription">@string/exo_controls_rewind_description</item>
+  </style>
+    <style name="ExoMediaButton.Shuffle">
+    <item name="android:src">@drawable/exo_controls_shuffle</item>
+    <item name="android:contentDescription">@string/exo_controls_shuffle_description</item>
+  </style>
+    <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.StatusBar.EventContent"/>
+    <style name="TextAppearance.Compat.Notification.Info">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Info.Media"/>
+    <style name="TextAppearance.Compat.Notification.Line2" parent="TextAppearance.Compat.Notification.Info"/>
+    <style name="TextAppearance.Compat.Notification.Line2.Media" parent="TextAppearance.Compat.Notification.Info.Media"/>
+    <style name="TextAppearance.Compat.Notification.Media"/>
+    <style name="TextAppearance.Compat.Notification.Time">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Time.Media"/>
+    <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+    <style name="TextAppearance.Compat.Notification.Title.Media"/>
+    <style name="Widget.Compat.NotificationActionContainer" parent=""/>
+    <style name="Widget.Compat.NotificationActionText" parent=""/>
+    <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
+        <item name="statusBarBackground">#000000</item>
+    </style>
+</resources>

@@ -49,7 +49,7 @@
     <div class="mod_a globalPadding">
       <div class="tb_a">
         <ul class="picTxt picTxtA clearfix" id="data_list">
-          <li *ngFor="let latestTop10Movie of tvList" (click)="goPieceDetail((latestTop10Movie._id))">
+          <li *ngFor="let latestTop10Movie of tvList" (click)="goTvDetail((latestTop10Movie._id))">
             <div class="con">
               <a title="{{latestTop10Movie.name}}"><img
                   data-src="{{latestTop10Movie.src}}" alt="{{latestTop10Movie.name}}" src="{{latestTop10Movie.src}}"
