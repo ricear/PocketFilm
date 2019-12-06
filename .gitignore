@@ -5,13 +5,10 @@ Mobile/.DS_Store
 Web/.DS_Store
 Applet/PocketFilm/node_modules
 Mobile/PocketFilm/node_modules
-Web/PocketFilm(API)/node_modules
-Web/PocketFilm(WWW)/node_modules
-Web/PocketFilm(FILM)/node_modules
-Web/PocketFilm(TV)/node_modules
-Web/PocketFilm(DRAMA)/node_modules
-Web/PocketFilm(PIECE)/node_modules
-Mobile/PocketFilm/platforms
+Web/PocketFilm/node_modules
+Mobile/PocketFilm/node_modules
+ImageWeb/PocketFilm/node_modules
+MobileWeb/PocketFilm/platforms
 Applet/.vscode
 Spider/PocketLifeSpider/PocketLifeSpider/util/CommonUtils.py
 Spider/PocketLifeSpider/.idea/workspace.xml
