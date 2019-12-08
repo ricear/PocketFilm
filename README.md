@@ -105,6 +105,24 @@
 
 ------
 
+#### v6.3.0 `2019/12/8`
+
+- 网页版：
+  - 掌上影视、电视、戏曲、小品首页核心内容实现静态化
+  - 新增定时器，每隔10分钟渲染一下首页核心内容
+  - `CommonUtils.java`中新增方法：
+    - `public void saveHtml(String url, String filePath, String fileName)`：获取网页内容并保存到本地
+    - `public String getParseUrl(String movieType, String url)`：获取解析地址
+    - `public JSONArray getRecords(HttpServletRequest request, String browse_type)`：获取浏览记录
+    - `public Boolean existCookie(HttpServletRequest request, String cookieName)`：判断 request 中是否存在指定名称的 cookie
+    - `public static JSONObject getCookieValue(HttpServletRequest request, String cookieName)`：从 request 中获取指定名称的 cookie 的值
+    - `public static List<Integer> getPages(Integer count, Integer pageIndex, Integer pageSize, Integer totalPage)`：获取页码数据
+    - `public static String doPost(String url, JSONObject json)`：执行POST请求
+    - `public JSONObject doGet(String url)`：执行GET请求
+- 服务器脚本：
+  - 新增脚本：
+    - `start_render.sh`：将最新渲染后的首页核心内容放入jar包中指定位置
+
 #### v6.2.0 `2019/12/6`
 
 - 图片服务器：

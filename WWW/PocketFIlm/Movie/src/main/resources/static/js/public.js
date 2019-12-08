@@ -51,7 +51,7 @@ function get_recommendations_movie(url, id) {
                     actors = movie.actors;
                     for (j in actors) {
                         actor = actors[j]
-                        html = html + '<span>' + actor + '</span>'
+                        html = html + '<span>' + actor + '&nbsp;</span>'
                     }
                     html = html + '</p><p class="actor">' + movie.type2 + '</p><p class="actor">' + movie.release_date + '/' + movie.region + '</p></span><p class="other"><i></i></p></a></li></div></div></div>'
                 }
@@ -82,7 +82,7 @@ function get_movies(url, id) {
                 actors = movie.actors;
                 for (j in actors) {
                     actor = actors[j]
-                    html = html + '<span>' + actor + '</span>'
+                    html = html + '<span>' + actor + '&nbsp;</span>'
                 }
                 html = html + '</p><p class="actor">' + movie.type2 + '</p><p class="actor">' + movie.release_date + '/' + movie.region + '</p></span><p class="other"><i></i></p></a></li></div></div></div>'
             }

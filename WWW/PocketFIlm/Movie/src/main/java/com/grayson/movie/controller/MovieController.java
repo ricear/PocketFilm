@@ -41,17 +41,55 @@ public class MovieController {
             username = userInfo.getString("username");
         }
         map.addAttribute("username", username);
-        Integer pageSize = 18;
-        //  推荐
-        String recommendationsUrl = Configs.API + "/recommendations/get/user?user_name=" + username + "&browse_type=movie&page_size=" + pageSize;
-        //  热门推荐
-        String hottestMoviesUrl = Configs.API + "/get/today?type=movie&sort_type=2&page_size=" + pageSize;
-        JSONObject recommendationsObject = commonUtils.doGet(recommendationsUrl);
-        JSONObject hottestMoviesObject = commonUtils.doGet(hottestMoviesUrl);
-        map.addAttribute("recommendations", recommendationsObject.getJSONArray("data"));
-        map.addAttribute("hottestMovies", hottestMoviesObject.getJSONArray("data"));
         map.addAttribute("title", "掌上影视_免费在线观看电影电视剧综艺动漫韩剧港剧台剧泰剧欧美剧日剧");
         return "movie.html";
+    }
+
+    /**
+     * 获取渲染数据
+     *
+     * @param map 数据映射
+     * @return 首页中心页面
+     */
+    @RequestMapping("/main")
+    public String getMain(ModelMap map, HttpServletRequest request) {
+        CommonUtils commonUtils = new CommonUtils();
+        Integer pageSize = 18;
+        //  热门推荐
+        String hottestMoviesUrl = Configs.API + "/get/today?type=movie&sort_type=2&page_size=" + pageSize;
+        JSONObject hottestMoviesObject = commonUtils.doGet(hottestMoviesUrl);
+        map.addAttribute("hottestMovies", hottestMoviesObject.getJSONArray("data"));
+
+        //  电影
+        String movies0Url = Configs.API + "/movie/get/all?type=0&page_size=" + pageSize;
+        //  电视剧
+        String movies1Url = Configs.API + "/movie/get/all?type=1&page_size=" + pageSize;
+        //  综艺
+        String movies2Url = Configs.API + "/movie/get/all?type=2&page_size=" + pageSize;
+        //  动漫
+        String movies3Url = Configs.API + "/movie/get/all?type=3&page_size=" + pageSize;
+        //  少儿
+        String movies4Url = Configs.API + "/movie/get/all?type=4&page_size=" + pageSize;
+        //  今日更新
+        String todayMoviesUrl = Configs.API + "/get/today?type=movie";
+        //  今日更新数据量
+        String todayCountUrl = Configs.API + "/count/get/today?type=movie";
+        JSONObject movies0Object = commonUtils.doGet(movies0Url);
+        JSONObject movies1Object = commonUtils.doGet(movies1Url);
+        JSONObject movies2Object = commonUtils.doGet(movies2Url);
+        JSONObject movies3Object = commonUtils.doGet(movies3Url);
+        JSONObject movies4Object = commonUtils.doGet(movies4Url);
+        JSONObject todayMoviesObject = commonUtils.doGet(todayMoviesUrl);
+        JSONObject todayCountObject = commonUtils.doGet(todayCountUrl);
+        map.addAttribute("movies0", movies0Object.getJSONArray("data"));
+        map.addAttribute("movies1", movies1Object.getJSONArray("data"));
+        map.addAttribute("movies2", movies2Object.getJSONArray("data"));
+        map.addAttribute("movies3", movies3Object.getJSONArray("data"));
+        map.addAttribute("movies4", movies4Object.getJSONArray("data"));
+        map.addAttribute("todayMovies", todayMoviesObject.getJSONArray("data"));
+        map.addAttribute("todayCount", todayCountObject.getInteger("data"));
+        map.addAttribute("title", "掌上影视_免费在线观看电影电视剧综艺动漫韩剧港剧台剧泰剧欧美剧日剧");
+        return "main.html";
     }
 
     /**

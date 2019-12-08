@@ -1,67 +1,47 @@
 $(function () {
+    //  推荐
+    var recommendations_url = API + "/recommendations/get/user?user_name=" + username + "&browse_type=movie&page_size=" + pageSize;
+    //  热门推荐
+    var hottest_movies_url = API + "/get/today?type=movie&sort_type=2&page_size=" + pageSize;
     //  今日更新
     var today_movies_url = API + "/get/today?type=movie";
     //  今日更新数据量
     var today_count_url = API + "/count/get/today?type=movie";
-    get_today_movies(today_count_url, today_movies_url)
-    //  电影
-    var movies0_url = API + "/movie/get/all?type=0&page_size=" + pageSize;
-    get_movies(movies0_url, 'dianying')
-    //  电视剧
-    var movies1_url = API + "/movie/get/all?type=1&page_size=" + pageSize;
-    get_movies(movies1_url, 'dianshiju')
-    //  综艺
-    var movies2_url = API + "/movie/get/all?type=2&page_size=" + pageSize;
-    get_movies(movies2_url, 'zongyi')
-    //  动漫
-    var movies3_url = API + "/movie/get/all?type=3&page_size=" + pageSize;
-    get_movies(movies3_url, 'dongman')
-    //  少儿
-    var movies4_url = API + "/movie/get/all?type=4&page_size=" + pageSize;
-    get_movies(movies4_url, 'shaoer')
+    get_recommendations(recommendations_url, hottest_movies_url, today_movies_url, today_count_url, 'cainixihuan', 'rementuijian', 'jinrigengxin')
 })
 
 /**
- * 获取今日更新数据
- * @param url
+ * 获取推荐数据
  */
-function get_today_movies(today_count_url, today_movies_url) {
+function get_recommendations(recommendations_url, hottest_movies_url, today_movies_url, today_count_url, recommendations_id, hottest_movies_id, today_movies_id) {
     $.ajax({
         type: 'GET',
         contentType: "application/json",
-        url: today_count_url,
+        url: recommendations_url,
         dataType: 'json',
         cache: false,
         timeout: 600000,
         success: function (data) {
-            today_count = data.data
-            $.ajax({
-                type: 'GET',
-                contentType: "application/json",
-                url: today_movies_url,
-                dataType: 'json',
-                cache: false,
-                timeout: 600000,
-                success: function (data) {
-                    data = data.data
-                    var html = ''
-                    html = html + '<h3 class="title index-color">&nbsp;今日更新<span class="genxin"><a href="/?m=label-new.html" target="_blank" title="今日更新'+today_count+'部影片">'+today_count+'</a>部</span></h3><ul>'
-                    for (i in data) {
-                        j = parseInt(i) + 1
-                        todayMovie = data[i]
-                        html = html + '<div>'
-                        if (j <= 3) {
-                            html = html + '<li><a href="/play?_id=' + todayMovie._id + '&source_index=0&type_index=0" target="_blank" title="todayMovie.name"><span class="bz">' + todayMovie.update_status + '</span><gm class="gs">0' + j + '</gm><span class="az">' + todayMovie.name + '</span></a></li>'
-                        } else if (j < 10) {
-                            html = html + '<li><a href="/play?_id=' + todayMovie._id + '&source_index=0&type_index=0" target="_blank" title="todayMovie.name"><span class="bz">' + todayMovie.update_status + '</span><gm>0' + j + '</gm><span class="az">' + todayMovie.name + '</span></a></li>'
-                        } else {
-                            html = html + '<li><a href="/play?_id=' + todayMovie._id + '&source_index=0&type_index=0" target="_blank" title="todayMovie.name"><span class="bz">' + todayMovie.update_status + '</span><gm>' + j + '</gm><span class="az">' + todayMovie.name + '</span></a></li>'
+            recommendations = data.data
+            if (recommendations.length > 0) {
+                var html = '<div class="index-tj-l"><h3 class="title index-color clearfix">&nbsp;猜你喜欢</h3><ul>'
+                for (i in recommendations) {
+                    recommendation = recommendations[i]
+                    html = html + '<div class="qcontainer1">'
+                    for (j in recommendation.movie) {
+                        movie = recommendation.movie[j]
+                        html = html + '<div class="film1"><div class="face1 front1"><li class="p2 MPli1"><a class="link-hover" target="_blank" href="/play?_id=' + movie._id + '&source_index=0&type_index=0" title="' + movie.name + '"><img class="lazy" data-original="' + movie.src + '" src="' + movie.src + '" alt="' + movie.name + '"><span class="index5njcom titletj5nj"><i>' + movie.name + '</i></span><p class="other"><i>' + movie.update_status + '</i></p></a></li></div><div class="face1 back1"><li class="p2 MPli1"><a class="link-hover" target="_blank" href="/play?_id=' + movie._id + '&source_index=0&type_index=0" title="' + movie.name + '"><img class="lazy" data-original="' + movie.src + '" src="' + movie.src + '" alt="' + movie.name + '"><span class="video-bg"></span><span class="lzbz"><p class="name">' + movie.name + '</p><p class="actor">'
+                        for (k in movie.actors) {
+                            actor = movie.actors[k]
+                            html = html + '<span>' + actor + '&nbsp;</span>'
                         }
+                        html = html + '</p><p class="actor">' + movie.type2 + '</p><p class="actor">' + movie.release_date + '/' + movie.region + '</p></span><p class="other"><i></i></p></a></li></div></div>'
                     }
                     html = html + '</div></ul>'
-                    $('#jinrigengxin').html(html)
                 }
-            })
+                $('#main').html(html)
+                $('#rementuijian').show()
+            }
         }
     })
 }

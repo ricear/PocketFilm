@@ -7,58 +7,14 @@
 <th:block th:insert="../templates/navigation"></th:block>
 
 <div class="main">
-    <div class="index-area clearfix">
-        <div class="index-area-l">
-            <h3 class="title index-color clearfix">&nbsp;热门推荐</h3>
-            <ul id="rementuijian"></ul>
-        </div>
-    </div>
-
-    <div class="index-area clearfix">
-        <h3 class="title index-color">
-	<span class="hitkey kp">
-	<a href="/more?type=央视台">更多»</a>
-	</span>
-            <a href="/more?type=0">&nbsp;央视台</a>
-        </h3>
-        <ul id="yangshitai"></ul>
-    </div>
-
-    <div class="index-area clearfix">
-        <h3 class="title index-color">
-	<span class="hitkey kp">
-	<a href="/more?type=卫视台">更多»</a>
-	</span>
-            <a href="/more?type=0">&nbsp;卫视台</a>
-        </h3>
-        <ul id="weishitai"></ul>
-    </div>
-
-    <div class="index-area clearfix">
-        <h3 class="title index-color">
-	<span class="hitkey kp">
-	<a href="/more?type=地方台">更多»</a>
-	</span>
-            <a href="/more?type=0">&nbsp;地方台</a>
-        </h3>
-        <ul id="difangtai"></ul>
-    </div>
-
-    <div class="index-area clearfix">
-        <h3 class="title index-color">
-	<span class="hitkey kp">
-	<a href="/more?type=港澳台">更多»</a>
-	</span>
-            <a href="/more?type=0">&nbsp;港澳台</a>
-        </h3>
-        <ul id="gangaotai"></ul>
-    </div>
+    <!--中心内容-->
+    <iframe th:replace="../static/html/main.html" frameborder="0"></iframe>
+    <!--中心内容-->
 </div>
 </div>
 </div>
 <script src="js/config.js"></script>
 <script src="js/public.js"></script>
-<script src="js/movie.js"></script>
 <script type='text/javascript' charset='utf-8' src='https://p.zxhrq.cn/vtdd/swh960sav773huj.js'></script>
 <div class="navigation_top"></div>
 <th:block th:insert="../templates/foot"></th:block>

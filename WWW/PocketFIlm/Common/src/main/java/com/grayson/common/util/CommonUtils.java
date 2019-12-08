@@ -22,6 +22,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.validation.constraints.Null;
 import java.io.*;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +31,52 @@ import java.util.List;
  * 工具类
  */
 public class CommonUtils {
+
+    /**
+     * 获取网页内容并保存到本地
+     * @param url   地址
+     * @param filePath  保存路径
+     * @param fileName  文件名称
+     */
+    public void saveHtml(String url, String filePath, String fileName) {
+        try {
+            long startTime=System.currentTimeMillis();//开始时间
+            InputStream inputStream;//接收字节输入流
+            InputStreamReader inputStreamReader;//将字节输入流转换成字符输入流
+            BufferedReader bufferedReader;//为字符输入流加缓冲
+            FileOutputStream fileOutputStream;//字节输出流
+            OutputStreamWriter outputStreamWriter;//将字节输出流转换成字符输出流
+
+            URL url_temp = new URL(url);
+            inputStream = url_temp.openStream();
+            inputStreamReader = new InputStreamReader(inputStream);
+            bufferedReader = new BufferedReader(inputStreamReader);
+            String s;
+            File dest = new File(filePath);
+            if (!dest.exists()) {
+                dest.mkdirs();
+            }
+            dest = new File(filePath + "/" + fileName);
+            String absolutePath = dest.getAbsolutePath();
+            System.out.println("开始下载 " + fileName);
+            fileOutputStream = new FileOutputStream(dest);
+            outputStreamWriter = new OutputStreamWriter(fileOutputStream);
+            while ((s = bufferedReader.readLine()) != null) {
+                outputStreamWriter.write(s);
+            }
+
+            outputStreamWriter.close();
+            fileOutputStream.close();
+            bufferedReader.close();
+            inputStreamReader.close();
+            inputStream.close();
+            long endTime=System.currentTimeMillis();//结束时间
+            float excTime=(float)(endTime-startTime)/1000;
+            System.out.println(fileName + " 文件下载完成，保存在"+absolutePath+"，用时"+excTime+"s");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     /**
      * 获取解析地址

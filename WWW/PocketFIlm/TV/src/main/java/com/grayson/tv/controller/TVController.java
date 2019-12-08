@@ -40,6 +40,35 @@ public class TVController {
     }
 
     /**
+     * 获取渲染数据
+     *
+     * @param map 数据映射
+     * @return 首页中心页面
+     */
+    @RequestMapping("/main")
+    public String getMain(ModelMap map, HttpServletRequest request) {
+        CommonUtils commonUtils = new CommonUtils();
+        Integer pageSize = 18;
+        //  央视台
+        String movies0Url = Configs.API + "/tv/get/all?type=央视台&page_size=" + pageSize;
+        //  卫视台
+        String movies1Url = Configs.API + "/tv/get/all?type=卫视台&page_size=" + pageSize;
+        //  地方台
+        String movies2Url = Configs.API + "/tv/get/all?type=地方台&page_size=" + pageSize;
+        //  港澳台
+        String movies3Url = Configs.API + "/tv/get/all?type=港澳台&page_size=" + pageSize;
+        JSONObject movies0Object = commonUtils.doGet(movies0Url);
+        JSONObject movies1Object = commonUtils.doGet(movies1Url);
+        JSONObject movies2Object = commonUtils.doGet(movies2Url);
+        JSONObject movies3Object = commonUtils.doGet(movies3Url);
+        map.addAttribute("movies0", movies0Object.getJSONArray("data"));
+        map.addAttribute("movies1", movies1Object.getJSONArray("data"));
+        map.addAttribute("movies2", movies2Object.getJSONArray("data"));
+        map.addAttribute("movies3", movies3Object.getJSONArray("data"));
+        return "main.html";
+    }
+
+    /**
      * 播放影视
      *
      * @param map 数据映射
