@@ -87,6 +87,9 @@ class Ziyuan33uuSpider(scrapy.Spider):
                 continue
             try:
                 url2 = each.xpath("./li/span[2]/a/@href").extract()[0]
+                html = get_one_page(self.domain + url2)
+                html = etree.HTML(html)
+                each = html.xpath('//div[@class="vodBox"]')[0]
             except:
                 # 记录跳过的视频信息
                 history_type = 'ziyuan33uu'
@@ -95,26 +98,13 @@ class Ziyuan33uuSpider(scrapy.Spider):
                 if (check_spider_history(history_type, history_url, history_text) == False):
                     write_spider_history(history_type, history_url, history_text)
                 continue
-            movie_id = url2.split('id-')[1].split('.html')[0]
             # id, src, name, update_time, actors, type, score, release_date, description
             # 解析视频源
-            html = get_one_page(self.domain + url2)
-            try:
-                html = etree.HTML(html)
-            except:
-                # 记录跳过的视频信息
-                flag = 1
-                history_type = 'ok'
-                history_url = self.domain + url2
-                history_text = '跳过'
-                if (check_spider_history(history_type, history_url, history_text) == False):
-                    write_spider_history(history_type, history_url, history_text)
-                continue
             # /html/body/div[5]/div[1]/div/div
             # /html/body/div[5]/div[1]/div/div/div[2]/div[1]/h2
             # /html/body/div[5]/div[1]/div/div/div[2]/div[2]/ul/li[1]/span
             # /html/body/div[5]/div[1]/div/div/div[2]/div[1]/span
-            each = html.xpath('//div[@class="vodBox"]')[0]
+            movie_id = url2.split('id-')[1].split('.html')[0]
             movie_item = MovieItem()
             movie_item['id'] = movie_id
             movie_item['src'] = get_str_from_xpath(each.xpath('./div/img/@src'))
@@ -155,6 +145,7 @@ class Ziyuan33uuSpider(scrapy.Spider):
             source = {'name': '', 'types': []}
             index = 1
             for each in html.xpath('/html/body/div[5]/div[4]/div[2]/div/ul'):
+                source = {'name': '', 'types': []}
                 source['name'] = get_str_from_xpath(
                     html.xpath('/html/body/div[5]/div[4]/div[2]/div/h3[' + (str)(index) + ']/text()'))
                 types = []

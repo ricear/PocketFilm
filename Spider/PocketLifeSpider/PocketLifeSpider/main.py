@@ -29,9 +29,10 @@ if __name__ == '__main__':
     # execute(["scrapy", "crawl", "yongjiu", "-a", "target=latest"])
     # ziyuan135
     # execute(["scrapy", "crawl", "ziyuan135", "-a", "target=all"])
-    # execute(["scrapy", "crawl", "ziyuan135", "-a", "target=latest"])
+    execute(["scrapy", "crawl", "ziyuan135", "-a", "target=latest"])
     # ok
     # execute(["scrapy", "crawl", "ok"])
+    # execute(["scrapy", "crawl", "ok", "-a", "target=latest"])
     # ziyuan33uu
     # execute(["scrapy", "crawl", "ziyuan33uu", "-a", "target=all"])
     # execute(["scrapy", "crawl", "ziyuan33uu", "-a", "target=latest"])
@@ -51,7 +52,7 @@ if __name__ == '__main__':
     # drama_type
     # execute(["scrapy", "crawl", "drama_type"])
     # piece_type
-    execute(["scrapy", "crawl", "piece_type"])
+    # execute(["scrapy", "crawl", "piece_type"])
     # piece
     # execute(["scrapy", "crawl", "piece", "-a", "target=all"])
     # execute(["scrapy", "crawl", "piece", "-a", "target=latest"])

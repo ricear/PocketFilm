@@ -188,21 +188,6 @@ class IqiyiSpider(scrapy.Spider):
                     region = get_str_from_xpath(html.xpath('//p[@class="episodeIntro-area"]/a/text()'))
                     movie_item['region'] = reverse_region(region)
                     movie_item['language'] = get_str_from_xpath(html.xpath('//p[@class="episodeIntro-lang"]/a/text()'))
-                    # 获取更新状态
-                    if (type_num == '1'):
-                        # 电视剧
-                        update_status = get_str_from_xpath(
-                            html.xpath('//*[@id="widget-tab-2"]/div[1]/span[2]/a/span/text()')) + '期'
-                    if (type_num == '2' or type_num == '4' or type_num == '15'):
-                        # 电视剧
-                        update_status = get_str_from_xpath(
-                            html.xpath('//*[@id="widget-tab-3"]/div[1]/span[2]/a/text()')) + get_str_from_xpath(
-                            html.xpath('//*[@id="widget-tab-3"]/div[1]/span[2]/a/i/text()')) + '集'
-                    if (type_num == '6'):
-                        # 综艺
-                        update_status = get_str_from_xpath(
-                            html.xpath('//*[@id="widget-tab-3"]/div[1]/span[2]/a/text()')) + get_str_from_xpath(
-                            html.xpath('//*[@id="widget-tab-2"]/div[1]/span[2]/a/span/text()')) + '期'
                     videoLink = 'https:' + get_str_from_xpath(html.xpath('//a[@class="albumPlayBtn"]/@href'))
                 else:
                     # 影视详情页: https://www.iqiyi.com/v_19ru2jih7w.html
@@ -231,6 +216,21 @@ class IqiyiSpider(scrapy.Spider):
                         language = '其他'
                     movie_item['region'] = reverse_region(region)
                     movie_item['language'] = language
+                # 获取更新状态
+                if (type_num == '1'):
+                    # 电视剧
+                    update_status = get_str_from_xpath(
+                        html.xpath('//*[@id="widget-tab-2"]/div[1]/span[2]/a/span/text()')) + '期'
+                if (type_num == '2' or type_num == '4' or type_num == '15'):
+                    # 电视剧
+                    update_status = get_str_from_xpath(
+                        html.xpath('//*[@id="widget-tab-3"]/div[1]/span[2]/a/text()')) + get_str_from_xpath(
+                        html.xpath('//*[@id="widget-tab-3"]/div[1]/span[2]/a/i/text()')) + '集'
+                if (type_num == '6'):
+                    # 综艺
+                    update_status = get_str_from_xpath(
+                        html.xpath('//*[@id="widget-tab-3"]/div[1]/span[2]/a/text()')) + get_str_from_xpath(
+                        html.xpath('//*[@id="widget-tab-2"]/div[1]/span[2]/a/span/text()')) + '期'
                 # 解析播放列表
                 driver = get_driver()
                 driver.get(videoLink)
@@ -289,6 +289,7 @@ class IqiyiSpider(scrapy.Spider):
                             if (data == []):
                                 break
                             for each in data:
+                                print(each)
                                 type = {'name': '', 'url': ''}
                                 type['name'] = each['period'] + '期'
                                 type['url'] = each['episode_play_url']
@@ -311,7 +312,7 @@ class IqiyiSpider(scrapy.Spider):
                 elif (type_num == '2' or type_num == '6' or type_num == '4' or type_num == '15'):
                     # 电视剧
                     if (update_status == '集' or update_status == '期'):
-                        update_status = types[0]['name']
+                        update_status = types[len(types)-1]['name']
                     movie_item['update_status'] = update_status
                 # 视频已爬取且未更新
                 if (is_need_source(movie_item, 'movie') == False):

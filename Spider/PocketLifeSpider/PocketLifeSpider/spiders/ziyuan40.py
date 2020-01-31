@@ -45,11 +45,9 @@ class Ziyuan40Spider(scrapy.Spider):
                 self.start_urls.append(self.orign_url + str(page_index) + '.html')
         elif (target == 'latest'):
             # 获取电影总数
-            orign_html = get_one_page(self.start_urls[0])
-            orign_html = etree.HTML(orign_html)
-            self.total = (int)(get_str_from_xpath(orign_html.xpath('//div[@class="topright"]/ul[1]/li/strong/text()')))
             start_page = 2
-            self.total_page = self.total // self.page_size
+            self.total_page = 1
+            self.total = self.page_size * self.total_page
             if self.total % self.page_size != 0:
                 self.total_page = self.total_page + 1
             for page_index in reverse_arr(range(start_page, self.total_page + 1)):
@@ -99,7 +97,7 @@ class Ziyuan40Spider(scrapy.Spider):
                 each = html.xpath('//div[@class="vodBox"]')[0]
                 movie_item = MovieItem()
                 movie_item['id'] = movie_id
-                movie_item['src'] = get_str_from_xpath(each.xpath('./div/img/@src'))
+                movie_item['src'] = get_str_from_xpath(each.xpath('./div/img/@src')).split('pic=')[1]
                 movie_item['name'] = get_str_from_xpath(each.xpath('./div[2]/div[1]/h2/text()'))
                 movie_item['update_status'] = get_str_from_xpath(each.xpath('./div[2]/div[1]/span/text()'))
                 movie_item['score'] = get_str_from_xpath(each.xpath('./div[2]/div[1]/label/text()'))

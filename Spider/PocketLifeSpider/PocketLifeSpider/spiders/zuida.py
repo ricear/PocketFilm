@@ -112,7 +112,7 @@ class ZuidaSpider(scrapy.Spider):
             movie_item['update_time'] = reverse_update_time(get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[9]/span/text()')))
             movie_item['description'] = get_str_from_xpath(each.xpath('./div[1]/div/div/div[2]/div[2]/ul/li[14]/div/span[2]/text()'))
             sources = []
-            for each2 in each.xpath('./div[4]/div[2]/div/div'):
+            for each2 in each.xpath('./div[3]/div[2]/div/div'):
                 source = {'name': '', 'types': []}
                 source['name'] = (str)(each2.xpath('./h3/span/text()')[0])
                 types = []

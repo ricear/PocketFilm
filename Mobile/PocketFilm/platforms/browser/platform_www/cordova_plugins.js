@@ -126,6 +126,22 @@ module.exports = [
         "clobbers": [
             "cordova.plugins.Downloader"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-insomnia/www/Insomnia.js",
+        "id": "cordova-plugin-insomnia.Insomnia",
+        "pluginId": "cordova-plugin-insomnia",
+        "clobbers": [
+            "window.plugins.insomnia"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-insomnia/src/browser/Insomnia.js",
+        "id": "cordova-plugin-insomnia.InsomniaProxy",
+        "pluginId": "cordova-plugin-insomnia",
+        "merges": [
+            "window.plugins.insomnia"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -145,7 +161,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.3.3",
     "es6-promise-plugin": "4.2.2",
     "cordova-plugin-x-socialsharing": "5.4.7",
-    "integrator-cordova-plugin-downloader": "0.0.1"
+    "integrator-cordova-plugin-downloader": "0.0.1",
+    "cordova-plugin-insomnia": "4.3.0"
 }
 // BOTTOM OF METADATA
 });

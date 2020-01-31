@@ -7,9 +7,9 @@ from PocketLifeSpider.util.CommonUtils import *
 
 class YongjiuSpider(scrapy.Spider):
     name = 'yongjiu'
-    allowed_domains = ['www.yongjiuzy.cc']
+    allowed_domains = ['www.yongjiuzy1.com/']
     start_urls = []
-    domain = 'http://www.yongjiuzy.cc'
+    domain = 'http://www.yongjiuzy1.com'
     # 搜索关键词
     keyword = None
     type = 'movie_sources'
@@ -82,7 +82,9 @@ class YongjiuSpider(scrapy.Spider):
             movie_id = url2.split('id-')[1].split('.html')[0]
             # id, src, name, update_time, actors, type, score, release_date, description
             # 解析视频源
-            html = get_one_page(self.domain + url2)
+            url3 = self.domain + url2
+            print(url3)
+            html = get_one_page(url3)
             html = etree.HTML(html)
             each = html.xpath('//div[@class="contentMain"]')[0]
             movie_item = MovieItem()
@@ -114,17 +116,26 @@ class YongjiuSpider(scrapy.Spider):
             count = 1
             for each2 in html.xpath('//div[@class="movievod"]/ul/li'):
                 if (len(each2.xpath('./input')) == 0):
+                    if (count > 1):
+                        source['types'] = types
+                        sources.append(source)
+                        count = 1
                     source = {'name': '', 'types': []}
                     source['name'] = get_str_from_xpath(each2.xpath('./text()'))
                     types = []
                     flag = flag + 1
                     continue
-                full_name = get_str_from_xpath(each2.xpath('./input/@value'))
-                if (flag % 2 == 0 or '$' not in full_name):
-                    source['types'] = types
-                    sources.append(source)
-                    break
-                print(full_name)
+                else:
+                    full_name = get_str_from_xpath(each2.xpath('./input/@value'))
+                    if (full_name == 'checkbox'):
+                        source['types'] = types
+                        sources.append(source)
+                        break
+                    print(full_name)
+                    if (flag % 2 == 0 and '$' not in full_name):
+                        source['types'] = types
+                        sources.append(source)
+                        count = 1
                 type = {'name': '', 'url': ''}
                 type['name'] = full_name.split('$')[0]
                 type['url'] = full_name.split('$')[1]

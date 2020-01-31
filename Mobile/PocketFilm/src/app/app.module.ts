@@ -12,6 +12,7 @@ import { AppVersion } from '@ionic-native/app-version/ngx';
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 import { FileOpener } from '@ionic-native/file-opener/ngx';
 import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
+import { Insomnia } from '@ionic-native/insomnia/ngx';
 
 import { HttpServiceService } from './http-service.service';
 import { StorageService } from './storage.service';
@@ -43,6 +44,7 @@ import {VgBufferingModule} from 'videogular2/buffering';
   ],
   providers: [
     ScreenOrientation,
+    Insomnia,
     FileOpener,
     SocialSharing,
     AppVersion,

@@ -17,7 +17,6 @@ class DramaSpider(scrapy.Spider):
     allowed_domains = ['www.xiqu5.com']
     start_urls = []
     orign_url = 'http://www.xiqu5.com'
-    parse_orign_url = 'https://pocket.mynatapp.cc'
     collection = 'drama'
     dbutils = MongoDbUtils(collection)
     search_domain = 'http://www.xiqu5.com/search.asp'
@@ -39,6 +38,9 @@ class DramaSpider(scrapy.Spider):
             self.start_urls.append(a)
 
     def parse(self, response):
+
+        if ('pt' in  response.url):
+            print(response.url)
 
         # 开始时间
         start = time.time()
@@ -72,7 +74,10 @@ class DramaSpider(scrapy.Spider):
                     dramaItem = DramaItem()
                     # ('148451', '京剧锁五龙孟广禄主演', '未知', '京剧', '2019/4/25 14:32:11', '京剧锁五龙孟广禄主演详情请观看该戏曲，谢谢光临')
                     id = get_str_from_xpath(div.xpath('./a/@href'))
+                    if ('/' in id):
+                        id = id.split('/')[2]
                     # http://www.xiqu5.com/jj/index2.html
+                    print(id)
                     drama_url = url.split('.html')[0].split('index')[0] + id
                     dic = {'id': id}
                     find_drama = self.dbutils.find(dic)
@@ -101,6 +106,8 @@ class DramaSpider(scrapy.Spider):
                     html = get_one_page(drama_url, 'gb2312')
                     html = etree.HTML(html)
                     # 解析资源种类
+                    if ('/' in id):
+                        print(id)
                     print('正在解析戏曲信息 -> ' + id)
                     dramaItem['drama_description'] = get_str_from_xpath(html.xpath('//*[@id="alrum"]/div[1]/div[1]/div[2]/span/text()')).split('：')[1]
                     dramaItem['play_time'] = get_str_from_xpath(html.xpath('//*[@id="alrum"]/div[1]/div[1]/div[2]/span[6]/em/text()'))

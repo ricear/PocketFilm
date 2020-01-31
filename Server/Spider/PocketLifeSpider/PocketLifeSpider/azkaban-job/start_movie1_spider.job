@@ -1,4 +1,0 @@
-type=command
-command=sh /Users/weipeng/Personal/PocketFilm/Spider/PocketLifeSpider/PocketLifeSpider/shell/start_movie1_spider.sh
-retries=3
-retry.backoff=30000

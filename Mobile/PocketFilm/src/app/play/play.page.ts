@@ -3,12 +3,13 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Platform } from '@ionic/angular';
 import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
+import { Insomnia } from '@ionic-native/insomnia/ngx';
 
 import { StorageService } from '../storage.service';
 import { ToolsService } from '../tools.service';
 import { ConfigService } from '../config.service';
 
-declare var $:any;
+declare var $: any;
 
 @Component({
   selector: 'app-play',
@@ -41,16 +42,22 @@ export class PlayPage implements OnInit {
     public tools: ToolsService,
     public config: ConfigService,
     public router: Router,
-    public sanitizer: DomSanitizer
+    public sanitizer: DomSanitizer,
+    public insomnia: Insomnia
   ) {
-    this.activeRoute.queryParams.subscribe((params: Params) => {
-      this._id = params['_id']
-      this.source_index = params['source_index']
-      this.type_index = params['type_index']
-      this.browseType = params['browseType']
-      this.initializeApp()
-      this.getMovie()
-    })
+    this.insomnia.keepAwake()
+      .then(
+        () => {
+          this.activeRoute.queryParams.subscribe((params: Params) => {
+            this._id = params['_id']
+            this.source_index = params['source_index']
+            this.type_index = params['type_index']
+            this.browseType = params['browseType']
+            this.initializeApp()
+            this.getMovie()
+          })
+        }
+      );
   }
 
   ngOnInit() {
@@ -62,25 +69,25 @@ export class PlayPage implements OnInit {
    */
   createSourcesBySources(sources) {
     var newSources = []
-    for (var i = 0; i < sources.length;i++) {
-      var type = {'name': sources[i].name, 'url': sources[i].url}
+    for (var i = 0; i < sources.length; i++) {
+      var type = { 'name': sources[i].name, 'url': sources[i].url + '&autoplay=true' }
       var types = [type]
-      var source = {'name': sources[i].name, 'types': types}
+      var source = { 'name': sources[i].name, 'types': types }
       newSources[i] = source
     }
     this.movie.sources = newSources
-   }
+  }
 
   /**
    * 根据播放地址创造视频资源(适用于小品)
    * @param url 播放地址
    */
   createSourcesByURL(url) {
-   var type = {'name': this.movie.name, 'url': url}
-   var types = [type]
-   var source = {'name': this.movie.name, 'types': types}
-   var sources = [source]
-   this.movie.sources = sources
+    var type = { 'name': this.movie.name, 'url': url }
+    var types = [type]
+    var source = { 'name': this.movie.name, 'types': types }
+    var sources = [source]
+    this.movie.sources = sources
   }
 
   /**
@@ -91,16 +98,16 @@ export class PlayPage implements OnInit {
   Tabs(a, n) {
     var b = $("#sub" + a).css("display");
     for (var i = 0; i <= n; i++) {
-        $("#main" + i).attr("className", "h2");
-        $("#sub" + i).hide();
+      $("#main" + i).attr("className", "h2");
+      $("#sub" + i).hide();
     }
     if (b == "none") {
-        $("#sub" + a).show();
-        $("#main" + a).attr("className", "h2_on");
+      $("#sub" + a).show();
+      $("#main" + a).attr("className", "h2_on");
     } else {
-        $("#sub" + a).hide();
+      $("#sub" + a).hide();
     }
-}
+  }
 
   /**
    * 修改影视类型
@@ -133,7 +140,7 @@ export class PlayPage implements OnInit {
           this.safeUrl = this.tools.getParseUrl(this.browseType, this.url)
         }
         // 保存浏览记录
-      this.saveBrowseRecords()
+        this.saveBrowseRecords()
       })
     } else if (this.browseType == 'tv') {
       this.tools.getTvByIdApi(this._id).then((data: any) => {
@@ -146,7 +153,7 @@ export class PlayPage implements OnInit {
           this.safeUrl = this.tools.getParseUrl(this.browseType, this.url)
         }
         // 保存浏览记录
-      this.saveBrowseRecords()
+        this.saveBrowseRecords()
       })
     } else if (this.browseType == 'drama') {
       this.tools.getDramaByIdApi(this._id).then((data: any) => {
@@ -158,20 +165,20 @@ export class PlayPage implements OnInit {
           this.safeUrl = this.tools.getParseUrl(this.browseType, this.url)
         }
         // 保存浏览记录
-      this.saveBrowseRecords()
+        this.saveBrowseRecords()
       })
     } else if (this.browseType == 'piece') {
       this.tools.getPieceByIdApi(this._id).then((data: any) => {
         this.movie = data.data
         if (this.url == null) {
-            this.createSourcesByURL(this.movie.url)
+          this.createSourcesByURL(this.movie.url)
           this.source_count = this.movie.sources.length
           this.type = this.movie.sources[0].types[0]
           this.url = this.type.url
           this.safeUrl = this.tools.getParseUrl(this.browseType, this.url)
         }
         // 保存浏览记录
-      this.saveBrowseRecords()
+        this.saveBrowseRecords()
       })
     }
   }

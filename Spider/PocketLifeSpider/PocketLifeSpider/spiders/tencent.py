@@ -132,7 +132,7 @@ class TencentSpider(scrapy.Spider):
                         try:
                             update_status = cover_info['episode_updated']
                             if (update_status == None):
-                                continue
+                                update_status = '腾讯视频'
                         except:
                             continue
                     movie_item['update_status'] = update_status
@@ -181,7 +181,7 @@ class TencentSpider(scrapy.Spider):
                         if (flag == 0 or flag == 4):
                             continue
                         type['name'] = reverse_type_name((str)(each2['E']))
-                        type['url'] = url.split('.html')[0] + '/' + each2['V']
+                        type['url'] = url.split('.html')[0] + '/' + each2['V'] + '.html'
                         print('正在爬取 '+movie_type+' '+(str)(current_page)+'/'+(str)(total_page)+' '+(str)(count)+'/'+(str)(total)+' -> ' + movie_id + ' ' + source['name'] + ' ' + type['name'])
                         types.append(type)
                     if (len(types) == 0): continue

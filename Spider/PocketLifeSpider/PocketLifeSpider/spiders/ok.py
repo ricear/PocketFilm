@@ -81,14 +81,16 @@ class OkSpider(scrapy.Spider):
             movie_id = url2.split('id-')[1].split('.html')[0]
             # id, src, name, update_time, actors, type, score, release_date, description
             # 解析视频源
-            html = get_one_page(self.domain + url2)
+            url3 = self.domain + url2
+            print(url3)
+            html = get_one_page(url3)
             try:
                 html = etree.HTML(html)
             except:
                 # 记录跳过的视频信息
                 flag = 1
                 history_type = 'ok'
-                history_url = self.domain + url2
+                history_url = url3
                 history_text = '跳过'
                 if (check_spider_history(history_type, history_url, history_text) == False):
                     write_spider_history(history_type, history_url, history_text)
@@ -140,9 +142,9 @@ class OkSpider(scrapy.Spider):
             sources = []
             count = 1
             index = 1
-            for each in html.xpath('//div[@class="vodplayinfo"]')[2].xpath('./div/div'):
-                if (len(html.xpath('//div[@class="vodplayinfo"]')[2].xpath('./div/div')) > 1):
-                    print(self.domain + url2)
+            for each in html.xpath('//div[@class="vodplayinfo"]')[1].xpath('./div/div'):
+                if (len(html.xpath('//div[@class="vodplayinfo"]')[1].xpath('./div/div')) > 1):
+                    print(url3)
                 source = {'name': '', 'types': []}
                 source['name'] = get_str_from_xpath(each.xpath('./h3/span/text()'))
                 types = []

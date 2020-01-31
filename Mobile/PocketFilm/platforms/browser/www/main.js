@@ -1178,6 +1178,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_23__);
 /* harmony import */ var videogular2_buffering__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! videogular2/buffering */ "./node_modules/videogular2/buffering.js");
 /* harmony import */ var videogular2_buffering__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(videogular2_buffering__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var videogular2_streaming__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! videogular2/streaming */ "./node_modules/videogular2/streaming.js");
+/* harmony import */ var videogular2_streaming__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(videogular2_streaming__WEBPACK_IMPORTED_MODULE_25__);
+
 
 
 
@@ -1219,7 +1222,8 @@ var AppModule = /** @class */ (function () {
                 videogular2_core__WEBPACK_IMPORTED_MODULE_21__["VgCoreModule"],
                 videogular2_controls__WEBPACK_IMPORTED_MODULE_22__["VgControlsModule"],
                 videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_23__["VgOverlayPlayModule"],
-                videogular2_buffering__WEBPACK_IMPORTED_MODULE_24__["VgBufferingModule"]
+                videogular2_buffering__WEBPACK_IMPORTED_MODULE_24__["VgBufferingModule"],
+                videogular2_streaming__WEBPACK_IMPORTED_MODULE_25__["VgStreamingModule"]
             ],
             providers: [
                 _ionic_native_screen_orientation_ngx__WEBPACK_IMPORTED_MODULE_13__["ScreenOrientation"],
@@ -1348,8 +1352,8 @@ var ConfigService = /** @class */ (function () {
     function ConfigService() {
         // 公用地址
         // public sourceUrl = 'https://pocket.mynatapp.cc';
-        // public sourceUrl = 'http://api.grayson.top';
-        this.sourceUrl = 'http://103.45.172.213:9000';
+        this.sourceUrl = 'http://api.grayson.top';
+        // public sourceUrl = 'http://103.45.172.213:9000';
         // public请求地址
         this.publicUrl = this.sourceUrl + '/public';
         //api请求地址

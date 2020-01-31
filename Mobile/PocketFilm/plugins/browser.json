@@ -48,6 +48,9 @@
     },
     "integrator-cordova-plugin-downloader": {
       "PACKAGE_NAME": "com.grayson.pocketfilm"
+    },
+    "cordova-plugin-insomnia": {
+      "PACKAGE_NAME": "com.grayson.pocketfilm"
     }
   },
   "dependent_plugins": {

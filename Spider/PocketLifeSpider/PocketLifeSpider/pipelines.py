@@ -96,8 +96,11 @@ class ZuidaSpiderPipeline(object):
         else:
             print(item)
             url = item['src']
+            if 'http:' not in url and 'https:' not in url:
+                url = 'https:' + url
+            print(url)
             # 下载图片到本地
-            res = requests.get(url, stream=True)
+            res = requests.get(url, stream=True, verify=False)
             if res.status_code == 200:
                 uuid = generate_uuid()
                 save_img_path = Configs.IMAGES_PATH + '/%s.jpg' % uuid

@@ -1163,21 +1163,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_social_sharing_ngx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ionic-native/social-sharing/ngx */ "./node_modules/@ionic-native/social-sharing/ngx/index.js");
 /* harmony import */ var _ionic_native_file_opener_ngx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @ionic-native/file-opener/ngx */ "./node_modules/@ionic-native/file-opener/ngx/index.js");
 /* harmony import */ var _ionic_native_screen_orientation_ngx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @ionic-native/screen-orientation/ngx */ "./node_modules/@ionic-native/screen-orientation/ngx/index.js");
-/* harmony import */ var _http_service_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./http-service.service */ "./src/app/http-service.service.ts");
-/* harmony import */ var _storage_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./storage.service */ "./src/app/storage.service.ts");
-/* harmony import */ var _config_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./config.service */ "./src/app/config.service.ts");
-/* harmony import */ var _tools_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./tools.service */ "./src/app/tools.service.ts");
-/* harmony import */ var _back_button_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./back-button.service */ "./src/app/back-button.service.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var videogular2_core__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! videogular2/core */ "./node_modules/videogular2/core.js");
-/* harmony import */ var videogular2_core__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(videogular2_core__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var videogular2_controls__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! videogular2/controls */ "./node_modules/videogular2/controls.js");
-/* harmony import */ var videogular2_controls__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(videogular2_controls__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! videogular2/overlay-play */ "./node_modules/videogular2/overlay-play.js");
-/* harmony import */ var videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_23__);
-/* harmony import */ var videogular2_buffering__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! videogular2/buffering */ "./node_modules/videogular2/buffering.js");
-/* harmony import */ var videogular2_buffering__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(videogular2_buffering__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _ionic_native_insomnia_ngx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @ionic-native/insomnia/ngx */ "./node_modules/@ionic-native/insomnia/ngx/index.js");
+/* harmony import */ var _http_service_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./http-service.service */ "./src/app/http-service.service.ts");
+/* harmony import */ var _storage_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./storage.service */ "./src/app/storage.service.ts");
+/* harmony import */ var _config_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./config.service */ "./src/app/config.service.ts");
+/* harmony import */ var _tools_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./tools.service */ "./src/app/tools.service.ts");
+/* harmony import */ var _back_button_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./back-button.service */ "./src/app/back-button.service.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var videogular2_core__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! videogular2/core */ "./node_modules/videogular2/core.js");
+/* harmony import */ var videogular2_core__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(videogular2_core__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var videogular2_controls__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! videogular2/controls */ "./node_modules/videogular2/controls.js");
+/* harmony import */ var videogular2_controls__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(videogular2_controls__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! videogular2/overlay-play */ "./node_modules/videogular2/overlay-play.js");
+/* harmony import */ var videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var videogular2_buffering__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! videogular2/buffering */ "./node_modules/videogular2/buffering.js");
+/* harmony import */ var videogular2_buffering__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(videogular2_buffering__WEBPACK_IMPORTED_MODULE_25__);
+
 
 
 
@@ -1208,21 +1210,22 @@ var AppModule = /** @class */ (function () {
     }
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_20__["AppComponent"]],
+            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_21__["AppComponent"]],
             entryComponents: [],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
                 _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicModule"].forRoot(),
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_19__["AppRoutingModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_20__["AppRoutingModule"],
                 _angular_http__WEBPACK_IMPORTED_MODULE_4__["HttpModule"],
                 _angular_http__WEBPACK_IMPORTED_MODULE_4__["JsonpModule"],
-                videogular2_core__WEBPACK_IMPORTED_MODULE_21__["VgCoreModule"],
-                videogular2_controls__WEBPACK_IMPORTED_MODULE_22__["VgControlsModule"],
-                videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_23__["VgOverlayPlayModule"],
-                videogular2_buffering__WEBPACK_IMPORTED_MODULE_24__["VgBufferingModule"]
+                videogular2_core__WEBPACK_IMPORTED_MODULE_22__["VgCoreModule"],
+                videogular2_controls__WEBPACK_IMPORTED_MODULE_23__["VgControlsModule"],
+                videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_24__["VgOverlayPlayModule"],
+                videogular2_buffering__WEBPACK_IMPORTED_MODULE_25__["VgBufferingModule"]
             ],
             providers: [
                 _ionic_native_screen_orientation_ngx__WEBPACK_IMPORTED_MODULE_13__["ScreenOrientation"],
+                _ionic_native_insomnia_ngx__WEBPACK_IMPORTED_MODULE_14__["Insomnia"],
                 _ionic_native_file_opener_ngx__WEBPACK_IMPORTED_MODULE_12__["FileOpener"],
                 _ionic_native_social_sharing_ngx__WEBPACK_IMPORTED_MODULE_11__["SocialSharing"],
                 _ionic_native_app_version_ngx__WEBPACK_IMPORTED_MODULE_10__["AppVersion"],
@@ -1230,14 +1233,14 @@ var AppModule = /** @class */ (function () {
                 _ionic_native_device_ngx__WEBPACK_IMPORTED_MODULE_8__["Device"],
                 _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_7__["StatusBar"],
                 _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_6__["SplashScreen"],
-                _http_service_service__WEBPACK_IMPORTED_MODULE_14__["HttpServiceService"],
-                _storage_service__WEBPACK_IMPORTED_MODULE_15__["StorageService"],
-                _config_service__WEBPACK_IMPORTED_MODULE_16__["ConfigService"],
-                _tools_service__WEBPACK_IMPORTED_MODULE_17__["ToolsService"],
-                _back_button_service__WEBPACK_IMPORTED_MODULE_18__["BackButtonService"],
+                _http_service_service__WEBPACK_IMPORTED_MODULE_15__["HttpServiceService"],
+                _storage_service__WEBPACK_IMPORTED_MODULE_16__["StorageService"],
+                _config_service__WEBPACK_IMPORTED_MODULE_17__["ConfigService"],
+                _tools_service__WEBPACK_IMPORTED_MODULE_18__["ToolsService"],
+                _back_button_service__WEBPACK_IMPORTED_MODULE_19__["BackButtonService"],
                 { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicRouteStrategy"] }
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_20__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_21__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -1348,8 +1351,8 @@ var ConfigService = /** @class */ (function () {
     function ConfigService() {
         // 公用地址
         // public sourceUrl = 'https://pocket.mynatapp.cc';
-        // public sourceUrl = 'http://api.grayson.top';
-        this.sourceUrl = 'http://103.45.172.213:9000';
+        this.sourceUrl = 'http://api.grayson.top';
+        // public sourceUrl = 'http://103.45.172.213:9000';
         // public请求地址
         this.publicUrl = this.sourceUrl + '/public';
         //api请求地址

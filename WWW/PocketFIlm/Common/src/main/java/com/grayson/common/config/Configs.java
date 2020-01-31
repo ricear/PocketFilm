@@ -6,8 +6,8 @@ package com.grayson.common.config;
 public class Configs {
 
     //  主机名
-//    public static String API_HOST = "http://api.grayson.top";
-    public static String API_HOST = "http://103.45.172.213:9000";
+    public static String API_HOST = "http://api.grayson.top";
+//    public static String API_HOST = "http://103.45.172.213:9000";
     public static String WWW_HOST = "http://www.grayson.top";
 
     //  api 接口名
@@ -25,5 +25,8 @@ public class Configs {
     public static String FO97 = "https://play.fo97.cn/?url=";
     //  用于戏曲
     public static String LHH = "http://api.lhh.la/vip/?url=";
+
+    //  渲染文件保存路径前缀
+    public static String MAIN_HTML_SAVE_FILE_PATH = "/usr/local/projects/PocketFilm/files/jars";
 
 }

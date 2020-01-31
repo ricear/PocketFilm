@@ -6,7 +6,7 @@ var release_date = href.indexOf('release_date') >= 0 ? href.split('release_date=
 var page_index = href.indexOf('page_index') >= 0 ? href.split('page_index=')[1].split('&')[0] : 1
 var pageSize = href.indexOf('pageSize') >= 0 ? href.split('pageSize=')[1].split('&')[0] : 30
 var sort_type = href.indexOf('sort_type') >= 0 ? href.split('sort_type=')[1].split('&')[0] : 0
-var key_word = href.indexOf('key_word') >= 0 ? href.split('key_word=')[1].split('&')[0] : null
+var key_word = href.indexOf('key_word') >= 0 ? href.split('key_word=')[1] : null
 $(function () {
     //  获取影视数据
     var more_movie_url = API + "/movie/get/all?type=" + type + "&type2=" + type2 + "&region=" + region + "&release_date=" + release_date + "&page_index=" + page_index + "&page_size=" + pageSize + "&sort_type=" + sort_type + "&key_word=" + key_word + "";
@@ -55,7 +55,7 @@ function get_movies_count(url, id) {
             }
             var html = ''
             var more_type = 'more'
-            if (key_word != null) {
+            if (href.indexOf('/search') >= 0) {
                 more_type = 'search'
             }
             if (page_index <= 1) {
