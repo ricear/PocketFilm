@@ -299,10 +299,8 @@
 [ERROR - 2020-02-08T10:53:32.479Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
   value (https://g.alicdn.com/youku-nod[INFO  - 2020-02-08T10:54:49.708Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2020-02-08T10:59:49.715Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:40.484Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+[INFO  - 2020-02-08T11:04:49.722Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+2-08T10:53:40.484Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
   (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
   n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
   (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
