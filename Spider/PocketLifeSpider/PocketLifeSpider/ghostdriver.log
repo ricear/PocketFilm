@@ -1,0 +1,327 @@
+[INFO  - 2020-02-08T10:52:18.990Z] GhostDriver - Main - running on port 52552
+[INFO  - 2020-02-08T10:52:19.375Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-02-08T10:52:19.376Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.customHeaders:  - {}
+[INFO  - 2020-02-08T10:52:19.376Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-02-08T10:52:19.376Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 13dc0190-4a61-11ea-b41e-1500e67b6c17
+[ERROR - 2020-02-08T10:52:26.628Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection TypeError: undefined is not an object (evaluating 'e.data')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:26.629Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:27.132Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:27.132Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:27.691Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:27.691Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:31.393Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:31.393Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:36.228Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:36.229Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:37.941Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection TypeError: undefined is not an object (evaluating 'e.data')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:37.941Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/header-search/static/js/header-search.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:38.111Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:38.111Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:45.319Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:45.319Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:47.392Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:47.392Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:47.521Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection TypeError: undefined is not an object (evaluating 'e.data')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:47.521Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/header-search/static/js/header-search.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:47.522Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:47.522Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/youku-node/activity-components/1.0.12/static/js/live-window.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:47.739Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:47.739Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:49.040Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:49.040Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:53.647Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:53.648Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:55.576Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:55.576Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:56.694Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:56.694Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:58.843Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:52:58.843Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:03.686Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:03.687Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:05.508Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:05.508Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:06.331Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:06.331Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:08.388Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:08.388Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:15.891Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:15.893Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:18.962Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:18.963Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:19.755Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection TypeError: undefined is not an object (evaluating 'e.data')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:19.755Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/header-search/static/js/header-search.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:20.063Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:20.063Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:23.012Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:23.012Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:28.906Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:28.907Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:30.527Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:30.528Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:30.943Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:30.943Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:32.479Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:32.479Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  value (https://g.alicdn.com/youku-nod[INFO  - 2020-02-08T10:54:49.708Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-02-08T10:59:49.715Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:40.484Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:43.198Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-02-08T10:53:43.198Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+
+  phantomjs://platform/console++.js:263 in error

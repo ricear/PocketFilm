@@ -3,7 +3,7 @@ from pymongo import MongoClient
 
 settings = {
 #     "ip":'127.0.0.1',   #ip
-    "ip":'149.129.94.197',   #ip
+    "ip":'47.240.95.27',   #ip
     "port":27017,           #端口
     "db_name" : "pocket",    #数据库名字
 }

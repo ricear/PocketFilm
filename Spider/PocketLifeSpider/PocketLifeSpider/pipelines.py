@@ -96,7 +96,7 @@ class ZuidaSpiderPipeline(object):
         else:
             print(item)
             url = item['src']
-            if 'http:' not in url and 'https:' not in url:
+            if ('http:' not in url) and ('https:' not in url):
                 url = 'https:' + url
             print(url)
             # 下载图片到本地

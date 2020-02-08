@@ -1,5 +1,4 @@
-cordova.define("cordova-plugin-exoplayer.ExoPlayer", function(require, exports, module) {
-/*global cordova, module*/
+cordova.define("cordova-plugin-exoplayer.ExoPlayer", function(require, exports, module) { /*global cordova, module*/
 /*
  The MIT License (MIT)
 

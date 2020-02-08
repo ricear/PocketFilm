@@ -16,22 +16,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
-/* harmony import */ var videogular2_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! videogular2/core */ "./node_modules/videogular2/core.js");
-/* harmony import */ var videogular2_core__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(videogular2_core__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var videogular2_controls__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! videogular2/controls */ "./node_modules/videogular2/controls.js");
-/* harmony import */ var videogular2_controls__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(videogular2_controls__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! videogular2/overlay-play */ "./node_modules/videogular2/overlay-play.js");
-/* harmony import */ var videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var videogular2_buffering__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! videogular2/buffering */ "./node_modules/videogular2/buffering.js");
-/* harmony import */ var videogular2_buffering__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(videogular2_buffering__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var videogular2_streaming__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! videogular2/streaming */ "./node_modules/videogular2/streaming.js");
-/* harmony import */ var videogular2_streaming__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(videogular2_streaming__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _movie_detail_page__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./movie-detail.page */ "./src/app/movie-detail/movie-detail.page.ts");
-
-
-
-
-
+/* harmony import */ var _movie_detail_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./movie-detail.page */ "./src/app/movie-detail/movie-detail.page.ts");
 
 
 
@@ -42,7 +27,7 @@ __webpack_require__.r(__webpack_exports__);
 var routes = [
     {
         path: '',
-        component: _movie_detail_page__WEBPACK_IMPORTED_MODULE_11__["MovieDetailPage"]
+        component: _movie_detail_page__WEBPACK_IMPORTED_MODULE_6__["MovieDetailPage"]
     }
 ];
 var MovieDetailPageModule = /** @class */ (function () {
@@ -54,14 +39,9 @@ var MovieDetailPageModule = /** @class */ (function () {
                 _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
                 _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicModule"],
-                videogular2_core__WEBPACK_IMPORTED_MODULE_6__["VgCoreModule"],
-                videogular2_controls__WEBPACK_IMPORTED_MODULE_7__["VgControlsModule"],
-                videogular2_overlay_play__WEBPACK_IMPORTED_MODULE_8__["VgOverlayPlayModule"],
-                videogular2_buffering__WEBPACK_IMPORTED_MODULE_9__["VgBufferingModule"],
-                videogular2_streaming__WEBPACK_IMPORTED_MODULE_10__["VgStreamingModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forChild(routes)
             ],
-            declarations: [_movie_detail_page__WEBPACK_IMPORTED_MODULE_11__["MovieDetailPage"]]
+            declarations: [_movie_detail_page__WEBPACK_IMPORTED_MODULE_6__["MovieDetailPage"]]
         })
     ], MovieDetailPageModule);
     return MovieDetailPageModule;
@@ -78,7 +58,7 @@ var MovieDetailPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<vg-player>\n  <video #myMedia\n         [vgHls]=\"'https://vip.bljiex.com/?v=http://meng.wuyou-zuida.com/20200131/25654_2877d0a2/index.m3u8'\"\n         id=\"my-video\"\n         type=\"video/mp4\"\n         controls>\n  </video>\n</vg-player>"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"danger\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button></ion-back-button>\n    </ion-buttons>\n    <ion-title style=\"text-align: center;\">{{movie.name}}</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"https://m.88ys.cc/template/wap88ysw/css/tv.detail.css\">\n\n  <!-- 影视详情 -->\n  <section class=\"main\">\n    <!-- 详细信息 -->\n    <div class=\"detailPosterIntro globalPadding clearfix\">\n      <div class=\"posterPic\"><img [src]=\"movie.src\" alt=\"{{movie.name}}\"\n          onerror=\"this.src='http://149.129.94.197:8085/assets/img/load.gif'\"></div>\n      <div class=\"introTxt\">\n        <h1>{{movie.name}}</h1>\n        <li>更新状态：{{movie.update_status}}</li>\n        <li>导演：<span *ngFor=\"let director of movie.directors\">{{director}}&nbsp;</span></li>\n        <li>主演：<span *ngFor=\"let actor of movie.actors\">{{actor}}&nbsp;</span></li>\n        <li>类型：{{movie.type2}}</li>\n        <li>地区：{{movie.region}}</li>\n        <li>上映日期：{{movie.release_date}}</li>\n        <li>更新时间：{{movie.acquisition_time}}</li>\n      </div>\n    </div>\n\n    <!-- 资源列表 -->\n    <div class=\"tab globalPadding\">\n      <ul class=\"tabNav clearfix\">\n        <li><span class=\"cur\" (click)=\"oooTab2(0)\">剧集</span></li>\n        <li><span class=\"\" (click)=\"oooTab2(1)\">简介</span></li>\n      </ul>\n    </div>\n    <div class=\"tabConList globalPadding\" style=\"display: inline-block;\">\n      <div class=\"tabCon\" style=\"display: block;\">\n        <dl class=\"tab2\">\n          <!-- 资源名称列表 -->\n          <dt class=\"tabt3\">\n            <div *ngFor=\"let source of movie.sources,let i = index\">\n              <span id=\"{{source.name}}\" class=\"current\" (click)=\"oooTab(source.name, i)\"\n                *ngIf=\"i == source_index\">{{source.name}}</span>\n              <span id=\"{{source.name}}\" (click)=\"oooTab(source.name, i)\"\n                *ngIf=\"i != source_index\">{{source.name}}</span>\n            </div>\n          </dt>\n          <!-- 资源播放地址列表 -->\n          <div *ngFor=\"let source of movie.sources,let i = index\">\n            <dd class=\"{{source.name}}\" style=\"display: block;\" *ngIf=\"i == source_index\">\n              <ul class=\"ulNumList clearfix list_1\">\n                <li (click)=\"changeMovieType(_id, i, j)\" *ngFor=\"let type of source.types,let j = index\"> <a\n                    title=\"{{type.name}}\">{{type.name}}</a></li>\n              </ul>\n            </dd>\n            <dd class=\"{{source.name}}\" style=\"display: none;\" *ngIf=\"i != source_index\">\n              <ul class=\"ulNumList clearfix list_1\">\n                <li (click)=\"changeMovieType(_id, i, j)\" *ngFor=\"let type of source.types,let j = index\"> <a\n                    title=\"{{type.name}}\">{{type.name}}</a></li>\n              </ul>\n            </dd>\n          </div>\n        </dl>\n      </div>\n      <div class=\"tabCon\" style=\"display: none;\">\n        <p class=\"movieintro\" id=\"movie_info_intro_s\"><span style=\"color:#333;\">剧情简介：</span>{{movie.description}}</p>\n      </div>\n    </div>\n  </section>\n\n  <!-- 相关推荐 -->\n  <section class=\"main\">\n    <div class=\"mod_a globalPadding\" *ngIf=\"recommendations.length != 0\">\n        <div class=\"th_a\"><span class=\"sMark\">相关推荐</span></div>\n        <div class=\"tb_a\">\n          <ul class=\"picTxt picTxtA clearfix\" id=\"data_list\">\n            <li *ngFor=\"let latestTop10Movie of recommendations\" (click)=\"goMovieDetail((latestTop10Movie._id))\">\n              <div class=\"con\">\n                <a title=\"{{latestTop10Movie.name}}\"><img data-src=\"{{latestTop10Movie.src}}\"\n                    alt=\"{{latestTop10Movie.name}}\" src=\"{{latestTop10Movie.src}}\"\n                    onerror=\"onerror=null;src='http://149.129.94.197:8085/assets/img/load.gif'\"\n                    style=\"width: 158px; height: 159px; display: block;\"><span class=\"sNum\"><em\n                      class=\"emScore\">{{latestTop10Movie.update_status}}</em></span> <span\n                    class=\"sTit\">{{latestTop10Movie.name}}</span> </a>\n              </div>\n            </li>\n          </ul>\n        </div>\n      </div>\n  </section>\n</ion-content>"
 
 /***/ }),
 

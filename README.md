@@ -105,6 +105,13 @@
 
 ------
 
+#### v8.1.0 `2020/2/8`
+
+- 爬虫：
+  - 修复优酷视频爬虫问题
+  - `CommonUtils.py`中新增方法：
+    - ```mongo_to_es(day_delta=0, hour_delta=0, minute_delta=0, second_delta=0, format=format)```：将mongodb中的数据同步到elasticsearch
+
 #### v7.1.0 `2020/1/31`
 
 - 移动版：

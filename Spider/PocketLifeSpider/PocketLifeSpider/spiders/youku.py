@@ -63,6 +63,7 @@ class YoukuSpider(scrapy.Spider):
 
         # 开始时间
         start = time.time()
+        driver = get_driver(0)
 
         # 获取所有电影的 id，用于判断电影是否已经爬取
         collection = 'movie'
@@ -93,7 +94,12 @@ class YoukuSpider(scrapy.Spider):
             # 解析视频列表
             for list in reverse_arr(response.json()['data']):
                 self.index = self.index + 1
+                videoLink = 'https://v.youku.com/v_show/id_' + list['videoId'] + '.html'
+                print(videoLink)
                 movie_item = MovieItem()
+                if (list['summary'] == '资料'):
+                    print('跳过 -> ' + videoLink)
+                    continue
                 movie_item['src'] = list['img']
                 movie_item['name'] = list['title']
                 update_status = list['summary']
@@ -101,39 +107,41 @@ class YoukuSpider(scrapy.Spider):
                     update_status == '优酷视频'
                 movie_item['update_status'] = update_status
                 # 解析视频详情
-                videoLink = 'https:' + list['videoLink']
-                html = get_one_page(videoLink)
-                html = etree.HTML(html)
-                detail_url = 'https:' + get_str_from_xpath(html.xpath('//div[@class="tvinfo"]/h2/a/@href')).split('?')[0]
-                print(videoLink + ' ' + detail_url)
+                movie_item['id'] = videoLink.split('.html')[0].split('show/')[1]
                 try:
-                    movie_id = detail_url.split('.html')[0].split('show/')[1]
+                    driver.get(videoLink)
                 except:
+                    print('跳过 -> ' + videoLink)
                     continue
-                movie_item['id'] = movie_id
-                html = get_one_page(detail_url)
-                html = etree.HTML(html)
-                movie_detail_xpath = html.xpath('/html/body/div[2]/div/div[1]/div[2]/div[2]/ul')[0]
-                nick_name = get_str_from_xpath(movie_detail_xpath.xpath('./li[@class="p-alias"]/text()'))
-                if (nick_name == ''):
-                    nick_name = movie_item['name']
-                else:
-                   nick_name = nick_name.split('：')[1]
-                movie_item['nickname'] = nick_name
-                release_date = get_str_from_xpath(movie_detail_xpath.xpath('./li/span[@class="pub"]/text()')).split('-')[0]
+                initial_data = driver.execute_script('return window.__INITIAL_DATA__')
+                if (initial_data is None):
+                    print('跳过 -> ' + videoLink)
+                    continue
+                movie_item['nickname'] = (str)(initial_data['data']['data']['data']['extra']['showSubtitle'])
+                release_date = (str)(initial_data['data']['data']['nodes'][0]['nodes'][0]['nodes'][0]['data']['showReleaseYear'])
                 movie_item['release_date'] = reverse_release_date(release_date)
-                score_origin = get_str_from_xpath(movie_detail_xpath.xpath('./li[@class="p-score"]/span[2]/text()'))
-                if (score_origin == ''): score = get_random_str()
-                else: score = score_origin
+                try:
+                    score = (str)(initial_data['data']['data']['nodes'][0]['nodes'][0]['nodes'][0]['data']['youkuRate'])
+                except:
+                    score = get_random_str()
                 movie_item['score'] = score
-                actors = get_arr_from_xpath(movie_detail_xpath.xpath('./li[text()="主演："]/a/text()'))
+                actors = []
+                for node in initial_data['data']['data']['nodes'][0]['nodes'][0]['nodes']:
+                    if ('subtitle' in node['data'] and '饰' in node['data']['subtitle']):
+                        actors.append((str)(node['data']['title']))
                 movie_item['actors'] = actors
-                directors = get_arr_from_xpath(movie_detail_xpath.xpath('./li[text()="导演："]/a/text()'))
+                directors = []
+                for node in initial_data['data']['data']['nodes'][0]['nodes'][0]['nodes']:
+                    if ('subtitle' in node['data'] and node['data']['subtitle'] == '导演'):
+                        directors.append((str)(node['data']['title']))
                 movie_item['directors'] = directors
-                region = get_str_from_xpath(movie_detail_xpath.xpath('./li[text()="地区："]/a/text()'))
+                region = (str)(initial_data['data']['data']['nodes'][0]['nodes'][0]['nodes'][0]['data']['area'][0])
                 movie_item['region'] = reverse_region(region)
                 movie_item['type'] = movie_type
-                type2 = get_str_from_xpath(movie_detail_xpath.xpath('./li[text()="类型："]/a[1]/text()'))
+                try:
+                    type2 = (str)(initial_data['data']['data']['nodes'][0]['nodes'][0]['nodes'][0]['data']['showGenre'].split(' ')[0])
+                except:
+                    type2 = '其他'
                 if (type_num == '177'): type2 = '少儿片'
                 if (type_num != '85'):
                     if (type2 == ''):
@@ -143,22 +151,25 @@ class YoukuSpider(scrapy.Spider):
                 if (is_exclude_type2(type2) == True):
                     continue
                 movie_item['type2'] = reverse_type2(type2)
-                movie_item['description'] = get_str_from_xpath(movie_detail_xpath.xpath('./li[@class="p-row p-intro"]/span[@class="intro-more hide"]/text()'))
-                movie_item['update_time'] = get_current_time()
+                movie_item['description'] = (str)(initial_data['data']['data']['nodes'][0]['nodes'][0]['nodes'][0]['data']['desc'])
+                movie_item['update_time'] = (str)(initial_data['data']['data']['data']['extra']['showReleaseTime'])
                 movie_item['language'] = '内详'
                 movie_item['duration'] = '0'
+                if (movie_item['name'] == '乡村爱情12'):
+                    print('')
                 # 解析播放列表
-                driver = get_driver()
-                driver.get(detail_url)
+                driver.get(videoLink)
                 page_config = driver.execute_script('return window.PageConfig')
-                driver.quit()
+                if (page_config is None):
+                    print('跳过 -> ' + videoLink)
+                    continue
                 showid = page_config['showid']
                 sources = []
                 source = {'name': '优酷视频', 'types': []}
                 types = []
                 for page in range(1, 60):
                     url = 'https://v.youku.com/page/playlist?&showid=' + showid + '&videoCategoryId=' + type_num + '&isSimple=false&videoEncodeId=' + \
-                            movie_id.split('id_')[1] + '%3D%3D&page=' + (str)(page)
+                          movie_item['id'].split('id_')[1] + '%3D%3D&page=' + (str)(page)
                     print(url)
                     html = get_one_page(url)
                     html = json.loads(html)['html']
@@ -166,13 +177,15 @@ class YoukuSpider(scrapy.Spider):
                     # 如果页数已经超过有效页数，则停止获取下面的页数的资源类型
                     if (html == None):
                         break
-                    for each in html.xpath('//div[@class="item item-cover" or @class="item item-num" or @class="item item-num item-num-last"]'):
+                    for each in html.xpath('//div[@class="item item-cover" or @class="item item-num" or @class="item item-num item-num-last" or @class="item item-txt"]'):
                         type = {'name': '', 'url': ''}
                         type_name = reverse_type_name(get_str_from_xpath(each.xpath('./@seq')))
                         url = 'https:' + get_str_from_xpath(each.xpath('./a/@href'))
                         type['name'] = type_name
                         type['url'] = url
-                        print('正在爬取 '+movie_type+' '+(str)(i)+'/'+(str)(self.totalPage)+' '+(str)(self.index)+'/'+(str)(self.total)+' -> ' + movie_id + ' ' + source['name'] + ' ' + type['name'])
+                        print('正在爬取 ' + movie_type + ' ' + (str)(i) + '/' + (str)(self.totalPage) + ' ' + (str)(
+                            self.index) + '/' + (str)(self.total) + ' -> ' + movie_item['id'] + ' ' + source[
+                                  'name'] + ' ' + type['name'])
                         types.append(type)
                 source['types'] = types
                 sources.append(source)
@@ -182,11 +195,12 @@ class YoukuSpider(scrapy.Spider):
                 movie_item['sources'] = sources
                 # 视频已爬取且未更新
                 if (is_need_source(movie_item, 'movie') == False):
-                    print(movie_id + ' 已爬取')
+                    print(movie_item['id'] + ' 已爬取')
                     continue
                 yield movie_item
                 self.total_valid = self.total_valid + 1
         # 结束时间
+        driver.quit()
         end = time.time()
         process_time = end - start
         print('本次共爬取 ' + str(self.total_valid) + ' 条数据，用时 ' + str(process_time) + 's')

@@ -1,4 +1,4 @@
 #!bin/bash
 cd ../db_backup
 rm -rf ./*
-mongodump --host 103.45.172.213 --port 27017
+mongodump --host 47.240.95.27 --port 27017

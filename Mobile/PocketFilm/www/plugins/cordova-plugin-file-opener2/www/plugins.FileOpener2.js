@@ -1,5 +1,4 @@
-cordova.define("cordova-plugin-file-opener2.FileOpener2", function(require, exports, module) {
-/*jslint browser: true, devel: true, node: true, sloppy: true, plusplus: true*/
+cordova.define("cordova-plugin-file-opener2.FileOpener2", function(require, exports, module) { /*jslint browser: true, devel: true, node: true, sloppy: true, plusplus: true*/
 /*global require, cordova */
 /*
 The MIT License (MIT)

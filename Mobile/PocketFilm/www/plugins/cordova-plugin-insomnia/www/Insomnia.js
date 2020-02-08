@@ -1,5 +1,4 @@
-cordova.define("cordova-plugin-insomnia.Insomnia", function(require, exports, module) {
-function Insomnia() {
+cordova.define("cordova-plugin-insomnia.Insomnia", function(require, exports, module) { function Insomnia() {
 }
 
 Insomnia.prototype.keepAwake = function (successCallback, errorCallback) {
