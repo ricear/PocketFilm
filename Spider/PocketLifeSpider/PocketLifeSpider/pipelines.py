@@ -94,22 +94,26 @@ class ZuidaSpiderPipeline(object):
             print(newdic)
             db_utils.update(dic, newdic)
         else:
-            print(item)
-            url = item['src']
-            if ('http:' not in url) and ('https:' not in url):
-                url = 'https:' + url
-            print(url)
-            # 下载图片到本地
-            res = requests.get(url, stream=True, verify=False)
-            if res.status_code == 200:
-                uuid = generate_uuid()
-                save_img_path = Configs.IMAGES_PATH + '/%s.jpg' % uuid
-                # 保存下载的图片
-                with open(save_img_path, 'wb') as fs:
-                    for chunk in res.iter_content(1024):
-                        fs.write(chunk)
-                item['src'] = Configs.IMAGES_HOST + '/%s.jpg' % uuid
-            db_utils.insert(item)
+            try:
+                print(item)
+                url = item['src']
+                if ('http:' not in url) and ('https:' not in url):
+                    url = 'https:' + url
+                print(url)
+                # 下载图片到本地
+                res = get_requests().get(url, stream=True, verify=False, timeout=60)
+                if res.status_code == 200:
+                    uuid = generate_uuid()
+                    save_img_path = Configs.IMAGES_PATH + '/%s.jpg' % uuid
+                    # 保存下载的图片
+                    with open(save_img_path, 'wb') as fs:
+                        for chunk in res.iter_content(1024):
+                            fs.write(chunk)
+                    item['src'] = Configs.IMAGES_HOST + '/%s.jpg' % uuid
+                db_utils.insert(item)
+            except:
+                print("跳过 -> " + item['id'])
+                pass
         return item
 
 # 将爬取到的数据保存到数据库

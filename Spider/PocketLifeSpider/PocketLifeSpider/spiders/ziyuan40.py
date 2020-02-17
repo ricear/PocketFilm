@@ -153,13 +153,7 @@ class Ziyuan40Spider(scrapy.Spider):
                     continue
                 yield movie_item
             except:
-                # 记录跳过的视频信息
-                history_type = 'ziyuan40'
-                history_url = url
-                history_text = '跳过'
-                self.total_valid = self.total_valid + 1
-                if (check_spider_history(history_type, history_url, history_text) == False):
-                    write_spider_history(history_type, history_url, history_text)
+                print('跳过 -> ' + url2)
                 continue
             self.total_valid = self.total_valid + 1
         # 结束时间

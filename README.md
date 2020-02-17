@@ -105,6 +105,18 @@
 
 ------
 
+#### v8.2.0 `2020/2/17`
+
+- 爬虫：
+  - `CommonUtils.py`中新增方法：
+    - `get_field_list(file_path, file_name)`：获取mongodb的字段名称列表
+    - `write_data_to_csv(file_path, file_name, field_list, data_list, date)`：将数据以csv格式写入文件
+    - `mongo_to_local(day_delta=0, hour_delta=0, minute_delta=0, second_delta=0, format=format, target_date=None)`：将mongodb中的数据下载到本地(csv)
+    - `get_requests()`：获取requests对象
+    - `parse_unicode(unicode_str, encoding='utf-8')`：将unicode字符串解析成指定格式的字符串
+    - `handle_with_video_info_list(video_info_list)`：对video_info_list进行处理，返回相应的资源列表(xunleiyy)
+    - `handle_with_mac_url(source_name_list, mac_url)`：对mac_url进行处理，返回相应的资源列表(ziyuan88ys)
+
 #### v8.1.0 `2020/2/8`
 
 - 爬虫：

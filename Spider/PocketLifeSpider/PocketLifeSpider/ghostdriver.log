@@ -1,325 +1,582 @@
-[INFO  - 2020-02-08T10:52:18.990Z] GhostDriver - Main - running on port 52552
-[INFO  - 2020-02-08T10:52:19.375Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2020-02-08T10:52:19.376Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.customHeaders:  - {}
-[INFO  - 2020-02-08T10:52:19.376Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2020-02-08T10:52:19.376Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 13dc0190-4a61-11ea-b41e-1500e67b6c17
-[ERROR - 2020-02-08T10:52:26.628Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection TypeError: undefined is not an object (evaluating 'e.data')
+[INFO  - 2020-02-16T04:05:28.080Z] GhostDriver - Main - running on port 55905
+[INFO  - 2020-02-16T04:05:28.538Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-02-16T04:05:28.538Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.customHeaders:  - {}
+[INFO  - 2020-02-16T04:05:28.538Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-02-16T04:05:28.538Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 912c0850-5071-11ea-8bf7-af382ae7ddcb
+[ERROR - 2020-02-16T04:05:38.259Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Symbol
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:26.629Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+[ERROR - 2020-02-16T04:05:38.259Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/[INFO  - 2020-02-16T04:10:02.411Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2020-02-16T04:10:40.040Z] Session [8166dcb0-5071-11ea-bf3b-f121ba9c90f0] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:27.132Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection [object Object]
+[ERROR - 2020-02-16T04:10:40.042Z] Session [8166dcb0-5071-11ea-bf3b-f121ba9c90f0] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:27.132Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+[INFO  - 2020-02-16T04:15:02.420Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2020-02-16T04:15:34.053Z] Session [8166dcb0-5071-11ea-bf3b-f121ba9c90f0] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:27.691Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection [object Object]
+[ERROR - 2020-02-16T04:15:34.053Z] Session [8166dcb0-5071-11ea-bf3b-f121ba9c90f0] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:27.691Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+[INFO  - 2020-02-16T04:20:02.595Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2020-02-16T04:22:54.718Z] Session [8166dcb0-5071-11ea-bf3b-f121ba9c90f0] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:31.393Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+[ERROR - 2020-02-16T04:22:54.719Z] Session [8166dcb0-5071-11ea-bf3b-f121ba9c90f0] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:31.393Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+[ERROR - 2020-02-16T04:24:49.440Z] Session [8166dcb0-5071-11ea-bf3b-f121ba9c90f0] - page.onError - msg: ReferenceError: Can't find variabl[INFO  - 2020-02-16T04:28:38.466Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-02-16T04:33:38.483Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:36.228Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+[INFO  - 2020-02-16T04:25:03.499Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2020-02-16T04:26:45.141Z] Session [8166dcb0-5071-11ea-bf3b-f121ba9c90f0] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:36.229Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+[ERROR - 2020-02-16T04:26:45.141Z] Session [8166dcb0-5071-11ea-bf3b-f121ba9c90f0] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:37.941Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection TypeError: undefined is not an object (evaluating 'e.data')
+[ERROR - 2020-02-16T04:28:51.086Z] Session [8166dcb0-5071-11ea-bf3b-f121ba9c90f0] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:37.941Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/header-search/static/js/header-search.js:1)
+[ERROR - 2020-02-16T04:28:51.088Z] Session [8166dcb0-5071-11ea-bf3b-f121ba9c90f0] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:38.111Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+[INFO  - 2020-02-16T04:30:03.765Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-02-16T04:34:19.243Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+ - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  [ERROR - 2020-02-16T04:28:04.760Z] Session [5aeadf50-5071-11ea-a334-f714edda4ec5] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:38.111Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+[ERROR - 2020-02-16T04:28:04.760Z] Session [5aeadf50-5071-11ea-a334-f714edda4ec5] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com[INFO  - 2020-02-16T04:32:24.889Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+e: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:45.319Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+[ERROR - 2020-02-16T04:29:18.857Z] Session [1799bfa0-5071-11ea-8cfc-95c6ffb1ba6c] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:45.319Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+[INFO  - 2020-02-16T04:32:05.129Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966[INFO  - 2020-02-16T04:29:00.101Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NO[I[INFO  - 2020-02-16T04:34:00.123Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+phantomjs://platform/console++.js:263 in error
+[INFO  - 2020-02-16T04:29:35.560Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+nction) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:47.392Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+[ERROR - 2020-02-16T04:27:39.923Z] Session [399c69e0-5071-11ea-b307-27cb0492e461] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'e.canPlayType("application/x-mpegURL")')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:47.392Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
-  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+[ERROR - 2020-02-16T04:27:39.925Z] Session [399c69e0-5071-11ea-b307-27cb0492e461] - page.onError - stack:
+  value (https://vip1.dflfcm.com:966/player/dplayer/Dplayer.min.js:1)
+  value (https://vip1.dflfcm.com:966/player/dplayer/Dplayer.min.js:1)
+  e (https://vip1.dflfcm.com:966/player/dplayer/Dplayer.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/?url=https://www.iqiyi.com/v_19rra73620.html:177)
+  l (https://vip1.dflfcm.com:966/player/jquery.min.js:4)
+  fireWith (https://vip1.dflfcm.com:966/player/jquery.min.js:4)
+  k (https://vip1.dflfcm.com:966/player/jquery.min.js:6)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/jquery.min.js:6)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:47.521Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection TypeError: undefined is not an object (evaluating 'e.data')
+[INFO  - 2020-02-16T04:28:04.248Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-02-16T04:33:04.271Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:47.521Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/header-search/static/js/header-search.js:1)
+[ERROR - 2020-02-16T04:06:59.631Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:47.522Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection [object Object]
+[ERROR - 2020-02-16T04:06:59.632Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:47.522Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/youku-node/activity-components/1.0.12/static/js/live-window.js:1)
+[ERROR - 2020-02-16T04:07:05.269Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:47.739Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+[ERROR - 2020-02-16T04:07:05.269Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:47.739Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+[ERROR - 2020-02-16T04:07:14.738Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:49.040Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+[ERROR - 2020-02-16T04:07:14.739Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:49.040Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
-  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+[ERROR - 2020-02-16T04:07:28.834Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:53.647Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+[ERROR - 2020-02-16T04:07:28.834Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:53.648Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+[ERROR - 2020-02-16T04:07:33.052Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:55.576Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+[ERROR - 2020-02-16T04:07:33.052Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:55.576Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
-  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+[ERROR - 2020-02-16T04:07:44.921Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:56.694Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+[ERROR - 2020-02-16T04:07:44.921Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:56.694Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+[ERROR - 2020-02-16T04:07:56.003Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:58.843Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+[ERROR - 2020-02-16T04:07:56.003Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:52:58.843Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
-  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+[INFO  - 2020-02-16T04:10:28.463Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2020-02-16T04:11:07.464Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:03.686Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+[ERROR - 2020-02-16T04:11:07.464Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip.okokbo.com/hls.min.js:1)
+  e (https://vip.okokbo.com/hls.min.js:1)
+  (anonymous function) (https://vip.okokbo.com/hls.min.js:1)
+  e (https://vip.okokbo.com/hls.min.js:1)
+  (anonymous function) (https://vip.okokbo.com/hls.min.js:1)
+  e (https://vip.okokbo.com/hls.min.js:1)
+  (anonymous function) (https://vip.okokbo.com/hls.min.js:1)
+  (anonymous function) (https://vip.okokbo.com/hls.min.js:1)
+  (anonymous function) (https://vip.okokbo.com/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:03.687Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+[ERROR - 2020-02-16T04:11:20.623Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:05.508Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+[ERROR - 2020-02-16T04:11:20.624Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:05.508Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
-  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+[ERROR - 2020-02-16T04:11:26.648Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Symbol
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:06.331Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+[ERROR - 2020-02-16T04:11:26.648Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  t (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
+  (anonymous function) (https://cdn.jsdelivr.net/npm/ppenginx@latest:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:06.331Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+[ERROR - 2020-02-16T04:11:26.661Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Hls
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:08.388Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+[ERROR - 2020-02-16T04:11:26.661Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  customHls (https://vip1.dflfcm.com:966/p2p/?url=https://iqiyi.zuidameiju.com/20181216/5XUH4Kxx/index.m3u8:38)
+  value (https://cdn.jsdelivr.net/npm/dplayer@latest:1)
+  value (https://cdn.jsdelivr.net/npm/dplayer@latest:1)
+  e (https://cdn.jsdelivr.net/npm/dplayer@latest:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:08.388Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
-  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+[ERROR - 2020-02-16T04:11:34.232Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:15.891Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+[ERROR - 2020-02-16T04:11:34.232Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:15.893Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+[ERROR - 2020-02-16T04:11:41.440Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:18.962Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+[ERROR - 2020-02-16T04:11:41.441Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:18.963Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
-  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+[ERROR - 2020-02-16T04:11:48.881Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:19.755Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: Unhandled promise rejection TypeError: undefined is not an object (evaluating 'e.data')
+[ERROR - 2020-02-16T04:11:48.881Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:19.755Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/header-search/static/js/header-search.js:1)
+[ERROR - 2020-02-16T04:11:53.962Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:20.063Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+[ERROR - 2020-02-16T04:11:53.976Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:20.063Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+[ERROR - 2020-02-16T04:12:06.003Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:23.012Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+[ERROR - 2020-02-16T04:12:06.003Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:23.012Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
-  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+[ERROR - 2020-02-16T04:12:17.017Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:28.906Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+[ERROR - 2020-02-16T04:12:17.063Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:28.907Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+[ERROR - 2020-02-16T04:12:24.555Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:30.527Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+[ERROR - 2020-02-16T04:12:24.555Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:30.528Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  value (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
-  (anonymous function) (https://g.alicdn.com/youku-node/pc-playpage-v2/1.7.7/static/js/Page.chunk.js:1)
+[ERROR - 2020-02-16T04:12:33.036Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:30.943Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
+[ERROR - 2020-02-16T04:12:33.036Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:30.943Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
+[ERROR - 2020-02-16T04:12:41.520Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - msg: ReferenceError: Can't find variable: Set
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:32.479Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: TypeError: null is not an object (evaluating 'n.offsetHeight')
+[ERROR - 2020-02-16T04:12:41.521Z] Session [912c0850-5071-11ea-8bf7-af382ae7ddcb] - page.onError - stack:
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  t (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
+  (anonymous function) (https://vip1.dflfcm.com:966/player/dplayer/hls.min.js:1)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:32.479Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  value (https://g.alicdn.com/youku-nod[INFO  - 2020-02-08T10:54:49.708Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2020-02-08T10:59:49.715Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2020-02-08T11:04:49.722Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-2-08T10:53:40.484Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:43.198Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - msg: ReferenceError: Can't find variable: Map
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-08T10:53:43.198Z] Session [13dc0190-4a61-11ea-b41e-1500e67b6c17] - page.onError - stack:
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  n (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-  (anonymous function) (https://g.alicdn.com/pc-playpage-components/youku-barrage/0.1.6/index.js:1)
-
-  phantomjs://platform/console++.js:263 in error
+[INFO  - 2020-02-16T04:15:28.999Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-02-16T04:20:29.028Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-02-16T04:25:29.844Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-02-16T04:30:29.899Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW

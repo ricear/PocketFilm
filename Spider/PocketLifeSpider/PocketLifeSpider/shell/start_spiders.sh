@@ -26,11 +26,11 @@ else
 fi
 array=[]
 if [ $1 == "all" ]; then
-	string="tencent,youku,iqiyi,zuida,kuyun,yongjiu,ok,ziyuan135,ziyuan33uu"
+	string="tencent,youku,iqiyi,zuida,kuyun,yongjiu,ok,ziyuan135,ziyuan33uu,ziyuan40,ziyuan88ys"
 elif [ $1 == 'daily' ]; then
 	string="tv,drama,piece,piece2,piece3,piece4"
 elif [ $1 == 'temp' ]; then
-	string="tencent,youku,iqiyi"
+	string="zuida,kuyun,yongjiu,ok,ziyuan135,ziyuan33uu,ziyuan40,ziyuan88ys"
 fi
 array=(${string//,/ })
 if [ $type == 'all' ]; then

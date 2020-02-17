@@ -6,9 +6,6 @@ from scrapy.cmdline import execute
 if __name__ == '__main__':
 
     sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-    # movie
-    # execute(["scrapy", "crawl", "movie", "-a", "target=1"])
-    # execute(["scrapy", "crawl", "movie", "-a", "target=1", "-a", "keyword=余罪"])
     # zuida
     # execute(["scrapy", "crawl", "zuida", "-a", "target=all"])
     # execute(["scrapy", "crawl", "zuida", "-a", "target=latest"])
@@ -20,7 +17,7 @@ if __name__ == '__main__':
     # execute(["scrapy", "crawl", "tencent", "-a", "target=latest"])
     # youku
     # execute(["scrapy", "crawl", "youku", "-a", "target=all"])
-    execute(["scrapy", "crawl", "youku", "-a", "target=latest"])
+    # execute(["scrapy", "crawl", "youku", "-a", "target=latest"])
     # iqiyi
     # execute(["scrapy", "crawl", "iqiyi", "-a", "target=all"])
     # execute(["scrapy", "crawl", "iqiyi", "-a", "target=latest"])
@@ -31,14 +28,20 @@ if __name__ == '__main__':
     # execute(["scrapy", "crawl", "ziyuan135", "-a", "target=all"])
     # execute(["scrapy", "crawl", "ziyuan135", "-a", "target=latest"])
     # ok
-    # execute(["scrapy", "crawl", "ok"])
+    # execute(["scrapy", "crawl", "ok", "-a", "target=all"])
     # execute(["scrapy", "crawl", "ok", "-a", "target=latest"])
     # ziyuan33uu
-    # execute(["scrapy", "crawl", "ziyuan33uu", "-a", "target=all"])
+    execute(["scrapy", "crawl", "ziyuan33uu", "-a", "target=all"])
     # execute(["scrapy", "crawl", "ziyuan33uu", "-a", "target=latest"])
     # ziyuan40
     # execute(["scrapy", "crawl", "ziyuan40", "-a", "target=all"])
     # execute(["scrapy", "crawl", "ziyuan40", "-a", "target=latest"])
+    # ziyuan88ys
+    # execute(["scrapy", "crawl", "ziyuan88ys", "-a", "target=all"])
+    # execute(["scrapy", "crawl", "ziyuan88ys", "-a", "target=latest"])
+    # xunleiyy
+    # execute(["scrapy", "crawl", "xunleiyy", "-a", "target=all"])
+    # execute(["scrapy", "crawl", "xunleiyy", "-a", "target=latest"])
     # movie_type
     # execute(["scrapy", "crawl", "movie_type"])
     # movie_source

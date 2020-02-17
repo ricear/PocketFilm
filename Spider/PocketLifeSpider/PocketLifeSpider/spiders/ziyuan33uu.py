@@ -87,16 +87,17 @@ class Ziyuan33uuSpider(scrapy.Spider):
                 continue
             try:
                 url2 = each.xpath("./li/span[2]/a/@href").extract()[0]
-                html = get_one_page(self.domain + url2)
-                html = etree.HTML(html)
+            except:
+                print(each)
+                continue
+            url3 = self.domain + url2
+            print(url3)
+            html = get_one_page(url3)
+            html = etree.HTML(html)
+            try:
                 each = html.xpath('//div[@class="vodBox"]')[0]
             except:
-                # 记录跳过的视频信息
-                history_type = 'ziyuan33uu'
-                history_url = url
-                history_text = '跳过'
-                if (check_spider_history(history_type, history_url, history_text) == False):
-                    write_spider_history(history_type, history_url, history_text)
+                print('跳过 -> ' + url3)
                 continue
             # id, src, name, update_time, actors, type, score, release_date, description
             # 解析视频源
