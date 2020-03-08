@@ -10,7 +10,8 @@
     "pages/search-tv/search-tv",
     "pages/search-drama/search-drama",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/piece/piece"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,7 +22,7 @@
   "tabBar": {
     "color": "#8c8c8c",
     "selectedColor": "#f4645f",
-    "backgroundColor": "white",
+    "backgroundColor": "#fefefe",
     "list": [
       {
         "pagePath": "pages/movie/movie",
@@ -40,6 +41,12 @@
         "text": "戏曲",
         "iconPath": "images/drama.png",
         "selectedIconPath": "images/drama_active.png"
+      },
+      {
+        "pagePath": "pages/piece/piece",
+        "text": "小品",
+        "iconPath": "images/piece.png",
+        "selectedIconPath": "images/piece_active.png"
       }
     ],
     "position": "bottom"

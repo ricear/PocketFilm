@@ -88,11 +88,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
-/* harmony import */ var _ionic_native_screen_orientation_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/screen-orientation/ngx */ "./node_modules/@ionic-native/screen-orientation/ngx/index.js");
-/* harmony import */ var _ionic_native_insomnia_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/insomnia/ngx */ "./node_modules/@ionic-native/insomnia/ngx/index.js");
-/* harmony import */ var _storage_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../storage.service */ "./src/app/storage.service.ts");
-/* harmony import */ var _tools_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../tools.service */ "./src/app/tools.service.ts");
-/* harmony import */ var _config_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../config.service */ "./src/app/config.service.ts");
+/* harmony import */ var _ionic_native_device_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/device/ngx */ "./node_modules/@ionic-native/device/ngx/index.js");
+/* harmony import */ var _ionic_native_screen_orientation_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/screen-orientation/ngx */ "./node_modules/@ionic-native/screen-orientation/ngx/index.js");
+/* harmony import */ var _ionic_native_insomnia_ngx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ionic-native/insomnia/ngx */ "./node_modules/@ionic-native/insomnia/ngx/index.js");
+/* harmony import */ var _storage_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../storage.service */ "./src/app/storage.service.ts");
+/* harmony import */ var _tools_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../tools.service */ "./src/app/tools.service.ts");
+/* harmony import */ var _config_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../config.service */ "./src/app/config.service.ts");
+
 
 
 
@@ -104,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var PlayPage = /** @class */ (function () {
-    function PlayPage(platform, screenOrientation, activeRoute, storage, tools, config, router, sanitizer, insomnia) {
+    function PlayPage(platform, screenOrientation, activeRoute, storage, tools, config, router, device, sanitizer, insomnia) {
         var _this = this;
         this.platform = platform;
         this.screenOrientation = screenOrientation;
@@ -113,13 +115,14 @@ var PlayPage = /** @class */ (function () {
         this.tools = tools;
         this.config = config;
         this.router = router;
+        this.device = device;
         this.sanitizer = sanitizer;
         this.insomnia = insomnia;
         // 浏览类型
         this.browseType = 'movie';
-        this.insomnia.keepAwake()
-            .then(function () {
-            _this.activeRoute.queryParams.subscribe(function (params) {
+        if (this.device.platform == null) {
+            // 浏览器
+            this.activeRoute.queryParams.subscribe(function (params) {
                 _this._id = params['_id'];
                 _this.source_index = params['source_index'];
                 _this.type_index = params['type_index'];
@@ -127,7 +130,21 @@ var PlayPage = /** @class */ (function () {
                 _this.initializeApp();
                 _this.getMovie();
             });
-        });
+        }
+        else {
+            // app
+            this.insomnia.keepAwake()
+                .then(function () {
+                _this.activeRoute.queryParams.subscribe(function (params) {
+                    _this._id = params['_id'];
+                    _this.source_index = params['source_index'];
+                    _this.type_index = params['type_index'];
+                    _this.browseType = params['browseType'];
+                    _this.initializeApp();
+                    _this.getMovie();
+                });
+            });
+        }
     }
     PlayPage.prototype.ngOnInit = function () {
     };
@@ -283,14 +300,15 @@ var PlayPage = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./play.page.scss */ "./src/app/play/play.page.scss")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_4__["Platform"],
-            _ionic_native_screen_orientation_ngx__WEBPACK_IMPORTED_MODULE_5__["ScreenOrientation"],
+            _ionic_native_screen_orientation_ngx__WEBPACK_IMPORTED_MODULE_6__["ScreenOrientation"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
-            _storage_service__WEBPACK_IMPORTED_MODULE_7__["StorageService"],
-            _tools_service__WEBPACK_IMPORTED_MODULE_8__["ToolsService"],
-            _config_service__WEBPACK_IMPORTED_MODULE_9__["ConfigService"],
+            _storage_service__WEBPACK_IMPORTED_MODULE_8__["StorageService"],
+            _tools_service__WEBPACK_IMPORTED_MODULE_9__["ToolsService"],
+            _config_service__WEBPACK_IMPORTED_MODULE_10__["ConfigService"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _ionic_native_device_ngx__WEBPACK_IMPORTED_MODULE_5__["Device"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"],
-            _ionic_native_insomnia_ngx__WEBPACK_IMPORTED_MODULE_6__["Insomnia"]])
+            _ionic_native_insomnia_ngx__WEBPACK_IMPORTED_MODULE_7__["Insomnia"]])
     ], PlayPage);
     return PlayPage;
 }());

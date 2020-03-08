@@ -1,6 +1,6 @@
 
 // 统一接口地址
-const configUrl = 'https://pocket.mynatapp.cc/api'
+const configUrl = 'http://api.grayson.top/api'
 // 图片加载错误时显示的图片
 const errImg = 'https://gxtstatic.com/xl/statics/img/nopic.gif'
 // 获取影视列表参数对象

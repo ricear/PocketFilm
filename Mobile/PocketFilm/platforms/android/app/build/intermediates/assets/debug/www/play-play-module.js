@@ -58,7 +58,7 @@ var PlayPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\n  <script src=\"https://m.88ys.cc/template/wap88ysw/ads/toubu.js\"></script>\n  <script src=\"https://cdn.k1815.com/maizhan/js/606.js?v=20191020\"></script>\n  <section class=\"main\">\n    <div class=\"detailPosterIntro1 globalPadding clearfix\" style=\"height: 100%;\">\n      <script>var mac_flag = 'play', mac_link = '/vod-play-id-66598-src-{src}-num-{num}.html', mac_name = '中国机长', mac_from = 'kuyun$$$zuidam3u8$$$dbm3u8$$$bjm3u8$$$33uu', mac_server = 'no$$$no$$$no$$$no$$$no', mac_note = '$$$$$$$$$$$$', mac_url = unescape('HC%u9ad8%u6e05%24https%3A%2F%2Fyouku.com-ok-youku.com%2Fshare%2F081ac6926348a7c6962c58ed0dd93b0b%24%24%24HDTC%u56fd%u8bed%u4e2d%u5b57%u7248%24https%3A%2F%2Fhaoa.haozuida.com%2F20190930%2FDE5kkggW%2Findex.m3u8%24%24%24TC%24https%3A%2F%2Fdbx5.tyswmp.com%2F20190930%2FI7ZqJ45j%2Findex.m3u8%24%24%24HC%24https%3A%2F%2Fv3.bjssmd.net%2F20191001%2FaqCUYjqn%2Findex.m3u8%24%24%24HDTC%u56fd%u8bed%24https%3A%2F%2Ftv.youkutv.cc%2Fshare%2Fp430qhXIyb1kOI6u'); </script>\n      <script src=\"https://m.88ys.cc/js/playerconfig.js\"></script>\n      <script src=\"https://m.88ys.cc/js/player.js\"></script>\n      <div class=\"MacPlayer\">\n        <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\n          <tbody>\n            <tr>\n              <td colspan=\"2\">\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"playtop\">\n                  <tbody>\n                    <tr>\n                      <td id=\"topleft\"><a target=\"_self\" href=\"javascript:void(0)\"\n                          onclick=\"MacPlayer.GoPreUrl()\">上一集</a> <a target=\"_self\" href=\"javascript:void(0)\"\n                          onclick=\"MacPlayer.GoNextUrl()\">下一集</a></td>\n                      <td id=\"topcc\">\n                        <div id=\"topdes\" style=\"height:26px;line-height:26px;overflow:hidden\">正在播放：{{movie.name}}\n                          {{type.name}}</div>\n                      </td>\n                      <td id=\"topright\"><a target=\"_self\" href=\"javascript:void(0)\"\n                          onclick=\"MacPlayer.ShowList();return false;\">开/关列表</a></td>\n                    </tr>\n                  </tbody>\n                </table>\n              </td>\n            </tr>\n            <tr style=\"display:none\">\n              <td colspan=\"2\" id=\"install\" style=\"display:none\"></td>\n            </tr>\n            <tr>\n              <td id=\"playleft\" valign=\"top\"><iframe id=\"buffer\" sandbox=\"allow-forms allow-scripts\" src=\"\"\n                  frameborder=\"0\" scrolling=\"no\" width=\"100%\" height=\"96%\"\n                  style=\"position: absolute; z-index: 99998; display: none;\"></iframe><iframe width=\"100%\"\n                  height=\"95.6%\" [src]=\"safeUrl\"\n                  frameborder=\"0\" allowfullscreen=\"\"></iframe></td>\n              <td id=\"playright\" valign=\"top\" style=\"display: none;\">\n                <div class=\"rightlist\" id=\"rightlist\" style=\"height:95.6%;\">\n                  <div *ngFor=\"let source of movie.sources,let i = index\">\n                    <div id=\"main{{i}}\" class=\"h2_on\" *ngIf=\"i == source_index\">\n                        <h2 (click)=\"Tabs(i,source_count)\">{{source.name}}</h2>\n                        <ul id=\"sub{{i}}\" style=\"display:block\">\n                          <li *ngFor=\"let type of source.types,let j = index\">\n                            <a class=\"list_on\" href=\"javascript:void(0)\" (click)=\"changeMovieType(i, j)\" *ngIf=\"i == source_index && j ==type_index\">{{type.name}}</a>\n                            <a href=\"javascript:void(0)\" (click)=\"changeMovieType(i, j)\" *ngIf=\"i == source_index && j !=type_index\">{{type.name}}</a>\n                          </li>\n                        </ul>\n                    </div>\n                    <div id=\"main{{i}}\" class=\"h2\" *ngIf=\"i != source_index\">\n                        <h2 (click)=\"Tabs(i,source_count)\">{{source.name}}</h2>\n                        <ul id=\"sub{{i}}\" style=\"display: none;\">\n                          <li *ngFor=\"let type of source.types,let j = index\">\n                            <a class=\"list_on\" href=\"javascript:void(0)\" (click)=\"changeMovieType(i, j)\" *ngIf=\"j ==type_index\">{{type.name}}</a>\n                            <a href=\"javascript:void(0)\" (click)=\"changeMovieType(i, j)\" *ngIf=\"j !=type_index\">{{type.name}}</a>\n                          </li>\n                        </ul>\n                    </div>\n                  </div>\n                </div>\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n      <script src=\"https://m.88ys.cc/player/kuyun.js\"></script>\n      <script src=\"/\"></script>\n    </div>\n  </section>"
+module.exports = "<div class=\"wrapper\">\n  <section class=\"main\">\n    <div class=\"detailPosterIntro1 globalPadding clearfix\" style=\"height: 100%;\">\n      <div class=\"MacPlayer\">\n        <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\n          <tbody>\n            <tr>\n              <td colspan=\"2\">\n                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" id=\"playtop\">\n                  <tbody>\n                    <tr>\n                      <td id=\"topleft\"><a target=\"_self\" href=\"javascript:void(0)\"\n                          onclick=\"MacPlayer.GoPreUrl()\">上一集</a> <a target=\"_self\" href=\"javascript:void(0)\"\n                          onclick=\"MacPlayer.GoNextUrl()\">下一集</a></td>\n                      <td id=\"topcc\">\n                        <div id=\"topdes\" style=\"height:26px;line-height:26px;overflow:hidden\">正在播放：{{movie.name}}\n                          {{type.name}}</div>\n                      </td>\n                      <td id=\"topright\"><a target=\"_self\" href=\"javascript:void(0)\"\n                          onclick=\"MacPlayer.ShowList();return false;\">开/关列表</a></td>\n                    </tr>\n                  </tbody>\n                </table>\n              </td>\n            </tr>\n            <tr style=\"display:none\">\n              <td colspan=\"2\" id=\"install\" style=\"display:none\"></td>\n            </tr>\n            <tr>\n              <td id=\"playleft\" valign=\"top\"><iframe id=\"buffer\" sandbox=\"allow-forms allow-scripts\" src=\"\"\n                  frameborder=\"0\" scrolling=\"no\" width=\"100%\" height=\"96%\"\n                  style=\"position: absolute; z-index: 99998; display: none;\"></iframe><iframe width=\"100%\"\n                  height=\"95.6%\" [src]=\"safeUrl\"\n                  frameborder=\"0\" allowfullscreen=\"\"></iframe></td>\n              <td id=\"playright\" valign=\"top\" style=\"display: none;\">\n                <div class=\"rightlist\" id=\"rightlist\" style=\"height:95.6%;\">\n                  <div *ngFor=\"let source of movie.sources,let i = index\">\n                    <div id=\"main{{i}}\" class=\"h2_on\" *ngIf=\"i == source_index\">\n                        <h2 (click)=\"Tabs(i,source_count)\">{{source.name}}</h2>\n                        <ul id=\"sub{{i}}\" style=\"display:block\">\n                          <li *ngFor=\"let type of source.types,let j = index\">\n                            <a class=\"list_on\" href=\"javascript:void(0)\" (click)=\"changeMovieType(i, j)\" *ngIf=\"i == source_index && j ==type_index\">{{type.name}}</a>\n                            <a href=\"javascript:void(0)\" (click)=\"changeMovieType(i, j)\" *ngIf=\"i == source_index && j !=type_index\">{{type.name}}</a>\n                          </li>\n                        </ul>\n                    </div>\n                    <div id=\"main{{i}}\" class=\"h2\" *ngIf=\"i != source_index\">\n                        <h2 (click)=\"Tabs(i,source_count)\">{{source.name}}</h2>\n                        <ul id=\"sub{{i}}\" style=\"display: none;\">\n                          <li *ngFor=\"let type of source.types,let j = index\">\n                            <a class=\"list_on\" href=\"javascript:void(0)\" (click)=\"changeMovieType(i, j)\" *ngIf=\"j ==type_index\">{{type.name}}</a>\n                            <a href=\"javascript:void(0)\" (click)=\"changeMovieType(i, j)\" *ngIf=\"j !=type_index\">{{type.name}}</a>\n                          </li>\n                        </ul>\n                    </div>\n                  </div>\n                </div>\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </section>"
 
 /***/ }),
 
@@ -88,11 +88,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
-/* harmony import */ var _ionic_native_screen_orientation_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/screen-orientation/ngx */ "./node_modules/@ionic-native/screen-orientation/ngx/index.js");
-/* harmony import */ var _ionic_native_insomnia_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/insomnia/ngx */ "./node_modules/@ionic-native/insomnia/ngx/index.js");
-/* harmony import */ var _storage_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../storage.service */ "./src/app/storage.service.ts");
-/* harmony import */ var _tools_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../tools.service */ "./src/app/tools.service.ts");
-/* harmony import */ var _config_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../config.service */ "./src/app/config.service.ts");
+/* harmony import */ var _ionic_native_device_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/device/ngx */ "./node_modules/@ionic-native/device/ngx/index.js");
+/* harmony import */ var _ionic_native_screen_orientation_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/screen-orientation/ngx */ "./node_modules/@ionic-native/screen-orientation/ngx/index.js");
+/* harmony import */ var _ionic_native_insomnia_ngx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ionic-native/insomnia/ngx */ "./node_modules/@ionic-native/insomnia/ngx/index.js");
+/* harmony import */ var _storage_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../storage.service */ "./src/app/storage.service.ts");
+/* harmony import */ var _tools_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../tools.service */ "./src/app/tools.service.ts");
+/* harmony import */ var _config_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../config.service */ "./src/app/config.service.ts");
+
 
 
 
@@ -104,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var PlayPage = /** @class */ (function () {
-    function PlayPage(platform, screenOrientation, activeRoute, storage, tools, config, router, sanitizer, insomnia) {
+    function PlayPage(platform, screenOrientation, activeRoute, storage, tools, config, router, device, sanitizer, insomnia) {
         var _this = this;
         this.platform = platform;
         this.screenOrientation = screenOrientation;
@@ -113,13 +115,14 @@ var PlayPage = /** @class */ (function () {
         this.tools = tools;
         this.config = config;
         this.router = router;
+        this.device = device;
         this.sanitizer = sanitizer;
         this.insomnia = insomnia;
         // 浏览类型
         this.browseType = 'movie';
-        this.insomnia.keepAwake()
-            .then(function () {
-            _this.activeRoute.queryParams.subscribe(function (params) {
+        if (this.device.platform == null) {
+            // 浏览器
+            this.activeRoute.queryParams.subscribe(function (params) {
                 _this._id = params['_id'];
                 _this.source_index = params['source_index'];
                 _this.type_index = params['type_index'];
@@ -127,7 +130,21 @@ var PlayPage = /** @class */ (function () {
                 _this.initializeApp();
                 _this.getMovie();
             });
-        });
+        }
+        else {
+            // app
+            this.insomnia.keepAwake()
+                .then(function () {
+                _this.activeRoute.queryParams.subscribe(function (params) {
+                    _this._id = params['_id'];
+                    _this.source_index = params['source_index'];
+                    _this.type_index = params['type_index'];
+                    _this.browseType = params['browseType'];
+                    _this.initializeApp();
+                    _this.getMovie();
+                });
+            });
+        }
     }
     PlayPage.prototype.ngOnInit = function () {
     };
@@ -283,14 +300,15 @@ var PlayPage = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./play.page.scss */ "./src/app/play/play.page.scss")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_4__["Platform"],
-            _ionic_native_screen_orientation_ngx__WEBPACK_IMPORTED_MODULE_5__["ScreenOrientation"],
+            _ionic_native_screen_orientation_ngx__WEBPACK_IMPORTED_MODULE_6__["ScreenOrientation"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
-            _storage_service__WEBPACK_IMPORTED_MODULE_7__["StorageService"],
-            _tools_service__WEBPACK_IMPORTED_MODULE_8__["ToolsService"],
-            _config_service__WEBPACK_IMPORTED_MODULE_9__["ConfigService"],
+            _storage_service__WEBPACK_IMPORTED_MODULE_8__["StorageService"],
+            _tools_service__WEBPACK_IMPORTED_MODULE_9__["ToolsService"],
+            _config_service__WEBPACK_IMPORTED_MODULE_10__["ConfigService"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _ionic_native_device_ngx__WEBPACK_IMPORTED_MODULE_5__["Device"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["DomSanitizer"],
-            _ionic_native_insomnia_ngx__WEBPACK_IMPORTED_MODULE_6__["Insomnia"]])
+            _ionic_native_insomnia_ngx__WEBPACK_IMPORTED_MODULE_7__["Insomnia"]])
     ], PlayPage);
     return PlayPage;
 }());

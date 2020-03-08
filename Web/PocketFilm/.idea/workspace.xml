@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="6320dbc0-5ee0-41f7-bfdc-6e81729f886f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/public/apks/PocketFilm.apk" beforeDir="false" afterPath="$PROJECT_DIR$/public/apks/PocketFilm.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routers/api.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +20,8 @@
       <file leaf-file-name="api.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routers/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="2897" column="61" selection-start-line="2897" selection-start-column="61" selection-end-line="2897" selection-end-column="79" />
+            <state relative-caret-position="303">
+              <caret line="149" column="37" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -141,9 +142,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>replay</find>
-      <find>update</find>
-      <find>save</find>
       <find>register</find>
       <find>ava</find>
       <find>movie/get/all</find>
@@ -171,6 +169,9 @@
       <find>count/get/</find>
       <find>count/get</find>
       <find>http://vps1610583.vpszy.abeiyun.cn</find>
+      <find>sort</find>
+      <find>album</find>
+      <find>user</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;https://free-ss.site/</replace>
@@ -249,6 +250,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,7 +272,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -416,15 +417,20 @@
       <workItem from="1575544094116" duration="1060000" />
       <workItem from="1575588388415" duration="1145000" />
       <workItem from="1580712683011" duration="810000" />
+      <workItem from="1582612555349" duration="551000" />
+      <workItem from="1583307293265" duration="578000" />
+      <workItem from="1583505420735" duration="688000" />
+      <workItem from="1583563305926" duration="4000" />
+      <workItem from="1583586903666" duration="4048000" />
+      <workItem from="1583628962174" duration="3124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271263000" />
+    <option name="totallyTimeSpent" value="280256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="740" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2613185" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -463,7 +469,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="171" />
+      <option name="time" value="172" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -826,13 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/movie.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -840,10 +839,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routers/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="2897" column="61" selection-start-line="2897" selection-start-column="61" selection-end-line="2897" selection-end-column="79" />
+        <state relative-caret-position="303">
+          <caret line="149" column="37" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
         </state>
       </provider>
     </entry>

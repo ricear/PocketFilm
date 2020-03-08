@@ -62,11 +62,13 @@
 
 <table>
   <tr><td ><center><img src="image/www-index.png" height=400 ></center></td></tr>
+  <tr><td ><center><img src="image/album-index.png" height=400 ></center></td></tr>
   <tr><td ><center><img src="image/movie-index.png" height=400 ></center></td></tr>
   <tr><td ><center><img src="image/tv-index.png" height=400 ></center></td></tr>
   <tr><td ><center><img src="image/drama-index.png" height=400 ></center></td></tr>
   <tr><td ><center><img src="image/piece-index.png" height=400 ></center></td></tr>
 </table>
+
 
 #### 移动端
 
@@ -104,6 +106,21 @@
 ### 更新日志
 
 ------
+
+#### v9.1.0 `2020/3/8`
+
+- 网页版：
+  - 新增`相册模块`，网址为 [Grayson's Album](http://album.grayson.top)，主要展示自己生活中的摄影照片，用相机记录生活的美好
+
+- 爬虫：
+  - `CommonUtils.py`中新增方法：
+    - `download_album(album_name, save_path="/Volumes/MyPassport/MyPictures")`：下载相册中的照片
+    - `modify_album_cover()`：修改相册封面
+    - `change_photo_suffix()`：修改照片中的地址后缀
+    - `upload_image_single(source_base_path, album_name, photo_name, target_base_path=IMAGES_PATH)`：上传单个文件夹中的图片
+    - `upload_image_list(source_base_path='/Volumes/MyPassport/MyPictures/Qzone', target_base_path=IMAGES_PATH)`：上传多个文件夹中的图片
+    - `get_image_info(image_item, path)`：获取照片信息
+    - `download_images(url)`：下载图片到本地
 
 #### v8.2.0 `2020/2/17`
 

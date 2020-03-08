@@ -2,8 +2,8 @@
 	<!-- 视频详情 -->
 	<view class="video_info">
 		<!-- 视频标签 -->
-		<video src="{{play_url}}" title="{{movie.name}}" controls autoplay>
-		</video>
+		<!-- <video src="{{play_url}}" title="{{movie.name}}" controls autoplay> -->
+		<video id="myVideo" src="{{play_url}}" title="{{movie.name}}" controls autoplay></video>
 		<!-- 视频标题 -->
 		<view class="video_title">
 			<text>

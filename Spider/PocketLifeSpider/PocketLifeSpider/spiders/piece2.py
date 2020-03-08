@@ -114,10 +114,12 @@ class Piece2Spider(scrapy.Spider):
                     url2 = 'https://v.youku.com/v_show/id_' + get_str_from_xpath(html.xpath('//*[@id="video-player"]/iframe/@src')).split('embed/')[1] + '.html'
                 except:
                     continue
+                src = get_str_from_xpath(li.xpath('./a/img/@src'))
+                src = download_images(src)
                 piece = {
                     'name': name,
                     'description': get_str_from_xpath(li.xpath('./a/@title')),
-                    'src': get_str_from_xpath(li.xpath('./a/img/@src')),
+                    'src': src,
                     'type': type,
                     'type2': type2,
                     'drama_url': play_url,

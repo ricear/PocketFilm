@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Platform } from '@ionic/angular';
+import { Device } from '@ionic-native/device/ngx';
 import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 import { Insomnia } from '@ionic-native/insomnia/ngx';
 
@@ -42,10 +43,23 @@ export class PlayPage implements OnInit {
     public tools: ToolsService,
     public config: ConfigService,
     public router: Router,
+    public device: Device,
     public sanitizer: DomSanitizer,
     public insomnia: Insomnia
   ) {
-    this.insomnia.keepAwake()
+    if (this.device.platform == null) {
+      // 浏览器
+      this.activeRoute.queryParams.subscribe((params: Params) => {
+        this._id = params['_id']
+        this.source_index = params['source_index']
+        this.type_index = params['type_index']
+        this.browseType = params['browseType']
+        this.initializeApp()
+        this.getMovie()
+      })
+    } else {
+      // app
+      this.insomnia.keepAwake()
       .then(
         () => {
           this.activeRoute.queryParams.subscribe((params: Params) => {
@@ -58,6 +72,7 @@ export class PlayPage implements OnInit {
           })
         }
       );
+    }
   }
 
   ngOnInit() {

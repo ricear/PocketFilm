@@ -100,16 +100,7 @@ class ZuidaSpiderPipeline(object):
                 if ('http:' not in url) and ('https:' not in url):
                     url = 'https:' + url
                 print(url)
-                # 下载图片到本地
-                res = get_requests().get(url, stream=True, verify=False, timeout=60)
-                if res.status_code == 200:
-                    uuid = generate_uuid()
-                    save_img_path = Configs.IMAGES_PATH + '/%s.jpg' % uuid
-                    # 保存下载的图片
-                    with open(save_img_path, 'wb') as fs:
-                        for chunk in res.iter_content(1024):
-                            fs.write(chunk)
-                    item['src'] = Configs.IMAGES_HOST + '/%s.jpg' % uuid
+                item['src'] = download_images(url)
                 db_utils.insert(item)
             except:
                 print("跳过 -> " + item['id'])
@@ -150,5 +141,6 @@ class TvSpiderPipeline(object):
         # 执行 sql
         item['acquisition_time'] = get_current_time()
         if (item['acquisition_time'] == '未知'): item['acquisition_time'] = '0'
+        item['src'] = download_images(item['src'])
         db_utils.insert(dict(item))
         return item

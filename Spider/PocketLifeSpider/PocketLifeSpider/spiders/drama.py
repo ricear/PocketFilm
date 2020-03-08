@@ -93,7 +93,8 @@ class DramaSpider(scrapy.Spider):
                             break
                     else:
                         dramaItem['id'] = id
-                        dramaItem['src'] = get_str_from_xpath(div.xpath('./a/img/@src'))
+                        src = get_str_from_xpath(div.xpath('./a/img/@src'))
+                        dramaItem['src'] = download_images(src)
                         dramaItem['name'] = get_str_from_xpath(div.xpath('./h5/a/@title'))
                         dramaItem['description'] = get_str_from_xpath(div.xpath('./p[1]/text()')).split('：')[1]
                         dramaItem['type'] = get_str_from_xpath(div.xpath('./p[2]/text()')).split('：')[1]

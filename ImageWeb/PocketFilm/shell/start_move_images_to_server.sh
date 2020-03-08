@@ -1,5 +1,4 @@
 #!/bin/bash
-
 local_file_path='/Users/weipeng/Personal/Projects/PocketFilm/ImageWeb/PocketFilm/images'
 server_file_path='/usr/local/projects/PocketFilm/ImageWeb/PocketFilm/images'
 while :

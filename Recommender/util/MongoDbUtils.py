@@ -2,7 +2,6 @@
 from pymongo import MongoClient
 
 settings = {
-    # "ip":'localhost',   #ip
 #     "ip":'127.0.0.1',   #ip
     "ip":'47.240.95.27',   #ip
     "port":27017,           #端口
@@ -16,6 +15,7 @@ class MongoDbUtils(object):
         except Exception as e:
             print(e)
         self.db = self.conn[settings["db_name"]]
+        self.db.authenticate('admin', 'weipeng185261')
         self.collection = self.db[collection_name]
 
     def insert(self,dic):
@@ -42,11 +42,11 @@ class MongoDbUtils(object):
         self.conn.close()
         return count
 
-    def find(self,dic, no_cursor_timeout = False):
+    def find(self,dic):
         if type(dic).__name__ == 'list':
-            data = self.collection.find(dic[0], dic[1], no_cursor_timeout = no_cursor_timeout)
+            data = self.collection.find(dic[0], dic[1])
         else:
-            data = self.collection.find(dic, no_cursor_timeout = no_cursor_timeout)
+            data = self.collection.find(dic)
         print('find success ' + str(data.count()))
         # 释放资源
         self.conn.close()

@@ -14,7 +14,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "wx533bcfc89edd33e2",
+	"appid": "wx663e8eb5a5c6a883",
 	"projectname": "pocket-film",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -22,6 +22,7 @@
 	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"qqappid": "1110192323",
 	"condition": {
 		"search": {
 			"current": -1,

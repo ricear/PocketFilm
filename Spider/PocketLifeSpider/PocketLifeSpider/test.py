@@ -1,15 +1,17 @@
-import sys
-import os
-import  urllib.parse
+# -*- encoding=utf-8 -*-
+'''''
+author: orangleliu
+pil处理图片，验证，处理
+大小，格式 过滤
+压缩，截图，转换
 
-import chardet
+图片库最好用Pillow
+还有一个测试图片test.jpg, 一个log图片，一个字体文件
+'''
 
-curPath = os.path.abspath(os.path.dirname(__file__))
-rootPath = os.path.split(curPath)[0]
-sys.path.append(rootPath)
-
-from PocketLifeSpider.util.CommonUtils import *
+# 图片的基本参数获取
+from QQAlbumDownloader.util.WaterMarkUtils import *
 
 if __name__ == "__main__":
-    str = get_date_str_from_date_str('2020-02-16', source_format=DATE_FORMAT_YEAR_MONTH_DAY, dest_format=DATE_FORMAT_YEARMONTHDAY)
-    print(str)
+    source_path = '/Users/weipeng/Personal/Pictures/测试/WechatIMG8.jpeg'
+    text_watermark(source_path)

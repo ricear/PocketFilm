@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<th:block th:insert="../templates/head"></th:block>
+<div id="header">
+    <header class="header-nav">
+        <nav id="home-nav">
+            <strong>Home</strong>
+            <i class="fa fa-lg fa-certificate"></i>
+        </nav>
+    </header>
+
+    <div class="header-inner">
+        <h3 class="header-title" th:text="${title}"></h3>
+        <p class="header-des" th:text="${subtitle}"></p>
+        <p>
+        </p></div>
+</div>
+
+<div class="album-entry">
+    <div class="album-footer">
+        <span th:text="${count} + ' photos.'"></span>
+    </div>
+    <div class="album-inner">
+        <div class="album-img" th:each="photo : ${photos}">
+            <img th:src="${photo.image_with_watermark_url}" th:if="${photo.image_type} ne 'mp4'"/>
+            <video th:src="${photo.image_with_watermark_url}" th:if="${photo.image_type} eq 'mp4'" controls="controls"></video>
+        </div>
+    </div>
+</div>
+<th:block th:insert="../templates/foot"></th:block>

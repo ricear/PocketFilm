@@ -12,14 +12,16 @@ Page({
   data: {
     // 被点击的首页导航的菜单的索引
     currentIndexNav: 0,
-    // 影视类型 0：电影 1：电视剧 2：综艺 3：动漫
+    // 影视类型 0：电影 1：电视剧 2：综艺 3：动漫 4：少儿
     type: 0,
     // 每页大小
     pageSize: 24,
     // 当前页数
     pageIndex: 1,
     // 首页导航数据
-    navList: ['电影', '电视剧', '综艺', '动漫'],
+    navList: ['全部', '电影', '电视剧', '综艺', '动漫', '少儿'],
+    // 类型列表
+    typeList: ['全部', '0', '1', '2', '3', '4'],
     // 轮播图数据
     swiperList: [],
     // 影视数据
@@ -51,10 +53,11 @@ Page({
   // 点击首页导航按钮
   activeNav(e) {
     var that = this
+    that.data.pageIndex = 1
     var index = e.target.dataset.index
     this.setData({
       currentIndexNav: index,
-      type: index,
+      type: that.data.typeList[index],
       movieList: []
     })
     // 加载对应导航类型的数据

@@ -13,13 +13,13 @@ Page({
     // 被点击的首页导航的菜单的索引
     currentIndexNav: 0,
     // 影视类型 全部 央视台 卫视台 地方台 海外台 轮播台
-    type: '央视台',
+    type: '全部',
     // 每页大小
     pageSize: 24,
     // 当前页数
     pageIndex: 1,
     // 首页导航数据
-    navList: ['央视台', '卫视台', '地方台', '港澳台', '海外台', '轮播台'],
+    navList: ['全部', '央视台', '卫视台', '地方台', '港澳台', '海外台', '轮播台'],
     // 轮播图数据
     swiperList: [],
     // 影视数据
@@ -51,6 +51,7 @@ Page({
   // 点击首页导航按钮
   activeNav(e) {
     var that = this
+    that.data.pageIndex = 1
     var index = e.target.dataset.index
     this.setData({
       currentIndexNav: index,

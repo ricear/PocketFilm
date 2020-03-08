@@ -15,6 +15,7 @@ class MongoDbUtils(object):
         except Exception as e:
             print(e)
         self.db = self.conn[settings["db_name"]]
+        self.db.authenticate('admin', 'weipeng185261')
         self.collection = self.db[collection_name]
 
     def insert(self,dic):

@@ -11,7 +11,7 @@
       <view
         bindtap="activeNav"
         data-index="{{ index }}"
-        class="nav_item {{ index === currentIndexNav ? 'active' : '' }}"
+        class="nav_item {{ index === currentIndexNav ? 'nav_item_active' : '' }}"
         wx:for="{{ navList }}"
         wx:key="{{ index }}"
       >

@@ -4,21 +4,21 @@ echo '本程序是启动掌上系列程序，包括掌上、掌上影视、掌�
 echo ''
 echo 对应代码
 echo 掌上：www
-echo 掌上影视：movie
+echo 掌上影视：album
 echo 掌上电视：tv
 echo 掌上戏曲：drama
 echo 掌上小品：piece
 echo 示例：
 echo 启动全部程序：sh start_pocketfilm.sh
-echo 启动掌上影视：sh start_pocketfilm.sh movie
-echo 启动掌上影视、掌上电视：sh start_pocketfilm.sh movie,tv
+echo 启动掌上影视：sh start_pocketfilm.sh album
+echo 启动掌上影视、掌上电视：sh start_pocketfilm.sh album,tv
 echo ''
 
 # 程序
 string=$1
 array=[]
 if [ ! $1 ]; then
-	string="www,movie,tv,drama,piece"
+	string="www,movie,tv,drama,piece,album"
 fi
 array=(${string//,/ })
 for var in ${array[@]}
@@ -68,5 +68,14 @@ do
 		echo '正在启动 piece '
 		nohup java -jar ../jars/piece-0.0.1-SNAPSHOT.jar > ../documentations/piece.txt &
 		echo 'piece 启动成功'
+	elif [ $var == album ]; then
+		# 获取jar包
+		echo '正在获取 jar 包'
+		cp ../../Album/target/album-0.0.1-SNAPSHOT.jar ../jars/
+		echo 'jar 包获取成功'
+		# 启动服务
+		echo '正在启动 album '
+		nohup java -jar ../jars/album-0.0.1-SNAPSHOT.jar > ../documentations/album.txt &
+		echo 'album 启动成功'
 	fi
 done

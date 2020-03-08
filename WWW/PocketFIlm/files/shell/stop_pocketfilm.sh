@@ -4,21 +4,21 @@ echo '本程序是终止掌上系列程序，包括掌上、掌上影视、掌�
 echo ''
 echo 对应代码
 echo 掌上：www
-echo 掌上影视：movie
+echo 掌上影视：album
 echo 掌上电视：tv
 echo 掌上戏曲：drama
 echo 掌上小品：piece
 echo 示例：
 echo 启动全部程序：sh stop_pocketfilm.sh
-echo 启动掌上影视：sh stop_pocketfilm.sh movie
-echo 启动掌上影视、掌上电视：sh stop_pocketfilm.sh movie,tv
+echo 启动掌上影视：sh stop_pocketfilm.sh album
+echo 启动掌上影视、掌上电视：sh stop_pocketfilm.sh album,tv
 echo ''
 
 # 程序
 string=$1
 array=[]
 if [ ! $1 ]; then
-	string="www,movie,tv,drama,piece"
+	string="www,movie,tv,drama,piece,album"
 fi
 array=(${string//,/ })
 for var in ${array[@]}

@@ -13,6 +13,7 @@ import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 import { FileOpener } from '@ionic-native/file-opener/ngx';
 import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 import { Insomnia } from '@ionic-native/insomnia/ngx';
+import { AndroidExoplayer } from '@ionic-native/android-exoplayer';
 
 import { HttpServiceService } from './http-service.service';
 import { StorageService } from './storage.service';

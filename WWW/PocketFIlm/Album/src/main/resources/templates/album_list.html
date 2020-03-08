@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<th:block th:insert="../templates/head"></th:block>
+<div id="header">
+    <header class="header-nav">
+        <nav id="home-nav">
+            <strong>Home</strong>
+            <i class="fa fa-lg fa-certificate"></i>
+        </nav>
+    </header>
+
+    <div class="header-inner">
+        <h3 class="header-title">Grayson's Album</h3>
+        <p class="header-des">Record the beauty of life with camera</p>
+        <p></p></div>
+</div>
+
+<div class="index-entry">
+    <article class="index-item" th:each="album : ${albums}">
+        <div class="thumb" th:style="'background-image:url(' + @{${album.cover}} + ');'"></div>
+        <a class="links" th:href="'/photo?album_name='+${album.name}">
+            <h3 th:text="${album.name}"></h3>
+            <p th:text="${album.update_time} + ' | ' + ${album.count}"></p>
+            <p th:text="${album.description}"></p>
+        </a>
+    </article>
+</div>
+<th:block th:insert="../templates/foot"></th:block>

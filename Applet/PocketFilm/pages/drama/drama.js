@@ -51,6 +51,7 @@ Page({
   // 点击首页导航按钮
   activeNav(e) {
     var that = this
+    that.data.pageIndex = 1
     var index = e.target.dataset.index
     this.setData({
       currentIndexNav: index,

@@ -13,6 +13,7 @@ class Ziyuan88ysSpider(scrapy.Spider):
     # 搜索关键词
     keyword = None
     type = 'movie_sources'
+    movie_type = 'ziyuan88ys'
     # 电影总数
     total = 0
     page_size = 30
@@ -85,8 +86,12 @@ class Ziyuan88ysSpider(scrapy.Spider):
             # id, src, name, update_time, actors, type, score, release_date, description
             # 解析视频源
             # https://www.88ys.com/guochanju/202002/79916.html
-            html = get_one_page(url2)
-            html = etree.HTML(html)
+            try:
+                html = get_one_page(url2)
+                html = etree.HTML(html)
+            except:
+                write_spider_history(self.movie_type, url2)
+                continue
             # /html/body/div[5]/div[1]/div/div
             # /html/body/div[5]/div[1]/div/div/div[2]/div[1]/h2
             # /html/body/div[5]/div[1]/div/div/div[2]/div[2]/ul/li[1]/span
@@ -128,7 +133,6 @@ class Ziyuan88ysSpider(scrapy.Spider):
             movie_item['update_time'] = reverse_update_time(get_str_from_xpath(each.xpath('./div[2]/dl/dd[2]/text()')))
             movie_item['description'] = get_str_from_xpath(each.xpath('./div[2]/div/text()'))
             source_name_list = []
-            count = 1
             for each in html.xpath('//div[@class="playfrom tab8 clearfix"]/ul/li'):
                 source_name_list.append(get_str_from_xpath(each.xpath('./text()')))
                 source_id = get_str_from_xpath(each.xpath('./@id')).split('tab')[1]

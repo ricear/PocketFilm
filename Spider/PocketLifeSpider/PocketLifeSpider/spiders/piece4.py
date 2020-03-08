@@ -81,6 +81,7 @@ class Piece4Spider(scrapy.Spider):
                         continue
                     modify_piece_type(type, type2)
                     url2 = 'https://v.youku.com/v_show/id_' + play_id + '.html'
+                    src = download_images(src)
                     piece = {
                         'name': name,
                         'description': description,

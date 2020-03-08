@@ -92,10 +92,12 @@ class PieceSpider(scrapy.Spider):
                         type2 = ''
                     modify_piece_type(type, type2)
                     url2 = 'https://v.youku.com/v_show/id_' + play_id + '==.html'
+                    src = get_str_from_xpath(li.xpath('div/a[1]/img/@src'))
+                    src = download_images(src)
                     piece = {
                         'name': name,
                         'description': get_str_from_xpath(li.xpath('./div/a[1]/@title')),
-                        'src': get_str_from_xpath(li.xpath('div/a[1]/img/@src')),
+                        'src': src,
                         'type': type,
                         'type2': type2,
                         'drama_url': play_url,

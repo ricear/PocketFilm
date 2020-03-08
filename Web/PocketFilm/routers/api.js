@@ -10,8 +10,8 @@ var router = express.Router();
 //  MongoDb 客户端
 var mongoClient = require('mongodb').MongoClient;
 //  MongoDB 连接地址
-// var dbURL = 'mongodb://localhost:27017';
-var dbURL = 'mongodb://103.45.172.213:27017';
+// var dbURL = 'mongodb://admin:weipeng185261@localhost:27017';
+var dbURL = 'mongodb://admin:weipeng185261@47.240.95.27:27017';
 //  MongoDb 的 ObjectId
 var objectId = require('mongodb').ObjectId;
 //  使用 Jquery
@@ -125,6 +125,271 @@ function getRandomNum(Min, Max) {
     var Rand = Math.random();
     return (Min + Math.round(Rand * Range));
 }
+
+/**
+ * 获取相册列表
+ */
+router.get('/album/get', function (req, res, next) {
+    var name = req.query.album_name == null || req.query.album_name == "" ? 'null' : req.query.name
+    var is_private = req.query.is_private == null || req.query.is_private == "" ? 'null' : req.query.is_private
+    if (name == 'null') {
+        if (is_private == 'null') {
+            //  所有分类
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('album_type');
+                movie.find(
+                    {},
+                    {
+                        sort: {update_time: -1},
+                        collation: {locale: "zh"}
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '相册类型信息获取成功';
+                        responseData.data = data;
+                        responseData.count = data.length;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '相册类型信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        } else {
+            //  所有分类
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('album_type');
+                movie.find(
+                    {
+                        is_private: is_private
+                    },
+                    {
+                        sort: {update_time: -1},
+                        collation: {locale: "zh"}
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '相册类型信息获取成功';
+                        responseData.data = data;
+                        responseData.count = data.length;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '相册类型信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        }
+    } else {
+        if (is_private == 'null') {
+            //  所有分类
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('album_type');
+                movie.find(
+                    {
+                        name: name
+                    },
+                    {
+                        sort: {update_time: -1},
+                        collation: {locale: "zh"}
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '相册类型信息获取成功';
+                        responseData.data = data;
+                        responseData.count = data.length;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '相册类型信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        } else {
+            //  所有分类
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('album_type');
+                movie.find(
+                    {
+                        name: name,
+                        is_private: is_private
+                    },
+                    {
+                        sort: {update_time: -1},
+                        collation: {locale: "zh"}
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '相册类型信息获取成功';
+                        responseData.data = data;
+                        responseData.count = data.length;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '相册类型信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        }
+    }
+})
+
+/**
+ * 获取相册列表
+ */
+router.get('/photo/get', function (req, res, next) {
+    var album_name = req.query.album_name == null || req.query.album_name == "" ? 'null' : req.query.album_name
+    var upload_time = req.query.upload_time == null || req.query.upload_time == "" ? 'null' : req.query.upload_time
+    if (album_name == 'null') {
+        if (upload_time == 'null') {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('album');
+                movie.find(
+                    {},
+                    {
+                        sort: {upload_time: -1},
+                        collation: {locale: "zh"}
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '相册类型信息获取成功';
+                        responseData.data = data;
+                        responseData.count = data.length;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '相册类型信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        } else {
+            mongoClient.connect(dbURL, function (err, db) {
+                var movie = db.db(dbName).collection('album');
+                movie.find(
+                    {
+                        upload_time:
+                            {
+                                $regex: upload_time
+                            }
+                    },
+                    {
+                        sort: {upload_time: -1},
+                        collation: {locale: "zh"}
+                    }).toArray(function (err, data) {
+                    if (data) {
+                        responseData.code = 0;
+                        responseData.message = '相册类型信息获取成功';
+                        responseData.data = data;
+                        responseData.count = data.length;
+                        res.json(responseData);
+                    } else {
+                        responseData.code = 1;
+                        responseData.message = '相册类型信息获取失败';
+                        res.json(responseData);
+                    }
+                    // 释放资源
+                    db.close();
+                })
+            })
+        }
+    } else {
+        //  获取相册信息
+        mongoClient.connect(dbURL, function (err, db) {
+            var movie = db.db(dbName).collection('album_type');
+            movie.find(
+                {
+                    name: album_name
+                },
+                {
+                    sort: {upload_time: -1},
+                    collation: {locale: "zh"}
+                }).toArray(function (err, data) {
+                if (data) {
+                    responseData.message = '相册类型信息获取成功';
+                    responseData.album = data[0];
+                    if (upload_time == 'null') {
+                        mongoClient.connect(dbURL, function (err, db) {
+                            var movie = db.db(dbName).collection('album');
+                            movie.find(
+                                {
+                                    album_name: album_name
+                                },
+                                {
+                                    sort: {upload_time: -1},
+                                    collation: {locale: "zh"}
+                                }).toArray(function (err, data) {
+                                if (data) {
+                                    responseData.code = 0;
+                                    responseData.message = '相册类型信息获取成功';
+                                    responseData.data = data;
+                                    responseData.count = data.length;
+                                    res.json(responseData);
+                                } else {
+                                    responseData.code = 1;
+                                    responseData.message = '相册类型信息获取失败';
+                                    res.json(responseData);
+                                }
+                                // 释放资源
+                                db.close();
+                            })
+                        })
+                    } else {
+                        mongoClient.connect(dbURL, function (err, db) {
+                            var movie = db.db(dbName).collection('album');
+                            movie.find(
+                                {
+                                    upload_time:
+                                        {
+                                            $regex: upload_time
+                                        },
+                                    album_name: album_name
+                                },
+                                {
+                                    sort: {upload_time: -1},
+                                    collation: {locale: "zh"}
+                                }).toArray(function (err, data) {
+                                if (data) {
+                                    responseData.code = 0;
+                                    responseData.message = '相册类型信息获取成功';
+                                    responseData.data = data;
+                                    responseData.count = data.length;
+                                    res.json(responseData);
+                                } else {
+                                    responseData.code = 1;
+                                    responseData.message = '相册类型信息获取失败';
+                                    res.json(responseData);
+                                }
+                                // 释放资源
+                                db.close();
+                            })
+                        })
+                    }
+                } else {
+                    responseData.code = 2;
+                    responseData.message = '相册类型信息获取失败';
+                    res.json(responseData);
+                }
+                // 释放资源
+                db.close();
+            })
+        })
+    }
+})
 
 /**
  * 获取资源数量

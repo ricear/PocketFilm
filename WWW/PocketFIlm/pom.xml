@@ -21,6 +21,7 @@
         <module>TV</module>
         <module>Drama</module>
         <module>Piece</module>
+        <module>Album</module>
     </modules>
 
     <properties>

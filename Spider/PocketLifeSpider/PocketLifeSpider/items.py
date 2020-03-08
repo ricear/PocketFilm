@@ -99,3 +99,42 @@ class DramaItem(scrapy.Item):
     sources = scrapy.Field()
     # 采集时间
     acquisition_time = scrapy.Field()
+
+# 照片
+class ImageItem(scrapy.Item):
+    # 相册名称
+    album_name = scrapy.Field()
+    # 照片id
+    image_id = scrapy.Field()
+    # 照片名称
+    image_name = scrapy.Field()
+    # 照片地址
+    image_url = scrapy.Field()
+    # 照片类型
+    image_type = scrapy.Field()
+    # 照片上传时间
+    upload_time = scrapy.Field()
+    # 是否为私有
+    is_private = scrapy.Field()
+    # 相机品牌
+    image_make = scrapy.Field()
+    # 相机机型
+    image_model = scrapy.Field()
+    # 拍摄时间
+    image_date_time = scrapy.Field()
+    # 拍摄作者
+    image_artist = scrapy.Field()
+    # 缩略图照片类型
+    thumbnail_compression = scrapy.Field()
+    # 分辨率单位
+    thumbnail_resolution_unit = scrapy.Field()
+    # 曝光时间
+    exif_exposure_time = scrapy.Field()
+    # 焦距
+    exif_f_number = scrapy.Field()
+    # ISO
+    exif_iso_speed_ratings = scrapy.Field()
+    # 照片长度
+    exif_exif_image_width = scrapy.Field()
+    # 照片宽度
+    exif_exif_image_length = scrapy.Field()

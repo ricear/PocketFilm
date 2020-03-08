@@ -125,7 +125,8 @@
         "ANDROID_SUPPORT_V4_VERSION": "27.+"
       },
       "cordova-plugin-streaming-media": {},
-      "cordova-plugin-insomnia": {}
+      "cordova-plugin-insomnia": {},
+      "cordova-plugin-exoplayer": {}
     },
     "platforms": [
       "android",

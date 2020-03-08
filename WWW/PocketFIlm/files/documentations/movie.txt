@@ -7,8 +7,8 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.8.RELEASE)
 
-2019-10-26 16:46:02.882  INFO 4753 --- [           main] com.grayson.movie.MovieApplication       : Starting MovieApplication v0.0.1-SNAPSHOT on weipeng with PID 4753 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/movie-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
-2019-10-26 16:46:02.888  INFO 4753 --- [           main] com.grayson.movie.MovieApplication       : No active profile set, falling back to default profiles: default
+2019-10-26 16:46:02.882  INFO 4753 --- [           main] com.grayson.album.MovieApplication       : Starting MovieApplication v0.0.1-SNAPSHOT on weipeng with PID 4753 (/Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/jars/album-0.0.1-SNAPSHOT.jar started by weipeng in /Users/weipeng/Personal/Projects/PocketFilm/WWW/PocketFIlm/files/shell)
+2019-10-26 16:46:02.888  INFO 4753 --- [           main] com.grayson.album.MovieApplication       : No active profile set, falling back to default profiles: default
 2019-10-26 16:46:10.245  INFO 4753 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
 2019-10-26 16:46:10.468  INFO 4753 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
 2019-10-26 16:46:10.469  INFO 4753 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
@@ -16,4 +16,4 @@
 2019-10-26 16:46:10.952  INFO 4753 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7843 ms
 2019-10-26 16:46:12.701  INFO 4753 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2019-10-26 16:46:14.935  INFO 4753 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-10-26 16:46:14.944  INFO 4753 --- [           main] com.grayson.movie.MovieApplication       : Started MovieApplication in 19.889 seconds (JVM running for 22.521)
+2019-10-26 16:46:14.944  INFO 4753 --- [           main] com.grayson.album.MovieApplication       : Started MovieApplication in 19.889 seconds (JVM running for 22.521)
