@@ -1,0 +1,111 @@
+﻿
+#side {
+    position: fixed;
+    width: 36px;
+    height: 102px;
+    right: 10px;
+    bottom: 202px;
+    z-index: 100;
+}
+
+    #side ul li {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        float: left;
+        margin-bottom:12px;
+        position: relative;
+    }
+
+        #side ul li .sidebox {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            top: 0;
+            right: 0;
+            background: #eee;
+            color: #fff;
+            font-size: 12px !important;
+            overflow: hidden;
+            box-sizing:border-box;
+            border-radius:3px;
+        }
+  #side ul li:last-child{
+      margin-top:10px;
+  } 
+        #side ul li .sidetop {
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            display: inline-block;
+            background: #eee;
+               border-radius:3px;
+            
+        }
+
+            #side ul li .sidetop:hover {
+                background: #f29600;
+            }
+               #side ul li:hover span.side_right{
+                   display:block;
+               }
+            #side ul li span.side_right{
+                margin-left:15px;
+                display:none;
+            }
+        #side ul li span.side1 {
+            background: url(/images/sc.png) no-repeat;
+            position: absolute;
+            top: 11px;
+            left: 12px;
+            width: 14px;
+            height: 14px;
+        }
+
+            #side ul li:hover span.side1 {
+                background: url(/images/sc-b.png) no-repeat;
+      left: 78px;
+            }
+
+        #side ul li span.side2 {
+            background: url(/images/gwc.png) no-repeat;
+            position: absolute;
+            top: 11px;
+            left: 12px;
+            width: 14px;
+            height: 14px;
+        }
+        
+            #side ul li:hover span.side2{
+                background: url(/images/gwc-b.png) no-repeat;
+                    left: 78px;
+            }
+
+        #side ul li span.side3 {
+            background: url(/images/zxkf.png) no-repeat;
+            position: absolute;
+            top: 11px;
+            left: 12px;
+            width: 14px;
+            height: 14px;
+        }
+
+            #side ul li:hover span.side3 {
+                background: url(/images/zxkf-b.png) no-repeat;
+                  left: 78px;
+            }
+
+        #side ul li span.side4 {
+            background: url(../images/fhdb.png) no-repeat;
+            position: absolute;
+            top: 16px;
+            left: 12px;
+            width: 14px;
+            height: 14px;
+        }
+
+            #side ul li:hover span.side4 {
+                background: url(/images/fhdb-b.png) no-repeat;
+               left: 78px;
+            }

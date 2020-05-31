@@ -9,10 +9,10 @@ var sort_type = href.indexOf('sort_type') >= 0 ? href.split('sort_type=')[1].spl
 var key_word = href.indexOf('key_word') >= 0 ? href.split('key_word=')[1] : null
 $(function () {
     //  获取影视数据
-    var more_movie_url = API + "/album/get/all?type=" + type + "&type2=" + type2 + "&region=" + region + "&release_date=" + release_date + "&page_index=" + page_index + "&page_size=" + pageSize + "&sort_type=" + sort_type + "&key_word=" + key_word + "";
+    var more_movie_url = API + "/movie/get/all?type=" + type + "&type2=" + type2 + "&region=" + region + "&release_date=" + release_date + "&page_index=" + page_index + "&page_size=" + pageSize + "&sort_type=" + sort_type + "&key_word=" + key_word + "";
     get_movies(more_movie_url, 'more-movies')
     //  获取影视资源数量
-    var count_movie_url = API + "/count/get?source_type=album&type=" + type + "&type2=" + type2 + "&region=" + region + "&release_date=" + release_date + "&page_index=" + page_index + "&page_size=" + pageSize + "&sort_type=" + sort_type + "&key_word=" + key_word + "";
+    var count_movie_url = API + "/count/get?source_type=movie&type=" + type + "&type2=" + type2 + "&region=" + region + "&release_date=" + release_date + "&page_index=" + page_index + "&page_size=" + pageSize + "&sort_type=" + sort_type + "&key_word=" + key_word + "";
     get_movies_count(count_movie_url, 'pages')
 })
 

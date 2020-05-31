@@ -1,0 +1,88 @@
+@charset "UTF-8";
+html {
+  font-size: 10px; }
+
+@media only screen and (min-width: 1921px) {
+  html {
+    font-size: 0.5vw; } }
+/* global */
+body {
+  font-family: arial, sans-serif;
+  font-size: 1.6rem;
+  color: #000000;
+  overflow-y: scroll;
+  color: #ffffff;
+  padding-bottom: 6rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: normal; }
+
+h1 {
+  font-size: 3.4rem;
+  margin: 5rem 0 2rem 0; }
+
+a {
+  text-decoration: none;
+  color: #ffa200; }
+  a:hover, a:active {
+    text-decoration: underline;
+    outline: none;
+    color: #ffa200; }
+
+footer .sr-only {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0; }
+
+/* zgodności */
+a, button {
+  outline: none !important; }
+
+* {
+  -webkit-user-select: element;
+  -moz-user-select: element;
+  -ms-user-select: element; }
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+.sr-only {
+  color: transparent; }
+
+textarea,
+button,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"] {
+  -webkit-appearance: none !important; }
+
+html,
+.table-responsive {
+  -ms-overflow-style: scrollbar; }
+
+/* Safari Opera  */
+/* galaxy-tab-2 */
+/* ipad all generations */
+.visible-touch-deviced {
+  display: none !important; }
+
+.touch-device .visible-touch-device {
+  display: block !important; }
+.touch-device .container .hidden-touch-device {
+  display: none !important; }
+
+/*# sourceMappingURL=screen.css.map */

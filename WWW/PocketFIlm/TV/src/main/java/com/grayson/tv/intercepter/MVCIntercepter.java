@@ -18,9 +18,9 @@ public class MVCIntercepter implements HandlerInterceptor {
         String cookieName = "userInfo";
         Boolean existCookie = commonUtils.existCookie(request, cookieName);
         String url = request.getRequestURI().toString();
-        if (!existCookie && url.contains("play")) {
-            response.sendRedirect(Configs.LOGIN_API);
-        }
+//        if (!existCookie && url.contains("play")) {
+//            response.sendRedirect(Configs.LOGIN_API);
+//        }
         return true;
     }
 

@@ -1,0 +1,177 @@
+﻿
+.htmleaf-container .flexslider {
+    height: 640px !important;
+}
+
+    .htmleaf-container .flexslider .slides li {
+        height: 560px;
+    }
+
+.flexslider .flex_text {
+    height: 80px;
+    line-height: 80px;
+    background: #303030;
+}
+
+.indexpic {
+    width: 100%;
+}
+
+.flexslider .flex_text {
+}
+
+.indexpic ul {
+    font-size: 0;
+}
+
+    .indexpic ul li {
+        display: inline-block;
+        width: 33.33%;
+        position: relative;
+        overflow:hidden;
+        margin: 10px;
+    }
+      .indexpic ul li a{
+          display:block;
+          width:100%;
+          height:100%;
+      }        
+        .indexpic ul li div {
+            display:none;
+            font-size: 1.1rem;
+            position: absolute;
+            text-align: left;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 100%;
+            color: #fff;
+            background: rgba(0,0,0,0.2);
+        }
+         .indexpic ul li div span{
+            position:absolute;
+            bottom:22px;
+            left:20px;
+         }
+         .indexpic ul li:hover div{
+           display:block;
+        }
+        .indexpic ul li img {
+            transition: all 1.5s ease-out;
+               width:100%;
+             transform: scale(1.01);
+        }
+        .indexpic ul li:hover  img {
+            transform: scale(1.03);
+        }
+
+@media screen and (max-width: 1366px) {
+    .htmleaf-container .flexslider {
+        height: 560px !important;
+    }
+
+        .htmleaf-container .flexslider .slides li {
+            height:480px;
+        }
+}
+@media screen and (max-width: 1280px) {
+    .htmleaf-container .flexslider {
+        height: 520px !important;
+    }
+
+        .htmleaf-container .flexslider .slides li {
+            height: 440px !important;
+        }
+}
+@media screen and (max-width: 1024px) {
+    .indexpic ul {
+        font-size: 0;
+    }
+
+        .indexpic ul li {
+            width: 50%;
+        }
+}
+@media screen and (max-width: 992px) and (min-width: 768px){
+   .flexslider p{
+       font-size: 18px;
+   } 
+}
+@media screen and (max-width: 642px) {
+    .indexpic ul {
+        font-size: 0;
+    }
+
+        /*.indexpic ul li {
+            width: 100%;
+        }*/
+        .flexslider .flex_text{
+            height: 80px;
+            line-height: 21px;
+            background: #303030;
+            padding-top: 16px;
+            font-size:12px;
+        }
+}
+
+
+#windown-box, #windown-title {
+    background: rgba(255,255,255,0);
+    border: none;
+}
+
+#windown-box {
+    background: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.windown-title div {
+    color: #fff;
+    text-align: center;
+    left: 0;
+    padding-top: 50px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.flex-control-nav {
+        bottom: 89px;
+}
+
+    .flex-control-nav li {
+        display: inline-block;
+        background: rgba(0,0,0,0.3);
+        margin: 0 8px;
+     width: 12px;
+    height: 12px;
+        text-align: center;
+        line-height: 5px;
+          border-radius: 50%;
+    }
+
+        .flex-control-nav li:hover {
+            background: #f29600;
+        }
+
+    .flex-control-nav a.flex-active {
+        background: #f29600;
+        opacity: 1;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+
+    .flex-control-nav a {
+        display: block;
+         width: 12px;
+        height: 12px;
+        line-height: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        font-size: 0;
+        line-height: 35px;
+        font-size: xx-small;
+        opacity: 0;
+    }
+
+

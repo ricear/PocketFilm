@@ -1,0 +1,135 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+*{
+      font-family: "Microsoft Yahei", 微软雅黑, 'pingfang sc' ,Simsun, Arial, sans-serif  !important;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0;
+  
+}
+
+body{text-align:left;}
+/*去掉input等聚焦时的蓝色边框*/
+
+fieldset,
+img,
+iframe {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+input,
+select,
+form images,
+button {
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+img {
+    border: none;
+}
+
+input,
+img {
+    vertical-align: middle;
+}
+
+
+
+
+/* 头部固定 */
+
+.fix {
+    position: fixed !important;
+    top: 0;
+    z-index: 10;
+}

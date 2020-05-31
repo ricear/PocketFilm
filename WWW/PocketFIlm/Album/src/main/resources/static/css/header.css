@@ -1,0 +1,238 @@
+
+header {
+       padding: 0 24px 0 12px;
+    height: 70px;
+    background: #fff;
+    padding-top: 23px;
+    box-sizing: border-box;
+    min-width:1186px;
+}
+
+    header .head_left {
+        transition: all 0.1s ease-out;
+    }
+
+        header .head_left .logo {
+            float: left;
+         width: 190px;
+    height: 23px;
+            margin-right: 28px;
+        }
+
+            header .head_left .logo a {
+                display: block;
+               width: 190px;
+    height: 23px;
+                background: url('/image/2018image/public/logo.png?v=20190104') no-repeat;
+            }
+
+
+        header .head_left .zp_nav {
+            float: right;
+        }
+
+            header .head_left .zp_nav li {
+                float: left;
+                margin-right: 24px;
+            }
+
+                header .head_left .zp_nav li a {
+                    font-size: 16px;
+                    color: #333;
+                    padding: 0;
+                    padding-bottom: 6px;
+                }
+
+                    header .head_left .zp_nav li a:hover {
+                        padding-bottom: 6px;
+                        color: #f29600;
+                        border-bottom: 3px solid #f29600;
+                    }
+
+    header .head_right {
+        float: right;
+        transition: all 0.1s ease-out;
+        padding-top: 2px;
+    }
+
+        header .head_right li {
+            float: left;
+            color: #b9b7b4;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+            header .head_right li a {
+                color: #333;
+                font-size: 14px;
+            }
+
+                header .head_right li a span b {
+                    font-weight: 400;
+                     vertical-align: text-bottom;
+                }
+
+                header .head_right li a:hover {
+                    color: #f29600;
+                }
+
+                
+
+        header .head_right .language {
+            position: relative;
+        }
+
+            header .head_right .language span {
+                cursor: pointer;
+                float: left;
+                width: 73px;
+                height: 17px;
+                background: url(/image/2018image/header/xzyy.png) no-repeat 0px;
+                text-align: right;
+                color: #333;
+            }
+
+                header .head_right .language span:hover {
+                    color: #f29600;
+                    background: url(/image/2018image/header/xzyy-h.png) no-repeat 0px;
+                }
+
+        header .head_right .phone {
+            width: 112px;
+            color: #333;
+            background: url(/image/2018image/header/dh.png) no-repeat 0 5px;
+            text-align: right;
+            padding-top: 1px;
+        }
+
+            header .head_right .phone:hover {
+                color: #f29600;
+                background: url(/image/2018image/header/dh-h.png) no-repeat 0 5px;
+            }
+
+        header .head_right .shopping .shop {
+            width: 15px;
+            height: 19px;
+            display: inline-block;
+            vertical-align: text-bottom;
+            background: url(/image/2018image/header/gwc.png) no-repeat 0 3px;
+        }
+
+        header .head_right .shopping:hover .shop {
+            background: url(/image/2018image/header/gwc-h.png) no-repeat 0px;
+        }
+              header .head_right .shopping:hover span{
+                          color: #f29600;
+              }
+        header .head_right .head_portrait span {
+            width: 14px;
+            height: 16px;
+            display: inline-block;
+            margin-top: 2px;
+            background: url(/image/2018image/header/rx.png) no-repeat 0px;
+        }
+
+        header .head_right .user_head:hover .head_portrait span {
+            margin-top: 2px;
+            background: url(/image/2018image/header/rx-h.png) no-repeat 0px;
+        }
+
+        header .head_right .enter {
+            float: right;
+            color: #333;
+            position: relative;
+            margin-left: 10px;
+            height: 45px;
+            line-height:1;
+        }
+
+        header .head_right .portrait {
+            vertical-align: top;
+        }
+
+            header .head_right .portrait b {
+                width: 14px;
+                height: 14px;
+                vertical-align: middle;
+                display: inline-block;
+                background: url(/image/2018image/header/rx.png) no-repeat 0px;
+            }
+
+        header .head_right .enter .portrait:hover {
+            color: #f29600;
+            cursor: pointer;
+        }
+
+            header .head_right .enter .portrait:hover b {
+                background: url(/image/2018image/header/rx-h.png) no-repeat 0px;
+            }
+
+        header .head_right .enter .portrait .user {
+            vertical-align: middle;
+            display: inline-block;
+            width: 62px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 14px;
+        }
+
+
+        header .head_right .language {
+            height: 45px;
+        }
+
+         
+            header .head_right .enter .Personal_drop, header .head_right .language .language_d {
+                position: absolute;
+                z-index: 21;
+                text-align: center;
+                border: 1px solid #eee;
+                top: 45px;
+                right: 0;
+                line-height: 33px;
+            }
+
+                header .head_right .enter .Personal_drop li, header .head_right .language .language_d li {
+                    height: 36px;
+                    line-height: 36px;
+                    width: 100%;
+                    margin: 0;
+                    background: #fff;
+                    border-top: 1px solid #eee;
+                }
+
+                    header .head_right .enter .Personal_drop li a, header .head_right .language .language_d li a {
+                        font-size: 14px;
+                        display: block;
+                        height: 36px;
+                        width: 100%;
+                    }
+
+                    header .head_right .enter .Personal_drop li:first-child, header .head_right .language .language_d li:first-child {
+                        border-top: none;
+                    }
+
+                       header .head_right .language .language_d {
+                right: -14px;
+            }
+
+                header .head_right .language .language_d a {
+                    width: 90px;
+                }
+
+.fff {
+    padding-bottom: 5px;
+    color: #f29600 !important;
+    border-bottom: 3px solid #f29600;
+}
+
+/*.fixedNav {
+    position: fixed !important;
+    top: 0px;
+    left: 0px;
+    z-index: 100000;
+    transition: all 0.5s ease-out;
+    min-width: 0 !important;
+}*/

@@ -1,0 +1,176 @@
+.con {
+  background: #eee;
+  min-width: 1186px;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+.con .banner {
+  width: 100%;
+  min-width: 1186px;
+  height: 500px;
+  margin-bottom: 40px;
+  margin: 0 auto;
+}
+.con .banner a {
+  width: 100%;
+  height: 500px;
+  background: url(../images/banner1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 1024px;
+  display: block;
+}
+.con .banner a div {
+  padding-top: 146px;
+}
+.con .banner a div p {
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+.flex_text {
+   z-index: 1;
+    height: 20px;
+    line-height: 80px;
+    background: #fff;
+    color: #333;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+.con .details {
+  width: 1186px;
+  margin: 0 auto;
+  min-width: 1186px;
+}
+.con .details .picture li {
+  float: left;
+  width: 288px;
+  height: 210px;
+  margin-top: 12px;
+  position: relative;
+  margin-right: 10px;
+}
+.con .details .picture li a {
+  display: block;
+  width: 288px;
+  height: 210px;
+}
+.con .details .picture li a img {
+  width: 288px;
+  height: 210px;
+}
+.con .details .picture li i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+.con .details .picture li b {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 14px;
+  color: #fff;
+  z-index: 2;
+  font-weight: 400;
+}
+.con .details .picture li:nth-child(4) {
+  margin-right: 0;
+}
+.con .print li {
+  float: left;
+  width: 388px;
+  height: 210px;
+  position: relative;
+  margin-right: 10px;
+  margin-top: 12px;
+}
+.con .print li a {
+  display: block;
+  width: 388px;
+  height: 210px;
+}
+.con .print li a img {
+  width: 388px;
+  height: 210px;
+}
+.con .print li i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+.con .print li b {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 14px;
+  z-index: 2;
+  font-weight: 400;
+  color: #fff;
+}
+.con .print li:nth-child(3) {
+  margin-right: 0;
+}
+.con .shade {
+  background: #000 !important;
+  opacity: 0.2;
+  position: absolute;
+  width: 100%;
+  height: 210px;
+  cursor: pointer;
+  top: 0;
+  left:0;
+  transition: all 0.8s ease-out;
+}
+.con .Bilder_Type {
+  width: 1186px;
+  margin: 0 auto;
+  padding-top: 60px;
+  min-width: 1186px;
+  padding-bottom: 60px;
+}
+.con .Bilder_Type h6 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 400;
+}
+.con .Bilder_Type ul li {
+  width: 158px;
+  height: 52px;
+  float: left;
+  border-radius: 3px;
+  line-height: 52px;
+  margin-bottom: 20px;
+  margin-right: 47px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+}
+.con .Bilder_Type ul li a {
+	 width: 158px;
+  height: 52px;
+display:block;
+}
+.con .Bilder_Type ul li:nth-child(6n) {
+  margin-right: 0px;
+}
+.con .Bilder_Type ul li:hover a {
+  color: #333;
+}
+
+@media screen and (max-width: 768px){
+   .con .banner ,.con .banner a {
+         height: 400px;
+    }
+}

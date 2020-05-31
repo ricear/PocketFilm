@@ -1,0 +1,42 @@
+.flex-images {
+    overflow: hidden;
+}
+
+    .flex-images .item {
+        float: left;
+        margin: 4px;
+        /*border: 1px solid #eee;*/
+        box-sizing: content-box;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .flex-images .item img {
+            display: block;
+            width: auto;
+            height: 100%;
+        }
+
+.flex-images .item video {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+        .flex-images .item .img_bar {
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            width: 100%;
+            overflow: hidden;
+            background-color: rgba(0,0,0,.3);
+            opacity: 0;
+            -webkit-transition: all 0.1s;
+            -moz-transition: all 0.1s;
+            -ms-transition: all 0.1s;
+             text-align: center;
+        }
+        .flex-images .item:hover .img_bar{
+            opacity: 1;
+            color:#fff;
+        }

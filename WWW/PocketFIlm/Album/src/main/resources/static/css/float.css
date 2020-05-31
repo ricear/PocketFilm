@@ -1,0 +1,130 @@
+﻿  /*==========for live chat===================*/
+.top_function{ position:absolute; top:4px; right:8px; width:320px; overflow:hidden; font-size:12px;}
+.top_function a:link,
+.top_function a:visited{ color:#ccc; text-decoration:none; padding-right:8px;
+						 background:url(/images/top_function.gif) right 5px no-repeat;}
+.top_function a:hover{ color:#e5e5e5;}
+.top_function .function_lang{ float:right; height:16px; padding-left:20px; margin-left:15px;
+							  background:url(/images/top_function.gif) -850px -90px no-repeat;}
+.top_function .function_tel{ float:right; margin-left:15px; padding-left:16px; font-family:Verdana, Arial, Helvetica, sans-serif;
+							 background:url(/images/top_function.gif) -850px -27px no-repeat;}
+.top_function .function_chat{ float:right; padding-left:13px; height:16px;
+							  background:url(/images/top_function.gif) -850px -57px no-repeat;}
+.top_function .function_chat a:link,
+.top_function .function_chat a:visited{ padding-right:1px; background:none;}
+
+/*pop up box*/
+.popup_box{ position:absolute; right:30px; top:30px; z-index:1000; font-family:Verdana, Arial; display:none; background:#eeeeee; border:1px #bfbfbf solid;}
+.popup_box_inside{ width:100%; overflow:hidden;}
+.popup_box .btn_close{ float:right; display:inline; margin:5px 5px 0 0; width:11px; height:11px; text-indent:-999px; overflow:hidden; background:url(/images/ico_close.gif) no-repeat;}
+
+.popup_lang{ width:128px;}
+.popup_lang .popup_box_inside{ }
+.popup_lang ul{ padding:10px 10px 20px 10px;}
+.popup_lang ul li{ padding-left:10px; background:url(/images/top_function.gif) -850px -112px no-repeat;}
+.popup_lang ul li a:link,
+.popup_lang ul li a:visited{ text-decoration:none; line-height:160%;}
+
+.popup_tel{ width:235px;}
+.popup_tel .popup_box_inside{ }
+.popup_tel ul{ padding:10px 10px 35px 10px;}
+.popup_tel ul li{ padding-left:10px; background:url(/images/top_function.gif) -850px -112px no-repeat; color:#666; line-height:160%; font-size:11px; width:96%; overflow:hidden;}
+.popup_tel ul li strong{ float:left; font-size:12px;}
+.popup_tel ul li span{ float:left; margin-left:6px; white-space:nowrap;}
+.popup_tel ul li span.more_tel{ clear:both; margin-left:34px;}
+
+
+.popup_kefu{ width:155px;}
+.popup_kefu .popup_box_inside{}
+.popup_kefu { background:#eee; }
+.popup_kefu ul { padding:18px 15px 5px 10px; }
+.popup_kefu li { padding:4px 0 3px; margin-bottom:4px; text-indent:15px; font-size:12px; background:url(/kefu/images/icon/kefu_icon.gif) no-repeat 0 3px; }
+.popup_kefu li a { text-decoration:none; color:#f60; }
+.popup_kefu li a:hover { text-decoration:underline;}
+.popup_kefu .online a:hover { color:#c00; }
+.popup_kefu li span { color:#f60; }
+.popup_kefu li.offline { background-position:0 -27px; }
+.popup_kefu li.offline a { color:#666; }
+.popup_kefu li.offline span { color:#999; }
+
+
+
+  /*************modify begin******************/
+.login_holder{ width:481px; font-size:12px; color:#666; position:absolute; left:30%; top:20%;}
+  /*************modify end******************/
+.login_shaodow_top,
+.login_shaodow_bottom{ width:100%; height:15px; overflow:hidden;}
+.login_shaodow_top{ background:url(/images/login_shadow_top.png) no-repeat;}
+.login_shaodow_bottom{ background:url(/images/login_shadow_bottom.png) no-repeat;}
+.login_shaodow_middle{ width:100%; overflow:hidden; background:url(/images/login_shadow_middle.png);}
+.login_holder h2{ width:450px; margin:0 auto; background:#eee; text-indent:26px; font-size:14px; line-height:175%; color:#333;}
+.login_holder h2.h2_login{ background:#eee url(/images/h2_login.gif) 5px 3px no-repeat;}
+
+.login_holder h2 span{ position:relative; top:2px;}
+	.login_content{ width:450px; margin:20px auto 10px auto; overflow:hidden; position:relative;}
+		.login_form{ float:left; width:227px; background:url(/images/login_dotted.gif) top right repeat-y;}
+		.login_form p{ width:100%; overflow:hidden; font-family:"宋体"; margin-bottom:8px;}
+		.login_form p label{ float:left; width:51px; margin-right:6px; text-align:right; position:relative; top:5px; }
+		.login_form p input{ float:left; display:inline; width:150px; background:#fff; border:1px #abadb3 solid; padding:2px;}
+		.login_form p .btn_submit{ width:78px; height:22px; cursor:hand;cursor:pointer; background:url(/images/btn_sure.gif); border:0; margin-left:59px;}
+
+	
+		.login_intro{ float:left; width:195px; margin-left:15px;text-align:left;}
+		.login_intro p{ line-height:170%; color:#999; text-indent:26px;}
+		.login_intro a:link,
+		.login_intro a:visited{ font-weight:bold; padding:0 4px; text-decoration:none; color:#999;}
+		
+
+.pop_close1{ position:absolute; width:11px; height:11px; right:20px; top:20px; text-indent:-9999px;
+		    overflow:hidden; background:url(/images/ico_close.gif); z-index:1000}
+
+
+/*==============common over================*/
+/*pop login panel*/
+.login_info p label.label_for_checkbox{ _top:-1px;}
+.login_info p select{ _position:relative; _left:-3px;}
+.login_shaodow_top{ _background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="/images/login_shadow_top.png");}
+.login_shaodow_bottom{ _background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="/images/login_shadow_bottom.png");}
+.login_shaodow_middle{ _background:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="/images/login_shadow_middle.png");}
+
+
+
+.SuggestFramework_List
+{
+	border: 1px solid #CCCCCC;
+	border-top: 0px;
+	background:#fff;
+	top:60px !important;
+    transition: all 0.5s ease-out;
+}
+
+.SuggestFramework_Heading
+{
+	padding: 0px 1px 0px 1px;
+	background-color: #CCCCCC;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.SuggestFramework_Highlighted
+{
+	line-height:160%;
+	text-indent:3px;
+	background-color: Highlight;
+	color:#fff;
+	font-size:13px;
+	 padding-left: 20px;
+}
+
+.SuggestFramework_Normal
+{
+	line-height:160%;
+	text-indent:3px;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-size:13px;
+    padding-left: 20px;
+}

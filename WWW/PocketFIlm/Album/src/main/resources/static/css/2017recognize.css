@@ -1,0 +1,389 @@
+.st-box .close {
+    right: 10px;
+    top: 10px;
+    background-position: -179px -108px;
+    width: 14px;
+    height: 13px;
+    z-index: 4
+}
+
+.help s {
+    background-position: -190px -108px
+}
+
+.area em,
+.area2 em {
+    background-position: -232px -128px
+}
+
+.upload em {
+    background-position: -263px -128px
+}
+
+.for-ie .area em {
+    background-position: -341px -66px
+}
+
+.drag-box,
+.st-box,
+.st-mask {
+    position: absolute
+}
+
+.st-box {
+    top:100px;
+    width: 627px;
+    padding: 0 26px;
+    box-sizing: border-box;
+    height: 170px;
+    border: 1px solid #e9e9e9;
+    border-radius: 0 0 2px 2px;
+    background: #fff;
+    position: absolute !important;
+    margin-left: -310px; 
+    left: 50%; 
+    z-index: 2001; 
+    display: none;
+}
+
+.st-mask {
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    filter: alpha(opacity=90);
+    -moz-opacity: .9;
+    opacity: .9;
+    width: 628px;
+    height: 168px;
+    z-index: 2
+}
+
+.drag-box {
+    top: 32px;
+    left: 16px;
+    width: 592px;
+    height: 100px;
+    border: 2px dashed #bbb;
+    z-index: 3
+}
+
+.st-search,
+.st-title {
+    position: relative
+}
+
+.st-hover .drag-box {
+    border-color: #f8b8a7
+}
+
+.st-title {
+    margin: 16px 4px 14px 0;
+    font-size: 18px;
+    line-height: 20px;
+    color: #333;
+    z-index: 1;
+    text-align: left;
+}
+
+.searchbtn2,
+.st-input input {
+    line-height: 32px;
+    outline: 0;
+    font-size: 14px;
+    font-family: Microsoft YaHei
+}
+
+.st-load {
+    display: block;
+    margin: 32px auto 0
+}
+
+.st-load-tt {
+    text-align: center
+}
+
+.st-input {
+    margin-right: 107px;
+    height: 32px;
+    border-right: none;
+    background-color: #f4f4f4
+}
+
+.st-input-s {
+    padding-left: 10px
+}
+
+.st-input input {
+    float: left;
+    border: 0;
+    width: 100%;
+    height: 32px;
+    color: #999;
+    background: #f4f4f4;
+    font-size: 14px;
+}
+
+.st-input input:focus {
+    color: #444
+}
+
+.area2,
+.close,
+.help,
+.help-wrap,
+.searchbtn2 {
+    position: absolute
+}
+
+.st-btns {
+    height: 96px;
+   /*overflow: hidden*/
+}
+
+.searchbtn2 {
+    right: 0;
+    top: 0;
+    width: 107px;
+    height: 32px;
+    text-align: center;
+    background-color: #f3b448;
+    color: #fff;
+    text-decoration: none;
+}
+
+.searchbtn2:hover {
+    background-color: #f3b448;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.area,
+.area2 {
+    float: left;
+    width: 50%;
+    height: 76px
+}
+
+.area2 {
+    left: 50%;
+    margin-left: -25%;
+    top: 35px;
+    float: none;
+    z-index: 4
+}
+
+.p-left,
+.upload,
+.url {
+    float: left
+}
+
+.area em,
+.area2 em {
+    display: block;
+    width: 27px;
+    height: 27px;
+    background: url(/image/SearchImage/picture.jpg);
+    margin: 13px auto 13px;
+}
+
+.area .p-1,
+.area2 .p-1 {
+    text-align: center;
+    color: #444;
+    font-size: 14px
+}
+
+.upload {
+    height: 76px;
+    width: 49%;
+    text-align: center
+}
+.upload .upload-btn{
+         color: #444 !important;
+    font-size: 14px !important;
+}
+.upload em {
+    display: block;
+    width: 27px;
+    height: 27px;
+    background: url(/image/SearchImage/upload.jpg);
+    margin: 13px auto 8px;
+}
+
+.upload-btn {
+    display: inline-block;
+    width: 92px !important;
+    height: 22px !important;
+    line-height: 14px;
+    background-color: #fff !important;
+    border: 1px solid #ccc;
+    color: #444;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    text-align: center;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    background-color: #f4f4f4
+}
+
+.for-ie .upload {
+    border-right: 1px solid #e8ecf6
+}
+
+.for-ie .area em {
+    width: 34px;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    background: url(/home_2016/images/img.png?v=827e8915) no-repeat
+}
+
+.for-ie .area .p-1 {
+    color: #ccc
+}
+
+.url {
+    width: 150px;
+    height: 60px;
+    border-left: 1px dashed #dee3ef
+}
+
+.url em {
+    display: block;
+    width: 31px;
+    height: 34px;
+    background: url(/home_2016/images/tip.png?v=338434a4) -69px -360px no-repeat;
+    margin: 0 auto 5px
+}
+
+.help {
+    top: 4px;
+    left: 35px;
+    width: 13px;
+    height: 13px;
+    z-index: 1
+}
+
+.help s {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(/image/SearchImage/question.jpg);
+    overflow: hidden;
+    margin-left:42px;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+}
+
+.help-wrap {
+    width: 360px;
+    top: 0px;
+    left: 62px;
+    border: 1px solid #eee;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .05)
+}
+
+.p-2 {
+    color: #444;
+    font-size: 14px;
+    padding-left: 22px;
+    margin: 5px 0
+}
+
+.help-box {
+    padding: 6px 0 7px 15px;
+    color: #666;
+    font-size: 12px;
+    line-height: 22px
+}
+
+.help-box h4{
+    font-size: 12px;
+}
+
+.drag-title {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px
+}
+
+.drag-title img {
+    vertical-align: middle;
+    margin-left: 8px
+}
+
+.drag-tip {
+    width: 260px;
+    margin: 50px auto 0
+}
+
+.drag-tip h5 {
+    font-size: 16px;
+    margin-bottom: 6px
+}
+
+.drag-tip p {
+    line-height: 24px;
+    color: #444;
+    font-size: 14px
+}
+
+.close {
+    right: 10px;
+    top: 10px;
+    width: 15px;
+    height: 13px;
+    background: url(/image/SearchImage/close.jpg);
+    z-index: 4
+}
+
+.thumb-box {
+    z-index: 9;
+    top: 10px;
+    left: 38px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+}
+
+.thumb,
+.thumb-box {
+    height: 32px;
+    overflow: hidden;
+    width: 63px;
+}
+
+.thumb-box,
+.txt-tip,
+.txt-tip .close-x,
+.txt-tip .dot {
+    position: absolute;
+}
+
+.thumb {
+    width: 40px;
+    line-height: 23px;
+    float: left;
+}
+
+.thumb img {
+    float: left;
+}
+
+.thumb-btn {
+    width: 23px;
+    color: #c8c6c6;
+    font: 16px arial, sans-serif;
+    line-height: 28px;
+    margin-left: 6px;
+}
+
+.thumb-btn:hover {
+    text-decoration: none;
+    cursor: pointer;
+}

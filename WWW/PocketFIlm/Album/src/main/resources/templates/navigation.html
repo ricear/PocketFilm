@@ -1,0 +1,27 @@
+<th:block th:fragment="navigation">
+    <header class="clearfix">
+        <div class="clearfix  head_left">
+            <div class="logo">
+                <a href="/" style="color: #f29600;text-align: center;">Grayson's Album</a>
+            </div>
+            <ul class="zp_nav">
+                <li><a href="/">首页</a></li>
+                <li><a href="http://www.grayson.top" target="_blank">掌上</a></li>
+                <li><a href="http://blog.grayson.top" target="_blank">Blog</a></li>
+                <li><a href="http://film.grayson.top" target="_blank">影视</a></li>
+                <li><a href="http://tv.grayson.top" target="_blank">卫视</a></li>
+                <li><a href="http://drama.grayson.top" target="_blank">戏曲</a></li>
+                <li><a href="http://piece.grayson.top" target="_blank">小品</a></li>
+                </li>
+            </ul>
+        </div>
+
+        </ul>
+    </header>
+    <script>
+    function logout() {
+        $.cookie('userInfo', null, {domain: '.grayson.top'});
+        window.location.reload();
+    }
+    </script>
+</th:block>

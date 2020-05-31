@@ -1,0 +1,50 @@
+@media screen and (max-width: 1186px) {
+
+      header{
+          padding-right:0;
+      }
+          header .head_right li  {
+                  margin-left: 7px;
+                  font-size:12px;
+          }
+          header .head_right .phone{
+                       width: 95px;
+          }
+          header .head_right .language span{
+                 width: 63px;
+          }
+#bg a div.v_t{
+     top:61%;
+}
+#bg a div.v_t .v_b{
+      font-size:46px;
+}
+    header .head_left .zp_nav {
+        display: none;
+    }
+
+    header .head_right {
+        display: none;
+    }
+
+    header #page-content-wrapper {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 420px) {
+    #bg a div{
+        font-size:24px;
+              }
+     #bg a div.v_t{
+     top:58%;
+}
+#bg a div.v_t .v_b{
+      font-size:18px;
+}
+
+}

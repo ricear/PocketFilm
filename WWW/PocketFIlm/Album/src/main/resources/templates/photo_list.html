@@ -23,7 +23,7 @@
     <div class="album-inner">
         <div class="album-img" th:each="photo : ${photos}">
             <img th:src="${photo.image_with_watermark_url}" th:if="${photo.image_type} ne 'mp4'"/>
-            <video th:src="${photo.image_with_watermark_url}" th:if="${photo.image_type} eq 'mp4'" controls="controls"></video>
+            <video th:src="${photo.image_without_watermark_url}" th:if="${photo.image_type} eq 'mp4'" controls="controls"></video>
         </div>
     </div>
 </div>

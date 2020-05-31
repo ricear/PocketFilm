@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="6320dbc0-5ee0-41f7-bfdc-6e81729f886f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/public/apks/PocketFilm.apk" beforeDir="false" afterPath="$PROJECT_DIR$/public/apks/PocketFilm.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routers/api.js" afterDir="false" />
-    </list>
+    <list default="true" readonly="true" id="6320dbc0-5ee0-41f7-bfdc-6e81729f886f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,7 +17,7 @@
       <file leaf-file-name="api.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routers/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
+            <state relative-caret-position="15">
               <caret line="149" column="37" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
             </state>
           </provider>
@@ -250,7 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,6 +268,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,11 +420,12 @@
       <workItem from="1583563305926" duration="4000" />
       <workItem from="1583586903666" duration="4048000" />
       <workItem from="1583628962174" duration="3124000" />
+      <workItem from="1583676598783" duration="332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280256000" />
+    <option name="totallyTimeSpent" value="280588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="740" extended-state="0" />
@@ -848,7 +846,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routers/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
+        <state relative-caret-position="15">
           <caret line="149" column="37" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
         </state>
       </provider>

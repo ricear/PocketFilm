@@ -1,12 +1,12 @@
 $(function () {
     //  推荐
-    var recommendations_url = API + "/recommendations/get/user?user_name=" + username + "&browse_type=album&page_size=" + pageSize;
+    var recommendations_url = API + "/recommendations/get/user?user_name=" + username + "&browse_type=movie&page_size=" + pageSize;
     //  热门推荐
-    var hottest_movies_url = API + "/get/today?type=album&sort_type=2&page_size=" + pageSize;
+    var hottest_movies_url = API + "/get/today?type=movie&sort_type=2&page_size=" + pageSize;
     //  今日更新
-    var today_movies_url = API + "/get/today?type=album";
+    var today_movies_url = API + "/get/today?type=movie";
     //  今日更新数据量
-    var today_count_url = API + "/count/get/today?type=album";
+    var today_count_url = API + "/count/get/today?type=movie";
     get_recommendations(recommendations_url, hottest_movies_url, today_movies_url, today_count_url, 'cainixihuan', 'rementuijian', 'jinrigengxin')
 })
 

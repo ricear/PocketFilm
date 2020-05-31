@@ -37,11 +37,11 @@ public class MovieController {
             username = userInfo.getString("username");
             userInfoUrl = Configs.API + "/user/info?_id=" + userInfo.getString("_id");
             JSONObject userInfoObject = commonUtils.doGet(userInfoUrl);
-            user_type = userInfoObject.getString("type");
+            user_type = userInfoObject.getJSONObject("userInfo").getString("type");
         }
         //  获取相册列表
         String albumsUrl = null;
-        if (user_type == "administrator") {
+        if (user_type.equals("administrator")) {
             albumsUrl = Configs.API + "/album/get";
         } else {
             albumsUrl = Configs.API + "/album/get?is_private=false";

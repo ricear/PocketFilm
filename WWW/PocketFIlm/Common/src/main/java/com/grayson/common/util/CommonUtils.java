@@ -87,7 +87,7 @@ public class CommonUtils {
      */
     public String getParseUrl(String movieType, String url) {
         String parseUrl = "";
-        if (movieType == "album") {
+        if (movieType == "movie") {
             if (url.startsWith("aHR0")) {
                 parseUrl = Configs.JX40 + url;
             } else {
