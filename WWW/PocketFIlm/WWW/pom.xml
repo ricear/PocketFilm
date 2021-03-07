@@ -71,6 +71,13 @@
             <groupId>ognl</groupId>
             <artifactId>ognl</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>ch.ethz.ganymed</groupId>
+            <artifactId>ganymed-ssh2</artifactId>
+            <version>262</version>
+        </dependency>
     </dependencies>
+
 
 </project>

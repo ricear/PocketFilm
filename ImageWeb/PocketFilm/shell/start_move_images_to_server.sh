@@ -6,7 +6,7 @@ do
 	file_list=`ls ${local_file_path}`
    	for file in ${file_list}
 	do 
-	 	scp ${local_file_path}/${file} root@47.240.95.27:${server_file_path}
+	 	scp ${local_file_path}/${file} root@8.210.193.225:${server_file_path}
 	 	rm -rf ${local_file_path}/${file}
 	done
 	sleep 1
